@@ -3,10 +3,12 @@
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
-      "Shared": { "$path": "src/shared" }
+      "Shared": { "$path": "src/shared" },
+      "LihFolk": { "$path": "src/lihfolk/shared" }
     },
     "ServerScriptService": {
-      "Server": { "$path": "src/server" }
+      "Server": { "$path": "src/server" },
+      "LihFolk": { "$path": "src/lihfolk/server" }
     },
     "StarterPlayer": {
       "StarterPlayerScripts": {
