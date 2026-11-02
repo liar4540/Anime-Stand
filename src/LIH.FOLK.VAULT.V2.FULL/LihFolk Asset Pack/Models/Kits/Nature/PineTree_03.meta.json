@@ -1,0 +1,179 @@
+{
+ "asset": "PineTree_03",
+ "kit": "Nature",
+ "type": "PineTree",
+ "seed": 3,
+ "params": {
+  "tiers": 3,
+  "R0": 2.319,
+  "H": 8.307,
+  "rt": 0.459,
+  "ht": 1.112,
+  "lobes": 9,
+  "scallop": 0.077
+ },
+ "tris": 1536,
+ "budget_class": "tree",
+ "budget_target": 2000,
+ "budget_ceiling": 5000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 4.806,
+  "y": 4.892,
+  "z": 8.307
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 0,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h_lt",
+   "h",
+   "h_dk",
+   "b",
+   "b_dk"
+  ],
+  "primary": "summer",
+  "colourways": [
+   {
+    "name": "summer",
+    "hue": "leaf",
+    "roles": {
+     "h_lt": "#9BD45E",
+     "h": "#5DA543",
+     "h_dk": "#336F2E",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "spruce",
+    "hue": "spruce",
+    "roles": {
+     "h_lt": "#6FBF8A",
+     "h": "#368A5C",
+     "h_dk": "#1F5A3E",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "autumn",
+    "hue": "autumn",
+    "roles": {
+     "h_lt": "#F4B24E",
+     "h": "#E0702E",
+     "h_dk": "#9C3F22",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "blossom",
+    "hue": "blossom",
+    "roles": {
+     "h_lt": "#F7B8D2",
+     "h": "#E2789F",
+     "h_dk": "#A84670",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "frost",
+    "hue": "frost",
+    "roles": {
+     "h_lt": "#BFE6E4",
+     "h": "#7FBFC4",
+     "h_dk": "#4A8790",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "pine: ONE lathe shell (trunk + 3 overhanging tiers), 9-lobe scalloped rims, dark undersides, light rim bands",
+ "features": [
+  [
+   "tier_rim",
+   [
+    1.529,
+    -1.623,
+    0.912
+   ],
+   1.3
+  ],
+  [
+   "tip",
+   [
+    -0.094,
+    0.0,
+    7.507
+   ],
+   1.0
+  ],
+  [
+   "trunk_base",
+   [
+    -0.094,
+    0.0,
+    0.5
+   ],
+   0.9
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Nature/PineTree_03_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 8.7,
+  "basis": "panel x3 median",
+  "reviewed": "PineTree_01 w2r3_panel (indiv 9.3/9.3/8.7); fix rounds: w2r1 9.3",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_nature.py:PineTree",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Nature/PineTree_03.glb",
+  "blend": "Models/Kits/Nature/PineTree_03.blend",
+  "turntable": "Models/Kits/Nature/PineTree_03_turntable.mp4",
+  "preview": "Models/Kits/Nature/PineTree_03_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Nature/PineTree_03_preview.jpg"
+}

@@ -1,0 +1,78 @@
+{
+ "asset": "RoundShield_02",
+ "kit": "Weapons",
+ "type": "RoundShield",
+ "seed": 2,
+ "attempt": "rv1",
+ "label": "rejected",
+ "score": 6.7,
+ "grades": [
+  1,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "reviewer": "blind fresh agent (renders + close-ups + gate report + rubric only)",
+ "evidence": {
+  "V1": "Front reads clearly as a round shield (disc, gold rim, boss), but the silhouette render is a featureless ellipse with no outline break from the boss, rim or rivets; at 64 px the 3/4 view could be any disc. Only the edge-on top view shows the boss and handle.",
+  "V2": "Clear tiers: big disc and gold rim, medium steel boss with a stepped flange, small rivet ring and plank fan. They read as separate levels in the front and 3/4 views.",
+  "V3": "Chunky rim and dome boss are stylised, but the face is a thin flat plate and the 16 rivets are undersized dots that turn to noise at distance. Only partly exaggerated.",
+  "V4": "The rim chamfer and boss flange catch a clean highlight. The rivets are hard-faceted octagons with no bevel, and the rim's outer edge shows straight polygon segments in close_rim_studio, so the treatment is inconsistent.",
+  "V5": "The flat close-ups show the plank colour boundaries kinked and bent (for example the light wedge upper-left of the boss in boss_flat, and the bent wedge edge in rim_flat), with uneven wedge widths. Vertex-colour seams follow an irregular triangulation instead of straight radial lines. Rivet faceting is also visible.",
+  "V6": "Disciplined: gold rim accent, steel greys on the boss and rivets, one hue (teal) in light and dark values, and a dark ink handle. Value contrast is strong, and the crimson and shadow colourways keep the same structure.",
+  "V7": "2160 tris against a weapon target of 2500 (ceiling 4000). Under target.",
+  "V8": "One white vertex-colour material, SmoothPlastic, chamfers present. Minor mismatches: the plank hue shows only 2 values (the kit asks for 3), the rivets are faceted rather than smooth-shaded, and the rivets sit toward the rim's inner edge instead of centred on the band.",
+  "V9": "Studio line is correct: origin at the handle/hand point, CollisionFidelity Box, CanCollide off when equipped, Massless, MeshPart.Color white for vertex colours, SmoothPlastic. A1-A18 all pass; symmetry error X/Z is 0.0; the rivets and handle are seated."
+ },
+ "artifacts": [
+  "Plank vertex-colour boundaries are kinked/zig-zag and wedge widths are uneven on the shield face (close_boss_flat, close_rim_flat), because the face triangulation does not match the radial plank edges",
+  "Rivets are visibly faceted 8-sided nubs with flat facets and no bevel (close_rim_studio)",
+  "Rim outer edge shows straight polygon segments in close-up (close_rim_studio)"
+ ],
+ "top_fixes": [
+  "Rebuild the face topology with straight radial edge loops matched to the plank count (and equal angular spacing), so the vertex-colour plank seams are straight and wedge widths are even",
+  "Give the silhouette a break: raise the boss dome higher, and/or notch or scallop the rim or enlarge the rivets so they bump the outline; the current silhouette is a plain ellipse",
+  "Make the rivets larger, with 12+ sides or a smooth-shaded dome and a small chamfer, centred on the rim band rather than hugging its inner edge",
+  "Spend the ~340 spare tris on more rim segments so the outer edge reads round in close-up",
+  "Add a third teal value (e.g. a mid tone or a thin plank-edge line) to meet the kit's one-hue-in-3-values rule"
+ ],
+ "params": {
+  "R": 1.395,
+  "pattern": "rays",
+  "rivets": 16,
+  "boss": 0.36,
+  "dome": 0.094
+ },
+ "tris": 2160,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,169 @@
+{
+ "asset": "OakTree_01",
+ "kit": "Nature",
+ "type": "OakTree",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 7.0,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.0,
+  7.0,
+  7.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette reads as a round-canopy tree from front, three-quarter and top (lobed blob on a thin trunk); generic lollipop but recognisable at 64 px.",
+   "V2": "Big canopy and medium trunk are clear, but the two branches are barely visible stubs hidden under the canopy (a dark notch in the fork close-up) and there is no small-scale detail (no root flare, bark, leaf clusters).",
+   "V3": "Trunk is a straight, untapered column and the canopy a single puffy blob; only partly stylised, reads stiff rather than a confident chunky oak.",
+   "V4": "Canopy lobes are soft, but the trunk base ends in a hard flat slab flare with a sharp band (trunk_base close-up) and the trunk sides are plain; edge treatment inconsistent.",
+   "V5": "Canopy close-up in studio light shows a visible quad grid / faceting across the lobes and creased pinch lines where lobes merge; trunk is clean. Minor but visible.",
+   "V6": "Disciplined: one foliage green plus bark brown, good value contrast; colourways (autumn, frost) swap only the canopy hue cleanly.",
+   "V7": "1876 tris vs tree target 2000 (ceiling 5000): at target.",
+   "V8": "One vertex-colour material and kit palette, but canopy grid faceting and single flat green value fall short of the smooth weighted-normal kit finish; minor mismatch.",
+   "V9": "Studio line: Anchored, Hull collision (trunk-only part option), CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre: correct."
+  },
+  {
+   "V1": "Lobed round canopy on a straight trunk reads as a broadleaf tree in front, three-quarter and silhouette; top view is a lumpy green blob but still reads as canopy.",
+   "V2": "Big canopy and trunk only; canopy lobes are soft and shallow, branches are hidden inside the canopy (branch-fork close-up shows only bare trunk), and there is no small detail.",
+   "V3": "Thin straight boxy trunk under a swollen blob canopy reads as a lollipop tree; no trunk taper, root flare or limb structure to give oak character.",
+   "V4": "Canopy is a soft blobby shell with no defined lobe edges, while the trunk base ends in a hard flat square lip; edge treatment is inconsistent.",
+   "V5": "Canopy close-up (studio) and all colourways show a visible quad-grid shading pattern across the foliage shell; trunk top shows a hard notch where the canopy meets it.",
+   "V6": "One foliage hue in 2 values plus bark brown secondary; autumn and blossom colourways keep the same discipline.",
+   "V7": "1876 tris vs tree target 2000 - under target.",
+   "V8": "Single LF_VertexColor material and correct palette, but the grid-shaded canopy and squared box trunk fall short of the smooth weighted-normal fused shells the kit specifies.",
+   "V9": "Studio line: Anchored, Hull collision (trunk-only part option for walk-through canopy), CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre."
+  },
+  {
+   "V1": "Lollipop broadleaf tree reads clearly in front, 3/4 and silhouette (lobed canopy on a straight trunk); top view is a lumpy green blob, acceptable for a canopy.",
+   "V2": "Big canopy and medium trunk read, but the small tier is missing: the two branches are buried (branch-fork close-up shows only a V-notch at the trunk top, a tiny stub in the front view) and the canopy is one shell with soft bulges.",
+   "V3": "Canopy lobes are pleasantly cloud-like, but the trunk is a stiff straight near-square tube with no taper or root flare beyond a thin dark collar; partly stylised.",
+   "V4": "Canopy is a smooth fused shell (fine), but the trunk shows hard near-square corners and a flat sock-like base band with a sharp step (trunk-base close-up); inconsistent treatment.",
+   "V5": "Canopy shows a faint quad-grid lattice/checker in the studio shading (canopy close-up, frost and autumn colourways) and the trunk side has a long vertical shading crease; minor but visible.",
+   "V6": "Foliage green in 2-3 values plus bark brown in two values; colourways (autumn, frost) swap cleanly.",
+   "V7": "1876 tris vs tree target 2000 (ceiling 5000).",
+   "V8": "One white vertex-colour material and nature palette fit, but the grid-patterned canopy shading and boxy trunk differ from the smooth-shell kit look.",
+   "V9": "Anchored, Hull collision (trunk-only part for walk-through canopies), CanTouch off, SmoothPlastic, MeshPart.Color white, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Visible quad grid faceting on the canopy in studio close-up",
+   "Pinch creases where canopy lobes merge",
+   "Branch stubs buried in canopy show only as a dark notch at the fork"
+  ],
+  [
+   "Quad-grid shading lines across the canopy shell (OakTree_01_close_canopy_studio.png, visible in every colourway)",
+   "Hard square lip at the trunk base (OakTree_01_close_trunk_base_studio.png)",
+   "Notch at the trunk top where it enters the canopy (OakTree_01_close_branch_fork_studio.png)"
+  ],
+  [
+   "Quad-grid lattice pattern visible across the canopy shading",
+   "Vertical shading crease along the trunk",
+   "Branches fully buried in canopy/trunk, only a notch visible at the fork"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Smooth/weight the canopy normals (more subdivision or normal transfer) to remove the grid faceting and lobe-join creases",
+   "Give the trunk taper, a slight lean and a rounded root flare instead of the flat slab base",
+   "Make the branches read: extend them out of the canopy underside and add 2-3 smaller leaf clumps for small-scale hierarchy",
+   "Add a second/third foliage value (lighter top, darker underside) via vertex colour"
+  ],
+  [
+   "Smooth the canopy shell (more subdivision or weighted normals) to remove the grid shading, and sculpt 3-5 distinct puff lobes with clear dips",
+   "Give the trunk a round tapered profile with a root flare and let 2-3 visible limbs fork into the canopy",
+   "Add a small tier: a few leaf-clump puffs breaking the canopy outline or a knot on the trunk"
+  ],
+  [
+   "Fix canopy normals / increase smoothing so the quad grid does not show (weighted normals, merge-by-distance on fused lobes)",
+   "Expose the branches: let 2-3 limbs fork out below the canopy so the small tier reads",
+   "Taper the trunk and give it a rounded cross-section with a proper root flare instead of the flat dark base band",
+   "Add 1-2 lower secondary canopy clumps for a stronger lobed oak silhouette"
+  ]
+ ],
+ "params": {
+  "Ht": 2.593,
+  "Rc": 3.491,
+  "puffs": 7,
+  "lean": -0.158,
+  "r0": 0.643,
+  "branches": 2
+ },
+ "tris": 1876,
+ "budget_class": "tree",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,25 @@
+{
+ "id": "lava_bluefire_002",
+ "kind": "materials",
+ "score": 8.8,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 1,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m6",
+ "reviewer_notes": [
+  "flat featureless crust plates, uniform cracks; reads like sci-fi floor",
+  "Flat featureless crust slabs, uniform cracks; blue reads as energy net, not lava",
+  "Blue glow on flat uniform plates reads energy grid more than lava",
+  "Uniform-width glow lines read as energy net; crust plates flat",
+  "Uniform-width glow cracks read as a neon net; crust plates flat",
+  "uniform-width glowing net over flat plates; no hot pools or crust variation"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

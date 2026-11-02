@@ -1,0 +1,318 @@
+{
+  "source": "Roblox default R15 (block, scale 1) measured read-only in Studio via Players:CreateHumanoidModelFromDescription(HumanoidDescription.new(), R15): RigAttachment positions + part sizes",
+  "units": "studs; Roblox axes x=right y=up z=back; ground space (origin on ground under HumanoidRootPart)",
+  "hip_height": 2.1924,
+  "hrp_center_height": 3.1924,
+  "joints": {
+    "HumanoidRootPart": [
+      0.0,
+      3.1924,
+      0.0
+    ],
+    "LowerTorso": [
+      0.0,
+      2.1924,
+      0.0
+    ],
+    "UpperTorso": [
+      0.0,
+      2.5924,
+      0.0
+    ],
+    "Head": [
+      0.0,
+      4.2904,
+      0.0
+    ],
+    "RightUpperArm": [
+      0.9716,
+      4.0389,
+      0.0
+    ],
+    "RightLowerArm": [
+      1.4721,
+      3.265,
+      0.0
+    ],
+    "RightHand": [
+      1.4721,
+      2.4581,
+      0.0
+    ],
+    "LeftUpperArm": [
+      -0.9716,
+      4.0389,
+      0.0
+    ],
+    "LeftLowerArm": [
+      -1.4721,
+      3.265,
+      0.0
+    ],
+    "LeftHand": [
+      -1.4721,
+      2.4581,
+      0.0
+    ],
+    "RightUpperLeg": [
+      0.5,
+      2.1924,
+      0.0
+    ],
+    "RightLowerLeg": [
+      0.5,
+      1.2718,
+      0.0
+    ],
+    "RightFoot": [
+      0.5,
+      0.2619,
+      0.0
+    ],
+    "LeftUpperLeg": [
+      -0.5,
+      2.1924,
+      0.0
+    ],
+    "LeftLowerLeg": [
+      -0.5,
+      1.2718,
+      0.0
+    ],
+    "LeftFoot": [
+      -0.5,
+      0.2619,
+      0.0
+    ]
+  },
+  "motors": {
+    "LowerTorso": "Root",
+    "UpperTorso": "Waist",
+    "Head": "Neck",
+    "RightUpperArm": "RightShoulder",
+    "RightLowerArm": "RightElbow",
+    "RightHand": "RightWrist",
+    "LeftUpperArm": "LeftShoulder",
+    "LeftLowerArm": "LeftElbow",
+    "LeftHand": "LeftWrist",
+    "RightUpperLeg": "RightHip",
+    "RightLowerLeg": "RightKnee",
+    "RightFoot": "RightAnkle",
+    "LeftUpperLeg": "LeftHip",
+    "LeftLowerLeg": "LeftKnee",
+    "LeftFoot": "LeftAnkle"
+  },
+  "parents": {
+    "HumanoidRootPart": null,
+    "LowerTorso": "HumanoidRootPart",
+    "UpperTorso": "LowerTorso",
+    "Head": "UpperTorso",
+    "RightUpperArm": "UpperTorso",
+    "RightLowerArm": "RightUpperArm",
+    "RightHand": "RightLowerArm",
+    "LeftUpperArm": "UpperTorso",
+    "LeftLowerArm": "LeftUpperArm",
+    "LeftHand": "LeftLowerArm",
+    "RightUpperLeg": "LowerTorso",
+    "RightLowerLeg": "RightUpperLeg",
+    "RightFoot": "RightLowerLeg",
+    "LeftUpperLeg": "LowerTorso",
+    "LeftLowerLeg": "LeftUpperLeg",
+    "LeftFoot": "LeftLowerLeg"
+  },
+  "parts": {
+    "HumanoidRootPart": {
+      "center": [
+        0,
+        3.1924,
+        0
+      ],
+      "size": [
+        2.0,
+        2.0,
+        1.0
+      ]
+    },
+    "LowerTorso": {
+      "center": [
+        0,
+        2.3924,
+        0
+      ],
+      "size": [
+        1.9914,
+        0.4007,
+        1.004
+      ]
+    },
+    "UpperTorso": {
+      "center": [
+        0,
+        3.4414,
+        0
+      ],
+      "size": [
+        1.9432,
+        1.698,
+        1.004
+      ]
+    },
+    "Head": {
+      "center": [
+        0,
+        4.8662,
+        0
+      ],
+      "size": [
+        1.159,
+        1.182,
+        1.1606
+      ]
+    },
+    "RightUpperArm": {
+      "center": [
+        1.4721,
+        3.62,
+        0
+      ],
+      "size": [
+        1.0011,
+        1.2416,
+        1.0019
+      ]
+    },
+    "RightLowerArm": {
+      "center": [
+        1.4721,
+        2.9903,
+        0
+      ],
+      "size": [
+        1.0011,
+        1.1175,
+        1.0019
+      ]
+    },
+    "RightHand": {
+      "center": [
+        1.4721,
+        2.3265,
+        0
+      ],
+      "size": [
+        0.9843,
+        0.3158,
+        1.0283
+      ]
+    },
+    "RightUpperLeg": {
+      "center": [
+        0.5,
+        1.721,
+        0
+      ],
+      "size": [
+        0.9928,
+        1.3629,
+        0.9727
+      ]
+    },
+    "RightLowerLeg": {
+      "center": [
+        0.5,
+        0.8584,
+        0
+      ],
+      "size": [
+        0.9928,
+        1.3007,
+        0.9728
+      ]
+    },
+    "RightFoot": {
+      "center": [
+        0.5,
+        0.1559,
+        0
+      ],
+      "size": [
+        1.0089,
+        0.312,
+        1.0011
+      ]
+    },
+    "LeftUpperArm": {
+      "center": [
+        -1.4721,
+        3.62,
+        0
+      ],
+      "size": [
+        1.0011,
+        1.2416,
+        1.0019
+      ]
+    },
+    "LeftLowerArm": {
+      "center": [
+        -1.4721,
+        2.9903,
+        0
+      ],
+      "size": [
+        1.0011,
+        1.1175,
+        1.0019
+      ]
+    },
+    "LeftHand": {
+      "center": [
+        -1.4721,
+        2.3265,
+        0
+      ],
+      "size": [
+        0.9843,
+        0.3158,
+        1.0283
+      ]
+    },
+    "LeftUpperLeg": {
+      "center": [
+        -0.5,
+        1.721,
+        0
+      ],
+      "size": [
+        0.9928,
+        1.3629,
+        0.9727
+      ]
+    },
+    "LeftLowerLeg": {
+      "center": [
+        -0.5,
+        0.8584,
+        0
+      ],
+      "size": [
+        0.9928,
+        1.3007,
+        0.9728
+      ]
+    },
+    "LeftFoot": {
+      "center": [
+        -0.5,
+        0.1559,
+        0
+      ],
+      "size": [
+        1.0089,
+        0.312,
+        1.0011
+      ]
+    }
+  },
+  "blender": "1 BU = 1 stud, Z up, character faces -Y; armature object 'Root', root bone 'HumanoidRootPart'"
+}

@@ -1,0 +1,117 @@
+{
+ "id": "grass_teal_009",
+ "family": "grass",
+ "theme": "teal",
+ "index": 9,
+ "seed": 7798.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_grass.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Plastic",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "ground",
+  "terrain",
+  "nature",
+  "grass",
+  "teal"
+ ],
+ "colors": [
+  [
+   "#1c5645",
+   0.308
+  ],
+  [
+   "#2b745a",
+   0.283
+  ],
+  [
+   "#419975",
+   0.263
+  ],
+  [
+   "#69c096",
+   0.145
+  ]
+ ],
+ "params": {
+  "C1": "#7fd69c",
+  "C2": "#41b588",
+  "C3": "#1f6653",
+  "C4": "#93b57a",
+  "C5": "#d7c6fa",
+  "Density": 0.8509508049823487,
+  "Lean": 0.2642223021279033,
+  "Width": 0.4660392907613826,
+  "Patch": 0.33262939405977754,
+  "Flowers": 0.17339652077249978,
+  "Dry": 0.2834169911069195,
+  "Clump": 0.6203753701566862,
+  "Seed": 7798.0
+ },
+ "normal_depth_px": 14.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.894,
+   "Color_Neutral": 0.702,
+   "Normal": 0.995,
+   "Roughness": 0.97,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.491,
+   0.973
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.002,
+   0.009
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 64.5,
+   "diel_luma_p99": 192.9,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.888,
+   "rough_min": 0.698,
+   "rough_expected": [
+    0.78,
+    0.97
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.0884,
+  "M_neutral_mean": 0.737,
+  "M_neutral_range_p5_p95": [
+   0.496,
+   0.904
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 26.1,
+ "preview": "preview.jpg"
+}

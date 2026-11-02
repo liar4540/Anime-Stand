@@ -1,0 +1,115 @@
+{
+ "id": "leaves_spring_001",
+ "family": "leaves",
+ "theme": "spring",
+ "index": 1,
+ "seed": 3122.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_leaves.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Grass",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "foliage",
+  "leaves",
+  "hedge",
+  "nature",
+  "spring"
+ ],
+ "colors": [
+  [
+   "#87be4c",
+   0.417
+  ],
+  [
+   "#a1d75a",
+   0.318
+  ],
+  [
+   "#659d3b",
+   0.185
+  ],
+  [
+   "#244625",
+   0.08
+  ]
+ ],
+ "params": {
+  "C1": "#c2e56c",
+  "C2": "#80c547",
+  "C3": "#417b2b",
+  "C4": "#224425",
+  "C5": "#edddee",
+  "Size": 7.0,
+  "Elong": 0.956053833648763,
+  "Vein": 0.7885177848080236,
+  "Berries": 0.0,
+  "Hue": 0.0,
+  "Seed": 3122.0
+ },
+ "normal_depth_px": 28.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 1.05,
+   "Color_Neutral": 1.073,
+   "Normal": 0.733,
+   "Roughness": 0.976,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.5,
+   0.982
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.006,
+   0.002
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 57.0,
+   "diel_luma_p99": 211.8,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.67,
+   "rough_min": 0.635,
+   "rough_expected": [
+    0.55,
+    0.9
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.1254,
+  "M_neutral_mean": 0.74,
+  "M_neutral_range_p5_p95": [
+   0.268,
+   0.9
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 23.8,
+ "preview": "preview.jpg"
+}

@@ -1,0 +1,153 @@
+{
+ "asset": "WallStraight_01",
+ "kit": "Modular",
+ "type": "WallStraight",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  7.7,
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.6,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Reads as a coursed stone wall section from front and three-quarter; silhouette and top are a clean slab as a modular piece should be.",
+   "V2": "Clear hierarchy: wall slab, medium cap/plinth/courses, small chamfers and recessed joints.",
+   "V3": "Stones are near-square uniform tiles with thin sliver stones at the left edge; tidy but stiff rather than confidently stylised.",
+   "V4": "Consistent small chamfers on every stone, cap and plinth that catch the light in the face and top close-ups.",
+   "V5": "Face, top and end-section close-ups are clean: no pinches, seams or z-fighting.",
+   "V6": "One stone hue in ~3 grey values with a darker plinth; brick and sandstone colourways keep the value structure.",
+   "V7": "572 tris vs module target 800 - under target.",
+   "V8": "One vertex-colour material, chamfered made-object edges, stone hue in 3 values; matches the modular kit spec.",
+   "V9": "Anchored, Box collision, CanTouch off, Color white, grid-corner pivot; T1 tiling passes (iou 0.98, cover 1.0)."
+  },
+  {
+   "V1": "Front and 3/4 read as a stone wall through the course pattern, but the silhouette is a plain rectangular slab - only the shaded views identify it.",
+   "V2": "Big slab, medium courses + darker plinth + cap; nothing at the small scale beyond chamfers, so hierarchy is only partial.",
+   "V3": "Chunky chamfered stones suit the style but they are near-square blocks in a regular grid with little size variation; reads stiff.",
+   "V4": "All stones, plinth and cap share a consistent chamfer that catches the light in face/top/end close-ups.",
+   "V5": "Studio close-ups clean; face_flat shows only a 1-2 px dark speck at a block corner, otherwise no seams, pinches or z-fighting.",
+   "V6": "Single stone hue in three values (light/mid/dark plinth); colourways keep the value structure.",
+   "V7": "572 tris vs module target 800.",
+   "V8": "White vertex-colour material, chamfered stone blocks, stone hue only - matches modular kit spec.",
+   "V9": "Studio line: Anchored, CollisionFidelity Box, CanTouch off, Color white, SmoothPlastic, grid-corner pivot; T1 tiling pass (iou 0.98)."
+  },
+  {
+   "V1": "Reads as a stone wall section from front, three-quarter and silhouette (slab with coursed block notches along the edge); top view is a clean bar, as expected for a straight module.",
+   "V2": "Big slab, cap ledge and plinth course plus medium block coursing, but no small tier (no chipped blocks, through-stones or mortar accents).",
+   "V3": "Staggered coursing and value-varied blocks help, but blocks are near-uniform rectangles with a thin cap; partly stylised, still stiff.",
+   "V4": "Every block, the plinth and the cap ledge carry the same small chamfer that catches light in the face, top and end close-ups.",
+   "V5": "Face, top and end-section close-ups (studio and flat) show clean flat shading; no pinches, seams or z-fighting; 0 cross-shell overlaps.",
+   "V6": "One stone hue in about 3 values with a darker plinth; slate and sandstone colourways keep the value structure.",
+   "V7": "572 tris vs module target 800, under target.",
+   "V8": "One LF_VertexColor material, stone hue values and kit-scale chamfers; matches the modular kit (end faces are plain but hidden when tiled).",
+   "V9": "Studio line correct (anchored, Box collision, CanTouch off, white colour, grid-corner pivot); T1 tiling pass on the 2-stud grid."
+  }
+ ],
+ "artifacts": [
+  [],
+  [
+   "Possible 1-2 px pinhole/speck at a block corner in face_flat close-up"
+  ],
+  []
+ ],
+ "top_fixes": [
+  [
+   "Vary stone widths more and avoid thin sliver stones at the panel edge",
+   "Add slight per-stone inset/bulge or edge irregularity for stylised character",
+   "Consider wrapping stone joints onto the plain end face"
+  ],
+  [
+   "Vary stone widths/heights more (running bond with long and short stones) to break the square grid",
+   "Add a small-scale tier (a few chipped/proud stones, or a subtle gold/iron accent) for hierarchy",
+   "Check the tiny speck at the block corner for a micro gap between shells"
+  ],
+  [
+   "Add a small tier: a few chipped/bevelled-out blocks, a through-stone or slight block protrusion variation",
+   "Vary block sizes and give the cap ledge a little more depth/overhang for a more confident stylised read",
+   "Dress the exposed end with block returns for wall-run terminations"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "style": "stone"
+ },
+ "tris": 572,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,86 @@
+{
+ "asset": "Katana_03",
+ "kit": "Weapons",
+ "type": "Katana",
+ "seed": 3,
+ "attempt": "rv1",
+ "label": "rejected",
+ "score": 8.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "reviewer": "blind fresh agent (renders + close-ups + gate report + rubric only)",
+ "evidence": {
+  "V1": "Front, three-quarter and silhouette read instantly as a katana (curved blade, oval tsuba, banded grip, kashira knob); top view is a small blob, as expected for a sword; no correctness failure: A15 Y error 0.0, alignment offsets 0.0, all three seats seated with no gap",
+  "V2": "Clear hierarchy: long curved blade (big), tsuba + wrapped grip (medium), habaki block, wrap bands, kashira cap and blade ridge line (small)",
+  "V3": "Proportions sit close to a real katana (thin blade, small tsuba, short slim grip), so it reads only partly stylised; the stylised kit would want a chunkier tsuba/habaki and thicker blade",
+  "V4": "Chamfers are consistent and catch light on the tsuba rim, habaki, kashira rings and blade shinogi ridge in the studio close-ups",
+  "V5": "Minor issues: visible polygon faceting on the low-segment tsuba rim and kashira (each facet a distinct tone), an uneven dark crescent seam between the kashira ring and dome cap, and a slight pinch where facets converge at the kissaki apex",
+  "V6": "Disciplined: steel greys blade, gold accent fittings, ink-dark tsuba face, one teal hue on the wrap; good value contrast",
+  "V7": "2172 tris vs weapon target 2500 (ceiling 4000): at or under target",
+  "V8": "One white vertex-colour material and kit palette match, but the wrap hue reads as essentially one value (no 3-value ramp, no warm cream) and the faceted cylinders do not match the kit's smooth shading",
+  "V9": "Studio line correct: Tool Handle, origin at grip, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic"
+ },
+ "artifacts": [
+  "Kashira close-up: uneven dark crescent seam/gap between the gold ring and the dome cap (thick in the middle, closing at the sides); the gate report has no seat entry for the kashira",
+  "Faceting: tsuba outer rim and kashira/grip cylinders show polygon facets, each with its own tone, in both studio and flat close-ups",
+  "Kissaki: slight pinch/notch where the ridge facets converge at the tip apex",
+  "cross_shell_overlaps 182 (allowed as intentional interpenetrating shells, but worth checking it is not the cause of the kashira seam)"
+ ],
+ "top_fixes": [
+  "Raise the segment count (or fix the smoothing/auto-smooth split) on the tsuba rim, grip and kashira so the cylinders shade smoothly like the kit",
+  "Seat the kashira dome flush against its ring (or make the groove an even, deliberate bevel) and add a kashira seat check",
+  "Push the stylisation: thicker tsuba and habaki, slightly wider blade and chunkier grip for a confident kit read",
+  "Give the wrap hue a 3-value ramp (dark under-wrap, mid band, light highlight) per the kit palette rule",
+  "Clean up the kissaki apex so the ridge facets meet without a pinch"
+ ],
+ "params": {
+  "L": 4.797,
+  "ew0": 0.283,
+  "sw0": 0.12,
+  "t0": 0.105,
+  "curve": 0.452,
+  "clip": 0.882,
+  "GL": 1.88,
+  "gr": 0.151,
+  "wraps": 8,
+  "tsuba": "round",
+  "tR": 0.55,
+  "ps": 0.278
+ },
+ "tris": 2172,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

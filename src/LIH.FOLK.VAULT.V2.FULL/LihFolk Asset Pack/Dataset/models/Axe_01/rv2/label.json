@@ -1,0 +1,103 @@
+{
+ "asset": "Axe_01",
+ "kit": "Weapons",
+ "type": "Axe",
+ "seed": 1,
+ "attempt": "rv2",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette read instantly as a single-bit axe: flared crescent blade, poll lug, collar, ridged grip and ball pommel all break the outline; top view is a thin blade line plus gold cap, which is the expected view for a flat axe head.",
+   "V2": "Clear big/medium/small: big blade and haft, medium gold collar, lower ring and pommel plus the steel poll, small ink grip wraps and top cap.",
+   "V3": "Confident stylised proportions: oversized flared blade with a curved edge on a chunky collar, haft about 2x the head height, with a fat pommel; the blade tapers in thickness from neck to edge (top view). A15 Y error 0.0, head and collar alignment offsets 0.0, both seats seated with no gap, so no correctness cap.",
+   "V4": "Consistent chamfers on collar lips, ring, cap and pommel, and a bevelled cutting-edge strip that catches a clean highlight in close_edge_studio; nothing razor-sharp or blobby.",
+   "V5": "Minor: where the neck chamfers converge into the blade face there is a pinched triangular facet (dark wedge in close_collar_studio and flat, crease on the neck in the front view). Grip, haft and blade faces are otherwise clean, with no z-fighting at the collar (cross-shell overlaps are intentional).",
+   "V6": "Disciplined: steel-grey blade, gold accents, one hue (teal) for the haft with ink-dark wraps; the colourways (crimson, shadow) swap only the hue and keep the gold and steel.",
+   "V7": "1916 tris against a weapon target of 2500 (ceiling 4000), so at or under target.",
+   "V8": "Indistinguishable from the kit: one white vertex-colour material, kit gold, ink and steel plus one hue, small uniform chamfers, smooth shading; it matches the Axe_05 anchor's construction language.",
+   "V9": "Studio line is correct: Tool Handle, origin at the grip point, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Pinched triangular facet / crease where the neck chamfers converge into the blade face, just right of the collar (close_collar_studio, close_collar_flat, front view)."
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Rework the neck-to-blade transition so the chamfers on the neck run out evenly into the blade bevel, with no converging wedge facet (add a support loop or blend the chamfer width), so V5 can reach clean.",
+   "Optional: give the blade face a slight hollow or a fuller line near the neck to push the head's medium-level detail without adding many tris (budget headroom about 580 tris).",
+   "Optional: lengthen the cutting edge's lower beard tip a little so the outline reads better from the top and side views."
+  ]
+ ],
+ "params": {
+  "H": 4.513,
+  "r": 0.195,
+  "style": "crescent",
+  "E": 1.836,
+  "bt": 0.97,
+  "bb": 0.97,
+  "poll": 0.122,
+  "D": 0.479,
+  "edge_frac": 0.336,
+  "wraps": 6
+ },
+ "tris": 1916,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

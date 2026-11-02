@@ -1,0 +1,98 @@
+{
+ "asset": "Cauldron_04",
+ "kit": "Furniture",
+ "type": "Cauldron",
+ "seed": 4,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Bulbous pot, flared gold rim, ring handles and three stub legs read as a cauldron in front, three-quarter and silhouette; top view shows rim ring, liquid and bubbles clearly.",
+   "V2": "Clear: big pot body, medium rim band and legs, small ring handles and liquid bubbles.",
+   "V3": "Confident stylised: squat bulging belly, wide lip, chunky flared legs; legs and ears all seated (penetration only, no gaps), handles mirror in the front outline.",
+   "V4": "Rim band shows a soft highlight on its outer edge, legs have rounded flared feet, handles are round tubes; edge treatment consistent across parts.",
+   "V5": "Pot belly shows visible vertical facet bands on its flanks (front and three-quarter) and the rim/leg outlines are polygonal in the rim flat and leg close-ups; no seams or z-fighting.",
+   "V6": "Disciplined: steel blue-grey pot, gold rim and handles, ink legs, liquid in two values of one hue; colourways only swap the liquid.",
+   "V7": "1776 tris vs medium target 2000 (ceiling 4000): at target.",
+   "V8": "One LF_VertexColor material, kit gold and ink accents, steel greys for metal, glowing liquid as the main hue; reads as kit.",
+   "V9": "Studio line correct: Anchored, Hull collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Faceted vertical bands on the pot belly",
+   "Polygonal outline on rim and leg feet at close range"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Raise the radial segment count of the pot belly and rim (or rely on smoother weighted normals) to remove the visible facet bands",
+   "Thicken the ring handles slightly so they survive at 64 px",
+   "Lift the liquid level a little so the colour reads from the front three-quarter view"
+  ]
+ ],
+ "params": {
+  "R": 1.413,
+  "H": 2.297,
+  "liq": 0.758,
+  "bubbles": 3
+ },
+ "tris": 1776,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

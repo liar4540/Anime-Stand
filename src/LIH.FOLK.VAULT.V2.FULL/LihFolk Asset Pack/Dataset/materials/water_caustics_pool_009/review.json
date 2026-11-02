@@ -1,0 +1,25 @@
+{
+ "id": "water_caustics_pool_009",
+ "kind": "materials",
+ "score": 9.6,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 2,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m6",
+ "reviewer_notes": [
+  "angular web with fine inner lines reads as cracked glaze/marble",
+  "Good two-scale network; cells a bit polygonal versus wavy caustics",
+  "Thin branching double lines read as crackle or marble veins",
+  "Busy doubled inner lines; slightly reads as cracked ice",
+  "Cell web slightly regular; little thick/thin variation in lines",
+  "thin uniform branching lines read as cracked ice more than caustics"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

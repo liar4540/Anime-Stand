@@ -1,0 +1,157 @@
+{
+ "asset": "WallDoor_01",
+ "kit": "Modular",
+ "type": "WallDoor",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  8.7,
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.6,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Doorway reads from front, three-quarter and silhouette (through-opening visible); centred in the panel.",
+   "V2": "Clear: wall slab, medium door frame/lintel/cap/plinth, small gold keystone and chamfers.",
+   "V3": "Squared stones and a plain rectangular opening with a raised threshold; functional but stiff.",
+   "V4": "Uniform chamfers on stones, frame, lintel and keystone catch the light in lintel and doorway close-ups.",
+   "V5": "Doorway, lintel and end-section close-ups clean; no pinches or z-fighting.",
+   "V6": "Stone greys in 3 values, light frame, single gold keystone accent - disciplined.",
+   "V7": "540 tris vs module target 800 - under target.",
+   "V8": "One vertex-colour material, stone hue, gold keystone, consistent chamfers - matches modular kit.",
+   "V9": "Anchored, Default collision so the doorway stays walkable, CanTouch off, Color white, grid-corner pivot; T1 tiling passes."
+  },
+  {
+   "V1": "Doorway hole reads in the silhouette and front; the 3/4 reads as a walk-through door wall from every angle.",
+   "V2": "Big wall slab, medium jamb stones / lintel course / door frame, small gold keystone - clear three tiers.",
+   "V3": "Wall and jambs are good chunky stylised stone, but the doorway is a tall plain rectangle with a very thin uniform trim frame; reads somewhat stiff/primitive.",
+   "V4": "Stones and cap have consistent chamfers that catch light, but the gold keystone is an unbevelled razor-edged trapezoid (lintel_studio/flat) and the frame bevel is very small, so treatment is inconsistent.",
+   "V5": "Doorway, lintel and end-section close-ups are clean; no pinches, seams or z-fighting.",
+   "V6": "Stone in three values plus a gold keystone accent; brick/slate colourways keep the structure.",
+   "V7": "540 tris vs module target 800.",
+   "V8": "One white vertex-colour material, stone hue with gold keystone as specified for the modular kit, chamfered blocks.",
+   "V9": "Studio line: Anchored, CollisionFidelity Default (keeps doorway walkable), CanTouch off, Color white, SmoothPlastic; T1 tiling pass (iou 0.99)."
+  },
+  {
+   "V1": "Doorway reads from front, three-quarter and silhouette (opening punched through, centred); top view is a clean bar as expected for a wall module.",
+   "V2": "Clear tiers: slab, cap ledge and plinth (big), block piers, lintel and door frame (medium), gold keystone (small).",
+   "V3": "Sound proportions and a centred opening, but blocks are uniform rectangles and the frame is a thin flat band; partly stylised rather than confident.",
+   "V4": "Consistent small chamfers on blocks, frame, threshold and cap ledge that catch light in the doorway, lintel and end close-ups.",
+   "V5": "Doorway, lintel and end-section close-ups (studio and flat) show clean flat shading; no pinches, seams or z-fighting.",
+   "V6": "Stone grey in about 3 values plus a single gold keystone accent; brick and basalt colourways keep the value structure.",
+   "V7": "540 tris vs module target 800, under target.",
+   "V8": "One LF_VertexColor material, stone hue values, gold keystone accent and kit-scale chamfers; matches the modular kit.",
+   "V9": "Studio line correct (anchored, Default collision keeps the doorway walkable, CanTouch off, white colour, grid-corner pivot); T1 tiling pass with iou 0.989."
+  }
+ ],
+ "artifacts": [
+  [],
+  [
+   "Keystone has no chamfer, reads razor-sharp against the bevelled stones"
+  ],
+  [
+   "keystone slightly overhangs the lintel's lower edge into the opening (lintel close-up); reads as intended but borderline"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Lower or flush the threshold so the walkway is floor-level",
+   "Add a stronger lintel or voussoir stones above the frame for hierarchy",
+   "Vary stone sizes in the jambs"
+  ],
+  [
+   "Chamfer the keystone and enlarge it slightly (or make it a real voussoir in the lintel course) so it reads at 64 px",
+   "Give the door frame more depth/width or replace it with stone jamb blocks + a proper lintel so the opening is less of a plain rectangle",
+   "Consider a slightly arched or stepped head to add stylised character"
+  ],
+  [
+   "Give the door surround more stylised weight: thicker projecting jambs/lintel or an arched head, with block-cut voussoirs",
+   "Vary pier block sizes and add a small tier (chipped corner, iron hinge pins in ink) for richer detail",
+   "Dress the exposed end section with block returns for wall-run terminations"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "style": "stone",
+  "dw": 4.0,
+  "dh": 8.0
+ },
+ "tris": 540,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

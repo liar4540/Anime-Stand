@@ -1,0 +1,152 @@
+{
+ "asset": "Gem_01",
+ "kit": "Emblems",
+ "type": "Gem",
+ "seed": 1,
+ "params": {
+  "cut": "brilliant",
+  "sides": 8,
+  "r": 0.514,
+  "shape": "oval",
+  "h": 1.028
+ },
+ "tris": 112,
+ "budget_class": "tiny",
+ "budget_target": 150,
+ "budget_ceiling": 300,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 0.95,
+  "y": 0.684,
+  "z": 0.9
+ },
+ "origin": "center",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 0,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590"
+    }
+   }
+  ]
+ },
+ "studio": "Pickup: CanCollide off, CanTouch on (collect trigger), CollisionFidelity Box, Anchored (spin with TweenService); MeshPart.Color white (vertex colours); SmoothPlastic; origin centre",
+ "notes": "brilliant-cut oval gem, 8 facets around (flat facets by design), hue in 3 values: light table + alternating crown facets, dark pavilion",
+ "features": [
+  [
+   "crown",
+   [
+    0.0,
+    0.0,
+    0.27
+   ],
+   0.6168
+  ],
+  [
+   "pavilion",
+   [
+    0.0,
+    0.0,
+    -0.193
+   ],
+   0.6168
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/e4/Gem_01/Gem_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/e4/Gem_01/Gem_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/e4/Gem_01/Gem_01_top.png",
+  "silhouette": "Models/Kits/_drafts/e4/Gem_01/Gem_01_silhouette.png",
+  "close_crown_studio": "Models/Kits/_drafts/e4/Gem_01/Gem_01_close_crown_studio.png",
+  "close_crown_flat": "Models/Kits/_drafts/e4/Gem_01/Gem_01_close_crown_flat.png",
+  "close_pavilion_studio": "Models/Kits/_drafts/e4/Gem_01/Gem_01_close_pavilion_studio.png",
+  "close_pavilion_flat": "Models/Kits/_drafts/e4/Gem_01/Gem_01_close_pavilion_flat.png",
+  "cw_royal": "Models/Kits/_drafts/e4/Gem_01/Gem_01_cw_royal.png",
+  "cw_crimson": "Models/Kits/_drafts/e4/Gem_01/Gem_01_cw_crimson.png",
+  "cw_verdant": "Models/Kits/_drafts/e4/Gem_01/Gem_01_cw_verdant.png",
+  "cw_shadow": "Models/Kits/_drafts/e4/Gem_01/Gem_01_cw_shadow.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_emblems.py:Gem",
+ "made": "2026-10-28"
+}

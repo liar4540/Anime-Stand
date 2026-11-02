@@ -1,0 +1,93 @@
+{
+ "asset": "FloorTiles_01",
+ "kit": "Modular",
+ "type": "FloorTiles",
+ "seed": 1,
+ "attempt": "w2r2",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Top and three-quarter read clearly as a stone tile floor; front view and silhouette show a slab with a stepped row of raised tiles on top, still readable as flooring",
+   "V2": "Big plinth and medium tiles in mixed sizes with three values are clear, but there is no small level at all (no cracks, chips, worn corners or grout detail)",
+   "V3": "Stiff: every tile is a perfect rectangle at identical height on a rigid grid with uniform gaps; no stylised irregularity, tilt or rounding that flagstones usually get",
+   "V4": "Tiles carry consistent soft chamfers that catch light (close_flagstones_studio), but the plinth's vertical corner and top edge are hard and unchamfered (close_edge_studio)",
+   "V5": "Clean: no seams, pinches or z-fighting in studio or flat close-ups; 0 cross-shell overlaps, 0 flipped faces",
+   "V6": "Disciplined: one stone grey in three values plus a darker plinth; sandstone/brick colourways keep the same structure, though the random light/dark tiles read slightly checkerboard-busy",
+   "V7": "476 tris vs module target 800 (ceiling 2000): under target",
+   "V8": "Single LF_VertexColor material, stone hue, chamfered tiles and T1 tiling (IoU ~0.98, cover ~0.99) fit the modular kit; minor mismatch from the unchamfered plinth",
+   "V9": "Studio line correct for a modular piece: anchored, Box collision, CanTouch off, grid-corner pivot, Color white, SmoothPlastic"
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Break the rigid grid: slight per-tile height/tilt variation, softened or irregular corners, and a few chipped tiles so it reads as hand-laid flagstone",
+   "Chamfer the plinth edges (~0.05-0.07 studs) to match the tiles",
+   "Calm the value distribution (fewer darkest tiles, cluster values) so the surface reads less like a checkerboard"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "rows": 4
+ },
+ "tris": 476,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

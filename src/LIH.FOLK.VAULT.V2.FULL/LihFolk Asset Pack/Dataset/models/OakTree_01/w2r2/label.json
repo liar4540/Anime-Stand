@@ -1,0 +1,102 @@
+{
+ "asset": "OakTree_01",
+ "kit": "Nature",
+ "type": "OakTree",
+ "seed": 1,
+ "attempt": "w2r2",
+ "label": "rejected",
+ "score": 7.0,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Lobed canopy on a trunk reads as a tree from front, three-quarter and silhouette; top view reads as a lumpy foliage blob - recognisable from all angles at 64 px.",
+   "V2": "Only two big masses (canopy, trunk); branches are hidden or a tiny stub, no secondary canopy clumps, roots or bark detail - hierarchy is only partial.",
+   "V3": "Generic lollipop proportion: straight uniform-width trunk with a boxy base, canopy is a single lobed blob; partly stylised but stiff.",
+   "V4": "Canopy lobes are soft, but the trunk base is a hard stepped skirt with a sharp crease and dark band, and the branch stub at the fork is an abrupt dark notch - inconsistent.",
+   "V5": "Canopy close-up shows a stair-stepped, notched vertex-colour boundary between the light crown and the darker lobes plus visible quad-grid faceting; trunk base has a hard crease and the fork shows a dark notch.",
+   "V6": "Disciplined: foliage in two green values plus bark brown; autumn and blossom colourways keep the same structure.",
+   "V7": "1868 tris vs tree target 2000 (ceiling 5000) - under target.",
+   "V8": "One white LF_VertexColor material and the hue rules match, but the jagged colour mask, grid faceting and boxy trunk flare miss the smooth fused-shell organic standard.",
+   "V9": "Static scenery Studio line correct: Anchored, Hull (trunk-only part suggested for walk-through), CanTouch off, MeshPart white, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Stair-stepped notched vertex-colour boundary on the canopy crown",
+   "Visible quad-grid faceting across canopy lobes",
+   "Hard stepped crease at trunk base flare",
+   "Dark notch where branch stub meets trunk under the canopy"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Smooth the canopy colour transition (follow lobe contours or blend across more vertices) and add weighted normals / subdivision to remove grid faceting",
+   "Rebuild the trunk with a smooth root flare, taper and visible branch fork into the canopy",
+   "Break the canopy into 3-5 distinct clumps with a lighter top value so medium/small forms read"
+  ]
+ ],
+ "params": {
+  "Ht": 2.593,
+  "Rc": 3.491,
+  "puffs": 7,
+  "lean": -0.158,
+  "r0": 0.643,
+  "branches": 2
+ },
+ "tris": 1868,
+ "budget_class": "tree",
+ "date": "2026-10-28"
+}

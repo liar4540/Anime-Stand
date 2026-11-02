@@ -1,0 +1,99 @@
+{
+ "asset": "Chair_01",
+ "kit": "Furniture",
+ "type": "Chair",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Ladder-back chair with gold finials reads instantly from front, three-quarter, top and silhouette; front outline symmetric, A15 X error 0.0.",
+   "V2": "Clear: big = seat slab and back frame, medium = three back slats, top rail and stretchers, small = gold ball finials and chamfered edges.",
+   "V3": "Mostly stiff primitives: straight untapered square legs and posts, flat seat with no dish or overhang shaping, plain boxed slats; only the finials add stylisation.",
+   "V4": "Consistent ~0.05-stud chamfers on seat rim, posts, rails and slats that catch the light (seat and back close-ups).",
+   "V5": "Wood surfaces are clean, but the gold finial balls are visibly low-poly: faceted outline and a flat polygon cap on top (finial close-up, studio and flat) - minor stray faceting.",
+   "V6": "Disciplined: wood hue in 3 values (light slats/seat, mid posts, dark top rail) plus gold accent; painted colourways keep the structure.",
+   "V7": "548 tris vs medium target 2000 / ceiling 4000 - well under target.",
+   "V8": "Single LF_VertexColor material, smooth shading, chamfered hard edges, wood hue with kit gold #E8AE38-style finials - matches the furniture kit.",
+   "V9": "Studio line correct: Anchored, CollisionFidelity Box, CanTouch off, CastShadow on, Color white, SmoothPlastic, origin bottom-centre (with note to add a Seat if sittable)."
+  }
+ ],
+ "artifacts": [
+  [
+   "faceted low-poly finial spheres with a flat top cap"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Raise the finial sphere segment count (budget allows) so the gold balls read round with no flat cap",
+   "Add stylisation to the frame: taper or turn the legs, slightly splay or curve the back posts, give the seat a soft dish or rounded front edge",
+   "Vary slat widths or add a shaped top rail so the back reads less like a plain ladder of boxes"
+  ]
+ ],
+ "params": {
+  "W": 2.235,
+  "Dp": 2.103,
+  "Hs": 1.983,
+  "Hb": 2.414,
+  "back": "ladder",
+  "legs": "square"
+ },
+ "tris": 548,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

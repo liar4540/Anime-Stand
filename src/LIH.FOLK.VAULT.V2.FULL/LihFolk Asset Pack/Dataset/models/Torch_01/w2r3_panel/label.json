@@ -1,0 +1,165 @@
+{
+ "asset": "Torch_01",
+ "kit": "Furniture",
+ "type": "Torch",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 6.7,
+ "grades": [
+  1,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   1,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  6.7,
+  6.7,
+  6.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.7,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Reads as a wall torch from front, 3/4 and silhouette (handle, cup, flame, back plate), but the top view is an unreadable orange blob and the flame reads more like a gem/crystal tip than fire at 64 px.",
+   "V2": "Clear: handle and flame (big), cup and wall plate (medium), iron ring, gold cup lip (small).",
+   "V3": "Handle, cup and plate are plain primitives; the flame is a stiff faceted cone with hard horizontal colour bands rather than a stylised licking flame shape.",
+   "V4": "Wall plate and cup have soft chamfers, but the flame is hard-faceted with sharp creases while the handle is smooth, so edge treatment is inconsistent.",
+   "V5": "Stray faceting and lumpy creases across the flame, and the gold cup-lip band has a ragged, jagged top edge where it meets the flame (flame and cup close-ups, studio and flat).",
+   "V6": "Disciplined: one flame hue in 2-3 values, wood handle, ink iron cup/plate/ring, gold lip; colourways swap only the flame.",
+   "V7": "576 tris vs 600 small target.",
+   "V8": "One LF_VertexColor material with ink iron and gold accents, but the crystal-faceted flame departs from the kit's smooth weighted-normal shading.",
+   "V9": "Anchored, CanCollide off, CanTouch off, MeshPart.Color white, SmoothPlastic, origin back-centre for wall mounting; all gates pass (PointLight noted for placement)."
+  },
+  {
+   "V1": "Front and three-quarter read clearly as a wall torch (flame, cup, handle, back plate), but the flame is a rounded faceted cone that reads more like a gem or ice-cream scoop than fire, and the top view is an unreadable lump.",
+   "V2": "Clear big/medium/small: flame + handle as the big masses, cup and back plate medium, iron ring and the gold drip lip at the cup rim as small accents.",
+   "V3": "Handle is a plain straight tapered cylinder and the plate a flat box; the flame has no tongues or lean, so only partly stylised.",
+   "V4": "Back plate, cup rim and ring carry visible soft chamfers that catch light, but the flame is hard-faceted with sharp creases, so edge treatment is inconsistent across parts.",
+   "V5": "Close_flame_studio shows irregular faceted patches and pinched creases across the flame shell (not a clean designed facet pattern); handle, cup and plate are clean.",
+   "V6": "Flame in two orange values plus gold lip, wood-brown handle, ink iron; colourways (teal, violet) swap only the flame hue - disciplined.",
+   "V7": "576 tris vs small target 600 (ceiling 1500): at target.",
+   "V8": "Palette (gold, ink, wood) and plate/cup chamfers match the kit, but the hard-faceted flame breaks the smooth weighted-normal look.",
+   "V9": "Studio line is correct for a wall light: anchored, CanCollide/CanTouch off, back-centre origin, PointLight note, MeshPart white with vertex colours."
+  },
+  {
+   "V1": "Front and three-quarter read as a wall torch (handle, cup, plate), but the flame is a closed faceted cone that reads as a crystal/carrot tip, and the top view is an unreadable orange lump.",
+   "V2": "Big (handle + flame) and medium (cup, wall plate, ring) exist, but small detail is limited to a jagged gold strip; the flame has no internal tongue shapes.",
+   "V3": "Handle, cup and plate are straight primitives; the flame is a stiff closed cone with one hard horizontal colour band instead of a stylised flickering shape.",
+   "V4": "Wall plate and ring have soft bevels, but the flame and cup show raw facets and the cup lip is a ragged strip rather than a consistent chamfer.",
+   "V5": "Stray faceting across the flame cone and cup in the flame/cup close-ups, plus the ragged gold rim strip between cup and flame.",
+   "V6": "One flame hue in two values, ink cup/plate/ring, brown handle, gold trim; disciplined, colourways swap only the flame.",
+   "V7": "576 tris vs small target 600.",
+   "V8": "Kit palette (ink iron, gold, wood) is right, but the faceted lumpy flame clashes with the smooth weighted-normal kit finish.",
+   "V9": "Wall light: Anchored, CanCollide/CanTouch off, MeshPart.Color white, SmoothPlastic, origin back-centre, PointLight note; A1-A18 pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Hard stray faceting/creases over the flame mesh",
+   "Ragged jagged edge on the gold band where the flame meets the cup",
+   "Abrupt horizontal colour band seam across the flame"
+  ],
+  [
+   "Patchy faceting / pinched creases across the flame shell in close_flame_studio",
+   "Ring sits loosely around the handle with a small visible gap (0.012 studs)"
+  ],
+  [
+   "faceted lumpy flame cone",
+   "ragged gold strip between cup and flame",
+   "faceted cup sides"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Remodel the flame as a smooth teardrop with 2-3 licking tongues and a vertical inner-to-outer colour gradient (core light, tips darker)",
+   "Clean the gold lip into a crisp ring and seat the flame base cleanly inside the cup",
+   "Add a slight flare or wrap detail to the handle and a chamfered bracket arm so the lower half reads less like primitives"
+  ],
+  [
+   "Rebuild the flame as a smooth fused shell with 2-3 flicking tongues and a slight lean so it reads as fire at 64 px",
+   "Seat the iron ring snugly on the handle and give the arm a clearer link to the plate",
+   "Add a subtle taper/flare or a wrap band on the handle to break the plain cylinder"
+  ],
+  [
+   "Rebuild the flame as a smooth teardrop with 2-3 swept flame tongues and a lighter inner core value",
+   "Replace the ragged gold strip with a clean chamfered rim band on the cup",
+   "Add segments / weighted normals to the cup so it shades smoothly"
+  ]
+ ],
+ "params": {
+  "Lh": 1.786,
+  "tilt": 15.488,
+  "lobes": 3,
+  "twist": 84.292,
+  "Hf": 0.942
+ },
+ "tris": 576,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

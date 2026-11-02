@@ -1,0 +1,178 @@
+{
+ "asset": "Chair_01",
+ "kit": "Furniture",
+ "type": "Chair",
+ "seed": 1,
+ "params": {
+  "W": 2.235,
+  "Dp": 2.103,
+  "Hs": 1.983,
+  "Hb": 2.414,
+  "back": "ladder",
+  "legs": "square"
+ },
+ "tris": 884,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 2.234,
+  "y": 2.102,
+  "z": 4.673
+ },
+ "origin": "bottom",
+ "symmetric": "X",
+ "symmetry_error": {
+  "X": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "toprail_on_post",
+   "gap": 0.0,
+   "penetration": 0.09,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 246,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "oak",
+  "colourways": [
+   {
+    "name": "oak",
+    "hue": "oak",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#D2A56A",
+     "h": "#A9784A",
+     "h_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "walnut",
+    "hue": "walnut",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#A47650",
+     "h": "#7A5236",
+     "h_dk": "#4E3424"
+    }
+   },
+   {
+    "name": "painted_teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "painted_crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "painted_royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   }
+  ]
+ },
+ "studio": "Furniture prop: Anchored; CollisionFidelity Box; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre; add a Seat at seat height if sittable",
+ "notes": "wooden chair: chamfered seat, square front legs, square back posts with gold ball finials, ladder back, low stretchers",
+ "features": [
+  [
+   "back",
+   [
+    0.0,
+    0.831,
+    3.846
+   ],
+   1.2
+  ],
+  [
+   "seat",
+   [
+    0.67,
+    -0.631,
+    1.982
+   ],
+   1.0
+  ],
+  [
+   "finial",
+   [
+    0.897,
+    0.831,
+    4.546
+   ],
+   0.5
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r3/Chair_01/Chair_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r3/Chair_01/Chair_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r3/Chair_01/Chair_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r3/Chair_01/Chair_01_silhouette.png",
+  "close_back_studio": "Models/Kits/_drafts/r3/Chair_01/Chair_01_close_back_studio.png",
+  "close_back_flat": "Models/Kits/_drafts/r3/Chair_01/Chair_01_close_back_flat.png",
+  "close_seat_studio": "Models/Kits/_drafts/r3/Chair_01/Chair_01_close_seat_studio.png",
+  "close_seat_flat": "Models/Kits/_drafts/r3/Chair_01/Chair_01_close_seat_flat.png",
+  "close_finial_studio": "Models/Kits/_drafts/r3/Chair_01/Chair_01_close_finial_studio.png",
+  "close_finial_flat": "Models/Kits/_drafts/r3/Chair_01/Chair_01_close_finial_flat.png",
+  "cw_walnut": "Models/Kits/_drafts/r3/Chair_01/Chair_01_cw_walnut.png",
+  "cw_painted_teal": "Models/Kits/_drafts/r3/Chair_01/Chair_01_cw_painted_teal.png",
+  "cw_painted_crimson": "Models/Kits/_drafts/r3/Chair_01/Chair_01_cw_painted_crimson.png",
+  "cw_painted_royal": "Models/Kits/_drafts/r3/Chair_01/Chair_01_cw_painted_royal.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_furniture.py:Chair",
+ "made": "2026-10-28"
+}

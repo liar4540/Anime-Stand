@@ -1,0 +1,218 @@
+{
+ "asset": "DeadTree_01",
+ "kit": "Nature",
+ "type": "DeadTree",
+ "seed": 1,
+ "params": {
+  "H": 5.005,
+  "r0": 0.706,
+  "twist": 66.327,
+  "branches": 5,
+  "lean": -0.135
+ },
+ "tris": 1368,
+ "budget_class": "tree",
+ "budget_target": 2000,
+ "budget_ceiling": 5000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 4.419,
+  "y": 3.357,
+  "z": 5.871
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "branch0_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.42045,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "twig0_on_branch",
+   "gap": 0.0,
+   "penetration": 0.12781,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "branch1_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.36587,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "twig1_on_branch",
+   "gap": 0.0,
+   "penetration": 0.10561,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "branch2_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.34271,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "branch3_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.31535,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "twig3_on_branch",
+   "gap": 0.0,
+   "penetration": 0.0832,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "branch4_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.26717,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 152,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "oak",
+  "colourways": [
+   {
+    "name": "oak",
+    "hue": "oak",
+    "roles": {
+     "h_lt": "#D2A56A",
+     "h": "#A9784A",
+     "h_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "ash",
+    "hue": "ash",
+    "roles": {
+     "h_lt": "#C6B9A4",
+     "h": "#978A76",
+     "h_dk": "#655A4C"
+    }
+   },
+   {
+    "name": "redwood",
+    "hue": "redwood",
+    "roles": {
+     "h_lt": "#CF8159",
+     "h": "#A2573A",
+     "h_dk": "#6C3624"
+    }
+   },
+   {
+    "name": "birch",
+    "hue": "birch",
+    "roles": {
+     "h_lt": "#E9E0CB",
+     "h": "#BDB09A",
+     "h_dk": "#7D705F"
+    }
+   },
+   {
+    "name": "walnut",
+    "hue": "walnut",
+    "roles": {
+     "h_lt": "#A47650",
+     "h": "#7A5236",
+     "h_dk": "#4E3424"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "dead tree: twisted (66 deg) ridged trunk with 4 root buttresses, 5 tapering branches curling up, twigs, weathered light tips",
+ "features": [
+  [
+   "roots",
+   [
+    -0.019,
+    -0.202,
+    0.403
+   ],
+   1.2
+  ],
+  [
+   "fork",
+   [
+    -0.094,
+    -0.14,
+    2.599
+   ],
+   1.5
+  ],
+  [
+   "crown",
+   [
+    -0.185,
+    -0.212,
+    4.434
+   ],
+   1.6
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_silhouette.png",
+  "close_roots_studio": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_close_roots_studio.png",
+  "close_roots_flat": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_close_roots_flat.png",
+  "close_fork_studio": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_close_fork_studio.png",
+  "close_fork_flat": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_close_fork_flat.png",
+  "close_crown_studio": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_close_crown_studio.png",
+  "close_crown_flat": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_close_crown_flat.png",
+  "cw_ash": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_cw_ash.png",
+  "cw_redwood": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_cw_redwood.png",
+  "cw_birch": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_cw_birch.png",
+  "cw_walnut": "Models/Kits/_drafts/r3/DeadTree_01/DeadTree_01_cw_walnut.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_nature.py:DeadTree",
+ "made": "2026-10-28"
+}

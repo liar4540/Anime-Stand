@@ -1,0 +1,25 @@
+{
+ "id": "planks_oak_012",
+ "kind": "materials",
+ "score": 8.8,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 1,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m7",
+ "reviewer_notes": [
+  "Hairline seams, no plank bevels; faces read flat",
+  "Flat planks, hairline seams, no bevel; knots repeat as landmarks",
+  "thin flat gaps, almost no plank bevel or edge wear",
+  "Hairline seams, no plank bevels or edge wear; faces read flat",
+  "Planks flat with hairline seams; no edge bevel or wear",
+  "thin flat seams, minimal plank bevel, no edge wear"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

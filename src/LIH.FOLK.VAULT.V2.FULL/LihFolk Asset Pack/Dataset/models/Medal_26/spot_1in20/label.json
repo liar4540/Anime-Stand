@@ -1,0 +1,98 @@
+{
+ "asset": "Medal_26",
+ "kit": "Emblems",
+ "type": "Medal",
+ "seed": 26,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 10.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front/silhouette read instantly as a medal: clasp bar, tapering ribbon, open ring and octagonal token; three-quarter and top (thin bar) stay coherent; outline symmetric, A15 X/Y error 0.0.",
+   "V2": "Clear hierarchy: big octagon token + long ribbon, medium gold frame/clasp bar/ring, small raised cream diamond emblem.",
+   "V3": "Confident stylised proportions: chunky frame vs recessed teal field, strongly tapered ribbon, oversized clasp bar; ribbon and ring centred on token axis (offset 0.0).",
+   "V4": "Consistent small chamfers on clasp bar, token frame, inner recess lip and diamond emblem catch the light in studio close-ups; no razor or blobby edges.",
+   "V5": "Close-ups (token studio/flat, ribbon studio) show clean flat faces, no pinches, seams, z-fighting or stray faceting; A17/A18 pass, 0 flipped faces, 0 cap overlaps.",
+   "V6": "Disciplined: gold accent + one teal hue in two values + warm cream emblem; colourways swap only the hue.",
+   "V7": "584 tris vs small-class target 600 (ceiling 1500): at/under target.",
+   "V8": "One white vertex-colour material, kit gold/cream/teal palette, ~kit chamfer size, smooth shading; matches the kit medals.",
+   "V9": "Studio line correct: CanCollide/CanQuery off, Massless when worn, Box fidelity, MeshPart.Color white, SmoothPlastic, origin at clasp hang point."
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Optional: add a subtle stripe or edge band to the plain ribbon slab for extra medium-scale interest",
+   "Optional: slightly enlarge the diamond emblem so it reads more strongly at 64 px"
+  ]
+ ],
+ "params": {
+  "sides": 8,
+  "R": 0.625,
+  "h": 0.1,
+  "relief": 0.04,
+  "rw": 0.362,
+  "rl": 1.059,
+  "stripe": false,
+  "emblem": "diamond"
+ },
+ "tris": 584,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

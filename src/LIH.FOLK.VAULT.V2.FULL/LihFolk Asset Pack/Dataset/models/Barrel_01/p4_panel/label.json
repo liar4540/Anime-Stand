@@ -1,0 +1,166 @@
+{
+ "asset": "Barrel_01",
+ "kit": "Props",
+ "type": "Barrel",
+ "seed": 1,
+ "attempt": "p4_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  9.3,
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette reads as a barrel from front, 3/4 and top: bulged body, flared rim, two hoop bands and nail nubs break the outline; front outline symmetric (A15 X/Y error 0.0).",
+   "V2": "Clear hierarchy: big bulged stave body, medium chunky gold hoops and chamfered rim lip, small ink nails (4 per hoop) plus alternating stave values.",
+   "V3": "Confident stylised barrel: strong belly bulge, tapered ends below/above the hoops, oversized hoops and rim; reads toy-like rather than a straight primitive cylinder.",
+   "V4": "Consistent bevels: hoops have chamfered top/bottom edges that catch a highlight, rim lip chamfered, nails faceted; matches the ~0.045 kit chamfer look.",
+   "V5": "Mostly clean smooth shading on staves and hoops, but the inner rim edge is notched/scalloped at stave seams (top view and lid flat close-up) with a dark seam line and a bright smear where the lip meets the recessed head.",
+   "V6": "Disciplined: one wood hue in 3 values (light/dark staves, dark interior), gold accent hoops, ink nails; colourways swap the hue cleanly.",
+   "V7": "1728 tris vs medium target 2000 (ceiling 4000): at or under target.",
+   "V8": "One white LF_VertexColor material, kit gold + ink accents, chamfered edges, smooth shading; nails seated (0.055 penetration, no gap); looks like the same kit as the PipeRun anchor.",
+   "V9": "Studio line correct: Anchored, Hull collision (or Cylinder part), CanTouch off, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates A1-A18 pass."
+  },
+  {
+   "V1": "Reads instantly as a barrel from front, three-quarter and top: bulged body, flared hoop bands and nail nubs break the outline in the silhouette; front outline is mirror-symmetric (A15 X/Y error 0.0).",
+   "V2": "Clear tiers: big bulged stave body, medium gold hoops and chunky inward-tapered rim with recessed head, small ink hex nails (4 per hoop) seated on the hoops (gap 0, all seated).",
+   "V3": "Confident stylised proportions: chunky bulge, strongly chamfered top chime and rounded base, hoops sized to read at distance; not a stiff cylinder.",
+   "V4": "Hoops show a consistent chamfer that catches a bright highlight on the top edge, rim chime is bevelled, nails are faceted hex heads; bevel scale consistent across parts.",
+   "V5": "Mostly clean smooth shading, but the inner head/stave junction is a wavy, notched dark ring in the top view and lid close-ups, and faint vertical facet lines show on the stave bulge in the staves close-up (minor).",
+   "V6": "Disciplined: one warm wood hue in light/mid/dark stave values, gold accent hoops, ink nails; strong value contrast between bands and staves.",
+   "V7": "1728 tris against a medium-class target of 2000 (ceiling 4000).",
+   "V8": "One white vertex-colour material (LF_VertexColor, SmoothPlastic); gold accent + ink bolts + wood hue matches the kit language (same gold-flange/ink-bolt treatment as the pipe anchor); colourways swap cleanly.",
+   "V9": "Studio line correct: Anchored, Hull collision, CanTouch off, CastShadow on, MeshPart.Color white for vertex colours, SmoothPlastic, origin bottom-centre (A12 pass)."
+  },
+  {
+   "V1": "Front and silhouette outline read instantly as a barrel (bulged belly, rolled lip, hoop and nail nubs on both sides, symmetric outline, A15 X/Y error 0.0); top view reads as a hooped ring, so it is readable from all angles.",
+   "V2": "Clear tiers: big bulged stave body, medium chunky gold hoops and rolled top lip, small hex ink nails (4 per hoop) that the earlier version lacked.",
+   "V3": "Confident stylised barrel: pronounced belly, thick gold bands and an over-rounded lip give a chunky toy read, with no stiff-primitive look; nothing floating (nails seated, gap 0).",
+   "V4": "Hoops carry a consistent chamfer that catches a highlight band on their top and bottom edges, the lip is rounded and the nails are bevelled hex heads; bevel scale looks consistent across parts.",
+   "V5": "Visible minor artifact: the inner edge of the opening is wavy/notched rather than a clean ring (top view, lid close-up), and a light pinch highlight sits on the inner lip at the top of the lid studio close-up; the stave body and hoops themselves shade cleanly.",
+   "V6": "Disciplined: one wood hue in about three values (light stave, dark stave, dark interior) plus gold accent and ink-dark nails; the painted colourways keep the same structure.",
+   "V7": "1728 tris against a medium-class target of 2000 (ceiling 4000), at or under target.",
+   "V8": "One white vertex-colour material, kit gold for hoops, ink-dark nails, warm brown as the single hue, smooth shading with chamfered edges; matches the kit style of the pipe anchor.",
+   "V9": "Studio line is correct: Anchored, Hull collision (or Cylinder part), CanTouch off, CastShadow on, MeshPart.Color white for vertex colours, SmoothPlastic, origin bottom-centre; all gates A1-A18 pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Inner rim edge is notched/stepped at stave seams instead of a clean ring (Barrel_01_top.png, Barrel_01_close_lid_flat.png left and right of the opening)",
+   "Dark seam line and bright specular smear where the rim lip meets the recessed head (Barrel_01_close_lid_studio.png, upper right and left of opening)",
+   "Gate reports 64 cross-shell overlaps (hoops/nails into staves); not visible in renders"
+  ],
+  [
+   "Inner head-to-stave junction reads as an irregular, notched dark ring in the top view and lid close-ups (head edge not following the inner stave wall cleanly)",
+   "Faint vertical faceting on the stave bulge under studio light in the staves close-up"
+  ],
+  [
+   "Inner edge of the barrel opening is irregular/wavy (visible notches in the top view and the lid studio/flat close-ups) instead of a clean circle",
+   "Small bright pinch highlight on the inner lip at the back of the opening (lid studio close-up)",
+   "Low radial segment count shows as polygonal facets on the rim lip and hoop outline in close-ups (mild)",
+   "gate_report lists 64 cross-shell overlaps (nails pushed 0.055 studs into hoops; intentional and allowed, noted only)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Make the inner rim lip one continuous chamfered ring (or weld stave tops) so the opening edge is a clean circle without notches at stave seams",
+   "Add a small chamfer/fillet between the inner rim wall and the recessed head to remove the dark seam and the specular smear",
+   "Optionally add a shallow geometric groove at stave seams so stave breaks read in silhouette lighting, not only via vertex colour"
+  ],
+  [
+   "Clean the inner head seam: match the head disc segment count/radius to the inner stave wall and add a single even chamfered croze so the top view shows a clean concentric ring",
+   "Smooth the stave bulge faceting (weighted normals or a couple more height loops on the bulge) so the staves read as one continuous curve",
+   "Optional small-scale detail for richer hierarchy: shallow stave grooves or a bung plug on one stave, kept within the 2000-tri target"
+  ],
+  [
+   "Rebuild the inner lip/opening as a clean concentric ring (consistent inner radius per segment, no notches) and fix the normals there to remove the pinch highlight",
+   "Raise the radial segment count slightly on the lip and hoops (budget allows: 1728 of 2000) so the outline reads round in close-ups",
+   "Optional: add a shallow stave groove or slight per-stave height variation on the lip for extra small-scale detail without breaking the palette"
+  ]
+ ],
+ "params": {
+  "H": 2.693,
+  "R": 1.029,
+  "bulge": 0.2,
+  "staves": 10,
+  "hoop_role": "acc"
+ },
+ "tris": 1728,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

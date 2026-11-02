@@ -1,0 +1,164 @@
+{
+ "asset": "Chest_01",
+ "kit": "Furniture",
+ "type": "Chest",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.0,
+  9.3,
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.3,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Domed treasure chest reads from front, 3/4, top and silhouette (rounded lid hump, feet); front outline symmetric with lock centred between the two straps (A15 X 0.0, lock seated).",
+   "V2": "Clear: body + domed lid (big), two wrap straps and plank rows (medium), gold lock plate with ink keyhole and side ring handle (small).",
+   "V3": "Chunky domed lid, slightly overhanging, bold straps and oversized lock give a confident stylised read.",
+   "V4": "Consistent chamfers on lid rim, planks, straps and lock plate catch light in all close-ups.",
+   "V5": "At the front corners the plank rows poke past the strap as small stub ends and the strap outline steps/notches where it meets the lid (visible in band studio and flat close-ups); the domed lid also shows visible facet bands from a low segment count (lid close-up).",
+   "V6": "Disciplined: wood hue in 3 values, one metal for straps, gold lock, ink keyhole/ring; colourways keep value structure.",
+   "V7": "812 tris vs 2000 medium target.",
+   "V8": "One LF_VertexColor material, smooth shading, chamfers and gold/ink accents match, but the straps read as a saturated slate-blue rather than the kit's neutral steel grey.",
+   "V9": "Anchored, Box collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates pass (ProximityPrompt noted for placement)."
+  },
+  {
+   "V1": "Domed lid, two wrap bands, lock plate and side ring read as a treasure chest from front, three-quarter, top and silhouette; front outline symmetric (A15 X error 0.0).",
+   "V2": "Big body + domed lid, medium wrap bands and plank rows, small gold lock plate with keyhole and ink side ring - clear hierarchy.",
+   "V3": "Chunky stylised chest: rounded overhanging lid, thick bands, oversized lock plate; proportions read confidently.",
+   "V4": "Consistent soft chamfers on lid edges, bands, planks and lock plate; highlights catch along every edge in close_lock_studio.",
+   "V5": "Front plank ends poke out beside the wrap bands as small stray tabs (close_band_studio/flat), and the lid end-cap arc shows visible low-segment faceting along its curve.",
+   "V6": "Wood in three values (lid, planks, side), steel-grey bands, gold lock, ink keyhole/ring; painted colourways keep the same structure.",
+   "V7": "812 tris vs medium target 2000: well under target.",
+   "V8": "One vertex-colour material, kit gold/ink/steel accents and chamfer size match the kit.",
+   "V9": "Studio line correct: anchored, Box collision, CanTouch off, bottom-centre origin, MeshPart white, ProximityPrompt note."
+  },
+  {
+   "V1": "Domed-lid chest with two straps and a front lock reads clearly from front, three-quarter and silhouette (dome + feet); top view reads via strapped lid and lock tab.",
+   "V2": "Big (body + domed lid), medium (two steel straps, plank rows, side ring handle), small (gold lock plate, keyhole, feet) hierarchy is clear.",
+   "V3": "Chunky domed lid overhanging a slightly tapered plank body with oversized lock and straps reads as confident stylised treasure chest; X symmetry 0.0.",
+   "V4": "Consistent chamfers catch light on lid rim, planks, straps and lock plate in the band and lock close-ups.",
+   "V5": "Lid end cap shows visible segment faceting on the dome arc in the lid studio/flat close-ups, and plank ends stick out as small stubs beside the strap on the body corner.",
+   "V6": "One wood hue in three values, steel-grey straps, gold lock, ink ring/keyhole; disciplined across colourways.",
+   "V7": "812 tris vs medium target 2000.",
+   "V8": "Vertex-coloured wood, kit steel grey, gold and ink accents, chamfered edges match the furniture kit.",
+   "V9": "Anchored, Box collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre, ProximityPrompt note; A1-A18 pass, lock seated."
+  }
+ ],
+ "artifacts": [
+  [
+   "Plank-row stub ends protruding past the straps at the front corners",
+   "Strap outline notch/step at the lid-body junction",
+   "Visible facet banding across the domed lid curve"
+  ],
+  [
+   "Front plank ends protrude as stray tabs next to the wrap bands",
+   "Low-segment faceting along the lid dome end-cap arc"
+  ],
+  [
+   "faceted dome arc on lid end cap",
+   "plank-end stubs protruding beside the strap at body corners"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Trim the front plank rows to end under the straps (or under a corner bracket) so no stubs poke past them, and make the strap a continuous profile across the lid seam",
+   "Add a few segments to the lid arc (or weighted normals) to remove facet bands",
+   "Shift the strap colour to a neutral steel grey (or ink iron) to match the kit metal palette; consider plank lines on the sides"
+  ],
+  [
+   "Trim the front planks to stop under the bands (or wrap the bands over them) so no plank tabs stick out",
+   "Add a few segments to the lid dome so its arc and the band arc read smooth",
+   "Add small corner brackets or rivets on the bands for an extra small-detail tier"
+  ],
+  [
+   "Add segments or weighted normals to the lid arc so the dome end shades smoothly",
+   "Trim the plank ends flush with the body corner (or cap them with corner irons)",
+   "Add corner brackets in steel/gold for extra small-scale detail"
+  ]
+ ],
+ "params": {
+  "L": 3.441,
+  "Dp": 2.368,
+  "Hb": 1.631,
+  "band": "m_dk",
+  "lid": "round"
+ },
+ "tris": 812,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

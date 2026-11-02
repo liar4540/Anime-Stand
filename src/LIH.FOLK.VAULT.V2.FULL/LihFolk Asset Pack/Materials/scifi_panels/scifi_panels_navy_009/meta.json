@@ -1,0 +1,120 @@
+{
+ "id": "scifi_panels_navy_009",
+ "family": "scifi_panels",
+ "theme": "navy",
+ "index": 9,
+ "seed": 9070.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_scifi_panels.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)",
+  "Emissive": "Emissive.png (mask for SurfaceAppearance emissive / Neon overlay parts)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Metal",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "scifi",
+  "panels",
+  "hull",
+  "space",
+  "tech",
+  "navy"
+ ],
+ "colors": [
+  [
+   "#687c9f",
+   0.43
+  ],
+  [
+   "#5b6f8e",
+   0.313
+  ],
+  [
+   "#242c3a",
+   0.203
+  ],
+  [
+   "#475670",
+   0.054
+  ]
+ ],
+ "params": {
+  "C1": "#6a7ea1",
+  "C2": "#526682",
+  "C3": "#232b39",
+  "C4": "#7aeaff",
+  "C5": "#ff6d55",
+  "Grid": 4.0,
+  "Groove": 0.008867317629529938,
+  "Bev": 0.011003651673673467,
+  "Lights": 0.343538075868528,
+  "Vents": 0.12140385453000307,
+  "Hazard": 0.010502622997402521,
+  "MetalBase": 0.0,
+  "Wear": 0.531583474158586,
+  "Seed": 9070.0
+ },
+ "normal_depth_px": 26.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.105,
+   "Color_Neutral": 0.114,
+   "Normal": 0.177,
+   "Roughness": 0.009,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.501,
+   0.5,
+   0.967
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.002,
+   0.003
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 42.3,
+   "diel_luma_p99": 126.3,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.498,
+   "rough_min": 0.337,
+   "rough_expected": [
+    0.3,
+    0.7
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.0765,
+  "M_neutral_mean": 0.74,
+  "M_neutral_range_p5_p95": [
+   0.316,
+   0.901
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 41.1,
+ "preview": "preview.jpg"
+}

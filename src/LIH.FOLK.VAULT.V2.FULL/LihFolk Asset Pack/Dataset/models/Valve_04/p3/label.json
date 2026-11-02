@@ -1,0 +1,102 @@
+{
+ "asset": "Valve_04",
+ "kit": "Props",
+ "type": "Valve",
+ "seed": 4,
+ "attempt": "p3",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Reads as a gate valve from every view: front outline is mirror-symmetric (A15 X/Y error 0.0) with handwheel, bonnet, ball body and twin flanges distinct; top view shows the spoked wheel over the body with both flanges; solid silhouette keeps wheel ring, bonnet and flange discs separate.",
+   "V2": "Clear tiers: big ball body + pipe stubs, medium flanges / bonnet collar / handwheel rim, small hex bolts, hub cap and steel stem.",
+   "V3": "Confident stylised proportions: oversized bulbous body, chunky gold flanges and a wide wheel on a short bonnet; nothing reads as a raw primitive.",
+   "V4": "Chamfers on flange rims, both bonnet collars, wheel rim and hub catch a consistent highlight in the close-ups; bolts are bevelled hex heads; only the flat spoke strips have square-cut ends.",
+   "V5": "Mostly clean, but minor issues: the dished flange face shows a smeared dark blotch in its centre (flange close-up), the spoke ends sit visibly on top of the rim in the handwheel close-ups, and the body sphere outline is faceted at the lower edge.",
+   "V6": "Disciplined: one teal hue in two values (dark body, lighter pipes/bonnet), gold accent, ink bolts, one steel-grey stem; colourways swap only the hue cleanly.",
+   "V7": "1960 tris vs medium target 2000 (ceiling 4000): at target.",
+   "V8": "One white LF_VertexColor material with vertex colours, kit gold/ink/steel + single hue, bevel scale and smooth shading match the Pipe_Run kit piece.",
+   "V9": "Studio line correct: Anchored, Hull collision, CanTouch off, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Flange end faces: concave dished cap renders with a smeared/pinched dark patch in the centre (close_flange_studio)",
+   "Handwheel spokes: ends overlap and show on top of the rim instead of terminating inside the rim wall (close_handwheel_studio/flat)",
+   "Body sphere silhouette visibly faceted along its lower outline (close_body_studio)",
+   "Flange faces are closed discs with no bore, so the pipe end reads as capped"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Rebuild the flange face cap: flat face with a chamfered bore recess (or a cleanly triangulated shallow dish) to remove the smeared shading",
+   "Trim the spokes to end inside the rim cross-section (centred at rim mid-height) so no spoke end shows on the rim top, and chamfer the spoke ends",
+   "Add a few segments to the body sphere (offset by trimming hidden pipe-stub or bolt geometry) to smooth its silhouette while staying near the 2000-tri target"
+  ]
+ ],
+ "params": {
+  "R": 0.301,
+  "Lp": 1.473,
+  "body": 0.668,
+  "bonnet": 0.598,
+  "wheel": 0.692,
+  "spokes": 4
+ },
+ "tris": 1960,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

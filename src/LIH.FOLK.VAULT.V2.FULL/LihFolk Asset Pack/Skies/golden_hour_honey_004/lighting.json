@@ -1,0 +1,276 @@
+{
+ "id": "golden_hour_honey_004",
+ "family": "golden_hour",
+ "theme": "honey",
+ "Lighting": {
+  "LightingStyle": "Soft",
+  "Brightness": 2.2,
+  "ClockTime": 17.6,
+  "GeographicLatitude": 30,
+  "Ambient": [
+   91,
+   70,
+   70
+  ],
+  "OutdoorAmbient": [
+   131,
+   100,
+   90
+  ],
+  "ColorShift_Top": [
+   253,
+   225,
+   168
+  ],
+  "ColorShift_Bottom": [
+   60,
+   40,
+   80
+  ],
+  "EnvironmentDiffuseScale": 0.4,
+  "EnvironmentSpecularScale": 0.0,
+  "ExposureCompensation": 0.0,
+  "GlobalShadows": true
+ },
+ "Atmosphere": {
+  "Density": 0.35,
+  "Offset": 0.2,
+  "Color": [
+   226,
+   201,
+   178
+  ],
+  "Decay": [
+   207,
+   202,
+   193
+  ],
+  "Glare": 0.4,
+  "Haze": 1.5
+ },
+ "Sky": {
+  "CelestialBodiesShown": false,
+  "StarCount": 0,
+  "SunAngularSize": 21,
+  "MoonAngularSize": 11,
+  "SkyboxOrientation": [
+   0,
+   0,
+   0
+  ],
+  "Faces": {
+   "SkyboxBk": "SkyBk.png",
+   "SkyboxDn": "SkyDn.png",
+   "SkyboxFt": "SkyFt.png",
+   "SkyboxLf": "SkyLf.png",
+   "SkyboxRt": "SkyRt.png",
+   "SkyboxUp": "SkyUp.png"
+  }
+ },
+ "ColorCorrection": {
+  "Brightness": 0.0,
+  "Contrast": 0.1,
+  "Saturation": 0.12,
+  "TintColor": [
+   255,
+   255,
+   255
+  ]
+ },
+ "Bloom": {
+  "Intensity": 0.4,
+  "Size": 24,
+  "Threshold": 1.6
+ },
+ "Measured": {
+  "horizon": [
+   218,
+   201,
+   184
+  ],
+  "horizon_sun_side": [
+   231,
+   202,
+   174
+  ],
+  "horizon_far_side": [
+   207,
+   202,
+   193
+  ],
+  "zenith": [
+   217,
+   203,
+   191
+  ]
+ },
+ "PaintedLight": {
+  "direction_roblox": [
+   -0.0845,
+   0.2031,
+   -0.9755
+  ],
+  "kind": "sun"
+ },
+ "Notes": "Painted sun/moon in the faces, so CelestialBodiesShown=false avoids two suns. To line the engine sun up with the painted one, rotate SkyboxOrientation.Y until Lighting:GetSunDirection() matches PaintedLight.direction_roblox. Face convention: Ft=-Z, Bk=+Z, Rt=+X, Lf=-X; Up/Dn use the cube-cross layout, rotation 0 deg (Up/Dn rotation unverified in Studio; tools/pack/rotate_updn.py fixes it in place).",
+ "gates": {
+  "S1_faces_1024": true,
+  "S2_seam_worst_ratio": 0.611,
+  "S2_seam_worst_abs": 0.0023,
+  "S2_seamless": true,
+  "S3_pinch_up": 0.907,
+  "S3_pinch_dn": 1.004,
+  "S3_no_pinch": true,
+  "S4_one_sun": true,
+  "S5_lighting_valid": true,
+  "gates_pass": true
+ },
+ "seams": {
+  "SkyFt_top": [
+   0.002,
+   0.00199
+  ],
+  "SkyFt_bottom": [
+   0.00181,
+   0.0018
+  ],
+  "SkyFt_left": [
+   0.00203,
+   0.00234
+  ],
+  "SkyFt_right": [
+   0.0019,
+   0.00188
+  ],
+  "SkyBk_top": [
+   0.00234,
+   0.00235
+  ],
+  "SkyBk_bottom": [
+   0.00186,
+   0.00187
+  ],
+  "SkyBk_left": [
+   0.00195,
+   0.00194
+  ],
+  "SkyBk_right": [
+   0.00204,
+   0.00207
+  ],
+  "SkyRt_top": [
+   0.00205,
+   0.00215
+  ],
+  "SkyRt_bottom": [
+   0.00181,
+   0.00182
+  ],
+  "SkyRt_left": [
+   0.0019,
+   0.00186
+  ],
+  "SkyRt_right": [
+   0.00195,
+   0.00196
+  ],
+  "SkyLf_top": [
+   0.00192,
+   0.00198
+  ],
+  "SkyLf_bottom": [
+   0.00185,
+   0.00185
+  ],
+  "SkyLf_left": [
+   0.00204,
+   0.00216
+  ],
+  "SkyLf_right": [
+   0.00203,
+   0.00217
+  ],
+  "SkyUp_top": [
+   0.00234,
+   0.00233
+  ],
+  "SkyUp_bottom": [
+   0.002,
+   0.00197
+  ],
+  "SkyUp_left": [
+   0.00192,
+   0.00188
+  ],
+  "SkyUp_right": [
+   0.00205,
+   0.002
+  ],
+  "SkyDn_top": [
+   0.00181,
+   0.00185
+  ],
+  "SkyDn_bottom": [
+   0.00186,
+   0.00182
+  ],
+  "SkyDn_left": [
+   0.00185,
+   0.00181
+  ],
+  "SkyDn_right": [
+   0.00181,
+   0.00178
+  ]
+ },
+ "params": {
+  "Zen": "#296aad",
+  "Mid": "#84acdc",
+  "Hor": "#efdbae",
+  "WarmHor": "#ffbb65",
+  "SunCol": "#fde1a8",
+  "CloudHi": "#fef2ca",
+  "CloudLo": "#ab99b5",
+  "FloorC": "#8b7d81",
+  "Sun": [
+   -0.0845,
+   0.9755,
+   0.2031
+  ],
+  "Cover": 0.2234615744877664,
+  "Soft": 0.017389808823053327,
+  "Puff": 0.7045553131525424,
+  "CScale": 1.1260885824299087,
+  "Cirrus": 0.27784994043223804,
+  "SunSize": 0.04,
+  "GlowW": 0.25,
+  "GlowAmt": 0.8,
+  "Warmth": 0.744699154803011,
+  "Toon": 1.0,
+  "CloudDark": 0.1,
+  "Seed": 306.0
+ },
+ "colors": [
+  [
+   "#e9dabf",
+   0.332
+  ],
+  [
+   "#918282",
+   0.254
+  ],
+  [
+   "#c4afa0",
+   0.207
+  ],
+  [
+   "#7194c6",
+   0.207
+  ]
+ ],
+ "generator": "tools/pack/gen_skies.py + osl/sky_day.osl (procedural, original)",
+ "tags": [
+  "golden_hour",
+  "honey"
+ ]
+}

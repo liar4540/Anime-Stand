@@ -1,0 +1,98 @@
+{
+ "asset": "KiteShield_02",
+ "kit": "Weapons",
+ "type": "KiteShield",
+ "seed": 2,
+ "attempt": "rv2",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Teardrop/kite outline reads clearly as a shield in the front view, three-quarter and solid silhouette; top view is a clean thick slab with the handle visible; rivets add small bumps without breaking the outline.",
+   "V2": "Clear hierarchy: big gold rim + inset teal field, medium raised cream star, small steel rivets (6) plus the handle on the back.",
+   "V3": "No correctness failure: front outline is mirror-symmetric (A15 X error 0.56%), star centred (emblem offset 0.003), all parts seated (A16 pass, no gaps); chunky rim and inset field give a confident stylised read, though the shape is a fat teardrop more than an elongated kite.",
+   "V4": "Consistent chamfers: star edges, field inset step and rim lips all catch a highlight line in the studio close-ups; no razor or blobby edges.",
+   "V5": "Rim outer wall shows visible faceting: distinct planar bands along the curved rim in the top view and the rim studio close-up (low segment count on the sweep); the right-side rivet in the rim close-up also reads slightly lumpy. Otherwise clean, no z-fighting or pinches.",
+   "V6": "Disciplined: gold accent rim, one hue (teal) in field plus darker inset value, warm cream star, steel-grey rivets, ink-dark handle; colourways (crimson, shadow) swap only the field hue and stay readable.",
+   "V7": "2260 tris vs weapon target 2500 (ceiling 4000): at or under target.",
+   "V8": "One white material LF_VertexColor with vertex colours, kit palette (gold, cream, steel, one hue), bevel scale similar to the kit; matches the PASS anchor's language.",
+   "V9": "Studio line correct: origin at handle/hand point, CollisionFidelity Box, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Visible faceting on the outer rim wall (planar bands along the curve) in the top view and rim studio close-up",
+   "Right rivet in the rim close-up looks slightly lumpy/irregular rather than a clean dome"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Raise segment count on the rim sweep (or add smooth-shading/weighted normals on the rim wall) so the curved outer edge reads as one smooth surface",
+   "Rebuild rivets as clean low-poly domes with consistent smooth shading",
+   "Optionally elongate the lower point (taller height-to-width ratio) so it reads as a kite shield rather than a teardrop badge, and space the lower rivets evenly along the long lower edges"
+  ]
+ ],
+ "params": {
+  "W": 0.952,
+  "H": 2.765,
+  "emblem": "star",
+  "rivets": 6
+ },
+ "tris": 2260,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

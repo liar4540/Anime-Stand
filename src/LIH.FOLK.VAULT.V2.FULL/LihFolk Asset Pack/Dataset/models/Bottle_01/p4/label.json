@@ -1,0 +1,100 @@
+{
+ "asset": "Bottle_01",
+ "kit": "Props",
+ "type": "Bottle",
+ "seed": 1,
+ "attempt": "p4",
+ "label": "rejected",
+ "score": 8.3,
+ "grades": [
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Squat jug with narrow neck, collar and chunky stopper reads as a bottle from front, three-quarter and silhouette; top view gives clean concentric stopper/collar/body rings. The body outline is visibly polygonal at 64 px but stays readable.",
+   "V2": "Clear tiers: big bulbous body, medium collar plus stopper, small gold foot band, gold collar ring and the two-value liquid line.",
+   "V3": "Exaggerated wide belly over a short narrow neck with an oversized ink stopper reads as confident stylised. Symmetry X/Y 0.0, A15/A16 pass, stopper seated on collar and collar on neck, nothing floating.",
+   "V4": "Inconsistent: the stopper top rim shows a slight soft chamfer, but the collar disc, gold collar ring and foot band have razor-sharp edges with no highlight catch (stopper and foot close-ups). The shoulder-to-belly transition is a hard profile kink rather than a bevel.",
+   "V5": "Minor stray faceting: the low ring and profile count gives a polygonal outline with a visible corner at the liquid line/shoulder (liquid_line close-up, silhouette), faint vertical banding on the lower body, and per-segment shade steps on the gold foot band. No seams, pinches or z-fighting; A17/A18 pass.",
+   "V6": "Disciplined: one hue in two values (light upper glass, dark liquid) plus gold accent and ink stopper. Crimson and royal colourways swap cleanly with the same value split.",
+   "V7": "560 tris vs small-class target 600 (ceiling 1500), so at or under target.",
+   "V8": "Kit material and palette match (one white LF_VertexColor, gold/ink/teal values). Minor mismatch: collar and foot-band edges lack the ~0.045-stud chamfer, and the body tessellation is coarser than the smooth anchor pipes.",
+   "V9": "Studio line is correct for a pickup: CanCollide off, CanTouch on, CollisionFidelity Box, CastShadow on, MeshPart.Color white for vertex colours, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Polygonal body outline with a hard profile corner at the liquid line/shoulder (silhouette, liquid_line close-up)",
+   "Faint vertical facet banding on the lower body under studio light",
+   "Gold foot band shows per-segment shade steps (faceted look)",
+   "Unchamfered razor edges on the collar disc, gold collar ring and foot band"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Raise the body's radial segments (about 16 to 24) and add one or two profile rings through the shoulder and belly so the outline curves instead of kinking at the liquid line; this fits inside the remaining budget.",
+   "Add ~0.045-stud chamfers to the collar disc, gold collar ring, foot band and stopper bottom edge so every edge catches light consistently.",
+   "Smooth the foot band's shading (weighted normals or matching the body's segment count) to remove the per-segment shade steps.",
+   "Optional: a small surface detail (a cream label band or a highlight strip) would strengthen the small tier without adding hues."
+  ]
+ ],
+ "params": {
+  "shape": "round",
+  "R": 0.762,
+  "H": 1.923
+ },
+ "tris": 560,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

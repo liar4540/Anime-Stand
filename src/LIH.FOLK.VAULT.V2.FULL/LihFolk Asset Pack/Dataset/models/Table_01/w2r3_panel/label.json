@@ -1,0 +1,162 @@
+{
+ "asset": "Table_01",
+ "kit": "Furniture",
+ "type": "Table",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  9.3,
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette reads as a plank-top table from 3/4, front and top: overhanging slatted top, four turned legs with bulb feet, H-stretcher; outline symmetric (A15 X/Y 0.0).",
+   "V2": "Clear hierarchy: big slab top + apron, medium turned legs and stretchers, small ink nail heads and board gaps.",
+   "V3": "Chunky overhanging top and swelling turned legs with bulb feet give a stylised read; overall height (3.3 studs vs 7.3 long) reads slightly bench-like.",
+   "V4": "Consistent chamfers on board edges and apron catch light in the corner close-up; stretchers have a smaller but present bevel.",
+   "V5": "No z-fighting or pinches, but the low-segment turned legs show visible vertical facet bands in the leg close-up (minor).",
+   "V6": "Disciplined: two/three wood values alternating per board plus ink nail heads; colourways keep the same value structure.",
+   "V7": "1796 tris vs 2000 medium target (ceiling 4000).",
+   "V8": "Single LF_VertexColor material, smooth shading, ~0.05-stud chamfers, wood hue + ink iron as per furniture spec.",
+   "V9": "Anchored, CollisionFidelity Box, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates pass."
+  },
+  {
+   "V1": "Plank top, apron, turned baluster legs and H-stretcher read as a table from front, three-quarter, top and silhouette; outline symmetric on both axes (A15 X/Y 0.0).",
+   "V2": "Big plank top, medium apron/legs/stretchers, small nail heads, board gaps and leg collars - clear hierarchy.",
+   "V3": "Confident stylised read: chunky overhanging alternating-value planks, bulbous turned legs with ball feet and collars.",
+   "V4": "Consistent chamfers on every board end and edge catch a clean highlight in close_top_boards and close_apron_corner studio shots; legs are softly rounded.",
+   "V5": "Turned legs show visible vertical facet bands and a faceted foot collar in close_leg_studio (low radial segment count); top boards and apron are clean.",
+   "V6": "Wood in three values across alternating boards, apron and stretchers, ink nail heads; painted colourways keep the structure.",
+   "V7": "1796 tris vs medium target 2000: under target.",
+   "V8": "One vertex-colour material, kit ink nails, chamfer size and smooth shading match the kit.",
+   "V9": "Studio line correct: anchored, Box collision, CanTouch off, bottom-centre origin, MeshPart white with vertex colours."
+  },
+  {
+   "V1": "Plank top on four turned legs with H-stretcher reads as a table/bench from front, three-quarter and silhouette; top view reads as a four-plank top.",
+   "V2": "Big (plank top), medium (turned legs, apron, stretchers), small (nail heads, foot rings, alternating board values) hierarchy is clear.",
+   "V3": "Baluster-turned legs with swollen calves and ringed feet under a thick overhanging top read as confident stylised furniture; X/Y symmetry 0.0.",
+   "V4": "Boards have consistent ~0.06-stud chamfers that catch a bright highlight line in the top-boards and apron-corner close-ups.",
+   "V5": "No z-fighting or seams on the top, but the turned legs show visible segment faceting in the leg close-up and the side stretcher end protrudes past the leg face.",
+   "V6": "One wood hue in three values (light/mid boards, dark apron/stretchers) plus ink nail heads; colourways recolour cleanly.",
+   "V7": "1796 tris vs medium target 2000.",
+   "V8": "Single vertex-coloured wood hue, ink iron nails, chamfered planks match the wave-2 furniture kit.",
+   "V9": "Anchored, Box collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; A1-A18 pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Vertical facet banding on turned legs (low radial segment count) visible in leg close-up"
+  ],
+  [
+   "Visible facet bands on the turned legs and foot collars (low radial segments)"
+  ],
+  [
+   "visible faceting on turned legs",
+   "stretcher end pokes through/past the leg face"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add radial segments or weighted-normal smoothing to the turned legs to remove facet bands",
+   "Consider a slightly taller leg/top ratio so it reads unambiguously as a table rather than a bench",
+   "Give the stretchers a marginally larger chamfer to match the top boards"
+  ],
+  [
+   "Raise radial segments on the turned legs or apply weighted normals so the lathe profile shades smoothly",
+   "Thicken the stretchers slightly so they read at 64 px",
+   "Optionally add a breadboard end or slight board warp for extra small-scale character"
+  ],
+  [
+   "Add radial segments or weighted normals to the turned legs so the baluster curve shades smoothly",
+   "Trim the stretcher ends flush inside the legs",
+   "Optionally bevel the nail heads slightly so they read as domed iron"
+  ]
+ ],
+ "params": {
+  "L": 7.26,
+  "Dp": 3.302,
+  "Ht": 3.041,
+  "boards": 4,
+  "legs": "turned",
+  "stretcher": true
+ },
+ "tris": 1796,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

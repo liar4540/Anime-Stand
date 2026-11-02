@@ -1,0 +1,100 @@
+{
+ "asset": "HeaterShield_01",
+ "kit": "Weapons",
+ "type": "HeaterShield",
+ "seed": 1,
+ "attempt": "rv2",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front and silhouette read instantly as a heater shield (flat top, curved sides to a point) and the outline is mirror-symmetric (A15 X error 0.59 % < 1 %); three-quarter also reads clearly; top view is a thick slab with handle, as expected for a flat shield. Only blemish: rivets nearly fill the rim band, so they push small bumps out of the silhouette on the left edge.",
+   "V2": "Clear hierarchy: big = shield body/plate, medium = chunky gold rim, raised teal field and centred star emblem, small = 7 steel rivets plus the stepped inner rim band; no noise.",
+   "V3": "Confident stylised proportions: chunky rim, emblem about a third of field width, star centred (emblem_on_field offset 0.0005) and upright, rivets evenly and symmetrically spaced (corner/mid pairs within ~2 px of mirror in the front view).",
+   "V4": "Consistent soft chamfers on rim outer edge, inner rim step, field edge and star arms; all catch a highlight line in the studio close-ups, matching the PASS anchor's edge treatment.",
+   "V5": "Mostly clean smooth shading on rim, field and star, but the rivets are visibly faceted/lumpy (irregular polygonal outlines in rim_flat, egg-shaped top rivet in rim_studio) and the corner rivets straddle the step between the inner rim band and the field edge.",
+   "V6": "Disciplined kit palette: gold rim in two values, single teal hue with a darker edge value, warm cream star, steel-grey rivets, dark handle; colourways (crimson, shadow) swap only the field hue and stay coherent.",
+   "V7": "1604 tris vs weapon target 2500 / ceiling 4000: under target.",
+   "V8": "One white vertex-colour material (LF_VertexColor), kit palette, chamfer scale and raised-field construction indistinguishable from the PASS anchor; rivets are an in-kit steel accent.",
+   "V9": "Studio line correct: origin at handle/grip point, CollisionFidelity Box, CanCollide off when equipped, Massless, MeshPart.Color white for vertex colours, SmoothPlastic; all gates A1-A18 pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Rivets low-poly/faceted with irregular outlines in close-ups (rim_flat, rim_studio)",
+   "Corner rivets straddle the inner rim step / field edge and overhang the rim's outer edge, adding small bumps to the silhouette"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Give rivets more segments (or a cleaner low-poly dome with smooth shading) so they read as round in close-ups",
+   "Shrink rivets ~15-20 % and centre them on the flat outer rim band so they neither cross the inner step nor break the outer outline",
+   "Optional: slightly recess the field edge into the rim (or add a thin ink-dark seam) so the raised plate reads less like a separate slab from three-quarter"
+  ]
+ ],
+ "params": {
+  "W": 1.088,
+  "H": 2.052,
+  "bulge": 0.034,
+  "emblem": "star",
+  "boss": false,
+  "rivets": 6
+ },
+ "tris": 1604,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

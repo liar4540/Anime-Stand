@@ -1,0 +1,23 @@
+LihFolk V2 - Complete (2.5.0)
+=============================
+
+This zip has everything:
+  LihFolk Vault V2/   the vault and the Claude Code plugin (same as GitHub lihfolk-cy/v2-vault)
+  LihFolk Asset Pack/ models, materials, skies, animations, VFX, plus Dataset/ (for study only)
+
+1. Coming from V1? In Obsidian: vault switcher > Manage vaults > remove V1 from the list.
+   Then delete the old V1 folder to free up its space.
+2. Unzip this file somewhere permanent (for example Documents\LihFolk).
+3. Obsidian: Open folder as vault > choose "LihFolk Vault V2/LihFolk Vault V2" > open 000 Home.
+4. Claude Code plugin:
+     /plugin marketplace add lihfolk-cy/v2-vault
+     /plugin install lihfolk@lihfolk
+5. Asset pack: set the LIHFOLK_ASSETS environment variable to the full path of the
+   "LihFolk Asset Pack" folder, or run /lihfolk:assets setup in Claude Code.
+   Start with INDEX.md inside it. Use only rows listed in the catalogues.
+6. Other AI tools (OpenCode, Codex, Cursor...): open "LihFolk Vault V2" in the tool;
+   AGENTS.md tells the AI how to search the vault.
+
+Licence: free to use and to ship in your own games, commercial included.
+Please don't re-upload, resell or repackage the vault, plugin or assets.
+Full terms: LihFolk Vault V2/LICENSE.md and LihFolk Asset Pack/LICENSE.txt

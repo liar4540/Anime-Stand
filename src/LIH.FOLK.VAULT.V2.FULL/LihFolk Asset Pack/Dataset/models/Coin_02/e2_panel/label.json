@@ -1,0 +1,156 @@
+{
+ "asset": "Coin_02",
+ "kit": "Emblems",
+ "type": "Coin",
+ "seed": 2,
+ "attempt": "e2_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  8.3,
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front and silhouette show a clean regular octagon (A15 X/Y error 0.0) that reads as a chunky token at 64 px; edge-on top view is a thick gold bar with the boss just peeking out, which is the expected coin read from that angle.",
+   "V2": "Three clear tiers: big gold octagon rim, medium recessed teal field plus lighter raised inner octagon boss, small cream diamond gem.",
+   "V3": "Chunky 0.316/1.75 thickness and heavy rim are stylised, but the diamond gem is small (about 1/7 of the coin width) and very low relief, and the wide plain field makes it read as stacked extruded octagons rather than a confident, exaggerated design.",
+   "V4": "Rim close-up shows a consistent outer chamfer band catching light along every segment; the boss and gem edges carry matching small chamfers (light strip on the boss lower-right, gem upper-left); no razor or blobby edges visible.",
+   "V5": "Studio and flat close-ups are clean: flat-shaded facets are intentional, no pinches, seams, z-fighting or stray faceting; emblem penetration (0.06) is hidden and gates A17/A18 pass.",
+   "V6": "Gold accent rim, one hue (teal) in two values (dark field, light boss), cream gem: disciplined with good value contrast; colourways keep the same structure.",
+   "V7": "376 tris against the small-class target of 600 (ceiling 1500).",
+   "V8": "One white vertex-colour material, kit gold/cream plus one hue in 2 values, chamfered flat-shaded edges consistent with the kit; colourways (crimson, shadow) swap only the hue.",
+   "V9": "Studio line is correct for a pickup: CanCollide off, CanTouch on, Box fidelity, anchored, MeshPart.Color white, SmoothPlastic, origin centre."
+  },
+  {
+   "V1": "Front and silhouette read instantly as an octagonal coin/medallion; three-quarter shows the thick gold rim; top/edge-on is a gold bar with the boss bump peeking, which still reads as a coin edge. Symmetry X/Y 0.0, emblem offset 0.0, seated (no visible correctness failure).",
+   "V2": "Clear three tiers: big gold octagon rim, medium recessed teal field with raised octagon boss, small cream diamond gem.",
+   "V3": "Chunky, readable proportions (rim ~0.32 studs thick on 1.75 face), but it is stacked extruded octagons with a plain flat diamond; reads more as nested primitives than a confidently stylised shape (no doming, swell or exaggeration).",
+   "V4": "Chamfers are very small: rim outer/inner corners and boss sides read nearly sharp in the rim/face studio close-ups (thin highlight line only), unlike the softly rounded rims of the kit anchor; diamond corners slightly softened, so treatment is inconsistent.",
+   "V5": "No pinches, seams, z-fighting or stray faceting in face or rim close-ups; flat faces shade evenly; 40 cross-shell overlaps are the intentional emblem embeds (0.06 penetration) with no visible fighting.",
+   "V6": "Gold accent + one hue (teal) in two values (field, lighter boss) + warm cream gem; colourways (crimson, royal, shadow) keep the same disciplined structure.",
+   "V7": "376 tris vs small-class target 600 (ceiling 1500).",
+   "V8": "One white LF_VertexColor material, kit gold/cream plus one hue in up to 3 values matches; minor mismatch in bevel size, which reads sharper than the ~0.045 stud kit chamfer.",
+   "V9": "Studio line correct for a pickup: CanCollide off, CanTouch on, CollisionFidelity Box, Anchored, MeshPart.Color white, SmoothPlastic, origin centre."
+  },
+  {
+   "V1": "Clean octagon outline in front, three-quarter and silhouette renders reads instantly as a coin/token at 64 px; top view is a thick gold disc edge, which is what a coin should be edge-on; A15 symmetry error X=0.0, Y=0.0, emblem offset 0.0, both emblems seated (gap 0).",
+   "V2": "Clear three-tier read: heavy gold octagon rim (big), raised lighter-teal octagonal boss (medium), cream rhombus gem (small), with the field recessed between rim and boss.",
+   "V3": "Chunky rim and deep recess are pleasantly exaggerated, but the boss and gem are plain flat extrusions; the gem is a thin, small rhombus plate that reads timid against the boss, so the face feels partly primitive rather than confidently stylised.",
+   "V4": "Rim close-up shows a consistent chamfer band between front face and side that catches light; boss and gem top edges are chamfered too; no razor or blobby edges.",
+   "V5": "Face and rim close-ups (studio and flat) show clean planar faces with no pinches, seams, patches or z-fighting; the 40 cross-shell overlaps are the intentionally inset emblems (0.06 penetration) and show nothing visible; A17/A18 pass, 0 flipped faces.",
+   "V6": "Disciplined: gold accent rim, one hue (teal) in two values for field and boss, warm cream gem; good value contrast; colourways (crimson, shadow) swap only the hue and stay clean.",
+   "V7": "376 tris against a small-class target of 600 (ceiling 1500).",
+   "V8": "One white LF_VertexColor material with vertex colours, kit gold/cream plus one hue, chamfered edges and flat smooth shading consistent with the kit anchor.",
+   "V9": "Studio line is correct for a pickup: CanCollide off, CanTouch on, CollisionFidelity Box, Anchored, MeshPart.Color white, SmoothPlastic, origin centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "none visible; 40 cross-shell overlaps reported are the intentional emblem seating penetration (0.06 studs), not visible in renders"
+  ],
+  [],
+  []
+ ],
+ "top_fixes": [
+  [
+   "Make the emblem read stronger: enlarge the diamond (about 1.5x) and give it more relief or a facet split so it carries at 64 px",
+   "Break up the wide empty field, e.g. a small inner step ring, notches at the octagon corners, or bring the boss larger so the field band is narrower",
+   "Add a matching small chamfer to the rim's inner lip where it drops to the field so all rim edges catch light the same way"
+  ],
+  [
+   "Increase chamfers to the kit ~0.045 studs on the rim outer/inner edges, field recess lip and boss so edges catch light consistently",
+   "Push stylisation: slight dome or swell on the boss and field, a beveled/faceted gem instead of a flat diamond slab, or a stepped rim profile to move it beyond stacked extrusions",
+   "Consider a small secondary detail on the rim (notches or inner bead ring) to strengthen small-scale read at the edge-on angle"
+  ],
+  [
+   "Give the gem real presence: thicker, taller faceted gem (pointed bevel or pyramid top) sized up to fill more of the boss, so the small tier reads at 64 px",
+   "Add a secondary detail to the field or boss (inner bevel ring, notches or small studs at the octagon corners) so the face is not just stacked flat octagons",
+   "Consider slightly softening the rim's outer side edge (second, smaller chamfer) to match the rounder rim read of the kit anchors"
+  ]
+ ],
+ "params": {
+  "sides": 8,
+  "R": 0.947,
+  "h": 0.119,
+  "relief": 0.051,
+  "emblem": "diamond"
+ },
+ "tris": 376,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,117 @@
+{
+ "id": "stone_wall_canyon_002",
+ "family": "stone_wall",
+ "theme": "canyon",
+ "index": 2,
+ "seed": 5047.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_cliff.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Cobblestone",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "stone",
+  "wall",
+  "castle",
+  "cliff",
+  "masonry",
+  "canyon"
+ ],
+ "colors": [
+  [
+   "#c07457",
+   0.458
+  ],
+  [
+   "#d0845f",
+   0.34
+  ],
+  [
+   "#5f3024",
+   0.122
+  ],
+  [
+   "#92523c",
+   0.079
+  ]
+ ],
+ "params": {
+  "C1": "#dc9d78",
+  "C2": "#cf734e",
+  "C3": "#7c3d2e",
+  "C4": "#da8f5d",
+  "C5": "#7f913e",
+  "Bands": 3.0,
+  "Blocks": 4.0,
+  "Ledge": 0.8222198760867316,
+  "Facet": 0.5884116436265072,
+  "Alt": 0.0,
+  "Moss": 0.0,
+  "Seed": 5047.0
+ },
+ "normal_depth_px": 24.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.094,
+   "Color_Neutral": 0.089,
+   "Normal": 0.192,
+   "Roughness": 0.777,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.499,
+   0.983
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.001,
+   0.024
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 48.2,
+   "diel_luma_p99": 156.3,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.84,
+   "rough_min": 0.808,
+   "rough_expected": [
+    0.7,
+    0.95
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.0864,
+  "M_neutral_mean": 0.74,
+  "M_neutral_range_p5_p95": [
+   0.308,
+   0.9
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 27.8,
+ "preview": "preview.jpg"
+}

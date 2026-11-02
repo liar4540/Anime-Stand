@@ -1,0 +1,213 @@
+{
+ "asset": "Arch_01",
+ "kit": "Modular",
+ "type": "Arch",
+ "seed": 1,
+ "params": {
+  "W": 8,
+  "pier": 2.25,
+  "zs": 6.0,
+  "vous": 7
+ },
+ "tris": 660,
+ "budget_class": "module",
+ "budget_target": 800,
+ "budget_ceiling": 2000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 7.999,
+  "y": 1.999,
+  "z": 11.999
+ },
+ "origin": "grid corner (world 0, footprint 8x2.0x12.0 studs)",
+ "symmetric": "X",
+ "symmetry_error": {
+  "X": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass",
+  "T1": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 178,
+ "tiling": {
+  "grid": {
+   "footprint": [
+    8,
+    2.0,
+    12.0
+   ],
+   "step": 2.0,
+   "on_grid": true,
+   "inside": true,
+   "touches_floor": true,
+   "bbox": [
+    [
+     0.0006,
+     0.0006,
+     0.0006
+    ],
+    [
+     7.9994,
+     1.9994,
+     11.9994
+    ]
+   ],
+   "ok": true
+  },
+  "tiles": [
+   {
+    "axis": "X",
+    "period": 8,
+    "with": "Arch_01",
+    "other_axis": "X",
+    "mode": "equal",
+    "a_cells": 8282,
+    "b_cells": 8282,
+    "iou": 1.0,
+    "cover": 1.0,
+    "inside": true,
+    "ok": true
+   }
+  ]
+ },
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "granite",
+  "colourways": [
+   {
+    "name": "granite",
+    "hue": "stone",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#C4C6CC",
+     "h": "#9497A3",
+     "h_dk": "#62656F"
+    }
+   },
+   {
+    "name": "sandstone",
+    "hue": "sand",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#E6CB98",
+     "h": "#C29C66",
+     "h_dk": "#8A6A40"
+    }
+   },
+   {
+    "name": "brick",
+    "hue": "brick",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#DB7F62",
+     "h": "#B0503B",
+     "h_dk": "#763126"
+    }
+   },
+   {
+    "name": "slate",
+    "hue": "slate",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#A9B6C8",
+     "h": "#71829A",
+     "h_dk": "#46546B"
+    }
+   },
+   {
+    "name": "basalt",
+    "hue": "basalt",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#8F8C99",
+     "h": "#64616E",
+     "h_dk": "#403E49"
+    }
+   }
+  ]
+ },
+ "studio": "Modular piece: Anchored; CollisionFidelity Default (keeps the arch walkable); CanTouch off; CastShadow on; origin = grid corner (pivot at min x / min y / floor): snap with a 2-stud grid and 90-degree rotations; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "round archway 8x2x12: 3.5-wide walk-through arch, 7 chamfered voussoirs + proud gold keystone, coursed piers, stone spandrel, coping; full-section ends tile with itself and abut walls",
+ "features": [
+  [
+   "keystone",
+   [
+    4.0,
+    0.0,
+    8.5
+   ],
+   1.4
+  ],
+  [
+   "springing",
+   [
+    2.25,
+    0.0,
+    6.0
+   ],
+   1.6
+  ],
+  [
+   "end_section",
+   [
+    8.0,
+    0.5,
+    6.0
+   ],
+   2.4
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Modular/Arch_01_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 8.7,
+  "basis": "panel x3 median",
+  "reviewed": "Arch_01 w2r3_panel (indiv 8.0/8.7/8.7); fix rounds: w2r1 8.0, w2r2 8.7",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_modular.py:Arch",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Modular/Arch_01.glb",
+  "blend": "Models/Kits/Modular/Arch_01.blend",
+  "turntable": "Models/Kits/Modular/Arch_01_turntable.mp4",
+  "preview": "Models/Kits/Modular/Arch_01_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Modular/Arch_01_preview.jpg"
+}

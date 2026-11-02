@@ -1,0 +1,157 @@
+{
+ "asset": "Gem_01",
+ "kit": "Emblems",
+ "type": "Gem",
+ "seed": 1,
+ "attempt": "e2_panel",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7,
+  7.7,
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Reads instantly as a cut gem from every view: front outline is a clean symmetric crown-over-point diamond, three-quarter silhouette keeps the faceted crown and sharp culet, top shows a crisp octagonal table; A15 X/Y error 0.0.",
+   "V2": "Big crown/pavilion split and medium table + 8 crown facets + girdle band read, but there is no small tier (no star/kite facets, no table bevel or sparkle detail), so hierarchy stops at two levels.",
+   "V3": "Plain octagonal frustum on an octagonal cone; crown is about as tall as the pavilion and nothing is pushed or exaggerated, so it reads as a correct but stiff primitive gem rather than a confident stylised one.",
+   "V4": "Girdle band is the only light-catching break; every facet edge is a razor hard edge with no ~0.045 chamfer, unlike the bevelled rims on the kit anchors, so edge treatment is inconsistent.",
+   "V5": "Close-ups (crown/pavilion, studio and flat) show flat planar facets with no pinches, seams, z-fighting or overlap; A18 pass, 0 flipped faces, 0 cap overlaps.",
+   "V6": "One hue in three values (light table, mid crown, dark pavilion), carried cleanly through teal, royal and crimson colourways; disciplined.",
+   "V7": "64 tris against the tiny-class target of 150 (ceiling 300).",
+   "V8": "One white LF_VertexColor material and one-hue-in-3-values match the kit, but no chamfers and fully faceted shading versus the kit's chamfered, smooth-shaded look make it a minor mismatch beside the anchors.",
+   "V9": "Studio line is correct for a pickup: CanCollide off, CanTouch on, Box fidelity, Anchored, MeshPart.Color white, SmoothPlastic, origin centre."
+  },
+  {
+   "V1": "Classic cut-gem outline (wide girdle, tapered crown, pointed pavilion) reads instantly in front, three-quarter and silhouette; top view octagon with table also reads as a gem; outline symmetric, A15 X/Y error 0.0, apex centred under the girdle.",
+   "V2": "Big crown/pavilion masses and medium table + girdle band are clear, but there is no small tier (no star/kite facets, no sparkle detail), so hierarchy stops at two levels.",
+   "V3": "Proportions are a correct but generic octagonal brilliant: tall boxy crown with a large flat table over a short pavilion; reads as a stock primitive gem rather than a pushed, exaggerated stylised shape.",
+   "V4": "Facet edges are all razor-sharp with no chamfer; the girdle band acts as the only transition. Facets catch light well (fits a gem), but there is no consistent bevel treatment of the ~0.045 kit kind.",
+   "V5": "Close-ups (crown and pavilion, studio and flat) show clean planar facets with no pinches, seams, z-fighting or stray faceting; gates A17/A18 report 0 self-intersections, 0 cap overlaps, 0 flipped faces.",
+   "V6": "One hue in three values (light table, mid crown, near-black pavilion) with strong value contrast; colourways (crimson, royal) keep the same disciplined three-value scheme.",
+   "V7": "64 tris against a tiny-class target of 150 (ceiling 300); no wasted geometry.",
+   "V8": "Uses the kit's single white LF_VertexColor material with one hue in up to 3 values, but has no chamfers at all where the kit uses ~0.045-stud bevels, so it reads slightly harder-edged than kit pieces like the badge.",
+   "V9": "Studio line is correct for a pickup: CanCollide off, CanTouch on, Box collision, Anchored, MeshPart.Color white for vertex colours, SmoothPlastic, origin centre."
+  },
+  {
+   "V1": "Classic crown-over-pavilion gem outline reads at 64 px from front, three-quarter and silhouette; top view is a clear octagon; front outline symmetric, A15 X/Y error 0.0.",
+   "V2": "Big crown/pavilion split and a medium girdle band plus 8 crown facets around a flat table, but no small-scale detail (no star/break facets, pavilion is one plain 8-sided cone), so all facets sit at about the same scale.",
+   "V3": "Reads as a stylised gem with a chunky crown, but it is close to an octagonal frustum on a cone: the pavilion is a stiff primitive point and the crown-to-pavilion ratio has no exaggeration.",
+   "V4": "Facet edges are crisp with no ~0.045 chamfer; only the thin girdle band softens the crown/pavilion break, so edges do not catch a highlight line the way the anchor's bevelled rim and star do.",
+   "V5": "Close-ups (crown, pavilion, studio and flat) show clean planar facets with no pinches, seams, z-fighting or stray triangles; flipped_faces 0, cap_overlaps 0, self_intersections 0.",
+   "V6": "A single hue in light/mid/dark values (table light, crown mid, pavilion near-black), and the crimson/royal colourways swap cleanly, so the palette is disciplined.",
+   "V7": "64 tris against a tiny-class target of 150 (ceiling 300).",
+   "V8": "Uses the kit's one white material with vertex colours and a hue in 3 values, but has no kit-standard ~0.045 chamfers and is fully faceted rather than smooth with bevels: a minor mismatch.",
+   "V9": "Studio line is correct for a pickup: CanCollide off, CanTouch on, Box fidelity, Anchored, MeshPart.Color white for vertex colours, SmoothPlastic, origin centre."
+  }
+ ],
+ "artifacts": [
+  [],
+  [],
+  []
+ ],
+ "top_fixes": [
+  [
+   "Add the kit chamfer (~0.045 studs) on the girdle and table edges so the facets catch a highlight line like the anchors' bevelled rims",
+   "Add a small-detail tier: a narrow bevel ring around the table and/or star facets on the crown so the gem has big/medium/small hierarchy",
+   "Push the stylisation: lower the crown and deepen the pavilion (or widen the table) so the proportion reads as a deliberate stylised gem rather than a frustum on a cone",
+   "Consider a subtle top-light value step on the table (lightest value) vs crown facets to sharpen read at 64 px"
+  ],
+  [
+   "Add a small-detail tier: split the crown into star/kite facets or add a bezel/upper-girdle facet row so the gem has a third level of detail and more sparkle variation",
+   "Add a narrow ~0.045-stud chamfer on the girdle and table edges to match the kit's edge treatment while keeping facets crisp",
+   "Push the proportions: deepen the pavilion slightly and narrow the table so the shape reads more stylised and less like a stock octagonal primitive",
+   "Lift the pavilion's darkest value a touch so the lower half does not read as near-black in the front view"
+  ],
+  [
+   "Add a small ~0.045-stud chamfer to the girdle and to the table/crown edges so the facet breaks catch a light line and match the kit bevel standard",
+   "Add small-scale facets (star facets around the table, a split pavilion with break facets, or a culet tip) to give a third level of detail",
+   "Push the stylised proportion further, for example a wider, flatter table with a deeper and slightly tapered pavilion, so it reads less like a frustum on a cone",
+   "Lift the pavilion's darkest value slightly so the lower half does not drop to near-black under studio light"
+  ]
+ ],
+ "params": {
+  "cut": "brilliant",
+  "sides": 8,
+  "r": 0.514,
+  "shape": "oval",
+  "h": 1.028
+ },
+ "tris": 64,
+ "budget_class": "tiny",
+ "date": "2026-10-28"
+}

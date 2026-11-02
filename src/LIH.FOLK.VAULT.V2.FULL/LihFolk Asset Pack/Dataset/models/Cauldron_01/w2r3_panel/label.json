@@ -1,0 +1,162 @@
+{
+ "asset": "Cauldron_01",
+ "kit": "Furniture",
+ "type": "Cauldron",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 9.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.0,
+  9.3,
+  8.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Pot-bellied cauldron reads from front, 3/4, top (gold rim ring around green liquid with bubbles) and silhouette (belly, ring ear, stubby legs); front outline symmetric, legs and ears seated (all seat checks pass).",
+   "V2": "Clear: bellied pot (big), gold rim, ring ears and legs (medium), bubbles and liquid highlight disc (small).",
+   "V3": "Squat exaggerated belly, thick flared gold rim and stubby legs give a confident stylised read.",
+   "V4": "Rounded rolled rim and ear rings catch light consistently; legs are plain low-segment cylinders but read as soft.",
+   "V5": "Stray faceting: the lower belly shows angular kinks/lumps in outline and shading (left belly in 3/4 and front view), and the legs are visibly octagonal in the leg flat close-up.",
+   "V6": "Disciplined: one iron colour, gold rim/ears, ink legs, and one liquid hue in 2-3 values (liquid, highlight disc, bubbles); colourways swap only the liquid hue.",
+   "V7": "1776 tris vs 2000 medium target.",
+   "V8": "One LF_VertexColor material, smooth shading, gold accents and liquid hue per spec, but the pot body is a saturated slate-blue rather than the kit's ink iron/steel grey.",
+   "V9": "Anchored, Hull collision suited to the round pot, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates pass."
+  },
+  {
+   "V1": "Bulbous pot, wide gold rim, ring handles and stub legs read as a cauldron in front, three-quarter and silhouette; top view clearly shows rim, liquid and bubbles; outline is symmetric in the front view.",
+   "V2": "Big pot belly, medium rim/legs/handles, small bubbles and the lighter liquid swirl disc - clear hierarchy.",
+   "V3": "Confident stylised proportions: squat round belly, wide flared gold rim band, short stubby legs and oversized ring handles.",
+   "V4": "Rim lip and handle rings are softly rounded and catch light consistently; legs and body edges are soft rather than razor.",
+   "V5": "Lower belly shows visible polygonal faceting in the front/three-quarter outline and studio light, and the stub legs are visibly low-segment in close_leg_studio; liquid, bubbles and rim are clean.",
+   "V6": "Liquid hue in two values (surface + swirl) plus lighter bubbles, steel-blue pot, gold rim/handles, ink legs; colourways swap only the liquid hue.",
+   "V7": "1776 tris vs medium target 2000: under target.",
+   "V8": "One vertex-colour material, kit gold/ink/steel accents, smooth shading on the rim and liquid - matches the kit.",
+   "V9": "Studio line correct: anchored, Hull collision, CanTouch off, bottom-centre origin, MeshPart white, optional light/particles note."
+  },
+  {
+   "V1": "Bulbous pot + flared gold lip + ring ears + stubby legs reads as a cauldron in front, three-quarter and silhouette; top view reads via the round rim and bubbles.",
+   "V2": "Clear big (pot belly), medium (gold rim, ring ears, three legs), small (three bubbles and lighter swirl disc) hierarchy.",
+   "V3": "Squat, wide-bellied pot with short chunky legs and oversized ear rings is confidently stylised.",
+   "V4": "Rim lip has a soft rounded edge and ears are smooth, but the lower belly and the legs show segment facets rather than consistent chamfers catching light.",
+   "V5": "No z-fighting or pinches, but stray faceting is visible along the lower belly curve (horizontal polygon bands in front/three-quarter) and on the low-segment legs in the leg close-up.",
+   "V6": "Steel blue-grey pot, gold rim/ears, ink legs, one liquid hue in two values; disciplined, colourways swap only the liquid.",
+   "V7": "1776 tris vs medium target 2000.",
+   "V8": "Uses the kit gold, ink and steel greys with one glowing liquid hue, but the faceted belly/legs are coarser than the smooth weighted-normal kit look.",
+   "V9": "Studio line: Anchored, Hull collision, CanTouch off, MeshPart.Color white for vertex colours, SmoothPlastic, origin bottom-centre; A1-A18 pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Angular facet kinks/lumps on the lower belly of the pot",
+   "Low-segment octagonal legs visible in close-up"
+  ],
+  [
+   "Polygonal faceting visible on the lower belly of the pot",
+   "Low-segment faceted stub legs"
+  ],
+  [
+   "visible segment faceting on lower belly curve",
+   "low-segment faceted legs"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Rebuild the pot belly with more profile segments or a smoother revolve so the lower curve has no kinks",
+   "Add segments or a rounded foot to the legs",
+   "Shift the pot body toward ink iron / neutral steel grey to match the kit metal palette"
+  ],
+  [
+   "Add segments (or weighted normals) to the lower belly so the pot outline is smoothly round",
+   "Smooth/round the stub legs and give them a small foot flare",
+   "Optionally add a thin lip band or rivets below the rim for a small-detail tier on the body"
+  ],
+  [
+   "Raise radial/vertical segments on the belly lower curve (or weight normals) so the pot shades as one smooth shell",
+   "Smooth or add segments to the legs and give them a chamfered foot",
+   "Give the gold lip a slight inner/outer chamfer so it catches light consistently"
+  ]
+ ],
+ "params": {
+  "R": 1.672,
+  "H": 2.217,
+  "liq": 0.8,
+  "bubbles": 3
+ },
+ "tris": 1776,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

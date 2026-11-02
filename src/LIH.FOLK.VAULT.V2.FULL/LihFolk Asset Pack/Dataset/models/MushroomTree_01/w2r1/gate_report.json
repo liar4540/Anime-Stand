@@ -1,0 +1,133 @@
+{
+ "asset": "MushroomTree_01",
+ "type": "MushroomTree",
+ "tris": 1844,
+ "budget_class": "tree",
+ "budget_target": 2000,
+ "budget_ceiling": 5000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 5.739,
+  "y": 5.671,
+  "z": 7.4
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "alignment": null,
+ "seats": [
+  {
+   "name": "MushroomTree_01_cap_on_stem",
+   "gap": 0.0,
+   "penetration": 1.93414,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot0_on_cap",
+   "gap": 0.0,
+   "penetration": 0.15318,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot1_on_cap",
+   "gap": 0.0,
+   "penetration": 0.14352,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot2_on_cap",
+   "gap": 0.0,
+   "penetration": 0.14722,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot3_on_cap",
+   "gap": 0.0,
+   "penetration": 0.15824,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot4_on_cap",
+   "gap": 0.0,
+   "penetration": 0.15993,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot5_on_cap",
+   "gap": 0.0,
+   "penetration": 0.16503,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot6_on_cap",
+   "gap": 0.0,
+   "penetration": 0.15544,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot7_on_cap",
+   "gap": 0.0,
+   "penetration": 0.14655,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_kid0_cap_on_stem",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_kid1_cap_on_stem",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 269,
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "colourways": [
+   "crimson",
+   "violet",
+   "royal",
+   "ember",
+   "teal"
+  ]
+ }
+}

@@ -1,0 +1,165 @@
+{
+ "asset": "Flower_01",
+ "kit": "Nature",
+ "type": "Flower",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7,
+  7.7,
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Reads as a daisy-type flower from front, three-quarter, top (6-petal bloom with gold centre) and silhouette.",
+   "V2": "Clear hierarchy: big bloom, medium leaves and stem, small gold centre; petals add a secondary rhythm.",
+   "V3": "Stem is a perfectly straight uniform cylinder and the bloom sits flat on top; leaves have a nice curve but overall stiff.",
+   "V4": "Petals are chamfered/faceted solids while leaves are paper-thin cards with knife edges and the stem has no edge interest; inconsistent.",
+   "V5": "Bloom close-up (studio and flat) shows jagged saw-tooth intersection lines where overlapping petals cut into each other; centre penetrates petals 0.058.",
+   "V6": "Red petals, gold centre (kit accent), leaf green in 2 values - disciplined; colourways bluebell/sunset keep it.",
+   "V7": "560 tris vs small target 600 - under target.",
+   "V8": "Vertex-colour material and leaf-green secondary match spec, but petals are faceted separate shells rather than fused smooth organic forms.",
+   "V9": "Foliage flags correct (Anchored, no collision/touch/query, Box, Color white, bottom-centre origin)."
+  },
+  {
+   "V1": "Clear flower silhouette (bloom, stem, two leaves) from front, three-quarter, top and silhouette.",
+   "V2": "Bloom as the big read, stem and leaves medium, gold centre small - clear hierarchy.",
+   "V3": "Bloom proportions are good but the stem is a perfectly straight uniform cylinder and the leaves are flat cards, so the plant reads stiff.",
+   "V4": "Petals have hard faceted creases while the leaves are paper-thin razor edges; no consistent rounded edge treatment.",
+   "V5": "bloom_flat shows petals interpenetrating with jagged zig-zag intersections and faceted petal planes; leaves pierce the stem.",
+   "V6": "Petal hue in 2-3 values, leaf green secondary, gold centre accent - disciplined across colourways.",
+   "V7": "560 tris vs small target 600.",
+   "V8": "One white vertex-colour material and kit hues match, but the faceted petals and razor leaf cards do not match the smooth fused shells of the nature kit.",
+   "V9": "Studio line: Anchored, CanCollide/CanTouch/CanQuery off, Box fidelity, Color white, SmoothPlastic - correct foliage flags."
+  },
+  {
+   "V1": "Reads as a flower from front, three-quarter, top (six-petal rosette with gold centre) and silhouette.",
+   "V2": "Clear tiers: bloom head (big), stem and two leaves (medium), domed gold centre (small).",
+   "V3": "Bloom size is pleasingly exaggerated, but the stem is a perfectly straight uniform tube and the leaves are flat cards; partly stylised.",
+   "V4": "Petals have hard faceted bevels while leaves are razor-thin cards with sharp tips; edge treatment is inconsistent across parts.",
+   "V5": "Bloom close-ups (studio and flat) show jagged, stepped edges where petals interpenetrate (right side of the head) and stray hard facets across petal tops; minor.",
+   "V6": "Disciplined: one petal hue in 2-3 values, leaf-green secondary, gold centre; bluebell and sunset colourways keep the structure.",
+   "V7": "560 tris vs small target 600, under target.",
+   "V8": "One vertex-colour material and kit palette, but organic parts are separate shells (petals overlapping, leaves stuck on the stem base) rather than the kit's fused smooth shells.",
+   "V9": "Foliage studio line correct (anchored, CanCollide/CanTouch/CanQuery off, white colour, origin bottom-centre); seats pass with no gaps."
+  }
+ ],
+ "artifacts": [
+  [
+   "Saw-tooth intersection seams between overlapping petals",
+   "Thin card leaves with knife-edge tips at stem junction"
+  ],
+  [
+   "Jagged petal-petal intersections in bloom close-up",
+   "Faceted creases on petals",
+   "Leaf cards razor-thin, left leaf pierces the stem"
+  ],
+  [
+   "jagged stepped edges where petals overlap/interpenetrate (bloom close-up, right side)",
+   "stray hard facets across petal surfaces",
+   "leaves are paper-thin cards with the left leaf tucked behind the stem base"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Re-space or fuse petals so they no longer interpenetrate with jagged seams",
+   "Give the stem a slight S-curve and taper, and tilt the bloom",
+   "Thicken leaves slightly with a soft rim to match the chamfered petals"
+  ],
+  [
+   "Rebuild petals as smooth cupped shells that overlap cleanly (or fuse into one bloom shell) to remove jagged intersections",
+   "Give the stem a slight curve/taper and the leaves some thickness and a midrib fold",
+   "Add a small leaf base or sepal ring under the bloom to tie head to stem"
+  ],
+  [
+   "Smooth/fuse the petal ring so overlaps do not create zig-zag edges and petals shade softly",
+   "Give the stem a gentle curve and taper and thicken/curl the leaves so they read as fused organic forms",
+   "Add a slight root flare or small ground tuft at the stem base so it seats naturally"
+  ]
+ ],
+ "params": {
+  "heads": 1,
+  "petals": 6,
+  "R": 0.571,
+  "H": 1.345,
+  "leaves": 2
+ },
+ "tris": 560,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,93 @@
+{
+ "asset": "Longsword_02",
+ "kit": "Weapons",
+ "type": "Longsword",
+ "seed": 2,
+ "attempt": "rv1",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "reviewer": "blind fresh agent (renders + close-ups + gate report + rubric only)",
+ "evidence": {
+  "V1": "Front and three-quarter read instantly as a sword (pointed blade, recurved ball-tipped guard, disc pommel); silhouette render is clean. Top view shrinks to a small guard bar with a blade lozenge, which is weak but normal for a sword.",
+  "V2": "Clear hierarchy: the long blade is the big form, guard, grip and pommel are the medium forms, and the gem, grip bands, fuller and raised guard boss are small detail.",
+  "V3": "Chunky gold guard and pommel are stylised, but the blade is a slim, straight, near-realistic strip and the grip looks spindly between the heavy fittings, so the exaggeration is only partial.",
+  "V4": "Consistent chamfers catch light on the guard top edge, raised boss, pommel rims and blade edge strips; ball tips and gem are clean by design.",
+  "V5": "Mostly clean (A18 pass, 0 flipped, 0 self-intersections), but the pommel close-up shows a visibly polygonal rim on the dome and collar (low segment count), and the tip close-up shows a slight angle break where the straight edge turns into the point taper.",
+  "V6": "Disciplined: gold accent, two steel greys plus a dark slate fuller, and a single teal hue on the grip and gem. Colourways swap only the hue (crimson, violet) and keep the same structure.",
+  "V7": "2476 tris against the weapon target of 2500 (ceiling 4000), so it is at target.",
+  "V8": "One white LF_VertexColor material with vertex colours; the palette matches the kit (gold, steel greys, one hue); chamfers and smooth shading are consistent with the kit spec.",
+  "V9": "Studio line is correct: Tool Handle, origin at the grip point, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+ },
+ "artifacts": [
+  "Pommel dome and collar ring show a faceted, polygonal outline in close-up (pommel_studio): the cylinder segment count is too low for the smooth-shaded kit",
+  "Blade tip: slight angular kink where the parallel edges start tapering to the point (tip_studio, left edge)",
+  "Minor: dark contact line between the pommel collar and the dome top. It is probably a shadow, but the pommel is not in the gate's seats list, so the seating is unverified"
+ ],
+ "top_fixes": [
+  "Raise segment count on the pommel dome and collar (and grip rings if they share it) so their rims read round in close-up",
+  "Push stylised proportion: widen the blade (and broaden the tip ogive) and thicken the grip slightly so they match the chunky guard and pommel",
+  "Smooth the transition from the straight blade edge into the tip taper (add a loop or blend the curve) to remove the visible kink",
+  "Add pommel_on_grip / collar_on_pommel to the seating check so the pommel junction is verified rather than assumed"
+ ],
+ "params": {
+  "L": 5.013,
+  "W": 0.396,
+  "T": 0.114,
+  "taper": 0.277,
+  "tip0": 0.803,
+  "tipk": 1.647,
+  "gL": 1.044,
+  "h0": 0.157,
+  "ht": 0.095,
+  "rise": 0.164,
+  "flare": 0.051,
+  "langet": 0.098,
+  "GL": 1.298,
+  "gr": 0.147,
+  "ps": 0.267,
+  "wraps": 6,
+  "pommel": "wheel",
+  "fuller_w": 0.732,
+  "fuller_end": 0.628,
+  "gem": true,
+  "tip_balls": true
+ },
+ "tris": 2476,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

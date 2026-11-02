@@ -1,0 +1,99 @@
+{
+ "asset": "Anvil_01",
+ "kit": "Furniture",
+ "type": "Anvil",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "The silhouette is an unmistakable anvil-on-stump from the front, three-quarter and silhouette, and the top view shows the horn, face and hardy hole.",
+   "V2": "Clear hierarchy: stump and anvil body (big), horn and waist/foot (medium), iron hoops and hardy hole (small).",
+   "V3": "Recognisable proportions, but the anvil body is a near-plain box with a straight waist and the horn is a short simple cone, so the stylisation is partial.",
+   "V4": "Stump top and hoops have soft chamfers, but the anvil face, heel and waist edges are near-razor in the close-face studio shot, so bevels are inconsistent.",
+   "V5": "Mostly clean, but the close-horn flat shot shows a lumpy, wavering horn profile where it joins the body, and the 12-sided stump shows visible faceting bands. Minor.",
+   "V6": "Steel grey anvil, wood stump in 2-3 values, ink-iron hoops and a cream stump top. Disciplined, and the teal and walnut colourways keep the structure.",
+   "V7": "872 tris against a medium target of 2000, so it is under target.",
+   "V8": "Steel grey, ink iron, wood and a single vertex-colour material fit the kit, but the anvil's hard unchamfered edges differ from the kit's ~0.05-0.07 stud chamfer on made objects.",
+   "V9": "Studio line: Anchored, Hull fidelity, CanTouch off, Color white, SmoothPlastic, origin bottom-centre. A15 Y error 0.0, seats ok. Correct."
+  }
+ ],
+ "artifacts": [
+  [
+   "lumpy horn profile at the horn-body join",
+   "visible faceting on the 12-sided stump"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add consistent ~0.05-0.07 stud chamfers to the anvil face, heel and waist edges",
+   "Lengthen and curve the horn with a clean tapered profile that blends smoothly into the body",
+   "Add a slight flare to the anvil face and waist, and more sides or weighted normals on the stump, to remove faceting"
+  ]
+ ],
+ "params": {
+  "L": 3.182,
+  "Wd": 0.983,
+  "Ha": 1.567,
+  "stump": 1.631,
+  "Rs": 1.139
+ },
+ "tris": 872,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

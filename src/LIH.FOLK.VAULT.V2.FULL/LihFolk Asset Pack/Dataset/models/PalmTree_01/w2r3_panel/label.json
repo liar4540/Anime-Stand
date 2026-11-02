@@ -1,0 +1,165 @@
+{
+ "asset": "PalmTree_01",
+ "kit": "Nature",
+ "type": "PalmTree",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0,
+  8.3,
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.7,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Curved ringed trunk with a 7-frond drooping crown reads as a palm from front, three-quarter, silhouette and top (star of fronds); clear at 64 px.",
+   "V2": "Big (crown spread), medium (curved banded trunk, root collar) and small (3 coconuts, serrated frond edges, two-tone midribs) are all present and readable.",
+   "V3": "Confident stylised proportions: gentle trunk curve, oversized arching fronds, chunky root collar.",
+   "V4": "Frond edges and the root collar carry a consistent soft bevel that catches a light rim in the frond close-up; trunk rings are clean steps.",
+   "V5": "Frond, crown and trunk close-ups shade cleanly with no pinches, seams or z-fighting; only the low-segment trunk outline shows slight polygonal stepping (geometry, not a shading artifact).",
+   "V6": "Leaf green in two values (midrib split) plus bark brown in two values for rings and darker coconuts; disciplined, good contrast; autumn/frost colourways swap cleanly.",
+   "V7": "1812 tris vs tree target 2000 (ceiling 5000): at target.",
+   "V8": "One vertex-colour material, smooth weighted shading, value-banded palette and bevelled forms consistent with the kit.",
+   "V9": "Studio line: Anchored, Hull collision (trunk-only cylinder option), CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre: correct."
+  },
+  {
+   "V1": "Curved banded trunk under a drooping frond crown reads as a palm in front, three-quarter and silhouette; top view is a clear seven-frond star with a coconut hub.",
+   "V2": "Clear tiers: big trunk and crown mass, medium individual fronds and trunk bands, small coconuts under the crown.",
+   "V3": "Slender curved trunk, wide drooping serrated fronds and small coconut cluster give a confident stylised palm proportion.",
+   "V4": "Fronds have soft thin edges with serrated outlines, but the trunk is low-segment with visible flat vertical facets and a jagged outline, so edge treatment is inconsistent.",
+   "V5": "Trunk-rings close-up shows stray vertical faceting along the trunk; crown close-up (flat) shows a frond tip slicing through a neighbouring frond near the hub.",
+   "V6": "One foliage hue in 2 values (two-tone fronds) plus bark brown secondary in 2 values; autumn and frost colourways keep the same discipline.",
+   "V7": "1812 tris vs tree target 2000 - under target.",
+   "V8": "Single LF_VertexColor material and correct foliage + bark palette, but the faceted low-poly trunk does not match the smooth weighted-normal organic shell standard.",
+   "V9": "Studio line: Anchored, Hull collision (trunk-only cylinder option noted), CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre."
+  },
+  {
+   "V1": "Unmistakable palm from every view: curved banded trunk with drooping frond crown in front/3-4/silhouette, 7-point star of fronds from the top.",
+   "V2": "Clear tiers: big frond crown, medium curved trunk with alternating ring bands, small coconuts clustered under the crown and notched frond edges with a two-tone midrib.",
+   "V3": "Confident stylised proportions: gently S-curved tapering trunk, root flare, broad fronds that arch and droop at the tips.",
+   "V4": "Frond edges are thin with soft rounding while the trunk shows visible vertical polygon facets between rings (trunk-rings close-up); the bevel language is not consistent between parts.",
+   "V5": "Mostly clean, but a dark patch shows near the tip of the back-right frond (3/4 view, all colourways) suggesting a folded/backfacing frond tip, and the trunk has visible facet banding in studio light.",
+   "V6": "Leaf green in two values (light midrib half, dark half) plus bark brown in two values and a dark coconut; autumn and frost colourways stay disciplined.",
+   "V7": "1812 tris vs tree target 2000 (ceiling 5000).",
+   "V8": "One white vertex-colour material, foliage hue + bark brown secondary, smooth fused shells; matches the nature kit.",
+   "V9": "Anchored, Hull collision (trunk-only Cylinder if fronds should not block), CanTouch off, SmoothPlastic, MeshPart.Color white, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Slight polygonal stepping on the trunk outline in the trunk-rings close-up"
+  ],
+  [
+   "Stray vertical faceting on the trunk (PalmTree_01_close_trunk_rings_studio.png)",
+   "Frond tip intersecting a neighbouring frond at the crown hub (PalmTree_01_close_crown_flat.png)"
+  ],
+  [
+   "Dark patch near the tip of the back-right frond (folded or backfacing tip) visible in 3/4 and colourways",
+   "Visible vertical facet banding on the trunk"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add a couple more radial segments (or bulge each ring slightly) so the trunk outline is rounder and the rings read as stacked collars",
+   "Vary frond lengths/angles slightly so the crown is less evenly radial from the top view",
+   "Make the coconut cluster a touch larger so it reads at 64 px"
+  ],
+  [
+   "Raise trunk radial segments or apply weighted normals so the trunk shades smooth and its outline is not jagged",
+   "Offset frond roots in height so no frond slices through its neighbour at the hub",
+   "Give trunk rings a slight geometric step or bulge so they catch light, not just colour bands"
+  ],
+  [
+   "Fix the back-right frond tip (unfold / recalc normals) so no dark patch shows",
+   "Add 2-4 more radial segments to the trunk or smooth its normals to remove facet banding",
+   "Give frond edges a slight thickness/rounded rim so they match the trunk's edge treatment"
+  ]
+ ],
+ "params": {
+  "H": 7.37,
+  "bend": 1.688,
+  "r0": 0.41,
+  "segs": 8,
+  "fronds": 7,
+  "L": 3.638,
+  "nuts": 3,
+  "yaw": 270.665
+ },
+ "tris": 1812,
+ "budget_class": "tree",
+ "date": "2026-10-28"
+}

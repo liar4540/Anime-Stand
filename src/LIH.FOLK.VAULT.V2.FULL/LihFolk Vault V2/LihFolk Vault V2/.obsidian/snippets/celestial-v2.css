@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+/* ==========================================================================================
+   CELESTIAL V2 : the LihFolk Vault V2 shell. Extends Celestial (celestial-lite, celestial-fx,
+   vault-folder-colors, graph-cosmic, vault-polish, lihfolk-home). Never edits those files.
+   Companion snippets: celestial-v2-notes.css (reading surface + home), celestial-v2-hud.css
+   (modals, palette, menus, popovers, settings, search, canvas, scrollbars, focus).
+   Turn the three celestial-v2* snippets off to get plain Celestial back.
+
+   CHANGELOG
+   v2.3  2026-10-28  Full UI pass. Deep-space backdrop across the whole app; sidebars, ribbon,
+                     note pane and status bar float as glass HUD panels; orbit-pill tabs with a
+                     comet trail; mission-console status bar with orbiting planet + V2 mark;
+                     constellation file explorer with star lock-on; Sora + Figtree type;
+                     welcome planet fixed (container max-height 280px was shrinking the flex
+                     item to 18px) and rebuilt as a V2 launch screen; graph crescent moon made
+                     visible (graph-cosmic's !important background was hiding it) and orbit
+                     rings moved off graph-cosmic's pseudo-elements; split into 3 snippets.
+   v2.4  2026-10-28  Style Settings panel (glow, accents, glass, speed, stars, orbits, motion);
+                     styling for Smart Connections, Dataview, Advanced Tables, the 3D galaxy /
+                     orrery / extended-graph views and the Celestial Vault plugin when it is on.
+   v2.2  earlier     Graph glow, planet-ring backdrop, twinkle layer, V2 pill, hero halo.
+   ========================================================================================== */
+
+/* @settings
+
+name: LihFolk Vault V2
+id: lihfolk-vault-v2
+settings:
+    -
+        id: v2-look
+        title: Look
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: v2-glow
+        title: Glow strength
+        description: Multiplies every neon glow (panels, tabs, callouts, cards, graph). 0 = flat, 2 = maximum.
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 2
+        step: 0.1
+    -
+        id: v2-glass-alpha
+        title: Panel glass opacity
+        description: How solid the floating panels are. Lower lets more of the nebula through.
+        type: variable-number-slider
+        default: 0.8
+        min: 0.5
+        max: 0.98
+        step: 0.02
+    -
+        id: v2-violet
+        title: Violet accent
+        type: variable-color
+        format: rgb-values
+        default: '#9b7bff'
+    -
+        id: v2-cyan
+        title: Cyan accent
+        type: variable-color
+        format: rgb-values
+        default: '#40d9ff'
+    -
+        id: v2-pink
+        title: Pink accent
+        type: variable-color
+        format: rgb-values
+        default: '#f273cc'
+    -
+        id: v2-space
+        title: Space
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: v2-no-stars
+        title: Hide starfield and twinkle
+        description: Removes the star layers behind the app, notes and graph.
+        type: class-toggle
+        default: false
+    -
+        id: v2-no-orbits
+        title: Hide orbit rings
+        description: Removes the orbit rings and orbiting moons (graph, home hero, welcome tab).
+        type: class-toggle
+        default: false
+    -
+        id: v2-motion
+        title: Motion
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: v2-speed
+        title: Animation speed
+        description: 1 = normal, 0.5 = half speed, 2 = double speed.
+        type: variable-number-slider
+        default: 1
+        min: 0.25
+        max: 3
+        step: 0.25
+    -
+        id: v2-reduce-motion
+        title: Reduce motion
+        description: Stops every animation and transition (the OS "reduce motion" setting does this too).
+        type: class-toggle
+        default: false
+*/
+
+/* ---------------------------------------------------------------- tokens (defaults on :root so Style Settings can override) */
+:root {
+  --v2-violet: 155, 123, 255; --v2-cyan: 64, 217, 255; --v2-pink: 242, 115, 204; --v2-gold: 255, 210, 122;
+  --v2-glow: 1; --v2-glass-alpha: .8; --v2-speed: 1;
+}
+body.theme-dark {
+  --v2-display: 'Sora', 'Segoe UI', sans-serif;
+  --v2-body: 'Figtree', 'Segoe UI', sans-serif;
+  --v2-ice: color-mix(in srgb, rgb(var(--v2-cyan)) 72%, white);
+  --v2-lilac: #c9b8ff;
+  --v2-glass: linear-gradient(180deg, rgba(24, 18, 48, var(--v2-glass-alpha)), rgba(10, 8, 22, calc(var(--v2-glass-alpha) + .04)));
+  --v2-glass-edge: rgba(var(--v2-violet), .24);
+  --v2-panel-shadow: inset 0 1px 0 rgba(255, 255, 255, .06), 0 0 0 1px rgba(0, 0, 0, .35),
+                     0 22px 50px -22px rgba(0, 0, 0, .9), 0 0 34px -16px rgba(var(--v2-violet), calc(.55 * var(--v2-glow)));
+  --v2-hairline: linear-gradient(90deg, transparent, rgba(var(--v2-cyan), .55) 30%, rgba(var(--v2-violet), .6) 70%, transparent);
+
+  /* type */
+  --font-text-theme: var(--v2-body);
+  --font-interface-theme: var(--v2-body);
+  --h1-font: var(--v2-display); --h2-font: var(--v2-display); --h3-font: var(--v2-display);
+  --h4-font: var(--v2-display); --h5-font: var(--v2-display); --h6-font: var(--v2-display);
+  --inline-title-font: var(--v2-display);
+  --h1-size: 2.15em; --h2-size: 1.6em; --h3-size: 1.28em; --h4-size: 1.06em;
+  --h1-weight: 700; --h2-weight: 650; --h3-weight: 600; --h4-weight: 600;
+  --h1-line-height: 1.18; --h2-line-height: 1.25;
+  --line-height-normal: 1.72;
+  --file-line-width: 900px;
+
+  /* interaction */
+  --text-selection: rgba(var(--v2-cyan), .22);
+  --background-modifier-border-focus: rgba(var(--v2-cyan), .6);
+  --caret-color: var(--v2-ice);
+  --tab-radius-active: 999px;
+  --nav-indentation-guide-color: transparent;
+  --nav-item-radius: 9px;
+
+  /* theme-proof palette: pins the core variables another base theme would otherwise
+     leak into the cosmic look. Celestial-lite already pins the main ones; these are the rest. */
+  --color-base-00: #07060d; --color-base-05: #0b0914; --color-base-10: #0e0c16; --color-base-20: #15121e; --color-base-25: #1b1728;
+  --color-base-30: #241e33; --color-base-35: #2f2842; --color-base-40: #4a3f6b; --color-base-50: #5c556e; --color-base-60: #8f86ad;
+  --color-base-70: #b3abc9; --color-base-100: #e2dcec;
+  --color-red-rgb: 255, 107, 129; --color-orange-rgb: 255, 160, 90; --color-yellow-rgb: 255, 210, 122; --color-green-rgb: 92, 230, 160;
+  --color-cyan-rgb: 64, 217, 255; --color-blue-rgb: 110, 160, 255; --color-purple-rgb: 155, 123, 255; --color-pink-rgb: 242, 115, 204;
+  --color-red: rgb(var(--color-red-rgb)); --color-orange: rgb(var(--color-orange-rgb)); --color-yellow: rgb(var(--color-yellow-rgb));
+  --color-green: rgb(var(--color-green-rgb)); --color-cyan: rgb(var(--color-cyan-rgb)); --color-blue: rgb(var(--color-blue-rgb));
+  --color-purple: rgb(var(--color-purple-rgb)); --color-pink: rgb(var(--color-pink-rgb));
+  --callout-default: var(--color-blue-rgb); --callout-note: var(--color-blue-rgb); --callout-info: var(--color-blue-rgb); --callout-todo: var(--color-blue-rgb);
+  --callout-summary: var(--color-cyan-rgb); --callout-tip: var(--color-cyan-rgb); --callout-important: var(--color-cyan-rgb);
+  --callout-success: var(--color-green-rgb); --callout-question: var(--color-yellow-rgb); --callout-warning: var(--color-orange-rgb);
+  --callout-caution: var(--color-orange-rgb); --callout-fail: var(--color-red-rgb); --callout-error: var(--color-red-rgb); --callout-bug: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb); --callout-quote: 158, 150, 190;
+  --icon-color: #8f86ad; --icon-color-hover: #e2dcec; --icon-color-active: var(--v2-ice); --icon-color-focused: #e2dcec;
+  --nav-item-color: #b3abc9; --nav-item-color-hover: #f1ebfb; --nav-item-color-active: #ffffff;
+  --nav-item-background-hover: rgba(var(--v2-violet), .09); --nav-item-background-active: rgba(var(--v2-violet), .16); --nav-collapse-icon-color: #6f6690;
+  --tab-text-color: #8f86ad; --tab-text-color-active: #e2dcec; --tab-text-color-focused: #b3abc9; --tab-text-color-focused-active: #ffffff;
+  --tab-background-active: transparent; --tab-divider-color: transparent; --tab-container-background: transparent;
+  --titlebar-text-color: #8f86ad; --titlebar-text-color-focused: #e2dcec;
+  --h5-color: #9fe8ff; --h6-color: #9fe8ff; --h5-size: .95em; --h6-size: .9em; --h5-weight: 600; --h6-weight: 600;
+  --list-marker-color: #b9a2ff; --list-marker-color-hover: var(--v2-ice); --list-indentation-guide-color: rgba(var(--v2-violet), .18);
+  --checkbox-border-color: #b9a2ff; --checkbox-border-color-hover: var(--v2-ice); --checkbox-color-hover: #8f75f0;
+  --metadata-background: transparent; --metadata-border-color: rgba(var(--v2-violet), .16); --metadata-divider-color: rgba(var(--v2-violet), .1);
+  --metadata-label-text-color: #8f86ad; --metadata-input-text-color: #e2dcec; --metadata-input-background: transparent;
+  --metadata-input-background-hover: rgba(var(--v2-violet), .08); --metadata-property-background-hover: rgba(var(--v2-violet), .08);
+  --embed-background: rgba(12, 9, 26, .5); --embed-border-color: rgba(var(--v2-violet), .3);
+  --table-background: transparent; --table-row-alt-background: rgba(255, 255, 255, .018); --table-row-background-hover: rgba(var(--v2-cyan), .06);
+  --table-header-background: rgba(var(--v2-violet), .16); --table-header-background-hover: rgba(var(--v2-violet), .24); --table-border-color: rgba(var(--v2-violet), .14);
+  --search-result-background: transparent; --search-icon-color: var(--v2-ice); --search-clear-button-color: #8f86ad;
+  --text-highlight-bg: rgba(var(--v2-gold), .28); --text-highlight-bg-active: rgba(var(--v2-gold), .45);
+  --text-on-accent: #ffffff; --text-error: #ff8fa3; --text-success: #8fffc8; --text-warning: #ffcf8a;
+  --interactive-normal: rgba(24, 18, 48, .8); --interactive-hover: rgba(40, 30, 76, .9);
+  --link-color-hover: #ffffff; --link-external-color: #8fe3ff; --link-external-color-hover: #ffffff; --link-unresolved-opacity: .8;
+  --blockquote-color: #dcd3f0; --divider-color-hover: rgba(var(--v2-cyan), .5);
+  --canvas-background: transparent; --canvas-dot-pattern: rgba(201, 184, 255, .26); --canvas-card-label-color: #c9bcff;
+  --canvas-color-1: 255, 107, 129; --canvas-color-2: 255, 160, 90; --canvas-color-3: 255, 210, 122;
+  --canvas-color-4: 92, 230, 160; --canvas-color-5: 64, 217, 255; --canvas-color-6: 155, 123, 255;
+  --status-bar-text-color: #a99be0; --ribbon-background-collapsed: transparent;
+  --scrollbar-bg: transparent; --scrollbar-thumb-bg: rgba(var(--v2-violet), .4); --scrollbar-active-thumb-bg: rgba(var(--v2-cyan), .6);
+  --background-modifier-error: rgba(255, 107, 129, .25); --background-modifier-success: rgba(92, 230, 160, .25);
+  --background-modifier-form-field-highlighted: rgba(16, 12, 34, .9);
+}
+body.theme-dark .markdown-rendered mark { background-color: rgba(var(--v2-gold), .3); color: #fff; }
+
+/* ---------------------------------------------------------------- FRAME: deep space behind everything */
+body.theme-dark {
+  background-color: #05040a;
+  background-image:
+    radial-gradient(ellipse 55% 45% at 92% -8%, rgba(124, 82, 255, .26), transparent 70%),
+    radial-gradient(ellipse 42% 38% at -6% 104%, rgba(var(--v2-cyan), .13), transparent 70%),
+    radial-gradient(ellipse 38% 32% at 58% 112%, rgba(var(--v2-pink), .11), transparent 70%),
+    radial-gradient(ellipse 30% 24% at 18% 8%, rgba(98, 60, 200, .14), transparent 70%),
+    radial-gradient(ellipse 90% 70% at 50% 40%, #0d0a22, #05040a 82%);
+}
+/* star dust (static, cheap) + a twinkle layer that only animates opacity */
+body.theme-dark::before, body.theme-dark::after {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+}
+body.theme-dark::before {
+  opacity: .6;
+  background-image:
+    radial-gradient(1px 1px at 7% 13%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 19% 71%, #e9e2ff 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 33% 37%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 46% 88%, #cfe0ff 50%, transparent 51%),
+    radial-gradient(1px 1px at 58% 9%, #ffd9f3 50%, transparent 51%), radial-gradient(1.3px 1.3px at 71% 52%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 83% 77%, #e9e2ff 50%, transparent 51%), radial-gradient(1px 1px at 94% 27%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 3% 49%, #cfe0ff 50%, transparent 51%), radial-gradient(1.2px 1.2px at 64% 95%, #fff 50%, transparent 51%);
+  background-size: 430px 430px;
+}
+body.theme-dark::after {
+  opacity: .5; will-change: opacity; animation: v2-breathe calc(6s / var(--v2-speed)) ease-in-out infinite;
+  background-image:
+    radial-gradient(1.6px 1.6px at 12% 22%, #fff 50%, transparent 51%), radial-gradient(1.8px 1.8px at 41% 64%, #7fe3ff 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 77% 18%, #ffd9f3 50%, transparent 51%), radial-gradient(2px 2px at 88% 83%, #e9e2ff 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 26% 92%, #fff 50%, transparent 51%);
+  background-size: 760px 620px;
+}
+@keyframes v2-breathe { 0%, 100% { opacity: .25; } 50% { opacity: .8; } }
+body.theme-dark > .app-container { position: relative; z-index: 1; }
+
+/* every structural layer goes transparent so the backdrop spans the app */
+body.theme-dark :is(.app-container, .horizontal-main-container, .workspace, .titlebar, .workspace-ribbon,
+  .workspace-split.mod-left-split, .workspace-split.mod-right-split, .workspace-split.mod-root,
+  .mod-root .workspace-tab-header-container, .mod-sidedock .workspace-tab-header-container) {
+  background: transparent !important; border-color: transparent !important;
+}
+body.theme-dark .mod-root .workspace-tab-header-container { border-bottom: none !important; }
+body.theme-dark .workspace-split.mod-root .view-content,
+body.theme-dark .mod-root :is(.workspace-leaf, .workspace-leaf-content, .view-header, .markdown-reading-view,
+  .markdown-preview-view, .markdown-source-view, .cm-editor, .cm-scroller, .cm-gutters) { background-color: transparent; }
+body.theme-dark .workspace-split.mod-root .workspace-leaf-content:is([data-type="markdown"], [data-type="empty"], [data-type="bases"], [data-type="image"], [data-type="pdf"]) .view-content {
+  background: radial-gradient(ellipse 60% 40% at 85% 0%, rgba(110, 70, 220, .07), transparent 70%) !important;
+}
+
+/* ---------------------------------------------------------------- FRAME: the note pane is a floating glass viewport */
+body.theme-dark .mod-root .workspace-tabs .workspace-tab-container {
+  margin: 0 10px 10px 4px; border-radius: 20px; overflow: hidden; position: relative;
+  background:
+    var(--v2-hairline) top / 100% 1px no-repeat,
+    linear-gradient(180deg, rgba(14, 10, 30, calc(var(--v2-glass-alpha) + .06)), rgba(7, 6, 16, calc(var(--v2-glass-alpha) + .1)));
+  border: 1px solid var(--v2-glass-edge);
+  box-shadow: var(--v2-panel-shadow);
+}
+body.theme-dark .mod-root .view-header { border-bottom: 1px solid rgba(var(--v2-violet), .1); }
+body.theme-dark .mod-root .view-header-title, body.theme-dark .mod-root .view-header-breadcrumb {
+  font-family: var(--v2-display); font-size: 12.5px; letter-spacing: .04em; color: #a99be0;
+}
+body.theme-dark .mod-root .view-header-title { color: #e7defc; }
+body.theme-dark .view-header .clickable-icon:hover, body.theme-dark .view-action:hover {
+  color: var(--v2-ice); background: rgba(var(--v2-cyan), .1); filter: drop-shadow(0 0 5px rgba(var(--v2-cyan), calc(.6 * var(--v2-glow))));
+}
+
+/* ---------------------------------------------------------------- FRAME: sidebars as HUD panels */
+body.theme-dark .mod-sidedock > .workspace-tabs,
+body.theme-dark .mod-sidedock .workspace-split > .workspace-tabs {
+  margin: 8px 6px 6px 4px; border-radius: 20px; overflow: hidden;
+  background: var(--v2-hairline) top / 100% 1px no-repeat, var(--v2-glass) !important;
+  border: 1px solid var(--v2-glass-edge) !important;
+  box-shadow: var(--v2-panel-shadow);
+}
+body.theme-dark .mod-sidedock :is(.workspace-tab-container, .workspace-leaf, .workspace-leaf-content, .view-content,
+  .view-header, .nav-header, .nav-files-container, .search-input-container, .tree-item-self.is-being-dragged-over) { background-color: transparent !important; }
+/* the sidebar's tab strip (files / search / bookmarks) */
+body.theme-dark .mod-sidedock .workspace-tab-header-container { padding: 0 8px; border-bottom: 1px solid rgba(var(--v2-violet), .12) !important; }
+body.theme-dark .mod-sidedock .workspace-tab-header { border-radius: 10px; }
+body.theme-dark .mod-sidedock .workspace-tab-header .workspace-tab-header-inner-icon { color: #8f86ad; transition: color .2s, filter .2s; }
+body.theme-dark .mod-sidedock .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+body.theme-dark .mod-sidedock .workspace-tab-header:hover .workspace-tab-header-inner-icon {
+  color: var(--v2-ice); filter: drop-shadow(0 0 5px rgba(var(--v2-cyan), calc(.75 * var(--v2-glow))));
+}
+body.theme-dark .mod-sidedock .workspace-tab-header.is-active { background: rgba(var(--v2-cyan), .08) !important; box-shadow: inset 0 -2px 0 rgba(var(--v2-cyan), .7); }
+body.theme-dark .nav-header .nav-buttons-container .clickable-icon { color: #8f86ad; border-radius: 8px; }
+body.theme-dark .nav-header .nav-buttons-container .clickable-icon:hover { color: var(--v2-ice); background: rgba(var(--v2-cyan), .1); }
+/* vault switcher at the bottom: a docking-bay pill */
+body.theme-dark .workspace-sidedock-vault-profile {
+  margin: 0 6px 8px 4px; border-radius: 16px; background: var(--v2-glass) !important;
+  border: 1px solid var(--v2-glass-edge); box-shadow: var(--v2-panel-shadow);
+}
+body.theme-dark .workspace-drawer-vault-name { font-family: var(--v2-display); font-weight: 600; letter-spacing: .02em; }
+
+/* ---------------------------------------------------------------- FRAME: ribbon, a glowing instrument strip */
+body.theme-dark .workspace-ribbon.mod-left { position: relative; }
+body.theme-dark .workspace-ribbon.mod-left::before { display: none; }
+body.theme-dark .side-dock-ribbon .side-dock-actions {
+  margin: 8px 4px 0; padding: 10px 0; gap: 8px; border-radius: 18px;
+  background: var(--v2-glass); border: 1px solid var(--v2-glass-edge); box-shadow: var(--v2-panel-shadow);
+}
+body.theme-dark .side-dock-ribbon-action { color: #b9a2ff; border-radius: 10px; transition: color .2s, background .2s, transform .2s; }
+body.theme-dark .side-dock-ribbon-action svg { filter: drop-shadow(0 0 4px rgba(var(--v2-violet), calc(.75 * var(--v2-glow)))); }
+body.theme-dark .side-dock-ribbon-action:hover { color: var(--v2-ice); background: rgba(var(--v2-cyan), .12); transform: scale(1.08); }
+body.theme-dark .side-dock-ribbon-action:hover svg { filter: drop-shadow(0 0 6px rgba(var(--v2-cyan), calc(.9 * var(--v2-glow)))); }
+/* a little ringed planet docked at the bottom of the ribbon */
+body.theme-dark .workspace-ribbon.mod-left::after {
+  content: ""; position: absolute; left: 50%; bottom: 18px; width: 30px; height: 30px; margin-left: -15px; pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cdefs%3E%3CradialGradient id='p' cx='.35' cy='.3' r='.8'%3E%3Cstop offset='0' stop-color='%23d8f4ff'/%3E%3Cstop offset='.45' stop-color='%239b7bff'/%3E%3Cstop offset='1' stop-color='%23261358'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cg transform='rotate(-20 20 21)'%3E%3Cpath d='M2 21 A18 5 0 0 1 38 21' fill='none' stroke='%237fe3ff' stroke-opacity='.5' stroke-width='1.4'/%3E%3C/g%3E%3Ccircle cx='20' cy='20' r='9' fill='url(%23p)'/%3E%3Cg transform='rotate(-20 20 21)'%3E%3Cpath d='M2 21 A18 5 0 0 0 38 21' fill='none' stroke='%237fe3ff' stroke-width='1.8' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+  filter: drop-shadow(0 0 6px rgba(var(--v2-violet), calc(.8 * var(--v2-glow)))); animation: v2-bob calc(7s / var(--v2-speed)) ease-in-out infinite;
+}
+@keyframes v2-bob { 0%, 100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-4px) rotate(4deg); } }
+body.theme-dark .sidebar-toggle-button .clickable-icon, body.theme-dark .titlebar-button { color: #8f86ad; }
+body.theme-dark .sidebar-toggle-button .clickable-icon:hover { color: var(--v2-ice); }
+
+/* ---------------------------------------------------------------- FRAME: orbit tabs with a comet trail */
+body.theme-dark .mod-root .workspace-tab-header-container { padding-left: 6px; }
+body.theme-dark .mod-root .workspace-tab-header { background: transparent !important; box-shadow: none !important; padding: 0 3px; }
+body.theme-dark .mod-root .workspace-tab-header::before { display: none !important; }
+body.theme-dark .mod-root .workspace-tab-header .workspace-tab-header-inner {
+  height: 30px; margin-top: 5px; padding: 0 10px 0 12px; border-radius: 999px; border: 1px solid transparent;
+  transition: background .2s, border-color .2s, box-shadow .2s;
+}
+body.theme-dark .mod-root .workspace-tab-header .workspace-tab-header-inner::after { display: none !important; } /* separators */
+body.theme-dark .mod-root .workspace-tab-header:hover .workspace-tab-header-inner {
+  background: rgba(var(--v2-violet), .08); border-color: rgba(var(--v2-violet), .2);
+}
+body.theme-dark .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+  background: linear-gradient(135deg, rgba(124, 82, 255, .32), rgba(var(--v2-cyan), .10));
+  border-color: rgba(var(--v2-violet), .5);
+  box-shadow: 0 0 18px -5px rgba(var(--v2-violet), calc(.7 * var(--v2-glow))), inset 0 1px 0 rgba(255, 255, 255, .12);
+}
+body.theme-dark .mod-root .workspace-tab-header-inner-title {
+  font-family: var(--v2-display); font-size: 12.5px; font-weight: 500; letter-spacing: .01em; color: #8f86ad;
+}
+body.theme-dark .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-title { color: #f3eeff; }
+/* each tab carries a small planet; the active one glows ice-blue */
+body.theme-dark .mod-root .workspace-tab-header-inner-title::before {
+  content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 8px; vertical-align: 1px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff, #9b7bff 60%); opacity: .55;
+}
+body.theme-dark .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-title::before {
+  opacity: 1; background: radial-gradient(circle at 35% 35%, #fff, var(--v2-ice) 55%, #2b6fd6); box-shadow: 0 0 8px rgba(var(--v2-cyan), calc(.9 * var(--v2-glow)));
+}
+body.theme-dark .mod-root .workspace-tab-header-inner-icon + .workspace-tab-header-inner-title::before { display: none; }
+/* comet trail under the active tab (replaces celestial-fx's flowing underline) */
+body.theme-dark .mod-root .workspace-tab-header.is-active::after {
+  content: ""; display: block !important; position: absolute; left: 22px; right: 22px; bottom: 0; top: auto; width: auto; height: 2px;
+  border-radius: 2px; box-shadow: none; transform-origin: left center;
+  background:
+    radial-gradient(circle at 100% 50%, #fff 0 1.5px, transparent 3px),
+    linear-gradient(90deg, transparent, rgba(var(--v2-violet), .55) 45%, rgba(var(--v2-cyan), .95) 92%, #fff);
+  filter: drop-shadow(0 0 4px rgba(var(--v2-cyan), calc(.9 * var(--v2-glow))));
+  animation: v2-comet calc(4.5s / var(--v2-speed)) ease-in-out infinite;
+}
+@keyframes v2-comet { 0% { transform: scaleX(.15); opacity: 0; } 25% { opacity: 1; } 55%, 100% { transform: scaleX(1); opacity: 1; } }
+body.theme-dark .workspace-tab-header-new-tab .clickable-icon, body.theme-dark .workspace-tab-header-tab-list .clickable-icon { color: #8f86ad; border-radius: 999px; }
+body.theme-dark .workspace-tab-header-new-tab .clickable-icon:hover { color: var(--v2-ice); background: rgba(var(--v2-cyan), .1); }
+body.theme-dark .mod-root .workspace-tab-header-status-icon { color: var(--v2-ice); }
+
+/* ---------------------------------------------------------------- FRAME: mission-console status bar */
+body.theme-dark .status-bar {
+  bottom: 3px; right: 24px; padding: 4px 14px 4px 8px; gap: 2px; border-radius: 999px; min-height: 28px; align-items: center;
+  background: linear-gradient(90deg, rgba(26, 18, 52, .9), rgba(10, 12, 28, .9)) !important;
+  border: 1px solid rgba(var(--v2-violet), .32) !important;
+  box-shadow: 0 0 24px -6px rgba(var(--v2-violet), calc(.6 * var(--v2-glow))), inset 0 1px 0 rgba(255, 255, 255, .07), 0 8px 24px -10px rgba(0, 0, 0, .9);
+  font-family: var(--v2-display); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: #a99be0;
+}
+body.theme-dark .status-bar-item { padding: 0 9px; border-left: 1px solid rgba(var(--v2-violet), .22); }
+body.theme-dark .status-bar-item.mod-clickable:hover { color: var(--v2-ice); background: rgba(var(--v2-cyan), .08); border-radius: 999px; }
+/* orbiting planet: a planet with a moon riding its ring */
+body.theme-dark .status-bar::before {
+  content: ""; order: -2; flex: none; width: 18px; height: 18px; margin-right: 4px; border-radius: 50%;
+  border: 1px solid rgba(var(--v2-cyan), .4);
+  background:
+    radial-gradient(circle at 50% 50%, #e0d4ff 0 2px, #9b7bff 3.5px, transparent 4.4px),
+    radial-gradient(circle at 50% 1.6px, #fff 0 1px, var(--v2-ice) 1.6px, transparent 2.4px);
+  box-shadow: 0 0 10px rgba(var(--v2-violet), calc(.55 * var(--v2-glow)));
+  animation: v2-spin calc(7s / var(--v2-speed)) linear infinite;
+}
+@keyframes v2-spin { to { transform: rotate(360deg); } }
+body.theme-dark .status-bar::after {
+  content: "LIHFOLK  \2022  VAULT V2"; order: -1; flex: none; padding: 0 10px 0 2px; font-weight: 700; letter-spacing: .2em; font-size: 10px;
+  background: linear-gradient(90deg, #e8e0ff, #b9a2ff 45%, var(--v2-ice)); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+/* ---------------------------------------------------------------- EXPLORER: constellation map */
+body.theme-dark .nav-files-container { padding: 6px 8px 40px; }
+body.theme-dark .nav-file-title, body.theme-dark .nav-folder-title { border-radius: 9px; transition: background .18s, color .18s, transform .18s, box-shadow .18s; }
+body.theme-dark .nav-file-title { color: #b3abc9; }
+body.theme-dark .nav-file-title:hover { color: #f1ebfb; background: rgba(var(--v2-violet), .09); transform: translateX(2px); }
+/* sections: the colour dot from vault-folder-colors becomes a four-point star with a comet trail behind the name */
+body.theme-dark .nav-folder-title[data-path]:not([data-path*="/"]) {
+  box-shadow: none; border-radius: 10px; margin: 2px 0; font-family: var(--v2-display); font-size: 12.5px; font-weight: 600; letter-spacing: .01em;
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--vf-accent, transparent) 20%, transparent), color-mix(in srgb, var(--vf-accent, transparent) 5%, transparent) 55%, transparent 85%);
+}
+body.theme-dark .nav-folder-title[data-path]:not([data-path*="/"])::before {
+  width: 12px; height: 12px; margin-right: 7px; border-radius: 0; box-shadow: none;
+  background:
+    radial-gradient(circle, #fff 0 1px, var(--vf-accent, #9b7bff) 1.7px, transparent 3.3px),
+    linear-gradient(90deg, transparent 5%, var(--vf-accent, #9b7bff) 50%, transparent 95%) center / 100% 1px no-repeat,
+    linear-gradient(180deg, transparent 5%, var(--vf-accent, #9b7bff) 50%, transparent 95%) center / 1px 100% no-repeat;
+  filter: drop-shadow(0 0 3px var(--vf-accent, #9b7bff));
+  transition: transform .3s ease;
+}
+body.theme-dark .nav-folder-title[data-path]:not([data-path*="/"]):hover {
+  box-shadow: 0 0 18px -8px var(--vf-accent, transparent), inset 0 0 0 1px color-mix(in srgb, var(--vf-accent, transparent) 35%, transparent);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--vf-accent, transparent) 32%, transparent), transparent 90%);
+}
+body.theme-dark .nav-folder-title[data-path]:not([data-path*="/"]):hover::before { transform: rotate(45deg) scale(1.25); }
+body.theme-dark .nav-folder:not(.is-collapsed) > .nav-folder-title[data-path]:not([data-path*="/"])::before { transform: scale(1.2); }
+body.theme-dark .nav-folder-title[data-path^="_"] { opacity: .55; font-style: italic; }
+/* sub folders: a hollow star */
+body.theme-dark .nav-folder-title[data-path*="/"] { color: #c9bcff; }
+/* indentation guides become dotted constellation lines */
+body.theme-dark .nav-files-container .tree-item-children {
+  border-inline-start: 1px solid transparent !important; background-origin: border-box;
+  background-image: radial-gradient(circle at 1px 50%, rgba(var(--v2-violet), .6) 0 .9px, transparent 1.5px);
+  background-size: 3px 7px; background-repeat: repeat-y; background-position: 0 0;
+}
+/* the open note: a star lock-on (corner brackets + pulsing beacon) */
+body.theme-dark .nav-file-title.is-active {
+  position: relative; color: #ffffff !important; transform: none; border-radius: 2px !important;
+  background:
+    linear-gradient(var(--v2-ice), var(--v2-ice)) left top / 7px 1.5px no-repeat,
+    linear-gradient(var(--v2-ice), var(--v2-ice)) left top / 1.5px 7px no-repeat,
+    linear-gradient(var(--v2-ice), var(--v2-ice)) right top / 7px 1.5px no-repeat,
+    linear-gradient(var(--v2-ice), var(--v2-ice)) right top / 1.5px 7px no-repeat,
+    linear-gradient(var(--v2-ice), var(--v2-ice)) left bottom / 7px 1.5px no-repeat,
+    linear-gradient(var(--v2-ice), var(--v2-ice)) left bottom / 1.5px 7px no-repeat,
+    linear-gradient(var(--v2-ice), var(--v2-ice)) right bottom / 7px 1.5px no-repeat,
+    linear-gradient(var(--v2-ice), var(--v2-ice)) right bottom / 1.5px 7px no-repeat,
+    linear-gradient(90deg, rgba(var(--v2-cyan), .18), rgba(var(--v2-violet), .12) 60%, rgba(var(--v2-violet), .03)) !important;
+  box-shadow: 0 0 18px -6px rgba(var(--v2-cyan), calc(.6 * var(--v2-glow))) !important;
+  text-shadow: 0 0 10px rgba(var(--v2-cyan), calc(.45 * var(--v2-glow)));
+}
+body.theme-dark .nav-file-title.is-active::after {
+  content: ""; position: absolute; right: 10px; top: 50%; width: 6px; height: 6px; margin-top: -3px; border-radius: 50%;
+  background: var(--v2-ice); box-shadow: 0 0 0 0 rgba(var(--v2-cyan), calc(.7 * var(--v2-glow))); animation: v2-ping calc(2.4s / var(--v2-speed)) ease-out infinite;
+}
+@keyframes v2-ping { 0% { box-shadow: 0 0 0 0 rgba(var(--v2-cyan), calc(.7 * var(--v2-glow))); } 70%, 100% { box-shadow: 0 0 0 7px rgba(var(--v2-cyan), 0); } }
+body.theme-dark .nav-file-tag { font-family: var(--v2-display); font-size: 9px; letter-spacing: .14em; color: var(--v2-ice); background: rgba(var(--v2-cyan), .1); border-radius: 999px; }
+/* the root vault row keeps the V2 pill */
+.workspace-drawer-vault-name::after, .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content::after {
+  content: "V2"; margin-left: 6px; padding: 0 6px; border-radius: 8px; font-size: .72em; font-weight: 700; font-family: var(--v2-display, sans-serif);
+  color: #fff; background: linear-gradient(90deg, rgb(var(--v2-cyan)), rgb(var(--v2-violet)), rgb(var(--v2-pink)));
+  box-shadow: 0 0 10px rgba(var(--v2-violet), calc(.55 * var(--v2-glow)));
+}
+
+/* ---------------------------------------------------------------- GRAPH: crescent moon, orbit rings, glowing nodes */
+/* the space scene moves to the leaf itself so graph-cosmic's nebula + stars layers (view-content ::before/::after) stay intact */
+body.theme-dark .workspace-leaf-content[data-type="graph"] { position: relative; isolation: isolate;
+  background:
+    /* twinkling rainbow star field (each star blinks on its own clock) and moon rocks drifting slowly across the sky */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='640' viewBox='0 0 640 640'%3E%3Cpath d='M178 434Q178.7 437.3 182 438Q178.7 438.7 178 442Q177.3 438.7 174 438Q177.3 437.3 178 434Z' fill='%23ffd36e'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='2.8s' begin='0.6s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M496 531.5Q496.4 533.5 498.5 534Q496.4 534.5 496 536.5Q495.6 534.5 493.5 534Q495.6 533.5 496 531.5Z' fill='%237fe3ff'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='3.6s' begin='0.0s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M609 446Q609.4 447.6 611 448Q609.4 448.4 609 450Q608.6 448.4 607 448Q608.6 447.6 609 446Z' fill='%23ffd9f3'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='3.7s' begin='0.7s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M248 49Q248.7 52.3 252 53Q248.7 53.7 248 57Q247.3 53.7 244 53Q247.3 52.3 248 49Z' fill='%237dffbf'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='3.2s' begin='0.1s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M346 559Q346.7 562.3 350 563Q346.7 563.7 346 567Q345.3 563.7 342 563Q345.3 562.3 346 559Z' fill='%23cfe0ff'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='3.3s' begin='2.8s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M33 166Q33.4 167.6 35 168Q33.4 168.4 33 170Q32.6 168.4 31 168Q32.6 167.6 33 166Z' fill='%23cfe0ff'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='3.7s' begin='0.1s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M174 572Q174.5 574.5 177 575Q174.5 575.5 174 578Q173.5 575.5 171 575Q173.5 574.5 174 572Z' fill='%237dffbf'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='2.9s' begin='0.6s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M48 488.5Q48.5 490.6 50.5 491Q48.5 491.4 48 493.5Q47.5 491.4 45.5 491Q47.5 490.6 48 488.5Z' fill='%23cfe0ff'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='3.6s' begin='0.6s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M604 80Q604.4 81.6 606 82Q604.4 82.4 604 84Q603.6 82.4 602 82Q603.6 81.6 604 80Z' fill='%23ff8ac8'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='3.1s' begin='1.2s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M359 153.5Q360.0 158.0 364.5 159Q360.0 160.0 359 164.5Q358.0 160.0 353.5 159Q358.0 158.0 359 153.5Z' fill='%237dffbf'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='2.4s' begin='2.9s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M523 402Q523.5 404.5 526 405Q523.5 405.5 523 408Q522.5 405.5 520 405Q522.5 404.5 523 402Z' fill='%23ff8ac8'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='2.6s' begin='0.1s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M105 168Q105.7 171.3 109 172Q105.7 172.7 105 176Q104.3 172.7 101 172Q104.3 171.3 105 168Z' fill='%23ffffff'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='2.9s' begin='1.7s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M544 231.5Q545.0 236.0 549.5 237Q545.0 238.0 544 242.5Q543.0 238.0 538.5 237Q543.0 236.0 544 231.5Z' fill='%23c79bff'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='3.0s' begin='1.9s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M195 181Q195.5 183.5 198 184Q195.5 184.5 195 187Q194.5 184.5 192 184Q194.5 183.5 195 181Z' fill='%23c79bff'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='2.5s' begin='1.8s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M323 259Q323.4 260.6 325 261Q323.4 261.4 323 263Q322.6 261.4 321 261Q322.6 260.6 323 259Z' fill='%23ffd9f3'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='1.8s' begin='2.4s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M449 390.5Q449.4 392.6 451.5 393Q449.4 393.4 449 395.5Q448.6 393.4 446.5 393Q448.6 392.6 449 390.5Z' fill='%23ffffff'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='3.4s' begin='2.7s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M257 423.5Q257.4 425.6 259.5 426Q257.4 426.4 257 428.5Q256.6 426.4 254.5 426Q256.6 425.6 257 423.5Z' fill='%23ffffff'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='3.9s' begin='1.5s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M394 260.5Q394.4 262.6 396.5 263Q394.4 263.4 394 265.5Q393.6 263.4 391.5 263Q393.6 262.6 394 260.5Z' fill='%23ffd9f3'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='3.1s' begin='1.3s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M427 502Q427.4 503.6 429 504Q427.4 504.4 427 506Q426.6 504.4 425 504Q426.6 503.6 427 502Z' fill='%23ffd36e'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='1.7s' begin='0.8s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M306 41Q306.7 44.3 310 45Q306.7 45.7 306 49Q305.3 45.7 302 45Q305.3 44.3 306 41Z' fill='%237fe3ff'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='2.0s' begin='0.2s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M356 156.5Q356.4 158.6 358.5 159Q356.4 159.4 356 161.5Q355.6 159.4 353.5 159Q355.6 158.6 356 156.5Z' fill='%23ff8ac8'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='1.7s' begin='0.4s' repeatCount='indefinite'/%3E%3C/path%3E%3Cpath d='M548 498Q548.4 499.6 550 500Q548.4 500.4 548 502Q547.6 500.4 546 500Q547.6 499.6 548 498Z' fill='%237fe3ff'%3E%3Canimate attributeName='opacity' values='1%3B.15%3B1' dur='3.9s' begin='1.1s' repeatCount='indefinite'/%3E%3C/path%3E%3Ccircle cx='159' cy='379' r='1.2' fill='%23ff8ac8'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.7s' begin='3.4s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='317' cy='144' r='1' fill='%23ffd9f3'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.3s' begin='0.0s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='130' cy='26' r='1' fill='%23c79bff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.9s' begin='3.4s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='600' cy='433' r='1' fill='%237dffbf'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.3s' begin='3.2s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='143' cy='138' r='0.8' fill='%23cfe0ff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.2s' begin='0.7s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='459' cy='146' r='0.6' fill='%23cfe0ff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.0s' begin='0.5s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='553' cy='334' r='1.2' fill='%23ff8ac8'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.7s' begin='2.5s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='187' cy='190' r='1.2' fill='%237fe3ff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.1s' begin='2.2s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='49' cy='620' r='0.6' fill='%23ffffff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.2s' begin='3.5s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='409' cy='582' r='0.8' fill='%237fe3ff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.8s' begin='2.8s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='323' cy='44' r='0.8' fill='%237dffbf'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.5s' begin='2.9s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='304' cy='517' r='1.2' fill='%23cfe0ff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.6s' begin='0.2s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='611' cy='333' r='1' fill='%23ffd36e'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.1s' begin='2.1s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='576' cy='196' r='0.6' fill='%23c79bff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.9s' begin='1.4s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='327' cy='432' r='0.6' fill='%23cfe0ff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.0s' begin='2.5s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='460' cy='519' r='0.6' fill='%23ff8ac8'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.4s' begin='2.1s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='413' cy='74' r='0.8' fill='%23ffffff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.1s' begin='1.7s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='254' cy='284' r='1.2' fill='%237dffbf'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.4s' begin='0.9s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='396' cy='337' r='1.2' fill='%237fe3ff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.9s' begin='3.9s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='89' cy='40' r='1.2' fill='%23ffd9f3'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.5s' begin='2.9s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='223' cy='462' r='1' fill='%237fe3ff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.4s' begin='2.0s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='315' cy='631' r='1.2' fill='%23ffffff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.5s' begin='0.8s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='402' cy='150' r='0.6' fill='%23ffd9f3'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.2s' begin='1.2s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='386' cy='475' r='0.6' fill='%23ffd9f3'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.1s' begin='0.8s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='345' cy='382' r='0.8' fill='%23ffd36e'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.2s' begin='0.1s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='529' cy='262' r='0.8' fill='%237fe3ff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.7s' begin='2.8s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='390' cy='162' r='1.2' fill='%23ff8ac8'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.2s' begin='1.8s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='289' cy='180' r='1.2' fill='%23ffd36e'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.3s' begin='3.9s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='222' cy='37' r='1' fill='%23c79bff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.1s' begin='2.0s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='42' cy='409' r='1.2' fill='%23ff8ac8'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.7s' begin='0.0s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='559' cy='153' r='0.6' fill='%23ffd36e'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.6s' begin='1.5s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='5' cy='380' r='0.8' fill='%23ffd9f3'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.7s' begin='3.6s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='444' cy='544' r='0.6' fill='%23ffd36e'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.6s' begin='1.6s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='567' cy='252' r='0.8' fill='%23ff8ac8'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.7s' begin='0.1s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='598' cy='76' r='0.6' fill='%237dffbf'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.7s' begin='3.0s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='194' cy='157' r='0.6' fill='%23ff8ac8'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.4s' begin='2.4s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='637' cy='505' r='1.2' fill='%23c79bff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.5s' begin='0.6s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='296' cy='307' r='0.6' fill='%23cfe0ff'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='4.0s' begin='0.7s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='102' cy='196' r='1' fill='%23ffd36e'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='3.1s' begin='0.6s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='601' cy='508' r='1' fill='%237dffbf'%3E%3Canimate attributeName='opacity' values='.9%3B.2%3B.9' dur='2.5s' begin='0.4s' repeatCount='indefinite'/%3E%3C/circle%3E%3C/svg%3E") 0 0 / 640px 640px repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 650' preserveAspectRatio='xMidYMid slice'%3E%3Cdefs%3E%3CradialGradient id='rk' cx='.35' cy='.3' r='.8'%3E%3Cstop offset='0' stop-color='%23cbbfe6'/%3E%3Cstop offset='.55' stop-color='%237a6aa6'/%3E%3Cstop offset='1' stop-color='%232a2148'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cg%3E%3CanimateTransform attributeName='transform' type='translate' values='-60 120%3B1260 190' dur='140s' begin='0s' repeatCount='indefinite'/%3E%3Cg%3E%3Cpolygon points='12.3 0.0 12.6 10.5 2.8 15.7 -6.5 11.2 -13.5 4.9 -13.3 -4.8 -7.6 -13.2 2.8 -15.8 9.2 -7.8' fill='url(%23rk)' stroke='%23d9ccff' stroke-opacity='.35' stroke-width='.8'/%3E%3Ccircle cx='-6.0' cy='4.3' r='2.6' fill='%233a2f5c' opacity='.7'/%3E%3Ccircle cx='3.4' cy='-6.4' r='2.6' fill='%233a2f5c' opacity='.7'/%3E%3Ccircle cx='2.8' cy='-3.5' r='3.4' fill='%233a2f5c' opacity='.7'/%3E%3CanimateTransform attributeName='transform' type='rotate' values='0%3B360' dur='90s' repeatCount='indefinite'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3CanimateTransform attributeName='transform' type='translate' values='-60 420%3B1260 360' dur='170s' begin='-60s' repeatCount='indefinite'/%3E%3Cg%3E%3Cpolygon points='9.6 0.0 7.3 6.1 1.2 6.6 -3.4 5.8 -8.6 3.1 -8.3 -3.0 -4.3 -7.5 1.3 -7.4 6.5 -5.4' fill='url(%23rk)' stroke='%23d9ccff' stroke-opacity='.35' stroke-width='.8'/%3E%3Ccircle cx='0.8' cy='0.6' r='1.2' fill='%233a2f5c' opacity='.7'/%3E%3Ccircle cx='-0.5' cy='-0.8' r='1.7' fill='%233a2f5c' opacity='.7'/%3E%3Ccircle cx='3.6' cy='3.2' r='1.6' fill='%233a2f5c' opacity='.7'/%3E%3CanimateTransform attributeName='transform' type='rotate' values='0%3B360' dur='70s' repeatCount='indefinite'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3CanimateTransform attributeName='transform' type='translate' values='-60 260%3B1260 330' dur='200s' begin='-120s' repeatCount='indefinite'/%3E%3Cg%3E%3Cpolygon points='10.5 0.0 9.1 7.7 1.9 10.9 -6.1 10.6 -11.5 4.2 -9.1 -3.3 -4.7 -8.2 2.3 -13.1 8.1 -6.8' fill='url(%23rk)' stroke='%23d9ccff' stroke-opacity='.35' stroke-width='.8'/%3E%3Ccircle cx='-2.8' cy='5.2' r='2.2' fill='%233a2f5c' opacity='.7'/%3E%3Ccircle cx='3.5' cy='-0.2' r='2.4' fill='%233a2f5c' opacity='.7'/%3E%3Ccircle cx='-3.6' cy='1.4' r='2.7' fill='%233a2f5c' opacity='.7'/%3E%3CanimateTransform attributeName='transform' type='rotate' values='0%3B360' dur='110s' repeatCount='indefinite'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3CanimateTransform attributeName='transform' type='translate' values='-60 560%3B1260 500' dur='155s' begin='-30s' repeatCount='indefinite'/%3E%3Cg%3E%3Cpolygon points='6.4 0.0 4.6 3.9 1.2 6.8 -3.1 5.4 -5.6 2.0 -6.5 -2.4 -4.2 -7.3 1.4 -7.9 6.1 -5.1' fill='url(%23rk)' stroke='%23d9ccff' stroke-opacity='.35' stroke-width='.8'/%3E%3Ccircle cx='-1.8' cy='0.2' r='1.2' fill='%233a2f5c' opacity='.7'/%3E%3Ccircle cx='-2.1' cy='-2.5' r='1.1' fill='%233a2f5c' opacity='.7'/%3E%3Ccircle cx='2.7' cy='2.1' r='1.6' fill='%233a2f5c' opacity='.7'/%3E%3CanimateTransform attributeName='transform' type='rotate' values='0%3B360' dur='60s' repeatCount='indefinite'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3CanimateTransform attributeName='transform' type='translate' values='-60 60%3B1260 110' dur='185s' begin='-95s' repeatCount='indefinite'/%3E%3Cg%3E%3Cpolygon points='10.4 0.0 8.3 7.0 1.9 10.9 -5.8 10.1 -10.2 3.7 -10.9 -4.0 -4.0 -7.0 1.7 -9.6 8.9 -7.5' fill='url(%23rk)' stroke='%23d9ccff' stroke-opacity='.35' stroke-width='.8'/%3E%3Ccircle cx='1.3' cy='3.5' r='1.4' fill='%233a2f5c' opacity='.7'/%3E%3Ccircle cx='-0.3' cy='-2.2' r='1.9' fill='%233a2f5c' opacity='.7'/%3E%3Ccircle cx='0.7' cy='-4.3' r='1.6' fill='%233a2f5c' opacity='.7'/%3E%3CanimateTransform attributeName='transform' type='rotate' values='0%3B360' dur='80s' repeatCount='indefinite'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3CanimateTransform attributeName='transform' type='translate' values='-60 330%3B1260 300' dur='125s' begin='-80s' repeatCount='indefinite'/%3E%3Cg%3E%3Cpolygon points='6.0 0.0 4.7 3.9 0.9 5.3 -2.4 4.2 -4.1 1.5 -5.4 -2.0 -2.7 -4.6 1.0 -5.9 3.9 -3.3' fill='url(%23rk)' stroke='%23d9ccff' stroke-opacity='.35' stroke-width='.8'/%3E%3Ccircle cx='1.3' cy='-1.1' r='1.2' fill='%233a2f5c' opacity='.7'/%3E%3Ccircle cx='1.1' cy='-0.4' r='1.0' fill='%233a2f5c' opacity='.7'/%3E%3Ccircle cx='0.9' cy='-1.5' r='1.1' fill='%233a2f5c' opacity='.7'/%3E%3CanimateTransform attributeName='transform' type='rotate' values='0%3B360' dur='50s' repeatCount='indefinite'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") center / cover no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3CradialGradient id='g' cx='.38' cy='.36' r='.75'%3E%3Cstop offset='0' stop-color='%23fdfaff'/%3E%3Cstop offset='.55' stop-color='%23dccdff'/%3E%3Cstop offset='1' stop-color='%238f6ff0'/%3E%3C/radialGradient%3E%3CradialGradient id='h'%3E%3Cstop offset='.45' stop-color='%23b9a2ff' stop-opacity='.32'/%3E%3Cstop offset='1' stop-color='%23b9a2ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3Cmask id='m'%3E%3Crect width='200' height='200' fill='%23fff'/%3E%3Ccircle cx='124' cy='82' r='50' fill='%23000'/%3E%3C/mask%3E%3Cfilter id='b' x='-50%25' y='-50%25' width='200%25' height='200%25'%3E%3CfeGaussianBlur stdDeviation='6'/%3E%3C/filter%3E%3C/defs%3E%3Ccircle cx='100' cy='100' r='98' fill='url(%23h)'/%3E%3Cg mask='url(%23m)'%3E%3Ccircle cx='100' cy='100' r='54' fill='%23c9b3ff' opacity='.8' filter='url(%23b)'/%3E%3Ccircle cx='100' cy='100' r='50' fill='url(%23g)'/%3E%3C/g%3E%3C/svg%3E") 9% 12% / min(38vmin, 380px) no-repeat,
+    radial-gradient(ellipse at 22% 30%, rgba(120, 70, 230, .22), transparent 42%),
+    radial-gradient(ellipse at 78% 68%, rgba(255, 90, 180, .14), transparent 45%),
+    radial-gradient(ellipse at 55% 10%, rgba(80, 150, 255, .12), transparent 40%),
+    radial-gradient(ellipse at 50% 50%, #100b22, #05040b 75%) !important;
+}
+body.theme-dark .workspace-leaf-content[data-type="graph"] > .view-content { background: transparent !important; overflow: hidden; }
+/* undo the old v2 ring overrides so graph-cosmic's nebula + star layers come back */
+body.theme-dark .workspace-leaf-content[data-type="graph"] .view-content::before {
+  width: auto; height: auto; margin: 0; left: auto; top: auto; border: 0; border-radius: 0; box-shadow: none; inset: -25%;
+  animation: cv-graph-nebula calc(40s / var(--v2-speed)) ease-in-out infinite alternate;
+}
+body.theme-dark .workspace-leaf-content[data-type="graph"] .view-content::after {
+  width: auto; height: auto; margin: 0; left: auto; top: auto; border: 0; border-radius: 0; inset: 0;
+  animation: cv-graph-twinkle calc(6s / var(--v2-speed)) ease-in-out infinite alternate;
+}
+/* orbit rings: static tilted ellipses with a few planets riding them */
+body.theme-dark .workspace-leaf-content[data-type="graph"]::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: .95;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 600'%3E%3Cg transform='rotate(-12 500 300)' fill='none'%3E%3Cellipse cx='500' cy='300' rx='480' ry='150' stroke='%237fe3ff' stroke-opacity='.28' stroke-width='1.2' stroke-dasharray='2 7' stroke-linecap='round'/%3E%3Cellipse cx='500' cy='300' rx='360' ry='108' stroke='%23b9a2ff' stroke-opacity='.3' stroke-width='1.2'/%3E%3Cellipse cx='500' cy='300' rx='240' ry='70' stroke='%23ff8be0' stroke-opacity='.22' stroke-width='1' stroke-dasharray='6 6'/%3E%3C/g%3E%3Cg transform='rotate(-12 500 300)'%3E%3Ccircle cx='140' cy='300' r='5' fill='%23b9a2ff'/%3E%3Ccircle cx='140' cy='300' r='12' fill='%23b9a2ff' fill-opacity='.18'/%3E%3Ccircle cx='740' cy='364' r='4' fill='%23ff8be0'/%3E%3Ccircle cx='740' cy='364' r='10' fill='%23ff8be0' fill-opacity='.18'/%3E%3Ccircle cx='620' cy='151' r='3.5' fill='%237fe3ff'/%3E%3C/g%3E%3C/svg%3E") center 56% / min(115%, 1500px) auto no-repeat;
+}
+/* a moon riding the outer orbit (translate on X + transform on Y = an ellipse, both compositor-only) */
+body.theme-dark .workspace-leaf-content[data-type="graph"]::after {
+  content: ""; position: absolute; left: 50%; top: 56%; width: 12px; height: 12px; margin: -6px 0 0 -6px; z-index: 0; pointer-events: none; border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff, var(--v2-ice) 45%, #2b6fd6); box-shadow: 0 0 14px rgba(var(--v2-cyan), calc(.9 * var(--v2-glow)));
+  animation: v2-orbit-x calc(22s / var(--v2-speed)) ease-in-out infinite alternate, v2-orbit-y calc(22s / var(--v2-speed)) ease-in-out calc(-11s / var(--v2-speed)) infinite alternate;
+}
+@keyframes v2-orbit-x { from { translate: -36vw 0; } to { translate: 36vw 0; } }
+@keyframes v2-orbit-y { from { transform: translateY(-10vh); } to { transform: translateY(10vh); } }
+body.theme-dark .workspace-leaf-content[data-type="graph"] canvas {
+  position: relative; z-index: 1; filter: saturate(1.35) brightness(1.08); /* no violet drop-shadow: it washed the rainbow node colours purple */
+}
+body.theme-dark .workspace-leaf-content[data-type="graph"] .view-header { position: relative; z-index: 2; }
+
+/* graph page motion: the orbit rings sway; stars twinkle and moon rocks drift across (inside the SVG layers) */
+body.theme-dark .workspace-leaf-content[data-type="graph"]::before { animation: v2-orbit-sway calc(26s / var(--v2-speed)) ease-in-out infinite alternate; }
+@keyframes v2-orbit-sway { from { rotate: -2.5deg; scale: 1; } to { rotate: 2.5deg; scale: 1.03; } }
+@media (prefers-reduced-motion: reduce) {
+  body.theme-dark .workspace-leaf-content[data-type="graph"]::before { animation: none !important; }
+}
+/* controls panel: a HUD readout */
+body.theme-dark .graph-controls {
+  z-index: 3; border-radius: 16px !important; padding: 6px 4px;
+  background:
+    linear-gradient(var(--v2-ice), var(--v2-ice)) left top / 10px 1.5px no-repeat,
+    linear-gradient(var(--v2-ice), var(--v2-ice)) left top / 1.5px 10px no-repeat,
+    linear-gradient(var(--v2-ice), var(--v2-ice)) right bottom / 10px 1.5px no-repeat,
+    linear-gradient(var(--v2-ice), var(--v2-ice)) right bottom / 1.5px 10px no-repeat,
+    linear-gradient(180deg, rgba(14, 22, 44, .86), rgba(10, 8, 24, .9)) !important;
+  border: 1px solid rgba(var(--v2-cyan), .3) !important;
+  box-shadow: 0 0 30px -10px rgba(var(--v2-cyan), calc(.5 * var(--v2-glow))), inset 0 1px 0 rgba(255, 255, 255, .06);
+}
+body.theme-dark .graph-controls .graph-control-section .tree-item-inner,
+body.theme-dark .graph-controls .graph-control-section-header {
+  font-family: var(--v2-display); font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #9fe8ff !important;
+}
+body.theme-dark .graph-controls .setting-item-name { font-size: 12.5px; color: #c9bcff; }
+body.theme-dark .graph-controls .graph-control-section + .graph-control-section { border-top: 1px dashed rgba(var(--v2-cyan), .18); }
+
+/* ---------------------------------------------------------------- WELCOME (empty tab, plugin off): V2 launch screen */
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .view-content {
+  background:
+    radial-gradient(ellipse 50% 40% at 50% 38%, rgba(98, 60, 200, .22), transparent 70%),
+    radial-gradient(ellipse 40% 30% at 18% 22%, rgba(255, 60, 200, .34), transparent 70%),
+    radial-gradient(ellipse 38% 30% at 84% 26%, rgba(20, 220, 255, .30), transparent 70%),
+    radial-gradient(ellipse 36% 28% at 78% 82%, rgba(255, 180, 40, .24), transparent 70%),
+    radial-gradient(ellipse 40% 30% at 16% 80%, rgba(60, 255, 160, .22), transparent 70%),
+    radial-gradient(ellipse 35% 25% at 50% 70%, rgba(var(--v2-cyan), .06), transparent 70%) !important;
+}
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-container {
+  position: relative; max-height: none !important; max-width: none; padding-top: 10px;
+  /* the orbit ellipse the moon rides, centred on the planet */
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 320'%3E%3Cg fill='none'%3E%3Cellipse cx='260' cy='160' rx='240' ry='58' stroke='%237fe3ff' stroke-opacity='.4' stroke-width='1.2' stroke-dasharray='2 6' stroke-linecap='round'/%3E%3Cellipse cx='260' cy='160' rx='252' ry='66' stroke='%23b9a2ff' stroke-opacity='.14' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E") center 0 / 520px 320px no-repeat;
+}
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-container::before {
+  flex: none !important; width: 300px !important; height: 300px !important; margin: 10px 0 -18px !important; position: relative; z-index: 1;
+  filter: drop-shadow(0 0 34px rgba(155, 123, 255, .5));
+}
+/* V2 launch planet: a tilted, banded ember/violet gas giant with a ring that passes in front of and behind it
+   (replaces the V1 planet drawn by celestial-lite on the new-tab screen; the float/halo animation is kept) */
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-container::before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E %3Cdefs%3E %3ClinearGradient id='b' x1='0' y1='0' x2='0' y2='1'%3E %3Cstop offset='0' stop-color='%232a1458'/%3E%3Cstop offset='.1' stop-color='%234b2a8f'/%3E%3Cstop offset='.17' stop-color='%238b5fd6'/%3E %3Cstop offset='.24' stop-color='%23f2b58a'/%3E%3Cstop offset='.29' stop-color='%23ffd9a8'/%3E%3Cstop offset='.35' stop-color='%23e47a55'/%3E %3Cstop offset='.41' stop-color='%237c3f8f'/%3E%3Cstop offset='.47' stop-color='%23f7c793'/%3E%3Cstop offset='.51' stop-color='%23ffe6c2'/%3E %3Cstop offset='.56' stop-color='%23f08a5d'/%3E%3Cstop offset='.62' stop-color='%23a24a6e'/%3E%3Cstop offset='.68' stop-color='%234d2a86'/%3E %3Cstop offset='.74' stop-color='%236a52c8'/%3E%3Cstop offset='.8' stop-color='%233fb9c8'/%3E%3Cstop offset='.87' stop-color='%232d6fa8'/%3E %3Cstop offset='1' stop-color='%23160b38'/%3E %3C/linearGradient%3E %3CradialGradient id='lit' cx='.32' cy='.28' r='.75'%3E %3Cstop offset='0' stop-color='%23fff4e4' stop-opacity='.55'/%3E%3Cstop offset='.35' stop-color='%23ffdcbe' stop-opacity='.08'/%3E %3Cstop offset='.62' stop-color='%2305030f' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%2305030f' stop-opacity='.9'/%3E %3C/radialGradient%3E %3ClinearGradient id='ring' x1='0' y1='0' x2='1' y2='0'%3E %3Cstop offset='0' stop-color='%237fe3ff' stop-opacity='.15'/%3E%3Cstop offset='.2' stop-color='%23b9a2ff' stop-opacity='.85'/%3E %3Cstop offset='.45' stop-color='%23ffe6c8'/%3E%3Cstop offset='.6' stop-color='%23f08a5d' stop-opacity='.9'/%3E %3Cstop offset='.8' stop-color='%23b9a2ff' stop-opacity='.85'/%3E%3Cstop offset='1' stop-color='%237fe3ff' stop-opacity='.15'/%3E %3C/linearGradient%3E %3CclipPath id='p'%3E%3Ccircle cx='150' cy='150' r='76'/%3E%3C/clipPath%3E %3CclipPath id='front'%3E%3Crect x='0' y='150' width='300' height='150'/%3E%3C/clipPath%3E %3Cfilter id='g' x='-50%25' y='-50%25' width='200%25' height='200%25'%3E%3CfeGaussianBlur stdDeviation='3'/%3E%3C/filter%3E %3C/defs%3E %3Cg transform='rotate(-18 150 150)'%3E %3Cg fill='none' stroke='url(%23ring)'%3E %3Cellipse cx='150' cy='150' rx='138' ry='34' stroke-width='9' opacity='.55'/%3E %3Cellipse cx='150' cy='150' rx='122' ry='29' stroke-width='5' opacity='.5'/%3E %3C/g%3E %3Cg clip-path='url(%23p)'%3E %3Crect x='70' y='70' width='160' height='160' fill='url(%23b)'/%3E %3Cellipse cx='118' cy='176' rx='15' ry='7' fill='%23fff1d6' opacity='.9'/%3E %3Cellipse cx='118' cy='176' rx='24' ry='11' fill='none' stroke='%23ff8a5c' stroke-width='3' opacity='.7'/%3E %3Cellipse cx='185' cy='118' rx='30' ry='4' fill='%23ffd6a0' opacity='.45'/%3E %3Cellipse cx='95' cy='140' rx='38' ry='3.5' fill='%2340d9ff' opacity='.3'/%3E %3Crect x='70' y='158' width='160' height='9' fill='%23080416' opacity='.45'/%3E %3Crect x='70' y='70' width='160' height='160' fill='url(%23lit)'/%3E %3C/g%3E %3Ccircle cx='150' cy='150' r='76.5' fill='none' stroke='%237fe3ff' stroke-opacity='.55' stroke-width='1.6'/%3E %3Cpath d='M96 98 A76 76 0 0 1 204 98' fill='none' stroke='%235ce6c8' stroke-width='6' stroke-linecap='round' opacity='.55' filter='url(%23g)'/%3E %3Cg fill='none' stroke='url(%23ring)' clip-path='url(%23front)'%3E %3Cellipse cx='150' cy='150' rx='138' ry='34' stroke-width='9'/%3E %3Cellipse cx='150' cy='150' rx='122' ry='29' stroke-width='5' opacity='.9'/%3E %3C/g%3E %3C/g%3E %3Ccircle cx='252' cy='74' r='6' fill='%23cfeaff'/%3E%3Ccircle cx='250' cy='72' r='2.4' fill='%23fff'/%3E %3C/svg%3E") center / contain no-repeat !important; border-radius: 0 !important; box-shadow: none !important;
+  filter: drop-shadow(0 0 26px rgba(155, 123, 255, .45)) drop-shadow(0 0 60px rgba(255, 138, 92, .12));
+}
+/* moon: ellipse orbit around the planet centre (top 10px + 150px), passes behind the planet on the far side */
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-container::after {
+  content: ""; position: absolute; top: 160px; left: 50%; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff, #7fe3ff 45%, #2b6fd6 100%); box-shadow: 0 0 16px rgba(64, 217, 255, .9);
+  animation: v2-moon-x calc(12s / var(--v2-speed)) ease-in-out infinite alternate, v2-moon-y calc(12s / var(--v2-speed)) ease-in-out calc(-6s / var(--v2-speed)) infinite alternate, v2-moon-z calc(24s / var(--v2-speed)) steps(1) calc(-6s / var(--v2-speed)) infinite;
+}
+@keyframes v2-moon-x { from { translate: -232px 0; } to { translate: 232px 0; } }
+@keyframes v2-moon-y { from { transform: translateY(58px) scale(1.15); } to { transform: translateY(-58px) scale(.8); } }
+@keyframes v2-moon-z { 0% { z-index: 2; } 50% { z-index: 0; } }
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-title::before {
+  content: "Income Multiplier."; font-family: var(--v2-display); font-size: 54px; font-weight: 700; letter-spacing: -.01em; line-height: 1.1;
+  background: linear-gradient(90deg, #f4efff, #c4b0ff 30%, #7fe3ff 55%, #ffc9f0 80%, #f4efff); background-size: 200% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: none;
+  filter: drop-shadow(0 0 22px rgba(155, 123, 255, .45)); animation: v2-shift calc(10s / var(--v2-speed)) linear infinite;
+}
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-title::after {
+  content: "\2726  L I H F O L K   V A U L T   V 2  \2726"; margin-top: 12px; font-family: var(--v2-display); font-size: 12px; font-weight: 600;
+  color: #b9a2ff; letter-spacing: .12em; text-shadow: 0 0 14px rgba(155, 123, 255, .8);
+}
+@keyframes v2-shift { from { background-position: 0% 50%; } to { background-position: 200% 50%; } }
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-action-list {
+  position: relative; margin-top: 48px; gap: 12px; flex-direction: row !important; flex-wrap: nowrap !important; width: max-content; max-width: 90vw;
+}
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-action-list::before {
+  content: "\25C8  CHOOSE YOUR LAUNCH  \25C8"; position: absolute; top: -28px; left: 0; right: 0; text-align: center; white-space: pre;
+  font-family: var(--v2-display); font-size: 10px; letter-spacing: .3em; color: rgba(127, 227, 255, .65);
+}
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-action {
+  width: auto !important; max-width: none !important; flex: none; white-space: nowrap;
+  padding: 9px 18px; border-radius: 999px; font-family: var(--v2-display); font-size: 12.5px; letter-spacing: .02em;
+  background: linear-gradient(135deg, rgba(40, 28, 80, .7), rgba(14, 12, 30, .8)); border: 1px solid rgba(var(--v2-violet), .35);
+  color: #d6ccf5 !important; box-shadow: 0 0 18px -8px rgba(var(--v2-violet), calc(.7 * var(--v2-glow))), inset 0 1px 0 rgba(255, 255, 255, .07);
+  transition: transform .2s, border-color .2s, box-shadow .2s, color .2s;
+}
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-action:hover {
+  transform: translateY(-3px); border-color: rgba(var(--v2-cyan), .6); color: #fff !important;
+  box-shadow: 0 10px 26px -10px rgba(var(--v2-cyan), .7), inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-action svg { color: var(--v2-ice); filter: drop-shadow(0 0 4px rgba(var(--v2-cyan), calc(.7 * var(--v2-glow)))); }
+
+/* ---------------------------------------------------------------- NEW TAB: sparkle field + portal rifts + rainbow shooting stars
+   leaf ::before                   = a twinkling field of rainbow four-point sparkles (two drifting layers)
+   leaf ::after                    = rainbow shooting stars (kept clear of the launch block)
+   .empty-state::before            = a vertical portal rift on the right (a glowing tear with a swirling rainbow inside)
+   .empty-state-action-list::after = a round swirling portal on the left */
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] { position: relative; isolation: isolate; overflow: hidden; }
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] > .view-content { position: relative; z-index: 1; }
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"]::before {
+  content: ""; position: absolute; inset: -320px; z-index: 0; pointer-events: none;
+  /* sparkles on top, soft out-of-focus bokeh glows underneath */
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 320 320'%3E%3Cpath d='M239 289.5 Q239.8 293.2 243.5 294 Q239.8 294.8 239 298.5 Q238.2 294.8 234.5 294 Q238.2 293.2 239 289.5Z' fill='%23b8ff6e'/%3E%3Ccircle cx='239' cy='294' r='4.0' fill='%23b8ff6e' opacity='.25'/%3E%3Cpath d='M268 305 Q268.5 307.5 271 308 Q268.5 308.5 268 311 Q267.5 308.5 265 308 Q267.5 307.5 268 305Z' fill='%237dffbf'/%3E%3Cpath d='M270 245 Q271.1 249.9 276 251 Q271.1 252.1 270 257 Q268.9 252.1 264 251 Q268.9 249.9 270 245Z' fill='%237dffbf'/%3E%3Ccircle cx='270' cy='251' r='5.4' fill='%237dffbf' opacity='.25'/%3E%3Cpath d='M56 232.5 Q56.6 235.4 59.5 236 Q56.6 236.6 56 239.5 Q55.4 236.6 52.5 236 Q55.4 235.4 56 232.5Z' fill='%237dffbf'/%3E%3Cpath d='M54 280.5 Q54.5 282.6 56.5 283 Q54.5 283.4 54 285.5 Q53.5 283.4 51.5 283 Q53.5 282.6 54 280.5Z' fill='%2300c8ff'/%3E%3Cpath d='M210 233 Q211.1 237.9 216 239 Q211.1 240.1 210 245 Q208.9 240.1 204 239 Q208.9 237.9 210 233Z' fill='%237dffbf'/%3E%3Ccircle cx='210' cy='239' r='5.4' fill='%237dffbf' opacity='.25'/%3E%3Cpath d='M15 275.5 Q15.4 277.6 17.5 278 Q15.4 278.4 15 280.5 Q14.6 278.4 12.5 278 Q14.6 277.6 15 275.5Z' fill='%23ff5ac8'/%3E%3Cpath d='M26 102 Q26.5 104.5 29 105 Q26.5 105.5 26 108 Q25.5 105.5 23 105 Q25.5 104.5 26 102Z' fill='%2300c8ff'/%3E%3Cpath d='M23 241.5 Q23.6 244.4 26.5 245 Q23.6 245.6 23 248.5 Q22.4 245.6 19.5 245 Q22.4 244.4 23 241.5Z' fill='%23b8ff6e'/%3E%3Cpath d='M310 102 Q311.1 106.9 316 108 Q311.1 109.1 310 114 Q308.9 109.1 304 108 Q308.9 106.9 310 102Z' fill='%236fe8ff'/%3E%3Ccircle cx='310' cy='108' r='5.4' fill='%236fe8ff' opacity='.25'/%3E%3Cpath d='M158 260.5 Q158.4 262.6 160.5 263 Q158.4 263.4 158 265.5 Q157.6 263.4 155.5 263 Q157.6 262.6 158 260.5Z' fill='%23ffd36e'/%3E%3Cpath d='M242 145.5 Q242.8 149.2 246.5 150 Q242.8 150.8 242 154.5 Q241.2 150.8 237.5 150 Q241.2 149.2 242 145.5Z' fill='%23ff6f91'/%3E%3Ccircle cx='242' cy='150' r='4.0' fill='%23ff6f91' opacity='.25'/%3E%3Cpath d='M50 134.5 Q50.6 137.4 53.5 138 Q50.6 138.6 50 141.5 Q49.4 138.6 46.5 138 Q49.4 137.4 50 134.5Z' fill='%236fe8ff'/%3E%3Cpath d='M270 152.5 Q270.4 154.6 272.5 155 Q270.4 155.4 270 157.5 Q269.6 155.4 267.5 155 Q269.6 154.6 270 152.5Z' fill='%23ffd36e'/%3E%3Cpath d='M296 58.5 Q296.8 62.2 300.5 63 Q296.8 63.8 296 67.5 Q295.2 63.8 291.5 63 Q295.2 62.2 296 58.5Z' fill='%23ffd36e'/%3E%3Ccircle cx='296' cy='63' r='4.0' fill='%23ffd36e' opacity='.25'/%3E%3Cpath d='M156 202.5 Q156.4 204.6 158.5 205 Q156.4 205.4 156 207.5 Q155.6 205.4 153.5 205 Q155.6 204.6 156 202.5Z' fill='%23ff5ac8'/%3E%3Cpath d='M8 114 Q8.5 116.5 11 117 Q8.5 117.5 8 120 Q7.5 117.5 5 117 Q7.5 116.5 8 114Z' fill='%23ff5ac8'/%3E%3Cpath d='M248 195.5 Q248.8 199.2 252.5 200 Q248.8 200.8 248 204.5 Q247.2 200.8 243.5 200 Q247.2 199.2 248 195.5Z' fill='%23ffffff'/%3E%3Ccircle cx='248' cy='200' r='4.0' fill='%23ffffff' opacity='.25'/%3E%3Ccircle cx='39' cy='291' r='0.8' fill='%23a98bff'/%3E%3Ccircle cx='174' cy='46' r='1' fill='%23ff8a5c'/%3E%3Ccircle cx='9' cy='211' r='0.6' fill='%237dffbf'/%3E%3Ccircle cx='128' cy='53' r='0.6' fill='%23ff5ac8'/%3E%3Ccircle cx='240' cy='251' r='0.8' fill='%23ff6f91'/%3E%3Ccircle cx='98' cy='231' r='0.8' fill='%237dffbf'/%3E%3Ccircle cx='216' cy='198' r='0.6' fill='%23ffffff'/%3E%3Ccircle cx='217' cy='110' r='0.6' fill='%23a98bff'/%3E%3Ccircle cx='305' cy='157' r='0.6' fill='%236fe8ff'/%3E%3Ccircle cx='97' cy='203' r='0.6' fill='%23ff5ac8'/%3E%3Ccircle cx='76' cy='111' r='1.2' fill='%23a98bff'/%3E%3Ccircle cx='6' cy='314' r='1' fill='%23a98bff'/%3E%3Ccircle cx='199' cy='39' r='0.6' fill='%23ffd36e'/%3E%3Ccircle cx='108' cy='300' r='0.8' fill='%23ff5ac8'/%3E%3Ccircle cx='309' cy='190' r='1' fill='%2300c8ff'/%3E%3Ccircle cx='234' cy='67' r='1.2' fill='%2300c8ff'/%3E%3Ccircle cx='71' cy='199' r='0.8' fill='%237dffbf'/%3E%3Ccircle cx='161' cy='118' r='0.8' fill='%236fe8ff'/%3E%3Ccircle cx='83' cy='285' r='0.8' fill='%23ffffff'/%3E%3Ccircle cx='249' cy='311' r='0.6' fill='%23ffffff'/%3E%3Ccircle cx='26' cy='55' r='0.6' fill='%23ff5ac8'/%3E%3Ccircle cx='264' cy='132' r='0.8' fill='%23ffffff'/%3E%3Ccircle cx='133' cy='217' r='1.2' fill='%23a98bff'/%3E%3Ccircle cx='268' cy='91' r='0.6' fill='%237dffbf'/%3E%3Ccircle cx='118' cy='247' r='0.6' fill='%23a98bff'/%3E%3Ccircle cx='110' cy='106' r='0.6' fill='%23ffd36e'/%3E%3C/svg%3E") 0 0 / 320px 320px repeat, radial-gradient(ellipse 38% 34% at 26% 32%, rgba(255, 70, 200, .30), transparent 100%), radial-gradient(ellipse 42% 36% at 76% 26%, rgba(60, 220, 255, .24), transparent 100%), radial-gradient(ellipse 40% 34% at 68% 74%, rgba(255, 190, 70, .20), transparent 100%), radial-gradient(ellipse 44% 38% at 28% 76%, rgba(70, 255, 170, .16), transparent 100%), radial-gradient(ellipse 55% 45% at 50% 46%, rgba(140, 90, 255, .26), transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 48%, #000 0, rgba(0,0,0,.6) 55%, transparent 95%);
+          mask-image: radial-gradient(ellipse 60% 55% at 50% 48%, #000 0, rgba(0,0,0,.6) 55%, transparent 95%);
+  filter: blur(.4px) saturate(1.6) drop-shadow(0 0 3px rgba(255, 255, 255, .45));
+  animation: v2-twinkle calc(3.5s / var(--v2-speed)) ease-in-out infinite, v2-drift calc(60s / var(--v2-speed)) linear infinite;
+}
+@keyframes v2-twinkle { 50% { opacity: .55; } }
+@keyframes v2-drift { to { background-position: -320px 160px, 0 0, 0 0, 0 0, 0 0, 0 0; } }
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"]::after {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  left: 50%; top: 50%; width: 170%; height: 170%; margin: -85% 0 0 -85%; rotate: -32deg;
+  /* keep the launch block clear: streaks fade out around the planet, title and buttons */
+  -webkit-mask-image: radial-gradient(circle 420px at 50% 52%, transparent 62%, #000 100%); mask-image: radial-gradient(circle 420px at 50% 52%, transparent 62%, #000 100%);
+  background: linear-gradient(90deg, transparent 0 86%, rgba(255,70,200,0) 86%, rgba(255,70,200,.95) 99%, #fff 100%), linear-gradient(90deg, transparent 0 86%, rgba(255,214,90,0) 86%, rgba(255,214,90,.95) 99%, #fff 100%), linear-gradient(90deg, transparent 0 86%, rgba(90,255,180,0) 86%, rgba(90,255,180,.95) 99%, #fff 100%), linear-gradient(90deg, transparent 0 86%, rgba(80,230,255,0) 86%, rgba(80,230,255,.95) 99%, #fff 100%), linear-gradient(90deg, transparent 0 86%, rgba(160,120,255,0) 86%, rgba(160,120,255,.95) 99%, #fff 100%), linear-gradient(90deg, transparent 0 86%, rgba(255,120,70,0) 86%, rgba(255,120,70,.95) 99%, #fff 100%), linear-gradient(90deg, transparent 0 86%, rgba(255,255,255,0) 86%, rgba(255,255,255,.95) 99%, #fff 100%), linear-gradient(90deg, transparent 0 86%, rgba(120,255,120,0) 86%, rgba(120,255,120,.95) 99%, #fff 100%), linear-gradient(90deg, transparent 0 86%, rgba(255,90,150,0) 86%, rgba(255,90,150,.95) 99%, #fff 100%), linear-gradient(90deg, transparent 0 86%, rgba(0,200,255,0) 86%, rgba(0,200,255,.95) 99%, #fff 100%), linear-gradient(90deg, transparent 0 86%, rgba(255,170,0,0) 86%, rgba(255,170,0,.95) 99%, #fff 100%), linear-gradient(90deg, transparent 0 86%, rgba(200,110,255,0) 86%, rgba(200,110,255,.95) 99%, #fff 100%);
+  background-size: 1737px 3px, 1807px 3px, 1767px 3px, 1576px 3px, 1764px 3px, 1215px 3px, 1489px 3px, 1355px 3px, 1517px 3px, 1263px 3px, 1242px 3px, 1229px 3px;
+  background-repeat: repeat-x;
+  background-position: 734px 3.0%, 1515px 13.8%, 59px 21.7%, 510px 29.1%, 321px 34.2%, 504px 43.5%, 1175px 52.2%, 443px 58.1%, 797px 67.1%, 147px 77.0%, 911px 84.5%, 10px 90.5%;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, .9)) drop-shadow(0 0 9px rgba(255, 120, 230, .7)) drop-shadow(0 0 18px rgba(90, 220, 255, .5)) saturate(1.8) brightness(1.2);
+  animation: v2-shoot calc(3.4s / var(--v2-speed)) linear infinite;
+}
+@keyframes v2-shoot { from { background-position: 734px 3.0%, 1515px 13.8%, 59px 21.7%, 510px 29.1%, 321px 34.2%, 504px 43.5%, 1175px 52.2%, 443px 58.1%, 797px 67.1%, 147px 77.0%, 911px 84.5%, 10px 90.5%; } to { background-position: 2471px 3.0%, 3322px 13.8%, 1826px 21.7%, 2086px 29.1%, 2085px 34.2%, 1719px 43.5%, 2664px 52.2%, 1798px 58.1%, 2314px 67.1%, 1410px 77.0%, 2153px 84.5%, 1239px 90.5%; } }
+
+/* portal rifts: two jagged tears in space (dark core, violet glow, cyan-to-magenta edge light, crackle branches) */
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state { position: relative; }
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state::before {
+  content: ""; position: absolute; z-index: 0; pointer-events: none;
+  right: 10%; top: 16%; width: 120px; height: 320px; rotate: 12deg;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 320'%3E%3Cdefs%3E%3Cfilter id='b' x='-80%25' y='-20%25' width='260%25' height='140%25'%3E%3CfeGaussianBlur stdDeviation='7'/%3E%3C/filter%3E%3Cfilter id='s' x='-80%25' y='-20%25' width='260%25' height='140%25'%3E%3CfeGaussianBlur stdDeviation='2.2'/%3E%3C/filter%3E%3CradialGradient id='g' cx='.5' cy='.5' r='.6'%3E%3Cstop offset='0' stop-color='%23000'/%3E%3Cstop offset='.55' stop-color='%230a0420'/%3E%3Cstop offset='.85' stop-color='%232b1170'/%3E%3Cstop offset='1' stop-color='%236a3cff'/%3E%3C/radialGradient%3E%3ClinearGradient id='e' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%236fe8ff'/%3E%3Cstop offset='.5' stop-color='%23c79bff'/%3E%3Cstop offset='1' stop-color='%23ff5ac8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M59.4 8.0 L58.9 21.8 L53.8 35.6 L50.9 49.5 L55.1 63.3 L44.7 77.1 L45.4 90.9 L36.4 104.7 L44.9 118.5 L39.1 132.4 L39.9 146.2 L46.5 160.0 L51.9 173.8 L32.3 187.6 L47.1 201.5 L44.7 215.3 L45.0 229.1 L51.8 242.9 L55.1 256.7 L56.3 270.5 L58.3 284.4 L59.1 298.2 L59.2 312.0 L60.5 312.0 L61.1 298.2 L64.9 284.4 L69.1 270.5 L71.4 256.7 L78.5 242.9 L75.5 229.1 L74.2 215.3 L78.8 201.5 L72.9 187.6 L81.1 173.8 L89.3 160.0 L81.3 146.2 L81.8 132.4 L77.5 118.5 L69.7 104.7 L74.6 90.9 L69.1 77.1 L71.8 63.3 L63.7 49.5 L60.5 35.6 L61.2 21.8 L60.6 8.0Z' fill='%238a5cff' filter='url(%23b)' opacity='.85'/%3E%3Cpath d='M59.4 8.0 L58.9 21.8 L53.8 35.6 L50.9 49.5 L55.1 63.3 L44.7 77.1 L45.4 90.9 L36.4 104.7 L44.9 118.5 L39.1 132.4 L39.9 146.2 L46.5 160.0 L51.9 173.8 L32.3 187.6 L47.1 201.5 L44.7 215.3 L45.0 229.1 L51.8 242.9 L55.1 256.7 L56.3 270.5 L58.3 284.4 L59.1 298.2 L59.2 312.0 L60.5 312.0 L61.1 298.2 L64.9 284.4 L69.1 270.5 L71.4 256.7 L78.5 242.9 L75.5 229.1 L74.2 215.3 L78.8 201.5 L72.9 187.6 L81.1 173.8 L89.3 160.0 L81.3 146.2 L81.8 132.4 L77.5 118.5 L69.7 104.7 L74.6 90.9 L69.1 77.1 L71.8 63.3 L63.7 49.5 L60.5 35.6 L61.2 21.8 L60.6 8.0Z' fill='none' stroke='url(%23e)' stroke-width='5' filter='url(%23s)'/%3E%3Cpath d='M59.4 8.0 L58.9 21.8 L53.8 35.6 L50.9 49.5 L55.1 63.3 L44.7 77.1 L45.4 90.9 L36.4 104.7 L44.9 118.5 L39.1 132.4 L39.9 146.2 L46.5 160.0 L51.9 173.8 L32.3 187.6 L47.1 201.5 L44.7 215.3 L45.0 229.1 L51.8 242.9 L55.1 256.7 L56.3 270.5 L58.3 284.4 L59.1 298.2 L59.2 312.0 L60.5 312.0 L61.1 298.2 L64.9 284.4 L69.1 270.5 L71.4 256.7 L78.5 242.9 L75.5 229.1 L74.2 215.3 L78.8 201.5 L72.9 187.6 L81.1 173.8 L89.3 160.0 L81.3 146.2 L81.8 132.4 L77.5 118.5 L69.7 104.7 L74.6 90.9 L69.1 77.1 L71.8 63.3 L63.7 49.5 L60.5 35.6 L61.2 21.8 L60.6 8.0Z' fill='url(%23g)'/%3E%3Cpath d='M59.4 8.0 L58.9 21.8 L53.8 35.6 L50.9 49.5 L55.1 63.3 L44.7 77.1 L45.4 90.9 L36.4 104.7 L44.9 118.5 L39.1 132.4 L39.9 146.2 L46.5 160.0 L51.9 173.8 L32.3 187.6 L47.1 201.5 L44.7 215.3 L45.0 229.1 L51.8 242.9 L55.1 256.7 L56.3 270.5 L58.3 284.4 L59.1 298.2 L59.2 312.0 L60.5 312.0 L61.1 298.2 L64.9 284.4 L69.1 270.5 L71.4 256.7 L78.5 242.9 L75.5 229.1 L74.2 215.3 L78.8 201.5 L72.9 187.6 L81.1 173.8 L89.3 160.0 L81.3 146.2 L81.8 132.4 L77.5 118.5 L69.7 104.7 L74.6 90.9 L69.1 77.1 L71.8 63.3 L63.7 49.5 L60.5 35.6 L61.2 21.8 L60.6 8.0Z' fill='none' stroke='%23f4eeff' stroke-width='1.1'/%3E%3Cg filter='url(%23s)'%3E%3Cpath d='M75.5 229.1 L86.4 240.2 L92.6 238.8' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M39.9 146.2 L17.6 133.4 L6.7 124.3' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M74.2 215.3 L92.4 216.7 L105.8 212.3' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M36.4 104.7 L12.5 99.4 L5.8 101.4' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M71.8 63.3 L95.1 76.5 L103.5 71.7' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3C/g%3E%3Cpath d='M75.5 229.1 L86.4 240.2 L92.6 238.8' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M39.9 146.2 L17.6 133.4 L6.7 124.3' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M74.2 215.3 L92.4 216.7 L105.8 212.3' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M36.4 104.7 L12.5 99.4 L5.8 101.4' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M71.8 63.3 L95.1 76.5 L103.5 71.7' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3C/svg%3E") center / contain no-repeat;
+  animation: v2-rift calc(4s / var(--v2-speed)) ease-in-out infinite, v2-flicker calc(2.3s / var(--v2-speed)) steps(1) infinite, v2-wander-a calc(26s / var(--v2-speed)) ease-in-out infinite;
+}
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-action-list::after {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  left: -170px; top: -560px; width: 90px; height: 240px; rotate: -18deg;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 320'%3E%3Cdefs%3E%3Cfilter id='b' x='-80%25' y='-20%25' width='260%25' height='140%25'%3E%3CfeGaussianBlur stdDeviation='7'/%3E%3C/filter%3E%3Cfilter id='s' x='-80%25' y='-20%25' width='260%25' height='140%25'%3E%3CfeGaussianBlur stdDeviation='2.2'/%3E%3C/filter%3E%3CradialGradient id='g' cx='.5' cy='.5' r='.6'%3E%3Cstop offset='0' stop-color='%23000'/%3E%3Cstop offset='.55' stop-color='%230a0420'/%3E%3Cstop offset='.85' stop-color='%232b1170'/%3E%3Cstop offset='1' stop-color='%236a3cff'/%3E%3C/radialGradient%3E%3ClinearGradient id='e' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%236fe8ff'/%3E%3Cstop offset='.5' stop-color='%23c79bff'/%3E%3Cstop offset='1' stop-color='%23ff5ac8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M59.2 8.0 L59.5 21.8 L59.7 35.6 L54.3 49.5 L47.5 63.3 L49.5 77.1 L42.7 90.9 L41.7 104.7 L35.3 118.5 L46.2 132.4 L39.3 146.2 L46.3 160.0 L48.6 173.8 L48.2 187.6 L51.2 201.5 L53.6 215.3 L40.4 229.1 L52.1 242.9 L50.8 256.7 L55.9 270.5 L56.4 284.4 L58.5 298.2 L59.4 312.0 L60.6 312.0 L60.5 298.2 L62.7 284.4 L67.0 270.5 L65.5 256.7 L75.6 242.9 L69.4 229.1 L82.8 215.3 L81.2 201.5 L87.8 187.6 L82.9 173.8 L75.6 160.0 L83.4 146.2 L82.8 132.4 L68.9 118.5 L74.1 104.7 L70.9 90.9 L66.2 77.1 L63.3 63.3 L65.3 49.5 L65.9 35.6 L61.6 21.8 L60.5 8.0Z' fill='%238a5cff' filter='url(%23b)' opacity='.85'/%3E%3Cpath d='M59.2 8.0 L59.5 21.8 L59.7 35.6 L54.3 49.5 L47.5 63.3 L49.5 77.1 L42.7 90.9 L41.7 104.7 L35.3 118.5 L46.2 132.4 L39.3 146.2 L46.3 160.0 L48.6 173.8 L48.2 187.6 L51.2 201.5 L53.6 215.3 L40.4 229.1 L52.1 242.9 L50.8 256.7 L55.9 270.5 L56.4 284.4 L58.5 298.2 L59.4 312.0 L60.6 312.0 L60.5 298.2 L62.7 284.4 L67.0 270.5 L65.5 256.7 L75.6 242.9 L69.4 229.1 L82.8 215.3 L81.2 201.5 L87.8 187.6 L82.9 173.8 L75.6 160.0 L83.4 146.2 L82.8 132.4 L68.9 118.5 L74.1 104.7 L70.9 90.9 L66.2 77.1 L63.3 63.3 L65.3 49.5 L65.9 35.6 L61.6 21.8 L60.5 8.0Z' fill='none' stroke='url(%23e)' stroke-width='5' filter='url(%23s)'/%3E%3Cpath d='M59.2 8.0 L59.5 21.8 L59.7 35.6 L54.3 49.5 L47.5 63.3 L49.5 77.1 L42.7 90.9 L41.7 104.7 L35.3 118.5 L46.2 132.4 L39.3 146.2 L46.3 160.0 L48.6 173.8 L48.2 187.6 L51.2 201.5 L53.6 215.3 L40.4 229.1 L52.1 242.9 L50.8 256.7 L55.9 270.5 L56.4 284.4 L58.5 298.2 L59.4 312.0 L60.6 312.0 L60.5 298.2 L62.7 284.4 L67.0 270.5 L65.5 256.7 L75.6 242.9 L69.4 229.1 L82.8 215.3 L81.2 201.5 L87.8 187.6 L82.9 173.8 L75.6 160.0 L83.4 146.2 L82.8 132.4 L68.9 118.5 L74.1 104.7 L70.9 90.9 L66.2 77.1 L63.3 63.3 L65.3 49.5 L65.9 35.6 L61.6 21.8 L60.5 8.0Z' fill='url(%23g)'/%3E%3Cpath d='M59.2 8.0 L59.5 21.8 L59.7 35.6 L54.3 49.5 L47.5 63.3 L49.5 77.1 L42.7 90.9 L41.7 104.7 L35.3 118.5 L46.2 132.4 L39.3 146.2 L46.3 160.0 L48.6 173.8 L48.2 187.6 L51.2 201.5 L53.6 215.3 L40.4 229.1 L52.1 242.9 L50.8 256.7 L55.9 270.5 L56.4 284.4 L58.5 298.2 L59.4 312.0 L60.6 312.0 L60.5 298.2 L62.7 284.4 L67.0 270.5 L65.5 256.7 L75.6 242.9 L69.4 229.1 L82.8 215.3 L81.2 201.5 L87.8 187.6 L82.9 173.8 L75.6 160.0 L83.4 146.2 L82.8 132.4 L68.9 118.5 L74.1 104.7 L70.9 90.9 L66.2 77.1 L63.3 63.3 L65.3 49.5 L65.9 35.6 L61.6 21.8 L60.5 8.0Z' fill='none' stroke='%23f4eeff' stroke-width='1.1'/%3E%3Cg filter='url(%23s)'%3E%3Cpath d='M75.6 242.9 L95.5 240.6 L106.7 232.9' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M50.8 256.7 L31.6 270.0 L23.9 275.4' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M68.9 118.5 L80.5 126.8 L89.6 133.6' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M48.2 187.6 L32.1 180.1 L22.8 179.0' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M83.4 146.2 L94.6 134.1 L106.3 124.8' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3C/g%3E%3Cpath d='M75.6 242.9 L95.5 240.6 L106.7 232.9' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M50.8 256.7 L31.6 270.0 L23.9 275.4' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M68.9 118.5 L80.5 126.8 L89.6 133.6' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M48.2 187.6 L32.1 180.1 L22.8 179.0' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3Cpath d='M83.4 146.2 L94.6 134.1 L106.3 124.8' stroke='%23e9dcff' stroke-width='.9' fill='none' opacity='.8'/%3E%3C/svg%3E") center / contain no-repeat;
+  animation: v2-rift calc(5.2s / var(--v2-speed)) ease-in-out calc(-2s / var(--v2-speed)) infinite, v2-flicker calc(3.1s / var(--v2-speed)) steps(1) infinite, v2-wander-b calc(31s / var(--v2-speed)) ease-in-out infinite;
+}
+/* slow, organic drift: each rift wanders on its own looping path and turns a few degrees, never in step with the other */
+@keyframes v2-wander-a {
+  0%, 100% { translate: 0 0; rotate: 12deg; }
+  22% { translate: -26px 18px; rotate: 9deg; }
+  47% { translate: -10px 46px; rotate: 15deg; }
+  71% { translate: 18px 20px; rotate: 11deg; }
+}
+@keyframes v2-wander-b {
+  0%, 100% { translate: 0 0; rotate: -18deg; }
+  27% { translate: 22px -16px; rotate: -14deg; }
+  53% { translate: 36px 22px; rotate: -21deg; }
+  78% { translate: 8px 30px; rotate: -16deg; }
+}
+@keyframes v2-rift { 50% { scale: 1.06 1.03; filter: brightness(1.3) saturate(1.3) drop-shadow(0 0 18px rgba(155, 110, 255, .6)); } }
+@keyframes v2-flicker { 0%, 100% { opacity: 1; } 47% { opacity: .82; } 49% { opacity: 1; } 51% { opacity: .9; } }
+@media (max-width: 1100px) {
+  body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state::before,
+  body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-action-list::after { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.theme-dark .workspace-leaf-content[data-type="empty"]::before, body.theme-dark .workspace-leaf-content[data-type="empty"]::after,
+  body.theme-dark .workspace-leaf-content[data-type="empty"] .empty-state::before,
+  body.theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-action-list::after { animation: none !important; }
+}
+body.v2-no-stars .workspace-leaf-content[data-type="empty"]::after { display: none !important; }
+
+/* ---------------------------------------------------------------- motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  body.theme-dark::after, body.theme-dark .workspace-ribbon.mod-left::after, body.theme-dark .status-bar::before,
+  body.theme-dark .mod-root .workspace-tab-header.is-active::after, body.theme-dark .nav-file-title.is-active::after,
+  body.theme-dark .workspace-leaf-content[data-type="graph"]::after, body.theme-dark .workspace-leaf-content[data-type="graph"] .view-content::before,
+  body.theme-dark .workspace-leaf-content[data-type="graph"] .view-content::after,
+  body.theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-container::after,
+  body.theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-title::before { animation: none !important; }
+  body.theme-dark .nav-file-title:hover, body.theme-dark .side-dock-ribbon-action:hover { transform: none; }
+}
+
+/* ---------------------------------------------------------------- Style Settings toggles */
+body.v2-no-stars::before, body.v2-no-stars::after,
+body.v2-no-stars .workspace-leaf-content[data-type="markdown"] .view-content::before,
+body.v2-no-stars .workspace-leaf-content[data-type="graph"] .view-content::after,
+body.v2-no-stars .workspace-leaf-content[data-type="localgraph"] .view-content::after { display: none !important; }
+body.v2-no-orbits .workspace-leaf-content[data-type="graph"]::before, body.v2-no-orbits .workspace-leaf-content[data-type="graph"]::after,
+body.v2-no-orbits .lf-home .callout[data-callout="lf-hero"]::before, body.v2-no-orbits .lf-home .callout[data-callout="lf-hero"]::after,
+body.v2-no-orbits .workspace-leaf-content[data-type="empty"] .empty-state-container::after { display: none !important; }
+body.v2-no-orbits .workspace-leaf-content[data-type="empty"] .empty-state-container { background: none !important; }
+body.v2-reduce-motion *, body.v2-reduce-motion *::before, body.v2-reduce-motion *::after,
+body.v2-reduce-motion::before, body.v2-reduce-motion::after { animation: none !important; transition: none !important; }
+
+body:not(.cv-sky-on).theme-dark .workspace-leaf-content[data-type="empty"] .empty-state-action > * { overflow: visible; text-overflow: clip; max-width: none; }

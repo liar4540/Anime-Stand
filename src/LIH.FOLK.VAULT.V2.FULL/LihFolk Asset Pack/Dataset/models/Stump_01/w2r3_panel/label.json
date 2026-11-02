@@ -1,0 +1,163 @@
+{
+ "asset": "Stump_01",
+ "kit": "Nature",
+ "type": "Stump",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 6.0,
+ "grades": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   1,
+   1,
+   0,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  6.0,
+  6.0,
+  5.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.7,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Top and three-quarter read as a stump via the ringed cut; front and silhouette read as a draped lampshade/skirt shape with no root definition.",
+   "V2": "Big trunk and ringed top read; roots are webbed sheet flares, so the medium level is weak and there is no small detail (bark, chips).",
+   "V3": "Body is flattened (1.5 deep vs 2.8 wide) and the flares form a continuous skirt, not stylised roots.",
+   "V4": "Cut top has a soft rim but the base has a thin hard-edged dark ledge; edges inconsistent.",
+   "V5": "Flank shows smeared vertical shading streaks across the skirt faces; roots close-up shows a stepped, jagged base ledge.",
+   "V6": "Bark brown in 2 values plus cream/tan rings - disciplined; ash and walnut colourways swap cleanly.",
+   "V7": "440 tris vs medium target 2000 - under target.",
+   "V8": "Vertex-colour material and bark palette match; webbed skirt roots and dark base ledge are a minor mismatch with fused-shell organic style.",
+   "V9": "Static scenery flags correct (Anchored, Hull, CanTouch off, Color white, bottom-centre origin)."
+  },
+  {
+   "V1": "Top and 3/4 read as a stump via the ring-marked cut top, but the side silhouette is a flared lampshade/skirt shape with no distinct root lobes.",
+   "V2": "Big trunk mass and cut top read, but the roots are a continuous flat skirt rather than medium-scale lobes, and there is no small detail (bark ridges, knots) - hierarchy only partial.",
+   "V3": "Squat proportion is fine but the base flares as thin sheet-like planes that read as draped cloth; rings are a flat bullseye.",
+   "V4": "Cut-top rim has a soft roll, but the root skirt ends in a sharp thin lip band and the trunk sides are smeared - inconsistent edge treatment.",
+   "V5": "Studio front/cut_top close-ups show streaky, smeared shading and soft creases down the trunk and a hot specular streak; minor but visible.",
+   "V6": "Bark brown in two values plus cream/tan end-grain rings - disciplined; colourways hold.",
+   "V7": "440 tris vs medium target 2000.",
+   "V8": "One white vertex-colour material and smooth shading match, but the sheet-like root skirt with a dark base band does not read as the kit's fused organic shells.",
+   "V9": "Studio line: Anchored, CollisionFidelity Hull, CanTouch off, Color white, SmoothPlastic, origin bottom-centre - correct for static scenery."
+  },
+  {
+   "V1": "Reads as a stump only from three-quarter/top thanks to the ringed cut face; front and silhouette are a featureless trapezoid that could be a lampshade or bucket.",
+   "V2": "Big trunk plus ringed top; the three roots are flat wedges that do not form a medium tier, and there is no small detail (bark cracks, chips, moss).",
+   "V3": "Primitive construction: a flared frustum with three flat triangular flanges for roots; the roots read as sheets, not rounded flaring roots.",
+   "V4": "Top rim has a soft lip, but the base flange edge is a thin hard step and root wedges end in sharp points; inconsistent.",
+   "V5": "Body shows smeared light streaks and a bright blotch on the left (front view), and the root flange bottom edge is jagged in the roots close-up; minor.",
+   "V6": "Disciplined: bark brown in 2-3 values with cream/tan end-grain rings; birch and walnut colourways keep structure.",
+   "V7": "440 tris vs medium target 2000, well under (arguably too few for round roots).",
+   "V8": "One vertex-colour material and kit palette, but organic form is not a convincing fused smooth shell; flat flanges clash with the kit's rounded stylised wood.",
+   "V9": "Studio line correct: anchored, Hull collision, CanTouch off, white colour, origin bottom-centre; gates A1-A18 pass, no cross-shell overlaps."
+  }
+ ],
+ "artifacts": [
+  [
+   "Smeared shading streaks on the root skirt",
+   "Jagged dark base ledge band around the bottom"
+  ],
+  [
+   "Smeared/streaky shading on the trunk sides (studio front and cut_top close-ups)",
+   "Root skirt is a thin flat flare with a sharp lip, reads as cloth"
+  ],
+  [
+   "smeared shading streaks/blotch on trunk side (front view)",
+   "jagged thin step along the root flange bottom edge (roots close-up)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Separate the skirt into 3-5 distinct rounded root lobes with gaps between them",
+   "Make the trunk rounder in plan (depth closer to width)",
+   "Remove the dark base ledge and add a bark ridge/notch detail for small scale"
+  ],
+  [
+   "Replace the continuous skirt with 3-5 distinct rounded root lobes that dip into the ground",
+   "Clean up the trunk normals (weighted normals) to remove streaks and add a few bark ridges or a knot for small-scale detail",
+   "Give the cut top a slightly proud bark rim and less target-like rings (irregular, offset centre)"
+  ],
+  [
+   "Rebuild roots as 3-5 rounded, tapering root lobes that bulge out and dip into the ground instead of flat flanges",
+   "Add a medium/small tier: bark ridges or cracks, a chipped/uneven cut rim, a small stub or moss patch",
+   "Spend more of the budget on segments so the trunk and roots read round and shading is clean"
+  ]
+ ],
+ "params": {
+  "R": 0.961,
+  "H": 1.413,
+  "roots": 6,
+  "grooves": 22,
+  "slant": 0.095
+ },
+ "tris": 440,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,278 @@
+{
+ "id": "night_stars_indigo_010",
+ "family": "night_stars",
+ "theme": "indigo",
+ "Lighting": {
+  "LightingStyle": "Soft",
+  "Brightness": 0.6,
+  "ClockTime": 0.0,
+  "GeographicLatitude": 0,
+  "Ambient": [
+   58,
+   64,
+   123
+  ],
+  "OutdoorAmbient": [
+   77,
+   85,
+   160
+  ],
+  "ColorShift_Top": [
+   237,
+   240,
+   255
+  ],
+  "ColorShift_Bottom": [
+   0,
+   0,
+   0
+  ],
+  "EnvironmentDiffuseScale": 0.2,
+  "EnvironmentSpecularScale": 0.0,
+  "ExposureCompensation": 0.2,
+  "GlobalShadows": true
+ },
+ "Atmosphere": {
+  "Density": 0.3,
+  "Offset": 0.0,
+  "Color": [
+   62,
+   44,
+   103
+  ],
+  "Decay": [
+   61,
+   43,
+   101
+  ],
+  "Glare": 0.0,
+  "Haze": 0.5
+ },
+ "Sky": {
+  "CelestialBodiesShown": false,
+  "StarCount": 0,
+  "SunAngularSize": 21,
+  "MoonAngularSize": 11,
+  "SkyboxOrientation": [
+   0,
+   0,
+   0
+  ],
+  "Faces": {
+   "SkyboxBk": "SkyBk.png",
+   "SkyboxDn": "SkyDn.png",
+   "SkyboxFt": "SkyFt.png",
+   "SkyboxLf": "SkyLf.png",
+   "SkyboxRt": "SkyRt.png",
+   "SkyboxUp": "SkyUp.png"
+  }
+ },
+ "ColorCorrection": {
+  "Brightness": 0.0,
+  "Contrast": 0.05,
+  "Saturation": -0.1,
+  "TintColor": [
+   255,
+   255,
+   255
+  ]
+ },
+ "Bloom": {
+  "Intensity": 0.8,
+  "Size": 32,
+  "Threshold": 1.1
+ },
+ "Measured": {
+  "horizon": [
+   61,
+   43,
+   102
+  ],
+  "horizon_sun_side": [
+   63,
+   45,
+   103
+  ],
+  "horizon_far_side": [
+   61,
+   43,
+   101
+  ],
+  "zenith": [
+   62,
+   58,
+   58
+  ]
+ },
+ "PaintedLight": {
+  "direction_roblox": [
+   -0.2187,
+   0.6849,
+   -0.695
+  ],
+  "kind": "moon"
+ },
+ "Notes": "Stars are painted (StarCount 0 avoids doubling). Painted sun/moon in the faces, so CelestialBodiesShown=false avoids two suns. To line the engine sun up with the painted one, rotate SkyboxOrientation.Y until Lighting:GetSunDirection() matches PaintedLight.direction_roblox. Face convention: Ft=-Z, Bk=+Z, Rt=+X, Lf=-X; Up/Dn use the cube-cross layout, rotation 0 deg (Up/Dn rotation unverified in Studio; tools/pack/rotate_updn.py fixes it in place).",
+ "gates": {
+  "S1_faces_1024": true,
+  "S2_seam_worst_ratio": 0.891,
+  "S2_seam_worst_abs": 0.011,
+  "S2_seamless": true,
+  "S3_pinch_up": 1.086,
+  "S3_pinch_dn": 1.034,
+  "S3_no_pinch": true,
+  "S4_one_sun": true,
+  "S5_lighting_valid": true,
+  "gates_pass": true
+ },
+ "seams": {
+  "SkyFt_top": [
+   0.00834,
+   0.00787
+  ],
+  "SkyFt_bottom": [
+   0.00183,
+   0.00183
+  ],
+  "SkyFt_left": [
+   0.00644,
+   0.00662
+  ],
+  "SkyFt_right": [
+   0.00416,
+   0.00384
+  ],
+  "SkyBk_top": [
+   0.00777,
+   0.00824
+  ],
+  "SkyBk_bottom": [
+   0.00186,
+   0.00183
+  ],
+  "SkyBk_left": [
+   0.00701,
+   0.00716
+  ],
+  "SkyBk_right": [
+   0.00473,
+   0.00605
+  ],
+  "SkyRt_top": [
+   0.00915,
+   0.00926
+  ],
+  "SkyRt_bottom": [
+   0.0018,
+   0.00183
+  ],
+  "SkyRt_left": [
+   0.00416,
+   0.00473
+  ],
+  "SkyRt_right": [
+   0.00701,
+   0.00809
+  ],
+  "SkyLf_top": [
+   0.01095,
+   0.01192
+  ],
+  "SkyLf_bottom": [
+   0.00184,
+   0.00183
+  ],
+  "SkyLf_left": [
+   0.00473,
+   0.00504
+  ],
+  "SkyLf_right": [
+   0.00644,
+   0.00646
+  ],
+  "SkyUp_top": [
+   0.00777,
+   0.00881
+  ],
+  "SkyUp_bottom": [
+   0.00834,
+   0.00942
+  ],
+  "SkyUp_left": [
+   0.01095,
+   0.01666
+  ],
+  "SkyUp_right": [
+   0.00915,
+   0.00981
+  ],
+  "SkyDn_top": [
+   0.00183,
+   0.00181
+  ],
+  "SkyDn_bottom": [
+   0.00186,
+   0.00187
+  ],
+  "SkyDn_left": [
+   0.00184,
+   0.00178
+  ],
+  "SkyDn_right": [
+   0.0018,
+   0.00181
+  ]
+ },
+ "params": {
+  "Zen": "#05030f",
+  "Mid": "#150d33",
+  "Hor": "#3c2c6e",
+  "HorGlow": "#492e64",
+  "MoonCol": "#edf0ff",
+  "A1": "#3ff8c8",
+  "A2": "#ea47d1",
+  "FloorC": "#0b0719",
+  "Moon": [
+   -0.2187,
+   0.695,
+   0.6849
+  ],
+  "MW": [
+   0.8765,
+   -0.4297,
+   0.2168
+  ],
+  "StarDens": 0.35132605518968596,
+  "StarSize": 0.28520759759238945,
+  "MilkyWay": 0.650691867306383,
+  "MoonSize": 0.04228309570725892,
+  "MoonOn": 1.0,
+  "Aurora": 0.0,
+  "AScale": 1.0,
+  "Wisps": 0.2996545026276485,
+  "Seed": 576.0
+ },
+ "colors": [
+  [
+   "#0c071d",
+   0.382
+  ],
+  [
+   "#1a1332",
+   0.254
+  ],
+  [
+   "#31264c",
+   0.224
+  ],
+  [
+   "#4d3d72",
+   0.14
+  ]
+ ],
+ "generator": "tools/pack/gen_skies.py + osl/sky_night.osl (procedural, original)",
+ "tags": [
+  "night_stars",
+  "indigo"
+ ]
+}

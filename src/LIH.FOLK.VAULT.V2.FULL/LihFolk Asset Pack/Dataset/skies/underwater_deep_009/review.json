@@ -1,0 +1,21 @@
+{
+ "id": "underwater_deep_009",
+ "kind": "skies",
+ "score": 8.6,
+ "pass": true,
+ "median": {
+  "K1": 2,
+  "K2": 2,
+  "K3": 2,
+  "K4": 1,
+  "K6": 1,
+  "K5": 2
+ },
+ "batch": "s3",
+ "reviewer_notes": [
+  "Diagonal X artifact in Up light disc; barcode-like ray streaks",
+  "God rays are uniform barcode stripes; no caustics or surface detail",
+  "Soft generic god rays; faint X artifact across Up-face light disc"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/sky.md"
+}

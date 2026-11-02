@@ -1,0 +1,83 @@
+{
+ "asset": "Axe_01",
+ "kit": "Weapons",
+ "type": "Axe",
+ "seed": 1,
+ "attempt": "rv1",
+ "label": "rejected",
+ "score": 7.3,
+ "grades": [
+  1,
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  1,
+  2
+ ],
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "reviewer": "blind fresh agent (renders + close-ups + gate report + rubric only)",
+ "evidence": {
+  "V1": "Front, three-quarter and silhouette read instantly as a single-bit axe (flared bearded blade, collar, banded grip, pommel), but the top view is just a gold disc plus a grey sliver and does not read as an axe; no correctness failure (A15 Y error 0.0, alignment offsets 0.0, both seats seated).",
+  "V2": "Clear tiers: big = flared blade + long haft, medium = gold collar, upper ring and pommel, small = grip wrap bulges with thin dark-gold stripes and the haft end cap.",
+  "V3": "Blade flare is confidently stylised, but the haft is long and pencil-thin (5.39 studs tall vs a ~1.9-stud head) so the whole reads more realistic-lanky than chunky-kit; partly exaggerated.",
+  "V4": "Chamfers are present and catch light on the collar, rings, end cap, neck block and the blade rim; the blade rim bevel band is a consistent light strip along edge, beard and toe.",
+  "V5": "Minor faceting: the pommel sphere shows a visibly polygonal lower outline in the grip close-up, and the neck-to-blade transition has a hard kinked facet line with a lighter wedge facet at the top in the edge close-up; no z-fighting or seams, steel neck enters the gold collar cleanly.",
+  "V6": "Disciplined: one hue (teal) in dark haft / mid grip values, gold accent with a darker gold for grip stripes, steel greys for the head; colourways (crimson, shadow) swap only the hue and keep gold/steel intact.",
+  "V7": "1636 tris vs weapon target 2500 (ceiling 4000), under target.",
+  "V8": "One white vertex-colour material and smooth shading match the kit, but no ink-dark value appears anywhere and the hue only shows two clear values rather than three; blade rim bevel looks wider than the ~0.045 stud kit chamfer.",
+  "V9": "Studio line is correct: Tool Handle, origin at grip point, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+ },
+ "artifacts": [
+  "Pommel sphere has a visibly faceted (polygonal) lower outline in the grip close-up",
+  "Hard kinked facet line where the rectangular neck block transitions into the flat blade, with a lighter wedge facet at the top (edge close-up)",
+  "184 cross-shell overlaps reported (intentional collar/head interpenetration; not visible as z-fighting, but worth confirming no hidden faces flicker in Studio)"
+ ],
+ "top_fixes": [
+  "Thicken the haft (~1.3-1.5x) and/or shorten it slightly, or enlarge the head, so proportions read chunky-stylised rather than lanky",
+  "Add a third value of the hue and an ink-dark accent (e.g. darker teal under the collar/end cap or ink-dark grip stripes) to match the kit palette rule",
+  "Raise the pommel sphere segment count or chamfer it so its outline is round, and soften the neck-to-blade transition with a bevel/extra loop so the kink facet disappears",
+  "Give the blade some edge-on thickness variation (thicker spine near the neck tapering to the rim) so the top/edge view reads as an axe head rather than a flat sliver",
+  "Match the blade rim bevel width to the kit's ~0.045 stud chamfer"
+ ],
+ "params": {
+  "H": 5.226,
+  "r": 0.145,
+  "style": "crescent",
+  "E": 1.536,
+  "bt": 0.97,
+  "bb": 0.97,
+  "poll": 0.102,
+  "D": 0.399,
+  "edge_frac": 0.336,
+  "wraps": 6
+ },
+ "tris": 1636,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

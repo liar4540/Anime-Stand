@@ -1,0 +1,21 @@
+{
+ "id": "night_stars_indigo_007",
+ "kind": "skies",
+ "score": 8.6,
+ "pass": true,
+ "median": {
+  "K1": 2,
+  "K2": 2,
+  "K3": 2,
+  "K4": 1,
+  "K6": 1,
+  "K5": 2
+ },
+ "batch": "s3",
+ "reviewer_notes": [
+  "Uniform star noise; grey smoky milky way, no moon or focal point",
+  "Uniform same-size star noise; milky way a faint grey smudge",
+  "Uniform star noise, no size hierarchy; grey smoky milky way smudge"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/sky.md"
+}

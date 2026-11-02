@@ -1,0 +1,21 @@
+{
+ "id": "clear_day_teal_001",
+ "kind": "skies",
+ "score": 8.6,
+ "pass": true,
+ "median": {
+  "K1": 2,
+  "K2": 2,
+  "K3": 2,
+  "K4": 1,
+  "K6": 1,
+  "K5": 2
+ },
+ "batch": "s2",
+ "reviewer_notes": [
+  "Up face cloud is a blurry smeared mass; clouds soft, weakly shaded",
+  "Blurry low-contrast clouds, blown-out white mass on Up face",
+  "Clouds blurry and smeared, weak edges; Up face washed-out white mass"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/sky.md"
+}

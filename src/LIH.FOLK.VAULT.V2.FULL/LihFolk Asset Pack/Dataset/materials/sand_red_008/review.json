@@ -1,0 +1,22 @@
+{
+ "id": "sand_red_008",
+ "kind": "materials",
+ "score": 8.8,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 1,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m5",
+ "reviewer_notes": [
+  "Shallow ripple relief; speckle grain slightly noisy on sphere",
+  "Ripples mostly colour-driven; normal relief weak",
+  "weak, uniform ripple relief; no dune-scale shapes"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

@@ -1,0 +1,112 @@
+{
+ "asset": "DeadTree_01",
+ "type": "DeadTree",
+ "tris": 1320,
+ "budget_class": "tree",
+ "budget_target": 2000,
+ "budget_ceiling": 5000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 4.419,
+  "y": 3.357,
+  "z": 5.871
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "alignment": null,
+ "seats": [
+  {
+   "name": "branch0_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.40927,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "twig0_on_branch",
+   "gap": 0.0,
+   "penetration": 0.12781,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "branch1_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.35508,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "twig1_on_branch",
+   "gap": 0.0,
+   "penetration": 0.10561,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "branch2_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.3334,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "branch3_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.30693,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "twig3_on_branch",
+   "gap": 0.0,
+   "penetration": 0.0832,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "branch4_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.25921,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 170,
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "colourways": [
+   "oak",
+   "ash",
+   "redwood",
+   "birch",
+   "walnut"
+  ]
+ }
+}

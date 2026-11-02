@@ -1,0 +1,178 @@
+{
+ "asset": "Longsword_02",
+ "kit": "Weapons",
+ "type": "Longsword",
+ "seed": 2,
+ "attempt": "rv3_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  9.3,
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.6,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette all read instantly as a cross-hilt longsword (pointed blade, upturned guard tips, ringed grip, disc pommel); top view is only a thin guard bar as expected for any sword, and the outline is mirror-even with A15 X/Y = 0.0.",
+   "V2": "Clear tiers: long blade dominates, guard and disc pommel as medium masses, gem, fuller and grip rings as small detail; no uniform noise.",
+   "V3": "Safe, near-realistic proportions rather than confident stylisation: the blade is a long, near-constant-width prism with a short tip taper, the grip is thin next to the chunky guard, and the flat disc pommel is small and reads weakly at distance; the upturned guard tips are the only real exaggeration.",
+   "V4": "Consistent ~kit-size chamfers catch light on the guard top edges and lobe, pommel disc rim and collar, and blade edge bevels/fuller in the guard and blade-mid close-ups; nothing razor-sharp or blobby.",
+   "V5": "Guard, blade-mid, tip and pommel close-ups are clean with no pinches, seams, z-fighting or patches; gate A17/A18 pass with 0 self-intersections, 0 cap overlaps, 0 flipped faces (172 cross-shell overlaps are intentional inserts such as blade into guard). The pommel disc rim shows a faintly polygonal outline only at extreme close range, not a shading artifact.",
+   "V6": "Disciplined kit palette: gold guard/pommel, two steel greys plus dark fuller, one accent hue (teal) in two values on grip and gem; crimson and shadow colourways swap only the accent hue cleanly.",
+   "V7": "2424 tris vs weapon target 2500 (ceiling 4000): at/under target.",
+   "V8": "One white LF_VertexColor material with vertex colours, kit gold/steel/accent palette and matching chamfer scale and smooth shading; sits naturally alongside the kit swords.",
+   "V9": "Studio line correct: Tool Handle, origin at hand/grip point, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  },
+  {
+   "V1": "Front, three-quarter and silhouette all read instantly as a cross-hilted longsword (pointed tip, upturned guard, ringed grip, disc pommel); top view is the expected thin guard bar with blade section; A15 X/Y error 0.0, no lopsided outline.",
+   "V2": "Clear tiers: long blade is the big mass, guard and pommel the medium shapes, fuller, raised guard boss, gem and gold/teal wrap bands the small detail; the blade itself is a long plain run with only the fuller for interest.",
+   "V3": "Proportions are close to a stock realistic longsword: long narrow blade over a short guard (2.37 x 6.81 studs) and a squat flat disc pommel that reads like a stand base; only the chunky guard and ringed grip push toward the stylised kit look, unlike the confident exaggeration of the pass anchor.",
+   "V4": "Consistent chamfers on guard arms/boss, blade edges, fuller walls and pommel rims; light catches the bevel highlights evenly in every studio close-up, no razor edges.",
+   "V5": "Studio and flat close-ups of guard, blade mid, tip and pommel show smooth shading, clean fuller convergence at the tip, no pinches, seams or z-fighting; gates A17/A18 pass, 0 self-intersections, 0 cap overlaps, 0 flipped faces.",
+   "V6": "Disciplined: gold accent, two steel greys, one teal hue in wrap and gem; colourways swap only the accent hue (crimson, shadow) cleanly with good value contrast.",
+   "V7": "2424 tris vs weapon target 2500 (ceiling 4000), at target.",
+   "V8": "One white vertex-colour material, kit gold/steel/teal palette, ~kit chamfer width and smooth shading; guard and grip language match the kit sword family.",
+   "V9": "Studio line: Tool Handle, origin at grip point, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic, all correct."
+  },
+  {
+   "V1": "Front and silhouette read instantly as a sword (long tapered blade, upturned cross-guard, disc pommel); outline is mirror-clean, A15 X/Y error 0.0; top view is only the guard strip, as expected for a blade.",
+   "V2": "Clear tiers: long fullered blade (big), gold cross-guard with gem bulge (medium), banded grip, collar and faceted gem (small).",
+   "V3": "Blade is confidently long and slim with a good ogive tip, but the guard is a near-uniform flat slab with only a slight end upturn, the grip is short for a longsword (one-hand length), and the thin flat disc pommel undersells the bottom end - partly stylised, partly stiff.",
+   "V4": "Consistent chamfers: blade edge and fuller bevels catch light along the full length, guard edges and tips show even bevel highlights, pommel rim bevelled.",
+   "V5": "Pommel disc shows stray low-segment faceting in the studio close-up (visible flat facets on the rim band and dome, polygonal outline in flat light); blade, tip and guard otherwise clean with no seams or z-fighting.",
+   "V6": "Disciplined: steel greys (2 values, dark fuller), gold accent with darker band, one teal hue on grip and gem; colourways swap only the single hue.",
+   "V7": "2424 tris vs weapon target 2500 (ceiling 4000) - at target.",
+   "V8": "Kit palette (gold, steel greys, teal), one white vertex-colour material, chamfer scale and smooth shading match the kit anchors closely.",
+   "V9": "Studio line correct: Tool Handle, origin at grip point, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [],
+  [
+   "Pommel disc rim shows visible polygon segments on its outline in the pommel close-up (minor, silhouette faceting rather than shading)",
+   "Gem is low-poly faceted (reads as intentional cut)"
+  ],
+  [
+   "Pommel disc: visible faceting on rim and dome from low radial segment count (close_pommel_studio / close_pommel_flat)",
+   "Gem is a low-poly faceted cap (reads as intentional cut, minor)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Push stylised proportion: give the blade a stronger taper or a wider ricasso-to-tip flare and a bolder tip so it is not a uniform prism",
+   "Thicken the grip slightly and enlarge/heighten the pommel (taller disc or faceted cap) so the hilt end reads at 64 px",
+   "Differentiate the guard from the stock flat-bar-with-lobe hilt (deeper upsweep, quillon end caps or stepped profile) to give the longsword its own identity",
+   "Raise the pommel disc segment count a little to remove the faint polygonal rim in close-ups (budget headroom is small, so take tris from the grip rings if needed)"
+  ],
+  [
+   "Rework the pommel: a larger ball, lobed or wheel pommel instead of the squat flat disc so the bottom reads as a weapon end, not a stand base, and raise its rim segment count",
+   "Push stylised proportion: widen the guard span and exaggerate its upturn, or add a slight blade taper/flare near the ricasso so the long blade is not a plain straight run",
+   "Differentiate the guard from the existing paddle-crossguard-with-gem sword in the kit (e.g. quillon terminals or a distinct boss shape) so the longsword has its own identity"
+  ],
+  [
+   "Raise radial segments (or add support loops/smooth normals) on the pommel disc and collar to remove visible faceting",
+   "Give the guard more shape: taper thickness toward the tips and push the upturn/flare so it is not a flat slab (currently near-identical to the Broadsword guard)",
+   "Lengthen the grip toward a hand-and-a-half proportion and replace the thin disc pommel with a chunkier wheel or faceted pommel to balance the long blade"
+  ]
+ ],
+ "params": {
+  "L": 5.013,
+  "W": 0.396,
+  "T": 0.114,
+  "taper": 0.277,
+  "tip0": 0.803,
+  "tipk": 1.647,
+  "gL": 1.044,
+  "h0": 0.157,
+  "ht": 0.095,
+  "rise": 0.164,
+  "flare": 0.051,
+  "langet": 0.098,
+  "GL": 1.298,
+  "gr": 0.147,
+  "ps": 0.267,
+  "wraps": 6,
+  "pommel": "wheel",
+  "fuller_w": 0.732,
+  "fuller_end": 0.628,
+  "gem": true,
+  "tip_balls": false,
+  "hilt_steps": 18
+ },
+ "tris": 2424,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

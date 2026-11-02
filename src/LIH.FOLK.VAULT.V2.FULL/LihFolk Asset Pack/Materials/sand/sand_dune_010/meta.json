@@ -1,0 +1,116 @@
+{
+ "id": "sand_dune_010",
+ "family": "sand",
+ "theme": "dune",
+ "index": 10,
+ "seed": 545.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_sand.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Sand",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "ground",
+  "terrain",
+  "beach",
+  "desert",
+  "dune"
+ ],
+ "colors": [
+  [
+   "#d2975a",
+   0.513
+  ],
+  [
+   "#e0aa6b",
+   0.257
+  ],
+  [
+   "#ebbf7c",
+   0.215
+  ],
+  [
+   "#936740",
+   0.015
+  ]
+ ],
+ "params": {
+  "C1": "#f6d78d",
+  "C2": "#d7975c",
+  "C3": "#bf914c",
+  "C4": "#775032",
+  "C5": "#ffe5b7",
+  "K": 3.0,
+  "Diag": 1.0,
+  "RipAmp": 0.9984861847104178,
+  "WarpA": 0.7375165148796862,
+  "Grains": 0.5735995565454572,
+  "Pebbles": 0.0,
+  "Seed": 545.0
+ },
+ "normal_depth_px": 20.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.828,
+   "Color_Neutral": 0.842,
+   "Normal": 0.942,
+   "Roughness": 0.474,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.5,
+   1.0
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.012,
+   0.005
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 114.0,
+   "diel_luma_p99": 209.5,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.877,
+   "rough_min": 0.839,
+   "rough_expected": [
+    0.75,
+    0.95
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.031,
+  "M_neutral_mean": 0.74,
+  "M_neutral_range_p5_p95": [
+   0.673,
+   0.873
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 24.4,
+ "preview": "preview.jpg"
+}

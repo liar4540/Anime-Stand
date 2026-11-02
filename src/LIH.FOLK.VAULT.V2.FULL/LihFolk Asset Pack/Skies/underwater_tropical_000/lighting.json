@@ -1,0 +1,262 @@
+{
+ "id": "underwater_tropical_000",
+ "family": "underwater",
+ "theme": "tropical",
+ "Lighting": {
+  "LightingStyle": "Soft",
+  "Brightness": 1.2,
+  "ClockTime": 12.0,
+  "GeographicLatitude": 0,
+  "Ambient": [
+   35,
+   94,
+   119
+  ],
+  "OutdoorAmbient": [
+   51,
+   138,
+   164
+  ],
+  "ColorShift_Top": [
+   179,
+   249,
+   234
+  ],
+  "ColorShift_Bottom": [
+   0,
+   0,
+   0
+  ],
+  "EnvironmentDiffuseScale": 0.3,
+  "EnvironmentSpecularScale": 0.0,
+  "ExposureCompensation": 0.0,
+  "GlobalShadows": true
+ },
+ "Atmosphere": {
+  "Density": 0.6,
+  "Offset": 0.0,
+  "Color": [
+   35,
+   137,
+   162
+  ],
+  "Decay": [
+   34,
+   136,
+   161
+  ],
+  "Glare": 0.0,
+  "Haze": 0.0
+ },
+ "Sky": {
+  "CelestialBodiesShown": false,
+  "StarCount": 0,
+  "SunAngularSize": 21,
+  "MoonAngularSize": 11,
+  "SkyboxOrientation": [
+   0,
+   0,
+   0
+  ],
+  "Faces": {
+   "SkyboxBk": "SkyBk.png",
+   "SkyboxDn": "SkyDn.png",
+   "SkyboxFt": "SkyFt.png",
+   "SkyboxLf": "SkyLf.png",
+   "SkyboxRt": "SkyRt.png",
+   "SkyboxUp": "SkyUp.png"
+  }
+ },
+ "ColorCorrection": {
+  "Brightness": 0.0,
+  "Contrast": 0.05,
+  "Saturation": 0.05,
+  "TintColor": [
+   255,
+   255,
+   255
+  ]
+ },
+ "Bloom": {
+  "Intensity": 0.4,
+  "Size": 24,
+  "Threshold": 1.6
+ },
+ "Measured": {
+  "horizon": [
+   34,
+   137,
+   162
+  ],
+  "horizon_sun_side": [
+   35,
+   137,
+   162
+  ],
+  "horizon_far_side": [
+   34,
+   136,
+   161
+  ],
+  "zenith": [
+   197,
+   232,
+   225
+  ]
+ },
+ "PaintedLight": {
+  "direction_roblox": [
+   0.0,
+   0.4472,
+   -0.8944
+  ],
+  "kind": "none"
+ },
+ "Notes": "Painted sun/moon in the faces, so CelestialBodiesShown=false avoids two suns. To line the engine sun up with the painted one, rotate SkyboxOrientation.Y until Lighting:GetSunDirection() matches PaintedLight.direction_roblox. Face convention: Ft=-Z, Bk=+Z, Rt=+X, Lf=-X; Up/Dn use the cube-cross layout, rotation 0 deg (Up/Dn rotation unverified in Studio; tools/pack/rotate_updn.py fixes it in place).",
+ "gates": {
+  "S1_faces_1024": true,
+  "S2_seam_worst_ratio": 0.63,
+  "S2_seam_worst_abs": 0.0024,
+  "S2_seamless": true,
+  "S3_pinch_up": 0.979,
+  "S3_pinch_dn": 1.004,
+  "S3_no_pinch": true,
+  "S4_one_sun": true,
+  "S5_lighting_valid": true,
+  "gates_pass": true
+ },
+ "seams": {
+  "SkyFt_top": [
+   0.00194,
+   0.00191
+  ],
+  "SkyFt_bottom": [
+   0.00162,
+   0.00161
+  ],
+  "SkyFt_left": [
+   0.00205,
+   0.00209
+  ],
+  "SkyFt_right": [
+   0.00244,
+   0.00238
+  ],
+  "SkyBk_top": [
+   0.00187,
+   0.00189
+  ],
+  "SkyBk_bottom": [
+   0.00159,
+   0.00156
+  ],
+  "SkyBk_left": [
+   0.00187,
+   0.00194
+  ],
+  "SkyBk_right": [
+   0.00194,
+   0.00191
+  ],
+  "SkyRt_top": [
+   0.00194,
+   0.00202
+  ],
+  "SkyRt_bottom": [
+   0.00157,
+   0.00159
+  ],
+  "SkyRt_left": [
+   0.00244,
+   0.0025
+  ],
+  "SkyRt_right": [
+   0.00187,
+   0.00196
+  ],
+  "SkyLf_top": [
+   0.00197,
+   0.00201
+  ],
+  "SkyLf_bottom": [
+   0.0016,
+   0.00155
+  ],
+  "SkyLf_left": [
+   0.00194,
+   0.00198
+  ],
+  "SkyLf_right": [
+   0.00205,
+   0.00206
+  ],
+  "SkyUp_top": [
+   0.00187,
+   0.00189
+  ],
+  "SkyUp_bottom": [
+   0.00194,
+   0.00207
+  ],
+  "SkyUp_left": [
+   0.00197,
+   0.00185
+  ],
+  "SkyUp_right": [
+   0.00194,
+   0.00193
+  ],
+  "SkyDn_top": [
+   0.00162,
+   0.00157
+  ],
+  "SkyDn_bottom": [
+   0.00159,
+   0.00161
+  ],
+  "SkyDn_left": [
+   0.0016,
+   0.00156
+  ],
+  "SkyDn_right": [
+   0.00157,
+   0.00158
+  ]
+ },
+ "params": {
+  "Surface": "#d4faf2",
+  "Shallow": "#2ccecc",
+  "Mid": "#137898",
+  "Deep": "#001931",
+  "RayC": "#b3f9ea",
+  "Window": 0.7690758518614321,
+  "Rays": 0.8478596008889939,
+  "RayCount": 16.546900468638267,
+  "Motes": 0.619155798962568,
+  "Ripple": 0.6649470309876866,
+  "Seed": 730.0
+ },
+ "colors": [
+  [
+   "#43bac2",
+   0.374
+  ],
+  [
+   "#03334a",
+   0.253
+  ],
+  [
+   "#15728c",
+   0.219
+  ],
+  [
+   "#b6e8e2",
+   0.154
+  ]
+ ],
+ "generator": "tools/pack/gen_skies.py + osl/sky_underwater.osl (procedural, original)",
+ "tags": [
+  "underwater",
+  "tropical"
+ ]
+}

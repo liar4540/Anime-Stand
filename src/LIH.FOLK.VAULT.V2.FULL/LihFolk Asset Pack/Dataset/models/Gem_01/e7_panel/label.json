@@ -1,0 +1,161 @@
+{
+ "asset": "Gem_01",
+ "kit": "Emblems",
+ "type": "Gem",
+ "seed": 1,
+ "attempt": "e7_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0,
+  9.3,
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.7,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front reads as a classic diamond (flat-topped crown over a pointed pavilion), top view as a clean elongated octagon, and the 3/4 silhouette as a gem. All three read at 64 px. The narrow end looks slightly rounded in the 3/4 outline, but it is still unmistakable.",
+   "V2": "Big: crown and pavilion masses. Medium: a lighter table, a stepped ring of crown facets and the girdle band. Small: chamfer lines and corner facets. The table, crown and pavilion value steps make the tiers obvious.",
+   "V3": "A confident chunky stylised gem: a tall stepped crown, a compact pavilion ending in a sharp-ish culet, and a footprint elongated about 0.95 x 0.80. It is not a stiff primitive. Symmetry error is X 0.0 / Y 0.0, the front outline is symmetric and the origin is centred.",
+   "V4": "Even chamfers run along every crown step, the table rim and the girdle, and catch light as thin highlight lines in the studio close-ups. They are consistent across crown and pavilion, with no razor edges and nothing blobby.",
+   "V5": "The close-ups (crown and pavilion, studio and flat) show crisp planar facets with no pinches, seams, z-fighting or overlapping caps. The gate shows A17/A18 pass, 0 flipped faces and 0 cap overlaps. Facet gradients come only from the one-sided Workbench light.",
+   "V6": "One hue in three values: light table, mid crown, dark pavilion, as the kit intends. The colourways (crimson, royal) keep the same value structure.",
+   "V7": "286 tris against the small-class target of 600 (ceiling 1500), which is lean for a chamfered step-cut.",
+   "V8": "One white material (LF_VertexColor, SmoothPlastic) with vertex colours, one hue in up to 3 values, chamfered edges with smooth shading. It sits beside the Coin_02 anchor without a visible clash.",
+   "V9": "Studio line: Pickup with CanCollide off, CanTouch on, CollisionFidelity Box, Anchored, MeshPart.Color white for vertex colours, SmoothPlastic, origin at centre. All correct for a collectible."
+  },
+  {
+   "V1": "Reads as a cut gem at 64 px from every view: front is a classic crown-over-pointed-pavilion outline, top is a clean elongated octagon step-cut, three-quarter/silhouette keep the flat crown plus culet point; A15 symmetry error X/Y = 0.0 and the front outline is mirror-even.",
+   "V2": "Clear tiers: big crown vs deep pavilion, medium octagonal table plus step facets ring, small chamfer bands on every facet edge; no uniform noise.",
+   "V3": "Confident stylised gem: chunky raised crown with broad table and a deep tapered pavilion, rounder and more appealing than plain primitives; centred on origin, no seating parts to fail.",
+   "V4": "Consistent thin chamfers on all crown, girdle and pavilion edges that catch light as highlight lines (visible in crown studio and flat close-ups), no razor edges.",
+   "V5": "Mostly clean, but smooth shading bleeds across the chamfers so several facets carry gradients instead of reading flat: a soft light streak at the left crown step corner in the three-quarter/crown close-up, a horizontal gradient band across the front crown facets, and curved light-dark gradients on the left pavilion facets toward the culet in the pavilion close-up.",
+   "V6": "One hue in 3 disciplined values (light table, mid crown, dark pavilion); the crimson/royal colourways keep the same value structure.",
+   "V7": "286 tris against a 600 small-class target (ceiling 1500).",
+   "V8": "One white LF_VertexColor material with vertex colours, chamfered edges and smooth shading, one hue in up to 3 values: matches the kit; faces read slightly softer than the Coin_02 anchor's crisp flat faces.",
+   "V9": "Studio line correct for a pickup: CanCollide off, CanTouch on, Box fidelity, Anchored, MeshPart.Color white, SmoothPlastic, origin centre."
+  },
+  {
+   "V1": "Front outline is a symmetric crown + pointed pavilion (A15 X/Y error 0.0), the three-quarter silhouette still reads as a cut gem, and the top view reads as an octagonal cushion; recognisable at 64 px from every angle.",
+   "V2": "Clear tiers: big = crown vs pavilion mass; medium = table, ring of bezel facets, girdle band, pavilion main facets; small = corner facets and chamfer lines. The pavilion is the plainest part but its facet breaks still read.",
+   "V3": "Chunky stylised proportion: a shallow crown about 1/3 of the height over a deep pointed pavilion, with a slightly elongated top (0.95 x 0.80 studs); reads as a confident stylised gem, not a stiff primitive.",
+   "V4": "Thin chamfers run consistently along the table rim, the bezel edges and the girdle, and catch light as bright lines in the studio close-ups, matching the kit's soft-edge look.",
+   "V5": "Minor: some planar facets shade unevenly under Workbench studio light, so smoothed normals bleed across faces that should be flat. There is a soft wide highlight smear at the bezel/table corner in the crown close-up, a horizontal light streak across the crown in the front view, and top-to-bottom gradients on the left crown and pavilion facets. No seams, pinches or z-fighting.",
+   "V6": "One hue in three values (light table, mid crown, dark pavilion) with strong value contrast; the crimson and royal colourways keep the same value structure.",
+   "V7": "286 tris against the small-class target of 600 (ceiling 1500), so well under target.",
+   "V8": "One white LF_VertexColor material with vertex colours, a single kit hue in up to 3 values, chamfered edges and smooth shading; matches the kit.",
+   "V9": "Studio line is correct for a pickup: CanCollide off, CanTouch on, Box fidelity, Anchored, MeshPart.Color white, SmoothPlastic, origin at centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Minor: at the narrow ends of the octagon the small corner facets and chamfers blend into a soft gradient in the studio close-ups (crown close-up left end), so the facet edges read less crisply there. Not a defect.",
+   "Minor: the culet tip looks slightly blunted in the front and pavilion close-up views."
+  ],
+  [
+   "Smooth-shading gradients inside facets: specular streak at the left crown step corner (three-quarter and crown studio close-up)",
+   "Horizontal gradient band across the crown facets in the front view",
+   "Curved light-dark gradients on the left pavilion facets near the culet (pavilion studio close-up)"
+  ],
+  [
+   "Smoothed normals bleed across planar facets: soft highlight smear at the bezel/table corner (crown studio close-up) and gradient shading inside crown and pavilion facets that should shade flat"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Sharpen the narrow-end corner facets (narrower chamfers or a slightly larger corner facet) so the step-cut stays crisp at the ends and the 3/4 outline reads less rounded.",
+   "Add a little more definition to the pavilion (for example a second tier of pavilion facets or a stronger value split) so the lower half carries the same detail density as the crown.",
+   "Bring the culet to a cleaner point so the front-view diamond silhouette ends crisply."
+  ],
+  [
+   "Make each facet shade flat: use weighted normals (face-area/strength) or mark the facet-to-chamfer edges so smoothing stays inside the chamfer bands and each crown/pavilion facet reads as one even plane",
+   "Tighten the culet and pavilion facet junctions so the lower point reads crisper at small sizes"
+  ],
+  [
+   "Make each planar facet shade flat: split normals at every facet edge (sharp edges / weighted normals with face-strength) so the chamfers carry the highlight and the facets themselves stay uniform",
+   "Add a bit more definition to the pavilion (one clear lighter value step or a visible keel line on the main facets) so the lower half doesn't read as one dark mass at small sizes"
+  ]
+ ],
+ "params": {
+  "cut": "brilliant",
+  "sides": 8,
+  "r": 0.514,
+  "shape": "oval",
+  "h": 1.028
+ },
+ "tris": 286,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

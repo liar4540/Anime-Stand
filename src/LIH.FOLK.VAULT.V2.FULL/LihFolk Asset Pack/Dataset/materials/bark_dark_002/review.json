@@ -1,0 +1,22 @@
+{
+ "id": "bark_dark_002",
+ "kind": "materials",
+ "score": 8.8,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 1,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m5",
+ "reviewer_notes": [
+  "Low-contrast stretched voronoi plates; could read as wood panelling",
+  "Uniform-width flat grooves; plates read faceted, not fissured",
+  "plates tilt as hard flat facets, crystal-like rather than ridged"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

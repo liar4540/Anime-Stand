@@ -1,0 +1,268 @@
+{
+ "asset": "Broadsword_04",
+ "kit": "Weapons",
+ "type": "Broadsword",
+ "seed": 4,
+ "params": {
+  "L": 4.329,
+  "W": 0.64,
+  "T": 0.119,
+  "taper": 0.418,
+  "tip0": 0.739,
+  "tipk": 1.433,
+  "gL": 1.198,
+  "h0": 0.202,
+  "ht": 0.119,
+  "rise": -0.193,
+  "flare": 0.073,
+  "langet": 0.114,
+  "GL": 1.181,
+  "gr": 0.161,
+  "ps": 0.339,
+  "wraps": 5,
+  "pommel": "wheel",
+  "fuller_w": 0.906,
+  "fuller_end": 0.571,
+  "gem": true,
+  "tip_balls": false,
+  "hilt_steps": 20
+ },
+ "tris": 2468,
+ "budget_class": "weapon",
+ "budget_target": 2500,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 2.762,
+  "y": 0.881,
+  "z": 6.086
+ },
+ "origin": "hand/grip point",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "guard_on_grip_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": -0.0
+   },
+   "max": 0.0
+  },
+  {
+   "name": "gem_front_on_grip_axis",
+   "offset": {
+    "X": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "guard_on_grip",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "blade_into_guard",
+   "gap": 0.0,
+   "penetration": 0.239,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "gem_0_on_guard",
+   "gap": 0.0,
+   "penetration": 0.03,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "gem_1_on_guard",
+   "gap": 0.0,
+   "penetration": 0.03,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 224,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "acc_dk",
+   "m_lt",
+   "m",
+   "m_dk",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#B4BECC",
+     "m": "#7C8899",
+     "m_dk": "#4C5566",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590"
+    }
+   }
+  ]
+ },
+ "studio": "Tool Handle; origin = hand/grip point; CollisionFidelity Hull; CanCollide off when equipped; Massless; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "Broadsword: double-edged blade with fuller, quillon guard (rise -0.193), wheel pommel, hue wrap + gold wire",
+ "features": [
+  [
+   "guard",
+   [
+    0.0,
+    0.0,
+    0.741
+   ],
+   1.498
+  ],
+  [
+   "pommel",
+   [
+    0.0,
+    0.0,
+    -1.049
+   ],
+   0.7458000000000001
+  ],
+  [
+   "blade_mid",
+   [
+    0.0,
+    0.0,
+    2.206
+   ],
+   1.536
+  ],
+  [
+   "tip",
+   [
+    0.0,
+    0.0,
+    4.587
+   ],
+   1.28
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Weapons/Broadsword_04_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 8.7,
+  "basis": "panel x3 median",
+  "reviewed": "Broadsword_01 rv3_panel (indiv 7.7/8.7/8.7)",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_weapons.py:Broadsword",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Weapons/Broadsword_04.glb",
+  "blend": "Models/Kits/Weapons/Broadsword_04.blend",
+  "turntable": "Models/Kits/Weapons/Broadsword_04_turntable.mp4",
+  "preview": "Models/Kits/Weapons/Broadsword_04_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Weapons/Broadsword_04_preview.jpg"
+}

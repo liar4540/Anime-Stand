@@ -1,0 +1,155 @@
+{
+ "asset": "Fence_01",
+ "kit": "Modular",
+ "type": "Fence",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 10.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0,
+  10.0,
+  10.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette read instantly as a picket fence section (pointed pickets, two rails, capped post); the top view reads as a rail line with picket ticks.",
+   "V2": "Clear tiers: big post and rail run, medium pickets, small post cap and ink nail heads.",
+   "V3": "Confident stylised proportions: chunky capped post, pointed pickets with slight height variation and generous gaps give a playful hand-built read.",
+   "V4": "Pickets, rails, post and cap all carry consistent chamfers that catch light in the post-cap, rail-end and rails close-ups.",
+   "V5": "Studio and flat close-ups clean: no pinches, seams or z-fighting where pickets cross the rails; A17/A18 pass, 0 flipped faces.",
+   "V6": "One wood hue in 3 values (light pickets, mid rails, dark post) plus ink nails; walnut and crimson colourways keep the same disciplined value structure.",
+   "V7": "736 tris vs module target 800 - at target.",
+   "V8": "Single LF_VertexColor material, wood hue as specified for fences, kit-scale chamfers and ink nail accents - matches the kit.",
+   "V9": "Studio line correct: Anchored, Box collision, CanTouch off, Color white, SmoothPlastic; T1 tiling along X passes (contain mode, cover 1.0)."
+  },
+  {
+   "V1": "Silhouette reads as a picket fence from front and three-quarter (pointed picket tips, two rails, capped post); top view is thin but that is inherent to a fence run.",
+   "V2": "Clear hierarchy: dark capped post (big), rails and pickets (medium), chamfered post cap and ink nails (small).",
+   "V3": "Confident stylised picket proportions with slight height variation between pickets; capped post anchors the run; nothing floats (touches_floor true).",
+   "V4": "Consistent small chamfers on pickets, rails, post and cap catch the light in the rails/post close-ups.",
+   "V5": "Close-ups clean: no pinches, seams or z-fighting on pickets, rail ends or post cap.",
+   "V6": "Oak in two values (pale pickets/rails, dark post) plus ink nails; colourways stay disciplined.",
+   "V7": "736 tris vs module target 800 / ceiling 2000.",
+   "V8": "Single LF_VertexColor material, smooth shading, chamfered edges, ink iron nails: matches the kit wood treatment.",
+   "V9": "Studio line: Anchored, CollisionFidelity Box, CanTouch off, Color white, SmoothPlastic, grid-corner pivot; T1 tiling pass."
+  },
+  {
+   "V1": "Front, three-quarter and silhouette all read instantly as a picket fence panel with a capped post; even the top view shows post, rail and picket rhythm.",
+   "V2": "Clear tiers: big (post + panel), medium (pointed pickets, two rails, post cap), small (ink nail heads on alternate pickets, cap chamfer band).",
+   "V3": "Confident stylisation: chunky pointed pickets with slight height variation, oversized capped post and protruding rail stubs give a cartoon read rather than stiff primitives.",
+   "V4": "Close_rails and close_post_cap studio show consistent chamfers on picket points, picket edges, rail ends and the post cap that catch highlight lines.",
+   "V5": "Studio and flat close-ups clean: no pinches, seams, z-fighting or stray facets at the rail ends or picket points; rails seat behind pickets; A17/A18 pass.",
+   "V6": "One wood hue in three values (light pickets, mid rails, dark post) plus ink nails; walnut and crimson colourways keep the same value structure.",
+   "V7": "736 tris vs module target 800 / ceiling 2000.",
+   "V8": "Single LF_VertexColor material, wood hue for a fence per wave-2 spec, kit-range chamfers, ink iron nails; reads as the same kit as the anchor barrel.",
+   "V9": "Studio line: Anchored, Box collision, CanTouch off, MeshPart white + SmoothPlastic, grid-corner pivot; T1 tiling passes (contain mode, cover 1.0)."
+  }
+ ],
+ "artifacts": [
+  [
+   "rails end bare past the last picket with no post, so the final section of a run needs a separate end post",
+   "nails only on some pickets (inconsistent small detail)"
+  ],
+  [],
+  []
+ ],
+ "top_fixes": [
+  [
+   "Provide or document an end-post piece so a fence run does not end on bare rail stubs",
+   "Put nail heads on every picket at both rails for consistent small-scale detail",
+   "Optional: a slight lean or height jitter on one or two more pickets for extra charm"
+  ],
+  [
+   "Nails appear on only three pickets; put a nail pair on every picket (or none) so the small detail reads as deliberate",
+   "Run ends without a post on the open rail end; consider an optional end-post variant for the last segment",
+   "Add a touch more irregularity to picket tips/tilt to push the stylisation"
+  ],
+  [
+   "Nail every picket (not only alternates) for consistent small-scale detail",
+   "Provide an end-post variant so the bare rail stubs on the open end are not left unsupported at the end of a run",
+   "Optional: a slight lean or tonal variation per picket to push the hand-made feel"
+  ]
+ ],
+ "params": {
+  "L": 8,
+  "kind": "picket",
+  "cap": "flat"
+ },
+ "tris": 736,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

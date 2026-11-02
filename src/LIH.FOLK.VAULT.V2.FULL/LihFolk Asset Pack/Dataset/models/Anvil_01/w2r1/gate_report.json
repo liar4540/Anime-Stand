@@ -1,0 +1,72 @@
+{
+ "asset": "Anvil_01",
+ "type": "Anvil",
+ "tris": 872,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 3.372,
+  "y": 2.45,
+  "z": 3.209
+ },
+ "origin": "bottom",
+ "symmetric": "Y",
+ "symmetry_error": {
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "alignment": null,
+ "seats": [
+  {
+   "name": "anvil_on_stump",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "horn_on_body",
+   "gap": 0.0,
+   "penetration": 0.03182,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 166,
+ "studio": "Furniture prop: Anchored; CollisionFidelity Hull; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "colourways": [
+   "oak",
+   "walnut",
+   "painted_teal",
+   "painted_crimson",
+   "painted_royal"
+  ]
+ }
+}

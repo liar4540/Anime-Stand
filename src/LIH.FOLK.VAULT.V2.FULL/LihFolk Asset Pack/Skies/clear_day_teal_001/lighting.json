@@ -1,0 +1,276 @@
+{
+ "id": "clear_day_teal_001",
+ "family": "clear_day",
+ "theme": "teal",
+ "Lighting": {
+  "LightingStyle": "Soft",
+  "Brightness": 2.5,
+  "ClockTime": 13.5,
+  "GeographicLatitude": 0,
+  "Ambient": [
+   106,
+   111,
+   129
+  ],
+  "OutdoorAmbient": [
+   143,
+   152,
+   166
+  ],
+  "ColorShift_Top": [
+   255,
+   248,
+   225
+  ],
+  "ColorShift_Bottom": [
+   0,
+   0,
+   0
+  ],
+  "EnvironmentDiffuseScale": 0.3,
+  "EnvironmentSpecularScale": 0.0,
+  "ExposureCompensation": 0.0,
+  "GlobalShadows": true
+ },
+ "Atmosphere": {
+  "Density": 0.25,
+  "Offset": 0.1,
+  "Color": [
+   186,
+   228,
+   240
+  ],
+  "Decay": [
+   179,
+   224,
+   237
+  ],
+  "Glare": 0.0,
+  "Haze": 0.5
+ },
+ "Sky": {
+  "CelestialBodiesShown": false,
+  "StarCount": 0,
+  "SunAngularSize": 21,
+  "MoonAngularSize": 11,
+  "SkyboxOrientation": [
+   0,
+   0,
+   0
+  ],
+  "Faces": {
+   "SkyboxBk": "SkyBk.png",
+   "SkyboxDn": "SkyDn.png",
+   "SkyboxFt": "SkyFt.png",
+   "SkyboxLf": "SkyLf.png",
+   "SkyboxRt": "SkyRt.png",
+   "SkyboxUp": "SkyUp.png"
+  }
+ },
+ "ColorCorrection": {
+  "Brightness": 0.02,
+  "Contrast": 0.08,
+  "Saturation": 0.15,
+  "TintColor": [
+   255,
+   255,
+   255
+  ]
+ },
+ "Bloom": {
+  "Intensity": 0.4,
+  "Size": 24,
+  "Threshold": 1.6
+ },
+ "Measured": {
+  "horizon": [
+   185,
+   227,
+   239
+  ],
+  "horizon_sun_side": [
+   187,
+   229,
+   240
+  ],
+  "horizon_far_side": [
+   179,
+   224,
+   237
+  ],
+  "zenith": [
+   207,
+   222,
+   235
+  ]
+ },
+ "PaintedLight": {
+  "direction_roblox": [
+   0.1905,
+   0.7885,
+   -0.5848
+  ],
+  "kind": "sun"
+ },
+ "Notes": "Painted sun/moon in the faces, so CelestialBodiesShown=false avoids two suns. To line the engine sun up with the painted one, rotate SkyboxOrientation.Y until Lighting:GetSunDirection() matches PaintedLight.direction_roblox. Face convention: Ft=-Z, Bk=+Z, Rt=+X, Lf=-X; Up/Dn use the cube-cross layout, rotation 0 deg (Up/Dn rotation unverified in Studio; tools/pack/rotate_updn.py fixes it in place).",
+ "gates": {
+  "S1_faces_1024": true,
+  "S2_seam_worst_ratio": 0.68,
+  "S2_seam_worst_abs": 0.0031,
+  "S2_seamless": true,
+  "S3_pinch_up": 0.906,
+  "S3_pinch_dn": 1.007,
+  "S3_no_pinch": true,
+  "S4_one_sun": true,
+  "S5_lighting_valid": true,
+  "gates_pass": true
+ },
+ "seams": {
+  "SkyFt_top": [
+   0.00225,
+   0.00253
+  ],
+  "SkyFt_bottom": [
+   0.00182,
+   0.00183
+  ],
+  "SkyFt_left": [
+   0.00311,
+   0.00307
+  ],
+  "SkyFt_right": [
+   0.0022,
+   0.00245
+  ],
+  "SkyBk_top": [
+   0.0023,
+   0.00235
+  ],
+  "SkyBk_bottom": [
+   0.00183,
+   0.00184
+  ],
+  "SkyBk_left": [
+   0.00201,
+   0.0022
+  ],
+  "SkyBk_right": [
+   0.00199,
+   0.00203
+  ],
+  "SkyRt_top": [
+   0.00217,
+   0.00225
+  ],
+  "SkyRt_bottom": [
+   0.00183,
+   0.00181
+  ],
+  "SkyRt_left": [
+   0.0022,
+   0.00217
+  ],
+  "SkyRt_right": [
+   0.00201,
+   0.00225
+  ],
+  "SkyLf_top": [
+   0.00207,
+   0.00216
+  ],
+  "SkyLf_bottom": [
+   0.00184,
+   0.00184
+  ],
+  "SkyLf_left": [
+   0.00199,
+   0.00198
+  ],
+  "SkyLf_right": [
+   0.00311,
+   0.00313
+  ],
+  "SkyUp_top": [
+   0.0023,
+   0.0024
+  ],
+  "SkyUp_bottom": [
+   0.00225,
+   0.00217
+  ],
+  "SkyUp_left": [
+   0.00207,
+   0.00204
+  ],
+  "SkyUp_right": [
+   0.00217,
+   0.0024
+  ],
+  "SkyDn_top": [
+   0.00182,
+   0.00182
+  ],
+  "SkyDn_bottom": [
+   0.00183,
+   0.0018
+  ],
+  "SkyDn_left": [
+   0.00184,
+   0.00182
+  ],
+  "SkyDn_right": [
+   0.00183,
+   0.0018
+  ]
+ },
+ "params": {
+  "Zen": "#207dbb",
+  "Mid": "#54b8d7",
+  "Hor": "#d8f8fc",
+  "WarmHor": "#fff6db",
+  "SunCol": "#fff8e1",
+  "CloudHi": "#f9f9f9",
+  "CloudLo": "#90bcdb",
+  "FloorC": "#86a5ad",
+  "Sun": [
+   0.1905,
+   0.5848,
+   0.7885
+  ],
+  "Cover": 0.3268780727576217,
+  "Soft": 0.02274906058958342,
+  "Puff": 1.065648542559007,
+  "CScale": 1.1274771590935575,
+  "Cirrus": 0.4860487997504952,
+  "SunSize": 0.032,
+  "GlowW": 0.3,
+  "GlowAmt": 0.55,
+  "Warmth": 0.0,
+  "Toon": 1.0,
+  "CloudDark": 0.0,
+  "Seed": 78.0
+ },
+ "colors": [
+  [
+   "#dfecf2",
+   0.338
+  ],
+  [
+   "#89a9b1",
+   0.251
+  ],
+  [
+   "#4fa7ce",
+   0.234
+  ],
+  [
+   "#a9cdd8",
+   0.177
+  ]
+ ],
+ "generator": "tools/pack/gen_skies.py + osl/sky_day.osl (procedural, original)",
+ "tags": [
+  "clear_day",
+  "teal"
+ ]
+}

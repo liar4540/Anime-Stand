@@ -1,0 +1,81 @@
+{
+ "asset": "Spear_02",
+ "kit": "Weapons",
+ "type": "Spear",
+ "seed": 2,
+ "attempt": "rv1",
+ "label": "rejected",
+ "score": 7.0,
+ "grades": [
+  1,
+  1,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "reviewer": "blind fresh agent (renders + close-ups + gate report + rubric only)",
+ "evidence": {
+  "V1": "Front, three-quarter and silhouette read as a spear (leaf head + long pole), but the haft is ~13 px wide at 512 (~1.6 px at 64 px) and the top view is a tiny diagonal speck with a gold dot, so it is not readable from all angles",
+  "V2": "Big tier (leaf head, long haft), medium (gold socket, grip wraps, butt cap) and small (socket wings, rings) exist, but the head is only ~20% of the length and the wings read as hairlines in the front view, so the medium/small tiers are weak against one long uniform dark stick",
+  "V3": "Proportions are close to realistic: a thin ~0.27-stud pole on a 9-stud spear with a modest plain leaf head. Only the socket and butt cap are chunked up, so the stylisation is partial rather than confident",
+  "V4": "Chamfers catch light consistently: the bevel strip along the blade edge, the highlight on the socket rim, the bevelled top faces of the wings and the collar edges in the close-ups",
+  "V5": "No patches, z-fighting or pinches (A17/A18 pass, 0 flipped faces), but the close-ups show minor faceting: the polygonal outline of the butt dome and the stepped rims on the socket collar and teal ring",
+  "V6": "Disciplined: steel-grey blade, gold accent on the socket, wings and butt, and one teal hue in three values (dark haft, mid collar, light wraps). The crimson and shadow colourways swap only that hue",
+  "V7": "1796 tris against a weapon target of 2500 and a ceiling of 4000 (budget_note ok)",
+  "V8": "One white LF_VertexColor material on SmoothPlastic, the palette follows the kit (gold, steel greys, one hue in three values), shading is smooth and the small chamfers look in line with the ~0.045-stud kit bevel",
+  "V9": "Studio line: Tool Handle, origin at the hand/grip point, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white for vertex colours, SmoothPlastic"
+ },
+ "artifacts": [
+  "Butt cap dome shows a polygonal (faceted) outline in close_butt_studio",
+  "Socket collar and teal ring rims show stepped, low-segment edges in close_socket_studio/flat",
+  "Blade tip ends in a small blunt nub instead of a clean point (close_head_studio)",
+  "136 cross-shell overlaps (allowed, intentional interpenetration; not visible in the renders)"
+ ],
+ "top_fixes": [
+  "Push the stylised proportions: thicken the haft (~0.35-0.4 studs) and enlarge the leaf head (~25-30% of length), so the spear reads at 64 px and from the top/three-quarter",
+  "Make the socket wings bigger and chunkier (or drop them) so the medium tier reads; at the moment they are hairlines in the front view and silhouette",
+  "Raise the radial segment count (or add a support loop) on the butt dome and collar rims to remove the visible polygonal outlines",
+  "Sharpen the blade tip to a clean point and slightly widen the leaf so the head dominates the hierarchy"
+ ],
+ "params": {
+  "H": 6.782,
+  "r": 0.154,
+  "BL": 1.989,
+  "W": 0.486,
+  "T": 0.104,
+  "widest": 0.268,
+  "wings": true,
+  "wraps": 6
+ },
+ "tris": 1796,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

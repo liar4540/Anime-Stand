@@ -1,0 +1,201 @@
+{
+ "asset": "FloorTiles_01",
+ "kit": "Modular",
+ "type": "FloorTiles",
+ "seed": 1,
+ "params": {
+  "W": 8,
+  "rows": 4
+ },
+ "tris": 476,
+ "budget_class": "module",
+ "budget_target": 800,
+ "budget_ceiling": 2000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 7.999,
+  "y": 7.999,
+  "z": 1.999
+ },
+ "origin": "grid corner (world 0, footprint 8x8x2.0 studs)",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass",
+  "T1": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 0,
+ "tiling": {
+  "grid": {
+   "footprint": [
+    8,
+    8,
+    2.0
+   ],
+   "step": 2.0,
+   "on_grid": true,
+   "inside": true,
+   "touches_floor": true,
+   "bbox": [
+    [
+     0.0006,
+     0.0006,
+     0.0006
+    ],
+    [
+     7.9994,
+     7.9994,
+     1.9994
+    ]
+   ],
+   "ok": true
+  },
+  "tiles": [
+   {
+    "axis": "X",
+    "period": 8,
+    "with": "FloorTiles_01",
+    "other_axis": "X",
+    "mode": "equal",
+    "a_cells": 5348,
+    "b_cells": 5361,
+    "iou": 0.9839,
+    "cover": 0.9931,
+    "inside": true,
+    "ok": true
+   },
+   {
+    "axis": "Y",
+    "period": 8,
+    "with": "FloorTiles_01",
+    "other_axis": "Y",
+    "mode": "equal",
+    "a_cells": 5356,
+    "b_cells": 5344,
+    "iou": 0.983,
+    "cover": 0.9925,
+    "inside": true,
+    "ok": true
+   }
+  ]
+ },
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "granite",
+  "colourways": [
+   {
+    "name": "granite",
+    "hue": "stone",
+    "roles": {
+     "h_lt": "#C4C6CC",
+     "h": "#9497A3",
+     "h_dk": "#62656F"
+    }
+   },
+   {
+    "name": "sandstone",
+    "hue": "sand",
+    "roles": {
+     "h_lt": "#E6CB98",
+     "h": "#C29C66",
+     "h_dk": "#8A6A40"
+    }
+   },
+   {
+    "name": "brick",
+    "hue": "brick",
+    "roles": {
+     "h_lt": "#DB7F62",
+     "h": "#B0503B",
+     "h_dk": "#763126"
+    }
+   },
+   {
+    "name": "slate",
+    "hue": "slate",
+    "roles": {
+     "h_lt": "#A9B6C8",
+     "h": "#71829A",
+     "h_dk": "#46546B"
+    }
+   },
+   {
+    "name": "basalt",
+    "hue": "basalt",
+    "roles": {
+     "h_lt": "#8F8C99",
+     "h": "#64616E",
+     "h_dk": "#403E49"
+    }
+   }
+  ]
+ },
+ "studio": "Modular piece: Anchored; CollisionFidelity Box; CanTouch off; CastShadow on; origin = grid corner (pivot at min x / min y / floor): snap with a 2-stud grid and 90-degree rotations; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "flagstone floor 8x8x2: 4 staggered rows of chamfered slabs (2 stone values) on a dark mortar base; tiles on X and Y",
+ "features": [
+  [
+   "flagstones",
+   [
+    4.0,
+    2.4,
+    2.0
+   ],
+   2.4
+  ],
+  [
+   "edge",
+   [
+    8.0,
+    0.0,
+    1.6
+   ],
+   1.6
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r2/FloorTiles_01/FloorTiles_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r2/FloorTiles_01/FloorTiles_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r2/FloorTiles_01/FloorTiles_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r2/FloorTiles_01/FloorTiles_01_silhouette.png",
+  "close_flagstones_studio": "Models/Kits/_drafts/r2/FloorTiles_01/FloorTiles_01_close_flagstones_studio.png",
+  "close_flagstones_flat": "Models/Kits/_drafts/r2/FloorTiles_01/FloorTiles_01_close_flagstones_flat.png",
+  "close_edge_studio": "Models/Kits/_drafts/r2/FloorTiles_01/FloorTiles_01_close_edge_studio.png",
+  "close_edge_flat": "Models/Kits/_drafts/r2/FloorTiles_01/FloorTiles_01_close_edge_flat.png",
+  "cw_sandstone": "Models/Kits/_drafts/r2/FloorTiles_01/FloorTiles_01_cw_sandstone.png",
+  "cw_brick": "Models/Kits/_drafts/r2/FloorTiles_01/FloorTiles_01_cw_brick.png",
+  "cw_slate": "Models/Kits/_drafts/r2/FloorTiles_01/FloorTiles_01_cw_slate.png",
+  "cw_basalt": "Models/Kits/_drafts/r2/FloorTiles_01/FloorTiles_01_cw_basalt.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_modular.py:FloorTiles",
+ "made": "2026-10-28"
+}

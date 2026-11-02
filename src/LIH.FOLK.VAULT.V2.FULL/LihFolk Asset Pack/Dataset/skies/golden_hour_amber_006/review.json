@@ -1,0 +1,21 @@
+{
+ "id": "golden_hour_amber_006",
+ "kind": "skies",
+ "score": 8.6,
+ "pass": true,
+ "median": {
+  "K1": 2,
+  "K2": 1,
+  "K3": 2,
+  "K4": 2,
+  "K6": 1,
+  "K5": 2
+ },
+ "batch": "s2",
+ "reviewer_notes": [
+  "Flat muddy lilac blob overhead; away side reads as plain daytime blue",
+  "Flat muddy lavender overcast patch; saturated midday blue away side clashes",
+  "Muddy lavender mass sun-side clashes with saturated blue away side"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/sky.md"
+}

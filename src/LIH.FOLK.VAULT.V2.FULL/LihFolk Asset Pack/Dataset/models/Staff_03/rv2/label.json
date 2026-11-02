@@ -1,0 +1,101 @@
+{
+ "asset": "Staff_03",
+ "kit": "Weapons",
+ "type": "Staff",
+ "seed": 3,
+ "attempt": "rv2",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette all read as a crystal-headed staff/sceptre (bulb head, collar, banded grip, pommel); top view reads as a gem in a four-prong claw; A15 X/Y error 0.0, outline symmetric.",
+   "V2": "Clear tiers: long teal haft (big), gem-in-claw head (medium), collar rings, four ink grip bands and gold pommel cap (small).",
+   "V3": "Head is small for a 7-stud staff (about 1/6 of length) and the upper haft is a long untapered cylinder, so it reads only partly stylised; the claw prongs merge into the gem outline in silhouette.",
+   "V4": "Consistent chamfers on cup, collar ring, pommel and prongs catch the light; gem facets are crisp by design; grip bands soft-edged and even.",
+   "V5": "Collar close-up shows visible polygon segmentation on the cup rim and lower collar ring (stray faceting on parts meant to be round); otherwise no seams, pinches or z-fighting, gates A17/A18 clean.",
+   "V6": "Disciplined: teal in three values (haft, gem light, gem dark), gold accent, ink dark bands; colourways (crimson, shadow) swap the hue cleanly while keeping gold and ink.",
+   "V7": "1856 tris vs weapon target 2500 (ceiling 4000): under target.",
+   "V8": "One white LF_VertexColor material, kit gold/ink/teal palette, chamfer scale and teal haft plus gold caps match the Axe_05 kit piece.",
+   "V9": "Studio line correct: Tool Handle, origin at grip, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Cup rim and lower collar ring show visible polygon facets in the collar studio close-up (too few radial segments or flat shading on a round part)",
+   "Prongs pass through the cup lip (intentional cross-shell embedding, 294 cross-shell overlaps) - not a defect but the entry seam is visible at close range"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Raise radial segment count or smooth-shade the cup bowl, cup rim and collar ring so they read round in close-up",
+   "Scale the head (gem + claw) up roughly 15-20 % and flare the prong tips outward so the claw gaps show in silhouette",
+   "Break the long plain upper haft with a slight taper toward the head or a thin mid ring to strengthen stylised proportion"
+  ]
+ ],
+ "params": {
+  "H": 5.574,
+  "r": 0.217,
+  "head": "crystal",
+  "wraps": 4,
+  "orb": 0.574,
+  "prongs": 4,
+  "flare": 1.413
+ },
+ "tris": 1856,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

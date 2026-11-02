@@ -1,0 +1,190 @@
+{
+ "asset": "Torch_01",
+ "kit": "Furniture",
+ "type": "Torch",
+ "seed": 1,
+ "params": {
+  "Lh": 1.786,
+  "tilt": 15.488,
+  "lobes": 3,
+  "twist": 84.292,
+  "Hf": 0.942
+ },
+ "tris": 576,
+ "budget_class": "small",
+ "budget_target": 600,
+ "budget_ceiling": 1500,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 0.759,
+  "y": 0.962,
+  "z": 2.836
+ },
+ "origin": "back",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "cup_on_handle",
+   "gap": 0.0,
+   "penetration": 0.14606,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "flame_in_cup",
+   "gap": 0.0,
+   "penetration": 0.27835,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "ring_on_handle",
+   "gap": 0.01184,
+   "penetration": 0.0,
+   "gap_frac": 0.00663,
+   "seated": true
+  },
+  {
+   "name": "arm_on_plate",
+   "gap": 0.0,
+   "penetration": 0.05715,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 103,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "ink",
+   "h_lt",
+   "h",
+   "b"
+  ],
+  "primary": "ember",
+  "colourways": [
+   {
+    "name": "ember",
+    "hue": "ember",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#F2A04A",
+     "h": "#D86A2A",
+     "b": "#8A5A3A"
+    }
+   },
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "b": "#8A5A3A"
+    }
+   },
+   {
+    "name": "violet",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6",
+     "b": "#8A5A3A"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E",
+     "b": "#8A5A3A"
+    }
+   }
+  ]
+ },
+ "studio": "Wall light: Anchored; CanCollide off; CanTouch off; origin back-centre (flush on the wall, -Y faces the room); add a PointLight (Range 14, colour = flame hue) at the flame; optional Fire/ParticleEmitter; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "wall torch: ink wall plate + bracket ring, wood handle tilted 15 deg out, ink/gold cup, 3-lobe twisted flame in 2 hue values with a gold inner core",
+ "features": [
+  [
+   "flame",
+   [
+    0.0,
+    -0.261,
+    0.964
+   ],
+   0.7
+  ],
+  [
+   "cup",
+   [
+    0.0,
+    -0.403,
+    0.453
+   ],
+   0.5
+  ],
+  [
+   "bracket",
+   [
+    0.0,
+    -0.51,
+    -0.668
+   ],
+   0.6
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r1/Torch_01/Torch_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r1/Torch_01/Torch_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r1/Torch_01/Torch_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r1/Torch_01/Torch_01_silhouette.png",
+  "close_flame_studio": "Models/Kits/_drafts/r1/Torch_01/Torch_01_close_flame_studio.png",
+  "close_flame_flat": "Models/Kits/_drafts/r1/Torch_01/Torch_01_close_flame_flat.png",
+  "close_cup_studio": "Models/Kits/_drafts/r1/Torch_01/Torch_01_close_cup_studio.png",
+  "close_cup_flat": "Models/Kits/_drafts/r1/Torch_01/Torch_01_close_cup_flat.png",
+  "close_bracket_studio": "Models/Kits/_drafts/r1/Torch_01/Torch_01_close_bracket_studio.png",
+  "close_bracket_flat": "Models/Kits/_drafts/r1/Torch_01/Torch_01_close_bracket_flat.png",
+  "cw_teal": "Models/Kits/_drafts/r1/Torch_01/Torch_01_cw_teal.png",
+  "cw_violet": "Models/Kits/_drafts/r1/Torch_01/Torch_01_cw_violet.png",
+  "cw_verdant": "Models/Kits/_drafts/r1/Torch_01/Torch_01_cw_verdant.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_furniture.py:Torch",
+ "made": "2026-10-28"
+}

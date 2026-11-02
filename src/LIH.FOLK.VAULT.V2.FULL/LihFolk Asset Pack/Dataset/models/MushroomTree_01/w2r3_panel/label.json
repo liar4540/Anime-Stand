@@ -1,0 +1,166 @@
+{
+ "asset": "MushroomTree_01",
+ "kit": "Nature",
+ "type": "MushroomTree",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 8.0,
+ "grades": [
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7,
+  7.7,
+  7.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.4,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Big domed spotted cap on a pale stem with a baby mushroom reads as a toadstool tree from front, three-quarter, silhouette and top (round spotted disc); clear at 64 px.",
+   "V2": "Big cap, medium stem plus companion mini-mushroom, small cream spots and a lighter rim band: clear three-level hierarchy.",
+   "V3": "Confident stylised toadstool: oversized dome cap, slim slightly bowed stem, flared foot, child mushroom for scale contrast.",
+   "V4": "Cap dome and rim are soft and rounded, but the stem foot flares end in hard polygonal rims and the spots are stuck-on domes with a hard contact edge; inconsistent.",
+   "V5": "Base close-up shows low-segment faceting on the stem sides and polygonal foot flares; cap close-up shows faint grid shading on the dome. Minor but visible. (Gills close-up frames the cap side, so no gills are visible to judge.)",
+   "V6": "Cap red in two values (top + lighter rim band) plus cream stem/spots; disciplined, strong value contrast; teal/ember colourways swap cleanly.",
+   "V7": "1600 tris vs tree target 2000 (ceiling 5000): under target.",
+   "V8": "One vertex-colour material, cream accent from the kit palette, smooth rounded forms; matches the kit.",
+   "V9": "Studio line: Anchored, Hull collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre: correct."
+  },
+  {
+   "V1": "Classic domed cap on a stalk with a small companion mushroom reads instantly in front, three-quarter and silhouette; top view is a spotted red disc, still a mushroom read.",
+   "V2": "Clear tiers: big cap and stem, medium companion mushroom and lighter rim band, small cream spots (only four, sparse).",
+   "V3": "Cap shape is good, but the main stalk is a thin straight tube with a stiff flared foot; the stem lacks the chunky bulge or curve a confident stylised mushroom tree would have.",
+   "V4": "Cap and rim are smooth and soft, while the stem foot flares and the small stem show hard low-segment facet rings, so edge treatment is inconsistent.",
+   "V5": "Base close-up (studio) shows stray faceting on both stem flares and visible vertical facets on the stalks; cap rim band shows faint faceting along its edge.",
+   "V6": "One cap hue in 2 values (red dome, lighter red rim) plus cream stem/spots; teal and ember colourways keep the same discipline.",
+   "V7": "1600 tris vs tree target 2000 - under target.",
+   "V8": "One LF_VertexColor material and the right palette structure, but the low-segment faceted stems do not match the smooth weighted-normal organic shells the kit calls for; no gills visible under the cap despite a gills close-up.",
+   "V9": "Studio line: Anchored, Hull collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre."
+  },
+  {
+   "V1": "Silhouette reads as a toadstool from front, 3/4 and side outline: broad dome cap on a tall stem plus a child mushroom; top view is just a spotted red disc but that is expected for a cap.",
+   "V2": "Big cap / medium stem / small spots + child mushroom exist, but the small level is thin: only 4-5 spots, no visible gills or ring/skirt under the cap ('gills' close-up shows only the cap side), so mid detail is sparse.",
+   "V3": "Cap-to-stem ratio is pleasantly chunky, but the main stem is a near-straight cylinder with a small foot flare and the child mushroom is a scaled copy; reads partly stylised, partly primitive.",
+   "V4": "Organic fused shells are smooth, but cap rim outline and stem foot flare show visible polygon steps in the base close-up; spots have soft rounded edges; treatment is serviceable but uneven.",
+   "V5": "No pinches, seams or z-fighting; minor faceting on the cap rim silhouette and foot flare in the base close-up, and a slight flat-shaded band at the cap underside edge.",
+   "V6": "Disciplined: one cap hue in two values (dark top, lighter rim band) plus cream stem/spots; colourways (teal, ember) swap cleanly.",
+   "V7": "1600 tris vs tree target 2000 (ceiling 5000).",
+   "V8": "One white LF_VertexColor material, smooth shading, cream #F3E3BE-like stem/spots and a single cap hue in 2 values; fits wave-2 nature kit.",
+   "V9": "Studio line: Anchored, Hull collision, CanTouch off, SmoothPlastic, MeshPart.Color white for vertex colours, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Polygonal faceting on stem and foot flares",
+   "Faint grid shading on the cap dome",
+   "No visible gill detail; gills close-up camera does not look under the cap"
+  ],
+  [
+   "Stray faceting rings on the stem foot flares (MushroomTree_01_close_base_studio.png)",
+   "Visible vertical facets on both stalks",
+   "Faint faceting along the cap rim band"
+  ],
+  [
+   "Visible polygon stepping on cap rim outline and stem foot flare in base close-up"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add radial segments / weighted normals to the stems and round the foot flares so they shade smoothly",
+   "Add a gill underside (radial ridges in a darker cap value) and aim the gills close-up from below",
+   "Blend the spots into the cap (flatter, slightly sunk, 6-8 varied sizes) instead of 4 stuck-on domes"
+  ],
+  [
+   "Raise stem segment count / smooth the flares with weighted normals so stalks shade as smooth organic shells",
+   "Thicken the main stalk and give it a slight curve or mid bulge for a chunkier stylised proportion",
+   "Add more spots in varied sizes and visible gill ridges under the cap for small-detail interest"
+  ],
+  [
+   "Add an underside gill/ring detail (or skirt on the stem) so the medium/small tier is richer",
+   "Add a gentle bend/taper to the main stem and vary the child mushroom's proportions instead of a scaled copy",
+   "Raise segment count on the cap rim and foot flare (budget allows ~400 more tris) to remove silhouette stepping",
+   "Add 2-4 more spots of varied size to the cap"
+  ]
+ ],
+ "params": {
+  "Hs": 5.331,
+  "rs": 0.58,
+  "Rc": 2.753,
+  "bend": 0.862,
+  "spots": 4,
+  "kids": 1
+ },
+ "tris": 1600,
+ "budget_class": "tree",
+ "date": "2026-10-28"
+}

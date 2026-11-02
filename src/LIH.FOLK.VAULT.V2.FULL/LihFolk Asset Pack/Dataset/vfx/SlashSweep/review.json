@@ -1,0 +1,39 @@
+{
+ "id": "SlashSweep",
+ "kind": "vfx",
+ "batch": "vfx2",
+ "pass": true,
+ "score": 10.0,
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/vfx.md",
+ "rounds": [
+  {
+   "r": 1,
+   "score": 9.2,
+   "low": [
+    "X3 blocky inner crescent texture, hard-edged glow"
+   ]
+  },
+  {
+   "r": 3,
+   "reviewers": [
+    8.5,
+    10.0,
+    10.0
+   ],
+   "median": {
+    "X1": 2,
+    "X2": 2,
+    "X3": 2,
+    "X4": 2,
+    "X5": 2,
+    "X6": 2
+   },
+   "score": 10.0,
+   "spread": "X4 1-2, X6 1-2"
+  }
+ ],
+ "reviewer_notes": [
+  "faint segment banding on the inner crescent at peak frames 12-14",
+  "left tail tip nears the flank (~110 deg)"
+ ]
+}

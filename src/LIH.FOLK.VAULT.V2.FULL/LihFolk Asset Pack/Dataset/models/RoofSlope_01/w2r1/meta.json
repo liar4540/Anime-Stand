@@ -1,0 +1,207 @@
+{
+ "asset": "RoofSlope_01",
+ "kit": "Modular",
+ "type": "RoofSlope",
+ "seed": 1,
+ "params": {
+  "W": 8,
+  "D": 4,
+  "pitch": "half",
+  "rows": 5
+ },
+ "tris": 196,
+ "budget_class": "module",
+ "budget_target": 800,
+ "budget_ceiling": 2000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 7.999,
+  "y": 3.999,
+  "z": 2.828
+ },
+ "origin": "grid corner (world 0, footprint 8x4x3.0 studs)",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass",
+  "T1": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 75,
+ "tiling": {
+  "grid": {
+   "footprint": [
+    8,
+    4,
+    3.0
+   ],
+   "step": 2.0,
+   "on_grid": true,
+   "inside": true,
+   "touches_floor": true,
+   "bbox": [
+    [
+     0.0006,
+     0.0006,
+     0.0006
+    ],
+    [
+     7.9994,
+     3.9994,
+     2.8285
+    ]
+   ],
+   "ok": true
+  },
+  "tiles": [
+   {
+    "axis": "X",
+    "period": 8,
+    "with": "RoofSlope_01",
+    "other_axis": "X",
+    "mode": "equal",
+    "a_cells": 1031,
+    "b_cells": 1031,
+    "iou": 1.0,
+    "cover": 1.0,
+    "inside": true,
+    "ok": true
+   }
+  ]
+ },
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h_lt",
+   "h",
+   "b",
+   "b_dk"
+  ],
+  "primary": "granite",
+  "colourways": [
+   {
+    "name": "granite",
+    "hue": "stone",
+    "roles": {
+     "h_lt": "#C4C6CC",
+     "h": "#9497A3",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "sandstone",
+    "hue": "sand",
+    "roles": {
+     "h_lt": "#E6CB98",
+     "h": "#C29C66",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "brick",
+    "hue": "brick",
+    "roles": {
+     "h_lt": "#DB7F62",
+     "h": "#B0503B",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "slate",
+    "hue": "slate",
+    "roles": {
+     "h_lt": "#A9B6C8",
+     "h": "#71829A",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "basalt",
+    "hue": "basalt",
+    "roles": {
+     "h_lt": "#8F8C99",
+     "h": "#64616E",
+     "b": "#978A76",
+     "b_dk": "#655A4C"
+    }
+   }
+  ]
+ },
+ "studio": "Modular piece: Anchored; CollisionFidelity Default (walkable slope); CanTouch off; CastShadow on; origin = grid corner (pivot at min x / min y / floor): snap with a 2-stud grid and 90-degree rotations; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "roof slope 8x4, rise 2 (half pitch): 5 stepped shingle courses in 2 values on a timber deck, eave fascia; tiles along X",
+ "features": [
+  [
+   "shingles",
+   [
+    4.0,
+    2.0,
+    1.2
+   ],
+   2.4
+  ],
+  [
+   "eave",
+   [
+    8.0,
+    0.0,
+    0.4
+   ],
+   1.4
+  ],
+  [
+   "gable_end",
+   [
+    8.0,
+    2.0,
+    1.0
+   ],
+   2.0
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_silhouette.png",
+  "close_shingles_studio": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_close_shingles_studio.png",
+  "close_shingles_flat": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_close_shingles_flat.png",
+  "close_eave_studio": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_close_eave_studio.png",
+  "close_eave_flat": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_close_eave_flat.png",
+  "close_gable_end_studio": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_close_gable_end_studio.png",
+  "close_gable_end_flat": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_close_gable_end_flat.png",
+  "cw_sandstone": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_cw_sandstone.png",
+  "cw_brick": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_cw_brick.png",
+  "cw_slate": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_cw_slate.png",
+  "cw_basalt": "Models/Kits/_drafts/r1/RoofSlope_01/RoofSlope_01_cw_basalt.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_modular.py:RoofSlope",
+ "made": "2026-10-28"
+}

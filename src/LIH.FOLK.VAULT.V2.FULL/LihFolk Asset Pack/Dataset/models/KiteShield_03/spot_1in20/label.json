@@ -1,0 +1,98 @@
+{
+ "asset": "KiteShield_03",
+ "kit": "Weapons",
+ "type": "KiteShield",
+ "seed": 3,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front and silhouette give a clean round-top kite/teardrop outline, mirror-even (A15 X err 0.6%); three-quarter still reads as a shield; top is edge-on slab plus handle, acceptable for a flat shield.",
+   "V2": "Clear tiers: gold rim + teal field (big), raised cream star (medium), six steel rivets (small) evenly spaced along the rim.",
+   "V3": "Chunky rim, oversized centred star and stubby rivets give a confident stylised kite; field inset and plate thickness proportionate.",
+   "V4": "Star arms, field lip and rim face carry consistent small chamfers that catch the light in the studio close-ups.",
+   "V5": "No pinches, seams or z-fighting, but the rim's outer wall shows coarse segment facets (broad flat bands in the rim studio close-up and the top view) and the field outline is slightly stepped in flat light.",
+   "V6": "Gold rim, one teal hue in two values, warm cream emblem, steel rivets; colourways only swap the field hue.",
+   "V7": "2332 tris vs weapon target 2500 (ceiling 4000).",
+   "V8": "One white vertex-colour material, kit gold/cream/steel palette, bevels and rivet style consistent with the kit shields.",
+   "V9": "Studio line: origin at handle, CollisionFidelity Box, CanCollide off, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Coarse faceting on the rim outer wall (visible bands in rim close-up and top view)",
+   "Slightly stepped field/rim outline under flat light"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add segments (or smooth/weighted normals) to the rim outer wall so the curved band shades smoothly",
+   "Smooth the field and rim outline curve so the teardrop contour has no visible steps",
+   "Optionally lengthen and straighten the lower taper so it reads more distinctly as a kite than a teardrop"
+  ]
+ ],
+ "params": {
+  "W": 1.014,
+  "H": 2.731,
+  "emblem": "star",
+  "rivets": 6
+ },
+ "tris": 2332,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

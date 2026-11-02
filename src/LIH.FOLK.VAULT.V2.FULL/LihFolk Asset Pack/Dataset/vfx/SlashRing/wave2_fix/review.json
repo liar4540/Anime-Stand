@@ -1,0 +1,47 @@
+{
+ "id": "SlashRing",
+ "kind": "vfx",
+ "batch": "vfx2",
+ "pass": true,
+ "score": 10.0,
+ "superseded": "user frontal rule: no 360 rings; replaced by SlashSweep",
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/vfx.md (X1-X5, before X6)",
+ "rounds": [
+  {
+   "r": 1,
+   "score": 8.2,
+   "low": [
+    "X3 flat teal body",
+    "X4 uniform dissolve"
+   ]
+  },
+  {
+   "r": 3,
+   "score": 9.1,
+   "low": [
+    "X4 faceted stair-step erosion"
+   ]
+  },
+  {
+   "r": 5,
+   "reviewers": [
+    10.0,
+    10.0,
+    9.1
+   ],
+   "median": {
+    "X1": 2,
+    "X2": 2,
+    "X3": 2,
+    "X4": 2,
+    "X5": 2
+   },
+   "score": 10.0
+  }
+ ],
+ "reviewer_notes": [
+  "faint streak banding on eroding tail 18-20",
+  "crescent head ends in a hard straight cut",
+  "hard-edged dark wedge under the hit flash (frame 10)"
+ ]
+}

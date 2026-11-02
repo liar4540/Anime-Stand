@@ -1,0 +1,116 @@
+{
+ "id": "roof_shingles_teal_009",
+ "family": "roof_shingles",
+ "theme": "teal",
+ "index": 9,
+ "seed": 1543.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_roof_shingles.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Slate",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "roof",
+  "shingles",
+  "building",
+  "tiles",
+  "teal"
+ ],
+ "colors": [
+  [
+   "#316d63",
+   0.313
+  ],
+  [
+   "#1a302e",
+   0.294
+  ],
+  [
+   "#41837d",
+   0.248
+  ],
+  [
+   "#26564d",
+   0.144
+  ]
+ ],
+ "params": {
+  "C1": "#60aaa6",
+  "C2": "#378275",
+  "C3": "#296158",
+  "C4": "#192f2d",
+  "C5": "#a0bd68",
+  "Mode": 1.0,
+  "Rows": 11.0,
+  "PerRow": 7.0,
+  "Var": 0.24684699775241534,
+  "Gap": 0.005724871054850776,
+  "Moss": 0.4794194802757944,
+  "Seed": 1543.0
+ },
+ "normal_depth_px": 26.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.381,
+   "Color_Neutral": 0.353,
+   "Normal": 0.485,
+   "Roughness": 0.285,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.511,
+   0.976
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.008,
+   0.01
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 42.2,
+   "diel_luma_p99": 131.6,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.847,
+   "rough_min": 0.788,
+   "rough_expected": [
+    0.6,
+    0.95
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.0936,
+  "M_neutral_mean": 0.735,
+  "M_neutral_range_p5_p95": [
+   0.411,
+   0.905
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 43.2,
+ "preview": "preview.jpg"
+}

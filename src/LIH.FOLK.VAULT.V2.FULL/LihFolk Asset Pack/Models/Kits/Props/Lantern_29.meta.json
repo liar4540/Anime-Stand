@@ -1,0 +1,229 @@
+{
+ "asset": "Lantern_29",
+ "kit": "Props",
+ "type": "Lantern",
+ "seed": 29,
+ "params": {
+  "R": 0.464,
+  "Hg": 1.132,
+  "bars": 4,
+  "cap": "dome"
+ },
+ "tris": 1552,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.067,
+  "y": 1.067,
+  "z": 2.462
+ },
+ "origin": "bottom",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "glass_on_base_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  },
+  {
+   "name": "cap_on_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "glass_on_base",
+   "gap": 0.0,
+   "penetration": 0.02,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "cap_on_glass",
+   "gap": 0.0,
+   "penetration": 0.04,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bar0_on_glass",
+   "gap": 0.0,
+   "penetration": 0.00171,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bar1_on_glass",
+   "gap": 0.0,
+   "penetration": 0.00171,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bar2_on_glass",
+   "gap": 0.0,
+   "penetration": 0.00171,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bar3_on_glass",
+   "gap": 0.0,
+   "penetration": 0.00171,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "ring_on_cap",
+   "gap": 0.0,
+   "penetration": 0.05,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 257,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "ink",
+   "h_lt",
+   "h"
+  ],
+  "primary": "ember",
+  "colourways": [
+   {
+    "name": "ember",
+    "hue": "ember",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#F2A04A",
+     "h": "#D86A2A"
+    }
+   },
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A"
+    }
+   },
+   {
+    "name": "violet",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E"
+    }
+   }
+  ]
+ },
+ "studio": "Light prop: Anchored, CanCollide on (Box) or off when hung; add a PointLight (Range 12, colour = glow hue) at the glass centre; MeshPart.Color white (vertex colours); SmoothPlastic (Neon not needed); origin bottom-centre",
+ "notes": "lantern: ink/gold base, glowing hue glass in 2 values, 4 ink cage bars, dome cap, gold hanging ring",
+ "features": [
+  [
+   "cap",
+   [
+    0.0,
+    0.0,
+    1.702
+   ],
+   0.6496
+  ],
+  [
+   "glass",
+   [
+    0.0,
+    0.0,
+    0.886
+   ],
+   0.6496
+  ],
+  [
+   "base",
+   [
+    0.0,
+    0.0,
+    0.15
+   ],
+   0.6032000000000001
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Props/Lantern_29_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 9.3,
+  "basis": "panel x3 median",
+  "reviewed": "Lantern_04 p3_panel (indiv 9.3/8.7/8.3)",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_props.py:Lantern",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Props/Lantern_29.glb",
+  "blend": "Models/Kits/Props/Lantern_29.blend",
+  "turntable": "Models/Kits/Props/Lantern_29_turntable.mp4",
+  "preview": "Models/Kits/Props/Lantern_29_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Props/Lantern_29_preview.jpg"
+}

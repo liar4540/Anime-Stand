@@ -1,0 +1,229 @@
+{
+ "asset": "Banner_13",
+ "kit": "Furniture",
+ "type": "Banner",
+ "seed": 13,
+ "params": {
+  "H": 7.449,
+  "Wc": 2.568,
+  "Lc": 3.303,
+  "tail": "point",
+  "icon": "star",
+  "wave": 0.076
+ },
+ "tris": 1760,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 3.467,
+  "y": 1.959,
+  "z": 7.788
+ },
+ "origin": "bottom",
+ "symmetric": "X",
+ "symmetry_error": {
+  "X": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "emblem_on_cloth",
+   "offset": {
+    "X": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "emblem_on_cloth",
+   "gap": 0.0,
+   "penetration": 0.04317,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "trim_on_cloth",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bar_on_pole",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "trim_on_bar",
+   "gap": 0.0,
+   "penetration": 0.07511,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 229,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "acc_dk",
+   "ink",
+   "h",
+   "h_dk",
+   "b",
+   "b_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "h": "#B8343B",
+     "h_dk": "#7A2026",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   }
+  ]
+ },
+ "studio": "Furniture prop: Anchored; CollisionFidelity Box; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre; cloth could be a separate MeshPart if animated",
+ "notes": "standing banner: turned pole on a dark/gold foot, gold finials, waved hue cloth (point tail) with dark top trim and centred gold star emblem",
+ "features": [
+  [
+   "emblem",
+   [
+    0.0,
+    -0.4,
+    5.461
+   ],
+   1.284
+  ],
+  [
+   "finial",
+   [
+    0.0,
+    0.0,
+    7.448
+   ],
+   0.5
+  ],
+  [
+   "tail",
+   [
+    0.0,
+    -0.3,
+    3.845
+   ],
+   1.284
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Furniture/Banner_13_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 9.3,
+  "basis": "panel x3 median",
+  "reviewed": "Banner_01 w2r3_panel (indiv 8.7/9.3/9.3); fix rounds: w2r1 7.7, w2r2 9.3",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_furniture.py:Banner",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Furniture/Banner_13.glb",
+  "blend": "Models/Kits/Furniture/Banner_13.blend",
+  "turntable": "Models/Kits/Furniture/Banner_13_turntable.mp4",
+  "preview": "Models/Kits/Furniture/Banner_13_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Furniture/Banner_13_preview.jpg"
+}

@@ -1,0 +1,249 @@
+{
+ "asset": "Dagger_11",
+ "kit": "Weapons",
+ "type": "Dagger",
+ "seed": 11,
+ "params": {
+  "L": 2.163,
+  "W": 0.331,
+  "T": 0.088,
+  "taper": 0.191,
+  "tip0": 0.68,
+  "tipk": 1.503,
+  "gL": 0.618,
+  "h0": 0.121,
+  "ht": 0.075,
+  "rise": 0.177,
+  "flare": 0.016,
+  "langet": 0.0,
+  "GL": 0.918,
+  "gr": 0.136,
+  "ps": 0.25,
+  "wraps": 4,
+  "pommel": "ball",
+  "fuller_w": 0.61,
+  "fuller_end": 0.693,
+  "gem": false,
+  "tip_balls": true,
+  "hilt_steps": 18
+ },
+ "tris": 2424,
+ "budget_class": "weapon",
+ "budget_target": 2500,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.545,
+  "y": 0.5,
+  "z": 3.781
+ },
+ "origin": "hand/grip point",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "guard_on_grip_axis",
+   "offset": {
+    "X": -0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "guard_on_grip",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "blade_into_guard",
+   "gap": 0.0,
+   "penetration": 0.12065,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "tip_ball_0_on_guard",
+   "gap": 0.0,
+   "penetration": 0.08902,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "tip_ball_1_on_guard",
+   "gap": 0.0,
+   "penetration": 0.08902,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 240,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "acc_dk",
+   "m_lt",
+   "m",
+   "m_dk",
+   "h"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h": "#3D8E9A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h": "#2F5FBF"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h": "#B8343B"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h": "#4E9A3E"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#B4BECC",
+     "m": "#7C8899",
+     "m_dk": "#4C5566",
+     "h": "#9A3FD6"
+    }
+   }
+  ]
+ },
+ "studio": "Tool Handle; origin = hand/grip point; CollisionFidelity Hull; CanCollide off when equipped; Massless; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "Dagger: double-edged blade with fuller, quillon guard (rise 0.177), ball pommel, hue wrap + gold wire",
+ "features": [
+  [
+   "guard",
+   [
+    0.0,
+    0.0,
+    0.609
+   ],
+   0.9179999999999999
+  ],
+  [
+   "pommel",
+   [
+    0.0,
+    0.0,
+    -0.829
+   ],
+   0.55
+  ],
+  [
+   "blade_mid",
+   [
+    0.0,
+    0.0,
+    1.316
+   ],
+   0.7944
+  ],
+  [
+   "tip",
+   [
+    0.0,
+    0.0,
+    2.506
+   ],
+   0.662
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Weapons/Dagger_11_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 8.7,
+  "basis": "single blind",
+  "reviewed": "Dagger_01 rv2",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_weapons.py:Dagger",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Weapons/Dagger_11.glb",
+  "blend": "Models/Kits/Weapons/Dagger_11.blend",
+  "turntable": "Models/Kits/Weapons/Dagger_11_turntable.mp4",
+  "preview": "Models/Kits/Weapons/Dagger_11_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Weapons/Dagger_11_preview.jpg"
+}

@@ -1,0 +1,117 @@
+{
+ "asset": "Dagger_01",
+ "kit": "Weapons",
+ "type": "Dagger",
+ "seed": 1,
+ "attempt": "rv2",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front and three-quarter outlines read instantly as a dagger (diamond blade, upswept crescent guard with ball finials, bulb pommel); silhouette render is clean, and the top view still reads as guard plus blade cross-section; A15 X/Y error 0.0.",
+   "V2": "Clear hierarchy: blade is the big mass, the crescent guard and pommel are medium, and the finial balls, gold grip bands and pommel collar are small details.",
+   "V3": "Confident stylised proportions: short wide blade with a long faceted tip, an oversized upswept guard and a chunky pommel; guard is centred (alignment offset 0.0), every seat is reported seated, and no float or sink is visible.",
+   "V4": "Inconsistent: the guard has clear chamfers that catch light and the blade has edge flats, but the pommel collar ring and grip bands have razor-hard rims with no visible chamfer (pommel studio close-up).",
+   "V5": "Minor: the pommel ball and collar show polygonal faceting on the outline (about 8 visible sides in the pommel flat close-up), and the narrow neck between collar and ball reads as a dark seam; blade, tip and guard shade clean.",
+   "V6": "Disciplined: gold accent, two steel-grey values with a darker fuller line, and one grip hue (teal) used only in the bands; good value contrast.",
+   "V7": "2412 tris against a weapon target of 2500 (ceiling 4000): at target.",
+   "V8": "One white LF_VertexColor material with vertex colours; gold, steel and single-hue grip bands match the kit and the Scimitar anchor's grip and pommel language; all colourways (crimson, shadow) swap only the grip hue.",
+   "V9": "Studio line is correct: Tool Handle, origin at the grip point, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Pommel ball and collar: low-segment faceting visible on the silhouette edge in the close-ups",
+   "Pommel neck between collar and ball reads as a dark seam or gap in the studio light",
+   "Collar ring and grip bands have hard unchamfered rims, unlike the bevelled guard"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add segments (or smooth the profile) on the pommel ball and collar so the outline reads round, not octagonal, at close range",
+   "Chamfer the pommel collar and grip-band rims (~0.045 studs) to match the guard's bevels",
+   "Fill in or soften the narrow neck between collar and pommel ball so it doesn't read as a dark seam"
+  ]
+ ],
+ "params": {
+  "L": 2.352,
+  "W": 0.334,
+  "T": 0.087,
+  "taper": 0.189,
+  "tip0": 0.694,
+  "tipk": 1.349,
+  "gL": 0.642,
+  "h0": 0.126,
+  "ht": 0.078,
+  "rise": 0.166,
+  "flare": 0.002,
+  "langet": 0.0,
+  "GL": 0.878,
+  "gr": 0.145,
+  "ps": 0.242,
+  "wraps": 4,
+  "pommel": "pear",
+  "fuller_w": 0.673,
+  "fuller_end": 0.669,
+  "gem": false,
+  "tip_balls": true,
+  "hilt_steps": 22
+ },
+ "tris": 2412,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

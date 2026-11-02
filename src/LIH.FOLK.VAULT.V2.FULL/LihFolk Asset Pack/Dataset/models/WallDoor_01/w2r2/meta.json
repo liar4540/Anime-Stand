@@ -1,0 +1,213 @@
+{
+ "asset": "WallDoor_01",
+ "kit": "Modular",
+ "type": "WallDoor",
+ "seed": 1,
+ "params": {
+  "W": 8,
+  "style": "stone",
+  "dw": 4.0,
+  "dh": 8.0
+ },
+ "tris": 540,
+ "budget_class": "module",
+ "budget_target": 800,
+ "budget_ceiling": 2000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 7.999,
+  "y": 1.999,
+  "z": 11.999
+ },
+ "origin": "grid corner (world 0, footprint 8x2.0x12.0 studs)",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass",
+  "T1": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 59,
+ "tiling": {
+  "grid": {
+   "footprint": [
+    8,
+    2.0,
+    12.0
+   ],
+   "step": 2.0,
+   "on_grid": true,
+   "inside": true,
+   "touches_floor": true,
+   "bbox": [
+    [
+     0.0006,
+     0.0006,
+     0.0006
+    ],
+    [
+     7.9994,
+     1.9994,
+     11.9994
+    ]
+   ],
+   "ok": true
+  },
+  "tiles": [
+   {
+    "axis": "X",
+    "period": 8,
+    "with": "WallDoor_01",
+    "other_axis": "X",
+    "mode": "equal",
+    "a_cells": 8587,
+    "b_cells": 8681,
+    "iou": 0.9892,
+    "cover": 1.0,
+    "inside": true,
+    "ok": true
+   }
+  ]
+ },
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "cream",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "granite",
+  "colourways": [
+   {
+    "name": "granite",
+    "hue": "stone",
+    "roles": {
+     "acc": "#E8AE38",
+     "cream": "#F3E3BE",
+     "h_lt": "#C4C6CC",
+     "h": "#9497A3",
+     "h_dk": "#62656F"
+    }
+   },
+   {
+    "name": "sandstone",
+    "hue": "sand",
+    "roles": {
+     "acc": "#E8AE38",
+     "cream": "#F3E3BE",
+     "h_lt": "#E6CB98",
+     "h": "#C29C66",
+     "h_dk": "#8A6A40"
+    }
+   },
+   {
+    "name": "brick",
+    "hue": "brick",
+    "roles": {
+     "acc": "#E8AE38",
+     "cream": "#F3E3BE",
+     "h_lt": "#DB7F62",
+     "h": "#B0503B",
+     "h_dk": "#763126"
+    }
+   },
+   {
+    "name": "slate",
+    "hue": "slate",
+    "roles": {
+     "acc": "#E8AE38",
+     "cream": "#F3E3BE",
+     "h_lt": "#A9B6C8",
+     "h": "#71829A",
+     "h_dk": "#46546B"
+    }
+   },
+   {
+    "name": "basalt",
+    "hue": "basalt",
+    "roles": {
+     "acc": "#E8AE38",
+     "cream": "#F3E3BE",
+     "h_lt": "#8F8C99",
+     "h": "#64616E",
+     "h_dk": "#403E49"
+    }
+   }
+  ]
+ },
+ "studio": "Modular piece: Anchored; CollisionFidelity Default (keeps the doorway walkable); CanTouch off; CastShadow on; origin = grid corner (pivot at min x / min y / floor): snap with a 2-stud grid and 90-degree rotations; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "stone doorway wall 8x2x12: walk-through 4.0x8.0 opening (R15 avatars fit), full-depth jambs + lintel, threshold step, gold keystone",
+ "features": [
+  [
+   "doorway",
+   [
+    4.0,
+    0.0,
+    4.8
+   ],
+   3.0
+  ],
+  [
+   "lintel",
+   [
+    4.0,
+    0.0,
+    8.3
+   ],
+   1.4
+  ],
+  [
+   "end_section",
+   [
+    8.0,
+    0.5,
+    6.0
+   ],
+   2.2
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_silhouette.png",
+  "close_doorway_studio": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_close_doorway_studio.png",
+  "close_doorway_flat": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_close_doorway_flat.png",
+  "close_lintel_studio": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_close_lintel_studio.png",
+  "close_lintel_flat": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_close_lintel_flat.png",
+  "close_end_section_studio": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_close_end_section_studio.png",
+  "close_end_section_flat": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_close_end_section_flat.png",
+  "cw_sandstone": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_cw_sandstone.png",
+  "cw_brick": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_cw_brick.png",
+  "cw_slate": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_cw_slate.png",
+  "cw_basalt": "Models/Kits/_drafts/r2/WallDoor_01/WallDoor_01_cw_basalt.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_modular.py:WallDoor",
+ "made": "2026-10-28"
+}

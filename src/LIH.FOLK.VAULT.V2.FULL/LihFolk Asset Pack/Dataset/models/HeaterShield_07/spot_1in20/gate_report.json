@@ -1,0 +1,137 @@
+{
+ "asset": "HeaterShield_07",
+ "type": "HeaterShield",
+ "tris": 1948,
+ "budget_class": "weapon",
+ "budget_target": 2500,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.986,
+  "y": 0.76,
+  "z": 2.521
+ },
+ "origin": "hand/grip point",
+ "symmetric": "X",
+ "symmetry_error": {
+  "X": 0.00582
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "alignment": [
+  {
+   "name": "field_on_plate",
+   "offset": {
+    "X": 1e-05
+   },
+   "max": 1e-05
+  },
+  {
+   "name": "emblem_on_field",
+   "offset": {
+    "X": 0.0,
+    "Z": 0.00027
+   },
+   "max": 0.00027
+  }
+ ],
+ "seats": [
+  {
+   "name": "field_on_plate",
+   "gap": 0.0,
+   "penetration": 0.08,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "emblem_on_field",
+   "gap": 0.0,
+   "penetration": 0.06,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet0_on_rim",
+   "gap": 0.0,
+   "penetration": 0.02125,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet1_on_rim",
+   "gap": 0.0,
+   "penetration": 0.02125,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet2_on_rim",
+   "gap": 0.0,
+   "penetration": 0.02125,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet3_on_rim",
+   "gap": 0.0,
+   "penetration": 0.02125,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet4_on_rim",
+   "gap": 0.0,
+   "penetration": 0.02125,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet5_on_rim",
+   "gap": 0.0,
+   "penetration": 0.02125,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "handle_on_back",
+   "gap": 0.0,
+   "penetration": 0.0623,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 281,
+ "studio": "Off-hand accessory/Tool: origin = handle centre (hand point); CollisionFidelity Box; CanCollide off when equipped; Massless; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "colourways": [
+   "teal",
+   "royal",
+   "crimson",
+   "verdant",
+   "shadow"
+  ]
+ }
+}

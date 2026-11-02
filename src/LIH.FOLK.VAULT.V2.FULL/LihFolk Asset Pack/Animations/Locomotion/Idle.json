@@ -1,0 +1,3553 @@
+{
+  "name": "Idle",
+  "fps": 30,
+  "frames": 121,
+  "length_s": 4.0,
+  "loop": true,
+  "priority": "Idle",
+  "markers": [],
+  "root_motion": false,
+  "qa_arm_twist": {
+    "RightUpperArm": {
+      "twist_max_deg_per_frame": 0.2,
+      "at_frame": 57,
+      "speed_max_deg_per_frame": 3.3,
+      "twist_range_deg": 0.6,
+      "reversals": 0
+    },
+    "RightLowerArm": {
+      "twist_max_deg_per_frame": 0.0,
+      "at_frame": 71,
+      "speed_max_deg_per_frame": 1.5,
+      "twist_range_deg": 0.0,
+      "reversals": 0
+    },
+    "RightHand": {
+      "twist_max_deg_per_frame": 4.2,
+      "at_frame": 76,
+      "speed_max_deg_per_frame": 28.8,
+      "twist_range_deg": 4.8,
+      "reversals": 0
+    },
+    "LeftUpperArm": {
+      "twist_max_deg_per_frame": 11.1,
+      "at_frame": 103,
+      "speed_max_deg_per_frame": 12.3,
+      "twist_range_deg": 78.6,
+      "reversals": 1
+    },
+    "LeftLowerArm": {
+      "twist_max_deg_per_frame": 0.0,
+      "at_frame": 97,
+      "speed_max_deg_per_frame": 6.1,
+      "twist_range_deg": 0.0,
+      "reversals": 0
+    },
+    "LeftHand": {
+      "twist_max_deg_per_frame": 0.0,
+      "at_frame": 0,
+      "speed_max_deg_per_frame": 0.0,
+      "twist_range_deg": 0.0,
+      "reversals": 0
+    },
+    "summary": {
+      "twist_max_deg_per_frame": 11.1,
+      "worst_joint": "LeftUpperArm",
+      "reversals_in_swing": 0,
+      "reversals_total": 1,
+      "right_arm_twist_max_deg_per_frame": 4.2,
+      "right_arm_reversals_in_swing": 0
+    }
+  },
+  "qa_motion": {
+    "summary": {
+      "pelvis_lateral_range_studs": 0.68,
+      "pelvis_bob_range_studs": 0.168,
+      "head_lateral_range_studs": 0.665,
+      "head_bob_range_studs": 0.17,
+      "pelvis_yaw_range_deg": 15.9,
+      "pelvis_roll_range_deg": 17.8,
+      "chest_yaw_range_deg_world": 20.1,
+      "chest_roll_range_deg_world": 7.6,
+      "chest_minus_pelvis_yaw_range_deg": 9.5,
+      "flight_frames_both_feet_above_0.05": [],
+      "max_both_feet_height_studs": -0.0,
+      "elbow_bend_range_deg": {
+        "Right": [
+          12.0,
+          21.0
+        ],
+        "Left": [
+          16.0,
+          74.9
+        ]
+      },
+      "shoulder_swing_range_deg": {
+        "Right": [
+          -5.1,
+          12.0
+        ],
+        "Left": [
+          -35.5,
+          12.0
+        ]
+      },
+      "hand_lateral_rel_shoulder_studs": {
+        "Right": {
+          "range": 0.229,
+          "max_at_frame": 69,
+          "min_at_frame": 5
+        },
+        "Left": {
+          "range": 0.535,
+          "max_at_frame": 59,
+          "min_at_frame": 68
+        }
+      },
+      "pelvis_lateral_max_at_frame": 34,
+      "pelvis_lateral_min_at_frame": 56,
+      "convention": "rbx: x = character right, y up; hand_lateral = wrist x minus shoulder x (+ = to the right, world); yaw + = turned to the character's left; roll + = right side up; shoulder_swing + = forward"
+    },
+    "per_frame": [
+      {
+        "hand_lateral": {
+          "Right": 0.693,
+          "Left": -0.694
+        },
+        "f": 0,
+        "pel_x": 0.25,
+        "pel_y": 2.052,
+        "pel_z": 0.0,
+        "pel_yaw": 4.2,
+        "pel_roll": 6.9,
+        "chest_yaw": 0.5,
+        "chest_roll": -1.4,
+        "head_x": 0.243,
+        "head_y": 4.144,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.2,
+          "Left": 19.6
+        },
+        "shoulder_swing": {
+          "Right": -1.0,
+          "Left": -0.1
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.669,
+          "Left": -0.69
+        },
+        "f": 1,
+        "pel_x": 0.25,
+        "pel_y": 2.053,
+        "pel_z": 0.0,
+        "pel_yaw": 4.2,
+        "pel_roll": 6.9,
+        "chest_yaw": 0.5,
+        "chest_roll": -1.4,
+        "head_x": 0.241,
+        "head_y": 4.144,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 13.7,
+          "Left": 19.3
+        },
+        "shoulder_swing": {
+          "Right": -1.3,
+          "Left": -0.4
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.646,
+          "Left": -0.687
+        },
+        "f": 2,
+        "pel_x": 0.25,
+        "pel_y": 2.054,
+        "pel_z": 0.0,
+        "pel_yaw": 4.2,
+        "pel_roll": 6.9,
+        "chest_yaw": 0.4,
+        "chest_roll": -1.3,
+        "head_x": 0.239,
+        "head_y": 4.145,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 13.2,
+          "Left": 19.0
+        },
+        "shoulder_swing": {
+          "Right": -1.5,
+          "Left": -0.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.628,
+          "Left": -0.685
+        },
+        "f": 3,
+        "pel_x": 0.25,
+        "pel_y": 2.055,
+        "pel_z": 0.0,
+        "pel_yaw": 4.2,
+        "pel_roll": 6.9,
+        "chest_yaw": 0.5,
+        "chest_roll": -1.3,
+        "head_x": 0.238,
+        "head_y": 4.146,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 12.8,
+          "Left": 18.6
+        },
+        "shoulder_swing": {
+          "Right": -1.5,
+          "Left": -0.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.615,
+          "Left": -0.684
+        },
+        "f": 4,
+        "pel_x": 0.25,
+        "pel_y": 2.057,
+        "pel_z": 0.0,
+        "pel_yaw": 4.2,
+        "pel_roll": 6.9,
+        "chest_yaw": 0.5,
+        "chest_roll": -1.3,
+        "head_x": 0.238,
+        "head_y": 4.148,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.5,
+          "Left": 18.2
+        },
+        "shoulder_swing": {
+          "Right": -1.5,
+          "Left": -0.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.61,
+          "Left": -0.684
+        },
+        "f": 5,
+        "pel_x": 0.25,
+        "pel_y": 2.06,
+        "pel_z": 0.0,
+        "pel_yaw": 4.2,
+        "pel_roll": 6.9,
+        "chest_yaw": 0.5,
+        "chest_roll": -1.3,
+        "head_x": 0.238,
+        "head_y": 4.151,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.2,
+          "Left": 17.8
+        },
+        "shoulder_swing": {
+          "Right": -1.3,
+          "Left": -0.4
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.612,
+          "Left": -0.685
+        },
+        "f": 6,
+        "pel_x": 0.25,
+        "pel_y": 2.062,
+        "pel_z": 0.0,
+        "pel_yaw": 4.2,
+        "pel_roll": 6.9,
+        "chest_yaw": 0.6,
+        "chest_roll": -1.3,
+        "head_x": 0.238,
+        "head_y": 4.155,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.1,
+          "Left": 17.4
+        },
+        "shoulder_swing": {
+          "Right": -0.9,
+          "Left": 0.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.616,
+          "Left": -0.686
+        },
+        "f": 7,
+        "pel_x": 0.25,
+        "pel_y": 2.065,
+        "pel_z": 0.0,
+        "pel_yaw": 4.2,
+        "pel_roll": 7.0,
+        "chest_yaw": 0.7,
+        "chest_roll": -1.3,
+        "head_x": 0.239,
+        "head_y": 4.158,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.0,
+          "Left": 17.0
+        },
+        "shoulder_swing": {
+          "Right": -0.4,
+          "Left": 0.5
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.623,
+          "Left": -0.687
+        },
+        "f": 8,
+        "pel_x": 0.25,
+        "pel_y": 2.069,
+        "pel_z": 0.0,
+        "pel_yaw": 4.3,
+        "pel_roll": 7.0,
+        "chest_yaw": 0.7,
+        "chest_roll": -1.4,
+        "head_x": 0.24,
+        "head_y": 4.162,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.1,
+          "Left": 16.7
+        },
+        "shoulder_swing": {
+          "Right": 0.2,
+          "Left": 1.1
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.633,
+          "Left": -0.689
+        },
+        "f": 9,
+        "pel_x": 0.25,
+        "pel_y": 2.072,
+        "pel_z": 0.0,
+        "pel_yaw": 4.3,
+        "pel_roll": 7.0,
+        "chest_yaw": 0.9,
+        "chest_roll": -1.4,
+        "head_x": 0.242,
+        "head_y": 4.166,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.3,
+          "Left": 16.4
+        },
+        "shoulder_swing": {
+          "Right": 1.0,
+          "Left": 1.8
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.646,
+          "Left": -0.692
+        },
+        "f": 10,
+        "pel_x": 0.25,
+        "pel_y": 2.075,
+        "pel_z": 0.0,
+        "pel_yaw": 4.3,
+        "pel_roll": 7.0,
+        "chest_yaw": 1.0,
+        "chest_roll": -1.4,
+        "head_x": 0.243,
+        "head_y": 4.17,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.6,
+          "Left": 16.2
+        },
+        "shoulder_swing": {
+          "Right": 1.7,
+          "Left": 2.5
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.66,
+          "Left": -0.697
+        },
+        "f": 11,
+        "pel_x": 0.25,
+        "pel_y": 2.078,
+        "pel_z": 0.0,
+        "pel_yaw": 4.3,
+        "pel_roll": 7.0,
+        "chest_yaw": 1.1,
+        "chest_roll": -1.5,
+        "head_x": 0.245,
+        "head_y": 4.173,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 13.0,
+          "Left": 16.1
+        },
+        "shoulder_swing": {
+          "Right": 2.6,
+          "Left": 3.3
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.676,
+          "Left": -0.704
+        },
+        "f": 12,
+        "pel_x": 0.25,
+        "pel_y": 2.081,
+        "pel_z": 0.0,
+        "pel_yaw": 4.3,
+        "pel_roll": 7.0,
+        "chest_yaw": 1.2,
+        "chest_roll": -1.5,
+        "head_x": 0.247,
+        "head_y": 4.175,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 13.6,
+          "Left": 16.0
+        },
+        "shoulder_swing": {
+          "Right": 3.4,
+          "Left": 4.1
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.692,
+          "Left": -0.713
+        },
+        "f": 13,
+        "pel_x": 0.25,
+        "pel_y": 2.084,
+        "pel_z": 0.0,
+        "pel_yaw": 4.3,
+        "pel_roll": 7.0,
+        "chest_yaw": 1.3,
+        "chest_roll": -1.6,
+        "head_x": 0.249,
+        "head_y": 4.177,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.2,
+          "Left": 16.0
+        },
+        "shoulder_swing": {
+          "Right": 4.2,
+          "Left": 4.9
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.708,
+          "Left": -0.723
+        },
+        "f": 14,
+        "pel_x": 0.25,
+        "pel_y": 2.086,
+        "pel_z": 0.0,
+        "pel_yaw": 4.4,
+        "pel_roll": 7.1,
+        "chest_yaw": 1.5,
+        "chest_roll": -1.6,
+        "head_x": 0.251,
+        "head_y": 4.178,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.9,
+          "Left": 16.2
+        },
+        "shoulder_swing": {
+          "Right": 5.0,
+          "Left": 5.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.724,
+          "Left": -0.734
+        },
+        "f": 15,
+        "pel_x": 0.25,
+        "pel_y": 2.088,
+        "pel_z": 0.0,
+        "pel_yaw": 4.4,
+        "pel_roll": 7.1,
+        "chest_yaw": 1.6,
+        "chest_roll": -1.7,
+        "head_x": 0.253,
+        "head_y": 4.179,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 15.7,
+          "Left": 16.4
+        },
+        "shoulder_swing": {
+          "Right": 5.8,
+          "Left": 6.4
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.74,
+          "Left": -0.745
+        },
+        "f": 16,
+        "pel_x": 0.25,
+        "pel_y": 2.09,
+        "pel_z": 0.0,
+        "pel_yaw": 4.4,
+        "pel_roll": 7.1,
+        "chest_yaw": 1.7,
+        "chest_roll": -1.7,
+        "head_x": 0.255,
+        "head_y": 4.179,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 16.4,
+          "Left": 16.7
+        },
+        "shoulder_swing": {
+          "Right": 6.5,
+          "Left": 7.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.753,
+          "Left": -0.757
+        },
+        "f": 17,
+        "pel_x": 0.25,
+        "pel_y": 2.091,
+        "pel_z": 0.0,
+        "pel_yaw": 4.4,
+        "pel_roll": 7.1,
+        "chest_yaw": 1.8,
+        "chest_roll": -1.8,
+        "head_x": 0.256,
+        "head_y": 4.179,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 17.1,
+          "Left": 17.1
+        },
+        "shoulder_swing": {
+          "Right": 7.1,
+          "Left": 7.5
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.766,
+          "Left": -0.769
+        },
+        "f": 18,
+        "pel_x": 0.25,
+        "pel_y": 2.092,
+        "pel_z": 0.0,
+        "pel_yaw": 4.4,
+        "pel_roll": 7.1,
+        "chest_yaw": 1.8,
+        "chest_roll": -1.8,
+        "head_x": 0.258,
+        "head_y": 4.179,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 17.8,
+          "Left": 17.5
+        },
+        "shoulder_swing": {
+          "Right": 7.6,
+          "Left": 8.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.777,
+          "Left": -0.78
+        },
+        "f": 19,
+        "pel_x": 0.25,
+        "pel_y": 2.092,
+        "pel_z": 0.0,
+        "pel_yaw": 4.4,
+        "pel_roll": 7.1,
+        "chest_yaw": 1.9,
+        "chest_roll": -1.8,
+        "head_x": 0.259,
+        "head_y": 4.178,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 18.5,
+          "Left": 18.0
+        },
+        "shoulder_swing": {
+          "Right": 8.0,
+          "Left": 8.4
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.786,
+          "Left": -0.79
+        },
+        "f": 20,
+        "pel_x": 0.25,
+        "pel_y": 2.092,
+        "pel_z": 0.0,
+        "pel_yaw": 4.4,
+        "pel_roll": 7.1,
+        "chest_yaw": 1.9,
+        "chest_roll": -1.8,
+        "head_x": 0.26,
+        "head_y": 4.177,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 19.1,
+          "Left": 18.4
+        },
+        "shoulder_swing": {
+          "Right": 8.3,
+          "Left": 8.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.793,
+          "Left": -0.799
+        },
+        "f": 21,
+        "pel_x": 0.251,
+        "pel_y": 2.091,
+        "pel_z": 0.0,
+        "pel_yaw": 4.4,
+        "pel_roll": 7.1,
+        "chest_yaw": 2.0,
+        "chest_roll": -1.8,
+        "head_x": 0.261,
+        "head_y": 4.175,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 19.6,
+          "Left": 18.9
+        },
+        "shoulder_swing": {
+          "Right": 8.5,
+          "Left": 8.9
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.8,
+          "Left": -0.806
+        },
+        "f": 22,
+        "pel_x": 0.254,
+        "pel_y": 2.087,
+        "pel_z": 0.0,
+        "pel_yaw": 4.4,
+        "pel_roll": 7.2,
+        "chest_yaw": 2.0,
+        "chest_roll": -1.8,
+        "head_x": 0.262,
+        "head_y": 4.17,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.0,
+          "Left": 19.4
+        },
+        "shoulder_swing": {
+          "Right": 8.7,
+          "Left": 9.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.806,
+          "Left": -0.811
+        },
+        "f": 23,
+        "pel_x": 0.259,
+        "pel_y": 2.079,
+        "pel_z": 0.0,
+        "pel_yaw": 4.5,
+        "pel_roll": 7.3,
+        "chest_yaw": 2.1,
+        "chest_roll": -1.7,
+        "head_x": 0.264,
+        "head_y": 4.163,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.4,
+          "Left": 19.9
+        },
+        "shoulder_swing": {
+          "Right": 8.8,
+          "Left": 9.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.811,
+          "Left": -0.814
+        },
+        "f": 24,
+        "pel_x": 0.266,
+        "pel_y": 2.068,
+        "pel_z": 0.0,
+        "pel_yaw": 4.6,
+        "pel_roll": 7.4,
+        "chest_yaw": 2.2,
+        "chest_roll": -1.6,
+        "head_x": 0.266,
+        "head_y": 4.152,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.7,
+          "Left": 20.3
+        },
+        "shoulder_swing": {
+          "Right": 8.7,
+          "Left": 8.9
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.814,
+          "Left": -0.816
+        },
+        "f": 25,
+        "pel_x": 0.275,
+        "pel_y": 2.055,
+        "pel_z": 0.0,
+        "pel_yaw": 4.7,
+        "pel_roll": 7.6,
+        "chest_yaw": 2.2,
+        "chest_roll": -1.4,
+        "head_x": 0.27,
+        "head_y": 4.139,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 20.8,
+          "Left": 20.7
+        },
+        "shoulder_swing": {
+          "Right": 8.5,
+          "Left": 8.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.816,
+          "Left": -0.817
+        },
+        "f": 26,
+        "pel_x": 0.285,
+        "pel_y": 2.039,
+        "pel_z": 0.0,
+        "pel_yaw": 4.8,
+        "pel_roll": 7.8,
+        "chest_yaw": 2.2,
+        "chest_roll": -1.3,
+        "head_x": 0.275,
+        "head_y": 4.124,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 21.0,
+          "Left": 21.1
+        },
+        "shoulder_swing": {
+          "Right": 8.0,
+          "Left": 8.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.818,
+          "Left": -0.816
+        },
+        "f": 27,
+        "pel_x": 0.297,
+        "pel_y": 2.02,
+        "pel_z": 0.0,
+        "pel_yaw": 5.0,
+        "pel_roll": 8.1,
+        "chest_yaw": 2.2,
+        "chest_roll": -1.2,
+        "head_x": 0.282,
+        "head_y": 4.108,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 21.0,
+          "Left": 21.3
+        },
+        "shoulder_swing": {
+          "Right": 7.4,
+          "Left": 7.5
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.818,
+          "Left": -0.815
+        },
+        "f": 28,
+        "pel_x": 0.31,
+        "pel_y": 2.001,
+        "pel_z": 0.0,
+        "pel_yaw": 5.1,
+        "pel_roll": 8.3,
+        "chest_yaw": 2.1,
+        "chest_roll": -1.1,
+        "head_x": 0.29,
+        "head_y": 4.09,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 21.0,
+          "Left": 21.6
+        },
+        "shoulder_swing": {
+          "Right": 6.6,
+          "Left": 6.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.818,
+          "Left": -0.812
+        },
+        "f": 29,
+        "pel_x": 0.323,
+        "pel_y": 1.981,
+        "pel_z": 0.0,
+        "pel_yaw": 5.3,
+        "pel_roll": 8.6,
+        "chest_yaw": 2.0,
+        "chest_roll": -1.1,
+        "head_x": 0.298,
+        "head_y": 4.071,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.8,
+          "Left": 21.8
+        },
+        "shoulder_swing": {
+          "Right": 5.7,
+          "Left": 5.8
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.816,
+          "Left": -0.809
+        },
+        "f": 30,
+        "pel_x": 0.335,
+        "pel_y": 1.963,
+        "pel_z": 0.0,
+        "pel_yaw": 5.4,
+        "pel_roll": 8.8,
+        "chest_yaw": 1.9,
+        "chest_roll": -1.1,
+        "head_x": 0.307,
+        "head_y": 4.054,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 20.6,
+          "Left": 21.9
+        },
+        "shoulder_swing": {
+          "Right": 4.5,
+          "Left": 4.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.812,
+          "Left": -0.804
+        },
+        "f": 31,
+        "pel_x": 0.345,
+        "pel_y": 1.947,
+        "pel_z": 0.0,
+        "pel_yaw": 5.6,
+        "pel_roll": 9.1,
+        "chest_yaw": 1.7,
+        "chest_roll": -1.1,
+        "head_x": 0.315,
+        "head_y": 4.039,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.2,
+          "Left": 22.0
+        },
+        "shoulder_swing": {
+          "Right": 3.3,
+          "Left": 3.5
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.807,
+          "Left": -0.798
+        },
+        "f": 32,
+        "pel_x": 0.353,
+        "pel_y": 1.935,
+        "pel_z": 0.0,
+        "pel_yaw": 5.7,
+        "pel_roll": 9.2,
+        "chest_yaw": 1.5,
+        "chest_roll": -1.2,
+        "head_x": 0.324,
+        "head_y": 4.027,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 19.7,
+          "Left": 22.0
+        },
+        "shoulder_swing": {
+          "Right": 2.1,
+          "Left": 2.3
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.8,
+          "Left": -0.791
+        },
+        "f": 33,
+        "pel_x": 0.358,
+        "pel_y": 1.927,
+        "pel_z": 0.0,
+        "pel_yaw": 5.7,
+        "pel_roll": 9.3,
+        "chest_yaw": 1.2,
+        "chest_roll": -1.3,
+        "head_x": 0.331,
+        "head_y": 4.019,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 19.2,
+          "Left": 22.0
+        },
+        "shoulder_swing": {
+          "Right": 1.0,
+          "Left": 1.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.791,
+          "Left": -0.782
+        },
+        "f": 34,
+        "pel_x": 0.36,
+        "pel_y": 1.924,
+        "pel_z": 0.0,
+        "pel_yaw": 5.7,
+        "pel_roll": 9.4,
+        "chest_yaw": 0.9,
+        "chest_roll": -1.5,
+        "head_x": 0.336,
+        "head_y": 4.015,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 18.6,
+          "Left": 21.9
+        },
+        "shoulder_swing": {
+          "Right": -0.0,
+          "Left": 0.3
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.781,
+          "Left": -0.773
+        },
+        "f": 35,
+        "pel_x": 0.357,
+        "pel_y": 1.924,
+        "pel_z": 0.0,
+        "pel_yaw": 5.7,
+        "pel_roll": 9.3,
+        "chest_yaw": 0.7,
+        "chest_roll": -1.7,
+        "head_x": 0.341,
+        "head_y": 4.014,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 17.9,
+          "Left": 21.7
+        },
+        "shoulder_swing": {
+          "Right": -0.8,
+          "Left": -0.5
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.768,
+          "Left": -0.765
+        },
+        "f": 36,
+        "pel_x": 0.35,
+        "pel_y": 1.925,
+        "pel_z": 0.0,
+        "pel_yaw": 5.5,
+        "pel_roll": 9.0,
+        "chest_yaw": 0.4,
+        "chest_roll": -2.0,
+        "head_x": 0.345,
+        "head_y": 4.013,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 17.2,
+          "Left": 21.5
+        },
+        "shoulder_swing": {
+          "Right": -1.4,
+          "Left": -1.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.753,
+          "Left": -0.758
+        },
+        "f": 37,
+        "pel_x": 0.338,
+        "pel_y": 1.925,
+        "pel_z": 0.0,
+        "pel_yaw": 5.3,
+        "pel_roll": 8.7,
+        "chest_yaw": 0.1,
+        "chest_roll": -2.4,
+        "head_x": 0.348,
+        "head_y": 4.013,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 16.5,
+          "Left": 21.2
+        },
+        "shoulder_swing": {
+          "Right": -1.6,
+          "Left": -1.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.74,
+          "Left": -0.75
+        },
+        "f": 38,
+        "pel_x": 0.321,
+        "pel_y": 1.926,
+        "pel_z": 0.0,
+        "pel_yaw": 5.0,
+        "pel_roll": 8.1,
+        "chest_yaw": -0.2,
+        "chest_roll": -2.8,
+        "head_x": 0.348,
+        "head_y": 4.014,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 15.9,
+          "Left": 20.8
+        },
+        "shoulder_swing": {
+          "Right": -1.7,
+          "Left": -1.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.728,
+          "Left": -0.742
+        },
+        "f": 39,
+        "pel_x": 0.301,
+        "pel_y": 1.928,
+        "pel_z": 0.0,
+        "pel_yaw": 4.6,
+        "pel_roll": 7.5,
+        "chest_yaw": -0.4,
+        "chest_roll": -3.2,
+        "head_x": 0.343,
+        "head_y": 4.016,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 15.3,
+          "Left": 20.4
+        },
+        "shoulder_swing": {
+          "Right": -1.8,
+          "Left": -1.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.719,
+          "Left": -0.733
+        },
+        "f": 40,
+        "pel_x": 0.277,
+        "pel_y": 1.93,
+        "pel_z": 0.0,
+        "pel_yaw": 4.1,
+        "pel_roll": 6.8,
+        "chest_yaw": -0.6,
+        "chest_roll": -3.5,
+        "head_x": 0.333,
+        "head_y": 4.018,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 14.9,
+          "Left": 19.9
+        },
+        "shoulder_swing": {
+          "Right": -2.0,
+          "Left": -1.1
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.713,
+          "Left": -0.726
+        },
+        "f": 41,
+        "pel_x": 0.249,
+        "pel_y": 1.932,
+        "pel_z": 0.0,
+        "pel_yaw": 3.6,
+        "pel_roll": 5.9,
+        "chest_yaw": -0.8,
+        "chest_roll": -3.7,
+        "head_x": 0.319,
+        "head_y": 4.021,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.7,
+          "Left": 19.4
+        },
+        "shoulder_swing": {
+          "Right": -2.2,
+          "Left": -1.1
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.71,
+          "Left": -0.721
+        },
+        "f": 42,
+        "pel_x": 0.217,
+        "pel_y": 1.936,
+        "pel_z": 0.0,
+        "pel_yaw": 3.1,
+        "pel_roll": 5.0,
+        "chest_yaw": -1.0,
+        "chest_roll": -3.9,
+        "head_x": 0.3,
+        "head_y": 4.025,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 14.5,
+          "Left": 19.0
+        },
+        "shoulder_swing": {
+          "Right": -2.4,
+          "Left": -0.9
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.708,
+          "Left": -0.717
+        },
+        "f": 43,
+        "pel_x": 0.183,
+        "pel_y": 1.941,
+        "pel_z": 0.0,
+        "pel_yaw": 2.5,
+        "pel_roll": 4.0,
+        "chest_yaw": -1.1,
+        "chest_roll": -4.1,
+        "head_x": 0.277,
+        "head_y": 4.03,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.4,
+          "Left": 18.6
+        },
+        "shoulder_swing": {
+          "Right": -2.7,
+          "Left": -0.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.709,
+          "Left": -0.714
+        },
+        "f": 44,
+        "pel_x": 0.146,
+        "pel_y": 1.947,
+        "pel_z": 0.0,
+        "pel_yaw": 1.8,
+        "pel_roll": 2.9,
+        "chest_yaw": -1.2,
+        "chest_roll": -4.1,
+        "head_x": 0.249,
+        "head_y": 4.036,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 14.3,
+          "Left": 18.2
+        },
+        "shoulder_swing": {
+          "Right": -3.0,
+          "Left": -0.5
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.712,
+          "Left": -0.71
+        },
+        "f": 45,
+        "pel_x": 0.106,
+        "pel_y": 1.953,
+        "pel_z": 0.0,
+        "pel_yaw": 1.2,
+        "pel_roll": 1.8,
+        "chest_yaw": -1.3,
+        "chest_roll": -4.2,
+        "head_x": 0.219,
+        "head_y": 4.043,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.2,
+          "Left": 18.0
+        },
+        "shoulder_swing": {
+          "Right": -3.3,
+          "Left": -0.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.716,
+          "Left": -0.705
+        },
+        "f": 46,
+        "pel_x": 0.064,
+        "pel_y": 1.962,
+        "pel_z": 0.0,
+        "pel_yaw": 0.5,
+        "pel_roll": 0.7,
+        "chest_yaw": -1.4,
+        "chest_roll": -4.1,
+        "head_x": 0.184,
+        "head_y": 4.051,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.1,
+          "Left": 17.8
+        },
+        "shoulder_swing": {
+          "Right": -3.6,
+          "Left": 0.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.722,
+          "Left": -0.7
+        },
+        "f": 47,
+        "pel_x": 0.021,
+        "pel_y": 1.971,
+        "pel_z": 0.0,
+        "pel_yaw": -0.2,
+        "pel_roll": -0.5,
+        "chest_yaw": -1.5,
+        "chest_roll": -4.0,
+        "head_x": 0.146,
+        "head_y": 4.061,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 14.0,
+          "Left": 17.7
+        },
+        "shoulder_swing": {
+          "Right": -3.9,
+          "Left": 0.3
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.729,
+          "Left": -0.693
+        },
+        "f": 48,
+        "pel_x": -0.025,
+        "pel_y": 1.983,
+        "pel_z": 0.0,
+        "pel_yaw": -0.8,
+        "pel_roll": -1.6,
+        "chest_yaw": -1.6,
+        "chest_roll": -3.9,
+        "head_x": 0.105,
+        "head_y": 4.073,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 14.0,
+          "Left": 17.6
+        },
+        "shoulder_swing": {
+          "Right": -4.2,
+          "Left": 0.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.737,
+          "Left": -0.686
+        },
+        "f": 49,
+        "pel_x": -0.072,
+        "pel_y": 1.996,
+        "pel_z": 0.0,
+        "pel_yaw": -1.5,
+        "pel_roll": -2.8,
+        "chest_yaw": -1.6,
+        "chest_roll": -3.7,
+        "head_x": 0.061,
+        "head_y": 4.086,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 13.9,
+          "Left": 17.5
+        },
+        "shoulder_swing": {
+          "Right": -4.5,
+          "Left": 0.9
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.746,
+          "Left": -0.677
+        },
+        "f": 50,
+        "pel_x": -0.12,
+        "pel_y": 2.01,
+        "pel_z": 0.0,
+        "pel_yaw": -2.1,
+        "pel_roll": -3.9,
+        "chest_yaw": -1.7,
+        "chest_roll": -3.5,
+        "head_x": 0.014,
+        "head_y": 4.101,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 13.9,
+          "Left": 17.5
+        },
+        "shoulder_swing": {
+          "Right": -4.7,
+          "Left": 1.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.756,
+          "Left": -0.668
+        },
+        "f": 51,
+        "pel_x": -0.169,
+        "pel_y": 2.027,
+        "pel_z": 0.0,
+        "pel_yaw": -2.7,
+        "pel_roll": -5.1,
+        "chest_yaw": -1.8,
+        "chest_roll": -3.2,
+        "head_x": -0.035,
+        "head_y": 4.117,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 13.8,
+          "Left": 17.4
+        },
+        "shoulder_swing": {
+          "Right": -4.9,
+          "Left": 1.5
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.767,
+          "Left": -0.657
+        },
+        "f": 52,
+        "pel_x": -0.215,
+        "pel_y": 2.044,
+        "pel_z": 0.0,
+        "pel_yaw": -3.3,
+        "pel_roll": -6.1,
+        "chest_yaw": -1.8,
+        "chest_roll": -2.8,
+        "head_x": -0.085,
+        "head_y": 4.134,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 13.8,
+          "Left": 17.3
+        },
+        "shoulder_swing": {
+          "Right": -5.0,
+          "Left": 1.8
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.78,
+          "Left": -0.644
+        },
+        "f": 53,
+        "pel_x": -0.256,
+        "pel_y": 2.06,
+        "pel_z": 0.0,
+        "pel_yaw": -3.7,
+        "pel_roll": -7.0,
+        "chest_yaw": -1.9,
+        "chest_roll": -2.3,
+        "head_x": -0.135,
+        "head_y": 4.151,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 13.8,
+          "Left": 17.3
+        },
+        "shoulder_swing": {
+          "Right": -5.1,
+          "Left": 2.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.797,
+          "Left": -0.625
+        },
+        "f": 54,
+        "pel_x": -0.29,
+        "pel_y": 2.073,
+        "pel_z": 0.0,
+        "pel_yaw": -4.1,
+        "pel_roll": -7.7,
+        "chest_yaw": -1.9,
+        "chest_roll": -1.6,
+        "head_x": -0.185,
+        "head_y": 4.165,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 13.8,
+          "Left": 17.3
+        },
+        "shoulder_swing": {
+          "Right": -4.6,
+          "Left": 3.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.818,
+          "Left": -0.602
+        },
+        "f": 55,
+        "pel_x": -0.312,
+        "pel_y": 2.083,
+        "pel_z": 0.0,
+        "pel_yaw": -4.3,
+        "pel_roll": -8.2,
+        "chest_yaw": -1.9,
+        "chest_roll": -0.8,
+        "head_x": -0.23,
+        "head_y": 4.177,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 13.8,
+          "Left": 17.3
+        },
+        "shoulder_swing": {
+          "Right": -3.3,
+          "Left": 4.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.822,
+          "Left": -0.575
+        },
+        "f": 56,
+        "pel_x": -0.32,
+        "pel_y": 2.088,
+        "pel_z": 0.0,
+        "pel_yaw": -4.4,
+        "pel_roll": -8.4,
+        "chest_yaw": -1.9,
+        "chest_roll": 0.2,
+        "head_x": -0.269,
+        "head_y": 4.182,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 13.8,
+          "Left": 17.2
+        },
+        "shoulder_swing": {
+          "Right": -0.9,
+          "Left": 6.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.798,
+          "Left": -0.548
+        },
+        "f": 57,
+        "pel_x": -0.314,
+        "pel_y": 2.09,
+        "pel_z": 0.0,
+        "pel_yaw": -4.4,
+        "pel_roll": -8.3,
+        "chest_yaw": -1.8,
+        "chest_roll": 1.3,
+        "head_x": -0.298,
+        "head_y": 4.181,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 13.8,
+          "Left": 17.2
+        },
+        "shoulder_swing": {
+          "Right": 2.6,
+          "Left": 8.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.755,
+          "Left": -0.526
+        },
+        "f": 58,
+        "pel_x": -0.299,
+        "pel_y": 2.091,
+        "pel_z": 0.0,
+        "pel_yaw": -4.2,
+        "pel_roll": -7.9,
+        "chest_yaw": -1.7,
+        "chest_roll": 2.3,
+        "head_x": -0.315,
+        "head_y": 4.179,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.2,
+          "Left": 17.2
+        },
+        "shoulder_swing": {
+          "Right": 6.2,
+          "Left": 10.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.702,
+          "Left": -0.513
+        },
+        "f": 59,
+        "pel_x": -0.28,
+        "pel_y": 2.092,
+        "pel_z": 0.0,
+        "pel_yaw": -4.0,
+        "pel_roll": -7.5,
+        "chest_yaw": -1.6,
+        "chest_roll": 2.9,
+        "head_x": -0.317,
+        "head_y": 4.177,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 15.2,
+          "Left": 17.2
+        },
+        "shoulder_swing": {
+          "Right": 9.1,
+          "Left": 11.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.654,
+          "Left": -0.54
+        },
+        "f": 60,
+        "pel_x": -0.264,
+        "pel_y": 2.092,
+        "pel_z": 0.0,
+        "pel_yaw": -3.8,
+        "pel_roll": -7.2,
+        "chest_yaw": -1.5,
+        "chest_roll": 3.1,
+        "head_x": -0.309,
+        "head_y": 4.176,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 16.6,
+          "Left": 17.2
+        },
+        "shoulder_swing": {
+          "Right": 11.1,
+          "Left": 11.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.629,
+          "Left": -0.618
+        },
+        "f": 61,
+        "pel_x": -0.253,
+        "pel_y": 2.092,
+        "pel_z": 0.0,
+        "pel_yaw": -3.7,
+        "pel_roll": -7.0,
+        "chest_yaw": -1.5,
+        "chest_roll": 2.9,
+        "head_x": -0.296,
+        "head_y": 4.176,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 18.1,
+          "Left": 17.2
+        },
+        "shoulder_swing": {
+          "Right": 12.0,
+          "Left": 12.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.638,
+          "Left": -0.724
+        },
+        "f": 62,
+        "pel_x": -0.25,
+        "pel_y": 2.092,
+        "pel_z": 0.0,
+        "pel_yaw": -3.7,
+        "pel_roll": -6.9,
+        "chest_yaw": -1.6,
+        "chest_roll": 2.5,
+        "head_x": -0.281,
+        "head_y": 4.176,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 19.3,
+          "Left": 17.2
+        },
+        "shoulder_swing": {
+          "Right": 11.9,
+          "Left": 11.9
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.679,
+          "Left": -0.833
+        },
+        "f": 63,
+        "pel_x": -0.25,
+        "pel_y": 2.092,
+        "pel_z": 0.0,
+        "pel_yaw": -3.7,
+        "pel_roll": -6.9,
+        "chest_yaw": -1.7,
+        "chest_roll": 2.1,
+        "head_x": -0.268,
+        "head_y": 4.175,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.1,
+          "Left": 17.8
+        },
+        "shoulder_swing": {
+          "Right": 11.5,
+          "Left": 11.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.735,
+          "Left": -0.925
+        },
+        "f": 64,
+        "pel_x": -0.25,
+        "pel_y": 2.089,
+        "pel_z": 0.0,
+        "pel_yaw": -3.7,
+        "pel_roll": -6.9,
+        "chest_yaw": -1.8,
+        "chest_roll": 1.8,
+        "head_x": -0.26,
+        "head_y": 4.173,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.5,
+          "Left": 19.8
+        },
+        "shoulder_swing": {
+          "Right": 10.9,
+          "Left": 9.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.786,
+          "Left": -0.985
+        },
+        "f": 65,
+        "pel_x": -0.25,
+        "pel_y": 2.085,
+        "pel_z": 0.0,
+        "pel_yaw": -3.7,
+        "pel_roll": -7.0,
+        "chest_yaw": -1.8,
+        "chest_roll": 1.7,
+        "head_x": -0.256,
+        "head_y": 4.169,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.8,
+          "Left": 22.9
+        },
+        "shoulder_swing": {
+          "Right": 10.4,
+          "Left": 7.1
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.817,
+          "Left": -1.021
+        },
+        "f": 66,
+        "pel_x": -0.25,
+        "pel_y": 2.081,
+        "pel_z": 0.0,
+        "pel_yaw": -3.7,
+        "pel_roll": -7.0,
+        "chest_yaw": -1.8,
+        "chest_roll": 1.7,
+        "head_x": -0.255,
+        "head_y": 4.165,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.9,
+          "Left": 27.2
+        },
+        "shoulder_swing": {
+          "Right": 9.9,
+          "Left": 3.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.827,
+          "Left": -1.045
+        },
+        "f": 67,
+        "pel_x": -0.25,
+        "pel_y": 2.076,
+        "pel_z": 0.0,
+        "pel_yaw": -3.8,
+        "pel_roll": -7.0,
+        "chest_yaw": -1.7,
+        "chest_roll": 1.6,
+        "head_x": -0.254,
+        "head_y": 4.162,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 21.0,
+          "Left": 32.4
+        },
+        "shoulder_swing": {
+          "Right": 9.3,
+          "Left": -2.5
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.832,
+          "Left": -1.048
+        },
+        "f": 68,
+        "pel_x": -0.25,
+        "pel_y": 2.073,
+        "pel_z": 0.0,
+        "pel_yaw": -4.9,
+        "pel_roll": -7.0,
+        "chest_yaw": -2.7,
+        "chest_roll": 1.7,
+        "head_x": -0.256,
+        "head_y": 4.162,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 21.0,
+          "Left": 38.2
+        },
+        "shoulder_swing": {
+          "Right": 8.0,
+          "Left": -8.9
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.839,
+          "Left": -1.026
+        },
+        "f": 69,
+        "pel_x": -0.25,
+        "pel_y": 2.071,
+        "pel_z": 0.0,
+        "pel_yaw": -7.4,
+        "pel_roll": -7.0,
+        "chest_yaw": -5.0,
+        "chest_roll": 1.7,
+        "head_x": -0.259,
+        "head_y": 4.162,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 21.0,
+          "Left": 44.2
+        },
+        "shoulder_swing": {
+          "Right": 6.0,
+          "Left": -15.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.838,
+          "Left": -0.989
+        },
+        "f": 70,
+        "pel_x": -0.25,
+        "pel_y": 2.068,
+        "pel_z": 0.0,
+        "pel_yaw": -10.2,
+        "pel_roll": -6.9,
+        "chest_yaw": -7.6,
+        "chest_roll": 1.7,
+        "head_x": -0.259,
+        "head_y": 4.161,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.8,
+          "Left": 50.2
+        },
+        "shoulder_swing": {
+          "Right": 3.8,
+          "Left": -21.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.823,
+          "Left": -0.95
+        },
+        "f": 71,
+        "pel_x": -0.25,
+        "pel_y": 2.068,
+        "pel_z": 0.0,
+        "pel_yaw": -10.2,
+        "pel_roll": -6.9,
+        "chest_yaw": -9.2,
+        "chest_roll": 1.7,
+        "head_x": -0.255,
+        "head_y": 4.162,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.3,
+          "Left": 55.9
+        },
+        "shoulder_swing": {
+          "Right": 2.0,
+          "Left": -26.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.814,
+          "Left": -0.895
+        },
+        "f": 72,
+        "pel_x": -0.25,
+        "pel_y": 2.067,
+        "pel_z": 0.0,
+        "pel_yaw": -10.1,
+        "pel_roll": -6.9,
+        "chest_yaw": -13.0,
+        "chest_roll": 1.7,
+        "head_x": -0.251,
+        "head_y": 4.162,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 19.4,
+          "Left": 61.0
+        },
+        "shoulder_swing": {
+          "Right": -0.0,
+          "Left": -28.8
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.8,
+          "Left": -0.842
+        },
+        "f": 73,
+        "pel_x": -0.25,
+        "pel_y": 2.066,
+        "pel_z": 0.0,
+        "pel_yaw": -10.1,
+        "pel_roll": -6.9,
+        "chest_yaw": -17.0,
+        "chest_roll": 1.7,
+        "head_x": -0.243,
+        "head_y": 4.16,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 18.4,
+          "Left": 65.3
+        },
+        "shoulder_swing": {
+          "Right": -1.8,
+          "Left": -27.8
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.784,
+          "Left": -0.819
+        },
+        "f": 74,
+        "pel_x": -0.25,
+        "pel_y": 2.065,
+        "pel_z": 0.0,
+        "pel_yaw": -10.0,
+        "pel_roll": -6.9,
+        "chest_yaw": -16.9,
+        "chest_roll": 1.8,
+        "head_x": -0.243,
+        "head_y": 4.159,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 17.4,
+          "Left": 68.8
+        },
+        "shoulder_swing": {
+          "Right": -1.7,
+          "Left": -29.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.767,
+          "Left": -0.802
+        },
+        "f": 75,
+        "pel_x": -0.25,
+        "pel_y": 2.063,
+        "pel_z": 0.0,
+        "pel_yaw": -9.8,
+        "pel_roll": -6.9,
+        "chest_yaw": -16.7,
+        "chest_roll": 1.8,
+        "head_x": -0.242,
+        "head_y": 4.157,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 16.7,
+          "Left": 71.5
+        },
+        "shoulder_swing": {
+          "Right": -1.6,
+          "Left": -30.9
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.763,
+          "Left": -0.791
+        },
+        "f": 76,
+        "pel_x": -0.25,
+        "pel_y": 2.061,
+        "pel_z": 0.0,
+        "pel_yaw": -9.7,
+        "pel_roll": -6.9,
+        "chest_yaw": -16.5,
+        "chest_roll": 1.8,
+        "head_x": -0.24,
+        "head_y": 4.155,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 16.2,
+          "Left": 73.4
+        },
+        "shoulder_swing": {
+          "Right": -1.8,
+          "Left": -31.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.756,
+          "Left": -0.785
+        },
+        "f": 77,
+        "pel_x": -0.25,
+        "pel_y": 2.059,
+        "pel_z": 0.0,
+        "pel_yaw": -9.6,
+        "pel_roll": -7.0,
+        "chest_yaw": -16.4,
+        "chest_roll": 1.8,
+        "head_x": -0.239,
+        "head_y": 4.153,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 15.6,
+          "Left": 74.5
+        },
+        "shoulder_swing": {
+          "Right": -2.1,
+          "Left": -32.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.748,
+          "Left": -0.785
+        },
+        "f": 78,
+        "pel_x": -0.25,
+        "pel_y": 2.058,
+        "pel_z": 0.0,
+        "pel_yaw": -9.5,
+        "pel_roll": -7.0,
+        "chest_yaw": -16.2,
+        "chest_roll": 1.9,
+        "head_x": -0.236,
+        "head_y": 4.15,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 15.5,
+          "Left": 74.9
+        },
+        "shoulder_swing": {
+          "Right": -2.5,
+          "Left": -33.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.738,
+          "Left": -0.787
+        },
+        "f": 79,
+        "pel_x": -0.25,
+        "pel_y": 2.056,
+        "pel_z": 0.0,
+        "pel_yaw": -9.4,
+        "pel_roll": -7.0,
+        "chest_yaw": -16.0,
+        "chest_roll": 1.9,
+        "head_x": -0.234,
+        "head_y": 4.148,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 15.4,
+          "Left": 74.8
+        },
+        "shoulder_swing": {
+          "Right": -2.8,
+          "Left": -34.5
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.727,
+          "Left": -0.79
+        },
+        "f": 80,
+        "pel_x": -0.25,
+        "pel_y": 2.055,
+        "pel_z": 0.0,
+        "pel_yaw": -9.3,
+        "pel_roll": -7.0,
+        "chest_yaw": -15.8,
+        "chest_roll": 2.0,
+        "head_x": -0.232,
+        "head_y": 4.146,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 15.1,
+          "Left": 74.5
+        },
+        "shoulder_swing": {
+          "Right": -3.1,
+          "Left": -35.1
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.714,
+          "Left": -0.794
+        },
+        "f": 81,
+        "pel_x": -0.25,
+        "pel_y": 2.054,
+        "pel_z": 0.0,
+        "pel_yaw": -9.3,
+        "pel_roll": -7.0,
+        "chest_yaw": -15.6,
+        "chest_roll": 2.0,
+        "head_x": -0.23,
+        "head_y": 4.144,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.8,
+          "Left": 73.9
+        },
+        "shoulder_swing": {
+          "Right": -3.4,
+          "Left": -35.5
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.702,
+          "Left": -0.798
+        },
+        "f": 82,
+        "pel_x": -0.25,
+        "pel_y": 2.053,
+        "pel_z": 0.0,
+        "pel_yaw": -9.2,
+        "pel_roll": -7.0,
+        "chest_yaw": -15.5,
+        "chest_roll": 2.1,
+        "head_x": -0.229,
+        "head_y": 4.143,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.4,
+          "Left": 73.0
+        },
+        "shoulder_swing": {
+          "Right": -3.7,
+          "Left": -35.4
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.691,
+          "Left": -0.802
+        },
+        "f": 83,
+        "pel_x": -0.25,
+        "pel_y": 2.053,
+        "pel_z": 0.0,
+        "pel_yaw": -9.2,
+        "pel_roll": -7.0,
+        "chest_yaw": -15.4,
+        "chest_roll": 2.1,
+        "head_x": -0.227,
+        "head_y": 4.142,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.0,
+          "Left": 71.9
+        },
+        "shoulder_swing": {
+          "Right": -3.9,
+          "Left": -35.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.68,
+          "Left": -0.806
+        },
+        "f": 84,
+        "pel_x": -0.25,
+        "pel_y": 2.052,
+        "pel_z": 0.0,
+        "pel_yaw": -9.2,
+        "pel_roll": -7.0,
+        "chest_yaw": -15.4,
+        "chest_roll": 2.1,
+        "head_x": -0.226,
+        "head_y": 4.141,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 13.5,
+          "Left": 70.7
+        },
+        "shoulder_swing": {
+          "Right": -4.1,
+          "Left": -34.4
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.672,
+          "Left": -0.809
+        },
+        "f": 85,
+        "pel_x": -0.249,
+        "pel_y": 2.053,
+        "pel_z": 0.0,
+        "pel_yaw": -9.1,
+        "pel_roll": -6.9,
+        "chest_yaw": -15.3,
+        "chest_roll": 2.2,
+        "head_x": -0.226,
+        "head_y": 4.141,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 13.2,
+          "Left": 69.4
+        },
+        "shoulder_swing": {
+          "Right": -4.2,
+          "Left": -33.8
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.668,
+          "Left": -0.811
+        },
+        "f": 86,
+        "pel_x": -0.247,
+        "pel_y": 2.053,
+        "pel_z": 0.0,
+        "pel_yaw": -9.0,
+        "pel_roll": -6.9,
+        "chest_yaw": -15.1,
+        "chest_roll": 2.2,
+        "head_x": -0.226,
+        "head_y": 4.141,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 12.8,
+          "Left": 68.3
+        },
+        "shoulder_swing": {
+          "Right": -4.2,
+          "Left": -33.3
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.666,
+          "Left": -0.811
+        },
+        "f": 87,
+        "pel_x": -0.243,
+        "pel_y": 2.055,
+        "pel_z": 0.0,
+        "pel_yaw": -8.8,
+        "pel_roll": -6.8,
+        "chest_yaw": -14.9,
+        "chest_roll": 2.4,
+        "head_x": -0.226,
+        "head_y": 4.143,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.5,
+          "Left": 67.5
+        },
+        "shoulder_swing": {
+          "Right": -4.2,
+          "Left": -33.1
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.668,
+          "Left": -0.81
+        },
+        "f": 88,
+        "pel_x": -0.236,
+        "pel_y": 2.057,
+        "pel_z": 0.0,
+        "pel_yaw": -8.5,
+        "pel_roll": -6.6,
+        "chest_yaw": -14.5,
+        "chest_roll": 2.5,
+        "head_x": -0.226,
+        "head_y": 4.145,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.3,
+          "Left": 66.9
+        },
+        "shoulder_swing": {
+          "Right": -4.1,
+          "Left": -33.1
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.672,
+          "Left": -0.808
+        },
+        "f": 89,
+        "pel_x": -0.227,
+        "pel_y": 2.059,
+        "pel_z": 0.0,
+        "pel_yaw": -8.0,
+        "pel_roll": -6.3,
+        "chest_yaw": -14.0,
+        "chest_roll": 2.6,
+        "head_x": -0.226,
+        "head_y": 4.148,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 12.1,
+          "Left": 66.5
+        },
+        "shoulder_swing": {
+          "Right": -3.8,
+          "Left": -33.5
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.679,
+          "Left": -0.805
+        },
+        "f": 90,
+        "pel_x": -0.216,
+        "pel_y": 2.062,
+        "pel_z": 0.0,
+        "pel_yaw": -7.5,
+        "pel_roll": -6.0,
+        "chest_yaw": -13.3,
+        "chest_roll": 2.8,
+        "head_x": -0.225,
+        "head_y": 4.152,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.0,
+          "Left": 66.4
+        },
+        "shoulder_swing": {
+          "Right": -3.4,
+          "Left": -34.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.686,
+          "Left": -0.802
+        },
+        "f": 91,
+        "pel_x": -0.201,
+        "pel_y": 2.066,
+        "pel_z": 0.0,
+        "pel_yaw": -6.8,
+        "pel_roll": -5.6,
+        "chest_yaw": -12.4,
+        "chest_roll": 2.9,
+        "head_x": -0.223,
+        "head_y": 4.156,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 12.0,
+          "Left": 66.1
+        },
+        "shoulder_swing": {
+          "Right": -2.9,
+          "Left": -33.9
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.695,
+          "Left": -0.8
+        },
+        "f": 92,
+        "pel_x": -0.184,
+        "pel_y": 2.07,
+        "pel_z": 0.0,
+        "pel_yaw": -6.1,
+        "pel_roll": -5.2,
+        "chest_yaw": -11.4,
+        "chest_roll": 3.0,
+        "head_x": -0.219,
+        "head_y": 4.161,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.1,
+          "Left": 64.9
+        },
+        "shoulder_swing": {
+          "Right": -2.3,
+          "Left": -31.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.703,
+          "Left": -0.798
+        },
+        "f": 93,
+        "pel_x": -0.163,
+        "pel_y": 2.074,
+        "pel_z": 0.0,
+        "pel_yaw": -5.3,
+        "pel_roll": -4.6,
+        "chest_yaw": -10.2,
+        "chest_roll": 3.1,
+        "head_x": -0.212,
+        "head_y": 4.167,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.2,
+          "Left": 62.8
+        },
+        "shoulder_swing": {
+          "Right": -1.5,
+          "Left": -27.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.712,
+          "Left": -0.797
+        },
+        "f": 94,
+        "pel_x": -0.138,
+        "pel_y": 2.078,
+        "pel_z": 0.0,
+        "pel_yaw": -4.4,
+        "pel_roll": -3.9,
+        "chest_yaw": -8.8,
+        "chest_roll": 3.3,
+        "head_x": -0.201,
+        "head_y": 4.172,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 12.5,
+          "Left": 59.8
+        },
+        "shoulder_swing": {
+          "Right": -0.6,
+          "Left": -22.3
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.719,
+          "Left": -0.797
+        },
+        "f": 95,
+        "pel_x": -0.111,
+        "pel_y": 2.082,
+        "pel_z": 0.0,
+        "pel_yaw": -3.4,
+        "pel_roll": -3.2,
+        "chest_yaw": -7.4,
+        "chest_roll": 3.3,
+        "head_x": -0.187,
+        "head_y": 4.176,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 13.0,
+          "Left": 56.1
+        },
+        "shoulder_swing": {
+          "Right": 0.4,
+          "Left": -16.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.725,
+          "Left": -0.799
+        },
+        "f": 96,
+        "pel_x": -0.081,
+        "pel_y": 2.085,
+        "pel_z": 0.0,
+        "pel_yaw": -2.4,
+        "pel_roll": -2.4,
+        "chest_yaw": -5.9,
+        "chest_roll": 3.4,
+        "head_x": -0.167,
+        "head_y": 4.179,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 13.5,
+          "Left": 52.2
+        },
+        "shoulder_swing": {
+          "Right": 1.4,
+          "Left": -11.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.73,
+          "Left": -0.805
+        },
+        "f": 97,
+        "pel_x": -0.048,
+        "pel_y": 2.088,
+        "pel_z": 0.0,
+        "pel_yaw": -1.5,
+        "pel_roll": -1.5,
+        "chest_yaw": -4.4,
+        "chest_roll": 3.4,
+        "head_x": -0.143,
+        "head_y": 4.182,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.2,
+          "Left": 48.4
+        },
+        "shoulder_swing": {
+          "Right": 2.4,
+          "Left": -8.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.732,
+          "Left": -0.813
+        },
+        "f": 98,
+        "pel_x": -0.013,
+        "pel_y": 2.091,
+        "pel_z": 0.0,
+        "pel_yaw": -0.6,
+        "pel_roll": -0.5,
+        "chest_yaw": -2.9,
+        "chest_roll": 3.4,
+        "head_x": -0.115,
+        "head_y": 4.183,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 15.0,
+          "Left": 45.4
+        },
+        "shoulder_swing": {
+          "Right": 3.3,
+          "Left": -7.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.733,
+          "Left": -0.826
+        },
+        "f": 99,
+        "pel_x": 0.023,
+        "pel_y": 2.092,
+        "pel_z": 0.0,
+        "pel_yaw": 0.3,
+        "pel_roll": 0.5,
+        "chest_yaw": -1.5,
+        "chest_roll": 3.3,
+        "head_x": -0.082,
+        "head_y": 4.182,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 15.9,
+          "Left": 42.8
+        },
+        "shoulder_swing": {
+          "Right": 4.1,
+          "Left": -8.1
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.734,
+          "Left": -0.843
+        },
+        "f": 100,
+        "pel_x": 0.06,
+        "pel_y": 2.092,
+        "pel_z": 0.0,
+        "pel_yaw": 1.0,
+        "pel_roll": 1.5,
+        "chest_yaw": -0.3,
+        "chest_roll": 3.2,
+        "head_x": -0.047,
+        "head_y": 4.181,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 16.8,
+          "Left": 40.3
+        },
+        "shoulder_swing": {
+          "Right": 4.8,
+          "Left": -8.3
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.734,
+          "Left": -0.865
+        },
+        "f": 101,
+        "pel_x": 0.098,
+        "pel_y": 2.092,
+        "pel_z": 0.0,
+        "pel_yaw": 1.7,
+        "pel_roll": 2.5,
+        "chest_yaw": 0.8,
+        "chest_roll": 3.1,
+        "head_x": -0.009,
+        "head_y": 4.179,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 17.7,
+          "Left": 38.0
+        },
+        "shoulder_swing": {
+          "Right": 5.2,
+          "Left": -8.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.735,
+          "Left": -0.892
+        },
+        "f": 102,
+        "pel_x": 0.136,
+        "pel_y": 2.091,
+        "pel_z": 0.0,
+        "pel_yaw": 2.4,
+        "pel_roll": 3.6,
+        "chest_yaw": 1.7,
+        "chest_roll": 2.9,
+        "head_x": 0.03,
+        "head_y": 4.177,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 18.6,
+          "Left": 35.8
+        },
+        "shoulder_swing": {
+          "Right": 5.5,
+          "Left": -6.9
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.737,
+          "Left": -0.92
+        },
+        "f": 103,
+        "pel_x": 0.173,
+        "pel_y": 2.089,
+        "pel_z": 0.0,
+        "pel_yaw": 3.0,
+        "pel_roll": 4.6,
+        "chest_yaw": 2.4,
+        "chest_roll": 2.7,
+        "head_x": 0.069,
+        "head_y": 4.175,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 19.4,
+          "Left": 33.8
+        },
+        "shoulder_swing": {
+          "Right": 5.6,
+          "Left": -4.8
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.738,
+          "Left": -0.948
+        },
+        "f": 104,
+        "pel_x": 0.207,
+        "pel_y": 2.087,
+        "pel_z": 0.0,
+        "pel_yaw": 3.5,
+        "pel_roll": 5.5,
+        "chest_yaw": 2.9,
+        "chest_roll": 2.3,
+        "head_x": 0.108,
+        "head_y": 4.173,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.1,
+          "Left": 31.9
+        },
+        "shoulder_swing": {
+          "Right": 5.5,
+          "Left": -2.0
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.739,
+          "Left": -0.97
+        },
+        "f": 105,
+        "pel_x": 0.237,
+        "pel_y": 2.085,
+        "pel_z": 0.0,
+        "pel_yaw": 4.0,
+        "pel_roll": 6.3,
+        "chest_yaw": 3.1,
+        "chest_roll": 1.8,
+        "head_x": 0.147,
+        "head_y": 4.171,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.6,
+          "Left": 30.2
+        },
+        "shoulder_swing": {
+          "Right": 5.3,
+          "Left": 1.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.741,
+          "Left": -0.984
+        },
+        "f": 106,
+        "pel_x": 0.26,
+        "pel_y": 2.082,
+        "pel_z": 0.0,
+        "pel_yaw": 4.3,
+        "pel_roll": 6.9,
+        "chest_yaw": 3.0,
+        "chest_roll": 1.2,
+        "head_x": 0.183,
+        "head_y": 4.169,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.9,
+          "Left": 28.6
+        },
+        "shoulder_swing": {
+          "Right": 5.1,
+          "Left": 4.3
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.747,
+          "Left": -0.986
+        },
+        "f": 107,
+        "pel_x": 0.275,
+        "pel_y": 2.079,
+        "pel_z": 0.0,
+        "pel_yaw": 4.5,
+        "pel_roll": 7.3,
+        "chest_yaw": 2.8,
+        "chest_roll": 0.5,
+        "head_x": 0.215,
+        "head_y": 4.168,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 21.0,
+          "Left": 27.1
+        },
+        "shoulder_swing": {
+          "Right": 5.0,
+          "Left": 6.8
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.755,
+          "Left": -0.978
+        },
+        "f": 108,
+        "pel_x": 0.28,
+        "pel_y": 2.076,
+        "pel_z": 0.0,
+        "pel_yaw": 4.6,
+        "pel_roll": 7.5,
+        "chest_yaw": 2.4,
+        "chest_roll": -0.3,
+        "head_x": 0.243,
+        "head_y": 4.166,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": 0.0
+        },
+        "elbow_bend": {
+          "Right": 20.9,
+          "Left": 25.8
+        },
+        "shoulder_swing": {
+          "Right": 4.8,
+          "Left": 8.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.764,
+          "Left": -0.954
+        },
+        "f": 109,
+        "pel_x": 0.279,
+        "pel_y": 2.073,
+        "pel_z": 0.0,
+        "pel_yaw": 4.6,
+        "pel_roll": 7.5,
+        "chest_yaw": 2.0,
+        "chest_roll": -1.1,
+        "head_x": 0.264,
+        "head_y": 4.164,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.7,
+          "Left": 24.6
+        },
+        "shoulder_swing": {
+          "Right": 4.7,
+          "Left": 8.3
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.778,
+          "Left": -0.92
+        },
+        "f": 110,
+        "pel_x": 0.278,
+        "pel_y": 2.07,
+        "pel_z": 0.0,
+        "pel_yaw": 4.6,
+        "pel_roll": 7.4,
+        "chest_yaw": 1.6,
+        "chest_roll": -1.6,
+        "head_x": 0.277,
+        "head_y": 4.162,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 20.3,
+          "Left": 23.6
+        },
+        "shoulder_swing": {
+          "Right": 4.5,
+          "Left": 7.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.794,
+          "Left": -0.881
+        },
+        "f": 111,
+        "pel_x": 0.275,
+        "pel_y": 2.068,
+        "pel_z": 0.0,
+        "pel_yaw": 4.5,
+        "pel_roll": 7.4,
+        "chest_yaw": 1.4,
+        "chest_roll": -1.9,
+        "head_x": 0.28,
+        "head_y": 4.16,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 19.9,
+          "Left": 22.7
+        },
+        "shoulder_swing": {
+          "Right": 4.2,
+          "Left": 6.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.808,
+          "Left": -0.841
+        },
+        "f": 112,
+        "pel_x": 0.272,
+        "pel_y": 2.065,
+        "pel_z": 0.0,
+        "pel_yaw": 4.5,
+        "pel_roll": 7.3,
+        "chest_yaw": 1.2,
+        "chest_roll": -1.9,
+        "head_x": 0.277,
+        "head_y": 4.158,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 19.3,
+          "Left": 22.0
+        },
+        "shoulder_swing": {
+          "Right": 3.8,
+          "Left": 5.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.814,
+          "Left": -0.803
+        },
+        "f": 113,
+        "pel_x": 0.269,
+        "pel_y": 2.062,
+        "pel_z": 0.0,
+        "pel_yaw": 4.4,
+        "pel_roll": 7.3,
+        "chest_yaw": 1.1,
+        "chest_roll": -1.9,
+        "head_x": 0.274,
+        "head_y": 4.156,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 18.7,
+          "Left": 21.4
+        },
+        "shoulder_swing": {
+          "Right": 3.2,
+          "Left": 4.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.812,
+          "Left": -0.77
+        },
+        "f": 114,
+        "pel_x": 0.265,
+        "pel_y": 2.06,
+        "pel_z": 0.0,
+        "pel_yaw": 4.4,
+        "pel_roll": 7.2,
+        "chest_yaw": 1.0,
+        "chest_roll": -1.9,
+        "head_x": 0.27,
+        "head_y": 4.154,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 18.1,
+          "Left": 21.0
+        },
+        "shoulder_swing": {
+          "Right": 2.5,
+          "Left": 3.6
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.803,
+          "Left": -0.743
+        },
+        "f": 115,
+        "pel_x": 0.261,
+        "pel_y": 2.058,
+        "pel_z": 0.0,
+        "pel_yaw": 4.3,
+        "pel_roll": 7.1,
+        "chest_yaw": 0.9,
+        "chest_roll": -1.8,
+        "head_x": 0.265,
+        "head_y": 4.152,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 17.4,
+          "Left": 20.7
+        },
+        "shoulder_swing": {
+          "Right": 1.7,
+          "Left": 2.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.787,
+          "Left": -0.723
+        },
+        "f": 116,
+        "pel_x": 0.258,
+        "pel_y": 2.056,
+        "pel_z": 0.0,
+        "pel_yaw": 4.3,
+        "pel_roll": 7.0,
+        "chest_yaw": 0.7,
+        "chest_roll": -1.8,
+        "head_x": 0.26,
+        "head_y": 4.15,
+        "foot_min_y": {
+          "Right": 0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 16.7,
+          "Left": 20.4
+        },
+        "shoulder_swing": {
+          "Right": 1.1,
+          "Left": 1.9
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.767,
+          "Left": -0.711
+        },
+        "f": 117,
+        "pel_x": 0.255,
+        "pel_y": 2.054,
+        "pel_z": 0.0,
+        "pel_yaw": 4.2,
+        "pel_roll": 7.0,
+        "chest_yaw": 0.6,
+        "chest_roll": -1.7,
+        "head_x": 0.255,
+        "head_y": 4.148,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 16.1,
+          "Left": 20.2
+        },
+        "shoulder_swing": {
+          "Right": 0.4,
+          "Left": 1.2
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.744,
+          "Left": -0.705
+        },
+        "f": 118,
+        "pel_x": 0.252,
+        "pel_y": 2.053,
+        "pel_z": 0.0,
+        "pel_yaw": 4.2,
+        "pel_roll": 6.9,
+        "chest_yaw": 0.6,
+        "chest_roll": -1.6,
+        "head_x": 0.251,
+        "head_y": 4.146,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 15.4,
+          "Left": 20.0
+        },
+        "shoulder_swing": {
+          "Right": -0.1,
+          "Left": 0.7
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.719,
+          "Left": -0.699
+        },
+        "f": 119,
+        "pel_x": 0.251,
+        "pel_y": 2.053,
+        "pel_z": 0.0,
+        "pel_yaw": 4.2,
+        "pel_roll": 6.9,
+        "chest_yaw": 0.5,
+        "chest_roll": -1.5,
+        "head_x": 0.246,
+        "head_y": 4.145,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.8,
+          "Left": 19.8
+        },
+        "shoulder_swing": {
+          "Right": -0.6,
+          "Left": 0.3
+        }
+      },
+      {
+        "hand_lateral": {
+          "Right": 0.693,
+          "Left": -0.694
+        },
+        "f": 120,
+        "pel_x": 0.25,
+        "pel_y": 2.052,
+        "pel_z": 0.0,
+        "pel_yaw": 4.2,
+        "pel_roll": 6.9,
+        "chest_yaw": 0.5,
+        "chest_roll": -1.4,
+        "head_x": 0.243,
+        "head_y": 4.144,
+        "foot_min_y": {
+          "Right": -0.0,
+          "Left": -0.0
+        },
+        "elbow_bend": {
+          "Right": 14.2,
+          "Left": 19.6
+        },
+        "shoulder_swing": {
+          "Right": -1.0,
+          "Left": -0.1
+        }
+      }
+    ]
+  },
+  "qa": {
+    "arm_twist": {
+      "twist_max_deg_per_frame": 11.1,
+      "worst_joint": "LeftUpperArm",
+      "reversals_in_swing": 0,
+      "reversals_total": 1,
+      "right_arm_twist_max_deg_per_frame": 4.2,
+      "right_arm_reversals_in_swing": 0
+    },
+    "lowest_body_point_studs": -0.0751,
+    "lowest_part": [
+      "RightLowerLeg",
+      34
+    ],
+    "knee_min_height_studs": {
+      "RightLowerLeg": 1.149,
+      "LeftLowerLeg": 1.205
+    },
+    "lowest_point_note": "lowest_body_point is the lowest box corner; on bent rear legs it is the shin box's ankle-end back corner under the heel (R15 block artifact, below the floor plane). Knees: knee_min_height_studs.",
+    "foot_slide_studs": {
+      "Left": 0.0001,
+      "Right": 0.0001
+    },
+    "foot_min_height": {
+      "Left": -0.0,
+      "Right": -0.0
+    },
+    "ik_unreachable_max_studs": {
+      "Left": 0.0,
+      "Right": 0.0
+    },
+    "body_overlap": {
+      "body_max_studs": 0.02,
+      "body_worst_pair": "RightUpperLeg|LeftUpperLeg",
+      "body_worst_frame": 34,
+      "body_frames_over_0.05": 0,
+      "hip_region_max_studs": 0.069,
+      "worst_pairs": {
+        "RightUpperLeg|LeftUpperLeg": "0.020@34"
+      }
+    },
+    "rbxmx_keyframes": 99,
+    "motor6d_fk_check_max_err_studs": 0.0
+  },
+  "files": {
+    "fbx": "Idle.fbx",
+    "rbxmx": "Idle.rbxmx",
+    "mp4": "Idle.mp4",
+    "sheet": "Idle_sheet.png",
+    "source_blend": "_src/Idle.blend"
+  }
+}

@@ -1,0 +1,99 @@
+{
+ "asset": "Medal_01",
+ "kit": "Emblems",
+ "type": "Medal",
+ "seed": 1,
+ "attempt": "e7",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front and 3/4 silhouette read instantly as a hanging medal (clasp bar, tapered ribbon, ring, octagon token); the top view is only a thin gold bar, which is expected for a flat prop. A15 X/Y error 0.0 and the front outline is mirror-clean, so there is no correctness cap.",
+   "V2": "Clear tiers: large octagon token and ribbon, medium chamfered rim, clasp bar, recessed field and ring, small diamond emblem. Nothing reads as noise.",
+   "V3": "Token and bar are chunky and stylised, but the ribbon is a stiff thick trapezoid slab with a wide dark side face and no fabric cue (no fold, notch or tail). The diamond emblem is small for its field (about 5 px at 64 px). Partly stylised.",
+   "V4": "Consistent small chamfers on the bar, rim (inner and outer), emblem and ring catch light in the studio close-ups. The ribbon's edges are softer and less visible but not razor-sharp.",
+   "V5": "Token studio and flat close-ups are clean: no pinches, seams, z-fighting or cap folds (cap_overlaps 0, flipped 0, self_intersections 0). The ring's 8-sided facets match the octagon motif and read as intentional, not as stray faceting.",
+   "V6": "Disciplined: gold accent, teal in two values (ribbon and field, with a lighter recess wall), and a cream emblem. Strong value contrast holds in the crimson and shadow colourways.",
+   "V7": "584 tris against the small-class target of 600 (ceiling 1500), so it is at or under target.",
+   "V8": "One white LF_VertexColor material with kit gold, cream and one hue in up to three values. Chamfer scale matches the kit and colourways swap cleanly.",
+   "V9": "Studio line is correct: origin at the clasp hang point, CanCollide and CanQuery off, Massless when worn, CollisionFidelity Box, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Give the ribbon a fabric read: thin it, add a slight fold or centre crease, or add a darker stripe in a second value, so it stops reading as a rigid slab",
+   "Enlarge the diamond emblem about 25-35% (or add a small second tier) so the small-detail tier survives at 64 px",
+   "Consider 10-12 segments or smooth normals on the suspension ring so it reads round in close-up rather than faceted"
+  ]
+ ],
+ "params": {
+  "sides": 8,
+  "R": 0.631,
+  "h": 0.1,
+  "relief": 0.04,
+  "rw": 0.403,
+  "rl": 0.93,
+  "stripe": false,
+  "emblem": "diamond"
+ },
+ "tris": 584,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,95 @@
+{
+ "asset": "WallStraight_01",
+ "kit": "Modular",
+ "type": "WallStraight",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front and three-quarter read immediately as a cut-stone wall section with coping and plinth; silhouette and top are a plain slab, which is correct for a tiling 8x2x12 module.",
+   "V2": "Clear: big = wall slab, medium = coping cap, plinth course and staggered ashlar blocks, small = chamfered block edges and mortar recesses.",
+   "V3": "Clean but stiff: blocks are flat, near-square and evenly inset with little size or bulge variation, and the end face is a plain untreated slab - only partly stylised.",
+   "V4": "Every block, the coping and the plinth carry a consistent small chamfer that catches the studio light (face and top close-ups).",
+   "V5": "Studio close-ups are clean, but the flat-light end_section close-up shows a faint stair-stepped/speckled line where the block faces meet the end strip, suggesting a coplanar sliver or z-fight between the block shells and the core (139 cross-shell overlaps).",
+   "V6": "Disciplined: one stone hue in 3 values (light, mid, dark plinth) with the coping in the light value; colourways (brick, sandstone) keep the same scheme.",
+   "V7": "544 tris vs module target 800 / ceiling 2000 - under target.",
+   "V8": "Single LF_VertexColor material, smooth shading, ~0.05-stud chamfers and a 3-value stone hue match the modular kit spec; T1 tiling passes flush on the 2-stud grid.",
+   "V9": "Studio line correct: Anchored, CollisionFidelity Box, CanTouch off, CastShadow on, grid-corner pivot for 2-stud snapping, Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "faint stair-stepped sliver along the block-face / end-strip boundary in flat light (possible coplanar z-fight)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Push the block shells slightly proud of (or inset from) the end strip so no coplanar faces remain at the wall ends",
+   "Add variation: a few taller/wider blocks and a slight face bulge or random tilt so the ashlar feels hand-cut rather than gridded",
+   "Carry the block pattern or a quoin treatment onto the end faces so exposed wall ends do not read as a plain slab"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "style": "stone"
+ },
+ "tris": 544,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

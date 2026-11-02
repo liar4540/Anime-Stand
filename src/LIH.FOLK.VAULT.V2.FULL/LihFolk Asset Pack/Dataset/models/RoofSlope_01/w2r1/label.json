@@ -1,0 +1,98 @@
+{
+ "asset": "RoofSlope_01",
+ "kit": "Modular",
+ "type": "RoofSlope",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "rejected",
+ "score": 5.3,
+ "grades": [
+  1,
+  1,
+  1,
+  1,
+  0,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   1,
+   0,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  5.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 0,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Top view reads as roofing courses; front, three-quarter and silhouette read as a flat slab on a beam rather than a sloped roof piece.",
+   "V2": "Four long strips and a fascia board give big/medium forms, but there are no individual shingles, ridge or nail details; some hierarchy.",
+   "V3": "Shingle courses are four uniform full-width strips; stiff and plank-like with no lap taper, sag or staggered tiles.",
+   "V4": "Shingle strips have consistent chamfers, but the fascia board corners are near-sharp (close_eave_studio); inconsistent.",
+   "V5": "Fine moire/hatched streaking covers the timber fascia face in the front, three-quarter and close_eave studio and flat renders (z-fighting or overlapping shells; 75 cross-shell overlaps); a clear visible artifact.",
+   "V6": "Stone hue in two alternating values plus timber brown secondary; disciplined across colourways.",
+   "V7": "196 tris vs module target 800; under.",
+   "V8": "Vertex colour and chamfers match, but strip shingles and the artifacted fascia are a minor mismatch with the kit finish.",
+   "V9": "Studio line reasonable for a walkable slope (CollisionFidelity Default, grid-corner pivot, white colour); T1 passes on X."
+  }
+ ],
+ "artifacts": [
+  [
+   "z-fighting/moire hatching across the fascia board face",
+   "dark open gap visible behind the fascia at the gable end"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Fix the fascia overlap causing the moire (separate or merge the coincident faces)",
+   "Break the four strips into staggered individual shingles with lapped edges so it reads as a roof at 64 px",
+   "Chamfer the fascia board corners and close the gap at the gable end"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "D": 4,
+  "pitch": "half",
+  "rows": 5
+ },
+ "tris": 196,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

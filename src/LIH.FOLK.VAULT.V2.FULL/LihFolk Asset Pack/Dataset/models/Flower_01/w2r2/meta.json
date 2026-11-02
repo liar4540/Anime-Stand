@@ -1,0 +1,189 @@
+{
+ "asset": "Flower_01",
+ "kit": "Nature",
+ "type": "Flower",
+ "seed": 1,
+ "params": {
+  "heads": 1,
+  "petals": 6,
+  "R": 0.571,
+  "H": 1.345,
+  "leaves": 2
+ },
+ "tris": 520,
+ "budget_class": "small",
+ "budget_target": 600,
+ "budget_ceiling": 1500,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.142,
+  "y": 1.792,
+  "z": 1.564
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "head0_on_stem",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "centre0_on_petals",
+   "gap": 0.0,
+   "penetration": 0.0581,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 81,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "h_lt",
+   "h",
+   "h_dk",
+   "b_lt",
+   "b",
+   "b_dk"
+  ],
+  "primary": "rose",
+  "colourways": [
+   {
+    "name": "rose",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026",
+     "b_lt": "#9BD45E",
+     "b": "#5DA543",
+     "b_dk": "#336F2E"
+    }
+   },
+   {
+    "name": "bluebell",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86",
+     "b_lt": "#9BD45E",
+     "b": "#5DA543",
+     "b_dk": "#336F2E"
+    }
+   },
+   {
+    "name": "lilac",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590",
+     "b_lt": "#9BD45E",
+     "b": "#5DA543",
+     "b_dk": "#336F2E"
+    }
+   },
+   {
+    "name": "sunset",
+    "hue": "ember",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#F2A04A",
+     "h": "#D86A2A",
+     "h_dk": "#93421C",
+     "b_lt": "#9BD45E",
+     "b": "#5DA543",
+     "b_dk": "#336F2E"
+    }
+   },
+   {
+    "name": "blush",
+    "hue": "blossom",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#F7B8D2",
+     "h": "#E2789F",
+     "h_dk": "#A84670",
+     "b_lt": "#9BD45E",
+     "b": "#5DA543",
+     "b_dk": "#336F2E"
+    }
+   }
+  ]
+ },
+ "studio": "Foliage: Anchored; CanCollide off; CanTouch off; CanQuery off; CastShadow on; CollisionFidelity Box; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "flower: 1 cupped 6-petal blooms (petal hue in 3 values, gold centre domes) on green stems, 2 folded leaves",
+ "features": [
+  [
+   "bloom",
+   [
+    0.0,
+    0.0,
+    1.395
+   ],
+   0.9136
+  ],
+  [
+   "leaves",
+   [
+    0.4,
+    -0.2,
+    0.35
+   ],
+   0.6
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r2/Flower_01/Flower_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r2/Flower_01/Flower_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r2/Flower_01/Flower_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r2/Flower_01/Flower_01_silhouette.png",
+  "close_bloom_studio": "Models/Kits/_drafts/r2/Flower_01/Flower_01_close_bloom_studio.png",
+  "close_bloom_flat": "Models/Kits/_drafts/r2/Flower_01/Flower_01_close_bloom_flat.png",
+  "close_leaves_studio": "Models/Kits/_drafts/r2/Flower_01/Flower_01_close_leaves_studio.png",
+  "close_leaves_flat": "Models/Kits/_drafts/r2/Flower_01/Flower_01_close_leaves_flat.png",
+  "cw_bluebell": "Models/Kits/_drafts/r2/Flower_01/Flower_01_cw_bluebell.png",
+  "cw_lilac": "Models/Kits/_drafts/r2/Flower_01/Flower_01_cw_lilac.png",
+  "cw_sunset": "Models/Kits/_drafts/r2/Flower_01/Flower_01_cw_sunset.png",
+  "cw_blush": "Models/Kits/_drafts/r2/Flower_01/Flower_01_cw_blush.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_nature.py:Flower",
+ "made": "2026-10-28"
+}

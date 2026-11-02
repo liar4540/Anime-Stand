@@ -1,0 +1,115 @@
+{
+ "asset": "Pillar_01",
+ "type": "Pillar",
+ "tris": 776,
+ "budget_class": "module",
+ "budget_target": 800,
+ "budget_ceiling": 2000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 3.999,
+  "y": 3.999,
+  "z": 11.999
+ },
+ "origin": "grid corner (world 0, footprint 4.0x4.0x12.0 studs)",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass",
+  "T1": "pass"
+ },
+ "alignment": null,
+ "seats": [
+  {
+   "name": "shaft_on_base",
+   "gap": 0.0,
+   "penetration": 0.07,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "capital_on_shaft",
+   "gap": 0.0,
+   "penetration": 0.3,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 131,
+ "studio": "Modular piece: Anchored; CollisionFidelity Box; CanTouch off; CastShadow on; origin = grid corner (pivot at min x / min y / floor): snap with a 2-stud grid and 90-degree rotations; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "tiling": {
+  "grid": {
+   "footprint": [
+    4.0,
+    4.0,
+    12.0
+   ],
+   "step": 2.0,
+   "on_grid": true,
+   "inside": true,
+   "touches_floor": true,
+   "bbox": [
+    [
+     0.0006,
+     0.0006,
+     0.0006
+    ],
+    [
+     3.9994,
+     3.9994,
+     11.9994
+    ]
+   ],
+   "ok": true
+  },
+  "tiles": [
+   {
+    "axis": "Z",
+    "period": 12.0,
+    "with": "Pillar_01",
+    "other_axis": "Z",
+    "mode": "equal",
+    "a_cells": 5776,
+    "b_cells": 5776,
+    "iou": 1.0,
+    "cover": 1.0,
+    "inside": true,
+    "ok": true
+   }
+  ]
+ },
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "colourways": [
+   "granite",
+   "sandstone",
+   "brick",
+   "slate",
+   "basalt"
+  ]
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "asset": "Badge_13",
+ "kit": "Emblems",
+ "type": "Badge",
+ "seed": 13,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Pointed-heater shield outline reads instantly in front, three-quarter and silhouette; top view is a thin rim bar but still reads as a badge edge-on; outline is mirror-clean and A15 error is 0.0 on X and Y.",
+   "V2": "Clear three tiers: thick gold rim plate (big), recessed teal field (medium), raised cream diamond emblem (small); each separated by a stepped depth change.",
+   "V3": "Chunky rim and soft bevels are stylised, but the diamond emblem is undersized (about a quarter of field width) and a thin flat slab on a flat field, so the face reads plain and primitive rather than exaggerated.",
+   "V4": "Uniform rounded chamfers on rim, field and emblem edges catch a consistent highlight in both close-ups; no razor or blobby edges.",
+   "V5": "Studio and flat close-ups show no patches, pinches, seams or z-fighting; rounded rim corners show a few gentle facet steps in flat light only; A17/A18 pass, 0 flipped faces, 0 cap overlaps.",
+   "V6": "Gold accent, one teal hue in two values plus cream emblem; colourways (crimson, shadow) swap only the field hue, value contrast stays strong.",
+   "V7": "404 tris against a small-class target of 600 (ceiling 1500).",
+   "V8": "One white vertex-colour material, kit gold/cream palette, ~0.045-stud style chamfers and smooth shading match the PASS anchor badge closely.",
+   "V9": "Studio line correct: Anchored, CanCollide off for decor, CollisionFidelity Box, MeshPart.Color white, SmoothPlastic, origin bottom-centre (A12 pass)."
+  }
+ ],
+ "artifacts": [
+  [
+   "minor facet steps on the rounded rim corners visible in flat light (low corner segment count)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Enlarge the emblem (roughly 35-40% of field width) and give it a bevelled/raised centre facet or inner inset so the face has a stronger focal read",
+   "Add a subtle secondary detail (inner bevel line or small studs on the rim) to push stylisation beyond a flat extruded plate",
+   "Add one or two segments to the rim corner rounds to remove the faint faceting in flat light"
+  ]
+ ],
+ "params": {
+  "shape": "pentagon",
+  "W": 1.081,
+  "H": 2.101,
+  "emblem": "diamond",
+  "inset": 0.189
+ },
+ "tris": 404,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

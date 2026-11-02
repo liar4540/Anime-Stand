@@ -1,0 +1,199 @@
+{
+ "asset": "Bush_01",
+ "kit": "Nature",
+ "type": "Bush",
+ "seed": 1,
+ "params": {
+  "R": 1.884,
+  "puffs": 4,
+  "berries": 7,
+  "berry_role": "acc",
+  "stretch": 1.168
+ },
+ "tris": 1328,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 3.669,
+  "y": 3.302,
+  "z": 2.283
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "berry0_on_bush",
+   "gap": 0.0,
+   "penetration": 0.0759,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "berry1_on_bush",
+   "gap": 0.0,
+   "penetration": 0.08193,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "berry2_on_bush",
+   "gap": 0.0,
+   "penetration": 0.09518,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "berry3_on_bush",
+   "gap": 0.0,
+   "penetration": 0.08072,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "berry4_on_bush",
+   "gap": 0.0,
+   "penetration": 0.07749,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "berry5_on_bush",
+   "gap": 0.0,
+   "penetration": 0.07618,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 116,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "summer",
+  "colourways": [
+   {
+    "name": "summer",
+    "hue": "leaf",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#9BD45E",
+     "h": "#5DA543",
+     "h_dk": "#336F2E"
+    }
+   },
+   {
+    "name": "spruce",
+    "hue": "spruce",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#6FBF8A",
+     "h": "#368A5C",
+     "h_dk": "#1F5A3E"
+    }
+   },
+   {
+    "name": "autumn",
+    "hue": "autumn",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#F4B24E",
+     "h": "#E0702E",
+     "h_dk": "#9C3F22"
+    }
+   },
+   {
+    "name": "blossom",
+    "hue": "blossom",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#F7B8D2",
+     "h": "#E2789F",
+     "h_dk": "#A84670"
+    }
+   },
+   {
+    "name": "frost",
+    "hue": "frost",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#BFE6E4",
+     "h": "#7FBFC4",
+     "h_dk": "#4A8790"
+    }
+   }
+  ]
+ },
+ "studio": "Foliage: Anchored; CanCollide off; CanTouch off; CanQuery off; CastShadow on; CollisionFidelity Box; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "bush: one fused 5-puff shell on a flattened base (latitude bands on rings), 7 acc berries",
+ "features": [
+  [
+   "puffs",
+   [
+    1.132,
+    -1.097,
+    1.924
+   ],
+   1.5072
+  ],
+  [
+   "base",
+   [
+    1.32,
+    -0.909,
+    0.24
+   ],
+   1.1303999999999998
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r1/Bush_01/Bush_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r1/Bush_01/Bush_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r1/Bush_01/Bush_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r1/Bush_01/Bush_01_silhouette.png",
+  "close_puffs_studio": "Models/Kits/_drafts/r1/Bush_01/Bush_01_close_puffs_studio.png",
+  "close_puffs_flat": "Models/Kits/_drafts/r1/Bush_01/Bush_01_close_puffs_flat.png",
+  "close_base_studio": "Models/Kits/_drafts/r1/Bush_01/Bush_01_close_base_studio.png",
+  "close_base_flat": "Models/Kits/_drafts/r1/Bush_01/Bush_01_close_base_flat.png",
+  "cw_spruce": "Models/Kits/_drafts/r1/Bush_01/Bush_01_cw_spruce.png",
+  "cw_autumn": "Models/Kits/_drafts/r1/Bush_01/Bush_01_cw_autumn.png",
+  "cw_blossom": "Models/Kits/_drafts/r1/Bush_01/Bush_01_cw_blossom.png",
+  "cw_frost": "Models/Kits/_drafts/r1/Bush_01/Bush_01_cw_frost.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_nature.py:Bush",
+ "made": "2026-10-28"
+}

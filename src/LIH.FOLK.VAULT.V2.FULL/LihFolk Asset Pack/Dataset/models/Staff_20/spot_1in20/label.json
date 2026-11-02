@@ -1,0 +1,99 @@
+{
+ "asset": "Staff_20",
+ "kit": "Weapons",
+ "type": "Staff",
+ "seed": 20,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 10.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette read instantly as a gem-tipped staff (pointed bulb head, collar ring, flared butt); top view shows a centred gem with 4 evenly spaced prongs; A15 X/Y error 0.0.",
+   "V2": "Clear big (long teal haft) / medium (gold claw cup + crystal head, collar ring, butt cap) / small (4 ink grip bands, prong tips) hierarchy.",
+   "V3": "Confident stylised proportions: flared gold cup with claw prongs cradling an oversized faceted crystal, chunky collar and butt cap, slight haft taper; nothing reads as a stiff primitive.",
+   "V4": "Consistent small chamfers catch light on collar ring, cup rim, prong faces and butt cap; grip bands have soft rounded edges; no razor or blobby edges.",
+   "V5": "Close-ups show clean smooth shading on haft, cup and prongs, intentional crisp facets on the crystal, no seams, pinches or z-fighting; only mildly polygonal outline on cup rim and collar ring.",
+   "V6": "Disciplined: one teal hue in 3 values (haft, grip band, crystal) + gold accent + ink dark bands; colourways swap the hue cleanly.",
+   "V7": "1840 tris vs weapon target 2500 (ceiling 4000), at/under target.",
+   "V8": "One white LF_VertexColor material with vertex colours, kit gold/ink/teal palette, ~kit chamfer size; matches the reference kit pieces.",
+   "V9": "Studio line correct: Tool Handle, origin at grip, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Mildly polygonal silhouette on the gold cup rim and collar ring in close-up (low radial segment count); no shading artifacts."
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Raise radial segments on the cup rim, collar ring and grip bands to smooth their outlines (budget headroom of ~660 tris).",
+   "Optionally enlarge the head slightly relative to the 6.9-stud haft for stronger 64 px read."
+  ]
+ ],
+ "params": {
+  "H": 5.493,
+  "r": 0.216,
+  "head": "crystal",
+  "wraps": 4,
+  "orb": 0.523,
+  "prongs": 4,
+  "flare": 1.428
+ },
+ "tris": 1840,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

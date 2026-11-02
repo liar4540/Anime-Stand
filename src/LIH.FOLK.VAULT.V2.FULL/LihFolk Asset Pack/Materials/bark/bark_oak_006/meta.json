@@ -1,0 +1,116 @@
+{
+ "id": "bark_oak_006",
+ "family": "bark",
+ "theme": "oak",
+ "index": 6,
+ "seed": 1049.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_bark.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Wood",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "wood",
+  "bark",
+  "tree",
+  "nature",
+  "oak"
+ ],
+ "colors": [
+  [
+   "#71553c",
+   0.281
+  ],
+  [
+   "#886c4a",
+   0.269
+  ],
+  [
+   "#453324",
+   0.249
+  ],
+  [
+   "#5a422f",
+   0.201
+  ]
+ ],
+ "params": {
+  "C1": "#916e4b",
+  "C2": "#614533",
+  "C3": "#413021",
+  "C4": "#a48a68",
+  "C5": "#618c2e",
+  "PlatesX": 9.0,
+  "PlatesY": 4.0,
+  "Ridges": 19.0,
+  "Depth": 0.7282026639331448,
+  "Birch": 0.0,
+  "Moss": 0.0,
+  "Seed": 1049.0
+ },
+ "normal_depth_px": 30.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.417,
+   "Color_Neutral": 0.42,
+   "Normal": 0.427,
+   "Roughness": 0.376,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.5,
+   0.96
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.002,
+   0.002
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 43.8,
+   "diel_luma_p99": 125.3,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.872,
+   "rough_min": 0.851,
+   "rough_expected": [
+    0.6,
+    0.95
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.1659,
+  "M_neutral_mean": 0.738,
+  "M_neutral_range_p5_p95": [
+   0.46,
+   0.903
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 40.3,
+ "preview": "preview.jpg"
+}

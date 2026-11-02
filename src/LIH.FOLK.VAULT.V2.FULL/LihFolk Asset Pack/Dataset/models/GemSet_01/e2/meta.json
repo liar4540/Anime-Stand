@@ -1,0 +1,238 @@
+{
+ "asset": "GemSet_01",
+ "kit": "Emblems",
+ "type": "GemSet",
+ "seed": 1,
+ "params": {
+  "cut": "step",
+  "sides": 8,
+  "r": 0.461,
+  "prongs": 4,
+  "bezel": 0.165,
+  "h": 0.876
+ },
+ "tris": 584,
+ "budget_class": "small",
+ "budget_target": 600,
+ "budget_ceiling": 1500,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 0.977,
+  "y": 0.977,
+  "z": 0.886
+ },
+ "origin": "bottom",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "gem_on_cup_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "gem_in_cup",
+   "gap": 0.0,
+   "penetration": 0.06745,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong0_holds_gem",
+   "gap": 0.0,
+   "penetration": 0.03649,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong0_on_cup",
+   "gap": 0.0,
+   "penetration": 0.03754,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong1_holds_gem",
+   "gap": 0.0,
+   "penetration": 0.03649,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong1_on_cup",
+   "gap": 0.0,
+   "penetration": 0.03754,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong2_holds_gem",
+   "gap": 0.0,
+   "penetration": 0.03649,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong2_on_cup",
+   "gap": 0.0,
+   "penetration": 0.03754,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong3_holds_gem",
+   "gap": 0.0,
+   "penetration": 0.03649,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong3_on_cup",
+   "gap": 0.0,
+   "penetration": 0.03754,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 116,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "acc_dk",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590"
+    }
+   }
+  ]
+ },
+ "studio": "Pickup / socket gem: origin bottom-centre (sits in a slot); CanCollide off, CanTouch on, CollisionFidelity Box; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "step-cut gem in a gold cup with 4 prongs; hue facets in 3 values",
+ "features": [
+  [
+   "gem",
+   [
+    0.0,
+    0.0,
+    0.746
+   ],
+   0.5993
+  ],
+  [
+   "setting",
+   [
+    0.323,
+    0.0,
+    0.313
+   ],
+   0.3227
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/e2/GemSet_01/GemSet_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/e2/GemSet_01/GemSet_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/e2/GemSet_01/GemSet_01_top.png",
+  "silhouette": "Models/Kits/_drafts/e2/GemSet_01/GemSet_01_silhouette.png",
+  "close_gem_studio": "Models/Kits/_drafts/e2/GemSet_01/GemSet_01_close_gem_studio.png",
+  "close_gem_flat": "Models/Kits/_drafts/e2/GemSet_01/GemSet_01_close_gem_flat.png",
+  "close_setting_studio": "Models/Kits/_drafts/e2/GemSet_01/GemSet_01_close_setting_studio.png",
+  "close_setting_flat": "Models/Kits/_drafts/e2/GemSet_01/GemSet_01_close_setting_flat.png",
+  "cw_royal": "Models/Kits/_drafts/e2/GemSet_01/GemSet_01_cw_royal.png",
+  "cw_crimson": "Models/Kits/_drafts/e2/GemSet_01/GemSet_01_cw_crimson.png",
+  "cw_verdant": "Models/Kits/_drafts/e2/GemSet_01/GemSet_01_cw_verdant.png",
+  "cw_shadow": "Models/Kits/_drafts/e2/GemSet_01/GemSet_01_cw_shadow.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_emblems.py:GemSet",
+ "made": "2026-10-28"
+}

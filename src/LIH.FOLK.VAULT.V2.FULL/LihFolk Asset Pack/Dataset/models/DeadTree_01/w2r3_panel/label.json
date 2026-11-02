@@ -1,0 +1,167 @@
+{
+ "asset": "DeadTree_01",
+ "kit": "Nature",
+ "type": "DeadTree",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 6.7,
+ "grades": [
+  1,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7,
+  6.7,
+  6.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.7,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Bare flared trunk with upswept branches reads as a dead tree in front, three-quarter and silhouette; top view shows a clear star of limbs. Recognisable at 64 px.",
+   "V2": "Big trunk, medium 5 branches, small twigs, grain stripes and an end-grain cap on the snapped top: clear hierarchy.",
+   "V3": "Stylised, but the limbs are smooth uniform horn/tusk shapes with pointed tan tips, and one lower limb hooks back toward the trunk like a claw; reads more antler than wood, only partly convincing.",
+   "V4": "Trunk bark grooves are soft, but branch tips are needle-sharp points and branch-to-trunk junctions are hard, unblended intersections; inconsistent.",
+   "V5": "Fork close-up shows branches as separate tubes jammed into the trunk with hard seams and a visible blunt branch end (dark hooked stub on the left limb); roots close-up shows a jagged folded notch on the left side of the root flare.",
+   "V6": "Bark brown in 2-3 values (body, groove, light tips/end-grain); disciplined, and the ash/birch colourways stay within one hue.",
+   "V7": "1368 tris vs tree target 2000 (ceiling 5000): under target.",
+   "V8": "One vertex-colour material and kit palette, but branches are not fused smooth shells as the nature kit specifies, and the needle tips clash with the soft kit look; minor mismatch.",
+   "V9": "Studio line: Anchored, Hull collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre: correct."
+  },
+  {
+   "V1": "Bare trunk with upswept branches reads as a dead tree in front, three-quarter and silhouette, but the top view is a spiky star of tusks, and a visible branch-junction failure (see V3/V5) caps this at 1.",
+   "V2": "Clear tiers: tapered trunk with root flare, five medium branches, small side twigs.",
+   "V3": "Branches are uniform smooth curved horns with pale pointed tips, reading more like antlers/tusks than gnarled dead wood; one branch butt hooks out of the trunk side (crown and fork close-ups) instead of fusing in, a visible junction failure.",
+   "V4": "Trunk uses hard flat bark-stripe facets and a sharp root fin, while branches are soft smooth tubes with hard colour bands at the tips; edge language is inconsistent.",
+   "V5": "Close-ups show a curled branch-end stub sitting on the trunk surface (fork/crown studio), a thin jagged sliver along the left root flare (roots studio), and an abrupt seam where each branch meets the trunk with no fillet.",
+   "V6": "One bark hue in 3 values (stripes) plus pale tip accent; ash and birch colourways keep the same discipline.",
+   "V7": "1368 tris vs tree target 2000 - under target.",
+   "V8": "Single LF_VertexColor material and bark palette are right, but branches are separate tubes pushed into the trunk rather than fused smooth shells, and the faceted stripe trunk differs from the smooth-shell organic standard.",
+   "V9": "Studio line: Anchored, Hull collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre."
+  },
+  {
+   "V1": "Front, 3/4 and silhouette read as a bare dead tree, but a visible seating failure (branch butt ends protruding from the trunk surface, see V5) caps this at 1; top view is a clear star of limbs.",
+   "V2": "Big tapered trunk and medium curved limbs read, small tier is only 3 thin twig spikes and pale tips; limbs are near-identical horn shapes so hierarchy is only partly there.",
+   "V3": "Ribbed flared trunk is nicely stylised, but the limbs are uniform smooth horn/antler curves with needle tips rather than gnarled branches; capped at 1 by the seating failure anyway.",
+   "V4": "Trunk has sharp-edged vertical ribs and a jagged flare, while branches are soft smooth tubes with hard flat butt ends; edge treatment is inconsistent between parts.",
+   "V5": "Branch joints are not fused: in the fork close-up the right limb's flat butt end sticks out past the trunk silhouette and the upper-left limb shows a hooked stub with a dark concave end; the roots close-up shows a jagged notch crease on the left side of the trunk flare.",
+   "V6": "Bark brown in 3 values (dark rib grooves, mid bark, pale tips/heartwood cap); birch and ash colourways stay disciplined.",
+   "V7": "1368 tris vs tree target 2000 (ceiling 5000).",
+   "V8": "One white vertex-colour material and bark palette fit, but the kit expects fused smooth organic shells; here limbs are separate tubes with visible butt ends, a mismatch.",
+   "V9": "Anchored, Hull collision, CanTouch off, SmoothPlastic, MeshPart.Color white, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Hard unblended seams where branches enter the trunk",
+   "Visible blunt branch stub on the left lower limb at the fork",
+   "Jagged folded notch on the left side of the root flare"
+  ],
+  [
+   "Branch butt hooks out of the trunk side as a visible curled stub (DeadTree_01_close_fork_studio.png, DeadTree_01_close_crown_studio.png)",
+   "Thin jagged fin/sliver on the left edge of the root flare (DeadTree_01_close_roots_studio.png)",
+   "Hard unfilleted seams where branches enter the trunk"
+  ],
+  [
+   "Branch butt end protruding from the trunk side at the lower-right limb (fork close-up)",
+   "Hooked stub with dark concave end at the upper-left limb joint (crown and fork close-ups)",
+   "Jagged notch crease on the left side of the trunk flare (roots close-up)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Fuse branches into the trunk (union/remesh or a flared collar at each junction) so joins are smooth shells",
+   "Round off the needle tips into blunt broken-off stubs and add slight kinks so limbs read as wood, not horns",
+   "Clean the root-flare notch and give the flare 3-4 distinct root buttresses"
+  ],
+  [
+   "Bury every branch butt fully inside the trunk (or fuse with a fillet) so no branch end shows outside",
+   "Fix the root-flare sliver and give the flare 3-4 distinct root lobes",
+   "Make branches gnarled: vary thickness, add kinks and taper, drop the uniform horn curve and pale tip bands"
+  ],
+  [
+   "Fuse limbs into the trunk (boolean union / bridge with a collar) and bury or remove the visible butt ends",
+   "Fix the trunk-flare notch on the left side of the base",
+   "Make limbs gnarlier and varied (kinks, forks, different thickness) instead of identical horn curves, and add a few more twigs for the small tier",
+   "Soften the trunk rib edges to match the branches' edge treatment"
+  ]
+ ],
+ "params": {
+  "H": 5.005,
+  "r0": 0.706,
+  "twist": 66.327,
+  "branches": 5,
+  "lean": -0.135
+ },
+ "tris": 1368,
+ "budget_class": "tree",
+ "date": "2026-10-28"
+}

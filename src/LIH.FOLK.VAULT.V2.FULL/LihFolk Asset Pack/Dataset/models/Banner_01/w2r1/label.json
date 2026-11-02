@@ -1,0 +1,99 @@
+{
+ "asset": "Banner_01",
+ "kit": "Furniture",
+ "type": "Banner",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "The front, three-quarter and silhouette clearly read as a standing banner on a pole, and the top view shows the bar, finial and base disc.",
+   "V2": "Clear tiers: cloth and pole (big), base disc and crossbar (medium), finial balls, end knobs, top band and emblem (small).",
+   "V3": "The cloth is a perfectly flat rigid rectangle with no folds, sway or tail cut, and the emblem is an ambiguous notched shape that reads as a cursor arrow in the three-quarter view, so the stylisation is only partial.",
+   "V4": "Base and bar are rounded, but the cloth panel has thin hard edges and a square bottom with no softening, so edge treatment is inconsistent.",
+   "V5": "Close-finial studio shows visible low-poly faceting on the gold sphere, and the cloth/emblem are clean otherwise. Minor.",
+   "V6": "One cloth hue in 2 values (body plus darker top band), wood pole, gold fittings and an ink base rim. Disciplined, and the crimson and shadow colourways hold.",
+   "V7": "956 tris against a medium target of 2000, so it is under target.",
+   "V8": "Gold #E8AE38-style fittings, ink base and single vertex-colour material match, but the faceted finial sphere and flat unchamfered cloth card are slightly off the smooth, chamfered kit look.",
+   "V9": "Studio line: Anchored, Box fidelity, CanTouch off, Color white, SmoothPlastic, origin bottom-centre. A15 X error 0.0, emblem offset 0.0. Correct."
+  }
+ ],
+ "artifacts": [
+  [
+   "faceted low-poly finial sphere"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Give the cloth gentle vertical folds and a shaped tail (swallowtail or pointed) so it reads as fabric, not a board",
+   "Replace the emblem with a clearly readable symbol (star, crest, crown) that does not look like an arrow cursor",
+   "Add segments or weighted normals to the finial spheres and a small chamfer on the cloth edges"
+  ]
+ ],
+ "params": {
+  "H": 7.309,
+  "Wc": 2.425,
+  "Lc": 3.331,
+  "tail": "flat",
+  "icon": "star",
+  "wave": 0.121
+ },
+ "tris": 956,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

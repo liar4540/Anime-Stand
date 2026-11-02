@@ -1,0 +1,232 @@
+{
+ "asset": "MushroomTree_01",
+ "kit": "Nature",
+ "type": "MushroomTree",
+ "seed": 1,
+ "params": {
+  "Hs": 5.331,
+  "rs": 0.58,
+  "Rc": 2.753,
+  "bend": 0.462,
+  "spots": 7,
+  "kids": 1
+ },
+ "tris": 1760,
+ "budget_class": "tree",
+ "budget_target": 2000,
+ "budget_ceiling": 5000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 5.671,
+  "y": 5.64,
+  "z": 7.368
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "MushroomTree_01_cap_on_stem",
+   "gap": 0.0,
+   "penetration": 1.93412,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot0_on_cap",
+   "gap": 0.0,
+   "penetration": 0.16483,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot1_on_cap",
+   "gap": 0.0,
+   "penetration": 0.15361,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot2_on_cap",
+   "gap": 0.0,
+   "penetration": 0.16413,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot3_on_cap",
+   "gap": 0.0,
+   "penetration": 0.15961,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot4_on_cap",
+   "gap": 0.0,
+   "penetration": 0.15894,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot5_on_cap",
+   "gap": 0.0,
+   "penetration": 0.16297,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_spot6_on_cap",
+   "gap": 0.0,
+   "penetration": 0.16067,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "MushroomTree_01_kid0_cap_on_stem",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 190,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "cream",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "crimson",
+  "colourways": [
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "violet",
+    "hue": "violet",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   },
+   {
+    "name": "ember",
+    "hue": "ember",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#F2A04A",
+     "h": "#D86A2A",
+     "h_dk": "#93421C"
+    }
+   },
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "giant mushroom: bent cream stem with flared foot, domed cap (dark gills with radial grooves, light rim band), 7 cream spots, 1 small mushrooms",
+ "features": [
+  [
+   "cap_spots",
+   [
+    1.098,
+    -1.25,
+    7.068
+   ],
+   1.9271
+  ],
+  [
+   "gills",
+   [
+    -0.048,
+    -0.004,
+    5.031
+   ],
+   2.2024000000000004
+  ],
+  [
+   "base",
+   [
+    0.228,
+    0.018,
+    0.6
+   ],
+   1.6
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_silhouette.png",
+  "close_cap_spots_studio": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_close_cap_spots_studio.png",
+  "close_cap_spots_flat": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_close_cap_spots_flat.png",
+  "close_gills_studio": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_close_gills_studio.png",
+  "close_gills_flat": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_close_gills_flat.png",
+  "close_base_studio": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_close_base_studio.png",
+  "close_base_flat": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_close_base_flat.png",
+  "cw_violet": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_cw_violet.png",
+  "cw_royal": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_cw_royal.png",
+  "cw_ember": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_cw_ember.png",
+  "cw_teal": "Models/Kits/_drafts/r2/MushroomTree_01/MushroomTree_01_cw_teal.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_nature.py:MushroomTree",
+ "made": "2026-10-28"
+}

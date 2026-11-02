@@ -1,0 +1,80 @@
+{
+ "crescent_single_thick": {
+  "pass": true,
+  "fails": [],
+  "tris": 212,
+  "class": "tiny",
+  "dims": [
+   1.998,
+   1.174,
+   0.07
+  ],
+  "budget_note": "over target - justify or simplify",
+  "note": "main single crescent, thick middle, tapered tips"
+ },
+ "crescent_single_thin": {
+  "pass": true,
+  "fails": [],
+  "tris": 180,
+  "class": "tiny",
+  "dims": [
+   1.97,
+   0.828,
+   0.05
+  ],
+  "budget_note": "over target - justify or simplify",
+  "note": "thin filament crescent for layering or quick jabs"
+ },
+ "ground_ring": {
+  "pass": true,
+  "fails": [],
+  "tris": 320,
+  "class": "small",
+  "dims": [
+   2.0,
+   2.0,
+   0.01
+  ],
+  "budget_note": "ok",
+  "note": "flat closed annulus for ground shock rings (u around, v radial)"
+ },
+ "crescent_single_thick_hd": {
+  "pass": true,
+  "fails": [],
+  "tris": 580,
+  "class": "small",
+  "dims": [
+   2.0,
+   1.174,
+   0.07
+  ],
+  "budget_note": "ok",
+  "note": "crescent_single_thick with 72 segments: smooth outline at 8+ stud radius (SlashSweep, wave 2)"
+ },
+ "crystal": {
+  "pass": true,
+  "fails": [],
+  "tris": 22,
+  "class": "tiny",
+  "dims": [
+   0.866,
+   1.0,
+   1.0
+  ],
+  "budget_note": "ok",
+  "note": "hexagonal ice prism, flat facets, 1 x 1 stud, length along Y in Roblox (IceExplosion spikes)"
+ },
+ "ice_mound": {
+  "pass": true,
+  "fails": [],
+  "tris": 46,
+  "class": "tiny",
+  "dims": [
+   1.0,
+   1.0,
+   0.35
+  ],
+  "budget_note": "ok",
+  "note": "low faceted icy mound (1 stud wide) to bed spike bases in (IceExplosion)"
+ }
+}

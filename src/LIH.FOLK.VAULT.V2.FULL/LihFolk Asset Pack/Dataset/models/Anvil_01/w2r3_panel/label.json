@@ -1,0 +1,163 @@
+{
+ "asset": "Anvil_01",
+ "kit": "Furniture",
+ "type": "Anvil",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.3,
+  7.7,
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.6,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Anvil-on-stump reads from front, 3/4, top and silhouette (horn + face T-profile over a banded round stump); anvil waist centred on the stump and seated (anvil_on_stump gap 0, A15 Y 0.0).",
+   "V2": "Clear: stump and anvil face block (big), waist/foot and horn, iron hoops (medium), hardy hole and cream stump-top ring (small).",
+   "V3": "Anvil body is a straight box T with a plain cone horn and no waisting or curved horn underside; the stump flare helps but the anvil reads as stiff primitives.",
+   "V4": "Consistent chamfers on face block, foot plate, stump rims and hoops catch light in face and stump close-ups.",
+   "V5": "Horn surface is uneven: wavy/lumpy outline and shading where the cone meets the body (horn studio + flat close-ups); stump shows strong flat 12-sided facets that read as low-poly rather than designed bark.",
+   "V6": "Disciplined: steel grey anvil in 2 values, wood stump in 2 values, ink iron hoops, cream end-grain ring; colourways only change the stump.",
+   "V7": "1120 tris vs 2000 medium target.",
+   "V8": "One LF_VertexColor material, steel greys, ink iron and chamfers match, but the hard-faceted stump departs from the kit's smooth weighted-normal shading.",
+   "V9": "Anchored, Hull collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates pass."
+  },
+  {
+   "V1": "Classic anvil-on-stump outline (horn, face, waist, banded stump) reads from front, three-quarter, top and silhouette; A15 Y error 0.0 and the waist is centred over the stump.",
+   "V2": "Big anvil + stump masses, medium waist foot and iron bands, small hardy hole and cream cut-face ring - clear layering.",
+   "V3": "Anvil body is a straight-sided box with a plain cone horn and the stump a straight faceted cylinder with a slight flare; only partly stylised (no chunky taper, flared heel or chunky horn curve).",
+   "V4": "Anvil face, waist and foot carry consistent chamfers that catch light, but the 12-sided stump has hard, unsoftened facet edges and the horn meets the body with an un-bevelled step.",
+   "V5": "Stump shows stripe-like flat faceting in the studio close-ups and colourways, and the horn-to-body junction shows a pinched shading seam in close_horn_studio.",
+   "V6": "Steel grey in two values for the anvil, wood brown stump, ink iron bands, cream cut face - disciplined.",
+   "V7": "1120 tris vs medium target 2000: under target.",
+   "V8": "Kit palette and anvil chamfers match, but the visibly faceted low-segment stump departs from the smooth weighted-normal kit look.",
+   "V9": "Studio line correct: anchored, Hull collision, CanTouch off, bottom-centre origin, MeshPart white with vertex colours."
+  },
+  {
+   "V1": "Horned anvil on a hooped stump reads clearly in front, three-quarter and silhouette; top view still reads via horn + rectangular face + hardy hole.",
+   "V2": "Big (stump), medium (anvil body, horn, two iron hoops, foot plinth), small (hardy hole, cream cut-ring on the stump) hierarchy is clear.",
+   "V3": "Horn and flared foot help, but the body and waist are straight rectangular blocks with no heel taper or waist pinch, so the anvil reads partly as stiff primitives.",
+   "V4": "Anvil face and foot carry consistent chamfers, but the stump is a hard-edged 16-sided prism whose polygon edges read razor-like instead of bevelled.",
+   "V5": "Stump shows stray faceting (flat polygon bands in the stump-top close-up), and the horn joins the body as a narrower cone stepping out of the body face in the horn close-up.",
+   "V6": "Steel grey anvil in 2-3 values, one wood hue for the stump, ink hoops, cream cut-ring; disciplined.",
+   "V7": "1120 tris vs medium target 2000.",
+   "V8": "Steel greys, ink iron and wood match the kit palette, but the hard faceted stump departs from the smooth weighted-normal, chamfered kit finish.",
+   "V9": "Anchored, Hull collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; A1-A18 pass, Y symmetry 0.0."
+  }
+ ],
+ "artifacts": [
+  [
+   "Wavy/lumpy horn surface and outline near its root",
+   "Hard flat faceting on the round stump"
+  ],
+  [
+   "Visible flat faceting stripes on the 12-sided stump",
+   "Pinched shading / hard step where the cone horn meets the anvil body"
+  ],
+  [
+   "faceted hard-edged stump",
+   "horn-to-body step where the cone base is narrower than the body end"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Rebuild the horn as a smooth, slightly downward-curving taper that blends into the face block",
+   "Give the anvil a waisted body (concave sides, flared foot) and a step/table under the face for a confident stylised profile",
+   "Smooth the stump (more segments or weighted normals) or make the facets deliberate bark planks"
+  ],
+  [
+   "Raise stump segments or smooth-shade it with weighted normals so it reads round, and add growth rings / bark lip for a stump read",
+   "Fuse the horn into the body with a curved transition and a slight upward sweep instead of a plain cone",
+   "Give the anvil body a flared heel and waisted taper so it reads less like a box primitive"
+  ],
+  [
+   "Smooth the stump (more segments or weighted normals with a soft chamfer) so it reads as a rounded log",
+   "Blend the horn into the body with a matching cross-section instead of a cone stepping out of the face",
+   "Pinch the waist and taper the heel so the anvil body reads less like stacked boxes"
+  ]
+ ],
+ "params": {
+  "L": 3.182,
+  "Wd": 0.983,
+  "Ha": 1.567,
+  "stump": 1.631,
+  "Rs": 1.139
+ },
+ "tris": 1120,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

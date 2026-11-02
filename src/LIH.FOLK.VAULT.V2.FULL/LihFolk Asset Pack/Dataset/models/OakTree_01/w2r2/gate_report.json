@@ -1,0 +1,77 @@
+{
+ "asset": "OakTree_01",
+ "type": "OakTree",
+ "tris": 1868,
+ "budget_class": "tree",
+ "budget_target": 2000,
+ "budget_ceiling": 5000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 6.473,
+  "y": 6.477,
+  "z": 8.491
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "alignment": null,
+ "seats": [
+  {
+   "name": "canopy_on_trunk",
+   "gap": 0.0,
+   "penetration": 0.36139,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "branch0_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.43601,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "branch1_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.45677,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 120,
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull (trunk-only Box/Cylinder part for walk-through canopies); CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "colourways": [
+   "summer",
+   "spruce",
+   "autumn",
+   "blossom",
+   "frost"
+  ]
+ }
+}

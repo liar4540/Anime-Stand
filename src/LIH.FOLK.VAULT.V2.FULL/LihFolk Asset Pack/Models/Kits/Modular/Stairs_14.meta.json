@@ -1,0 +1,196 @@
+{
+ "asset": "Stairs_14",
+ "kit": "Modular",
+ "type": "Stairs",
+ "seed": 14,
+ "params": {
+  "W": 4,
+  "rise": 4,
+  "cheeks": true,
+  "split": true
+ },
+ "tris": 420,
+ "budget_class": "module",
+ "budget_target": 800,
+ "budget_ceiling": 2000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 3.999,
+  "y": 7.999,
+  "z": 4.849
+ },
+ "origin": "grid corner (world 0, footprint 4x8x5.0 studs)",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass",
+  "T1": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 81,
+ "tiling": {
+  "grid": {
+   "footprint": [
+    4,
+    8,
+    5.0
+   ],
+   "step": 2.0,
+   "on_grid": true,
+   "inside": true,
+   "touches_floor": true,
+   "bbox": [
+    [
+     0.0006,
+     0.0006,
+     0.0006
+    ],
+    [
+     3.9994,
+     7.9994,
+     4.8494
+    ]
+   ],
+   "ok": true
+  },
+  "tiles": [
+   {
+    "axis": "X",
+    "period": 4,
+    "with": "Stairs_14",
+    "other_axis": "X",
+    "mode": "equal",
+    "a_cells": 10484,
+    "b_cells": 10484,
+    "iou": 1.0,
+    "cover": 1.0,
+    "inside": true,
+    "ok": true
+   }
+  ]
+ },
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "granite",
+  "colourways": [
+   {
+    "name": "granite",
+    "hue": "stone",
+    "roles": {
+     "h_lt": "#C4C6CC",
+     "h": "#9497A3",
+     "h_dk": "#62656F"
+    }
+   },
+   {
+    "name": "sandstone",
+    "hue": "sand",
+    "roles": {
+     "h_lt": "#E6CB98",
+     "h": "#C29C66",
+     "h_dk": "#8A6A40"
+    }
+   },
+   {
+    "name": "brick",
+    "hue": "brick",
+    "roles": {
+     "h_lt": "#DB7F62",
+     "h": "#B0503B",
+     "h_dk": "#763126"
+    }
+   },
+   {
+    "name": "slate",
+    "hue": "slate",
+    "roles": {
+     "h_lt": "#A9B6C8",
+     "h": "#71829A",
+     "h_dk": "#46546B"
+    }
+   },
+   {
+    "name": "basalt",
+    "hue": "basalt",
+    "roles": {
+     "h_lt": "#8F8C99",
+     "h": "#64616E",
+     "h_dk": "#403E49"
+    }
+   }
+  ]
+ },
+ "studio": "Modular piece: Anchored; CollisionFidelity Default (or a wedge Part for smooth walking); CanTouch off; CastShadow on; origin = grid corner (pivot at min x / min y / floor): snap with a 2-stud grid and 90-degree rotations; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "stone stairs 4 wide, rise 4 over 8 run: 4 1-stud risers, chamfered treads in 2 values on a dark body, stone cheek walls; tiles along X",
+ "features": [
+  [
+   "steps",
+   [
+    2.0,
+    3.2,
+    2.0
+   ],
+   2.4
+  ],
+  [
+   "side",
+   [
+    4.0,
+    4.0,
+    1.6
+   ],
+   2.4
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Modular/Stairs_14_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 8.7,
+  "basis": "panel x3 median",
+  "reviewed": "Stairs_01 w2r3_panel (indiv 7.7/9.3/8.7); fix rounds: w2r1 6.3, w2r2 8.7",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_modular.py:Stairs",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Modular/Stairs_14.glb",
+  "blend": "Models/Kits/Modular/Stairs_14.blend",
+  "turntable": "Models/Kits/Modular/Stairs_14_turntable.mp4",
+  "preview": "Models/Kits/Modular/Stairs_14_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Modular/Stairs_14_preview.jpg"
+}

@@ -1,0 +1,96 @@
+{
+ "asset": "FloorPlanks_01",
+ "kit": "Modular",
+ "type": "FloorPlanks",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "rejected",
+ "score": 6.0,
+ "grades": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  6.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Top view reads clearly as a plank floor; front, three-quarter and silhouette read as a plain box since most of the height is an undetailed base block.",
+   "V2": "Four planks with grooves give medium forms and two nails give small detail, but the large base block is empty and nails appear on only one plank; some hierarchy.",
+   "V3": "Planks vary slightly in tone but are identical straight slabs on a tall stiff box; little stylisation (no warp, varied widths or end offsets).",
+   "V4": "Planks have consistent chamfers that catch light, but the base block has razor edges (close_edge_studio corner); inconsistent.",
+   "V5": "A jagged dotted seam runs along the plank/base junction on the front face (close_edge_studio and close_edge_flat), consistent with the 62 cross-shell overlaps; minor visible artifact.",
+   "V6": "Wood hue in 2-3 values with a darker base; painted colourways keep the same discipline.",
+   "V7": "184 tris vs module target 800; under.",
+   "V8": "Vertex colour, chamfered planks and wood hue match the kit, but the unchamfered base and sparse nails are a minor mismatch.",
+   "V9": "Studio line correct for a modular piece (Box collision, grid-corner pivot, white colour); T1 tiling iou 1.0 on both axes."
+  }
+ ],
+ "artifacts": [
+  [
+   "sawtooth/z-fighting seam along plank-to-base junction on front face",
+   "razor edges on base block"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Fix the plank/base overlap so the junction is a clean seam (lift planks or trim the base top below plank undersides)",
+   "Chamfer the base block edges to the kit 0.05-0.07 studs, or add a joist/frame band to break up the plain sides",
+   "Distribute nails consistently (2 per plank end) and vary plank widths/end offsets for a hand-built read"
+  ]
+ ],
+ "params": {
+  "W": 4,
+  "pw": 1.0
+ },
+ "tris": 184,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,166 @@
+{
+ "asset": "Bush_01",
+ "kit": "Nature",
+ "type": "Bush",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 6.0,
+ "grades": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  6.0,
+  6.3,
+  5.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.6,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front view reads as a berry bush (lobed mound with berries on the rim), but the silhouette and top view are a generic lumpy blob with dots; only the front/three-quarter read clearly.",
+   "V2": "Some hierarchy: one mound, 3-4 merged puffs, 5 berries; the puffs blend into one mass with no distinct medium clusters or leaf-tuft small detail.",
+   "V3": "Low, lumpy mound with wobbly lobes reads blobby rather than a confident stylised bush of clear rounded puffs.",
+   "V4": "Puffs are soft with no defined lobes or rim highlights, while berries are low-poly faceted balls (octagonal in the top view); inconsistent.",
+   "V5": "Puffs close-up shows wobbly crease ridges and puckered folds across the top, a faint grid in the shading, and faceted berry spheres; minor but visible.",
+   "V6": "Leaf green plus gold berries (kit gold); disciplined two-colour scheme with good contrast, colourways (autumn, blossom) swap the foliage hue cleanly.",
+   "V7": "1688 tris vs medium target 2000 (ceiling 4000): under target.",
+   "V8": "One vertex-colour material and kit gold accent, but surface is not a clean fused smooth shell (creases, faceted berries); minor mismatch.",
+   "V9": "Studio line: foliage Anchored, CanCollide/CanTouch/CanQuery off, Box fidelity, MeshPart.Color white, SmoothPlastic, origin bottom-centre: correct."
+  },
+  {
+   "V1": "Front view reads as a low berry bush mound; from top and three-quarter the clover-lobed blob reads more like a pepper or slime, and the silhouette is a soft lump with berry bumps.",
+   "V2": "Big mound and small berries are present, but the medium tier (individual puffs) is mushy: lobes melt into each other with no defined clusters.",
+   "V3": "Lobes are low and swollen with no lift or crown; proportion reads as a melted dome rather than a confident stylised bush.",
+   "V4": "Fused smooth shell is soft everywhere; puff boundaries are vague creases, berries are low-poly with visible faceting, so edge definition is inconsistent.",
+   "V5": "Studio close-ups show a faint triangle-grid mottling across the puff surfaces and a soft crease seam down the centre where lobes fuse; minor but visible.",
+   "V6": "One foliage hue in 2-3 values with gold berries as the single accent; colourways (autumn, blossom) keep the same discipline.",
+   "V7": "1688 tris vs medium target 2000 - under target.",
+   "V8": "Single LF_VertexColor material, fused smooth organic shell and gold accent per the Nature spec.",
+   "V9": "Studio line: foliage flags (Anchored, CanCollide/CanTouch/CanQuery off, Box), MeshPart.Color white, SmoothPlastic, origin bottom-centre."
+  },
+  {
+   "V1": "Front view reads as a lumpy berry bush, but the silhouette and top view are a generic rounded blob with nubs that could equally be a rock or a cake; readable mainly from the front.",
+   "V2": "Big mass with 3-4 broad puffs and small gold berries, but no medium tier (no leaf clusters, sub-puffs or twigs) and puff divisions are shallow creases.",
+   "V3": "Squat low dome (3.7 x 3.3 x 2.2 studs) with soft lobes; pleasant but the puffs are too shallow to read as confident stylised foliage clumps.",
+   "V4": "Foliage is one blobby fused shell with no defined lobe edges, while the berries are visibly low-poly faceted spheres; edge treatment is inconsistent.",
+   "V5": "Faint quad-grid lattice across the foliage and bright streaky crease lines where puffs merge on top (puffs close-up, spruce/blossom colourways); berries show polygon facets.",
+   "V6": "Flat close-up shows the foliage is a single green value with no light/dark variation; only the gold berries add contrast, so value structure is weak.",
+   "V7": "1688 tris vs medium target 2000 (ceiling 4000).",
+   "V8": "One white vertex-colour material with gold accent berries fits, but the single-value foliage and visible grid shading fall short of the kit's 2-3 value fused-shell look.",
+   "V9": "Foliage profile correct: Anchored, CanCollide/CanTouch/CanQuery off, Box fidelity, SmoothPlastic, MeshPart.Color white, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Wobbly crease ridges and puckering across the top of the mound",
+   "Faint grid shading on the puffs",
+   "Low-poly faceted berry spheres"
+  ],
+  [
+   "Faint triangle-grid mottling across the puff surfaces (Bush_01_close_puffs_studio.png, Bush_01_close_base_studio.png)",
+   "Soft crease seam where the central lobes fuse"
+  ],
+  [
+   "Quad-grid lattice visible in foliage shading",
+   "Bright streaky creases where puffs fuse on the top",
+   "Faceted low-poly berries"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Rebuild the mound as 4-6 distinct rounded puffs of varied size with clean smooth unions so the silhouette has clear bumps",
+   "Smooth the surface (relax/remesh, weighted normals) to remove creases and puckers",
+   "Add segments to the berries and seat them slightly into the foliage; add a lighter top value / darker base value for form"
+  ],
+  [
+   "Define distinct rounder puff clusters with clear dips between them and more height in the crown so it reads as a bush, not a melted blob",
+   "Smooth the fused shell (weighted normals / extra smoothing pass) to remove the grid mottling and centre crease",
+   "Raise berry segment count slightly so they read round in close-up"
+  ],
+  [
+   "Deepen and multiply the puffs (5-7 varied-size clumps with clear undercuts) so the silhouette reads as a bush from all angles",
+   "Vertex-colour the foliage in 2-3 values (darker underside/creases, lighter tops)",
+   "Clean up normals where puffs merge to remove the streaky creases and grid pattern",
+   "Add 2-4 segments to the berries or swap to smoother spheres"
+  ]
+ ],
+ "params": {
+  "R": 1.884,
+  "puffs": 4,
+  "berries": 5,
+  "berry_role": "acc",
+  "stretch": 1.168
+ },
+ "tris": 1688,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

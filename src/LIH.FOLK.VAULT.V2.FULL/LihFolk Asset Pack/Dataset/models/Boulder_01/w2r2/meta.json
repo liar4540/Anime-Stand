@@ -1,0 +1,155 @@
+{
+ "asset": "Boulder_01",
+ "kit": "Nature",
+ "type": "Boulder",
+ "seed": 1,
+ "params": {
+  "R": 2.739,
+  "flat": 0.801,
+  "n": 34,
+  "moss": true
+ },
+ "tris": 308,
+ "budget_class": "rock",
+ "budget_target": 400,
+ "budget_ceiling": 1000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 5.762,
+  "y": 6.301,
+  "z": 2.771
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 0,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h_lt",
+   "h",
+   "h_dk",
+   "b"
+  ],
+  "primary": "granite",
+  "colourways": [
+   {
+    "name": "granite",
+    "hue": "stone",
+    "roles": {
+     "h_lt": "#C4C6CC",
+     "h": "#9497A3",
+     "h_dk": "#62656F",
+     "b": "#5DA543"
+    }
+   },
+   {
+    "name": "sandstone",
+    "hue": "sand",
+    "roles": {
+     "h_lt": "#E6CB98",
+     "h": "#C29C66",
+     "h_dk": "#8A6A40",
+     "b": "#5DA543"
+    }
+   },
+   {
+    "name": "slate",
+    "hue": "slate",
+    "roles": {
+     "h_lt": "#A9B6C8",
+     "h": "#71829A",
+     "h_dk": "#46546B",
+     "b": "#368A5C"
+    }
+   },
+   {
+    "name": "redrock",
+    "hue": "redrock",
+    "roles": {
+     "h_lt": "#DC8F6C",
+     "h": "#B05B42",
+     "h_dk": "#73372A",
+     "b": "#E0702E"
+    }
+   },
+   {
+    "name": "basalt",
+    "hue": "basalt",
+    "roles": {
+     "h_lt": "#8F8C99",
+     "h": "#64616E",
+     "h_dk": "#403E49",
+     "b": "#7FBFC4"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "boulder: 34-point faceted hull, big designed planes, chamfered edges, moss cap in 2 greens on the top facets",
+ "features": [
+  [
+   "top",
+   [
+    -0.15,
+    -0.513,
+    3.092
+   ],
+   2.4651
+  ],
+  [
+   "side_facets",
+   [
+    2.041,
+    -2.431,
+    1.39
+   ],
+   2.1912
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r2/Boulder_01/Boulder_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r2/Boulder_01/Boulder_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r2/Boulder_01/Boulder_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r2/Boulder_01/Boulder_01_silhouette.png",
+  "close_top_studio": "Models/Kits/_drafts/r2/Boulder_01/Boulder_01_close_top_studio.png",
+  "close_top_flat": "Models/Kits/_drafts/r2/Boulder_01/Boulder_01_close_top_flat.png",
+  "close_side_facets_studio": "Models/Kits/_drafts/r2/Boulder_01/Boulder_01_close_side_facets_studio.png",
+  "close_side_facets_flat": "Models/Kits/_drafts/r2/Boulder_01/Boulder_01_close_side_facets_flat.png",
+  "cw_sandstone": "Models/Kits/_drafts/r2/Boulder_01/Boulder_01_cw_sandstone.png",
+  "cw_slate": "Models/Kits/_drafts/r2/Boulder_01/Boulder_01_cw_slate.png",
+  "cw_redrock": "Models/Kits/_drafts/r2/Boulder_01/Boulder_01_cw_redrock.png",
+  "cw_basalt": "Models/Kits/_drafts/r2/Boulder_01/Boulder_01_cw_basalt.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_nature.py:Boulder",
+ "made": "2026-10-28"
+}

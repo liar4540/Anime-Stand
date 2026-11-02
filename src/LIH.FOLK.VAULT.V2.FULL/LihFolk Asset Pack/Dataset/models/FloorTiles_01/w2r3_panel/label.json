@@ -1,0 +1,153 @@
+{
+ "asset": "FloorTiles_01",
+ "kit": "Modular",
+ "type": "FloorTiles",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  6.7,
+  10.0,
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 3.3,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Top view reads as a flagstone floor, but front, three-quarter and silhouette read as a plain thick slab with a faint row of bumps on top.",
+   "V2": "Medium flagstones over a big base, but no small-scale detail (no chips, worn corners, grout depth variation); the base side is a large blank surface.",
+   "V3": "Flagstones are uniform-height, near-identical rectangles in a grid - closer to stiff primitives than confident stylised stone (no tilt, rounding or size play).",
+   "V4": "Flagstone tops carry a consistent chamfer that catches light, but the base slab edges look razor-sharp in the edge close-up.",
+   "V5": "Studio and flat close-ups clean: no pinches, z-fighting or seams; 0 flipped faces, A17/A18 pass.",
+   "V6": "One stone hue in 3 values (dark, mid, light grey); sandstone and brick colourways keep the same disciplined 3-value structure.",
+   "V7": "476 tris vs module target 800.",
+   "V8": "Single LF_VertexColor material and stone hue fit the modular spec, but value distribution clusters (whole front row dark, centre light) and unchamfered base differ from the kit's chamfered made-object edges.",
+   "V9": "Studio line correct: Anchored, Box collision, CanTouch off, Color white, SmoothPlastic; T1 tiling passes (X IoU 0.987, Y 1.0)."
+  },
+  {
+   "V1": "Reads as a flagstone floor block from top and three-quarter; silhouette shows the tile lips along the top edge, as expected for a floor module.",
+   "V2": "Base slab (big), varied-size flagstones (medium), chamfered flagstone lips and joints (small).",
+   "V3": "Stylised mixed-size flagstones with slight overhang lip; proportion suits a 2-stud floor module.",
+   "V4": "Uniform chamfers on every flagstone catch the light in the flagstones and edge close-ups.",
+   "V5": "Clean close-ups; cross_shell_overlaps 0, no seams or z-fighting.",
+   "V6": "Stone in three values; dark tiles cluster along one edge but stay within a disciplined palette.",
+   "V7": "476 tris vs module target 800.",
+   "V8": "Single LF_VertexColor material, chamfered stone: kit-consistent.",
+   "V9": "Anchored, CollisionFidelity Box, CanTouch off, Color white, SmoothPlastic, grid-corner pivot; T1 pass both axes."
+  },
+  {
+   "V1": "Top and three-quarter read as a flagstone floor, but front and silhouette are a plain 8x8x2 slab with a slightly overhanging bumpy lid, generic at 64 px from the side.",
+   "V2": "Big (base slab) and medium (flagstones in mixed sizes and 3 values) are clear; no small tier (no chips, cracks, worn corners or grout detail) and the deep base sides are blank.",
+   "V3": "Flagstones are uniform bevelled rectangles on a straight-sided box; mixed slab sizes help a little but the overall read is stiff and grid-regular.",
+   "V4": "Close_flagstones and close_edge studio show even chamfers on every flagstone edge and corner catching a highlight; base slab edges carry a small consistent bevel.",
+   "V5": "Close-ups clean: flat stone tops, no pinches, seams or z-fighting; the small notches at joint corners in the flat close-up are where adjacent chamfers meet; A17/A18 pass.",
+   "V6": "One stone hue in three values (light, mid, dark flagstones) with a dark base; sandstone and brick colourways keep the same value structure.",
+   "V7": "476 tris vs module target 800 / ceiling 2000.",
+   "V8": "Single LF_VertexColor material, stone hue, kit-range chamfers per wave-2 modular spec; matches kit.",
+   "V9": "Studio line: Anchored, Box collision, CanTouch off, MeshPart white + SmoothPlastic, grid-corner pivot; T1 tiling passes on X (iou 0.987) and Y (iou 1.0)."
+  }
+ ],
+ "artifacts": [
+  [
+   "value variation is clustered by region (dark front row and corners, light centre) so tiled copies will show a visible repeating band pattern"
+  ],
+  [],
+  []
+ ],
+ "top_fixes": [
+  [
+   "Scatter the three stone values randomly across tiles instead of in bands so tiling does not show a repeat",
+   "Give flagstones slight size, height and tilt variation plus a few chipped corners for small-scale detail",
+   "Chamfer the base slab edges and consider recessing/darkening it so the piece reads as floor, not a box"
+  ],
+  [
+   "Distribute dark/light flagstones more evenly so tiled copies do not show a dark band",
+   "Add a subtle chamfer/inset line on the base slab sides",
+   "Optional small cracks or a missing-corner tile for character"
+  ],
+  [
+   "Add a small tier: chipped corners, a crack or two, slight per-stone height/tilt variation",
+   "Break up the blank base sides (thinner slab or a visible mortar/bedding band) so the side view reads as flooring",
+   "Loosen the grid with more irregular flagstone sizes or offset joints for a more stylised read; tighten the X seam so tiling iou reaches 1.0"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "rows": 4
+ },
+ "tris": 476,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

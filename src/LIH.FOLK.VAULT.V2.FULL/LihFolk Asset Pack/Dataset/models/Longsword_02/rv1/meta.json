@@ -1,0 +1,279 @@
+{
+ "asset": "Longsword_02",
+ "kit": "Weapons",
+ "type": "Longsword",
+ "seed": 2,
+ "params": {
+  "L": 5.013,
+  "W": 0.396,
+  "T": 0.114,
+  "taper": 0.277,
+  "tip0": 0.803,
+  "tipk": 1.647,
+  "gL": 1.044,
+  "h0": 0.157,
+  "ht": 0.095,
+  "rise": 0.164,
+  "flare": 0.051,
+  "langet": 0.098,
+  "GL": 1.298,
+  "gr": 0.147,
+  "ps": 0.267,
+  "wraps": 6,
+  "pommel": "wheel",
+  "fuller_w": 0.732,
+  "fuller_end": 0.628,
+  "gem": true,
+  "tip_balls": true
+ },
+ "tris": 2476,
+ "budget_class": "weapon",
+ "budget_target": 2500,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 2.614,
+  "y": 0.694,
+  "z": 6.811
+ },
+ "origin": "hand/grip point",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "guard_on_grip_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  },
+  {
+   "name": "gem_front_on_grip_axis",
+   "offset": {
+    "X": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "guard_on_grip",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "blade_into_guard",
+   "gap": 0.0,
+   "penetration": 0.234,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "tip_ball_0_on_guard",
+   "gap": 0.0,
+   "penetration": 0.13551,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "tip_ball_1_on_guard",
+   "gap": 0.0,
+   "penetration": 0.13551,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "gem_0_on_guard",
+   "gap": 0.0,
+   "penetration": 0.03,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "gem_1_on_guard",
+   "gap": 0.0,
+   "penetration": 0.03,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 240,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "acc_dk",
+   "m_lt",
+   "m",
+   "m_dk",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "m_lt": "#B4BECC",
+     "m": "#7C8899",
+     "m_dk": "#4C5566",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590"
+    }
+   }
+  ]
+ },
+ "studio": "Tool Handle; origin = hand/grip point; CollisionFidelity Hull; CanCollide off when equipped; Massless; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "Longsword: double-edged blade with fuller, quillon guard (rise 0.164), wheel pommel, hue wrap + gold wire",
+ "features": [
+  [
+   "guard",
+   [
+    0.0,
+    0.0,
+    0.799
+   ],
+   1.344
+  ],
+  [
+   "pommel",
+   [
+    0.0,
+    0.0,
+    -1.036
+   ],
+   0.5874
+  ],
+  [
+   "blade_mid",
+   [
+    0.0,
+    0.0,
+    2.504
+   ],
+   0.9504
+  ],
+  [
+   "tip",
+   [
+    0.0,
+    0.0,
+    5.261
+   ],
+   0.792
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_front.png",
+  "three_quarter": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_three_quarter.png",
+  "top": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_top.png",
+  "silhouette": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_silhouette.png",
+  "close_guard_studio": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_close_guard_studio.png",
+  "close_guard_flat": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_close_guard_flat.png",
+  "close_pommel_studio": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_close_pommel_studio.png",
+  "close_pommel_flat": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_close_pommel_flat.png",
+  "close_blade_mid_studio": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_close_blade_mid_studio.png",
+  "close_blade_mid_flat": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_close_blade_mid_flat.png",
+  "close_tip_studio": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_close_tip_studio.png",
+  "close_tip_flat": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_close_tip_flat.png",
+  "cw_royal": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_cw_royal.png",
+  "cw_crimson": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_cw_crimson.png",
+  "cw_verdant": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_cw_verdant.png",
+  "cw_shadow": "Models/Kits/_drafts/rv1/Longsword_02/Longsword_02_cw_shadow.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_weapons.py:Longsword",
+ "made": "2026-10-28"
+}

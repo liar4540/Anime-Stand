@@ -1,0 +1,96 @@
+{
+ "asset": "Bottle_18",
+ "kit": "Props",
+ "type": "Bottle",
+ "seed": 18,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 10.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette reads instantly as a potion bottle: octagonal body with a slight waist toward the foot, straight cone shoulder, gold collar and cap; front outline mirror-symmetric (A15 X/Y 0.0), top view a clean centred octagon, reads from front, 3/4 and top.",
+   "V2": "Clear hierarchy: big faceted body, medium cream/teal shoulder panels and black stopper, small gold collar ring and foot rim.",
+   "V3": "Confident stylised proportions: wide shoulder break, tapered belly, chunky oversized stopper on a short neck; nothing reads as a stiff primitive.",
+   "V4": "Consistent narrow chamfers on every panel edge, collar, foot rim and stopper catch light evenly in the studio close-ups.",
+   "V5": "Clean flat-panel shading in all close-ups (foot, liquid line, stopper); no pinches, seams or z-fighting; stopper seated on collar, foot flat; gate A17/A18 pass with 0 overlaps or flipped faces.",
+   "V6": "Disciplined palette: one hue (teal) in two values plus warm cream, gold accent and ink-dark stopper; colourways swap only the hue.",
+   "V7": "576 tris vs small-class target 600 (ceiling 1500): at or under target.",
+   "V8": "Kit match: single white LF_VertexColor material, kit gold/ink/cream accents, chamfer scale and faceted panel language match the kit bottle anchor.",
+   "V9": "Studio line correct for a pickup: CanCollide off, CanTouch on, Box fidelity, SmoothPlastic, MeshPart.Color white, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Very minor: small dark notch where a vertical panel chamfer meets the gold foot rim in the foot close-up (not a defect at game scale)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Optionally lengthen the neck slightly so the collar separates more from the shoulder cone at 64 px",
+   "Optionally soften the chamfer-to-foot-rim junction to remove the tiny dark notch"
+  ]
+ ],
+ "params": {
+  "shape": "heart",
+  "R": 0.683,
+  "H": 1.988,
+  "sides": 8
+ },
+ "tris": 576,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

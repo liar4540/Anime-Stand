@@ -1,0 +1,217 @@
+{
+ "asset": "Medal_02",
+ "kit": "Emblems",
+ "type": "Medal",
+ "seed": 2,
+ "params": {
+  "sides": 8,
+  "R": 0.655,
+  "h": 0.1,
+  "relief": 0.04,
+  "rw": 0.412,
+  "rl": 1.079,
+  "stripe": true,
+  "emblem": null
+ },
+ "tris": 484,
+ "budget_class": "small",
+ "budget_target": 600,
+ "budget_ceiling": 1500,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.21,
+  "y": 0.22,
+  "z": 2.418
+ },
+ "origin": "hand/grip point",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "ribbon_on_token_axis",
+   "offset": {
+    "X": 0.0
+   },
+   "max": 0.0
+  },
+  {
+   "name": "ring_on_token_axis",
+   "offset": {
+    "X": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "ring_on_token",
+   "gap": 0.0,
+   "penetration": 0.0825,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "ribbon_through_ring",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "clasp_on_ribbon",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "stripe_on_ribbon",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 128,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "acc_dk",
+   "cream",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "cream": "#F3E3BE",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "cream": "#F3E3BE",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "cream": "#F3E3BE",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "cream": "#F3E3BE",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "cream": "#F3E3BE",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590"
+    }
+   }
+  ]
+ },
+ "studio": "Wearable / award prop: origin at the clasp top (hang point); CanCollide off, CanQuery off, Massless when worn, CollisionFidelity Box; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "medal: 8-sided token with cream None both faces, gold ring, hue ribbon with cream stripe, gold clasp bar",
+ "features": [
+  [
+   "token",
+   [
+    0.0,
+    -0.1,
+    -1.813
+   ],
+   0.7205000000000001
+  ],
+  [
+   "ribbon",
+   [
+    0.0,
+    -0.05,
+    -0.474
+   ],
+   0.7553
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/e3/Medal_02/Medal_02_front.png",
+  "three_quarter": "Models/Kits/_drafts/e3/Medal_02/Medal_02_three_quarter.png",
+  "top": "Models/Kits/_drafts/e3/Medal_02/Medal_02_top.png",
+  "silhouette": "Models/Kits/_drafts/e3/Medal_02/Medal_02_silhouette.png",
+  "close_token_studio": "Models/Kits/_drafts/e3/Medal_02/Medal_02_close_token_studio.png",
+  "close_token_flat": "Models/Kits/_drafts/e3/Medal_02/Medal_02_close_token_flat.png",
+  "close_ribbon_studio": "Models/Kits/_drafts/e3/Medal_02/Medal_02_close_ribbon_studio.png",
+  "close_ribbon_flat": "Models/Kits/_drafts/e3/Medal_02/Medal_02_close_ribbon_flat.png",
+  "cw_royal": "Models/Kits/_drafts/e3/Medal_02/Medal_02_cw_royal.png",
+  "cw_crimson": "Models/Kits/_drafts/e3/Medal_02/Medal_02_cw_crimson.png",
+  "cw_verdant": "Models/Kits/_drafts/e3/Medal_02/Medal_02_cw_verdant.png",
+  "cw_shadow": "Models/Kits/_drafts/e3/Medal_02/Medal_02_cw_shadow.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_emblems.py:Medal",
+ "made": "2026-10-28"
+}

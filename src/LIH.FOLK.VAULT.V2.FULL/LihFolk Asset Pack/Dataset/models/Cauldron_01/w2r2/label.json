@@ -1,0 +1,100 @@
+{
+ "asset": "Cauldron_01",
+ "kit": "Furniture",
+ "type": "Cauldron",
+ "seed": 1,
+ "attempt": "w2r2",
+ "label": "rejected",
+ "score": 8.3,
+ "grades": [
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Pot-belly with flared rim, side ring handle and stubby legs reads instantly as a cauldron in front, three-quarter and silhouette; top view reads via rim + liquid disc",
+   "V2": "Clear: big bellied pot, medium rim band / legs / ring handles, small bubbles and lighter liquid centre",
+   "V3": "Confident stylised: wide squat belly, chunky gold rim, short stubby legs; front outline is symmetric and legs are seated under the pot",
+   "V4": "Gold rim has a soft chamfer that catches light, but legs are hard-edged low-segment hex prisms and the thin ring handles have no comparable edge treatment",
+   "V5": "Visible faceting on the lower belly curvature (three-quarter) and on the legs (close_leg_studio); bubbles are low-poly spheres with visible flat facets in close_rim_studio",
+   "V6": "Disciplined: slate-blue iron body, gold rim/handles, ink legs, liquid in one hue with two values; colourways teal/violet swap only the liquid",
+   "V7": "1712 tris vs medium target 2000 (ceiling 4000): at or under target",
+   "V8": "Single LF_VertexColor material, kit gold and ink accents and chamfered rim match; minor mismatch from faceted legs/bubbles vs the smooth weighted-normal kit finish, and the default liquid is a dull brown-orange rather than a glowing hue",
+   "V9": "Studio line correct: anchored, Hull collision, CanTouch off, Color white, SmoothPlastic, origin bottom-centre, optional light/particles noted"
+  }
+ ],
+ "artifacts": [
+  [
+   "Faceting on lower belly curvature",
+   "Low-segment faceted legs",
+   "Low-poly faceted bubble spheres",
+   "152 cross-shell overlaps (legs/ears/bubbles intentionally pushed in)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add segments or weighted normals to the lower belly, legs and bubbles to remove visible faceting",
+   "Brighten/saturate the default ember liquid so it reads as glowing (lighter centre value, warmer emission tone)",
+   "Give the ring handles and legs the same ~0.05 stud chamfer as the rim and thicken the rings slightly so they hold at 64 px"
+  ]
+ ],
+ "params": {
+  "R": 1.672,
+  "H": 2.217,
+  "liq": 0.8,
+  "bubbles": 3
+ },
+ "tris": 1712,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

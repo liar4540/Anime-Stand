@@ -1,0 +1,162 @@
+{
+ "asset": "CliffChunk_06",
+ "kit": "Nature",
+ "type": "CliffChunk",
+ "seed": 6,
+ "attempt": "spot_panel",
+ "label": "rejected",
+ "score": 8.0,
+ "grades": [
+  2,
+  1,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.0,
+  8.0,
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.7,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Stacked faceted strata with a mossy cap read as a cliff/rock chunk in front and three-quarter; silhouette shows distinct stepped ledges; bottom-origin and seated (all strata seated, no gaps).",
+   "V2": "Big strata slabs and medium designed facets are clear, but there is almost no small tier: the only secondary read is the moss top, with no chips, cracks or pebbles.",
+   "V3": "Slab stack is partly stylised, but the second stratum is sunk into the one below (0.26 stud penetration) leaving a thin sliver lip and a wedge-shaped dark slit that looks accidental rather than designed; strata are similar thickness so the stack reads a bit uniform.",
+   "V4": "Designed flat facets with consistently softened edges that catch light across all strata.",
+   "V5": "Strata close-up (flat and studio) shows a thin wedge/sliver where stratum 2 intersects stratum 1, reading as a pinched crevice; otherwise facets shade cleanly.",
+   "V6": "One stone hue in three values plus a single leaf-green moss secondary; colourways (sandstone, redrock) keep the structure.",
+   "V7": "538 tris vs medium target 2000 (ceiling 4000): well under target.",
+   "V8": "One white vertex-colour material, designed rock facets, stone hue + moss green secondary per the Nature kit; moss green is slightly saturated but within the scheme.",
+   "V9": "Studio line: Anchored, CollisionFidelity Hull (Box per stratum option), CanTouch off, MeshPart.Color white, SmoothPlastic, bottom-centre origin."
+  },
+  {
+   "V1": "Silhouette and front/three-quarter read as a stacked, overhanging rock chunk from every angle (step notch under the mossy cap slab and undercut base both show in the outline); top reads as a moss-capped rock.",
+   "V2": "Big (four strata slabs) and medium (flat facets) are clear, but there is no small tier: no cracks, chips, pebbles or moss fringe, so the read stops at slab level.",
+   "V3": "Strata are four similar-thickness lens-shaped pancakes stacked with modest offsets; it reads as a stacked cairn more than a confident chunky cliff, so it is only partly stylised.",
+   "V4": "Consistent narrow chamfers on all facet edges catch the studio light (close_strata_studio, close_top_studio), and the moss cap edge is also softened.",
+   "V5": "Mostly clean flat facets, but the second stratum sits in a dished top with a dark sliver wedge and a creased fold where it meets the slab below (close_strata_flat), plus 116 cross-shell overlaps; a minor artifact, not a broken surface.",
+   "V6": "Disciplined: one stone hue in 2-3 grey values plus moss green secondary; colourways (basalt, sandstone) keep the same two-material scheme.",
+   "V7": "538 tris against a medium target of 2000 (ceiling 4000).",
+   "V8": "Designed flat facets with chamfers, one vertex-colour material, stone hue + leaf-green secondary as the Nature kit specifies.",
+   "V9": "Studio line is correct for static scenery: Anchored, Hull collision, CanTouch off, white MeshPart.Color with vertex colours, SmoothPlastic, origin bottom-centre."
+  },
+  {
+   "V1": "Stacked-strata cliff chunk reads from front, three-quarter and top; silhouette shows a clear layered stack with overhangs.",
+   "V2": "Clear hierarchy: 4 strata slabs (big), moss-capped top slab and stepped overhangs (medium), designed facet breaks (small).",
+   "V3": "Layered slab idea is stylised, but the bottom slab is pushed out forward-left and tilted like a separate fallen plate, and the second stratum reads as a thin dish sunk into the one below, so the stack feels loose rather than one confident cliff mass.",
+   "V4": "Facets carry consistent soft highlight bevels on all strata ridges (close_strata_studio); no razor edges.",
+   "V5": "close_strata studio/flat show a dark wedge-shaped sliver where the thin second stratum cuts into the larger slab (stratum2 penetration 0.257, 116 cross-shell overlaps) - reads as a pinched crease, a visible artifact.",
+   "V6": "Stone grey in 3 values + one moss green cap; redrock and slate colourways hold the same scheme.",
+   "V7": "538 tris vs medium target 2000 (ceiling 4000).",
+   "V8": "One white LF_VertexColor material, stone hue + moss secondary, designed flat facets with soft normals: matches Nature kit.",
+   "V9": "Studio line: Anchored, Hull (or Box per stratum), CanTouch off, CastShadow on, Color white, SmoothPlastic, origin bottom-centre; all gates pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Wedge-shaped sliver / slit where stratum 2 is sunk into stratum 1 (front strata close-up)"
+  ],
+  [
+   "Creased fold / dark sliver wedge where stratum 2 sinks into the dished top of stratum 1 (close_strata views)",
+   "116 cross-shell overlaps between strata (intentional interpenetration, but stratum 2 penetration 0.26 studs is deep)"
+  ],
+  [
+   "Thin second stratum intersects the slab beneath it, producing a dark wedge/sliver crease visible in close_strata studio and flat renders",
+   "Bottom stratum offset and tilted outward so it reads like a detached plate"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Re-seat stratum 2 so it rests on stratum 1 with a clean overhang instead of sinking in and leaving a thin sliver/slit",
+   "Vary strata thickness and add a small tier (chipped corners, a crack line, a pebble or moss drip down one face)",
+   "Let the moss spill a little over the top edge so it reads as growth rather than a painted cap"
+  ],
+  [
+   "Rework stratum 2 so it sits on a flat ledge instead of sinking into a dished slab, removing the crease and sliver wedge",
+   "Vary strata thickness and offsets more (a thick base block, thin ledges) so it reads as a cliff chunk rather than stacked pancakes",
+   "Add a small detail tier: a few cracks or chipped corners and a moss fringe dripping over the cap edge",
+   "Widen the value spread between strata (slightly darker lower strata) for depth"
+  ],
+  [
+   "Reduce stratum2 penetration / thicken it so it rests on top of stratum1 instead of slicing into it (remove the wedge crease)",
+   "Pull the bottom slab back under the stack and level it so the chunk reads as one cliff mass",
+   "Vary strata thickness more deliberately (thicker base, thinner top) for a stronger stylised read"
+  ]
+ ],
+ "params": {
+  "W": 3.571,
+  "strata": 4,
+  "Hs": 1.71,
+  "grass": true
+ },
+ "tris": 538,
+ "budget_class": "medium",
+ "date": "2026-10-29"
+}

@@ -1,0 +1,190 @@
+{
+ "asset": "Bed_05",
+ "kit": "Furniture",
+ "type": "Bed",
+ "seed": 5,
+ "params": {
+  "W": 4.487,
+  "L": 7.331,
+  "head": "flat",
+  "cover": 0.6
+ },
+ "tris": 912,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 4.75,
+  "y": 7.514,
+  "z": 4.031
+ },
+ "origin": "bottom",
+ "symmetric": "X",
+ "symmetry_error": {
+  "X": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 323,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "cream",
+   "h_lt",
+   "h",
+   "b_lt",
+   "b",
+   "b_dk"
+  ],
+  "primary": "crimson",
+  "colourways": [
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "cream": "#F3E3BE",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "b_lt": "#D2A56A",
+     "b": "#A9784A",
+     "b_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "cream": "#F3E3BE",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "b_lt": "#D2A56A",
+     "b": "#A9784A",
+     "b_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "cream": "#F3E3BE",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E",
+     "b_lt": "#D2A56A",
+     "b": "#A9784A",
+     "b_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "cream": "#F3E3BE",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "b_lt": "#A47650",
+     "b": "#7A5236",
+     "b_dk": "#4E3424"
+    }
+   },
+   {
+    "name": "violet",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "cream": "#F3E3BE",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6",
+     "b_lt": "#A47650",
+     "b": "#7A5236",
+     "b_dk": "#4E3424"
+    }
+   }
+  ]
+ },
+ "studio": "Furniture prop: Anchored; CollisionFidelity Box; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "bed 4.5x7.3: wood frame (rails, flat headboard, footboard, square posts with gold knobs), soft cream mattress + pillow, hue blanket with a light fold",
+ "features": [
+  [
+   "pillow",
+   [
+    0.0,
+    2.665,
+    1.949
+   ],
+   1.4
+  ],
+  [
+   "blanket_fold",
+   [
+    1.944,
+    -0.733,
+    1.849
+   ],
+   1.0
+  ],
+  [
+   "headboard",
+   [
+    0.0,
+    3.665,
+    2.999
+   ],
+   1.6
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Furniture/Bed_05_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 9.3,
+  "basis": "panel x3 median",
+  "reviewed": "Bed_01 w2r3_panel (indiv 9.3/9.3/9.3); fix rounds: w2r1 8.0, w2r2 8.0",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_furniture.py:Bed",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Furniture/Bed_05.glb",
+  "blend": "Models/Kits/Furniture/Bed_05.blend",
+  "turntable": "Models/Kits/Furniture/Bed_05_turntable.mp4",
+  "preview": "Models/Kits/Furniture/Bed_05_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Furniture/Bed_05_preview.jpg"
+}

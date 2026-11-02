@@ -1,0 +1,155 @@
+{
+ "asset": "Stairs_01",
+ "kit": "Modular",
+ "type": "Stairs",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7,
+  9.3,
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.6,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and top views all read immediately as a stone stair flight with side cheek walls; outline symmetric left/right in the front view.",
+   "V2": "Big cheek walls and body, medium split treads and copings, but no small tier (no chips, worn nosings, mortar joints); the outer side cheek is one large blank dark panel.",
+   "V3": "Clean but primitive proportions: four equal straight steps between two plain wedge walls, little stylised exaggeration (no chunky nosing overhang, no taper or wear).",
+   "V4": "Treads and copings have consistent chamfers that catch light, but the cheek-wall bodies and riser blocks show razor-sharp outer edges in the side close-up.",
+   "V5": "Studio and flat close-ups clean: no pinches, seams or z-fighting where treads meet risers; A17/A18 pass, 0 flipped faces.",
+   "V6": "One stone hue in 3 values (dark body, mid and light treads); sandstone and brick colourways keep the same disciplined structure.",
+   "V7": "420 tris vs module target 800.",
+   "V8": "Single LF_VertexColor material and stone hue match the modular spec, but the unchamfered cheek-wall edges miss the kit's ~0.05-0.07 stud chamfer on made objects.",
+   "V9": "Studio line correct: Anchored, CollisionFidelity Default (wedge Part suggested for smooth walking), CanTouch off, Color white, SmoothPlastic; T1 tiling along X passes with IoU 1.0."
+  },
+  {
+   "V1": "Front and top views read clearly as a stair flight with side walls; three-quarter silhouette is a sloped block with coping nubs, still recognisable.",
+   "V2": "Side walls with coping (big), four steps (medium), split tread slabs in alternating values (small).",
+   "V3": "Stiff: side walls are plain flat wedges and steps are uniform boxes; reads functional rather than confidently stylised.",
+   "V4": "Consistent chamfers on tread nosings and coping visible in the steps close-up.",
+   "V5": "Steps and side close-ups clean; no seams or z-fighting.",
+   "V6": "Stone in three values (dark risers/walls, mid and light treads).",
+   "V7": "420 tris vs module target 800.",
+   "V8": "Single LF_VertexColor material, chamfered stone treads: kit-consistent.",
+   "V9": "Anchored, CollisionFidelity Default (wedge Part suggested for walking), CanTouch off, Color white, SmoothPlastic, grid-corner pivot; T1 pass."
+  },
+  {
+   "V1": "Front, three-quarter and silhouette all read instantly as a 4-step flight with raised cheek walls; front outline is symmetric about the centre.",
+   "V2": "Big (stepped mass + cheeks) and medium (split two-tone tread slabs, sloped cap rail) are clear, but the cheek side faces are large blank dark slabs with no small-scale detail (no coursing, no end blocks).",
+   "V3": "Proportions are correct but literal: straight-sided box cheeks, uniform risers and evenly split treads read as stiff primitives with only light stylisation (the inset cap rail is the main shape accent).",
+   "V4": "Close_steps studio shows consistent small chamfers on every tread nosing, slab joint and cap-rail edge that catch a highlight line; no razor edges.",
+   "V5": "Close-ups (studio and flat) show clean flat treads and riser faces, no pinches, seams or z-fighting despite the 79 deliberate cross-shell overlaps; A17/A18 pass.",
+   "V6": "One stone hue in three values (light tread, mid tread, dark riser/cheek); brick and sandstone colourways keep the same value structure.",
+   "V7": "420 tris vs module target 800 / ceiling 2000.",
+   "V8": "Single LF_VertexColor material, chamfers in kit range, stone hue in 3 values per wave-2 modular spec; reads as the same kit as the barrel anchor.",
+   "V9": "Studio line: Anchored, CanTouch off, Default collision (or wedge for walking), MeshPart white + SmoothPlastic, grid-corner pivot; T1 tiling passes (iou 1.0)."
+  }
+ ],
+ "artifacts": [
+  [
+   "large flat unbroken outer cheek-wall face reads as an empty panel"
+  ],
+  [],
+  []
+ ],
+ "top_fixes": [
+  [
+   "Chamfer the cheek-wall and riser body edges to match the treads and kit",
+   "Break up the cheek walls with block/mortar lines or a plinth course and add a few chipped tread nosings for small detail",
+   "Give the treads a slight nosing overhang and subtle per-step variation for a more confident stylised read"
+  ],
+  [
+   "Break up the large flat side walls with block coursing or an inset panel",
+   "Add slight variation (worn nosing, uneven tread slabs) to push the stylised feel",
+   "Consider shipping the walking wedge collider alongside"
+  ],
+  [
+   "Break up the large blank cheek side faces (block coursing, a darker plinth band or an end newel block) to add small-scale detail",
+   "Push stylisation: slight taper or flared foot on the cheek walls, chunkier nosing overhang on the treads",
+   "Consider a gold or ink accent (iron nosing strip / cap band) to tie into kit accents"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "rise": 4,
+  "cheeks": true,
+  "split": false
+ },
+ "tris": 420,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

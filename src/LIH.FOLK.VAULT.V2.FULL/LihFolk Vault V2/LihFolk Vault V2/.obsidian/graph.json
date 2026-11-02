@@ -1,0 +1,443 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": true,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "file:\"Start Here\" OR tag:#hub OR file:\"000 Home\" OR file:ROUTER OR file:INDEX",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    },
+    {
+      "query": "path:\"01 Studio and Workflow/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16400962
+      }
+    },
+    {
+      "query": "path:\"02 Luau Scripting/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16405826
+      }
+    },
+    {
+      "query": "path:\"03 Architecture and Networking/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16410434
+      }
+    },
+    {
+      "query": "path:\"04 Data and Persistence/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16415042
+      }
+    },
+    {
+      "query": "path:\"05 UI and UX/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16419906
+      }
+    },
+    {
+      "query": "path:\"06 World Building and Art/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16424514
+      }
+    },
+    {
+      "query": "path:\"07 Lighting VFX and Audio/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16429378
+      }
+    },
+    {
+      "query": "path:\"08 Animation/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16433986
+      }
+    },
+    {
+      "query": "path:\"09 Gameplay Systems/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16438850
+      }
+    },
+    {
+      "query": "path:\"10 Game Design and Genres/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16443458
+      }
+    },
+    {
+      "query": "path:\"11 Monetization Publishing and Live Ops/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16382530
+      }
+    },
+    {
+      "query": "path:\"12 Performance Testing and Debugging/\"",
+      "color": {
+        "a": 1,
+        "rgb": 15202882
+      }
+    },
+    {
+      "query": "path:\"13 Production and Case Studies/\"",
+      "color": {
+        "a": 1,
+        "rgb": 14023234
+      }
+    },
+    {
+      "query": "path:\"14 3D Modeling/\"",
+      "color": {
+        "a": 1,
+        "rgb": 12778050
+      }
+    },
+    {
+      "query": "path:\"15 AI Tools/\"",
+      "color": {
+        "a": 1,
+        "rgb": 11598402
+      }
+    },
+    {
+      "query": "path:\"16 MCP and Agents/\"",
+      "color": {
+        "a": 1,
+        "rgb": 10353218
+      }
+    },
+    {
+      "query": "path:\"17 Pipelines/\"",
+      "color": {
+        "a": 1,
+        "rgb": 9173570
+      }
+    },
+    {
+      "query": "path:\"18 Rigs and Skeletons/\"",
+      "color": {
+        "a": 1,
+        "rgb": 7928386
+      }
+    },
+    {
+      "query": "path:\"19 Concept Sheets/\"",
+      "color": {
+        "a": 1,
+        "rgb": 6748738
+      }
+    },
+    {
+      "query": "path:\"21 LihFolk UI Design System/\"",
+      "color": {
+        "a": 1,
+        "rgb": 5503554
+      }
+    },
+    {
+      "query": "path:\"22 Anti-Exploit and Security/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4389443
+      }
+    },
+    {
+      "query": "path:\"23 Debugging Deep Dives/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4389462
+      }
+    },
+    {
+      "query": "path:\"24 Worked Builds/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4389480
+      }
+    },
+    {
+      "query": "path:\"25 Physics and Vehicles/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4389499
+      }
+    },
+    {
+      "query": "path:\"26 Community and Moderation/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4389517
+      }
+    },
+    {
+      "query": "path:\"27 Marketing and Growth/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4389536
+      }
+    },
+    {
+      "query": "path:\"28 Business and Careers/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4389554
+      }
+    },
+    {
+      "query": "path:\"29 Luau Cookbook/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4389573
+      }
+    },
+    {
+      "query": "path:\"32 Case Studies of Top Roblox Games/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4389591
+      }
+    },
+    {
+      "query": "path:\"33 Level Design/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4389610
+      }
+    },
+    {
+      "query": "path:\"34 Procedural Generation/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4389114
+      }
+    },
+    {
+      "query": "path:\"35 Advanced Luau/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4384506
+      }
+    },
+    {
+      "query": "path:\"36 Narrative and Worldbuilding/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4379642
+      }
+    },
+    {
+      "query": "path:\"37 Avatars and UGC/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4375034
+      }
+    },
+    {
+      "query": "path:\"38 Live Ops Deep Dive/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4370170
+      }
+    },
+    {
+      "query": "path:\"39 Studio Plugins and Tooling/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4365562
+      }
+    },
+    {
+      "query": "path:\"40 Game Math/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4360698
+      }
+    },
+    {
+      "query": "path:\"41 Multiplayer Services/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4356090
+      }
+    },
+    {
+      "query": "path:\"42 Accessibility and Inclusive Design/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4351226
+      }
+    },
+    {
+      "query": "path:\"43 Genre Systems End to End/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4346618
+      }
+    },
+    {
+      "query": "path:\"44 Materials and Surfaces/\"",
+      "color": {
+        "a": 1,
+        "rgb": 4539130
+      }
+    },
+    {
+      "query": "path:\"45 Procedural Blender Assets/\"",
+      "color": {
+        "a": 1,
+        "rgb": 5718778
+      }
+    },
+    {
+      "query": "path:\"46 Resource Library/\"",
+      "color": {
+        "a": 1,
+        "rgb": 7321855
+      }
+    },
+    {
+      "query": "path:\"47 Game Feel and Juice/\"",
+      "color": {
+        "a": 1,
+        "rgb": 8143610
+      }
+    },
+    {
+      "query": "path:\"48 Economy Design Deep Dive/\"",
+      "color": {
+        "a": 1,
+        "rgb": 9388794
+      }
+    },
+    {
+      "query": "path:\"49 Roblox Platform Features/\"",
+      "color": {
+        "a": 1,
+        "rgb": 10568442
+      }
+    },
+    {
+      "query": "path:\"50 Team Collaboration and Project Management/\"",
+      "color": {
+        "a": 1,
+        "rgb": 11813626
+      }
+    },
+    {
+      "query": "path:\"51 2D Game Development/\"",
+      "color": {
+        "a": 1,
+        "rgb": 12993274
+      }
+    },
+    {
+      "query": "path:\"52 Core Concepts/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16748504
+      }
+    },
+    {
+      "query": "path:\"53 Voxel Modelling Deep Dive/\"",
+      "color": {
+        "a": 1,
+        "rgb": 15418106
+      }
+    },
+    {
+      "query": "path:\"54 Untextured Stylised Modelling/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16401143
+      }
+    },
+    {
+      "query": "path:\"55 Modelling Nuance and Readability/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16401124
+      }
+    },
+    {
+      "query": "path:\"56 Field Notes/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16401106
+      }
+    },
+    {
+      "query": "path:\"57 API and Concept Atlas/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16401087
+      }
+    },
+    {
+      "query": "path:\"58 Player QoL and Game Tweaks/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16401069
+      }
+    },
+    {
+      "query": "path:\"59 Viral and Trend Game Teardowns/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16743080
+      }
+    },
+    {
+      "query": "path:\"60 High-Craft Game Teardowns/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16757596
+      }
+    },
+    {
+      "query": "path:\"61 Thumbnails and CTR/\"",
+      "color": {
+        "a": 1,
+        "rgb": 16769126
+      }
+    },
+    {
+      "query": "path:\"62 Engine Reference Cards/\"",
+      "color": {
+        "a": 1,
+        "rgb": 5111777
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0.3,
+  "nodeSizeMultiplier": 0.33,
+  "lineSizeMultiplier": 0.56,
+  "collapse-forces": false,
+  "centerStrength": 0.402621919244887,
+  "repelStrength": 12.0505711433958,
+  "linkStrength": 0.791924488725747,
+  "linkDistance": 500,
+  "scale": 0.024587907368677893,
+  "close": false
+}

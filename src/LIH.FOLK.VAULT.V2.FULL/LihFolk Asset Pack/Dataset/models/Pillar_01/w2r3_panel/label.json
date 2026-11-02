@@ -1,0 +1,156 @@
+{
+ "asset": "Pillar_01",
+ "kit": "Modular",
+ "type": "Pillar",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  9.3,
+  9.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.3,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette reads instantly as a classical column (square abacus, echinus, shaft, torus, square plinth) from front, three-quarter and silhouette; top view is a clean centred square. A15 symmetry error 0.0 on X and Y.",
+   "V2": "Clear hierarchy: big shaft, medium abacus/plinth/torus/echinus, small gold astragal band and shaft flutes.",
+   "V3": "Confident stylised proportions - oversized abacus and plinth against a slim shaft give a chunky toy-classical read; seats report shaft_on_base and capital_on_shaft seated with no gap.",
+   "V4": "Abacus, plinth and torus carry consistent chamfers that catch light in the capital and base close-ups.",
+   "V5": "Shaft close-up (studio) shows wavy, smeared vertical streaks instead of crisp flutes - a normal/smoothing artifact; the flat close-up shows no matching geometry, so the streaks are shading noise.",
+   "V6": "One stone hue in 3 values (dark abacus/plinth, mid torus, light shaft) plus a single gold accent band; sandstone and brick colourways hold the same structure.",
+   "V7": "776 tris vs module target 800 - at target.",
+   "V8": "One LF_VertexColor material, stone hue with gold band accent, kit-scale chamfers - indistinguishable from the kit spec.",
+   "V9": "Studio line correct: Anchored, Box collision, CanTouch off, Color white, SmoothPlastic; T1 vertical tiling passes with IoU 1.0."
+  },
+  {
+   "V1": "Classic base/shaft/capital outline reads from all views; XY symmetry_error 0.0, front outline symmetric.",
+   "V2": "Clear big/medium/small: square plinth and abacus, round shaft with torus base, thin gold necking band.",
+   "V3": "Stylised column proportions with a heavy abacus; seats report shaft_on_base and capital_on_shaft seated.",
+   "V4": "Consistent chamfers on plinth, abacus and torus catch light in base and capital close-ups.",
+   "V5": "Shaft close-up (studio) shows wavy, streaky shading bands that do not follow straight flutes; in flat light the shaft is a plain tone, so the streaks are normal/shading wobble, not colour.",
+   "V6": "Stone in two values (dark plinth/capital, light shaft) plus a gold band.",
+   "V7": "776 tris vs module target 800.",
+   "V8": "Single LF_VertexColor material, chamfered edges, gold band accent: kit-consistent.",
+   "V9": "Anchored, CollisionFidelity Box, CanTouch off, Color white, SmoothPlastic, grid-corner pivot; T1 pass."
+  },
+  {
+   "V1": "Front, three-quarter and silhouette read instantly as a classical column (square plinth, torus, shaft, flared capital, heavy abacus); outline is symmetric (A15 X/Y error 0.0) and centred.",
+   "V2": "Clear tiers: big (plinth / shaft / abacus), medium (torus base, echinus flare), small (thin gold necking band, chamfered abacus and plinth edges).",
+   "V3": "Confidently stylised: oversized chunky abacus and plinth against a slimmer shaft give a cartoon-classical read; seating is correct (shaft on base and capital on shaft both seated).",
+   "V4": "Close_capital and close_base studio show consistent chamfers on the abacus, plinth and torus that catch clean highlight lines.",
+   "V5": "Close_shaft studio shows irregular wavy, smeared light/dark streaks running down the whole shaft while the flat close-up shows a straight, featureless outline: a shading artifact (wobbly normals / half-formed fluting) that reads as wood grain, especially in the sandstone and brick colourways.",
+   "V6": "One stone hue in three values (dark plinth/abacus, mid torus, light shaft) plus a single gold accent band; colourways keep the structure.",
+   "V7": "776 tris vs module target 800 / ceiling 2000.",
+   "V8": "Single LF_VertexColor material, stone hue + gold band per wave-2 modular spec and kit chamfers, but the streaky shaft shading departs from the kit's clean smooth weighted-normal look and makes stone read as timber.",
+   "V9": "Studio line: Anchored, Box collision, CanTouch off, MeshPart white + SmoothPlastic, grid-corner pivot; T1 vertical tiling passes (iou 1.0)."
+  }
+ ],
+ "artifacts": [
+  [
+   "wavy streaky smooth-shading on the shaft where flutes should be (studio close-up), not crisp flutes"
+  ],
+  [
+   "Wavy streak shading on the fluted shaft (studio light)"
+  ],
+  [
+   "Wavy smeared shading streaks along the entire shaft (close_shaft studio), not backed by visible geometry in the flat close-up"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Fix the shaft normals: either model real shallow flutes with sharp/weighted edges or remove the fluting so the shaft shades as a clean cylinder",
+   "Optional: add slight entasis or a subtle neck moulding to push the stylisation"
+  ],
+  [
+   "Fix shaft normals: either make flutes crisp with weighted/hard edges or remove the shallow flutes so the shaft shades cleanly",
+   "If keeping flutes, make them deep enough to read at 64 px",
+   "Slightly slim the abacus or add an echinus curve for a less blocky capital"
+  ],
+  [
+   "Fix the shaft shading: either model real, evenly spaced flutes with clean weighted normals or make the shaft a clean smooth cylinder",
+   "Optionally add slight entasis or a second gold/ink band at the base of the shaft to strengthen the small tier",
+   "Check the sandstone/brick colourways after the shading fix so the shaft reads as stone, not wood"
+  ]
+ ],
+ "params": {
+  "kind": "column",
+  "flutes": true
+ },
+ "tris": 776,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,22 @@
+{
+ "id": "grass_meadow_001",
+ "kind": "materials",
+ "score": 8.8,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 1,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m3",
+ "reviewer_notes": [
+  "Tiny pale flower dots read as specks; no large-scale clumps",
+  "Flower dots tiny and evenly sprinkled; normal relief weak",
+  "normal weak; flower dots tiny and uniform"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

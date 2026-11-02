@@ -1,0 +1,115 @@
+{
+ "id": "leaves_autumn_002",
+ "family": "leaves",
+ "theme": "autumn",
+ "index": 2,
+ "seed": 2424.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_leaves.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Grass",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "foliage",
+  "leaves",
+  "hedge",
+  "nature",
+  "autumn"
+ ],
+ "colors": [
+  [
+   "#bf733f",
+   0.398
+  ],
+  [
+   "#a55335",
+   0.274
+  ],
+  [
+   "#d19a40",
+   0.235
+  ],
+  [
+   "#442a1c",
+   0.093
+  ]
+ ],
+ "params": {
+  "C1": "#e3a854",
+  "C2": "#c06f37",
+  "C3": "#8f3c23",
+  "C4": "#42291c",
+  "C5": "#7d2732",
+  "Size": 5.0,
+  "Elong": 0.938542716847471,
+  "Vein": 0.8079384882919624,
+  "Berries": 0.0,
+  "Hue": 0.038965596911303274,
+  "Seed": 2424.0
+ },
+ "normal_depth_px": 28.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.922,
+   "Color_Neutral": 0.936,
+   "Normal": 0.774,
+   "Roughness": 0.456,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.499,
+   0.501,
+   0.987
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.003,
+   0.011
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 44.4,
+   "diel_luma_p99": 182.3,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.674,
+   "rough_min": 0.635,
+   "rough_expected": [
+    0.55,
+    0.9
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.0981,
+  "M_neutral_mean": 0.739,
+  "M_neutral_range_p5_p95": [
+   0.291,
+   0.902
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 22.9,
+ "preview": "preview.jpg"
+}

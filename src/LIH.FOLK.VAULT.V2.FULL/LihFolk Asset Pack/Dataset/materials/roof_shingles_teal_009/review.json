@@ -1,0 +1,22 @@
+{
+ "id": "roof_shingles_teal_009",
+ "kind": "materials",
+ "score": 9.2,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 1,
+  "M4": 2,
+  "M7": 2,
+  "M6": 2,
+  "M5": 2
+ },
+ "batch": "m5",
+ "reviewer_notes": [
+  "Scales outline-only, no tilt/overlap; stray light smudges on ground",
+  "Flat scales, no curvature or edge wear",
+  "flat scales, rim-only normal; faint grime blotches"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

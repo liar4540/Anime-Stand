@@ -1,0 +1,121 @@
+{
+ "id": "metal_plates_bronze_003",
+ "family": "metal_plates",
+ "theme": "bronze",
+ "index": 3,
+ "seed": 9279.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_metal_plates.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "DiamondPlate",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "metal",
+  "plates",
+  "industrial",
+  "floor",
+  "bronze"
+ ],
+ "colors": [
+  [
+   "#b38e58",
+   0.431
+  ],
+  [
+   "#cfa76d",
+   0.262
+  ],
+  [
+   "#bf975f",
+   0.243
+  ],
+  [
+   "#4d3b2a",
+   0.063
+  ]
+ ],
+ "params": {
+  "C1": "#e3c98f",
+  "C2": "#cca167",
+  "C3": "#9d7d48",
+  "C4": "#33271c",
+  "C5": "#4b728e",
+  "Rows": 3.0,
+  "PerRow": 2.0,
+  "Stagger": 1.0,
+  "Seam": 0.005637318231906246,
+  "Bev": 0.01185790024679023,
+  "Rivets": 0.0,
+  "RivetN": 6.0,
+  "Paint": 0.0,
+  "Wear": 0.5211430256022795,
+  "Dents": 0.45541167107070935,
+  "Brush": 0.8014410376087999,
+  "Seed": 9279.0
+ },
+ "normal_depth_px": 14.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.114,
+   "Color_Neutral": 0.111,
+   "Normal": 0.076,
+   "Roughness": 0.773,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.5,
+   0.991
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.011,
+   0.006
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 56.7,
+   "diel_luma_p99": 95.0,
+   "metal_mid_frac": 0.011,
+   "metal_frac": 0.939,
+   "metal_albedo_luma": 155.4,
+   "rough_mean": 0.403,
+   "rough_min": 0.31,
+   "rough_expected": [
+    0.2,
+    0.7
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.026,
+  "M_neutral_mean": 0.74,
+  "M_neutral_range_p5_p95": [
+   0.295,
+   0.866
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 8.8,
+ "preview": "preview.jpg"
+}

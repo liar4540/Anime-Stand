@@ -1,0 +1,108 @@
+{
+ "asset": "Katana_05",
+ "kit": "Weapons",
+ "type": "Katana",
+ "seed": 5,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette read instantly as a katana (curved blade, round tsuba, ridged tsuka); top view is a disc + blade end as expected for a sword; A15 Y error 0.0, alignment 0.0, all seats seated.",
+   "V2": "Clear big (curved blade) / medium (tsuba disc, tsuka) / small (habaki, ink inset in tsuba, wrap ridges, double-ring kashira) hierarchy.",
+   "V3": "Curve and grip length are right, but the blade is slender and uniform in width and the kissaki is a blunt, truncated round end rather than a confident stylised point; proportions are closer to realistic-thin than the chunky kit anchors.",
+   "V4": "Consistent soft chamfers on tsuba rim, habaki, wrap ridges and kashira rings that catch the studio light; blade ridges read crisp but not razor.",
+   "V5": "Mostly clean smooth shading, but the kissaki close-up shows a flat-topped tip where the blade facets converge into a small pinch at the top corner, and the dark ridge band tapers into a wedge just above the habaki.",
+   "V6": "Disciplined: steel greys, gold accent, ink dark inset and one hue (teal wrap) in a couple of values; colourways swap only the wrap hue cleanly.",
+   "V7": "2480 tris vs weapon target 2500 (ceiling 4000): at target.",
+   "V8": "One white LF_VertexColor material, kit gold/ink/steel palette and chamfer size match the anchor swords; reads as the same kit.",
+   "V9": "Studio line: Tool Handle at grip point, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic - correct."
+  }
+ ],
+ "artifacts": [
+  [
+   "kissaki: truncated flat tip with facet pinch where ridges converge at the point",
+   "blade base: dark ridge band narrows into a wedge/twist just above the habaki"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Rebuild the kissaki as a proper angled stylised point (yokote line) so facets converge cleanly without the flat-top pinch",
+   "Push the stylisation: slightly wider blade with a stronger curve and a larger, thicker tsuba to match the chunky kit proportions",
+   "Even out the ridge/shinogi facet along the curve so the dark band does not taper into a wedge near the habaki",
+   "Add a little more small-scale interest on the tsuka/kashira (e.g. diamond wrap pattern or menuki accent) to lift the hilt detail"
+  ]
+ ],
+ "params": {
+  "L": 4.538,
+  "ew0": 0.311,
+  "sw0": 0.127,
+  "t0": 0.126,
+  "curve": 0.396,
+  "clip": 0.868,
+  "GL": 1.596,
+  "gr": 0.177,
+  "wraps": 7,
+  "tsuba": "oval",
+  "tR": 0.62,
+  "ps": 0.248,
+  "hilt_steps": 18
+ },
+ "tris": 2480,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

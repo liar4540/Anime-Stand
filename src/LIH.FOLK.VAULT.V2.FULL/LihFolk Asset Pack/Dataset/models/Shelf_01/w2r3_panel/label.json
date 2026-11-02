@@ -1,0 +1,153 @@
+{
+ "asset": "Shelf_01",
+ "kit": "Furniture",
+ "type": "Shelf",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 8.3,
+ "grades": [
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.3,
+  8.3,
+  8.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Reads as a bookcase only from the front/3-4 colour views; the 3/4 silhouette is a solid closed rectangle with a cornice (shelf openings face away) and the top view is a single plain slab.",
+   "V2": "Clear: case and cornice (big), three shelves (medium), varied book blocks with gold spine labels (small).",
+   "V3": "Straight rectangular carcass and rectangular box books; slight height variation and one tilted book, but overall stiff primitives with little exaggeration.",
+   "V4": "Consistent chamfers on cornice, uprights, shelf lips, plinth and book edges catch light in close-ups.",
+   "V5": "Clean in all close-ups: books seated on shelves, no z-fighting or pinches at shelf/upright joints.",
+   "V6": "Disciplined: one fabric hue (book spines) in 3 values plus cream books, frame wood in 2-3 values, small gold labels; colourways keep the structure.",
+   "V7": "964 tris vs 2000 medium target.",
+   "V8": "One LF_VertexColor material, smooth shading, chamfered edges, book-spine fabric hue + frame wood + gold per furniture spec.",
+   "V9": "Anchored, Box collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates pass."
+  },
+  {
+   "V1": "Front and three-quarter read clearly as a bookcase thanks to the book rows, but the silhouette is a plain rectangular slab with a cornice lip and the top view is just a board, so it is only readable from the front-facing angles.",
+   "V2": "Big frame/carcass, medium shelves and cornice, small book spines with gold bands and varied heights - clear hierarchy.",
+   "V3": "Frame is a straight-sided box and the books are uniform upright blocks with only a couple of leaning ones; reads partly stylised but stiff (no taper, chunky feet or tilted/stacked book play).",
+   "V4": "Consistent soft chamfers on cornice, posts, shelves and book edges catch light in close_top and close_books studio shots.",
+   "V5": "Close-ups of books, plinth and top are clean: no seams, pinches or z-fighting; books sit on the shelves.",
+   "V6": "One spine hue in three values plus cream books, wood frame in two values, gold spine bands; colourways swap only the spine hue.",
+   "V7": "964 tris vs medium target 2000: under target.",
+   "V8": "One vertex-colour material, kit cream and gold accents, chamfer size consistent with the kit.",
+   "V9": "Studio line correct: anchored, Box collision, CanTouch off, bottom-centre origin, MeshPart white with vertex colours."
+  },
+  {
+   "V1": "Front and three-quarter read as a bookcase only through the books inside; the silhouette is a plain tall rectangle with a cornice lip and the top view is a featureless brown slab.",
+   "V2": "Big (case), medium (cornice, three shelves, book groups), small (gold spine bands, cream/dark book value variation) hierarchy is clear.",
+   "V3": "Cornice overhang and varied book heights/leans help, but the case is a straight box and the books are uniform rectangular blocks with no rounded spines, so it reads partly primitive.",
+   "V4": "Consistent chamfers catch light on cornice, side posts, shelf lips and book edges in the top, plinth and books close-ups.",
+   "V5": "Books, plinth and top close-ups show clean shading with no pinches, seams or z-fighting; books sit on the shelves.",
+   "V6": "Wood frame in 2-3 values, one book hue in three values plus cream books and gold bands; disciplined across colourways.",
+   "V7": "964 tris vs medium target 2000.",
+   "V8": "Vertex-coloured wood + one fabric/book hue, kit cream and gold accents, chamfered edges match the furniture kit.",
+   "V9": "Anchored, Box collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; A1-A18 pass."
+  }
+ ],
+ "artifacts": [
+  [],
+  [],
+  []
+ ],
+ "top_fixes": [
+  [
+   "Break the box silhouette: shaped cornice/crest, scalloped side profile or bracket feet so it reads as a bookcase from the side and in silhouette",
+   "Push stylisation: lean a book or two, add a toppled stack or small prop, vary book thickness more",
+   "Give the top surface some detail (moulding inset or an object) so the top view reads"
+  ],
+  [
+   "Break the slab silhouette: add a shaped cornice/crown, stubby feet or a stepped plinth, and slightly splayed side posts",
+   "Vary the books more - a stack lying flat, a tilted leaning book, a gap with a small prop - to push the stylised read",
+   "Give the frame a slight top-heavy taper or rounded corners so it reads less like a box primitive"
+  ],
+  [
+   "Break the box silhouette: shaped/arched cornice or crest, stepped plinth or bracket feet, side-panel cutouts",
+   "Round the book spines and add one leaning or lying stack so the books read as books, not blocks",
+   "Add a small prop or two (jar, candle) on a shelf for silhouette breakup"
+  ]
+ ],
+ "params": {
+  "W": 3.974,
+  "H": 5.791,
+  "Dp": 1.432,
+  "shelves": 3
+ },
+ "tris": 964,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

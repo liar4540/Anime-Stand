@@ -1,0 +1,316 @@
+{
+ "asset": "Valve_01",
+ "kit": "Props",
+ "type": "Valve",
+ "seed": 1,
+ "params": {
+  "R": 0.344,
+  "Lp": 1.373,
+  "body": 0.719,
+  "bonnet": 0.56,
+  "wheel": 0.745,
+  "spokes": 4
+ },
+ "tris": 1960,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 2.746,
+  "y": 1.64,
+  "z": 1.941
+ },
+ "origin": "bottom",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "bonnet_on_body_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  },
+  {
+   "name": "wheel_on_stem_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "body_on_pipe",
+   "gap": 0.0,
+   "penetration": 0.23865,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bonnet_on_body",
+   "gap": 0.0,
+   "penetration": 0.10785,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "hub_on_stem",
+   "gap": 0.0,
+   "penetration": 0.06914,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rim_on_spokes",
+   "gap": 0.0,
+   "penetration": 0.04157,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "spoke0_in_hub",
+   "gap": 0.0,
+   "penetration": 0.05455,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "spoke1_in_hub",
+   "gap": 0.0,
+   "penetration": 0.05455,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "spoke2_in_hub",
+   "gap": 0.0,
+   "penetration": 0.05455,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "spoke3_in_hub",
+   "gap": 0.0,
+   "penetration": 0.05455,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt0_on_flange",
+   "gap": 0.0,
+   "penetration": 0.0533,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt1_on_flange",
+   "gap": 0.0,
+   "penetration": 0.0533,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt2_on_flange",
+   "gap": 0.0,
+   "penetration": 0.0533,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt3_on_flange",
+   "gap": 0.0,
+   "penetration": 0.0533,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt4_on_flange",
+   "gap": 0.0,
+   "penetration": 0.0533,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt5_on_flange",
+   "gap": 0.0,
+   "penetration": 0.0533,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt6_on_flange",
+   "gap": 0.0,
+   "penetration": 0.0533,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt7_on_flange",
+   "gap": 0.0,
+   "penetration": 0.0533,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 248,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "acc_dk",
+   "ink",
+   "m",
+   "h",
+   "h_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "m": "#A3B3C4",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "m": "#A3B3C4",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "m": "#A3B3C4",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "m": "#A3B3C4",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "m": "#7C8899",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "inline gate valve: hue pipe with gold flanges + ink bolts, dark-hue body, bonnet + gland, gold 4-spoke handwheel",
+ "features": [
+  [
+   "handwheel",
+   [
+    0.0,
+    0.0,
+    1.841
+   ],
+   0.9685
+  ],
+  [
+   "body",
+   [
+    0.0,
+    0.0,
+    0.59
+   ],
+   0.9347
+  ],
+  [
+   "flange",
+   [
+    1.243,
+    0.0,
+    0.59
+   ],
+   0.7616
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Props/Valve_01_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 9.3,
+  "basis": "single blind",
+  "reviewed": "Valve_04 p3",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_props.py:Valve",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Props/Valve_01.glb",
+  "blend": "Models/Kits/Props/Valve_01.blend",
+  "turntable": "Models/Kits/Props/Valve_01_turntable.mp4",
+  "preview": "Models/Kits/Props/Valve_01_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Props/Valve_01_preview.jpg"
+}

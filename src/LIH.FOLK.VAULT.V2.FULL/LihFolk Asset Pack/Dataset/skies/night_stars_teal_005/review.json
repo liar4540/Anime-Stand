@@ -1,0 +1,21 @@
+{
+ "id": "night_stars_teal_005",
+ "kind": "skies",
+ "score": 8.6,
+ "pass": true,
+ "median": {
+  "K1": 2,
+  "K2": 2,
+  "K3": 2,
+  "K4": 1,
+  "K6": 1,
+  "K5": 2
+ },
+ "batch": "s3",
+ "reviewer_notes": [
+  "Even star noise, grey smoke milky way; lacks focal feature",
+  "Grey milky way muddy against teal; uniform star noise, no focal point",
+  "Dense uniform star noise; milky way is a grey smoke streak"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/sky.md"
+}

@@ -1,0 +1,66 @@
+---
+tags: [atlas, concept, type/atlas, area/animation, area/vfx]
+---
+# Telegraphing
+
+<!-- tldr:start -->
+> [!tldr] TL;DR
+> - Telegraph (Tele): A readable wind-up warning before an enemy attack.
+> - Avoid: Telegraph bigger than the escape distance -> `R <= speed * (warning - 0.25)` or add a dash.
+> - Avoid: Arena too large -> Keep the edge within about 3 telegraph radii.
+> - Enemy telegraphs must outlast latency plus reaction time.
+>
+> Cost: TL;DR ~120 tok · whole note ~960 tok. Read more: ## In short · ## Key facts
+<!-- tldr:end -->
+
+## In short
+
+Telegraph (Tele): A readable wind-up warning before an enemy attack. (from [[Animation Glossary]])
+
+A telegraph is gameplay information drawn as an effect: where the attack lands (shape), when it lands (fill), and whose it is (colour). (from [[AoE Telegraphs - Readable Ground Warnings]])
+
+## Key facts
+
+- Avoid: Telegraph bigger than the escape distance -> `R <= speed * (warning - 0.25)` or add a dash. ([[Combat Arena and Encounter Layout]])
+- Avoid: Arena too large -> Keep the edge within about 3 telegraph radii. ([[Combat Arena and Encounter Layout]])
+- Enemy telegraphs must outlast latency plus reaction time. ([[Anticipation]])
+- Avoid: Attacks without telegraphs -> 0.4 to 0.8 s telegraph, ground markers. ([[Genre Playbook - Combat and RPG]])
+- Every attack telegraphed; roles distinct in silhouette. ([[Genre Playbook - Combat and RPG]])
+
+## Mentioned in
+
+63 notes in 17 sections. The 25 most relevant are linked:
+
+### 07 Lighting VFX and Audio
+[[AoE Telegraphs - Readable Ground Warnings]] · [[Combat Sound Design and Feedback]] · [[Lighting Mood and Time of Day]] · [[Replicating VFX - Server Validates, Clients Render]] · [[VFX Performance Budgets and Culling]]
+
+### 08 Animation
+[[Animating Creatures and Monsters]] · [[Animation Glossary]] · [[Animation Review Checklist]] · [[Boss Animation and Phases]] · [[Enemy Animation State Protocol]] · [[Enemy and NPC Animation]] · [[Snippets - Enemy Client Animator]]
+
+### 09 Gameplay Systems
+[[AI Difficulty Tuning - Reaction Time, Aim Error and Fair Misses]] · [[Behaviour Trees Utility AI and State Machines for NPCs]] · [[Hitboxes and Hit Detection]] · [[NPC AI and Behaviour]] · [[Squad AI - Attack Tokens, Flanking and Attacker Limits]]
+
+### 10 Game Design and Genres
+[[Boss Fight Design Patterns]] · [[Genre Playbook - Combat and RPG]]
+
+### 13 Production and Case Studies
+[[Case Study - Enemy Roster Rebuild]]
+
+### 33 Level Design
+[[Combat Arena and Encounter Layout]]
+
+### 42 Accessibility and Inclusive Design
+[[Colour-Blind Safe Design]]
+
+### 47 Game Feel and Juice
+[[Juice on a Budget - Mobile and Low-End]]
+
+### 52 Core Concepts
+[[Anticipation]]
+
+### 60 High-Craft Game Teardowns
+[[Teardown - Deepwoken]]
+
+Also mentioned in (not linked): AI Animation and Motion from Video · Accessibility · Accessibility Start Here · Animation Capture and Mocap · Animation LOD · Client Prediction and Reconciliation for Combat · Combat Animation Craft · Emotes and Social Animation · Enemy Archetype Kit - Fodder, Tank, Ranged, Support and Exploder · Explosions - Radius Damage, Falloff and Cover Checks · Feedback Timing - Sound Visual and Haptic Sync · Game Feel Start Here · Genre Playbook - Horror and Story · Genre Playbook - Tower Defense · Graphics and Performance Toggles for Low-End Devices · Interest Management and Per-Player Replication · Level Design Start Here · Level Design for Roblox · Lightning Strikes and Thunder - Procedural Bolts and Sound Delay · Locomotion and Melee Reference Numbers · Markers and Events · Mobile and Low-End Optimization · Pipeline - Importing Animated Enemies · Post-Mortem - Building a Melee Action Game · Projectile VFX - Muzzle, Travel and Impact · QoL Audit Checklist · Stance and Charge Moves · Teardown - Escape Tsunami for Brainrots · Teardown - Grace · Teardown - Natural Disaster Survival · Teardown - Pressure · Timing Spacing and Frame Charts · Troubleshooting Table · VFX Design Playbook · Weather Performance Budgets and Quality Tiers · Weather System Architecture - State Machine, Transitions and Replication · Weather That Changes Gameplay - Grip, Visibility and Hearing · What Craft Looks Like on Roblox - Lessons from Top Studios
+
+<!-- atlas:generated -->

@@ -1,0 +1,25 @@
+{
+ "id": "lava_magma_006",
+ "kind": "materials",
+ "score": 8.8,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 1,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m6",
+ "reviewer_notes": [
+  "flat voronoi slabs, no crust detail or hot pools; uniform crack width",
+  "Crust slabs flat with uniform pillow bevels; crack width too even",
+  "Crust plates flat and featureless; uniform crack width, uniform bevels",
+  "Flat crust slabs, crack width uniform; no raised rims or depth",
+  "Even crack width, no molten pools or glow falloff on crust edges",
+  "evenly sized cells and identical crack width read slightly as tiled grid"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

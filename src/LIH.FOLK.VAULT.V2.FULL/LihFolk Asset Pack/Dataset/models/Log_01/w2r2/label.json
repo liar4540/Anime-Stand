@@ -1,0 +1,97 @@
+{
+ "asset": "Log_01",
+ "kit": "Nature",
+ "type": "Log",
+ "seed": 1,
+ "attempt": "w2r2",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Reads as a fallen log from front (long bent bar with stub), three-quarter (ringed end grain) and top; silhouette shows the gentle bend and stub knob.",
+   "V2": "Big trunk and small details (cut stub, end rings) but no medium forms - no knots, bark plates, broken branch or root flare - so hierarchy is only partial.",
+   "V3": "Essentially a long octagonal-ish cylinder with a slight bend and taper; proportion is plausible but restrained rather than confidently stylised.",
+   "V4": "End caps carry a consistent bevelled rim ring and the long bark ridges are softened facets that catch the light evenly; stub has a rounded cream cap.",
+   "V5": "Bark close-up shows smooth gradients along designed ridges, end-grain cap is a clean planar disc with crisp concentric rings; no pinches, seams or z-fighting visible.",
+   "V6": "Disciplined: bark brown in 2-3 values plus cream end grain rings; birch/redwood colourways keep the same two-material structure.",
+   "V7": "672 tris vs medium target 2000 (ceiling 4000) - well under target.",
+   "V8": "One white LF_VertexColor material, bark hue + warm cream end grain match the kit palette; smooth weighted shading with designed facets.",
+   "V9": "Static scenery Studio line correct: Anchored, Hull collision, CanTouch off, MeshPart white, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Add medium-scale forms: a knot or two, a broken branch stump, slight root flare or bark split at one end",
+   "Push the bend/taper further so it reads less like a cylinder primitive",
+   "Vary the stub (angle it, add a second smaller one) for more interest at 64 px"
+  ]
+ ],
+ "params": {
+  "L": 5.979,
+  "R": 0.661,
+  "bow": -0.196,
+  "grooves": 18,
+  "stub": true,
+  "yaw": -12.957
+ },
+ "tris": 672,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

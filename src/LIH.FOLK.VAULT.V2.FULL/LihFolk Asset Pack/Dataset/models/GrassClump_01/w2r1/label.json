@@ -1,0 +1,98 @@
+{
+ "asset": "GrassClump_01",
+ "kit": "Nature",
+ "type": "GrassClump",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "rejected",
+ "score": 7.0,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette all read as a splayed grass tuft and the top view is a clear radial star, so it is readable from every angle.",
+   "V2": "About 11 blades of near-identical width and length. The only variation is a tip/base two-tone, with no short filler blades and no ground tuft, so the hierarchy is only partial.",
+   "V3": "Curved, tapered blades give some stylised gesture, but they are uniform in width and the bases end as abrupt flat-cut stubs at different heights (silhouette shows a notched, ragged base).",
+   "V4": "Blades have sharp knife-edge tips and hard cut-off bottoms. There is no soft rounding where blades fuse into a clump, so edge treatment is inconsistent.",
+   "V5": "Close base studio shows visible stray faceting: kinked segment bands along each blade, hard shading breaks at the segment joins, and ragged, separate-shell blade bottoms (62 cross-shell overlaps) instead of a fused base.",
+   "V6": "One foliage-green hue in about 3 values (dark base, mid body, light tip). Colourways (autumn, frost) keep the same disciplined structure.",
+   "V7": "528 tris against a small-class target of 600 (ceiling 1500), so it is under target.",
+   "V8": "Correct single LF_VertexColor material and palette discipline, but the blades are separate, faceted segmented shells rather than the kit's fused smooth organic shell.",
+   "V9": "Studio line: foliage Anchored, CanCollide/CanTouch/CanQuery off, Box fidelity, Color white, SmoothPlastic, origin bottom-centre. Correct."
+  }
+ ],
+ "artifacts": [
+  [
+   "stray faceting / segment kinks along blades with hard shading bands",
+   "ragged flat-cut blade bottoms at differing heights instead of a fused root mass"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Fuse the blade roots into one smooth clump base that sits flush on the ground plane",
+   "Add more segments or weighted normals along the blade curve to remove the kinked faceting",
+   "Vary blade length and width (add a few short filler blades) for big/medium/small hierarchy"
+  ]
+ ],
+ "params": {
+  "n": 11,
+  "Hm": 1.916,
+  "spread": 0.362,
+  "lean": 0.754
+ },
+ "tris": 528,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,89 @@
+{
+ "asset": "Spear_01",
+ "type": "Spear",
+ "tris": 1896,
+ "budget_class": "weapon",
+ "budget_target": 2500,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.354,
+  "y": 0.626,
+  "z": 8.41
+ },
+ "origin": "hand/grip point",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "alignment": [
+  {
+   "name": "socket_on_haft_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "socket_on_haft",
+   "gap": 0.0,
+   "penetration": 0.19004,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "blade_into_socket",
+   "gap": 0.0,
+   "penetration": 0.158,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "wings_on_socket",
+   "gap": 0.0,
+   "penetration": 0.19157,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 208,
+ "studio": "Tool Handle; origin = hand/grip point; CollisionFidelity Hull; CanCollide off when equipped; Massless; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "colourways": [
+   "teal",
+   "royal",
+   "crimson",
+   "verdant",
+   "shadow"
+  ]
+ }
+}

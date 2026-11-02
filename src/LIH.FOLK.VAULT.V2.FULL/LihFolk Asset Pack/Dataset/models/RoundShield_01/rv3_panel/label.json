@@ -1,0 +1,171 @@
+{
+ "asset": "RoundShield_01",
+ "kit": "Weapons",
+ "type": "RoundShield",
+ "seed": 1,
+ "attempt": "rv3_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  9.3,
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and top views read instantly as a round shield (gold rim ring, quartered field, steel boss; top shows rim edge, boss bulge and handle); the silhouette render is a near-plain ellipse with only faint rivet nubs, the weakest angle but still a shield disc.",
+   "V2": "Clear hierarchy: big disc + thick gold rim, medium quartered field and large boss on an ink-dark flange, small 8 rivets evenly spaced on the rim.",
+   "V3": "Chunky rim and oversized boss give a confident stylised read; boss dome is a fairly plain hemisphere but proportions sit well against the 2.7-stud disc.",
+   "V4": "Rim shows a consistent chamfer catch-light stripe in the rim close-up; plate inset edge and boss flange edge are softened, no razor edges visible.",
+   "V5": "Front/outline is symmetric (A15 X=0.0, Z=0.0, boss and rivet ring centred, all seats pass), but close-ups show stray faceting: rivets have clearly polygonal outlines, the boss outline is visibly segmented in the flat close-up, rim outer edge shows segment steps, and a light smudge on the teal plate just above the boss flange in the studio close-up.",
+   "V6": "Disciplined: gold rim, warm cream + one hue (teal) quarters, steel-grey boss/rivets with ink flange; colourways (crimson, shadow) swap only the hue.",
+   "V7": "2400 tris vs weapon target 2500 (ceiling 4000), under target.",
+   "V8": "One white vertex-colour material, kit gold/cream/steel/ink palette, chamfered rim and smooth shading match the HeaterShield kit look.",
+   "V9": "Studio line correct: origin at handle/hand point, CollisionFidelity Box, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  },
+  {
+   "V1": "Front, three-quarter and top all read instantly as a round shield (quartered face, domed boss, gold rim; top shows boss in front and handle behind, centred along the rim); the silhouette render is a plain oval with rivet nubs, but that is inherent to a round shield and the side profile carries the boss.",
+   "V2": "Clear tiers: big = disc + chunky gold rim, medium = large steel boss on an ink flange + quartered cream/teal field, small = 8 evenly spaced steel rivets.",
+   "V3": "Confident stylised proportions: oversized boss (~1/3 diameter), thick rim (~7% of diameter), chunky rivets; outline is round (294x291 px in front view, centred at x 255.5) and A15 symmetry error X/Z = 0.0. The boss and quarter divides sit ~6 px below the rim centre in the front view, but rivets (less protruding) shift ~3 px the same way, consistent with a slightly elevated perspective camera rather than an off-centre feature; A16 pass.",
+   "V4": "Rim shows a consistent chamfer highlight band on its front edge in the rim studio close-up, boss flange and dome edges are softened, rivets are rounded; no razor or blobby edges.",
+   "V5": "Mostly clean smooth shading, but the rim close-up shows visible polygon segments along the rim highlight and outer outline, and rivets have jagged low-segment outlines (polygonal in the flat close-up); a soft dark gradient halo on the teal field around the boss flange. Minor faceting, nothing broken (A17/A18 pass, 0 flipped faces).",
+   "V6": "Disciplined kit palette: gold rim, warm cream + one hue (teal) quarters, steel-grey boss/rivets, ink flange; colourways (crimson, shadow/purple) swap only the hue cleanly.",
+   "V7": "2,400 tris vs weapon target 2,500 (ceiling 4,000): at target.",
+   "V8": "One white vertex-colour material (LF_VertexColor, SmoothPlastic), kit gold/cream/steel/ink palette and rim chamfer read the same as the HeaterShield kit piece; rivets slightly lower-res than the kit's but not clashing.",
+   "V9": "Studio line complete: origin at handle/grip point, CollisionFidelity Box, CanCollide off when equipped, Massless, MeshPart.Color white for vertex colours, SmoothPlastic."
+  },
+  {
+   "V1": "Front outline is a clean even circle with 8 evenly spaced rivet bumps, centred boss; 3/4 reads as a domed round shield; top view shows rim disk + boss dome + back handle, so it reads from every angle (A15 X/Z error 0.0).",
+   "V2": "Clear tiers: big gold rim disk, medium quartered cream/teal field and large steel boss with dark collar, small rivets ring; nothing noisy.",
+   "V3": "Chunky stylised read: boss about a third of the diameter and well proud of the face (depth 1.23 of 2.7 studs), thick rim, oversized rivets; no stiff primitive look.",
+   "V4": "Rim carries a consistent chamfer that catches a highlight band on both inner and outer edges, rivets and boss rounded, collar edge softened; bevels consistent across parts.",
+   "V5": "No seams, z-fighting or seating faults (rivets 0.023 and handle 0.062 penetration, gap 0), but close-ups show stray faceting: visible segment steps along the rim's bevel highlight and in the flat-light outer outline, and rivets read as lumpy ~10-sided polygons; slight shading smear on the teal around the boss collar.",
+   "V6": "Disciplined kit palette: gold rim accent, warm cream + teal (one hue) field, steel grey boss/rivets, ink collar; strong cream/teal value contrast; colourways (crimson, shadow) swap only the hue cleanly.",
+   "V7": "2400 tris vs weapon target 2500 (ceiling 4000), at/under target.",
+   "V8": "One white vertex-colour material, kit gold/ink/cream/steel palette with one hue, smooth shading and chamfered rim match the HeaterShield sibling; rivet density is a touch lower than the sibling but within kit look.",
+   "V9": "Studio line correct: origin at handle/hand point, CollisionFidelity Box, CanCollide off when equipped, Massless, MeshPart.Color white for vertex colours, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Rivets low-segment: polygonal outlines and visible facets in rim close-up (studio and flat)",
+   "Boss dome outline visibly segmented in the boss flat close-up",
+   "Rim outer edge shows segment steps in the rim studio close-up",
+   "Light smudge/gradient on the teal plate just above-right of the boss flange in the boss studio close-up (possible normal/smoothing issue)",
+   "gate_report: 188 cross-shell overlaps (intentional interpenetration of rivets/handle, not a gate fail)"
+  ],
+  [
+   "Visible polygon segmentation on the rim highlight band and outer rim outline in the rim close-up",
+   "Rivets show jagged low-segment outlines (polygonal in flat close-up) and faceted highlights",
+   "Soft dark shading halo on the teal field around the boss flange (upper right of boss close-up)",
+   "gate_report 'alignment' is null: boss centring is not numerically reported (A16 pass only)"
+  ],
+  [
+   "Visible faceting/segment steps along the rim bevel highlight (close_rim_studio) and stepped outer outline (close_rim_flat)",
+   "Rivets low-segment, read as faceted lumps in close-up",
+   "Faint shading smear on the teal field around the base of the boss collar (close_boss_studio)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Raise rivet segment/ring count (or add a subdivided cap) so rivets read as smooth domes like the kit anchor",
+   "Increase boss dome and flange radial segments to remove the polygonal outline, staying within the 2500 target",
+   "Fix plate normals/smoothing near the boss flange to remove the light smudge on the field",
+   "Strengthen the off-axis silhouette: slightly larger rivets or a taller boss so the outline breaks the plain ellipse at 64 px"
+  ],
+  [
+   "Raise rim radial segment count (or add a support loop / weighted normals) so the rim highlight and outline stay smooth in close-up",
+   "Add a few segments to the rivet domes so their outlines read round at close range",
+   "Check normals on the face around the boss flange (weighted normals or a split) to remove the dark halo gradient",
+   "Emit an alignment_report entry for the boss vs shield centre so centring is verified numerically, and confirm the front camera is level"
+  ],
+  [
+   "Raise the rim's radial segment count (or weighted/custom normals on the bevel) so the highlight band and outer outline are smooth",
+   "Give rivets a few more segments/rings so they read as smooth domes like the HeaterShield rivets",
+   "Split normals (or add a tight bevel loop) where the boss collar meets the field to remove the soft shading smear on the panel"
+  ]
+ ],
+ "params": {
+  "R": 1.35,
+  "pattern": "quartered",
+  "rivets": 8,
+  "boss": 0.39,
+  "dome": 0.132
+ },
+ "tris": 2400,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

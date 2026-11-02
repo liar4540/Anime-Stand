@@ -1,0 +1,163 @@
+{
+ "asset": "Lantern_04",
+ "kit": "Props",
+ "type": "Lantern",
+ "seed": 4,
+ "attempt": "p3_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  8.7,
+  8.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette all read instantly as a hanging lantern (eye ring, cone cap, caged barrel, foot puck); outline is symmetric (A15 X/Y error 0.0) and top view is a centred disc with the ring.",
+   "V2": "Clear tiers: big barrel glass body, medium cone cap / base puck / six cage bars, small gold trim bands, collar and eye ring; small tier is thin (no rivets, latch or hinge) but present.",
+   "V3": "Proportions are mostly literal primitives: plain straight cone cap, thin flat base puck and uniformly thin straight bars; only the oversized eye ring and slight barrel bulge push stylisation.",
+   "V4": "Chamfers catch light consistently on cap rim, base puck edge, gold bands and bar edges in the studio close-ups; no razor edges.",
+   "V5": "Close-ups (cap, glass, base) are clean: no pinches, seams or z-fighting; seats show tiny intended penetrations; only uniform low-segment faceting on the eye ring torus.",
+   "V6": "Disciplined: ink dark metal, gold accent, one amber hue in two values (glass + darker band); colourways swap only the hue cleanly.",
+   "V7": "1672 tris vs medium target 2000 (ceiling 4000): under target.",
+   "V8": "Kit-consistent: one white LF_VertexColor material, gold accent + ink dark + one hue in values, chamfered edges, smooth shading matching the anchor style.",
+   "V9": "Studio line correct: Anchored, Box collision (off when hung), MeshPart.Color white, SmoothPlastic, PointLight at glass centre, origin bottom-centre."
+  },
+  {
+   "V1": "Silhouette reads as a hanging lantern at small size: hoop ring, conical cap with overhang, barrel body and wider foot disc; outline symmetric in front view and silhouette (A15 X/Y error 0.0), cap and glass centred (alignment 0.0); top view is a plain disc with ring, which is expected for this object.",
+   "V2": "Clear big/medium/small: big cap/body/foot, medium gold rims, six cage bars and the hoop, small amber end bands on the glass and the ring collar.",
+   "V3": "Reads stylised (chunky hoop, bowed bars, wide foot) but the main forms are close to raw primitives: a straight cone cap with no flare or curve and a near-straight cylinder for the glass.",
+   "V4": "Rim, base disc and gold bands have small chamfers that catch light (base disc top edge, cap rim), and the bars are softened square sections; bevel size looks consistent across parts.",
+   "V5": "No z-fighting, seams or pinches in the close-ups, but the low segment count shows as visible flat facets on the hoop ring and collar (cap close-up) and a polygonal outline on the base disc (base close-up).",
+   "V6": "Disciplined: ink-dark cap/base/bars, gold accent on rims and hoop, one glow hue in two values (light amber glass, darker orange bands); teal/violet colourways keep the same structure.",
+   "V7": "1672 tris against a medium target of 2000 (ceiling 4000).",
+   "V8": "One white vertex-colour material (LF_VertexColor), kit gold accent and ink dark, one hue in 2 values, smooth shading and small chamfers, consistent with the kit anchors.",
+   "V9": "Studio line is correct and complete: Anchored, Box collision (or off when hung), MeshPart.Color white for vertex colours, SmoothPlastic, PointLight at the glass centre, origin bottom-centre; all gates A1-A18 pass."
+  },
+  {
+   "V1": "Ring + cone cap + flared foot read as a lantern in front, three-quarter and silhouette; outline is symmetric (A15 X/Y error 0.0, alignment 0.0, all seats seated); top view still shows ring on dark disc.",
+   "V2": "Clear big (barrel glass, cone cap), medium (gold bands, foot disc, hanging ring) and small (six cage bars) tiers; small tier is thin with no rivets/fasteners to add a finer read.",
+   "V3": "Proportions are a fairly literal lantern: cap overhang barely wider than the glass, foot only slightly flared, thin bars; only the oversized ring is pushed - partly stylised, not a confident chunky read.",
+   "V4": "Foot disc and cap rim show soft chamfer highlights, but cage bars render with crisp hard edges (close_base/close_glass) and ring/cap-rim are visibly low-segment faceted - bevels inconsistent across parts.",
+   "V5": "No pinches, seams or z-fighting in base, cap or glass close-ups; glass and cone shade smoothly; only coarse faceting on the ring torus and gold rim edge (silhouette, not shading artifacts).",
+   "V6": "Ink dark cage/cap, gold accent bands/ring, one glow hue in two values (amber glass + burnt-orange bands); colourways swap only the hue. Gold vs amber are close in the ember colourway, slightly lowering value contrast.",
+   "V7": "1672 tris vs medium-class target 2000 (ceiling 4000) - under target.",
+   "V8": "One white vertex-colour material and kit palette (ink, gold, one hue) match; minor mismatch in bevel language: bars lack visible ~0.045 chamfers and ring/rim show flat faceting instead of smooth shading.",
+   "V9": "Studio line correct: MeshPart.Color white for vertex colours, SmoothPlastic, Anchored, Box collision (off when hung), PointLight at glass centre, origin bottom-centre (A12 pass)."
+  }
+ ],
+ "artifacts": [
+  [
+   "Visible facet banding on the gold eye ring (low segment count) in the cap close-up - minor, uniform, not a defect"
+  ],
+  [
+   "Visible faceting on the hoop ring and ring collar in the cap close-up (low radial segment count)",
+   "Polygonal outline on the base disc rim in the base close-up"
+  ],
+  [
+   "Low-segment faceting visible on the hanging ring torus and the gold cap rim in close_cap_studio",
+   "Cage bars show hard unchamfered edges next to chamfered base/cap"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Push stylisation: give the cap a curved/stepped dome or overhanging flare with a finial collar and thicken the base puck so the silhouette is less stock-primitive",
+   "Add a small-detail tier: rivets on the base/cap bands, a door latch or hinge on one cage side",
+   "Thicken and slightly taper/curve the cage bars to follow the glass bulge for a chunkier stylised read",
+   "Raise eye ring segment count a little to soften the faceting at close range"
+  ],
+  [
+   "Add radial segments to the hoop ring/collar and the base disc rim (or smooth the facets) to remove the visible faceting",
+   "Give the cap more stylised shape (slight concave flare or a curved bell profile, a small finial step) so it is no longer a plain cone",
+   "Add a little shape to the glass body (a gentle barrel bulge or a taper toward the foot) and an optional small detail such as rivets where the bars meet the rims"
+  ],
+  [
+   "Chamfer the six cage bars (~0.045 studs) and thicken them slightly so they hold at 64 px and match the kit bevel language",
+   "Push proportions: widen the cap overhang and flare the foot more so the silhouette reads as a confident stylised lantern rather than a straight cylinder",
+   "Raise segment count / smooth-shade the hanging ring and cap rim to remove visible faceting",
+   "Add a small-detail tier (rivets where bars meet bands, or a cap finial collar) and separate the gold accent value from the amber glass in the ember colourway"
+  ]
+ ],
+ "params": {
+  "R": 0.477,
+  "Hg": 1.175,
+  "bars": 6,
+  "cap": "roof"
+ },
+ "tris": 1672,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

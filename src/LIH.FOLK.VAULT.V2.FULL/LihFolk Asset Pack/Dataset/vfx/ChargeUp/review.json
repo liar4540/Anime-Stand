@@ -1,0 +1,9 @@
+{
+ "id": "ChargeUp",
+ "kind": "vfx",
+ "batch": "vfx2",
+ "pass": null,
+ "score": null,
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/vfx.md",
+ "note": "draft: blind review not run (subagent concurrency limit reached); latest strip is the highest rN"
+}

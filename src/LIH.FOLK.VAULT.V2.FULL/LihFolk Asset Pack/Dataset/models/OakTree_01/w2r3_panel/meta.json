@@ -1,0 +1,190 @@
+{
+ "asset": "OakTree_01",
+ "kit": "Nature",
+ "type": "OakTree",
+ "seed": 1,
+ "params": {
+  "Ht": 2.593,
+  "Rc": 3.491,
+  "puffs": 7,
+  "lean": -0.158,
+  "r0": 0.643,
+  "branches": 2
+ },
+ "tris": 1876,
+ "budget_class": "tree",
+ "budget_target": 2000,
+ "budget_ceiling": 5000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 6.477,
+  "y": 6.508,
+  "z": 8.491
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "canopy_on_trunk",
+   "gap": 0.0,
+   "penetration": 0.36527,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "branch0_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.43963,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "branch1_in_trunk",
+   "gap": 0.0,
+   "penetration": 0.46056,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 118,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h",
+   "h_dk",
+   "b",
+   "b_dk"
+  ],
+  "primary": "summer",
+  "colourways": [
+   {
+    "name": "summer",
+    "hue": "leaf",
+    "roles": {
+     "h": "#5DA543",
+     "h_dk": "#336F2E",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "spruce",
+    "hue": "spruce",
+    "roles": {
+     "h": "#368A5C",
+     "h_dk": "#1F5A3E",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "autumn",
+    "hue": "autumn",
+    "roles": {
+     "h": "#E0702E",
+     "h_dk": "#9C3F22",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "blossom",
+    "hue": "blossom",
+    "roles": {
+     "h": "#E2789F",
+     "h_dk": "#A84670",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "frost",
+    "hue": "frost",
+    "roles": {
+     "h": "#7FBFC4",
+     "h_dk": "#4A8790",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull (trunk-only Box/Cylinder part for walk-through canopies); CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "round oak: one fused 8-puff canopy shell (latitude bands h_dk/h/h_lt on rings), flared 5-root trunk, 2 branches into the canopy",
+ "features": [
+  [
+   "canopy",
+   [
+    1.732,
+    -1.73,
+    6.365
+   ],
+   2.7928
+  ],
+  [
+   "trunk_base",
+   [
+    0.144,
+    0.015,
+    0.602
+   ],
+   1.0
+  ],
+  [
+   "branch_fork",
+   [
+    0.065,
+    0.015,
+    1.817
+   ],
+   1.2
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_silhouette.png",
+  "close_canopy_studio": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_close_canopy_studio.png",
+  "close_canopy_flat": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_close_canopy_flat.png",
+  "close_trunk_base_studio": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_close_trunk_base_studio.png",
+  "close_trunk_base_flat": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_close_trunk_base_flat.png",
+  "close_branch_fork_studio": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_close_branch_fork_studio.png",
+  "close_branch_fork_flat": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_close_branch_fork_flat.png",
+  "cw_spruce": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_cw_spruce.png",
+  "cw_autumn": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_cw_autumn.png",
+  "cw_blossom": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_cw_blossom.png",
+  "cw_frost": "Models/Kits/_drafts/r3/OakTree_01/OakTree_01_cw_frost.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_nature.py:OakTree",
+ "made": "2026-10-28"
+}

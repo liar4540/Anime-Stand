@@ -1,0 +1,159 @@
+{
+ "asset": "Log_01",
+ "kit": "Nature",
+ "type": "Log",
+ "seed": 1,
+ "params": {
+  "L": 5.979,
+  "R": 0.661,
+  "bow": -0.196,
+  "grooves": 18,
+  "stub": true,
+  "yaw": -12.957
+ },
+ "tris": 672,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 6.088,
+  "y": 2.578,
+  "z": 1.55
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "stub_on_log",
+   "gap": 0.0,
+   "penetration": 0.42733,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 18,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "cream",
+   "h_lt",
+   "h"
+  ],
+  "primary": "oak",
+  "colourways": [
+   {
+    "name": "oak",
+    "hue": "oak",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#D2A56A",
+     "h": "#A9784A"
+    }
+   },
+   {
+    "name": "ash",
+    "hue": "ash",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#C6B9A4",
+     "h": "#978A76"
+    }
+   },
+   {
+    "name": "redwood",
+    "hue": "redwood",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#CF8159",
+     "h": "#A2573A"
+    }
+   },
+   {
+    "name": "birch",
+    "hue": "birch",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#E9E0CB",
+     "h": "#BDB09A"
+    }
+   },
+   {
+    "name": "walnut",
+    "hue": "walnut",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#A47650",
+     "h": "#7A5236"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull (or a Cylinder part to sit on); CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "fallen log: lathe with 9 bark ridges, bark lip and concentric end-grain rings (cream / light) on both cut faces, slight bow, side branch stub",
+ "features": [
+  [
+   "end_grain",
+   [
+    2.913,
+    -0.67,
+    0.652
+   ],
+   0.9254
+  ],
+  [
+   "bark",
+   [
+    0.0,
+    -0.661,
+    0.982
+   ],
+   0.7932
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r2/Log_01/Log_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r2/Log_01/Log_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r2/Log_01/Log_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r2/Log_01/Log_01_silhouette.png",
+  "close_end_grain_studio": "Models/Kits/_drafts/r2/Log_01/Log_01_close_end_grain_studio.png",
+  "close_end_grain_flat": "Models/Kits/_drafts/r2/Log_01/Log_01_close_end_grain_flat.png",
+  "close_bark_studio": "Models/Kits/_drafts/r2/Log_01/Log_01_close_bark_studio.png",
+  "close_bark_flat": "Models/Kits/_drafts/r2/Log_01/Log_01_close_bark_flat.png",
+  "cw_ash": "Models/Kits/_drafts/r2/Log_01/Log_01_cw_ash.png",
+  "cw_redwood": "Models/Kits/_drafts/r2/Log_01/Log_01_cw_redwood.png",
+  "cw_birch": "Models/Kits/_drafts/r2/Log_01/Log_01_cw_birch.png",
+  "cw_walnut": "Models/Kits/_drafts/r2/Log_01/Log_01_cw_walnut.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_nature.py:Log",
+ "made": "2026-10-28"
+}

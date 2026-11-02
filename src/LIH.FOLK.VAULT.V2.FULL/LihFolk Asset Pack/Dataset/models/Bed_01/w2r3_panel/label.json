@@ -1,0 +1,155 @@
+{
+ "asset": "Bed_01",
+ "kit": "Furniture",
+ "type": "Bed",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  9.3,
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Four-poster bed reads from front, 3/4, top and silhouette: arched headboard, taller head posts with ball finials, footboard, pillow and turned-down blanket; front outline symmetric (A15 X 0.0).",
+   "V2": "Clear: frame + mattress (big), headboard arch, blanket and pillow (medium), gold ball finials and blanket cuff (small).",
+   "V3": "Chunky posts, arched headboard and fat rounded pillow give a confident cozy stylised read; mattress and blanket are fairly plain slabs.",
+   "V4": "Consistent chamfers on posts, rails and headboard edge (light-catching rim on the arch); soft rounded edges on mattress and pillow.",
+   "V5": "Mostly clean, but the blanket cuff ends in a boxy block whose end face shows a lighter patch and sits proud of the blanket side, reading as a pasted-on piece in the blanket-fold close-up (minor).",
+   "V6": "Disciplined: one fabric hue in 2 values (blanket + cuff), cream sheet/pillow, frame wood in 2 values, gold finials; colourways swap only the fabric hue.",
+   "V7": "984 tris vs 2000 medium target.",
+   "V8": "One LF_VertexColor material, smooth shading, chamfered frame, gold and warm cream accents per furniture spec.",
+   "V9": "Anchored, Box collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates pass."
+  },
+  {
+   "V1": "Four posts with gold ball finials, arched headboard, pillow and turned-down blanket read as a bed from front, three-quarter, top and silhouette; front outline symmetric (A15 X 0.0).",
+   "V2": "Big frame + mattress, medium headboard/footboard/blanket/pillow, small gold finials and the blanket turn-down band - clear hierarchy.",
+   "V3": "Arched headboard and ball finials add character, but posts are plain square boxes, foot/side boards flat slabs and the mattress/blanket rigid boxes with no sag or drape - only partly stylised.",
+   "V4": "Consistent soft chamfers on posts, boards, headboard arch and blanket band; pillow is evenly rounded; edges catch light in the close-ups.",
+   "V5": "Headboard, pillow and blanket close-ups shade cleanly with no seams, pinches or z-fighting; the turn-down band end steps slightly past the blanket side but reads as a fold, not an artifact.",
+   "V6": "Blanket hue in two values, cream sheets/pillow, wood in two values, gold finials; colourways swap only the blanket hue.",
+   "V7": "984 tris vs medium target 2000: under target.",
+   "V8": "One vertex-colour material, kit gold and warm cream, chamfer size and smooth shading match the kit.",
+   "V9": "Studio line correct: anchored, Box collision, CanTouch off, bottom-centre origin, MeshPart white with vertex colours."
+  },
+  {
+   "V1": "Four posts with gold ball finials, arched headboard, mattress, pillow and blanket read as a bed from front, three-quarter, top and silhouette.",
+   "V2": "Big (frame + mattress), medium (arched headboard, footboard, blanket, pillow), small (gold finials, blanket fold band) hierarchy is clear.",
+   "V3": "Arched headboard and fat pillow are stylised, but the corner posts are plain square boxes and the blanket is a flat slab with a boxy fold, so it reads partly primitive.",
+   "V4": "Consistent soft chamfers catch light on the headboard arch, pillow ends, blanket fold edge and post tops.",
+   "V5": "Close-ups of pillow, headboard and blanket fold show smooth shading with no pinches, seams or z-fighting; X symmetry 0.0.",
+   "V6": "Wood frame in 2-3 values, cream bedding, one fabric hue (blanket) in two values, gold finials; disciplined.",
+   "V7": "984 tris vs medium target 2000.",
+   "V8": "Vertex-coloured wood + one fabric hue, kit cream and gold, chamfered edges consistent with the furniture kit.",
+   "V9": "Anchored, Box collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; A1-A18 pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Blanket turn-down cuff end is a boxy block with a lighter end-face patch protruding past the blanket side"
+  ],
+  [],
+  []
+ ],
+ "top_fixes": [
+  [
+   "Wrap the blanket cuff around the mattress side (or round its end) so it reads as folded fabric rather than a stuck-on block",
+   "Let the blanket drape slightly over the mattress sides for a softer silhouette",
+   "Add a slight taper or cap moulding to the posts to push the stylisation further"
+  ],
+  [
+   "Let the blanket drape over the mattress sides with a soft rounded overhang and slight sag instead of a rigid slab",
+   "Turn the square posts into turned/tapered posts and give the footboard a shaped top rail",
+   "Add a slight puff/indent to the pillow and mattress edges for a cosier stylised read"
+  ],
+  [
+   "Give the corner posts a turned or tapered profile (or a cap/foot step) instead of plain square boxes",
+   "Soften the blanket into a draped shape that hangs over the mattress sides with a rounded fold",
+   "Add a slight sag/puff to the mattress top so the bedding reads less like stacked boxes"
+  ]
+ ],
+ "params": {
+  "W": 4.753,
+  "L": 7.209,
+  "head": "arch",
+  "cover": 0.629
+ },
+ "tris": 984,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,138 @@
+{
+ "asset": "Staff_02",
+ "type": "Staff",
+ "tris": 2472,
+ "budget_class": "weapon",
+ "budget_target": 2500,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 0.77,
+  "y": 0.77,
+  "z": 6.431
+ },
+ "origin": "hand/grip point",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "alignment": [
+  {
+   "name": "collar_on_haft_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "collar_on_haft",
+   "gap": 0.0,
+   "penetration": 0.1641,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "orb_on_collar",
+   "gap": 0.0,
+   "penetration": 0.01925,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong0_on_collar",
+   "gap": 0.0,
+   "penetration": 0.07483,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong0_holds_orb",
+   "gap": 0.0,
+   "penetration": 0.0673,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong1_on_collar",
+   "gap": 0.0,
+   "penetration": 0.07483,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong1_holds_orb",
+   "gap": 0.0,
+   "penetration": 0.0673,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong2_on_collar",
+   "gap": 0.0,
+   "penetration": 0.07483,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong2_holds_orb",
+   "gap": 0.0,
+   "penetration": 0.0673,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong3_on_collar",
+   "gap": 0.0,
+   "penetration": 0.07483,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong3_holds_orb",
+   "gap": 0.0,
+   "penetration": 0.0673,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 328,
+ "studio": "Tool Handle; origin = hand/grip point; CollisionFidelity Hull; CanCollide off when equipped; Massless; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "colourways": [
+   "teal",
+   "royal",
+   "crimson",
+   "verdant",
+   "shadow"
+  ]
+ }
+}

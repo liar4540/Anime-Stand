@@ -1,0 +1,22 @@
+{
+ "id": "leaves_autumn_008",
+ "kind": "materials",
+ "score": 9.6,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 2,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m3",
+ "reviewer_notes": [
+  "Busy single-scale litter, no clumping or larger shapes",
+  "Leaves render flat; normal relief shallow for a litter pile",
+  "high-contrast confetti of orange/red/yellow, no larger value groups"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

@@ -1,0 +1,25 @@
+{
+ "id": "water_caustics_cyan_000",
+ "kind": "materials",
+ "score": 9.6,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 2,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m6",
+ "reviewer_notes": [
+  "convincing soft caustic web; slightly cell-like, junctions lack bright hotspots",
+  "Lines somewhat straight-segmented polygonal; slightly reads as crackle",
+  "Reads as caustics; cell network slightly too regular, even line width",
+  "Line width too uniform; lacks bright knots at junctions",
+  "Lines fairly uniform width; lacks bright junction knots, edges near crackle-glaze",
+  "lines fairly even; could use brighter thick-thin knots"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

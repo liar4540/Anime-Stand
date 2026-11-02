@@ -1,0 +1,24 @@
+{
+ "id": "ThrustPierce",
+ "kind": "vfx",
+ "batch": "vfx2",
+ "pass": null,
+ "score": null,
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/vfx.md",
+ "rounds": [
+  {
+   "r": 2,
+   "score": 7.7,
+   "low": [
+    "X3 dark ink cone invisible",
+    "X4 cone drops off abruptly",
+    "X6 weapon Trail streak behind the back"
+   ]
+  },
+  {
+   "r": 3,
+   "score": null,
+   "note": "fixes applied (no Trail, deep-blue ink cone, softer fade); blind review not run: subagent concurrency limit"
+  }
+ ]
+}

@@ -1,0 +1,170 @@
+{
+ "asset": "Gem_11",
+ "kit": "Emblems",
+ "type": "Gem",
+ "seed": 11,
+ "params": {
+  "cut": "brilliant",
+  "sides": 8,
+  "r": 0.544,
+  "shape": "round",
+  "h": 1.088
+ },
+ "tris": 286,
+ "budget_class": "small",
+ "budget_target": 600,
+ "budget_ceiling": 1500,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.005,
+  "y": 1.005,
+  "z": 0.856
+ },
+ "origin": "center",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 0,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590"
+    }
+   }
+  ]
+ },
+ "studio": "Pickup: CanCollide off, CanTouch on (collect trigger), CollisionFidelity Box, Anchored (spin with TweenService); MeshPart.Color white (vertex colours); SmoothPlastic; origin centre",
+ "notes": "brilliant-cut round gem, 8 facets around (flat facets by design), hue in 3 values: light table + alternating crown facets, dark pavilion",
+ "features": [
+  [
+   "crown",
+   [
+    0.0,
+    0.0,
+    0.243
+   ],
+   0.6528
+  ],
+  [
+   "pavilion",
+   [
+    0.0,
+    0.0,
+    -0.247
+   ],
+   0.6528
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/Emblems/_renders/Gem_11/Gem_11_front.png",
+  "three_quarter": "Models/Kits/Emblems/_renders/Gem_11/Gem_11_three_quarter.png",
+  "top": "Models/Kits/Emblems/_renders/Gem_11/Gem_11_top.png",
+  "silhouette": "Models/Kits/Emblems/_renders/Gem_11/Gem_11_silhouette.png",
+  "close_crown_studio": "Models/Kits/Emblems/_renders/Gem_11/Gem_11_close_crown_studio.png",
+  "close_crown_flat": "Models/Kits/Emblems/_renders/Gem_11/Gem_11_close_crown_flat.png",
+  "close_pavilion_studio": "Models/Kits/Emblems/_renders/Gem_11/Gem_11_close_pavilion_studio.png",
+  "close_pavilion_flat": "Models/Kits/Emblems/_renders/Gem_11/Gem_11_close_pavilion_flat.png",
+  "cw_royal": "Models/Kits/Emblems/_renders/Gem_11/Gem_11_cw_royal.png",
+  "cw_crimson": "Models/Kits/Emblems/_renders/Gem_11/Gem_11_cw_crimson.png",
+  "cw_verdant": "Models/Kits/Emblems/_renders/Gem_11/Gem_11_cw_verdant.png",
+  "cw_shadow": "Models/Kits/Emblems/_renders/Gem_11/Gem_11_cw_shadow.png"
+ },
+ "score": {
+  "score": 9.3,
+  "basis": "panel x3 median",
+  "reviewed": "Gem_01 e7_panel (indiv 10.0/9.3/9.3); earlier panels 7.7 (e2), 8.3 (e4) rejected",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_emblems.py:Gem",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Emblems/Gem_11.glb",
+  "blend": "Models/Kits/Emblems/Gem_11.blend",
+  "turntable": "Models/Kits/Emblems/Gem_11_turntable.mp4",
+  "colourway_glbs": {
+   "royal": "Models/Kits/Emblems/colourways/Gem_11__royal.glb",
+   "crimson": "Models/Kits/Emblems/colourways/Gem_11__crimson.glb",
+   "verdant": "Models/Kits/Emblems/colourways/Gem_11__verdant.glb",
+   "shadow": "Models/Kits/Emblems/colourways/Gem_11__shadow.glb"
+  }
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12
+}

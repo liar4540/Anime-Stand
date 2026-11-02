@@ -1,0 +1,232 @@
+{
+ "asset": "Barrel_01",
+ "kit": "Props",
+ "type": "Barrel",
+ "seed": 1,
+ "params": {
+  "H": 2.693,
+  "R": 1.029,
+  "bulge": 0.2,
+  "staves": 10,
+  "hoop_role": "acc"
+ },
+ "tris": 1728,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 2.045,
+  "y": 2.047,
+  "z": 2.693
+ },
+ "origin": "bottom",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "nail0_0_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05523,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail0_1_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05523,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail0_2_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05523,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail0_3_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05523,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail1_0_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05682,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail1_1_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05682,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail1_2_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05682,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail1_3_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05682,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 64,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "ink",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "oak",
+  "colourways": [
+   {
+    "name": "oak",
+    "hue": "oak",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#D2A56A",
+     "h": "#A9784A",
+     "h_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "walnut",
+    "hue": "walnut",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#A47650",
+     "h": "#7A5236",
+     "h_dk": "#4E3424"
+    }
+   },
+   {
+    "name": "painted_teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "painted_crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "painted_royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull (or a Cylinder part for physics); CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "10-stave barrel with modelled stave grooves, strong belly, 2 thick chamfered acc hoops with ink nails, recessed lid with chime",
+ "features": [
+  [
+   "hoop",
+   [
+    0.65,
+    -0.65,
+    2.289
+   ],
+   0.6
+  ],
+  [
+   "lid",
+   [
+    0.0,
+    0.0,
+    2.693
+   ],
+   0.9260999999999999
+  ],
+  [
+   "staves",
+   [
+    0.0,
+    -1.029,
+    1.347
+   ],
+   0.7
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_top.png",
+  "silhouette": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_silhouette.png",
+  "close_hoop_studio": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_close_hoop_studio.png",
+  "close_hoop_flat": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_close_hoop_flat.png",
+  "close_lid_studio": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_close_lid_studio.png",
+  "close_lid_flat": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_close_lid_flat.png",
+  "close_staves_studio": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_close_staves_studio.png",
+  "close_staves_flat": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_close_staves_flat.png",
+  "cw_walnut": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_cw_walnut.png",
+  "cw_painted_teal": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_cw_painted_teal.png",
+  "cw_painted_crimson": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_cw_painted_crimson.png",
+  "cw_painted_royal": "Models/Kits/_drafts/p4/Barrel_01/Barrel_01_cw_painted_royal.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_props.py:Barrel",
+ "made": "2026-10-28"
+}

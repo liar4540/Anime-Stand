@@ -1,0 +1,167 @@
+{
+ "asset": "Axe_01",
+ "kit": "Weapons",
+ "type": "Axe",
+ "seed": 1,
+ "attempt": "rv3_panel",
+ "label": "accepted",
+ "score": 10.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0,
+  9.3,
+  10.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.7,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette render reads instantly as a bearded single-bit axe (flared crescent blade, poll stub, collar, ribbed grip, ball pommel); front and three-quarter equally clear; top view is only a pommel disc plus a tapering blade strip, which is expected for a weapon and still reads as a head-on-haft.",
+   "V2": "Big forms (wide blade, haft) carry the read, medium forms (gold collar, top cap, lower band, pommel, poll) break the haft into clear zones, small detail (ink/teal wrap ridges, blade edge bevel band) is kept to the grip and edge; no uniform noise.",
+   "V3": "Oversized flared blade on a short, chunky haft with a thick collar and ball pommel gives a confident stylised hatchet; A15 Y error 0.0, collar and head offsets 0.0 and both seats report seated with no gap, so no correctness cap.",
+   "V4": "Chamfers are consistent across collar rims, cap, band and poll, and the blade has a continuous edge bevel that catches a light highlight along the cutting edge and spine in both studio and flat close-ups; no razor or blobby edges.",
+   "V5": "Close-ups (collar, edge, grip; studio and flat) show smooth shading with no pinches, z-fighting or stray faceting; the 232 cross-shell overlaps are the neck entering the collar and are hidden; the only visible line is an intended crease where the neck flare meets the blade plane.",
+   "V6": "Disciplined kit palette: gold accent (collar, bands, cap, pommel), steel grey head, one hue (teal) in two values plus ink dark for the wrap rings; colourways swap only the hue and keep gold and steel fixed.",
+   "V7": "1916 tris against the weapon target of 2500 (ceiling 4000), budget_note ok; geometry spent on silhouette (blade flare, wrap ridges) rather than hidden detail.",
+   "V8": "One white LF_VertexColor material with vertex colours, kit gold/ink/steel + one hue, ~kit-scale chamfers and smooth shading; next to the PASS axe anchor it looks like the same kit.",
+   "V9": "Studio line: Tool Handle, origin at hand/grip point, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white for vertex colours, SmoothPlastic; all A1-A18 gates pass."
+  },
+  {
+   "V1": "Front, three-quarter and silhouette all read instantly as a bearded single-bit axe (flared crescent blade, collar, ringed grip, ball pommel); top view is a thin head line with gold cap, which is acceptable for a flat-headed axe. A15 Y error 0.0, alignment offsets 0.0, both seats seated, so no correctness cap applies.",
+   "V2": "Clear hierarchy: big = flared blade, medium = gold collar and long teal haft, small = top cap, lower ferrule ring, ink grip bands and pommel ball.",
+   "V3": "Confident stylised proportions: oversized flaring blade on a narrow neck, chunky collar and bulbous pommel. The flat rear poll stub behind the collar is a little thin and plate-like.",
+   "V4": "Consistent chamfers: the blade rim has a lighter bevel band that catches light along the whole crescent, and the collar, caps and ferrule rings all have soft chamfered edges.",
+   "V5": "Mostly smooth, but the close-ups show minor faceting. Where the neck lofts into the blade, a darker triangular facet pinches to a point in the middle of the blade face (visible in collar_studio/flat and as a diagonal crease in the front view). The head cheek also exits the collar cylinder with a hard cut edge (232 cross-shell overlaps).",
+   "V6": "Disciplined palette: steel-grey head, teal haft in two values with ink-dark grip bands, and a gold accent on the collar, rings and pommel. The crimson and shadow colourways swap only the hue and stay coherent.",
+   "V7": "1916 tris against a weapon target of 2500 and a ceiling of 4000, so it is under target.",
+   "V8": "Matches the kit: one white LF_VertexColor material, kit gold, ink, steel and one hue in values, chamfer scale and smooth shading consistent with the anchor axe.",
+   "V9": "Studio line is correct: Tool Handle, origin at the hand/grip point, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white for vertex colours, SmoothPlastic."
+  },
+  {
+   "V1": "Front/three-quarter/silhouette read instantly as a single-bit axe (big flared bit, capped haft, knob pommel); top view is a thin wedge plus gold cap disk, which is as expected for an axe; A15 symmetry error 0.0 about Y and no lopsided outline.",
+   "V2": "Clear tiers: large flared steel bit as the big shape, gold collar + two gold rings + teal haft as medium, ink-banded ribbed grip and dome pommel as small detail concentrated at the hand end.",
+   "V3": "Confident stylised proportions: oversized crescent bit with pinched neck, chunky gold collar, slightly long haft; only the back poll is a plain flat slab.",
+   "V4": "Consistent ~chamfer bands on the bit edge, collar rims, ring caps and poll block that catch a clean highlight in studio close-ups; no razor edges or blobby rounding.",
+   "V5": "Studio and flat close-ups of collar, edge and grip show smooth even shading: no pinches, seams, z-fighting or stray faceting; collar seats on haft (penetration intentional, A16 seated), A17/A18 pass, 0 flipped faces.",
+   "V6": "Disciplined kit palette: teal haft in two values plus ink grip bands, gold accents, steel-grey bit; colourways (crimson, shadow) swap only the hue and keep gold/steel.",
+   "V7": "1,916 tris vs weapon target 2,500 (ceiling 4,000): under target.",
+   "V8": "One white LF_VertexColor material with vertex colours, kit gold/ink/steel + one hue, bevel width and smooth shading match the Axe_05 anchor.",
+   "V9": "Studio line: Tool Handle, origin at grip, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic - correct."
+  }
+ ],
+ "artifacts": [
+  [
+   "Minor shading crease where the narrow neck flares into the blade plane (collar close-up), reads as an intended edge rather than an artifact",
+   "232 cross-shell overlaps where the head neck and poll pass into the collar (intentional interpenetration, not visible in renders)"
+  ],
+  [
+   "Triangular darker facet where the neck lofts into the blade, converging to a point mid-face (front view, collar close-ups)",
+   "Head cheek and tang pass through the gold collar with a hard cut edge at the exit (cross-shell overlaps 232; allowed but visible in collar close-up)"
+  ],
+  [
+   "Minor: small jog where the neck's top chamfer meets the bit's upper chamfer band (edge close-up, upper-left of bit) - a profile corner, not a shading fault"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add one secondary detail to the large flat blade face (shallow fuller, bevelled cheek line or a pair of rivets at the neck) so the head has medium/small detail to match the grip",
+   "Thicken the neck slightly where it leaves the collar so the head joint looks less like a thin plate slid into a cylinder",
+   "Give the poll stub a little more mass or a shaped back face so the back of the head reads better at 64 px in the front view"
+  ],
+  [
+   "Re-loft the neck-to-blade transition so the taper blends smoothly into the blade face instead of forming a pinched triangular facet",
+   "Give the rear poll real mass (a short bevelled hammer or poll block) instead of the thin flat plate behind the collar",
+   "Seat the head into the collar with a cleaner socket or eye shape so the cheek does not visibly slice out of the collar cylinder"
+  ],
+  [
+   "Give the back poll more shape (slight taper or rounded hammer face) so it is not a plain flat slab",
+   "Smooth the neck-to-bit transition on the top edge so the chamfer band runs continuously without the small jog",
+   "Optionally reduce grip bands from six to four-five slightly wider ones for better 64 px readability"
+  ]
+ ],
+ "params": {
+  "H": 4.513,
+  "r": 0.195,
+  "style": "crescent",
+  "E": 1.836,
+  "bt": 0.97,
+  "bb": 0.97,
+  "poll": 0.122,
+  "D": 0.479,
+  "edge_frac": 0.336,
+  "wraps": 6
+ },
+ "tris": 1916,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,93 @@
+{
+ "asset": "WallCorner_01",
+ "kit": "Modular",
+ "type": "WallCorner",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "rejected",
+ "score": 7.3,
+ "grades": [
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "The top view clearly shows an L corner, but the front and silhouette read as a plain tall block or pillar. Course joints barely notch the outline and the corner is not identifiable at 64 px from the front.",
+   "V2": "Plinth course, 4 stone courses and a coping cap give some layers, but every stone is the same rectangle in a stack bond, so the medium/small tier is repetitive.",
+   "V3": "Blocks are stacked in straight stack bond with a continuous vertical joint running up the corner. There is no running bond, no interlocking quoins and no size variation, so it reads stiff and grid-like.",
+   "V4": "Close outer-corner and end-x studio shots show consistent small chamfers on every stone that catch light along the top edges.",
+   "V5": "Close-ups are clean, with no pinches, seams or z-fighting on the stone faces. The end-y close-up shows only a flat featureless face (uninformative but artifact-free).",
+   "V6": "One stone hue in about 3 values (dark plinth, mid and light stones). Brick and sandstone colourways keep the same discipline.",
+   "V7": "620 tris against a module target of 800, so it is under target.",
+   "V8": "Chamfers and single vertex-colour material match, but the wall ends and inner faces are plain untreated dark slabs with no stone detail, and there is no timber/gold/plaster accent typical of the modular kit.",
+   "V9": "Studio line: Anchored, Box fidelity, CanTouch off, Color white, SmoothPlastic, pivot at grid corner on a 2-stud grid. T1 on_grid, inside and touches_floor are all true. Correct."
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Interlock the corner with alternating quoin stones (running bond) instead of one continuous vertical joint up the corner",
+   "Vary stone sizes and stagger courses so the faces are not a repeating stack-bond grid",
+   "Give the exposed wall ends and inner faces stone/course detail or a finished cap. Also verify flush self-tiling (the tiling.tiles list is empty)"
+  ]
+ ],
+ "params": {
+  "A": 6,
+  "style": "stone"
+ },
+ "tris": 620,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

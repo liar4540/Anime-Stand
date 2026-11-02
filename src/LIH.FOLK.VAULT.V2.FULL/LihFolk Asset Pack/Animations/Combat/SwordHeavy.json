@@ -1,0 +1,998 @@
+{
+  "name": "SwordHeavy",
+  "fps": 30,
+  "frames": 53,
+  "length_s": 1.7333,
+  "loop": false,
+  "priority": "Action",
+  "markers": [
+    {
+      "name": "TrailOn",
+      "frame": 20,
+      "time": 0.6667
+    },
+    {
+      "name": "Hit",
+      "frame": 23,
+      "time": 0.7667,
+      "value": "heavy"
+    },
+    {
+      "name": "TrailOff",
+      "frame": 28,
+      "time": 0.9333
+    },
+    {
+      "name": "CanCancel",
+      "frame": 40,
+      "time": 1.3333
+    }
+  ],
+  "root_motion": false,
+  "preview_prop": "sword",
+  "grip": "Right hand. Tool.Grip = CFrame.Angles(0, math.rad(-45), 0) * CFrame.Angles(math.rad(30), 0, 0) (= CFrame.fromEulerAnglesYXZ(math.rad(30), math.rad(-45), 0); position part unchanged) with the blade modelled along Handle +Y and the true edge along Handle -Z: the handle is rolled 45 deg about its own axis so the true edge leads forehand cuts (RightGripAttachment default (0,-0.162,0), (-90,0,0)). The preview sword and fist are preview-only; the exported rig is standard R15.",
+  "hitstop_frames_recommended": 6,
+  "qa_arm_twist": {
+    "RightUpperArm": {
+      "twist_max_deg_per_frame": 16.2,
+      "at_frame": 18,
+      "speed_max_deg_per_frame": 26.4,
+      "twist_range_deg": 37.2,
+      "reversals": 0,
+      "reversals_in_swing": 0
+    },
+    "RightLowerArm": {
+      "twist_max_deg_per_frame": 0.0,
+      "at_frame": 11,
+      "speed_max_deg_per_frame": 27.7,
+      "twist_range_deg": 0.0,
+      "reversals": 0,
+      "reversals_in_swing": 0
+    },
+    "RightHand": {
+      "twist_max_deg_per_frame": 46.9,
+      "at_frame": 22,
+      "speed_max_deg_per_frame": 48.8,
+      "twist_range_deg": 96.8,
+      "reversals": 1,
+      "reversals_in_swing": 0
+    },
+    "LeftUpperArm": {
+      "twist_max_deg_per_frame": 5.0,
+      "at_frame": 22,
+      "speed_max_deg_per_frame": 28.5,
+      "twist_range_deg": 15.4,
+      "reversals": 0,
+      "reversals_in_swing": 0
+    },
+    "LeftLowerArm": {
+      "twist_max_deg_per_frame": 0.0,
+      "at_frame": 25,
+      "speed_max_deg_per_frame": 18.2,
+      "twist_range_deg": 0.0,
+      "reversals": 0,
+      "reversals_in_swing": 0
+    },
+    "LeftHand": {
+      "twist_max_deg_per_frame": 0.2,
+      "at_frame": 2,
+      "speed_max_deg_per_frame": 4.3,
+      "twist_range_deg": 0.4,
+      "reversals": 0,
+      "reversals_in_swing": 0
+    },
+    "summary": {
+      "twist_max_deg_per_frame": 46.9,
+      "worst_joint": "RightHand",
+      "reversals_in_swing": 0,
+      "reversals_total": 1,
+      "right_arm_twist_max_deg_per_frame": 46.9,
+      "right_arm_reversals_in_swing": 0
+    }
+  },
+  "qa": {
+    "arm_twist": {
+      "twist_max_deg_per_frame": 46.9,
+      "worst_joint": "RightHand",
+      "reversals_in_swing": 0,
+      "reversals_total": 1,
+      "right_arm_twist_max_deg_per_frame": 46.9,
+      "right_arm_reversals_in_swing": 0
+    },
+    "lowest_body_point_studs": -0.3722,
+    "lowest_part": [
+      "LeftLowerLeg",
+      29
+    ],
+    "knee_min_height_studs": {
+      "RightLowerLeg": 1.146,
+      "LeftLowerLeg": 0.744
+    },
+    "lowest_point_note": "lowest_body_point is the lowest box corner; on bent rear legs it is the shin box's ankle-end back corner under the heel (R15 block artifact, below the floor plane). Knees: knee_min_height_studs.",
+    "foot_slide_studs": {
+      "Left": 0.0,
+      "Right": 0.0
+    },
+    "foot_min_height": {
+      "Left": -0.0,
+      "Right": -0.0
+    },
+    "ik_unreachable_max_studs": {
+      "Right": 0.0,
+      "Left": 0.0
+    },
+    "body_overlap": {
+      "body_max_studs": 0.024,
+      "body_worst_pair": "UpperTorso|RightLowerArm",
+      "body_worst_frame": 45,
+      "body_frames_over_0.05": 0,
+      "hip_region_max_studs": 0.231,
+      "worst_pairs": {
+        "UpperTorso|RightLowerArm": "0.024@45",
+        "RightUpperArm|RightHand": "0.022@18",
+        "Head|LeftUpperArm": "0.011@28",
+        "UpperTorso|LeftLowerArm": "0.008@6",
+        "Head|RightUpperArm": "0.003@12"
+      },
+      "blade_max_studs": 0.0,
+      "blade_worst_pair": null,
+      "blade_worst_frame": null,
+      "blade_frames_over_0.05": 0
+    },
+    "rbxmx_keyframes": 53,
+    "motor6d_fk_check_max_err_studs": 0.0,
+    "edge_lead": {
+      "grip_roll_deg": 45.0,
+      "hit_window_max_err_deg": 33.8,
+      "fast_frames_mean_err_deg": 27.6,
+      "note": "angle between the true edge and the blade's direction of travel (point 2.4 studs up the blade); 0 = edge leads, 90 = flat leads",
+      "per_frame": {
+        "19": {
+          "edge_lead_err_deg": 27.9,
+          "signed_deg": 27.9,
+          "speed": 1.577,
+          "edge": [
+            0.5,
+            -0.17,
+            -0.85
+          ],
+          "travel": [
+            0.09,
+            0.04,
+            -0.99
+          ],
+          "blade": [
+            0.43,
+            0.9,
+            0.07
+          ]
+        },
+        "20": {
+          "edge_lead_err_deg": 30.5,
+          "signed_deg": 30.5,
+          "speed": 1.923,
+          "edge": [
+            0.07,
+            -0.31,
+            -0.95
+          ],
+          "travel": [
+            -0.34,
+            0.02,
+            -0.94
+          ],
+          "blade": [
+            0.61,
+            0.77,
+            -0.21
+          ]
+        },
+        "21": {
+          "edge_lead_err_deg": 33.4,
+          "signed_deg": 33.4,
+          "speed": 2.472,
+          "edge": [
+            -0.38,
+            -0.4,
+            -0.83
+          ],
+          "travel": [
+            -0.78,
+            -0.04,
+            -0.63
+          ],
+          "blade": [
+            0.4,
+            0.75,
+            -0.54
+          ]
+        },
+        "22": {
+          "edge_lead_err_deg": 7.6,
+          "signed_deg": 7.6,
+          "speed": 2.695,
+          "edge": [
+            -0.73,
+            -0.67,
+            0.12
+          ],
+          "travel": [
+            -0.78,
+            -0.59,
+            0.2
+          ],
+          "blade": [
+            -0.51,
+            0.43,
+            -0.74
+          ]
+        },
+        "23": {
+          "edge_lead_err_deg": 33.8,
+          "signed_deg": 33.8,
+          "speed": 1.387,
+          "edge": [
+            0.05,
+            -0.96,
+            0.26
+          ],
+          "travel": [
+            -0.09,
+            -0.67,
+            0.74
+          ],
+          "blade": [
+            -0.97,
+            -0.11,
+            -0.22
+          ]
+        },
+        "24": {
+          "edge_lead_err_deg": 29.7,
+          "signed_deg": 29.7,
+          "speed": 0.683,
+          "edge": [
+            0.16,
+            -0.96,
+            0.24
+          ],
+          "travel": [
+            0.07,
+            -0.72,
+            0.69
+          ],
+          "blade": [
+            -0.98,
+            -0.19,
+            -0.1
+          ]
+        },
+        "25": {
+          "edge_lead_err_deg": 22.6,
+          "signed_deg": 22.6,
+          "speed": 0.873,
+          "edge": [
+            0.37,
+            -0.87,
+            0.32
+          ],
+          "travel": [
+            0.32,
+            -0.68,
+            0.66
+          ],
+          "blade": [
+            -0.93,
+            -0.37,
+            0.07
+          ]
+        },
+        "26": {
+          "edge_lead_err_deg": 24.5,
+          "signed_deg": 24.5,
+          "speed": 0.646,
+          "edge": [
+            0.57,
+            -0.75,
+            0.35
+          ],
+          "travel": [
+            0.52,
+            -0.5,
+            0.7
+          ],
+          "blade": [
+            -0.82,
+            -0.51,
+            0.24
+          ]
+        },
+        "27": {
+          "edge_lead_err_deg": 38.6,
+          "signed_deg": 38.6,
+          "speed": 0.253,
+          "edge": [
+            0.66,
+            -0.67,
+            0.35
+          ],
+          "travel": [
+            0.54,
+            -0.21,
+            0.82
+          ],
+          "blade": [
+            -0.75,
+            -0.56,
+            0.35
+          ]
+        },
+        "28": {
+          "edge_lead_err_deg": 29.7,
+          "signed_deg": 29.7,
+          "speed": 0.02,
+          "edge": [
+            0.67,
+            -0.68,
+            0.28
+          ],
+          "travel": [
+            0.64,
+            -0.36,
+            0.68
+          ],
+          "blade": [
+            -0.73,
+            -0.56,
+            0.38
+          ]
+        },
+        "29": {
+          "edge_lead_err_deg": 72.1,
+          "signed_deg": -72.1,
+          "speed": 0.109,
+          "edge": [
+            0.67,
+            -0.72,
+            0.17
+          ],
+          "travel": [
+            0.05,
+            -0.58,
+            -0.82
+          ],
+          "blade": [
+            -0.72,
+            -0.58,
+            0.37
+          ]
+        }
+      }
+    },
+    "twist_plan": {
+      "method": "per-frame DP: swivel path then pronation path, one roll direction per segment",
+      "segments": [
+        [
+          0,
+          35
+        ],
+        [
+          35,
+          52
+        ]
+      ],
+      "iteration": 0,
+      "directions": {
+        "RightUpperArm": [
+          -1,
+          1
+        ],
+        "RightHand": [
+          1,
+          -1
+        ]
+      },
+      "contact_vel_frames": [
+        22,
+        23,
+        24
+      ],
+      "blade_dev_max_deg": 2.29,
+      "edge_shift_max_deg": 35.7,
+      "swivel_max_deg": 27.0,
+      "roll_path_deg": {
+        "natural": {
+          "RightUpperArm": 145.9,
+          "RightHand": 229.9
+        },
+        "planned": {
+          "RightUpperArm": 71.2,
+          "RightHand": 194.2
+        }
+      },
+      "debug": {
+        "ua": [
+          0.5,
+          -1.2,
+          -0.8,
+          0.4,
+          0.3,
+          -0.4,
+          0.2,
+          -1.3,
+          -3.4,
+          -6.0,
+          -3.8,
+          -2.6,
+          -0.1,
+          -0.1,
+          -0.1,
+          -0.1,
+          -0.0,
+          -0.0,
+          -16.2,
+          -14.2,
+          -4.7,
+          0.9,
+          0.7,
+          0.2,
+          0.4,
+          0.3,
+          0.0,
+          0.1,
+          0.5,
+          0.5,
+          0.2,
+          -0.3,
+          -0.7,
+          -0.6,
+          -0.2,
+          -0.6,
+          1.0,
+          -0.0,
+          0.1,
+          -1.1,
+          -1.3,
+          0.4,
+          0.3,
+          1.5,
+          0.2,
+          0.4,
+          0.5,
+          0.5,
+          0.5,
+          0.4,
+          0.3,
+          0.1
+        ],
+        "hand": [
+          -2.7,
+          -1.3,
+          -1.3,
+          -0.1,
+          -0.9,
+          -0.3,
+          -1.1,
+          -2.2,
+          -2.1,
+          -1.0,
+          -0.0,
+          0.0,
+          -0.0,
+          0.5,
+          1.1,
+          1.3,
+          1.0,
+          0.3,
+          0.2,
+          0.5,
+          3.2,
+          22.0,
+          46.9,
+          3.7,
+          4.0,
+          4.0,
+          1.3,
+          -0.0,
+          -0.0,
+          -0.9,
+          -0.5,
+          2.1,
+          3.6,
+          2.7,
+          0.9,
+          -6.6,
+          -12.7,
+          -16.1,
+          -17.2,
+          -13.9,
+          -5.1,
+          -2.8,
+          -1.0,
+          -0.5,
+          0.2,
+          0.6,
+          0.8,
+          -0.1,
+          0.9,
+          0.8,
+          0.5,
+          0.4
+        ],
+        "swivel": [
+          0.0,
+          0.0,
+          3.0,
+          6.0,
+          9.0,
+          18.0,
+          27.0,
+          24.0,
+          18.0,
+          12.0,
+          9.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          0.0,
+          -6.0,
+          -12.0,
+          -6.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -3.0,
+          -6.0,
+          -9.0,
+          -9.0,
+          -6.0,
+          -3.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pro": [
+          -12.5,
+          -12.5,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -10.0,
+          -5.0,
+          0.0,
+          0.0,
+          0.0,
+          40.0,
+          45.0,
+          47.5,
+          50.0,
+          50.0,
+          52.5,
+          57.5,
+          60.0,
+          60.0,
+          60.0,
+          60.0,
+          60.0,
+          60.0,
+          50.0,
+          42.5,
+          40.0,
+          37.5,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          30.0,
+          27.5,
+          27.5,
+          27.5,
+          27.5,
+          27.5
+        ],
+        "edge_shift": [
+          0,
+          4,
+          11,
+          20,
+          27,
+          20,
+          18,
+          15,
+          10,
+          4,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          6,
+          7,
+          7,
+          5,
+          3,
+          11,
+          36,
+          7,
+          3,
+          1,
+          0,
+          0,
+          1,
+          4,
+          4,
+          1,
+          5,
+          13,
+          18,
+          20,
+          26,
+          22,
+          8,
+          6,
+          5,
+          3,
+          2,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "nat_ua": [
+          0.5,
+          1.2,
+          1.8,
+          2.8,
+          7.7,
+          6.2,
+          -2.7,
+          -6.8,
+          -8.9,
+          -8.8,
+          -6.6,
+          -2.6,
+          -0.0,
+          -0.1,
+          -0.2,
+          -0.1,
+          -0.1,
+          -0.0,
+          -21.3,
+          -20.0,
+          -10.7,
+          6.2,
+          6.2,
+          0.2,
+          0.4,
+          0.3,
+          0.0,
+          0.1,
+          0.5,
+          0.5,
+          0.2,
+          -0.3,
+          -0.7,
+          -0.6,
+          -0.2,
+          -0.6,
+          -1.8,
+          -2.7,
+          -2.5,
+          -1.0,
+          1.4,
+          3.1,
+          3.1,
+          1.5,
+          0.2,
+          0.4,
+          0.5,
+          0.5,
+          0.5,
+          0.4,
+          0.3,
+          0.1
+        ],
+        "nat_hand": [
+          -1.0,
+          -2.2,
+          -2.3,
+          -1.2,
+          -5.5,
+          -5.1,
+          -0.2,
+          -0.4,
+          -0.5,
+          -0.4,
+          -0.2,
+          0.1,
+          0.3,
+          0.3,
+          0.2,
+          0.1,
+          0.0,
+          0.0,
+          7.6,
+          6.7,
+          14.4,
+          29.3,
+          29.3,
+          1.5,
+          3.3,
+          3.3,
+          1.5,
+          -0.9,
+          -1.6,
+          -0.9,
+          1.3,
+          4.9,
+          6.9,
+          5.0,
+          1.6,
+          -3.8,
+          -12.3,
+          -20.1,
+          -21.2,
+          -13.7,
+          -7.0,
+          -4.3,
+          -2.3,
+          -0.7,
+          0.2,
+          0.5,
+          0.7,
+          0.8,
+          0.8,
+          0.7,
+          0.5,
+          0.2
+        ]
+      }
+    },
+    "wrist": {
+      "blade_err_max_deg": 3.3,
+      "edge_err_max_deg": 117.4,
+      "edge_err_strike_keys_max_deg": 34.1,
+      "edge_note": "edge_err = solver error vs the REQUESTED edge per key (guard/recovery keys ask for edge-down at low weight, so large values there are cosmetic). Whether the true edge leads the cut is measured on the baked motion in qa.edge_lead.",
+      "breakdown_blade_err_max_deg": 0.0,
+      "note": "blade_err = degrees between the authored blade direction and the one the anatomical wrist reaches (the wrist is never forced past its limits). Auto-inserted breakdown keys have no authored direction and are reported separately.",
+      "limits_deg": {
+        "pronation/supination": [
+          80,
+          85
+        ],
+        "radial/ulnar": [
+          20,
+          38
+        ],
+        "flexion/extension": [
+          65,
+          60
+        ]
+      },
+      "per_key": {
+        "0": {
+          "swivel": -15,
+          "overlap": 0.002,
+          "hand_moved": 0.0,
+          "blade_err": 0.5,
+          "edge_err": 53.4,
+          "pro": -12,
+          "dev": -38,
+          "flex": -20,
+          "left_overlap": 0.0,
+          "blade_err0": 0.5,
+          "replan_blade_dev": 0.0
+        },
+        "2": {
+          "swivel": -50,
+          "overlap": 0.0,
+          "hand_moved": 0.45,
+          "blade_err": 0.5,
+          "edge_err": 86.2,
+          "pro": 2,
+          "dev": -14,
+          "flex": -59,
+          "left_overlap": 0.0,
+          "blade_err0": 0.5,
+          "replan_blade_dev": 0.0
+        },
+        "4": {
+          "swivel": -70,
+          "overlap": 0.004,
+          "hand_moved": 0.45,
+          "blade_err": 0.5,
+          "edge_err": 117.4,
+          "pro": -21,
+          "dev": -38,
+          "flex": -59,
+          "left_overlap": 0.0,
+          "blade_err0": 0.5,
+          "replan_blade_dev": 0.0
+        },
+        "10": {
+          "swivel": -35,
+          "overlap": 0.0,
+          "hand_moved": 0.45,
+          "blade_err": 3.3,
+          "edge_err": 108.9,
+          "pro": -23,
+          "dev": 5,
+          "flex": -60,
+          "left_overlap": 0.0,
+          "blade_err0": 1.3,
+          "replan_blade_dev": 2.0
+        },
+        "16": {
+          "swivel": -35,
+          "overlap": 0.0,
+          "hand_moved": 0.0,
+          "blade_err": 0.3,
+          "edge_err": 17.1,
+          "pro": -24,
+          "dev": -15,
+          "flex": -38,
+          "left_overlap": 0.0,
+          "blade_err0": 0.3,
+          "replan_blade_dev": 0.0
+        },
+        "19": {
+          "swivel": 15,
+          "overlap": 0.0,
+          "hand_moved": 0.45,
+          "blade_err": 1.6,
+          "edge_err": 34.1,
+          "pro": 30,
+          "dev": -38,
+          "flex": -50,
+          "left_overlap": 0.0,
+          "blade_err0": 1.6,
+          "replan_blade_dev": 0.0
+        },
+        "21": {
+          "swivel": 0,
+          "overlap": 0.0,
+          "hand_moved": 0.15,
+          "blade_err": 0.8,
+          "edge_err": 33.8,
+          "pro": 47,
+          "dev": -34,
+          "flex": 25,
+          "left_overlap": 0.0,
+          "blade_err0": 0.8,
+          "replan_blade_dev": 0.0
+        },
+        "25": {
+          "swivel": 0,
+          "overlap": 0.0,
+          "hand_moved": 0.0,
+          "blade_err": 0.2,
+          "edge_err": 20.4,
+          "pro": 50,
+          "dev": -37,
+          "flex": 38,
+          "left_overlap": 0.0,
+          "blade_err0": 0.2,
+          "replan_blade_dev": 0.0
+        },
+        "29": {
+          "swivel": 0,
+          "overlap": 0.012,
+          "hand_moved": 0.0,
+          "blade_err": 0.5,
+          "edge_err": 0.0,
+          "pro": 59,
+          "dev": -38,
+          "flex": 24,
+          "left_overlap": 0.0,
+          "blade_err0": 0.5,
+          "replan_blade_dev": 0.0
+        },
+        "33": {
+          "swivel": 0,
+          "overlap": 0.0,
+          "hand_moved": 0.0,
+          "blade_err": 0.4,
+          "edge_err": 108.8,
+          "pro": 80,
+          "dev": -20,
+          "flex": 29,
+          "left_overlap": 0.0,
+          "blade_err0": 0.4,
+          "replan_blade_dev": 0.0
+        },
+        "38": {
+          "swivel": 0,
+          "overlap": 0.0,
+          "hand_moved": 0.23,
+          "blade_err": 0.8,
+          "edge_err": 0.1,
+          "pro": 35,
+          "dev": -37,
+          "flex": -34,
+          "left_overlap": 0.0,
+          "blade_err0": 0.8,
+          "replan_blade_dev": 0.0
+        },
+        "42": {
+          "swivel": 0,
+          "overlap": 0.011,
+          "hand_moved": 0.45,
+          "blade_err": 0.2,
+          "edge_err": 0.7,
+          "pro": 29,
+          "dev": -28,
+          "flex": -54,
+          "left_overlap": 0.0,
+          "blade_err0": 0.2,
+          "replan_blade_dev": 0.0
+        },
+        "52": {
+          "swivel": -5,
+          "overlap": 0.0,
+          "hand_moved": 0.45,
+          "blade_err": 0.1,
+          "edge_err": 5.0,
+          "pro": 28,
+          "dev": -26,
+          "flex": -42,
+          "left_overlap": 0.0,
+          "blade_err0": 0.1,
+          "replan_blade_dev": 0.0
+        }
+      }
+    }
+  },
+  "files": {
+    "fbx": "SwordHeavy.fbx",
+    "rbxmx": "SwordHeavy.rbxmx",
+    "mp4": "SwordHeavy.mp4",
+    "sheet": "SwordHeavy_sheet.png",
+    "source_blend": "_src/SwordHeavy.blend"
+  }
+}

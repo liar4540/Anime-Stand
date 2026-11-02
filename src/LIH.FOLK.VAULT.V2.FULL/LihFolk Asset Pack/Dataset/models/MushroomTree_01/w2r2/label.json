@@ -1,0 +1,102 @@
+{
+ "asset": "MushroomTree_01",
+ "kit": "Nature",
+ "type": "MushroomTree",
+ "seed": 1,
+ "attempt": "w2r2",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Instantly reads as a spotted toadstool from front, three-quarter and silhouette; top view is a spotted red disc that still reads as a mushroom cap at 64 px.",
+   "V2": "Clear hierarchy: big domed cap, medium stem plus the smaller child mushroom, small cream spots and rim band.",
+   "V3": "Cap dome and rim band are nicely stylised, but the main stem is a straight, uniform thin cylinder and the child sits stiffly against it; only partly exaggerated.",
+   "V4": "Cap dome is soft and the rim band reads well, but the stem foot flare and the spots have polygonal faceted outlines and the cap underside edge is a sawtooth - inconsistent edge treatment.",
+   "V5": "Front view shows a jagged sawtooth fringe under the cap rim; spot discs and stem foot flares show visible low-segment faceting in the close-ups (minor, but visible).",
+   "V6": "Disciplined: cap hue in two values (dome + lighter rim band) and cream spots/stem; teal and ember colourways keep the same structure.",
+   "V7": "1760 tris vs tree target 2000 (ceiling 5000) - under target.",
+   "V8": "One white LF_VertexColor material, warm cream stem/spots match the kit, but spots are low-segment stuck-on shells and the faceted foot/underside fall short of the fused smooth organic shell standard.",
+   "V9": "Static scenery Studio line correct: Anchored, Hull collision, CanTouch off, MeshPart white, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Sawtooth fringe under the cap rim visible in front view",
+   "Low-segment faceted outlines on cap spots",
+   "Faceted polygonal stem foot flares",
+   "Gills not visibly readable in the gills close-up"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Replace the sawtooth underside with a smooth gill ring (or soft radial gills) and smooth the cap's underside edge",
+   "Raise segment count / weighted normals on spots and stem foot flares so outlines are round",
+   "Give the main stem a gentle curve, taper and bulbous base and tilt the child mushroom so the pair feels less stiff; spread a few spots toward the cap crown"
+  ]
+ ],
+ "params": {
+  "Hs": 5.331,
+  "rs": 0.58,
+  "Rc": 2.753,
+  "bend": 0.462,
+  "spots": 7,
+  "kids": 1
+ },
+ "tris": 1760,
+ "budget_class": "tree",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,113 @@
+{
+ "asset": "Broadsword_11",
+ "kit": "Weapons",
+ "type": "Broadsword",
+ "seed": 11,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 10.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette all read instantly as a sword: tapered blade, down-swept recurved guard, banded grip bumps and disc pommel; outline symmetric (A15 X/Y error 0.0), guard and gem centred (offset 0.0), blade seated 0.243 into guard.",
+   "V2": "Clear hierarchy: big broad blade, medium recurved guard with raised centre boss and disc pommel, small gem and gold grip bands.",
+   "V3": "Confident stylised proportions: broad wedge blade with long tapered point, chunky drooping guard arms, slightly flared grip; no stiff primitives.",
+   "V4": "Consistent chamfers on guard arms, boss, pommel disc and collar catch light in the studio close-ups; blade bevel/fuller facets crisp and even.",
+   "V5": "Close-ups clean: no patches, pinches, seams or z-fighting at blade/guard joint, gem or pommel; only expected low-segment rim on the pommel disc; A17/A18 pass, 0 flipped faces.",
+   "V6": "Disciplined: gold accent, steel greys for blade (two values + dark fuller) and one teal hue on gem/wraps; colourways swap only the hue.",
+   "V7": "2432 tris vs weapon target 2500 (ceiling 4000), at/under target.",
+   "V8": "One white LF_VertexColor material, kit gold/steel/teal palette, chamfer scale and smooth shading match the kit swords.",
+   "V9": "Studio line correct: Tool Handle, origin at grip, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Give the pommel disc a little more shape (domed top or peened cap) so the base reads less like a flat puck",
+   "Add a small ricasso/shoulder or edge chamfer at the blade base to break the plain wedge outline",
+   "Slightly raise pommel rim segment count to soften the faceted outline in close-ups"
+  ]
+ ],
+ "params": {
+  "L": 3.919,
+  "W": 0.59,
+  "T": 0.123,
+  "taper": 0.398,
+  "tip0": 0.746,
+  "tipk": 1.454,
+  "gL": 1.27,
+  "h0": 0.192,
+  "ht": 0.111,
+  "rise": -0.177,
+  "flare": 0.073,
+  "langet": 0.135,
+  "GL": 1.19,
+  "gr": 0.161,
+  "ps": 0.312,
+  "wraps": 4,
+  "pommel": "wheel",
+  "fuller_w": 0.676,
+  "fuller_end": 0.629,
+  "gem": true,
+  "tip_balls": false,
+  "hilt_steps": 22
+ },
+ "tris": 2432,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

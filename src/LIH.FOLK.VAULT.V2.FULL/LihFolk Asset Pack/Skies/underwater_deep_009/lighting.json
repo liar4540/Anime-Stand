@@ -1,0 +1,262 @@
+{
+ "id": "underwater_deep_009",
+ "family": "underwater",
+ "theme": "deep",
+ "Lighting": {
+  "LightingStyle": "Soft",
+  "Brightness": 1.2,
+  "ClockTime": 12.0,
+  "GeographicLatitude": 0,
+  "Ambient": [
+   35,
+   90,
+   125
+  ],
+  "OutdoorAmbient": [
+   51,
+   130,
+   174
+  ],
+  "ColorShift_Top": [
+   149,
+   200,
+   241
+  ],
+  "ColorShift_Bottom": [
+   0,
+   0,
+   0
+  ],
+  "EnvironmentDiffuseScale": 0.3,
+  "EnvironmentSpecularScale": 0.0,
+  "ExposureCompensation": 0.0,
+  "GlobalShadows": true
+ },
+ "Atmosphere": {
+  "Density": 0.6,
+  "Offset": 0.0,
+  "Color": [
+   23,
+   74,
+   138
+  ],
+  "Decay": [
+   22,
+   74,
+   138
+  ],
+  "Glare": 0.0,
+  "Haze": 0.0
+ },
+ "Sky": {
+  "CelestialBodiesShown": false,
+  "StarCount": 0,
+  "SunAngularSize": 21,
+  "MoonAngularSize": 11,
+  "SkyboxOrientation": [
+   0,
+   0,
+   0
+  ],
+  "Faces": {
+   "SkyboxBk": "SkyBk.png",
+   "SkyboxDn": "SkyDn.png",
+   "SkyboxFt": "SkyFt.png",
+   "SkyboxLf": "SkyLf.png",
+   "SkyboxRt": "SkyRt.png",
+   "SkyboxUp": "SkyUp.png"
+  }
+ },
+ "ColorCorrection": {
+  "Brightness": 0.0,
+  "Contrast": 0.05,
+  "Saturation": 0.05,
+  "TintColor": [
+   255,
+   255,
+   255
+  ]
+ },
+ "Bloom": {
+  "Intensity": 0.4,
+  "Size": 24,
+  "Threshold": 1.6
+ },
+ "Measured": {
+  "horizon": [
+   23,
+   74,
+   138
+  ],
+  "horizon_sun_side": [
+   22,
+   74,
+   138
+  ],
+  "horizon_far_side": [
+   22,
+   74,
+   138
+  ],
+  "zenith": [
+   161,
+   207,
+   231
+  ]
+ },
+ "PaintedLight": {
+  "direction_roblox": [
+   0.0,
+   0.4472,
+   -0.8944
+  ],
+  "kind": "none"
+ },
+ "Notes": "Painted sun/moon in the faces, so CelestialBodiesShown=false avoids two suns. To line the engine sun up with the painted one, rotate SkyboxOrientation.Y until Lighting:GetSunDirection() matches PaintedLight.direction_roblox. Face convention: Ft=-Z, Bk=+Z, Rt=+X, Lf=-X; Up/Dn use the cube-cross layout, rotation 0 deg (Up/Dn rotation unverified in Studio; tools/pack/rotate_updn.py fixes it in place).",
+ "gates": {
+  "S1_faces_1024": true,
+  "S2_seam_worst_ratio": 0.592,
+  "S2_seam_worst_abs": 0.0021,
+  "S2_seamless": true,
+  "S3_pinch_up": 0.996,
+  "S3_pinch_dn": 1.014,
+  "S3_no_pinch": true,
+  "S4_one_sun": true,
+  "S5_lighting_valid": true,
+  "gates_pass": true
+ },
+ "seams": {
+  "SkyFt_top": [
+   0.00199,
+   0.00197
+  ],
+  "SkyFt_bottom": [
+   0.00185,
+   0.00182
+  ],
+  "SkyFt_left": [
+   0.00185,
+   0.00192
+  ],
+  "SkyFt_right": [
+   0.00206,
+   0.00209
+  ],
+  "SkyBk_top": [
+   0.002,
+   0.00202
+  ],
+  "SkyBk_bottom": [
+   0.00187,
+   0.0019
+  ],
+  "SkyBk_left": [
+   0.00201,
+   0.00197
+  ],
+  "SkyBk_right": [
+   0.00182,
+   0.00185
+  ],
+  "SkyRt_top": [
+   0.00186,
+   0.00192
+  ],
+  "SkyRt_bottom": [
+   0.00184,
+   0.00186
+  ],
+  "SkyRt_left": [
+   0.00206,
+   0.00197
+  ],
+  "SkyRt_right": [
+   0.00201,
+   0.00197
+  ],
+  "SkyLf_top": [
+   0.0019,
+   0.00193
+  ],
+  "SkyLf_bottom": [
+   0.00184,
+   0.00188
+  ],
+  "SkyLf_left": [
+   0.00182,
+   0.00186
+  ],
+  "SkyLf_right": [
+   0.00185,
+   0.00183
+  ],
+  "SkyUp_top": [
+   0.002,
+   0.00191
+  ],
+  "SkyUp_bottom": [
+   0.00199,
+   0.00192
+  ],
+  "SkyUp_left": [
+   0.0019,
+   0.00198
+  ],
+  "SkyUp_right": [
+   0.00186,
+   0.00184
+  ],
+  "SkyDn_top": [
+   0.00185,
+   0.00177
+  ],
+  "SkyDn_bottom": [
+   0.00187,
+   0.00184
+  ],
+  "SkyDn_left": [
+   0.00184,
+   0.00185
+  ],
+  "SkyDn_right": [
+   0.00184,
+   0.00182
+  ]
+ },
+ "params": {
+  "Surface": "#addef8",
+  "Shallow": "#318ad1",
+  "Mid": "#05387c",
+  "Deep": "#01081d",
+  "RayC": "#95c8f1",
+  "Window": 0.791275623541704,
+  "Rays": 0.7248953930586216,
+  "RayCount": 12.790501668261951,
+  "Motes": 0.30094642733198407,
+  "Ripple": 0.4902889081519994,
+  "Seed": 76.0
+ },
+ "colors": [
+  [
+   "#3a7fbf",
+   0.351
+  ],
+  [
+   "#02193e",
+   0.33
+  ],
+  [
+   "#144786",
+   0.191
+  ],
+  [
+   "#95c6e7",
+   0.128
+  ]
+ ],
+ "generator": "tools/pack/gen_skies.py + osl/sky_underwater.osl (procedural, original)",
+ "tags": [
+  "underwater",
+  "deep"
+ ]
+}

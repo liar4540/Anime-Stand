@@ -1,0 +1,29 @@
+# Findings from api_check.py that were reviewed and are correct. Format: note path | symbol  # reason
+# Use * as the path to allow a symbol everywhere. Keep every entry justified.
+* | collectgarbage()  # Roblox supports collectgarbage("count") only; the notes use exactly that
+* | Enum.KeyCode.Unknown  # exists at runtime (mouse InputObjects report it) but is hidden from the API dump
+* | debug.loadmodule  # Roblox-only, enabled by a Studio flag for Jest-Lua; not in the public API files
+* | buffer.read  # prose shorthand for the buffer.read* family (readu8, readf32, ...)
+* | CatalogSearchParams.new  # real constructor; the docs file lists only its properties
+01 Studio and Workflow/Creator Store and Toolbox Safety.md | getfenv()  # what to look for in malicious models
+01 Studio and Workflow/Creator Store and Toolbox Safety.md | setfenv()  # same
+01 Studio and Workflow/Creator Store and Toolbox Safety.md | ModuleScript.LinkedSource  # same
+39 Studio Plugins and Tooling/Plugin Security and Permissions.md | ModuleScript.LinkedSource  # audit checklist item
+45 Procedural Blender Assets/Blender 5 Python Gotchas for Headless Builds.md | os.path  # Python, not Luau
+08 Animation/08 Snippets/Snippets - Building and Sampling Clips.md | AnimationConstraint.C0  # listed as a mistake
+08 Animation/01 Fundamentals/The Default Animate Script.md | wait()  # quotes Roblox's own Animate script
+10 Game Design and Genres/Genre Playbook - Tycoons.md | wait()  # a maths formula wait(k), not the Luau global
+15 AI Tools/AI Pitfalls - Stale APIs and Luau.md | :SetPrimaryPartCFrame()  # left column of the "stale -> current" table; PivotTo is the recommendation
+15 AI Tools/AI Pitfalls - Stale APIs and Luau.md | MarketplaceService:UserOwnsGamePass  # a name AI models invent; the table gives the real UserOwnsGamePassAsync
+49 Roblox Platform Features/Engine and API Changes 2025-2026.md | Player:LoadCharacter  # deprecated-name column of the Async rename table / "before" example
+49 Roblox Platform Features/Engine and API Changes 2025-2026.md | Player:IsInGroup  # deprecated-name column of the Async rename table / "before" example
+49 Roblox Platform Features/Engine and API Changes 2025-2026.md | Player:IsFriendsWith  # deprecated-name column of the Async rename table / "before" example
+49 Roblox Platform Features/Engine and API Changes 2025-2026.md | Humanoid:ApplyDescription  # deprecated-name column of the Async rename table / "before" example
+49 Roblox Platform Features/Engine and API Changes 2025-2026.md | Players:CreateHumanoidModelFromDescription  # deprecated-name column of the Async rename table / "before" example
+49 Roblox Platform Features/Engine and API Changes 2025-2026.md | Players:GetHumanoidDescriptionFromUserId  # deprecated-name column of the Async rename table / "before" example
+49 Roblox Platform Features/Engine and API Changes 2025-2026.md | TeleportService:ReserveServer  # deprecated-name column of the Async rename table / "before" example
+49 Roblox Platform Features/Engine and API Changes 2025-2026.md | Plugin:CreateDockWidgetPluginGui  # deprecated-name column of the Async rename table / "before" example
+49 Roblox Platform Features/Engine and API Changes 2025-2026.md | StudioService:PromptImportFile  # deprecated-name column of the Async rename table / "before" example
+49 Roblox Platform Features/Engine and API Changes 2025-2026.md | MarketplaceService:GetProductInfo  # deprecated-name column of the Async rename table / "before" example
+49 Roblox Platform Features/Engine and API Changes 2025-2026.md | :PromptImportFile()  # deprecated-name column of the Async rename table
+49 Roblox Platform Features/Engine and API Changes 2025-2026.md | :GetProductInfo()  # the "-- before" half of a before/after migration example

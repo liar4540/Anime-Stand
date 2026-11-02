@@ -1,0 +1,282 @@
+{
+ "asset": "Staff_20",
+ "kit": "Weapons",
+ "type": "Staff",
+ "seed": 20,
+ "params": {
+  "H": 5.493,
+  "r": 0.216,
+  "head": "crystal",
+  "wraps": 4,
+  "orb": 0.523,
+  "prongs": 4,
+  "flare": 1.428
+ },
+ "tris": 1840,
+ "budget_class": "weapon",
+ "budget_target": 2500,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 0.744,
+  "y": 0.753,
+  "z": 6.873
+ },
+ "origin": "hand/grip point",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "collar_on_haft_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  },
+  {
+   "name": "head_on_haft_axis",
+   "offset": {
+    "X": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "collar_on_haft",
+   "gap": 0.0,
+   "penetration": 0.16945,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "head_on_collar",
+   "gap": 0.0,
+   "penetration": 0.18,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong0_on_collar",
+   "gap": 0.0,
+   "penetration": 0.11052,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong0_holds_head",
+   "gap": 0.0,
+   "penetration": 0.07218,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong1_on_collar",
+   "gap": 0.0,
+   "penetration": 0.11052,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong1_holds_head",
+   "gap": 0.0,
+   "penetration": 0.07218,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong2_on_collar",
+   "gap": 0.0,
+   "penetration": 0.11052,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong2_holds_head",
+   "gap": 0.0,
+   "penetration": 0.07218,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong3_on_collar",
+   "gap": 0.0,
+   "penetration": 0.11052,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "prong3_holds_head",
+   "gap": 0.0,
+   "penetration": 0.07218,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 318,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "ink",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590"
+    }
+   }
+  ]
+ },
+ "studio": "Tool Handle; origin = hand/grip point; CollisionFidelity Hull; CanCollide off when equipped; Massless; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "crystal staff: 6-facet hue crystal (3 values) in 4 flared gold prongs",
+ "features": [
+  [
+   "head",
+   [
+    0.0,
+    0.0,
+    3.487
+   ],
+   0.9937
+  ],
+  [
+   "collar",
+   [
+    0.0,
+    0.0,
+    2.896
+   ],
+   0.6
+  ],
+  [
+   "grip",
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   0.9
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_front.png",
+  "three_quarter": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_three_quarter.png",
+  "top": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_top.png",
+  "silhouette": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_silhouette.png",
+  "close_head_studio": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_close_head_studio.png",
+  "close_head_flat": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_close_head_flat.png",
+  "close_collar_studio": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_close_collar_studio.png",
+  "close_collar_flat": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_close_collar_flat.png",
+  "close_grip_studio": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_close_grip_studio.png",
+  "close_grip_flat": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_close_grip_flat.png",
+  "cw_royal": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_cw_royal.png",
+  "cw_crimson": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_cw_crimson.png",
+  "cw_verdant": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_cw_verdant.png",
+  "cw_shadow": "Models/Kits/Weapons/_renders/Staff_20/Staff_20_cw_shadow.png"
+ },
+ "score": {
+  "score": 8.7,
+  "basis": "single blind",
+  "reviewed": "Staff_01 rv2 (orb) 8.7, Staff_03 rv2 (crystal) 8.7",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_weapons.py:Staff",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Weapons/Staff_20.glb",
+  "blend": "Models/Kits/Weapons/Staff_20.blend",
+  "turntable": "Models/Kits/Weapons/Staff_20_turntable.mp4",
+  "colourway_glbs": {
+   "royal": "Models/Kits/Weapons/colourways/Staff_20__royal.glb",
+   "crimson": "Models/Kits/Weapons/colourways/Staff_20__crimson.glb",
+   "verdant": "Models/Kits/Weapons/colourways/Staff_20__verdant.glb",
+   "shadow": "Models/Kits/Weapons/colourways/Staff_20__shadow.glb"
+  }
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12
+}

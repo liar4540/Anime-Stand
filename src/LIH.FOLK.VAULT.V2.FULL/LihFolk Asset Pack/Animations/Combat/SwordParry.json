@@ -1,0 +1,251 @@
+{
+  "name": "SwordParry",
+  "fps": 30,
+  "frames": 33,
+  "length_s": 1.0667,
+  "loop": false,
+  "priority": "Action",
+  "markers": [
+    {
+      "name": "ParryStart",
+      "frame": 2,
+      "time": 0.0667
+    },
+    {
+      "name": "BlockHold",
+      "frame": 6,
+      "time": 0.2
+    },
+    {
+      "name": "ParryEnd",
+      "frame": 9,
+      "time": 0.3
+    },
+    {
+      "name": "Deflect",
+      "frame": 14,
+      "time": 0.4667
+    }
+  ],
+  "root_motion": false,
+  "preview_prop": "sword",
+  "grip": "Right hand. Tool.Grip = CFrame.Angles(math.rad(30), 0, 0) with the blade modelled along Handle +Y and the true edge along Handle -Z (RightGripAttachment default (0,-0.162,0), (-90,0,0)). The preview sword and fist are preview-only; the exported rig is standard R15.",
+  "parry_window_s": [
+    0.067,
+    0.3
+  ],
+  "qa_arm_twist": {
+    "RightUpperArm": {
+      "twist_max_deg_per_frame": 7.9,
+      "at_frame": 14,
+      "speed_max_deg_per_frame": 20.5,
+      "twist_range_deg": 23.0,
+      "reversals": 0
+    },
+    "RightLowerArm": {
+      "twist_max_deg_per_frame": 0.0,
+      "at_frame": 15,
+      "speed_max_deg_per_frame": 34.0,
+      "twist_range_deg": 0.0,
+      "reversals": 0
+    },
+    "RightHand": {
+      "twist_max_deg_per_frame": 16.3,
+      "at_frame": 13,
+      "speed_max_deg_per_frame": 26.1,
+      "twist_range_deg": 62.6,
+      "reversals": 1
+    },
+    "LeftUpperArm": {
+      "twist_max_deg_per_frame": 2.5,
+      "at_frame": 13,
+      "speed_max_deg_per_frame": 18.5,
+      "twist_range_deg": 7.1,
+      "reversals": 0
+    },
+    "LeftLowerArm": {
+      "twist_max_deg_per_frame": 0.0,
+      "at_frame": 13,
+      "speed_max_deg_per_frame": 13.3,
+      "twist_range_deg": 0.0,
+      "reversals": 0
+    },
+    "LeftHand": {
+      "twist_max_deg_per_frame": 0.4,
+      "at_frame": 2,
+      "speed_max_deg_per_frame": 10.0,
+      "twist_range_deg": 0.4,
+      "reversals": 0
+    },
+    "summary": {
+      "twist_max_deg_per_frame": 16.3,
+      "worst_joint": "RightHand",
+      "reversals_in_swing": 0,
+      "reversals_total": 1,
+      "right_arm_twist_max_deg_per_frame": 16.3,
+      "right_arm_reversals_in_swing": 0
+    }
+  },
+  "qa": {
+    "arm_twist": {
+      "twist_max_deg_per_frame": 16.3,
+      "worst_joint": "RightHand",
+      "reversals_in_swing": 0,
+      "reversals_total": 1,
+      "right_arm_twist_max_deg_per_frame": 16.3,
+      "right_arm_reversals_in_swing": 0
+    },
+    "lowest_body_point_studs": -0.2817,
+    "lowest_part": [
+      "LeftLowerLeg",
+      13
+    ],
+    "foot_slide_studs": {
+      "Left": 0.0,
+      "Right": 0.0
+    },
+    "foot_min_height": {
+      "Left": -0.0,
+      "Right": -0.0
+    },
+    "ik_unreachable_max_studs": {
+      "Right": 0.0,
+      "Left": 0.0
+    },
+    "body_overlap": {
+      "body_max_studs": 0.042,
+      "body_worst_pair": "RightUpperArm|RightHand",
+      "body_worst_frame": 15,
+      "body_frames_over_0.05": 0,
+      "hip_region_max_studs": 0.157,
+      "worst_pairs": {
+        "RightUpperArm|RightHand": "0.042@15",
+        "UpperTorso|LeftLowerArm": "0.012@7",
+        "UpperTorso|RightLowerArm": "0.012@0"
+      },
+      "blade_max_studs": 0.0,
+      "blade_worst_pair": null,
+      "blade_worst_frame": null,
+      "blade_frames_over_0.05": 0
+    },
+    "rbxmx_keyframes": 32,
+    "motor6d_fk_check_max_err_studs": 0.0,
+    "wrist": {
+      "blade_err_max_deg": 0.8,
+      "edge_err_max_deg": 26.9,
+      "breakdown_blade_err_max_deg": 0.0,
+      "note": "blade_err = degrees between the authored blade direction and the one the anatomical wrist reaches (the wrist is never forced past its limits). Auto-inserted breakdown keys have no authored direction and are reported separately.",
+      "limits_deg": {
+        "pronation/supination": [
+          80,
+          85
+        ],
+        "radial/ulnar": [
+          20,
+          38
+        ],
+        "flexion/extension": [
+          65,
+          60
+        ]
+      },
+      "per_key": {
+        "0": {
+          "swivel": -15,
+          "overlap": 0.002,
+          "hand_moved": 0.0,
+          "blade_err": 0.7,
+          "edge_err": 7.8,
+          "pro": -11,
+          "dev": -38,
+          "flex": -20,
+          "left_overlap": 0.0
+        },
+        "2": {
+          "swivel": -35,
+          "overlap": 0.0,
+          "hand_moved": 0.0,
+          "blade_err": 0.1,
+          "edge_err": 2.2,
+          "pro": -5,
+          "dev": -35,
+          "flex": -14,
+          "left_overlap": 0.0
+        },
+        "5": {
+          "swivel": -35,
+          "overlap": 0.0,
+          "hand_moved": 0.23,
+          "blade_err": 0.1,
+          "edge_err": 0.6,
+          "pro": -8,
+          "dev": -35,
+          "flex": -13,
+          "left_overlap": 0.002
+        },
+        "9": {
+          "swivel": -35,
+          "overlap": 0.0,
+          "hand_moved": 0.0,
+          "blade_err": 0.2,
+          "edge_err": 2.2,
+          "pro": -5,
+          "dev": -38,
+          "flex": -13,
+          "left_overlap": 0.002
+        },
+        "12": {
+          "swivel": -25,
+          "overlap": 0.0,
+          "hand_moved": 0.45,
+          "blade_err": 0.8,
+          "edge_err": 26.9,
+          "pro": -20,
+          "dev": -38,
+          "flex": -54,
+          "left_overlap": 0.0
+        },
+        "14": {
+          "swivel": 0,
+          "overlap": 0.001,
+          "hand_moved": 0.45,
+          "blade_err": 0.4,
+          "edge_err": 22.4,
+          "pro": -68,
+          "dev": -17,
+          "flex": -28,
+          "left_overlap": 0.0
+        },
+        "17": {
+          "swivel": -5,
+          "overlap": 0.0,
+          "hand_moved": 0.23,
+          "blade_err": 0.3,
+          "edge_err": 10.2,
+          "pro": -70,
+          "dev": -26,
+          "flex": 5,
+          "left_overlap": 0.0
+        },
+        "32": {
+          "swivel": -30,
+          "overlap": 0.0,
+          "hand_moved": 0.45,
+          "blade_err": 0.1,
+          "edge_err": 11.3,
+          "pro": -34,
+          "dev": -31,
+          "flex": -7,
+          "left_overlap": 0.0
+        }
+      }
+    }
+  },
+  "files": {
+    "fbx": "SwordParry.fbx",
+    "rbxmx": "SwordParry.rbxmx",
+    "mp4": "SwordParry.mp4",
+    "sheet": "SwordParry_sheet.png",
+    "source_blend": "_src/SwordParry.blend"
+  }
+}

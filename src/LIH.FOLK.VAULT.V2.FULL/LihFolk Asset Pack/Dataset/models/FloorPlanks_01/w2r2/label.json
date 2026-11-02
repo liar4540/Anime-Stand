@@ -1,0 +1,93 @@
+{
+ "asset": "FloorPlanks_01",
+ "kit": "Modular",
+ "type": "FloorPlanks",
+ "seed": 1,
+ "attempt": "w2r2",
+ "label": "rejected",
+ "score": 6.7,
+ "grades": [
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  6.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Top and three-quarter clearly read as a plank floor; front view and silhouette are a plain box with a lid strip, readable as a crate/chest rather than floor at 64 px",
+   "V2": "Big plinth and medium planks are clear, but the small level is just two tiny nail heads, both on one plank, so detail is sparse and unevenly placed",
+   "V3": "Stiff: four identical full-length 1-stud planks with no staggered butt joints, warp or end variation; the 2-stud plinth is a plain undetailed block",
+   "V4": "Planks have consistent soft chamfers that catch light, but the plinth's vertical corners and top edge are hard/unchamfered (close_edge_studio), so treatment is inconsistent",
+   "V5": "Clean: no seams, pinches or z-fighting in close_planks/close_edge studio and flat renders; gaps between planks read as designed grooves",
+   "V6": "Disciplined: one wood hue in three values (light plank, dark plank, plinth); painted colourways keep the same value structure",
+   "V7": "200 tris vs module target 800 (ceiling 2000): well under target",
+   "V8": "Single LF_VertexColor material and wood hue match, T1 tiling passes on 2-stud grid; minor mismatch from the unchamfered plinth and very sparse ink nail accents",
+   "V9": "Studio line correct for a modular piece: anchored, Box collision, CanTouch off, grid-corner pivot, Color white, SmoothPlastic"
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Add staggered plank butt joints / varied plank lengths and a slight per-plank height or end bevel variation so it reads as hand-laid floor",
+   "Chamfer the plinth edges (~0.05-0.07 studs) to match the planks, or add a timber edge band so the side view reads as floor not a box",
+   "Place ink nail heads consistently at both ends of every plank"
+  ]
+ ],
+ "params": {
+  "W": 4,
+  "pw": 1.0
+ },
+ "tris": 200,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

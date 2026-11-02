@@ -1,0 +1,153 @@
+{
+ "asset": "FloorPlanks_01",
+ "kit": "Modular",
+ "type": "FloorPlanks",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  6.7,
+  8.3,
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.6,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Top view reads clearly as a plank floor, but front/three-quarter/silhouette read as a plain 2-stud-deep box with tiny bumps on top (a crate/plinth rather than a floor).",
+   "V2": "Medium planks and small nail dots exist, but the big mass is an unarticulated deep base block that takes over half the read; only 4 nails on 9 planks.",
+   "V3": "Chunky planks are pleasantly stylised, but the tall slab base under them is a stiff primitive and makes the floor piece read thick and boxy.",
+   "V4": "Planks have consistent chamfers that catch light (edge close-up), but the base box edges look near-razor with no visible bevel - inconsistent.",
+   "V5": "Close-ups (studio and flat) clean: no pinches, seams or z-fighting; gap lines between planks crisp. Gates A17/A18 pass, 0 flipped faces.",
+   "V6": "One wood hue in ~3 values (light, mid, dark base) plus ink nails; colourways (walnut, teal) hold the same disciplined value structure.",
+   "V7": "396 tris vs module target 800 - well under.",
+   "V8": "Single LF_VertexColor white material, wood hue as specified for plank floors, but unchamfered base box breaks the kit's chamfered-edge rule.",
+   "V9": "Studio line correct for a modular piece: Anchored, Box collision, CanTouch off, MeshPart.Color white, SmoothPlastic; T1 tiling passes with IoU 1.0 on X and Y."
+  },
+  {
+   "V1": "Top view reads as planks, but the 4x4x2 block silhouette and three-quarter read as a wooden crate/box rather than a floor.",
+   "V2": "Base block (big), planks in two values (medium), nails (small), though nails appear only on two planks.",
+   "V3": "Planks are short and chunky (few, brick-like boards) on a tall plain base, so it reads more like paving or a box than floorboards.",
+   "V4": "Consistent chamfers on plank edges visible in the planks and edge close-ups.",
+   "V5": "Close-ups clean; no seams, pinches or z-fighting.",
+   "V6": "Oak in three values plus ink nails; colourways disciplined.",
+   "V7": "396 tris vs module target 800.",
+   "V8": "Single LF_VertexColor material, wood hue, chamfers, ink nails: kit-consistent.",
+   "V9": "Anchored, CollisionFidelity Box, CanTouch off, Color white, SmoothPlastic, grid-corner pivot; T1 pass both axes."
+  },
+  {
+   "V1": "Top view reads clearly as a plank floor, but front and silhouette show only a plain 4x4x2 box with a slightly overhanging ridged lid, which reads as a crate/block rather than flooring at 64 px.",
+   "V2": "Big (base block) and medium (staggered planks in 3 values) are clear; small detail is sparse: ink nail heads appear on only two of the eight planks and the deep base sides are blank.",
+   "V3": "Plank tops have a slight stylised overhang and chunky thickness, but the deep untextured base and evenly sized boards read as stiff primitives.",
+   "V4": "Close_planks studio shows consistent chamfers on every plank edge and end catching a highlight; base block edges carry a smaller but even bevel.",
+   "V5": "Studio and flat close-ups are clean: flat plank tops, no pinches, seams, z-fighting or stray faceting; A17/A18 pass.",
+   "V6": "One wood hue in three values (light, mid, dark planks) plus a darker base and ink nails; walnut and teal colourways keep the same structure.",
+   "V7": "396 tris vs module target 800 / ceiling 2000.",
+   "V8": "Single LF_VertexColor material, wood hue for a plank floor per wave-2 spec, kit-range chamfers, ink iron nails; consistent with the kit anchor look.",
+   "V9": "Studio line: Anchored, Box collision, CanTouch off, MeshPart white + SmoothPlastic, grid-corner pivot; T1 tiling passes on X and Y (iou 1.0)."
+  }
+ ],
+ "artifacts": [
+  [
+   "planks overhang the base box slightly, leaving a visible lip/step around the top rim in front view (designed, but reads like a lid on a box)"
+  ],
+  [],
+  []
+ ],
+ "top_fixes": [
+  [
+   "Reduce the base depth or break it up (joists/beams, darker recessed underside) so the piece reads as a floor, not a crate",
+   "Add 0.05-0.07 stud chamfers to the base box edges to match the planks and kit",
+   "Make the plank layout more regular (consistent running bond) and add nails to more planks for small-scale detail"
+  ],
+  [
+   "Use longer, narrower boards running the full module length with staggered butt joints so it reads as floorboards",
+   "Put nail pairs at every board end (or none) for consistent small detail",
+   "Darken or recess the base sides (or add a joist line) so the piece stops reading as a crate"
+  ],
+  [
+   "Give the base sides a joist/beam read (visible joist ends or a darker beam band) or make the slab thinner so the side view reads as flooring, not a box",
+   "Add nails consistently to every plank (two per board end) for even small-scale detail",
+   "Vary plank widths or add slight end-grain/board-end splits for more stylised character"
+  ]
+ ],
+ "params": {
+  "W": 4,
+  "pw": 1.0
+ },
+ "tris": 396,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

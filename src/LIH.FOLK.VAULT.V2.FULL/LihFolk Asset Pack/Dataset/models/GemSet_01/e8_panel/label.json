@@ -1,0 +1,171 @@
+{
+ "asset": "GemSet_01",
+ "kit": "Emblems",
+ "type": "GemSet",
+ "seed": 1,
+ "attempt": "e8_panel",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7,
+  8.3,
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.6,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front (gem in a gold cup with side prongs), three-quarter and top (octagonal table with 4 prong tips) all read at 64 px; the silhouette is a clear big-gem-over-tapered-cup shape, but the prongs only show as small ears.",
+   "V2": "Clear tiers: big faceted gem, medium tapered collet cup, small 4 prongs plus table/crown facets; no uniform noise.",
+   "V3": "Gem is chunky and confident, but the prongs are thin spikes that flare outward off the pavilion (open gaps in the front view) and stop at the girdle without gripping the crown (top view: tips sit outside the girdle), and the collet reads as a plain straight-sided bucket.",
+   "V4": "Inconsistent: the collet rim and base have a visible chamfer band and the prongs have small edge chamfers, but the gem's table/crown facet edges are razor-sharp with no thin highlight bevel, and the prong tips are needle points.",
+   "V5": "Gem faceting is by design and the shading is clean there, but the round collet shows vertical faceting bands in the studio close-up and front view, and there is a small dark notch/step in the collet rim where the back-right prong base crosses it (setting close-up, studio and flat). Minor artifacts, so capped at 1.",
+   "V6": "Disciplined: one gem hue in about 3 values (light table, mid crown, near-black pavilion) plus a gold accent; the crimson/shadow colourways hold the same value structure.",
+   "V7": "528 tris vs small-class target 600 (ceiling 1500): at or under target.",
+   "V8": "One white vertex-colour material, kit gold accent and one hue in 3 values match, but the faceted collet shading and unchamfered gem facet edges differ from the kit's smooth shading and ~0.045-stud chamfers: minor mismatch.",
+   "V9": "Studio line is correct for a pickup/socket gem: origin bottom-centre, CanCollide off, CanTouch on, CollisionFidelity Box, MeshPart.Color white, SmoothPlastic."
+  },
+  {
+   "V1": "Reads as a gem set in a gold cup from the front (symmetric outline, A15 X/Y 0.0), from the three-quarter, and from the top (octagonal table with 4 evenly spaced prong tips). The silhouette is a gem-on-pedestal shape, with small 'ears' where the side claws flare past the girdle.",
+   "V2": "Clear hierarchy: large faceted gem (big), tapered gold collet (medium), 4 pointed claws and the collet rim/base lip (small).",
+   "V3": "Confident stylised proportion: an oversized chunky octagonal gem on a narrow tapered collet, with tapered pointed prongs. Gem is centred on the collet axis (offset 0.0) and nothing floats; all claws touch the gem (pen 0.040).",
+   "V4": "Inconsistent edges. The collet base and rim have a visible chamfer band, but the gem facet edges are hard with no bevel highlight, unlike the soft facet-edge bands on the Gem_01 anchor. Claw tips are razor-pointed, and the back claws seen edge-on read as thin blades.",
+   "V5": "Mostly clean: the gem facets are flat by design and the collet's smooth shading has no pinches or z-fighting. One minor joint artifact: in close_setting_studio/flat, a small tab where the back claw's base sticks out past the collet rim outline (~x262,y255). Claw sinking is uneven (claw0/2 0.396 into the collet vs claw1/3 0.026).",
+   "V6": "Disciplined: one teal hue in 3 values (light crown, mid girdle, dark pavilion) plus kit gold. The crimson, royal and shadow colourways only swap the hue and keep the gold.",
+   "V7": "528 tris vs small-class target 600 (ceiling 1500); at/under target.",
+   "V8": "One white LF_VertexColor material with kit gold and one hue matches the kit. Minor mismatch: the gem and claws lack the ~0.045-stud chamfer the kit (and the Gem_01 anchor) shows on its edges.",
+   "V9": "Studio line is correct for a pickup/socket gem: origin bottom-centre, CanCollide off, CanTouch on, CollisionFidelity Box, MeshPart.Color white, SmoothPlastic."
+  },
+  {
+   "V1": "Reads as a set gem from every view: octagonal crown plus 4 prong nubs in top view, gem-in-cup with side horns in front/three-quarter, and a clean cup-and-crown blob in silhouette; A15 symmetry error 0.0 on X and Y.",
+   "V2": "Clear tiers: big faceted gem, medium tapered collet cup, small 4 claws and crown facets; nothing reads as uniform noise.",
+   "V3": "Gem and cup ratio is good, but the claws are stiff straight struts that flare away from the pavilion and end in spikes at girdle height instead of curling over the crown, so they read as goblet horns more than gripping prongs.",
+   "V4": "Collet rim and foot carry a visible chamfer band, but the claws are hard-edged polygonal prisms with sharp tip facets and no bevel catching light, so edge treatment is inconsistent across parts (gem facets crisp by design).",
+   "V5": "Gem facets are clean, but the round collet cup shows stray vertical facet banding in studio light (front and close_setting_studio), and there is a small jagged step where the right claw base meets the collet rim (close_setting_studio/flat, about x265 y255).",
+   "V6": "Disciplined: kit gold accent plus one hue in three values (light crown, mid girdle, dark pavilion); colourways (crimson, shadow) swap only the hue cleanly.",
+   "V7": "528 tris against a small-class target of 600 (ceiling 1500): under target.",
+   "V8": "One white vertex-colour material and kit gold plus a single hue match, but unchamfered claws and the faceted, not smooth-shaded, collet are a minor departure from the kit's ~0.045 chamfer and smooth-shading standard.",
+   "V9": "Studio line is correct for a pickup/socket gem: origin bottom-centre, CanCollide off, CanTouch on, CollisionFidelity Box, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Vertical faceting bands on the round collet cup (front view, setting close-up studio)",
+   "Small notch/step in the collet rim where the back-right prong base meets it (setting close-up studio and flat, near the right rim)",
+   "Prong seating is uneven between pairs: claw0/claw2_on_collet penetrate 0.396 studs vs 0.026 for claw1/claw3 (gate seats), although the X/Y symmetry error is 0"
+  ],
+  [
+   "Small tab where the back claw's base sticks out past the collet rim outline (close_setting_studio/flat, around x262,y255)",
+   "Uneven claw-to-collet seating: claw0/2 sink 0.396 into the collet, claw1/3 only 0.026 (gate seats)",
+   "168 cross-shell overlaps (intentional interpenetration of gem/claws/collet, not visible except at the claw-base joint)",
+   "Pavilion goes near-black under the girdle in studio light, a strong dark band below the crown"
+  ],
+  [
+   "Vertical facet banding on the round collet cup (should be smooth shaded) - front, three_quarter, close_setting_studio",
+   "Small jagged notch where the right claw base meets the collet rim - close_setting_studio/flat around x265 y255",
+   "Claw tips poke out past the girdle as outward spikes rather than folding over the crown edge",
+   "Gate report: claw0/claw2 sink 0.396 into the collet versus 0.026 for claw1/claw3 (not visible in renders, but inconsistent claw seating depth); 168 intentional cross-shell overlaps"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Smooth-shade the collet (more segments or auto-smooth on the round wall) and clean up the rim where the prongs cross it so there is no notch",
+   "Make the prongs thicker and curl their tips over the crown edge so they visibly grip the gem instead of flaring out from the pavilion and ending as needle points outside the girdle",
+   "Add the kit's ~0.045-stud chamfer to the gem's girdle and table/crown edges so they catch light like the rest of the kit",
+   "Seat all four prongs the same way (match the claw1/3 vs claw0/2 penetration into the collet)",
+   "Give the collet some shape (a flared lip or a waist) so it reads less like a plain bucket"
+  ],
+  [
+   "Blend all four claw bases evenly into the collet wall (same depth for all four) so no tab sticks out past the rim outline",
+   "Add the kit ~0.045-stud chamfer to the gem facet edges and the claw edges so they catch light like the rest of the kit",
+   "Pull the side claws in to hug the crown above the girdle so the silhouette loses the flared 'ears' and the edge-on claws stop reading as thin blades",
+   "Raise the pavilion's darkest value slightly so the area under the girdle doesn't go to black in studio light"
+  ],
+  [
+   "Smooth-shade the collet cup (auto-smooth / weighted normals or more segments) so it stops showing vertical facet bands",
+   "Bend the claws to hug the pavilion and fold their tips over the crown edge so they read as gripping prongs, and chamfer them (~0.045 studs) to match the collet",
+   "Clean the claw-to-collet junction so the claw base blends into the rim without the jagged step, and make all four claws seat at the same depth"
+  ]
+ ],
+ "params": {
+  "cut": "step",
+  "sides": 8,
+  "r": 0.461,
+  "prongs": 4,
+  "h": 0.922
+ },
+ "tris": 528,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

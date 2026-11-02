@@ -1,0 +1,99 @@
+{
+ "asset": "Anvil_01",
+ "kit": "Furniture",
+ "type": "Anvil",
+ "seed": 1,
+ "attempt": "w2r2",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette reads instantly as anvil-on-stump from front, three-quarter and top (horn, face, waist, banded stump all distinct at 64 px).",
+   "V2": "Clear hierarchy: big = anvil body + stump, medium = waist foot, iron bands, cream top ring, small = hardy hole and horn tip.",
+   "V3": "Anvil body and waist are near-straight boxes and the horn is a plain straight cone with no downward curve or taper into the body; reads stiff rather than confidently stylised, stump is chunky and good.",
+   "V4": "Consistent chamfers on face, heel, waist foot and stump rims catch light in the studio close-ups; horn-to-body join has no blend but edges elsewhere are uniform.",
+   "V5": "No z-fighting or patches; horn close-up shows a soft uneven shading crease along the cone and a visible collar where the horn penetrates the body (A16 penetration 0.032), minor.",
+   "V6": "Steel grey anvil, one wood hue in values, ink iron bands, cream stump top: disciplined palette with good value contrast.",
+   "V7": "1120 tris vs medium target 2000 / ceiling 4000: well under target.",
+   "V8": "Single LF_VertexColor material, steel greys + ink + cream accents, chamfer width matches kit; colourways swap only the wood hue as expected.",
+   "V9": "Studio line: Anchored, Hull collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre: correct for a furniture prop."
+  }
+ ],
+ "artifacts": [
+  [
+   "slight shading crease along horn cone",
+   "hard collar where horn cone penetrates the body face"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Give the horn a proper anvil profile: curve its underside up into the body and blend the join instead of a straight cone poking out",
+   "Add taper/waisting to the anvil body and waist (narrower waist, flared feet, slightly drooping heel) to break the boxy primitive look",
+   "Sink the hardy hole as a real recess with a chamfered rim rather than a flat black square"
+  ]
+ ],
+ "params": {
+  "L": 3.182,
+  "Wd": 0.983,
+  "Ha": 1.567,
+  "stump": 1.631,
+  "Rs": 1.139
+ },
+ "tris": 1120,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

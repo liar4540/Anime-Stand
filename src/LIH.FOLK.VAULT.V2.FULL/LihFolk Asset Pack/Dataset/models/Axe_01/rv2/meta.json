@@ -1,0 +1,222 @@
+{
+ "asset": "Axe_01",
+ "kit": "Weapons",
+ "type": "Axe",
+ "seed": 1,
+ "params": {
+  "H": 4.513,
+  "r": 0.195,
+  "style": "crescent",
+  "E": 1.836,
+  "bt": 0.97,
+  "bb": 0.97,
+  "poll": 0.122,
+  "D": 0.479,
+  "edge_frac": 0.336,
+  "wraps": 6
+ },
+ "tris": 1916,
+ "budget_class": "weapon",
+ "budget_target": 2500,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 2.246,
+  "y": 0.65,
+  "z": 4.684
+ },
+ "origin": "hand/grip point",
+ "symmetric": "Y",
+ "symmetry_error": {
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "collar_on_haft_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  },
+  {
+   "name": "head_on_haft_plane",
+   "offset": {
+    "Y": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "collar_on_haft",
+   "gap": 0.0,
+   "penetration": 0.16998,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "head0_on_collar",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 232,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "ink",
+   "m_lt",
+   "m",
+   "m_dk",
+   "h",
+   "h_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_lt": "#B4BECC",
+     "m": "#7C8899",
+     "m_dk": "#4C5566",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590"
+    }
+   }
+  ]
+ },
+ "studio": "Tool Handle; origin = hand/grip point; CollisionFidelity Hull; CanCollide off when equipped; Massless; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "crescent axe: tapered steel head (edge 0.336 of socket thickness), light edge bevel band, gold socket collar, hue haft wrap",
+ "features": [
+  [
+   "edge",
+   [
+    1.636,
+    0.0,
+    2.888
+   ],
+   0.9
+  ],
+  [
+   "collar",
+   [
+    0.0,
+    0.0,
+    2.888
+   ],
+   0.6
+  ],
+  [
+   "grip",
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   0.9
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_top.png",
+  "silhouette": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_silhouette.png",
+  "close_edge_studio": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_close_edge_studio.png",
+  "close_edge_flat": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_close_edge_flat.png",
+  "close_collar_studio": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_close_collar_studio.png",
+  "close_collar_flat": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_close_collar_flat.png",
+  "close_grip_studio": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_close_grip_studio.png",
+  "close_grip_flat": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_close_grip_flat.png",
+  "cw_royal": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_cw_royal.png",
+  "cw_crimson": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_cw_crimson.png",
+  "cw_verdant": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_cw_verdant.png",
+  "cw_shadow": "Models/Kits/_drafts/rv2/Axe_01/Axe_01_cw_shadow.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_weapons.py:Axe",
+ "made": "2026-10-28"
+}

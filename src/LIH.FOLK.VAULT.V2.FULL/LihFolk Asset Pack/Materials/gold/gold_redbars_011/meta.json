@@ -1,0 +1,116 @@
+{
+ "id": "gold_redbars_011",
+ "family": "gold",
+ "theme": "redbars",
+ "index": 11,
+ "seed": 524.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_gold.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Foil",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "metal",
+  "gold",
+  "treasure",
+  "precious",
+  "redbars"
+ ],
+ "colors": [
+  [
+   "#f8b271",
+   0.484
+  ],
+  [
+   "#fcc695",
+   0.28
+  ],
+  [
+   "#e89d58",
+   0.132
+  ],
+  [
+   "#be7438",
+   0.103
+  ]
+ ],
+ "params": {
+  "C1": "#fdbf86",
+  "C2": "#f3a257",
+  "C3": "#cd6a30",
+  "C4": "#78461b",
+  "C5": "#fbdbbd",
+  "Mode": 2.0,
+  "Cells": 8.0,
+  "Antique": 0.32283960569982306,
+  "Gloss": 0.6036948147405659,
+  "Rows": 7.0,
+  "PerRow": 3.0,
+  "Seed": 524.0
+ },
+ "normal_depth_px": 12.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.084,
+   "Color_Neutral": 0.082,
+   "Normal": 0.027,
+   "Roughness": 0.133,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.5,
+   0.983
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.001,
+   0.0
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 50.0,
+   "diel_luma_p99": 200.0,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 1.0,
+   "metal_albedo_luma": 183.8,
+   "rough_mean": 0.323,
+   "rough_min": 0.271,
+   "rough_expected": [
+    0.12,
+    0.5
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.0669,
+  "M_neutral_mean": 0.74,
+  "M_neutral_range_p5_p95": [
+   0.499,
+   0.853
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 14.1,
+ "preview": "preview.jpg"
+}

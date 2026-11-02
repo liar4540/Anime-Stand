@@ -1,0 +1,22 @@
+{
+ "id": "planks_walnut_002",
+ "kind": "materials",
+ "score": 8.8,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 1,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m7",
+ "reviewer_notes": [
+  "Thin uniform boards, shallow grain, no bevels; slightly busy at distance",
+  "Flat boards, shallow seams; grain relief faint, no bevelled edges",
+  "shallow seams and bevels; planks read flat, no wear or chips"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

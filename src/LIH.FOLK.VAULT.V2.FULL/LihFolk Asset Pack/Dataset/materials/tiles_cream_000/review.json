@@ -1,0 +1,22 @@
+{
+ "id": "tiles_cream_000",
+ "kind": "materials",
+ "score": 10.0,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 2,
+  "M4": 2,
+  "M7": 2,
+  "M6": 2,
+  "M5": 2
+ },
+ "batch": "m4",
+ "reviewer_notes": [
+  "clean glazed checker; minor: no chipped edges or glaze variation",
+  "Clean and readable; tile value variation slight, grout slightly wide",
+  "Clean glossy checker; grout slightly thin, tile faces very uniform"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

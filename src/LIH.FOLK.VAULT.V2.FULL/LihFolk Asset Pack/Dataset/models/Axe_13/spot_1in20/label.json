@@ -1,0 +1,104 @@
+{
+ "asset": "Axe_13",
+ "kit": "Weapons",
+ "type": "Axe",
+ "seed": 13,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Double-bit head reads instantly in front, three-quarter and silhouette; top view still shows the twin-blade bar around the gold pommel cap, so it reads from every angle.",
+   "V2": "Clear hierarchy: two big flared blades, then the gold collar and ring as medium forms, then the grip wraps, cheek straps and pommel ball as small detail.",
+   "V3": "Wide crescent bits with concave necks on a slim haft, plus a chunky collar and ball pommel, give confident stylised proportions. Symmetry error is 0.0 on X/Y, alignment offset is 0, and the head is seated on the collar.",
+   "V4": "Consistent chamfers catch the light on the blade rims, collar lips, ring and cap (edge close-up), matching the kit bevel width.",
+   "V5": "Mostly clean, but the collar close-up (studio + flat) shows faceted, slightly folded shading where the left blade neck curves into the collar. There is also a thin slit between the raised cheek strap and the blade root (429 cross-shell overlaps).",
+   "V6": "Disciplined palette: steel-grey blades, gold accent, one teal hue in two values plus ink-dark grip bands. Colourways swap only the hue.",
+   "V7": "2096 tris against a weapon target of 2500 (ceiling 4000): under target.",
+   "V8": "Uses one white vertex-colour material with the kit's gold, ink, steel and one hue. Bevels and smooth shading are indistinguishable from the kit anchor.",
+   "V9": "Studio line is correct: Tool Handle at the grip point, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Faceted/folded shading on the left blade neck where it meets the collar (collar close-up)",
+   "Thin dark slit between the cheek strap plate and the blade root on both sides of the collar"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add loops or smooth the curved blade-neck sweep into the collar to remove the faceted fold",
+   "Seat the cheek strap plates flush against the blade root (or merge them) to close the slit",
+   "Optionally enlarge the blades slightly against the haft length for a stronger head read"
+  ]
+ ],
+ "params": {
+  "H": 4.573,
+  "r": 0.18,
+  "style": "double",
+  "E": 1.456,
+  "bt": 0.904,
+  "bb": 0.904,
+  "poll": 0.0,
+  "D": 0.476,
+  "edge_frac": 0.347,
+  "wraps": 4
+ },
+ "tris": 2096,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

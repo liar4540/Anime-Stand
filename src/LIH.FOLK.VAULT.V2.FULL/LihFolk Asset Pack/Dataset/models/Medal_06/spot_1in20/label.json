@@ -1,0 +1,99 @@
+{
+ "asset": "Medal_06",
+ "kit": "Emblems",
+ "type": "Medal",
+ "seed": 6,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Clasp bar + tapered ribbon + octagon token read clearly in front, three-quarter and silhouette; outline symmetric (A15 X/Y error 0.0); top view is a thin bar, expected for a flat medal",
+   "V2": "Clear hierarchy: big octagon token and ribbon, medium gold rim/clasp bar and inset teal field, small diamond emblem and suspension ring",
+   "V3": "Proportions read but shapes are plain primitives: flat untextured trapezoid ribbon slab, uniform octagon, small diamond; little exaggeration or shape character",
+   "V4": "Consistent small chamfers on clasp bar, rim, ring and emblem catch light in the studio close-ups; no razor or blobby edges",
+   "V5": "Close-ups (studio + flat) show clean planar faces, no pinches, seams, z-fighting or stray faceting; A17/A18 pass, 0 flipped faces",
+   "V6": "Disciplined: gold accent, one teal hue in two values (ribbon/field), warm cream emblem; colourways swap only the hue",
+   "V7": "584 tris vs small-class target 600 (ceiling 1500): at target",
+   "V8": "One white vertex-colour material, kit gold/cream/one hue palette, ~kit chamfers, smooth shading; indistinguishable from kit medals",
+   "V9": "Studio line correct: CanCollide/CanQuery off, Massless when worn, Box fidelity, MeshPart.Color white, SmoothPlastic, origin at clasp hang point"
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Give the ribbon more stylised shape (swallow-tail or notched bottom, slight fold/bevelled centre stripe) to push proportion beyond plain primitives",
+   "Enlarge or add depth to the diamond emblem so the token's focal detail reads at 64 px",
+   "Thicken the suspension ring slightly so the ribbon-to-token link reads at small sizes"
+  ]
+ ],
+ "params": {
+  "sides": 8,
+  "R": 0.623,
+  "h": 0.1,
+  "relief": 0.04,
+  "rw": 0.381,
+  "rl": 0.907,
+  "stripe": false,
+  "emblem": "diamond"
+ },
+ "tris": 584,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

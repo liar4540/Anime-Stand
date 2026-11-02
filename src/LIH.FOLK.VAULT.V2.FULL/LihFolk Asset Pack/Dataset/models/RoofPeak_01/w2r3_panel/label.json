@@ -1,0 +1,162 @@
+{
+ "asset": "RoofPeak_01",
+ "kit": "Modular",
+ "type": "RoofPeak",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 8.0,
+ "grades": [
+  2,
+  1,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.0,
+  9.3,
+  8.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 2.3,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Three-quarter and silhouette read as a gable roof (triangular end, ridge cap), but the straight-on front view reads as a flat slate wall on a timber plinth.",
+   "V2": "Big prism, medium ridge cap / slate courses / eave board, but no small tier; the gable end is a large blank flat brown triangle with no boards, vent or trim detail.",
+   "V3": "Shallow, even pitch with long uniform brick-like slates and a plain filled gable gives a stiff, primitive read rather than a confident stylised roof (no overhang flare or sag).",
+   "V4": "Slates, ridge cap and timber eave/barge boards all carry consistent chamfers that catch light in the gable and shingle close-ups.",
+   "V5": "Flat-light ridge close-up shows a small tooth/notch where a slate meets the ridge cap (503 cross-shell overlaps); otherwise clean, A17/A18 pass.",
+   "V6": "Stone hue in 3 grey values plus timber brown secondary; basalt and brick colourways keep the same disciplined structure.",
+   "V7": "800 tris = module target 800 (at target, under 2000 ceiling).",
+   "V8": "One LF_VertexColor material, stone + timber secondary, chamfers at kit scale - consistent with the modular spec.",
+   "V9": "Studio line correct: Anchored, CollisionFidelity Default, CanTouch off, Color white, SmoothPlastic; T1 tiling along X passes with IoU 1.0."
+  },
+  {
+   "V1": "Gabled peak reads from three-quarter and silhouette (triangular end, ridge cap, stepped shingle edge); front view reads as a shingled slope.",
+   "V2": "Ridge cap and timber gable/eave board (big/medium), shingle courses (medium), stepped shingle ends (small).",
+   "V3": "Chunky stylised shingles with a believable pitch; nothing floats.",
+   "V4": "Shingles, ridge and eave board carry consistent chamfers in the shingles close-up.",
+   "V5": "Gable-end close-ups show cluttered overlapping shingle ends jammed at the top corner by the ridge, and the top view shows small brown specks of the base at the eave gaps.",
+   "V6": "Slate in three values plus timber brown secondary; within kit limit, though the random light/dark shingle mix is busy.",
+   "V7": "800 tris, exactly at module target.",
+   "V8": "Single LF_VertexColor material, stone hue + timber secondary, chamfers: kit-consistent.",
+   "V9": "Anchored, CollisionFidelity Default, CanTouch off, Color white, SmoothPlastic, grid-corner pivot; T1 pass."
+  },
+  {
+   "V1": "Three-quarter and silhouette read clearly as a gabled roof peak (pentagonal house outline with ridge cap), and the top view shows the ridge splitting two shingle slopes; front view is weaker (reads as a tiled panel) but still identifiable by the ridge cap.",
+   "V2": "Big (two slopes + gable) and medium (staggered shingle courses, rounded ridge cap, timber eave and barge boards) are present, but the gable end is a large blank timber triangle and there is no small tier (no nails, notched shingle ends, finial).",
+   "V3": "Rounded ridge cap and eave board help, but plain rectangular shingle slabs in regular courses and a flat triangular gable read fairly stiff; little exaggeration of overhang or ridge.",
+   "V4": "Close_shingles, close_ridge and close_gable_end studio show consistent chamfers on shingle butts, ridge cap and barge/eave boards catching highlight lines.",
+   "V5": "Close_ridge flat light shows a small stray sliver/spike on the top shingle edge just below the ridge cap, and the front view shows small timber-coloured slivers peeking through shingle joints near the ridge; A17/A18 pass otherwise.",
+   "V6": "One stone/slate hue in three values plus a timber secondary in two values; brick and sandstone colourways keep the same structure.",
+   "V7": "800 tris, exactly at module target 800 (ceiling 2000).",
+   "V8": "Single LF_VertexColor material, stone shingles + timber secondary per wave-2 modular spec, kit-range chamfers; matches kit.",
+   "V9": "Studio line: Anchored, Default collision, CanTouch off, MeshPart white + SmoothPlastic, grid-corner pivot; T1 tiling passes (iou 1.0)."
+  }
+ ],
+ "artifacts": [
+  [
+   "small notch at a slate/ridge-cap junction visible in the flat ridge close-up",
+   "large flat untextured gable triangle reads as an empty panel"
+  ],
+  [
+   "Jumbled overlapping shingle ends at the gable apex",
+   "Base colour peeking through shingle gaps at the eaves (top view)"
+  ],
+  [
+   "Small stray sliver/spike on the shingle edge just under the ridge cap (close_ridge flat)",
+   "Timber-coloured slivers visible through shingle joints near the ridge in the front view"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Break up the gable end: vertical boards, a timber frame or a small vent/round window, with a barge board that overhangs",
+   "Use shorter, chunkier lapped slates with clear course shadow lines so the slope stops reading as a brick wall",
+   "Clean the slate-to-ridge intersection so no notch shows in flat light"
+  ],
+  [
+   "Clean the gable apex: trim shingle ends and let the ridge cap end flush with a bargeboard",
+   "Close eave gaps or colour the hidden base to match the shingles",
+   "Reduce value randomness of the shingles (favour mid value with occasional light/dark) to calm the surface"
+  ],
+  [
+   "Remove the stray sliver under the ridge cap and close the shingle joints so the timber gable does not peek through",
+   "Detail the blank gable triangle (vertical boards, a vent, or a cross-beam) and add a small tier such as a ridge finial or nail heads",
+   "Order the shingle values and deepen the shingle butts / eave overhang for a more stylised, readable pitch"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "D": 8,
+  "pitch": "full",
+  "ridge": "stone"
+ },
+ "tris": 800,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

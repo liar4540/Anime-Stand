@@ -1,0 +1,93 @@
+{
+ "asset": "WallStraight_11",
+ "kit": "Modular",
+ "type": "WallStraight",
+ "seed": 11,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 10.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Half-timbered panel on a stone plinth reads instantly in front and three-quarter; silhouette and top are a clean wall slab with the cap overhang, which is the expected read for a straight wall piece.",
+   "V2": "Big plaster wall, medium post/rail/brace timber frame and cap beam, small plinth blocks: clear three-tier hierarchy.",
+   "V3": "Confident stylised half-timber: chunky timbers, chevron braces, overhanging cap beam and heavy plinth; only the brace butt ends are cut square rather than fitted into the post/sill joints.",
+   "V4": "Timbers, cap beam and plinth blocks all carry consistent small chamfers that pick up highlight lines in the face and top close-ups.",
+   "V5": "Face, end-section and top close-ups are clean: no z-fighting between timber and plaster, no pinches or stray faceting.",
+   "V6": "Timber brown in two values, cream plaster and one grey stone for the plinth; disciplined and readable in slate and brick colourways.",
+   "V7": "408 tris vs module target 800 (ceiling 2000): well under target.",
+   "V8": "Single white vertex-colour material, chamfered made edges, timber secondary + cream plaster + stone per the modular kit; T1 tiling pass.",
+   "V9": "Studio line: Anchored, CollisionFidelity Box, CanTouch off, MeshPart.Color white, SmoothPlastic, grid-corner origin."
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Fit the brace ends into the post/sill corners (angled cuts) instead of square butt ends that clip the joint",
+   "Wrap a corner post or timber edge onto the end faces so exposed wall ends are not a flat plaster slab",
+   "Optionally add a small accent (gold peg/iron strap) so the piece has a kit accent like other modular pieces"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "style": "timber"
+ },
+ "tris": 408,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,78 @@
+{
+ "asset": "HeaterShield_03",
+ "kit": "Weapons",
+ "type": "HeaterShield",
+ "seed": 3,
+ "attempt": "rv1",
+ "label": "rejected",
+ "score": 7.3,
+ "grades": [
+  1,
+  2,
+  1,
+  2,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "reviewer": "blind fresh agent (renders + close-ups + gate report + rubric only)",
+ "evidence": {
+  "V1": "Front and three-quarter read instantly as a heater shield, and the outline is symmetric (rivet pairs mirror about x~256, A15 X error 3e-05). But the plate is a flat slab, so the top view at 64 px is just a gold plank with a stub, which is readable from front angles only",
+  "V2": "Clear tiers: big gold rim plate, medium raised teal field and cream chevron, small steel rivets (10) and an ink handle on the back",
+  "V3": "No correctness failure (A15/A16 pass, seats penetrate 0.016-0.08 with no gaps). Proportions are stiff though: a perfectly flat plate with no belly or curvature, a straight top edge, a uniform rim and a thin, small chevron",
+  "V4": "Rim, field and chevron all carry a visible chamfer that catches the studio light, consistently across the main forms",
+  "V5": "Rivets are low-segment polyhedra: the flat close-up shows 6-8-sided outlines and the studio close-up shows lumpy, broken highlights. The outer rim curve at the lower right shows straight facet segments. That is stray faceting, so V5 is capped at 1",
+  "V6": "Disciplined palette: gold accent rim, one teal field hue, warm cream emblem, steel-grey rivets, ink handle, with good value contrast",
+  "V7": "1972 tris against a weapon target of 2500 (ceiling 4000), which is under target",
+  "V8": "One white LF_VertexColor material and the palette roles match the kit. But the hue appears in only one value (no 3-value use on the field or bevels), and the faceted rivets break the kit's smooth-shaded look",
+  "V9": "Studio line is complete: origin at the handle, CollisionFidelity Box, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic"
+ },
+ "artifacts": [
+  "Rivets visibly faceted (6-8-sided outline in flat light, lumpy speculars in studio light) on all 10 rivets",
+  "Outer rim silhouette shows straight facet segments along the curved lower sides (close_rim_studio / close_rim_flat)"
+ ],
+ "top_fixes": [
+  "Raise rivet segment count / use smooth domed caps so the rivets read as round studs (clears V5 and V8)",
+  "Add a slight convex curvature (belly) to the plate so the top and side views read as a shield rather than a flat plank (V1, V3)",
+  "Add more segments to the rim's curved sides to remove the visible facet steps along the outline",
+  "Use the field hue in 3 values (e.g. a darker field bevel or inner band, a lighter highlight) to match the kit palette rule",
+  "Push the stylisation: enlarge the chevron emblem and give the top edge a subtle arc or flare for a more confident silhouette"
+ ],
+ "params": {
+  "W": 1.099,
+  "H": 2.149,
+  "bulge": 0.079,
+  "emblem": "chevron",
+  "boss": false,
+  "rivets": 10
+ },
+ "tris": 1972,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

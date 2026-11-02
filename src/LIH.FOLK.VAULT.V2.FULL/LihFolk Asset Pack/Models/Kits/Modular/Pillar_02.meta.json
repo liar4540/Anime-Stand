@@ -1,0 +1,227 @@
+{
+ "asset": "Pillar_02",
+ "kit": "Modular",
+ "type": "Pillar",
+ "seed": 2,
+ "params": {
+  "kind": "post",
+  "flutes": false
+ },
+ "tris": 140,
+ "budget_class": "module",
+ "budget_target": 800,
+ "budget_ceiling": 2000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.999,
+  "y": 1.999,
+  "z": 11.999
+ },
+ "origin": "grid corner (world 0, footprint 2.0x2.0x12.0 studs)",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass",
+  "T1": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "post_on_foot",
+   "gap": 0.0,
+   "penetration": 0.1,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "cap_on_post",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 28,
+ "tiling": {
+  "grid": {
+   "footprint": [
+    2.0,
+    2.0,
+    12.0
+   ],
+   "step": 2.0,
+   "on_grid": true,
+   "inside": true,
+   "touches_floor": true,
+   "bbox": [
+    [
+     0.0006,
+     0.0006,
+     0.0006
+    ],
+    [
+     1.9994,
+     1.9994,
+     11.9994
+    ]
+   ],
+   "ok": true
+  },
+  "tiles": [
+   {
+    "axis": "Z",
+    "period": 12.0,
+    "with": "Pillar_02",
+    "other_axis": "Z",
+    "mode": "equal",
+    "a_cells": 1296,
+    "b_cells": 1296,
+    "iou": 1.0,
+    "cover": 1.0,
+    "inside": true,
+    "ok": true
+   }
+  ]
+ },
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "ink",
+   "h",
+   "b",
+   "b_dk"
+  ],
+  "primary": "granite",
+  "colourways": [
+   {
+    "name": "granite",
+    "hue": "stone",
+    "roles": {
+     "ink": "#2E2430",
+     "h": "#9497A3",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "sandstone",
+    "hue": "sand",
+    "roles": {
+     "ink": "#2E2430",
+     "h": "#C29C66",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "brick",
+    "hue": "brick",
+    "roles": {
+     "ink": "#2E2430",
+     "h": "#B0503B",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "slate",
+    "hue": "slate",
+    "roles": {
+     "ink": "#2E2430",
+     "h": "#71829A",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "basalt",
+    "hue": "basalt",
+    "roles": {
+     "ink": "#2E2430",
+     "h": "#64616E",
+     "b": "#978A76",
+     "b_dk": "#655A4C"
+    }
+   }
+  ]
+ },
+ "studio": "Modular piece: Anchored; CollisionFidelity Box; CanTouch off; CastShadow on; origin = grid corner (pivot at min x / min y / floor): snap with a 2-stud grid and 90-degree rotations; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "timber post 2x2x12 on a stone foot, iron bands, dark cap block (stacks on Z)",
+ "features": [
+  [
+   "capital",
+   [
+    1.0,
+    0.0,
+    11.0
+   ],
+   1.2
+  ],
+  [
+   "base",
+   [
+    1.0,
+    0.0,
+    1.0
+   ],
+   1.2
+  ],
+  [
+   "shaft",
+   [
+    1.0,
+    0.0,
+    6.0
+   ],
+   1.0
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Modular/Pillar_02_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 9.3,
+  "basis": "panel x3 median",
+  "reviewed": "Pillar_01 w2r3_panel (indiv 9.3/9.3/9.0); fix rounds: w2r1 8.7",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_modular.py:Pillar",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Modular/Pillar_02.glb",
+  "blend": "Models/Kits/Modular/Pillar_02.blend",
+  "turntable": "Models/Kits/Modular/Pillar_02_turntable.mp4",
+  "preview": "Models/Kits/Modular/Pillar_02_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Modular/Pillar_02_preview.jpg"
+}

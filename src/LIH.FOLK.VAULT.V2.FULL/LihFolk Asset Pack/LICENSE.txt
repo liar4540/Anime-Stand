@@ -1,0 +1,17 @@
+LihFolk Asset Pack licence
+Copyright (c) 2026 LihFolk. All rights reserved, except as granted here.
+
+These models, materials, skies, animations, VFX textures and previews are original LihFolk work.
+You may, free of charge:
+- use and modify them in your own Roblox experiences and other games, including commercial and paid
+  ones, without credit (credit is appreciated);
+- upload them to Roblox as PRIVATE assets for use inside your experiences.
+You may not:
+- sell, sublicense or redistribute the assets themselves, alone or as part of an asset pack, kit,
+  template or marketplace listing (including the Roblox Creator Store with Distribute enabled),
+  modified or not;
+- claim the assets as your own original work.
+Using them inside a finished game that players play is always fine. The learning dataset zip is for
+study, not for use in games.
+
+Provided as is, without warranty. Full terms: https://github.com/lihfolk-cy/v2-vault/blob/main/LICENSE.md

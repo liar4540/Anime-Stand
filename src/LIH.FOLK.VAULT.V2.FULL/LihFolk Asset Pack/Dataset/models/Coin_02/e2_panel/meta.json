@@ -1,0 +1,188 @@
+{
+ "asset": "Coin_02",
+ "kit": "Emblems",
+ "type": "Coin",
+ "seed": 2,
+ "params": {
+  "sides": 8,
+  "R": 0.947,
+  "h": 0.119,
+  "relief": 0.051,
+  "emblem": "diamond"
+ },
+ "tris": 376,
+ "budget_class": "small",
+ "budget_target": 600,
+ "budget_ceiling": 1500,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.75,
+  "y": 0.316,
+  "z": 1.75
+ },
+ "origin": "center",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "emblem_front_on_field",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "emblem_back_on_field",
+   "gap": 0.0,
+   "penetration": 0.06,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "emblem_front_on_field",
+   "gap": 0.0,
+   "penetration": 0.06,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 40,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "acc_dk",
+   "cream",
+   "h_lt",
+   "h"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "cream": "#F3E3BE",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "cream": "#F3E3BE",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "cream": "#F3E3BE",
+     "h_lt": "#E86A62",
+     "h": "#B8343B"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "cream": "#F3E3BE",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "cream": "#F3E3BE",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6"
+    }
+   }
+  ]
+ },
+ "studio": "Pickup: CanCollide off, CanTouch on (collect trigger), CollisionFidelity Box, Anchored (spin with TweenService); MeshPart.Color white (vertex colours); SmoothPlastic; origin centre",
+ "notes": "8-sided token (flat sides by design), chamfered gold rim, recessed hue field, raised light boss, cream diamond both faces",
+ "features": [
+  [
+   "face",
+   [
+    0.0,
+    -0.119,
+    0.0
+   ],
+   0.6628999999999999
+  ],
+  [
+   "rim",
+   [
+    0.663,
+    0.0,
+    0.663
+   ],
+   0.4
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/e2/Coin_02/Coin_02_front.png",
+  "three_quarter": "Models/Kits/_drafts/e2/Coin_02/Coin_02_three_quarter.png",
+  "top": "Models/Kits/_drafts/e2/Coin_02/Coin_02_top.png",
+  "silhouette": "Models/Kits/_drafts/e2/Coin_02/Coin_02_silhouette.png",
+  "close_face_studio": "Models/Kits/_drafts/e2/Coin_02/Coin_02_close_face_studio.png",
+  "close_face_flat": "Models/Kits/_drafts/e2/Coin_02/Coin_02_close_face_flat.png",
+  "close_rim_studio": "Models/Kits/_drafts/e2/Coin_02/Coin_02_close_rim_studio.png",
+  "close_rim_flat": "Models/Kits/_drafts/e2/Coin_02/Coin_02_close_rim_flat.png",
+  "cw_royal": "Models/Kits/_drafts/e2/Coin_02/Coin_02_cw_royal.png",
+  "cw_crimson": "Models/Kits/_drafts/e2/Coin_02/Coin_02_cw_crimson.png",
+  "cw_verdant": "Models/Kits/_drafts/e2/Coin_02/Coin_02_cw_verdant.png",
+  "cw_shadow": "Models/Kits/_drafts/e2/Coin_02/Coin_02_cw_shadow.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_emblems.py:Coin",
+ "made": "2026-10-28"
+}

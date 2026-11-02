@@ -1,0 +1,101 @@
+{
+ "asset": "Stump_01",
+ "kit": "Nature",
+ "type": "Stump",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "rejected",
+ "score": 6.0,
+ "grades": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  6.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Top and three-quarter read as a cut stump thanks to the ring cap, but the side silhouette is a cylinder on a flat brim and reads as a hat at 64 px; no individual roots break the outline.",
+   "V2": "Big trunk and ring cap are clear, but the root flare is one flat slab with no medium root forms and no small bark detail; hierarchy is partial.",
+   "V3": "Straight cylinder plus a thin flat skirt plate; only the skirt outline is irregular, so the form is mostly stiff primitives rather than a confident stylised flare.",
+   "V4": "Cut top rim is softly chamfered, but the skirt edge is a hard vertical slab band (close_roots) and the trunk-to-skirt joint is a sharp crease; inconsistent.",
+   "V5": "No z-fighting or pinches, but the trunk shows vertical facet banding and a dark smear band where trunk meets skirt (close_roots_studio); minor.",
+   "V6": "Bark brown in two values plus cream/tan heartwood rings; disciplined across walnut/redwood/ash colourways (birch rings nearly vanish).",
+   "V7": "440 tris vs medium target 2000; well under.",
+   "V8": "One vertex-colour material and smooth shading match, but the organic root flare is not a fused smooth shell (flat slab with hard rim) and the bullseye rings are more graphic than the kit; minor mismatch.",
+   "V9": "Studio line correct: Anchored, Hull collision, CanTouch off, white MeshPart colour, origin bottom-centre; gates all pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "vertical facet banding on trunk",
+   "hard unchamfered slab edge on root skirt",
+   "dark shading smear at trunk/skirt junction"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Replace the flat skirt with 3-5 distinct tapered root lobes fused smoothly into the trunk so the side silhouette reads as a stump, not a hat",
+   "Round/chamfer the skirt rim and blend the trunk-to-root crease",
+   "Add medium/small detail: a bark lip around the cut top, a crack or chip in the cut face, slightly irregular rings",
+   "Increase ring contrast in the birch colourway"
+  ]
+ ],
+ "params": {
+  "R": 0.961,
+  "H": 1.413,
+  "roots": 6,
+  "grooves": 22,
+  "slant": 0.095
+ },
+ "tris": 440,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

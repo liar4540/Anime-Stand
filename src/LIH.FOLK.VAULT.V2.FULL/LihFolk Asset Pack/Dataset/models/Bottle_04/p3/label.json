@@ -1,0 +1,98 @@
+{
+ "asset": "Bottle_04",
+ "kit": "Props",
+ "type": "Bottle",
+ "seed": 4,
+ "attempt": "p3",
+ "label": "rejected",
+ "score": 8.0,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette all read instantly as a capped bottle at 64 px (chunky stopper, lip ring, neck-shoulder-body taper); top view is a centred teal disc with dark cap, and A15 symmetry error is 0.0 on X and Y with no visible lopsidedness or floating parts.",
+   "V2": "Big body and medium stopper read clearly, but the small tier is thin: one narrow gold lip band plus a colour-only liquid line, no foot ring, label, or base detail, so the lower 2/3 is an undifferentiated cylinder.",
+   "V3": "Proportions are close to a realistic milk/soda bottle (near-straight cylindrical body, modest shoulder); only the oversized stopper is pushed, so the stylisation is partial rather than confident.",
+   "V4": "Stopper top has a visible chamfer that catches light and the base has a rounded foot, but the gold lip band and stopper underside read as crisp unbevelled edges and the shoulder-to-body transition is a hard crease, so bevels are inconsistent.",
+   "V5": "Close-ups show smooth, even shading with no seams, pinches, z-fighting or patches; only minor polygonal steps in the foot and shoulder outline from the low segment count, consistent with kit faceting.",
+   "V6": "Disciplined: one hue (teal) in two values (glass vs darker liquid) plus kit gold accent and ink-dark stopper; colourways (crimson, shadow) keep the same structure and value contrast.",
+   "V7": "520 tris against the small-class target of 600 (ceiling 1500), under target.",
+   "V8": "One white LF_VertexColor material with vertex colours, kit gold/ink/teal palette, faceting and stopper chamfer scale match the anchors' kit look.",
+   "V9": "Studio line correct for a pickup: CanCollide off, CanTouch on, CollisionFidelity Box, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "minor polygonal stepping in the foot curve and shoulder outline (low radial/profile segment count), visible in close_foot and close_liquid_line"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add a small-tier feature to break up the plain lower body: a gold foot ring or a raised label band/emboss so the hierarchy reads big/medium/small",
+   "Push the proportions: a more pronounced shoulder bulge or tapered waist instead of a near-straight cylinder, so it reads stylised rather than realistic",
+   "Apply the ~0.045 stud chamfer consistently to the gold lip band, stopper underside and shoulder crease",
+   "Add a couple of profile segments at the foot and shoulder to soften the stepped outline"
+  ]
+ ],
+ "params": {
+  "shape": "tall",
+  "R": 0.531,
+  "H": 2.579,
+  "liquid": 0.447
+ },
+ "tris": 520,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

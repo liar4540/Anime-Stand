@@ -1,0 +1,22 @@
+{
+ "id": "bark_redwood_010",
+ "kind": "materials",
+ "score": 8.8,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 1,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m5",
+ "reviewer_notes": [
+  "Faceted wedge normals; plates read flat, furrows shallow",
+  "Grooves uniform width and depth; plates look like wood planks",
+  "faceted wedge plates; reads slightly like scales"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

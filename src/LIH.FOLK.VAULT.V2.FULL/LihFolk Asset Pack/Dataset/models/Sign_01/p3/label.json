@@ -1,0 +1,100 @@
+{
+ "asset": "Sign_01",
+ "kit": "Props",
+ "type": "Sign",
+ "seed": 1,
+ "attempt": "p3",
+ "label": "accepted",
+ "score": 9.0,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 1,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front and three-quarter outlines read instantly as a post-mounted signboard at 64 px (wide board, thin post, knob cap); top view is a thin bar plus round cap, still readable as a board on a post; outline symmetric, A15 X error 0.0.",
+   "V2": "Clear tiers: big board slab, medium frame/raised face panel/post, small corner bolts, chevron icon and gold end caps.",
+   "V3": "Correct and centred (board_on_post offset 0, all seats seated) but stiff: board is a plain straight rectangle and post a uniform cylinder with no taper, wonk or plank detail; the gold bottom ferrule plus top knob makes it read a little like a mallet handle rather than a planted sign.",
+   "V4": "Consistent rounded chamfers on board frame, raised face panel, chevron and caps; the board_edge and icon close-ups show bevels catching a clean highlight line.",
+   "V5": "Close-ups clean: no z-fighting where the face panel (0.02 penetration) and icon (0.037) sit in, no pinches or seams; only the low-segment rim of the post cap shows faceting in outline, smooth shading otherwise.",
+   "V6": "Hues disciplined (wood brown in 3 values, gold accent, ink bolts), but value contrast on the focal icon is weak: in the flat close-up the gold chevron is nearly the same value as the light tan face panel and almost disappears.",
+   "V7": "788 tris vs medium target 2000 (ceiling 4000): well under target with no wasted density.",
+   "V8": "One white vertex-colour material, kit gold accent, ink bolts, single wood hue in three values, chamfers in kit scale and smooth shading; colourways (walnut, teal, crimson, royal) swap the hue cleanly and keep the gold and ink.",
+   "V9": "Studio line correct: Anchored, CollisionFidelity Box, CanTouch off, CastShadow on, MeshPart.Color white for vertex colours, SmoothPlastic, origin bottom-centre (A12 pass)."
+  }
+ ],
+ "artifacts": [
+  [
+   "Post top cap rim is low-segment and shows visible facets in outline (minor, silhouette only)",
+   "106 cross-shell overlaps reported (intentional seating penetrations; none visible as z-fighting in close-ups)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Raise value contrast of the chevron against the face: darken the face panel one value step or give the chevron an ink outline/inset recess so the icon reads in flat light",
+   "Stylise the board and post: slight board tilt or notched/arrow ends, a plank seam or two on the board, taper the post",
+   "Replace the gold bottom ferrule with a ground stake or small base so the prop reads as a planted sign rather than a mallet handle",
+   "Add a few segments to the post cap rim to remove the faceted outline"
+  ]
+ ],
+ "params": {
+  "kind": "board",
+  "W": 2.376,
+  "Hb": 1.187,
+  "post": 3.333,
+  "icon": "chevron"
+ },
+ "tris": 788,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

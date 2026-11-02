@@ -1,0 +1,106 @@
+{
+ "asset": "Staff_01",
+ "kit": "Weapons",
+ "type": "Staff",
+ "seed": 1,
+ "attempt": "rv2",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette all read as an orb-in-claw staff at small size (round head with prong notches, collar, long haft, pommel cap); outline symmetric, A15 error 0.0 on X/Y, top view shows orb centred with 4 evenly spaced prongs.",
+   "V2": "Clear tiers: big = haft + oversized orb head, medium = 4-prong gold cage and flared collar cone, small = haft ring, ink/teal grip bands and pommel cap.",
+   "V3": "Confident stylised head (oversized orb, outward-flaring curved prongs, chunky collar); haft is a plain constant-diameter cylinder but overall proportions read deliberate rather than primitive.",
+   "V4": "Gold parts (collar rim, haft ring, pommel, prong edges) carry consistent chamfers that catch light, but the grip wrap has hard un-bevelled creases between bands giving a kinked, razor outline in the grip close-up, and prong ends are blunt flat cuts.",
+   "V5": "No pinches or z-fighting, but minor stray faceting: visible vertical facet bands on the collar cone and polygonal outline on the haft ring in close_collar_studio, slight segment kinks along prong curves, and the front prong's base ends as a cut stub poking out of the cone face.",
+   "V6": "Disciplined: kit gold accent, ink dark bands, and one hue (teal) in three values (orb light, haft mid, grip bands light); colourways (crimson, shadow) keep the same structure cleanly.",
+   "V7": "2336 tris vs weapon target 2500 (ceiling 4000): at/under target.",
+   "V8": "One white vertex-colour material (LF_VertexColor), kit gold/ink plus single hue, chamfered gold trims and smooth shading match the kit look of the anchor weapons.",
+   "V9": "Studio line correct: Tool Handle at hand/grip origin, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Visible facet banding on the flared collar cone (low radial segment count under smooth shading)",
+   "Polygonal outline on the gold haft ring below the collar",
+   "Front prong base terminates as a blunt stub protruding from the collar cone surface instead of blending into the rim",
+   "Grip band transitions are hard creases producing a kinked/sawtooth outline",
+   "Slight segment kinks along the curved prongs"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Raise radial segments (or add support loops) on the collar cone and haft ring so smooth shading reads without facet bands",
+   "Seat the prong bases into the collar rim (end them inside the rim or add a small socket/boss) so no cut stub shows on the cone face",
+   "Bevel the grip band edges with the kit ~0.045-stud chamfer so the wrap outline reads as soft ridges instead of hard creases",
+   "Add a few more segments along the prong curves and round or point the prong tips consistently",
+   "Optional: give the haft a slight taper toward the pommel to push the stylised proportion further"
+  ]
+ ],
+ "params": {
+  "H": 5.443,
+  "r": 0.201,
+  "head": "orb",
+  "wraps": 4,
+  "orb": 0.556,
+  "prongs": 4,
+  "flare": 1.393
+ },
+ "tris": 2336,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

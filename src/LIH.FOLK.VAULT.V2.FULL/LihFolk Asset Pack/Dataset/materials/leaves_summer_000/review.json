@@ -1,0 +1,22 @@
+{
+ "id": "leaves_summer_000",
+ "kind": "materials",
+ "score": 9.6,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 2,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m3",
+ "reviewer_notes": [
+  "Scattered red berry dots add speckle noise",
+  "Red berries evenly sprinkled, slightly polka-dot",
+  "minor: leaf overlaps slightly smeary; berries uniform"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

@@ -1,0 +1,250 @@
+{
+ "asset": "Crate_10",
+ "kit": "Props",
+ "type": "Crate",
+ "seed": 10,
+ "params": {
+  "W": 2.455,
+  "D": 2.455,
+  "H": 1.948,
+  "planks": 4,
+  "corners": "m_dk",
+  "brace": false
+ },
+ "tris": 1148,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 2.495,
+  "y": 2.495,
+  "z": 1.988
+ },
+ "origin": "bottom",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "plank0_on_core",
+   "gap": 0.0,
+   "penetration": 0.07,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "plank1_on_core",
+   "gap": 0.0,
+   "penetration": 0.07,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "plank2_on_core",
+   "gap": 0.0,
+   "penetration": 0.07,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "plank3_on_core",
+   "gap": 0.0,
+   "penetration": 0.07,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "cap0_on_post",
+   "gap": 0.0,
+   "penetration": 0.02,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "cap1_on_post",
+   "gap": 0.0,
+   "penetration": 0.02,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "cap2_on_post",
+   "gap": 0.0,
+   "penetration": 0.02,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "cap3_on_post",
+   "gap": 0.0,
+   "penetration": 0.02,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "cap4_on_post",
+   "gap": 0.0,
+   "penetration": 0.02,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "cap5_on_post",
+   "gap": 0.0,
+   "penetration": 0.02,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "cap6_on_post",
+   "gap": 0.0,
+   "penetration": 0.02,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "cap7_on_post",
+   "gap": 0.0,
+   "penetration": 0.02,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 1466,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "m_dk",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "oak",
+  "colourways": [
+   {
+    "name": "oak",
+    "hue": "oak",
+    "roles": {
+     "m_dk": "#62748A",
+     "h_lt": "#D2A56A",
+     "h": "#A9784A",
+     "h_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "walnut",
+    "hue": "walnut",
+    "roles": {
+     "m_dk": "#62748A",
+     "h_lt": "#A47650",
+     "h": "#7A5236",
+     "h_dk": "#4E3424"
+    }
+   },
+   {
+    "name": "painted_teal",
+    "hue": "teal",
+    "roles": {
+     "m_dk": "#62748A",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "painted_crimson",
+    "hue": "crimson",
+    "roles": {
+     "m_dk": "#62748A",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "painted_royal",
+    "hue": "royal",
+    "roles": {
+     "m_dk": "#62748A",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Box; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "framed crate: 12 chamfered beams, 4 planks per side + top (2 wood values), m_dk corner caps, dark core in the gaps",
+ "features": [
+  [
+   "corner",
+   [
+    1.227,
+    -1.227,
+    1.968
+   ],
+   0.6
+  ],
+  [
+   "planks",
+   [
+    0.0,
+    -1.227,
+    0.994
+   ],
+   0.9
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Props/Crate_10_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 9.3,
+  "basis": "single blind",
+  "reviewed": "Crate_04 p3",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_props.py:Crate",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Props/Crate_10.glb",
+  "blend": "Models/Kits/Props/Crate_10.blend",
+  "turntable": "Models/Kits/Props/Crate_10_turntable.mp4",
+  "preview": "Models/Kits/Props/Crate_10_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Props/Crate_10_preview.jpg"
+}

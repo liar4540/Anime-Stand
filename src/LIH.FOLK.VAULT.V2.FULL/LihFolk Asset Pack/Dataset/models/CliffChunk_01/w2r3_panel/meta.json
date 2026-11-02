@@ -1,0 +1,171 @@
+{
+ "asset": "CliffChunk_01",
+ "kit": "Nature",
+ "type": "CliffChunk",
+ "seed": 1,
+ "params": {
+  "W": 3.213,
+  "strata": 4,
+  "Hs": 2.075,
+  "grass": false
+ },
+ "tris": 456,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 5.028,
+  "y": 4.191,
+  "z": 4.26
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "stratum1_on_stratum0",
+   "gap": 0.0,
+   "penetration": 0.08,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "stratum2_on_stratum1",
+   "gap": 0.0,
+   "penetration": 0.08,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "stratum3_on_stratum2",
+   "gap": 0.0,
+   "penetration": 0.08,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 130,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "granite",
+  "colourways": [
+   {
+    "name": "granite",
+    "hue": "stone",
+    "roles": {
+     "h_lt": "#C4C6CC",
+     "h": "#9497A3",
+     "h_dk": "#62656F"
+    }
+   },
+   {
+    "name": "sandstone",
+    "hue": "sand",
+    "roles": {
+     "h_lt": "#E6CB98",
+     "h": "#C29C66",
+     "h_dk": "#8A6A40"
+    }
+   },
+   {
+    "name": "slate",
+    "hue": "slate",
+    "roles": {
+     "h_lt": "#A9B6C8",
+     "h": "#71829A",
+     "h_dk": "#46546B"
+    }
+   },
+   {
+    "name": "redrock",
+    "hue": "redrock",
+    "roles": {
+     "h_lt": "#DC8F6C",
+     "h": "#B05B42",
+     "h_dk": "#73372A"
+    }
+   },
+   {
+    "name": "basalt",
+    "hue": "basalt",
+    "roles": {
+     "h_lt": "#8F8C99",
+     "h": "#64616E",
+     "h_dk": "#403E49"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull (or Box per stratum for climbing); CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "cliff chunk: 4 stacked faceted strata (flat cut beds, alternating stone values), bare top",
+ "features": [
+  [
+   "strata",
+   [
+    1.862,
+    -1.852,
+    2.13
+   ],
+   2.2491
+  ],
+  [
+   "top",
+   [
+    0.255,
+    -0.246,
+    4.26
+   ],
+   2.5704000000000002
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r3/CliffChunk_01/CliffChunk_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r3/CliffChunk_01/CliffChunk_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r3/CliffChunk_01/CliffChunk_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r3/CliffChunk_01/CliffChunk_01_silhouette.png",
+  "close_strata_studio": "Models/Kits/_drafts/r3/CliffChunk_01/CliffChunk_01_close_strata_studio.png",
+  "close_strata_flat": "Models/Kits/_drafts/r3/CliffChunk_01/CliffChunk_01_close_strata_flat.png",
+  "close_top_studio": "Models/Kits/_drafts/r3/CliffChunk_01/CliffChunk_01_close_top_studio.png",
+  "close_top_flat": "Models/Kits/_drafts/r3/CliffChunk_01/CliffChunk_01_close_top_flat.png",
+  "cw_sandstone": "Models/Kits/_drafts/r3/CliffChunk_01/CliffChunk_01_cw_sandstone.png",
+  "cw_slate": "Models/Kits/_drafts/r3/CliffChunk_01/CliffChunk_01_cw_slate.png",
+  "cw_redrock": "Models/Kits/_drafts/r3/CliffChunk_01/CliffChunk_01_cw_redrock.png",
+  "cw_basalt": "Models/Kits/_drafts/r3/CliffChunk_01/CliffChunk_01_cw_basalt.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_nature.py:CliffChunk",
+ "made": "2026-10-28"
+}

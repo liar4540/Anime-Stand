@@ -1,0 +1,101 @@
+{
+ "asset": "OakTree_01",
+ "kit": "Nature",
+ "type": "OakTree",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "rejected",
+ "score": 7.0,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette reads as a broadleaf tree (lumpy round canopy on a single trunk) from front, three-quarter and top; generic lollipop but recognisable at 64 px.",
+   "V2": "Big canopy + trunk read clearly, but medium/small detail is nearly absent: the two branch stubs are buried (only a tiny nub shows at the canopy underside) and there are no secondary leaf clumps.",
+   "V3": "Trunk is a straight, untapered cylinder with a crude flared foot; canopy is one rounded blob - partly stylised, still stiff in the trunk.",
+   "V4": "Root flare ends in sharp, razor-like jagged spikes (trunk_base close-up) while canopy is soft; edge treatment inconsistent across the asset.",
+   "V5": "Canopy shows a visible quad-grid faceting pattern under studio light and the light-green top cap has a hard-edged boundary that reads as a pasted patch rather than a gradient; minor, no z-fighting.",
+   "V6": "Disciplined: foliage green in 2 values (mid + light top) and one bark brown; all colourways keep the same structure.",
+   "V7": "1604 tris vs tree target 2000 / ceiling 5000 - under target.",
+   "V8": "Single LF_VertexColor material and kit-style palette, but faceted canopy and spiky root flare do not match the smooth fused-shell organic look of the kit - minor mismatch.",
+   "V9": "Studio line correct: Anchored, Hull collision (trunk-only part option), CanTouch off, CastShadow on, Color white, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "quad-grid faceting visible across canopy in studio light",
+   "hard-edged light-green cap on canopy top reads as a patch",
+   "jagged razor spikes on root flare at trunk base"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Smooth the canopy (more subdivision or weighted normals) and blend the top highlight with a soft vertex-colour gradient instead of a hard cap",
+   "Add medium-scale detail: 2-3 secondary leaf clumps and visible branch forks so the canopy reads as more than one blob",
+   "Taper and slightly bend the trunk and rebuild the root flare as soft rounded buttress roots instead of sharp spikes"
+  ]
+ ],
+ "params": {
+  "Ht": 2.593,
+  "Rc": 3.491,
+  "puffs": 7,
+  "lean": -0.158,
+  "r0": 0.643,
+  "branches": 2
+ },
+ "tris": 1604,
+ "budget_class": "tree",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,117 @@
+{
+ "id": "water_caustics_cyan_000",
+ "family": "water_caustics",
+ "theme": "cyan",
+ "index": 0,
+ "seed": 4655.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_water_caustics.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB, straight alpha = caustic coverage)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Glass",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Overlay"
+  },
+  "Decal": "Use Color.png as a Decal/Texture or SurfaceAppearance AlphaMode Overlay"
+ },
+ "tags": [
+  "water",
+  "caustics",
+  "decal",
+  "underwater",
+  "pool",
+  "cyan"
+ ],
+ "colors": [
+  [
+   "#51c6d1",
+   0.365
+  ],
+  [
+   "#66cfda",
+   0.354
+  ],
+  [
+   "#e2faf9",
+   0.173
+  ],
+  [
+   "#86dee7",
+   0.107
+  ]
+ ],
+ "params": {
+  "C1": "#e9fffd",
+  "C2": "#a0ebf4",
+  "C3": "#4bc3cf",
+  "C4": "#7edee5",
+  "C5": "#eef4f3",
+  "Cells": 3.0,
+  "WarpA": 0.14602538297997308,
+  "Thick": 0.07767833561331736,
+  "Layer2": 0.30542886466341485,
+  "Soft": 0.28327810946860144,
+  "Seed": 4655.0
+ },
+ "normal_depth_px": 4.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.635,
+   "Color_Neutral": 0.508,
+   "Normal": 0.627,
+   "Roughness": 0.593,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.5,
+   1.0
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.042,
+   0.033
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 51.0,
+   "diel_luma_p99": 230.0,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.246,
+   "rough_min": 0.18,
+   "rough_expected": [
+    0.1,
+    0.4
+   ],
+   "albedo_max": 250
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.0095,
+  "M_neutral_mean": 0.699,
+  "M_neutral_range_p5_p95": [
+   0.077,
+   0.928
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 63.1,
+ "preview": "preview.jpg"
+}

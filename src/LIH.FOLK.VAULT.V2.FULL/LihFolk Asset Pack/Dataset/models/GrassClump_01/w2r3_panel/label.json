@@ -1,0 +1,167 @@
+{
+ "asset": "GrassClump_01",
+ "kit": "Nature",
+ "type": "GrassClump",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 7.0,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.0,
+  7.7,
+  7.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.7,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette reads as a grass tuft (fan of tapered blades over a mound) in front, three-quarter and silhouette; top view still reads as radiating blades.",
+   "V2": "Big mound and medium blades read, but the small level is only a hard light-green tip band; blades are near-identical spikes with no secondary grouping.",
+   "V3": "Blades are straight tapered prisms poking out of a dome; partly stylised curve on the two outer blades, the rest stiff.",
+   "V4": "Mound edge is a low-poly polygon outline with flat facets while blades have razor tips and hard diamond cross-sections; treatment inconsistent.",
+   "V5": "Close-up base shows faceted dark wedges where blades enter the mound and a stray short blade stub with a dark flat face; tip colour band is a hard step; minor artifacts.",
+   "V6": "Single green hue in ~3 values (dark mound, mid blade, light tips); colourways (autumn, frost) swap cleanly.",
+   "V7": "600 tris vs small target 600 - at target.",
+   "V8": "One vertex-colour material and green hue match, but blades are separate intersecting shells (240 cross-shell overlaps) rather than a fused smooth organic shell, and the mound is faceted.",
+   "V9": "Foliage flags correct: Anchored, CanCollide/CanTouch/CanQuery off, Box fidelity, Color white, origin bottom-centre."
+  },
+  {
+   "V1": "Reads as a grass tuft on a mound in front, three-quarter, top and silhouette.",
+   "V2": "Mound base, varied tall/short blades and lighter tip bands give a clear big/medium/small read.",
+   "V3": "Blades are thick horn-like wedges and too few; the mound is a plain polygonal dome - only partly stylised.",
+   "V4": "Blades have hard faceted edges and stepped tip bands; the mound rim is a visibly polygonal outline - inconsistent.",
+   "V5": "Studio close-ups show stray faceting on blade sides, a hard colour step at blade tips and a hot spot on the dome.",
+   "V6": "One green in three values (dark mound, mid blades, light tips); colourways hold the same structure.",
+   "V7": "600 tris = small target 600.",
+   "V8": "One white vertex-colour material matches, but faceted horn-like blades do not read as the kit's smooth fused organic shells.",
+   "V9": "Studio line: Anchored, CanCollide/CanTouch/CanQuery off, Box fidelity, Color white, SmoothPlastic - correct foliage flags."
+  },
+  {
+   "V1": "Front, three-quarter and silhouette read as a grass tuft on a mound; top view reads as a spiky starburst over a round base.",
+   "V2": "Two tiers only: the domed mound and about seven blades of similar size; no small-scale detail (short filler blades, pebbles, root tufts).",
+   "V3": "Partly stylised: curved blades are fine, but the mound is oversized and dome-like relative to the sparse blades, so it reads like a pincushion.",
+   "V4": "Blade edges are razor-thin with angular tips and the mound has a visibly polygonal rim; no consistent softened edge treatment.",
+   "V5": "Blade close-ups show a hard horizontal colour step where the light tip band meets the blade body (reads as a seam) and visible faceting on blade sides and the mound rim.",
+   "V6": "Disciplined single foliage hue in three values (dark base, mid blade, light tip); autumn and frost colourways keep the structure.",
+   "V7": "600 tris vs small target 600, at target.",
+   "V8": "One vertex-colour material, but the kit asks organic forms as fused smooth shells; here blades are separate faceted shells stuck into a faceted dome.",
+   "V9": "Foliage studio line correct: anchored, CanCollide/CanTouch/CanQuery off, white colour, origin bottom-centre; gates pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Dark faceted wedges where blade bases intersect the mound",
+   "Short stub blade with flat dark face at left base",
+   "Hard colour step at blade tips",
+   "Polygonal facets on the mound dome"
+  ],
+  [
+   "Stray faceting along blades",
+   "Hard stepped colour band at blade tips",
+   "Polygonal mound outline"
+  ],
+  [
+   "hard horizontal vertex-colour step at blade tip bands (blades close-up, studio and flat)",
+   "faceted polygonal rim on the base mound",
+   "thin front blade and a short blade at left-front read as stray spikes jutting from the mound"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Smooth the mound (more segments or weighted normals) and blend blade bases into it instead of hard intersections",
+   "Vary blade bend/lean and add 2-3 smaller blades in clusters for a real small-scale level",
+   "Gradient the tip colour over a couple of loops instead of a hard band",
+   "Remove or rework the short stub blade"
+  ],
+  [
+   "Use more, thinner, smoothly curved blades with gradient (not stepped) tip colour",
+   "Smooth/round the mound and hide its rim slightly below ground",
+   "Spread blades more evenly around the clump so the top view is not lopsided"
+  ],
+  [
+   "Blend the tip colour band gradually (or bevel the band boundary) and add a few more segments to blades so they curve smoothly",
+   "Shrink and flatten the mound and add more, varied blades including short filler ones so the tuft hides the base",
+   "Smooth the base rim and fuse blade roots into the mound for the kit's fused-shell organic look"
+  ]
+ ],
+ "params": {
+  "n": 9,
+  "Hm": 1.916,
+  "spread": 0.362,
+  "lean": 0.754
+ },
+ "tris": 600,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

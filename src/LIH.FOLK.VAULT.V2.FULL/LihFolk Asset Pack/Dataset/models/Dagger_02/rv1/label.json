@@ -1,0 +1,93 @@
+{
+ "asset": "Dagger_02",
+ "kit": "Weapons",
+ "type": "Dagger",
+ "seed": 2,
+ "attempt": "rv1",
+ "label": "rejected",
+ "score": 8.3,
+ "grades": [
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "reviewer": "blind fresh agent (renders + close-ups + gate report + rubric only)",
+ "evidence": {
+  "V1": "Front outline (blade, crescent guard, wrapped grip, ball pommel) and 3/4 silhouette both read instantly as a dagger; top view is the weakest (a small gold bar with blade diamond and end balls) but still reads as a crossguard; A15 symmetry error X=0, Y=0 and the front outline is mirror-even.",
+  "V2": "Clear tiers: blade is the big shape, crescent guard and ball pommel are medium, gem, guard-tip balls and three gold grip bands are small details.",
+  "V3": "Confident stylised proportions: oversized ball pommel, upturned crescent guard, short broad blade with dark fuller; guard and gem centred on grip axis (alignment offset 0.0), blade seated 0.128 into guard, nothing floating.",
+  "V4": "Inconsistent: guard and pommel collar carry soft bevels that catch light, but the blade has hard faceted edges and a needle tip, and grip bands read nearly unbevelled next to the rounded guard.",
+  "V5": "Mostly clean smooth shading, but the pommel close-up shows a visibly polygonal sphere outline (stray faceting) and the guard flat close-up shows a lumpy outline where the left tip ball merges into the guard end.",
+  "V6": "Disciplined: steel greys on blade, gold accent on guard/bands/pommel, one hue (teal) in grip/gem; crimson and shadow colourways swap only that hue cleanly.",
+  "V7": "2268 tris vs weapon target 2500 (ceiling 4000), budget_note ok.",
+  "V8": "One white vertex-colour material and kit palette match, but the low-segment pommel sphere and hard blade facets clash with the smooth, chamfered kit look of the guard.",
+  "V9": "Studio line correct: Tool Handle at grip point, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+ },
+ "artifacts": [
+  "Pommel sphere silhouette visibly faceted (low segment count) in Dagger_02_close_pommel_studio.png",
+  "Lumpy/blobby outline at the left guard tip where the tip-ball shell intersects the guard end (Dagger_02_close_guard_flat.png); 263 cross-shell overlaps in gate report",
+  "Dark smudge in the lower blade fuller in the front view reads as a shading blotch rather than a clean groove"
+ ],
+ "top_fixes": [
+  "Raise the pommel sphere segment count (or bevel-subdivide) so its outline is round at close range",
+  "Blend the guard-tip balls into the guard ends (smaller penetration or a fillet) so the tip outline is a clean curl instead of a lump",
+  "Add a ~0.045-stud chamfer to the blade edges, fuller rims and grip bands so edge treatment matches the guard and kit",
+  "Shallow or widen the fuller so it does not render as a dark blotch near the guard"
+ ],
+ "params": {
+  "L": 1.97,
+  "W": 0.322,
+  "T": 0.095,
+  "taper": 0.228,
+  "tip0": 0.652,
+  "tipk": 1.482,
+  "gL": 0.64,
+  "h0": 0.129,
+  "ht": 0.071,
+  "rise": 0.206,
+  "flare": 0.005,
+  "langet": 0.0,
+  "GL": 0.876,
+  "gr": 0.136,
+  "ps": 0.252,
+  "wraps": 4,
+  "pommel": "ball",
+  "fuller_w": 0.729,
+  "fuller_end": 0.6,
+  "gem": true,
+  "tip_balls": true
+ },
+ "tris": 2268,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,159 @@
+{
+ "asset": "Barrel_04",
+ "kit": "Props",
+ "type": "Barrel",
+ "seed": 4,
+ "params": {
+  "H": 2.675,
+  "R": 0.987,
+  "bulge": 0.133,
+  "hoops": 2,
+  "hoop_role": "acc",
+  "steps": 24
+ },
+ "tris": 1152,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.974,
+  "y": 1.974,
+  "z": 2.675
+ },
+ "origin": "bottom",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 0,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "oak",
+  "colourways": [
+   {
+    "name": "oak",
+    "hue": "oak",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#D2A56A",
+     "h": "#A9784A",
+     "h_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "walnut",
+    "hue": "walnut",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#A47650",
+     "h": "#7A5236",
+     "h_dk": "#4E3424"
+    }
+   },
+   {
+    "name": "painted_teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "painted_crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "painted_royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull (or a Cylinder part for physics); CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "24-stave barrel (staves alternate on lathe steps), 2 raised acc hoops, recessed lid with chime",
+ "features": [
+  [
+   "hoop",
+   [
+    0.643,
+    -0.643,
+    2.3
+   ],
+   0.6
+  ],
+  [
+   "lid",
+   [
+    0.0,
+    0.0,
+    2.675
+   ],
+   0.8883
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/p3/Barrel_04/Barrel_04_front.png",
+  "three_quarter": "Models/Kits/_drafts/p3/Barrel_04/Barrel_04_three_quarter.png",
+  "top": "Models/Kits/_drafts/p3/Barrel_04/Barrel_04_top.png",
+  "silhouette": "Models/Kits/_drafts/p3/Barrel_04/Barrel_04_silhouette.png",
+  "close_hoop_studio": "Models/Kits/_drafts/p3/Barrel_04/Barrel_04_close_hoop_studio.png",
+  "close_hoop_flat": "Models/Kits/_drafts/p3/Barrel_04/Barrel_04_close_hoop_flat.png",
+  "close_lid_studio": "Models/Kits/_drafts/p3/Barrel_04/Barrel_04_close_lid_studio.png",
+  "close_lid_flat": "Models/Kits/_drafts/p3/Barrel_04/Barrel_04_close_lid_flat.png",
+  "cw_walnut": "Models/Kits/_drafts/p3/Barrel_04/Barrel_04_cw_walnut.png",
+  "cw_painted_teal": "Models/Kits/_drafts/p3/Barrel_04/Barrel_04_cw_painted_teal.png",
+  "cw_painted_crimson": "Models/Kits/_drafts/p3/Barrel_04/Barrel_04_cw_painted_crimson.png",
+  "cw_painted_royal": "Models/Kits/_drafts/p3/Barrel_04/Barrel_04_cw_painted_royal.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_props.py:Barrel",
+ "made": "2026-10-28"
+}

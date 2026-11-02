@@ -1,0 +1,22 @@
+{
+ "id": "stone_wall_chalk_003",
+ "kind": "materials",
+ "score": 9.6,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 2,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m5",
+ "reviewer_notes": [
+  "Stones too uniform/rectangular, reads close to tiles; little chipping",
+  "Pillowy uniform blocks, no chipped edges",
+  "courses very even height; few chips"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

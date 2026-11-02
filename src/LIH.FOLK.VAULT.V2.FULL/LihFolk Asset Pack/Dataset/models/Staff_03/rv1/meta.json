@@ -1,0 +1,213 @@
+{
+ "asset": "Staff_03",
+ "kit": "Weapons",
+ "type": "Staff",
+ "seed": 3,
+ "params": {
+  "H": 6.165,
+  "r": 0.171,
+  "head": "crook",
+  "wraps": 4,
+  "orb": 0.423,
+  "prongs": 3
+ },
+ "tris": 1960,
+ "budget_class": "weapon",
+ "budget_target": 2500,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.376,
+  "y": 0.599,
+  "z": 7.596
+ },
+ "origin": "hand/grip point",
+ "symmetric": "Y",
+ "symmetry_error": {
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "collar_on_haft_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "collar_on_haft",
+   "gap": 0.0,
+   "penetration": 0.16127,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "crook_in_collar",
+   "gap": 0.0,
+   "penetration": 0.15,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "gem_on_crook",
+   "gap": 0.0,
+   "penetration": 0.07752,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "cap_on_crook",
+   "gap": 0.0,
+   "penetration": 0.12,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 174,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "acc_dk",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590"
+    }
+   }
+  ]
+ },
+ "studio": "Tool Handle; origin = hand/grip point; CollisionFidelity Hull; CanCollide off when equipped; Massless; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "crook staff: B-spline hook sweep, gold end cap holding a hue gem",
+ "features": [
+  [
+   "crook",
+   [
+    0.5,
+    0.0,
+    4.172
+   ],
+   0.8
+  ],
+  [
+   "gem",
+   [
+    0.6,
+    0.0,
+    3.792
+   ],
+   0.35
+  ],
+  [
+   "grip",
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   0.8
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_front.png",
+  "three_quarter": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_three_quarter.png",
+  "top": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_top.png",
+  "silhouette": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_silhouette.png",
+  "close_crook_studio": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_close_crook_studio.png",
+  "close_crook_flat": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_close_crook_flat.png",
+  "close_gem_studio": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_close_gem_studio.png",
+  "close_gem_flat": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_close_gem_flat.png",
+  "close_grip_studio": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_close_grip_studio.png",
+  "close_grip_flat": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_close_grip_flat.png",
+  "cw_royal": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_cw_royal.png",
+  "cw_crimson": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_cw_crimson.png",
+  "cw_verdant": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_cw_verdant.png",
+  "cw_shadow": "Models/Kits/_drafts/rv1/Staff_03/Staff_03_cw_shadow.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_weapons.py:Staff",
+ "made": "2026-10-28"
+}

@@ -1,0 +1,18 @@
+**/.obsidian/workspace*.json
+.obsidian/cache
+.trash/
+__pycache__/
+*.pyc
+.lihfolk/
+.DS_Store
+Thumbs.db
+LihFolk Vault V2/_tools/.cache/
+
+# third-party Obsidian plugins (installed locally from the community directory; never redistributed)
+LihFolk Vault V2/.obsidian/plugins/*
+!LihFolk Vault V2/.obsidian/plugins/lihfolk-graph/
+
+# local Obsidian plugin caches (Smart Connections embeddings etc.)
+LihFolk Vault V2/.smart-env/
+/.obsidian/
+*.bak

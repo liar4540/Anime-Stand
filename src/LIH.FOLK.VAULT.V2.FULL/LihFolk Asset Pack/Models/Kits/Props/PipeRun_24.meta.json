@@ -1,0 +1,268 @@
+{
+ "asset": "PipeRun_24",
+ "kit": "Props",
+ "type": "PipeRun",
+ "seed": 24,
+ "params": {
+  "segments": 3,
+  "dirs": [
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "lens": [
+   3.143,
+   2.338,
+   2.019
+  ],
+  "R": 0.362
+ },
+ "tris": 1200,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 3.442,
+  "y": 1.104,
+  "z": 5.162
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "bolt0_on_flange",
+   "gap": 0.0,
+   "penetration": 0.05356,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt1_on_flange",
+   "gap": 0.0,
+   "penetration": 0.06194,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt2_on_flange",
+   "gap": 0.0,
+   "penetration": 0.06194,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt3_on_flange",
+   "gap": 0.0,
+   "penetration": 0.05356,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt4_on_flange",
+   "gap": 0.0,
+   "penetration": 0.02548,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt5_on_flange",
+   "gap": 0.0,
+   "penetration": 0.02548,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt6_on_flange",
+   "gap": 0.0,
+   "penetration": 0.02548,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt7_on_flange",
+   "gap": 0.0,
+   "penetration": 0.02548,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt8_on_flange",
+   "gap": 0.0,
+   "penetration": 0.02548,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt9_on_flange",
+   "gap": 0.0,
+   "penetration": 0.02548,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt10_on_flange",
+   "gap": 0.0,
+   "penetration": 0.02548,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bolt11_on_flange",
+   "gap": 0.0,
+   "penetration": 0.02548,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 96,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "ink",
+   "h"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h": "#3D8E9A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h": "#2F5FBF"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h": "#B8343B"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h": "#4E9A3E"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h": "#9A3FD6"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull (Box per straight if walked on); CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "3-leg orthogonal run, 0.75-stud arc elbows, gold chamfered flanges + ink hex bolts, dark open bores",
+ "features": [
+  [
+   "coupling",
+   [
+    -0.419,
+    0.0,
+    3.143
+   ],
+   0.75
+  ],
+  [
+   "end_bore",
+   [
+    1.169,
+    0.0,
+    5.162
+   ],
+   0.6
+  ],
+  [
+   "elbow",
+   [
+    -1.169,
+    0.0,
+    3.143
+   ],
+   0.8
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Props/PipeRun_24_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 9.3,
+  "basis": "panel x3 median",
+  "reviewed": "PipeRun_04 p3_panel (indiv 9.3/9.7/9.3)",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_props.py:PipeRun",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Props/PipeRun_24.glb",
+  "blend": "Models/Kits/Props/PipeRun_24.blend",
+  "turntable": "Models/Kits/Props/PipeRun_24_turntable.mp4",
+  "preview": "Models/Kits/Props/PipeRun_24_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Props/PipeRun_24_preview.jpg"
+}

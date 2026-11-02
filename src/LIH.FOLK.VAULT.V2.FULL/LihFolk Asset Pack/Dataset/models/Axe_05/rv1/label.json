@@ -1,0 +1,83 @@
+{
+ "asset": "Axe_05",
+ "kit": "Weapons",
+ "type": "Axe",
+ "seed": 5,
+ "attempt": "rv1",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "reviewer": "blind fresh agent (renders + close-ups + gate report + rubric only)",
+ "evidence": {
+  "V1": "Front and silhouette read instantly as a double-bit axe with a symmetric bow-tie head outline (A15 X/Y error 0.0); the 3/4 view reads too; the top view is only a thin bar plus pommel disc, which is expected for a flat head.",
+  "V2": "Clear tiers: big = head + long haft, medium = gold collar, ring and pommel, small = grip wrap bands, cheek plates and haft cap.",
+  "V3": "Proportions are near-realistic rather than stylised: the head is only about 1/4 of the 5.23-stud length, the blades are thin flat plates (0.53 studs deep), and the haft is a long thin rod. The collar is a plain cylinder, the cheek plates are plain boxes and the pommel is a plain sphere, so it is only partly exaggerated.",
+  "V4": "Bevels are consistent: there is a light-catching rim chamfer on the blade edges, and the collar, ring, cap and cheek plates are all chamfered. The rim band is wider on the cutting edge, but it reads as an intended sharpened bevel.",
+  "V5": "Mostly smooth, but the collar close-ups show small chamfer-termination artifacts on the left blade neck: a light sliver at the lower edge, and a stepped, abruptly ending bevel band on the top edge. The right cheek plate also reads as a box pushed into the collar cylinder, leaving a hard intersection seam.",
+  "V6": "Disciplined palette: gold accent; steel grey blades with a darker steel on the cheek plates; teal in two values (dark haft, lighter grip). The crimson and shadow colourways swap only the hue and keep the same value structure.",
+  "V7": "1896 tris against a weapon target of 2500 and a ceiling of 4000 (budget_note ok).",
+  "V8": "The gate report shows one white LF_VertexColor material with vertex colours, and the gold, steel and single-hue palette fits the kit. Chamfers look kit-scale and shading is smooth; I found no visible clash.",
+  "V9": "Studio line: Tool Handle, origin at the grip point, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic; all gates A1-A18 pass."
+ },
+ "artifacts": [
+  "Left blade neck near the collar (collar close-up, flat light): a small light triangular sliver where the lower-edge chamfer ends",
+  "Left blade top edge near the collar: the chamfer band steps and ends abruptly instead of running out cleanly",
+  "Right cheek plate: a flat box intersecting the curved collar, leaving a hard seam where the two shells overlap (cross_shell_overlaps 389)"
+ ],
+ "top_fixes": [
+  "Push the stylisation: enlarge the head relative to the haft (about 1/3 of the length), thicken the blades into a wedge with a visible taper to the edge, and give the bit a stronger flare so it stops reading as a thin flat plate on a long rod",
+  "Clean the chamfer terminations where the blade neck meets the collar so the bevel bands run out evenly with no slivers or steps",
+  "Integrate the cheek plates (langets): curve them to sit on the collar cylinder, or bed them into the neck, rather than leaving flat boxes pushed through the collar",
+  "Add a slightly darker steel value on the blade faces, or a stronger edge highlight, so the blades do not wash out pale and flat in the front view",
+  "Thicken the haft slightly and give the collar a little shaping (a flare or a lip) so the medium tier is less like stock primitives"
+ ],
+ "params": {
+  "H": 5.23,
+  "r": 0.135,
+  "style": "double",
+  "E": 1.241,
+  "bt": 0.75,
+  "bb": 0.75,
+  "poll": 0.0,
+  "D": 0.395,
+  "edge_frac": 0.376,
+  "wraps": 4
+ },
+ "tris": 1896,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

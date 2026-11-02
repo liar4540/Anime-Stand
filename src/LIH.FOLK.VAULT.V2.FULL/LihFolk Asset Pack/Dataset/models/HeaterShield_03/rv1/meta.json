@@ -1,0 +1,272 @@
+{
+ "asset": "HeaterShield_03",
+ "kit": "Weapons",
+ "type": "HeaterShield",
+ "seed": 3,
+ "params": {
+  "W": 1.099,
+  "H": 2.149,
+  "bulge": 0.079,
+  "emblem": "chevron",
+  "boss": false,
+  "rivets": 10
+ },
+ "tris": 1972,
+ "budget_class": "weapon",
+ "budget_target": 2500,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 2.199,
+  "y": 0.76,
+  "z": 2.656
+ },
+ "origin": "hand/grip point",
+ "symmetric": "X",
+ "symmetry_error": {
+  "X": 3e-05
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "field_on_plate",
+   "offset": {
+    "X": 0.0
+   },
+   "max": 0.0
+  },
+  {
+   "name": "emblem_on_field",
+   "offset": {
+    "X": -0.0,
+    "Z": -0.00466
+   },
+   "max": 0.00466
+  }
+ ],
+ "seats": [
+  {
+   "name": "field_on_plate",
+   "gap": 0.0,
+   "penetration": 0.08,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "emblem_on_field",
+   "gap": 0.0,
+   "penetration": 0.06,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet0_on_rim",
+   "gap": 0.0,
+   "penetration": 0.01625,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet1_on_rim",
+   "gap": 0.0,
+   "penetration": 0.01625,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet2_on_rim",
+   "gap": 0.0,
+   "penetration": 0.01625,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet3_on_rim",
+   "gap": 0.0,
+   "penetration": 0.01625,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet4_on_rim",
+   "gap": 0.0,
+   "penetration": 0.01625,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet5_on_rim",
+   "gap": 0.0,
+   "penetration": 0.01625,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet6_on_rim",
+   "gap": 0.0,
+   "penetration": 0.01625,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet7_on_rim",
+   "gap": 0.0,
+   "penetration": 0.01625,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet8_on_rim",
+   "gap": 0.0,
+   "penetration": 0.01625,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "rivet9_on_rim",
+   "gap": 0.0,
+   "penetration": 0.01625,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "handle_on_back",
+   "gap": 0.0,
+   "penetration": 0.0623,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 305,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "ink",
+   "cream",
+   "m_dk",
+   "h"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "m_dk": "#62748A",
+     "h": "#3D8E9A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "m_dk": "#62748A",
+     "h": "#2F5FBF"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "m_dk": "#62748A",
+     "h": "#B8343B"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "m_dk": "#62748A",
+     "h": "#4E9A3E"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "m_dk": "#4C5566",
+     "h": "#9A3FD6"
+    }
+   }
+  ]
+ },
+ "studio": "Off-hand accessory/Tool: origin = handle centre (hand point); CollisionFidelity Box; CanCollide off when equipped; Massless; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "heater shield: stepped gold rim / hue field / cream chevron, steel rivets, ink back handle",
+ "features": [
+  [
+   "emblem",
+   [
+    -0.0,
+    -0.6,
+    0.0
+   ],
+   0.7693
+  ],
+  [
+   "rim",
+   [
+    0.8,
+    -0.5,
+    0.6
+   ],
+   0.6
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/rv1/HeaterShield_03/HeaterShield_03_front.png",
+  "three_quarter": "Models/Kits/_drafts/rv1/HeaterShield_03/HeaterShield_03_three_quarter.png",
+  "top": "Models/Kits/_drafts/rv1/HeaterShield_03/HeaterShield_03_top.png",
+  "silhouette": "Models/Kits/_drafts/rv1/HeaterShield_03/HeaterShield_03_silhouette.png",
+  "close_emblem_studio": "Models/Kits/_drafts/rv1/HeaterShield_03/HeaterShield_03_close_emblem_studio.png",
+  "close_emblem_flat": "Models/Kits/_drafts/rv1/HeaterShield_03/HeaterShield_03_close_emblem_flat.png",
+  "close_rim_studio": "Models/Kits/_drafts/rv1/HeaterShield_03/HeaterShield_03_close_rim_studio.png",
+  "close_rim_flat": "Models/Kits/_drafts/rv1/HeaterShield_03/HeaterShield_03_close_rim_flat.png",
+  "cw_royal": "Models/Kits/_drafts/rv1/HeaterShield_03/HeaterShield_03_cw_royal.png",
+  "cw_crimson": "Models/Kits/_drafts/rv1/HeaterShield_03/HeaterShield_03_cw_crimson.png",
+  "cw_verdant": "Models/Kits/_drafts/rv1/HeaterShield_03/HeaterShield_03_cw_verdant.png",
+  "cw_shadow": "Models/Kits/_drafts/rv1/HeaterShield_03/HeaterShield_03_cw_shadow.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_weapons.py:HeaterShield",
+ "made": "2026-10-28"
+}

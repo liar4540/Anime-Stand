@@ -1,0 +1,79 @@
+{
+ "asset": "Staff_02",
+ "kit": "Weapons",
+ "type": "Staff",
+ "seed": 2,
+ "attempt": "rv1",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "reviewer": "blind fresh agent (renders + close-ups + gate report + rubric only)",
+ "evidence": {
+  "V1": "Front, three-quarter and silhouette all read clearly as a staff (haft, ringed grip, pommel, caged orb); the outline is symmetric (A15 X/Y error 0.0). The top view is the expected orb with a four-prong cross. At 64 px the claw detail merges into a ball-on-stick, but it is still a staff.",
+  "V2": "Clear tiers: the 6.4-stud haft is the big form, the orb, collar cup and pommel are medium, and the prongs, collar ring, grip wraps and gold pinstripes are small. The plain haft runs between them give the eye rest.",
+  "V3": "The head is timid for a stylised kit: orb and collar are only 0.77 studs wide on a 6.43-stud haft, so the head is about 12% of the length. Proportions are realistic sceptre, not pushed chunky stylisation.",
+  "V4": "Bevels are inconsistent: the collar ring and pommel have soft chamfers that catch light, the collar cup shows hard flat facet panels, the prongs are square bars with sharp edges, and the grip ribs are rounded bulges.",
+  "V5": "The orb has a hard horizontal value seam at its equator (two flat vertex-colour tones in the flat close-up, a crease line in studio light) and a visibly polygonal outline. The collar cup shows stray faceting. Gates A17/A18 are clean, but these artifacts are visible.",
+  "V6": "Disciplined: one hue (teal) in about three values (orb top, orb/haft mid, dark lower orb) plus a gold accent. The crimson, shadow and other colourways swap the hue cleanly while keeping the gold.",
+  "V7": "2472 tris against a weapon target of 2500 and a ceiling of 4000: at target.",
+  "V8": "Material matches the kit (one white LF_VertexColor material, SmoothPlastic, vertex colours) and the palette fits the gold-plus-one-hue scheme. However, the faceted collar cup and prongs, and the low-segment orb with a banded seam, depart from the kit's smooth shading and ~0.045-stud chamfers.",
+  "V9": "The Studio line is complete and correct: Tool Handle at the grip origin, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white for vertex colours, SmoothPlastic."
+ },
+ "artifacts": [
+  "Orb: hard horizontal two-tone vertex-colour seam across the equator that reads as a crease in studio light",
+  "Orb: low segment count, so the outline facets are visible in the close-up and flat render",
+  "Collar cup: flat facet panels with hard shading breaks (looks flat-shaded or under-segmented)",
+  "Grip ribs: kinked, faceted profile along the outline between the gold pinstripes"
+ ],
+ "top_fixes": [
+  "Raise the orb's segment count and replace the hard equator colour split with a soft vertex-colour gradient (or put the split on a bevelled edge), so the hero element reads as a clean glossy sphere",
+  "Smooth-shade and add segments to the collar cup, and give it and the prongs the kit's ~0.045-stud chamfers so edge treatment matches the rings and pommel",
+  "Push the stylised proportion: scale the orb, collar and prongs up about 1.3-1.5x (or shorten the haft) and flare the prongs further, so the head dominates the 64 px silhouette",
+  "Add a couple more segments around the grip ribs so their profile reads as smooth wraps rather than kinks"
+ ],
+ "params": {
+  "H": 5.58,
+  "r": 0.174,
+  "head": "orb",
+  "wraps": 5,
+  "orb": 0.385,
+  "prongs": 4
+ },
+ "tris": 2472,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

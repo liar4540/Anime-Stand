@@ -1,0 +1,96 @@
+{
+ "asset": "Sign_14",
+ "kit": "Props",
+ "type": "Sign",
+ "seed": 14,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 10.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Arrow-pointed board on a capped post reads instantly in front, three-quarter and silhouette; top view still reads as board + post cap; directional board is asymmetric by design (symmetric null, A15 pass).",
+   "V2": "Clear hierarchy: big arrow board + post, medium inset face panel and gold caps, small raised cross icon and two ink bolts.",
+   "V3": "Chunky stylised proportions: thick framed board, oversized gold mushroom caps top and bottom, board centred on the post (front view board spans ~130-380 px around post at ~252).",
+   "V4": "Consistent ~0.045-stud chamfers on frame, inset face, arrow tip corners, cross arms and caps all catch a highlight in studio close-ups.",
+   "V5": "Close-ups clean: no seams, pinches or z-fighting on board edge, icon or face; seats all gap 0 with small intended penetrations; cap rim slightly polygonal in outline but shading smooth.",
+   "V6": "Disciplined: one wood hue in three values (dark frame/post, mid board, light face) + gold accent + ink bolts; teal/walnut colourways keep the same structure.",
+   "V7": "1108 tris vs medium target 2000 (ceiling 4000): well under target.",
+   "V8": "Matches kit: single white LF_VertexColor material, gold accent, ink dark, chamfer size and smooth shading indistinguishable from the kit sign anchor.",
+   "V9": "Studio line correct: Anchored, CollisionFidelity Box, CanTouch off, MeshPart.Color white for vertex colours, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Raise segment count on the post caps so the dome rim outline is less polygonal in close-up",
+   "Consider a matching bolt pair near the arrow end or a subtle grain groove so the right half of the board carries some small detail",
+   "Use an icon that reinforces direction (arrow/chevron) or leave the face for a SurfaceGui, since the cross reads as a health marker"
+  ]
+ ],
+ "params": {
+  "kind": "arrow",
+  "W": 2.073,
+  "Hb": 1.043,
+  "post": 3.108,
+  "icon": "cross"
+ },
+ "tris": 1108,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

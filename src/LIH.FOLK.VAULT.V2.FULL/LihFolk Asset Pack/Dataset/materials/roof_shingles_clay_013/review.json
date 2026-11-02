@@ -1,0 +1,22 @@
+{
+ "id": "roof_shingles_clay_013",
+ "kind": "materials",
+ "score": 9.2,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 1,
+  "M4": 2,
+  "M7": 2,
+  "M6": 2,
+  "M5": 2
+ },
+ "batch": "m5",
+ "reviewer_notes": [
+  "Flat stamped half-discs on dark bands; no overlap depth in normal",
+  "Scales flat with thin edge lip; dark row gaps read as stripes",
+  "scales flat with thin rim; no overlap thickness or drop shadow"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

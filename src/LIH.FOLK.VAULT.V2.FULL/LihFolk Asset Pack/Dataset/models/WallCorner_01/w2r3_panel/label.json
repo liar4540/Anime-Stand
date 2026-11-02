@@ -1,0 +1,159 @@
+{
+ "asset": "WallCorner_01",
+ "kit": "Modular",
+ "type": "WallCorner",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 7.0,
+ "grades": [
+  1,
+  1,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   1,
+   1,
+   1,
+   2,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.0,
+  7.7,
+  6.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.3,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Top view and three-quarter read clearly as an L corner with quoins; front reads as a wall face.",
+   "V2": "Big L mass and cap/plinth read, but the quoins are split into thin double slivers on alternate courses, muddying the medium level.",
+   "V3": "Blocky courses with fussy thin quoin slivers; stiff rather than confident.",
+   "V4": "Consistent chamfers on courses, quoins, cap and plinth.",
+   "V5": "Quoins flat close-up shows small triangular spikes poking out where stones meet at the corner; an off-hue sliver appears at the inner end of the far arm in three-quarter and colourway renders.",
+   "V6": "Stone greys in ~3 values with darker plinth - disciplined; brick/sandstone colourways consistent.",
+   "V7": "732 tris vs module target 800 - under target.",
+   "V8": "One vertex-colour material, stone hue, matching chamfer size with straight wall pieces.",
+   "V9": "Anchored, Box collision, CanTouch off, Color white, grid-corner pivot; T1 ends-equal tiling passes (iou 0.97)."
+  },
+  {
+   "V1": "Top view reads clearly as an L corner and the front/three-quarter read as masonry, but the 3/4 silhouette is a plain slab with tiny course notches - the corner is not identifiable from outline alone.",
+   "V2": "Big L mass, medium courses with quoin pairs, plinth and cap; no small-scale detail beyond the chamfers, so hierarchy is only partial.",
+   "V3": "Chunky chamfered blocks fit the kit but the layout is a stiff rectangular grid; quoins alternate one wide / two narrow blocks and do not wrap convincingly around the outer arris; the butt end is a blank slab.",
+   "V4": "Every stone, cap and plinth block carries the same ~0.06 stud chamfer that catches a highlight in the studio close-ups (end_x, quoins).",
+   "V5": "Studio close-ups clean: no pinches, z-fighting or stray faceting; the dark V notches at the edge in quoins_flat are the designed mortar recesses between blocks.",
+   "V6": "One stone hue in three values (light quoins/caps, mid field, dark plinth); colourways (brick, sandstone) keep the same value structure.",
+   "V7": "732 tris vs module target 800 (ceiling 2000).",
+   "V8": "Single LF_VertexColor white material, chamfered stone blocks, stone hue only - consistent with modular kit spec.",
+   "V9": "Studio line: Anchored, CollisionFidelity Box, CanTouch off, Color white, SmoothPlastic, pivot at grid corner; T1 tiling pass (iou 0.97)."
+  },
+  {
+   "V1": "The L footprint reads from the top view, but the silhouette and three-quarter outline are just a tall block; from the front it reads as a plain wall strip rather than a corner.",
+   "V2": "Big L body and cap ledge plus block coursing, but no small tier; quoins are just narrow split strips that do not read as a distinct medium feature.",
+   "V3": "Stiff and regular: uniform rectangular blocks, thin cap, quoin pattern of a narrow block beside a half-width strip looks accidental rather than stylised.",
+   "V4": "Consistent small chamfers on every block and the cap ledge, catching light in the corner and end close-ups.",
+   "V5": "Quoins flat close-up shows small dark spiky slivers at block junctions (stray geometry/gaps between shells), and a brown sliver is visible at the inner corner under the cap in the three-quarter view.",
+   "V6": "Stone grey in about 3 values with a darker plinth course; brick and basalt colourways keep the structure.",
+   "V7": "732 tris vs module target 800, under target.",
+   "V8": "One vertex-colour material and kit chamfers, but end sections are plain undressed dark slab faces and the inner-corner sliver shows an off-palette brown.",
+   "V9": "Studio line correct for a modular piece (anchored, Box collision, CanTouch off, white colour, grid-corner pivot); T1 tiling pass with iou 0.973."
+  }
+ ],
+ "artifacts": [
+  [
+   "Triangular spikes at stone corners in quoin close-up",
+   "Off-hue sliver at inner end of far arm"
+  ],
+  [
+   "Small off-colour (cream/tan) sliver visible at the inner corner top in the three-quarter view, reads as an unintended strip rather than designed plaster"
+  ],
+  [
+   "small dark spiky slivers at quoin block junctions (quoins flat close-up)",
+   "brown/tan sliver visible at the inner corner beneath the cap ledge (three-quarter and colourway renders)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Remove the stray spike geometry at quoin stone corners",
+   "Use single alternating long/short quoins instead of split slivers",
+   "Fix the off-colour face at the far arm's inner end so it follows the colourway"
+  ],
+  [
+   "Make the quoins read as true alternating long/short stones wrapping both faces of the outer corner so the corner identity reads at 64 px",
+   "Break the rigid block grid with a few varied stone sizes / slight bevel offsets and add a small accent (e.g. a gold band or keystone) to give a small-scale tier",
+   "Resolve or colour-match the cream sliver at the inner top corner"
+  ],
+  [
+   "Fix the inner-corner and quoin junction slivers so blocks meet cleanly (no gaps or poking shells)",
+   "Make proper alternating long/short quoin blocks that wrap the outer corner and project slightly so the corner reads in silhouette",
+   "Dress the end sections with block returns and vary block sizes for a more stylised read"
+  ]
+ ],
+ "params": {
+  "A": 6,
+  "style": "stone"
+ },
+ "tris": 732,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

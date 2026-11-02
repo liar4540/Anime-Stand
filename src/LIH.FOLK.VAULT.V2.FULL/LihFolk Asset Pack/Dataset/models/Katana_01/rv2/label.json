@@ -1,0 +1,109 @@
+{
+ "asset": "Katana_01",
+ "kit": "Weapons",
+ "type": "Katana",
+ "seed": 1,
+ "attempt": "rv2",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette read instantly as a katana (curved slender blade, round tsuba disc, ribbed tsuka, kashira cap); outline symmetric, A15 Y error 0.0, alignment offsets 0.0, all seats seated with no gap; top view is just the tsuba ring, as with any sword.",
+   "V2": "Big blade, medium tsuba disc and tsuka, small habaki, wrap ribs, ink tsuba face and kashira cap give a clear three-level read, though the small tier is thin: the single-colour wrap ribs are low contrast.",
+   "V3": "Blade is a near-uniform-width rod with gentle sori and a rounded, blunt kissaki (reads closer to a bokken than a katana tip); habaki is a plain box and tsuba a plain disc, so the parts stay close to primitives rather than a confident stylised exaggeration like the anchor's flared blade and swept guard.",
+   "V4": "Chamfers are consistent and catch light on the tsuba rim, habaki corners, kashira rim and the blade's shinogi facets; no razor edges or blobs.",
+   "V5": "Mostly clean smooth shading, but minor issues show in the close-ups: visible polygon faceting on the kashira's rounded bottom rim, a small crease/pinch where the ridge lines converge at the kissaki tip, and a small notch at the blade/habaki junction in the tsuba flat close-up.",
+   "V6": "Disciplined: steel greys in two values on the blade, gold fittings, ink-dark tsuba face, one hue for the wrap; crimson and shadow colourways swap only the wrap hue and keep strong value contrast.",
+   "V7": "2396 tris against weapon target 2500 (ceiling 4000), at or under target.",
+   "V8": "One white vertex-colour material, kit gold/ink/steel palette with one wrap hue, matching chamfer scale and smooth shading; sits alongside the Scimitar anchor without clashing.",
+   "V9": "Studio line correct: Tool Handle, origin at grip, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Kashira cap: visible faceting on the rounded bottom rim (low segment count) in studio close-up",
+   "Kissaki: small crease/pinch where the ridge facets converge at the very tip",
+   "Blade/habaki junction: small jagged notch at the top-right where the blade enters the habaki (tsuba flat close-up)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Reshape the blade: taper width toward the tip, slightly stronger sori, and an angled kissaki with a clear yokote instead of the rounded blunt tip",
+   "Push the fittings past primitives: taper/bevel the habaki, give the tsuba a mokko or cut-out shape, add a two-tone diamond ito wrap or menuki so the small tier reads",
+   "Add segments or smooth the kashira bottom bevel to remove the faceting",
+   "Clean the blade-to-habaki junction and the converging ridge geometry at the kissaki tip"
+  ]
+ ],
+ "params": {
+  "L": 4.326,
+  "ew0": 0.323,
+  "sw0": 0.136,
+  "t0": 0.118,
+  "curve": 0.443,
+  "clip": 0.88,
+  "GL": 1.505,
+  "gr": 0.175,
+  "wraps": 7,
+  "tsuba": "oval",
+  "tR": 0.638,
+  "ps": 0.27,
+  "hilt_steps": 18
+ },
+ "tris": 2396,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

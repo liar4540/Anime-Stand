@@ -1,0 +1,477 @@
+{
+ "note": "Original procedural textures, white/greyscale + alpha, tint in Roblox. Release subset: only the textures used by the shipped/approved presets.",
+ "strip_convention": "u along arc 0=tail 1=head; v 0=inner 1=outer (file top = outer)",
+ "flip_schedule": "4x4 frames 0-3 sweep-in, 4-5 hold, 6-15 erode",
+ "textures": [
+  {
+   "file": "Textures/strip_body.png",
+   "key": "strip_body",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body",
+   "use": "SpecialMesh TextureId on crescent/ring meshes (held frame)"
+  },
+  {
+   "file": "Textures/strip_body_reveal_1.png",
+   "key": "strip_body_reveal_1",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body sweep-in",
+   "use": "texture swap during sweep-in, reveal 0.3"
+  },
+  {
+   "file": "Textures/strip_body_reveal_2.png",
+   "key": "strip_body_reveal_2",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body sweep-in",
+   "use": "texture swap during sweep-in, reveal 0.55"
+  },
+  {
+   "file": "Textures/strip_body_reveal_3.png",
+   "key": "strip_body_reveal_3",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body sweep-in",
+   "use": "texture swap during sweep-in, reveal 0.8"
+  },
+  {
+   "file": "Textures/strip_body_erode_1.png",
+   "key": "strip_body_erode_1",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body erosion",
+   "use": "texture swap during erode, stage 1/5 (threshold 0.18)"
+  },
+  {
+   "file": "Textures/strip_body_erode_2.png",
+   "key": "strip_body_erode_2",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body erosion",
+   "use": "texture swap during erode, stage 2/5 (threshold 0.36)"
+  },
+  {
+   "file": "Textures/strip_body_erode_3.png",
+   "key": "strip_body_erode_3",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body erosion",
+   "use": "texture swap during erode, stage 3/5 (threshold 0.54)"
+  },
+  {
+   "file": "Textures/strip_body_erode_4.png",
+   "key": "strip_body_erode_4",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body erosion",
+   "use": "texture swap during erode, stage 4/5 (threshold 0.72)"
+  },
+  {
+   "file": "Textures/strip_body_erode_5.png",
+   "key": "strip_body_erode_5",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body erosion",
+   "use": "texture swap during erode, stage 5/5 (threshold 0.88)"
+  },
+  {
+   "file": "Textures/strip_edge.png",
+   "key": "strip_edge",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "hot edge",
+   "use": "thin hot rim strip (optional extra mesh layer)"
+  },
+  {
+   "file": "Textures/strip_ink.png",
+   "key": "strip_ink",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "dark contrast",
+   "use": "ink smear mesh behind the body, tinted dark"
+  },
+  {
+   "file": "Textures/strip_ink_erode_1.png",
+   "key": "strip_ink_erode_1",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "dark contrast erosion",
+   "use": "ink texture swap, stage 1/3"
+  },
+  {
+   "file": "Textures/strip_ink_erode_2.png",
+   "key": "strip_ink_erode_2",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "dark contrast erosion",
+   "use": "ink texture swap, stage 2/3"
+  },
+  {
+   "file": "Textures/strip_ink_erode_3.png",
+   "key": "strip_ink_erode_3",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "dark contrast erosion",
+   "use": "ink texture swap, stage 3/3"
+  },
+  {
+   "file": "Textures/strip_ground_ring.png",
+   "key": "strip_ground_ring",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "ground ring",
+   "use": "ground_ring mesh (u around, v radial)"
+  },
+  {
+   "file": "Textures/mask_brush_erosion_A.png",
+   "key": "mask_brush_erosion_A",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "erosion mask",
+   "use": "threshold map used for strip_body_erode_*"
+  },
+  {
+   "file": "Textures/mask_brush_erosion_B.png",
+   "key": "mask_brush_erosion_B",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "erosion mask",
+   "use": "threshold map used for strip_ink_erode_*"
+  },
+  {
+   "file": "Textures/flip_crescent_4x4.png",
+   "key": "flip_crescent_4x4",
+   "size": [
+    1024,
+    1024
+   ],
+   "role": "body card",
+   "use": "ParticleEmitter flat card, Grid4x4 OneShot, LightEmission 1 (glow body)"
+  },
+  {
+   "file": "Textures/flip_crescent_ink_4x4.png",
+   "key": "flip_crescent_ink_4x4",
+   "size": [
+    1024,
+    1024
+   ],
+   "role": "dark card",
+   "use": "ParticleEmitter flat card, Grid4x4 OneShot, LightEmission 0, dark Color"
+  },
+  {
+   "file": "Textures/flip_petals_8x8.png",
+   "key": "flip_petals_8x8",
+   "size": [
+    1024,
+    1024
+   ],
+   "role": "debris",
+   "use": "Grid8x8, FlipbookStartRandom, framerate 0.001 (static random shape)"
+  },
+  {
+   "file": "Textures/flip_glint_4x4.png",
+   "key": "flip_glint_4x4",
+   "size": [
+    1024,
+    1024
+   ],
+   "role": "glint",
+   "use": "Grid4x4 OneShot twinkle"
+  },
+  {
+   "file": "Textures/flash_hot.png",
+   "key": "flash_hot",
+   "size": [
+    512,
+    512
+   ],
+   "role": "sprite",
+   "use": "flash hot"
+  },
+  {
+   "file": "Textures/glow_soft.png",
+   "key": "glow_soft",
+   "size": [
+    512,
+    512
+   ],
+   "role": "sprite",
+   "use": "glow soft"
+  },
+  {
+   "file": "Textures/glint_star4.png",
+   "key": "glint_star4",
+   "size": [
+    512,
+    512
+   ],
+   "role": "sprite",
+   "use": "glint star4"
+  },
+  {
+   "file": "Textures/spark_streak.png",
+   "key": "spark_streak",
+   "size": [
+    512,
+    512
+   ],
+   "role": "sprite",
+   "use": "spark streak"
+  },
+  {
+   "file": "Textures/spark_square.png",
+   "key": "spark_square",
+   "size": [
+    512,
+    512
+   ],
+   "role": "sprite",
+   "use": "spark square"
+  },
+  {
+   "file": "Textures/shard_A.png",
+   "key": "shard_A",
+   "size": [
+    512,
+    512
+   ],
+   "role": "sprite",
+   "use": "shard A"
+  },
+  {
+   "file": "Textures/ground_disc_faint.png",
+   "key": "ground_disc_faint",
+   "size": [
+    512,
+    512
+   ],
+   "role": "sprite",
+   "use": "ground disc faint"
+  },
+  {
+   "file": "Textures/beam_edge_h.png",
+   "key": "beam_edge_h",
+   "size": [
+    512,
+    128
+   ],
+   "role": "beam",
+   "use": "Beam/Trail texture, band along image X"
+  },
+  {
+   "file": "Textures/beam_edge_v.png",
+   "key": "beam_edge_v",
+   "size": [
+    128,
+    512
+   ],
+   "role": "beam",
+   "use": "same band rotated 90 deg, use if beam_edge_h shows sideways in your test"
+  },
+  {
+   "file": "Textures/trail_soft.png",
+   "key": "trail_soft",
+   "size": [
+    512,
+    128
+   ],
+   "role": "trail",
+   "use": "weapon Trail texture"
+  },
+  {
+   "file": "Textures/strip_ink_wide.png",
+   "key": "strip_ink_wide",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "dark contrast (wide)",
+   "use": "ring ink smear with broad strokes (SlashRing), tinted dark"
+  },
+  {
+   "file": "Textures/strip_ink_wide_erode_1.png",
+   "key": "strip_ink_wide_erode_1",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "dark contrast erosion (wide)",
+   "use": "wide ink stage 1/3, soft edge for cross-fading"
+  },
+  {
+   "file": "Textures/strip_ink_wide_erode_2.png",
+   "key": "strip_ink_wide_erode_2",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "dark contrast erosion (wide)",
+   "use": "wide ink stage 2/3, soft edge for cross-fading"
+  },
+  {
+   "file": "Textures/strip_ink_wide_erode_3.png",
+   "key": "strip_ink_wide_erode_3",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "dark contrast erosion (wide)",
+   "use": "wide ink stage 3/3, soft edge for cross-fading"
+  },
+  {
+   "file": "Textures/strip_body_soft.png",
+   "key": "strip_body_soft",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body (soft)",
+   "use": "ring body, broad strokes; hold frame of the soft erosion stack (SlashRing)"
+  },
+  {
+   "file": "Textures/strip_body_soft_reveal_1.png",
+   "key": "strip_body_soft_reveal_1",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body sweep-in (soft)",
+   "use": "soft body reveal 0.3 during the sweep"
+  },
+  {
+   "file": "Textures/strip_body_soft_reveal_2.png",
+   "key": "strip_body_soft_reveal_2",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body sweep-in (soft)",
+   "use": "soft body reveal 0.55 during the sweep"
+  },
+  {
+   "file": "Textures/strip_body_soft_reveal_3.png",
+   "key": "strip_body_soft_reveal_3",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body sweep-in (soft)",
+   "use": "soft body reveal 0.8 during the sweep"
+  },
+  {
+   "file": "Textures/strip_body_soft_erode_1.png",
+   "key": "strip_body_soft_erode_1",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body erosion (soft)",
+   "use": "soft erosion stage 1/5, cross-faded"
+  },
+  {
+   "file": "Textures/strip_body_soft_erode_2.png",
+   "key": "strip_body_soft_erode_2",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body erosion (soft)",
+   "use": "soft erosion stage 2/5, cross-faded"
+  },
+  {
+   "file": "Textures/strip_body_soft_erode_3.png",
+   "key": "strip_body_soft_erode_3",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body erosion (soft)",
+   "use": "soft erosion stage 3/5, cross-faded"
+  },
+  {
+   "file": "Textures/strip_body_soft_erode_4.png",
+   "key": "strip_body_soft_erode_4",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body erosion (soft)",
+   "use": "soft erosion stage 4/5, cross-faded"
+  },
+  {
+   "file": "Textures/strip_body_soft_erode_5.png",
+   "key": "strip_body_soft_erode_5",
+   "size": [
+    1024,
+    256
+   ],
+   "role": "body erosion (soft)",
+   "use": "soft erosion stage 5/5, cross-faded"
+  },
+  {
+   "file": "Textures/ground_frost.png",
+   "key": "ground_frost",
+   "size": [
+    1024,
+    1024
+   ],
+   "role": "ground frost crack",
+   "use": "flat ground card for IceExplosion: dark copy (LightEmission 0) + glow copy"
+  },
+  {
+   "file": "Textures/crystal_facets.png",
+   "key": "crystal_facets",
+   "size": [
+    512,
+    512
+   ],
+   "role": "ice crystal facets",
+   "use": "TextureId on crystal / ice_mound meshes: 6 facet columns, white edges, deep base"
+  },
+  {
+   "file": "Textures/frost_ring.png",
+   "key": "frost_ring",
+   "size": [
+    1024,
+    1024
+   ],
+   "role": "frost shockwave ring",
+   "use": "flat ground card, expanding: broken bright rim, fern frost fringe, crackled inner band"
+  }
+ ]
+}

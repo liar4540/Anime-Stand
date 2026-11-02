@@ -1,0 +1,262 @@
+{
+ "id": "underwater_lagoon_003",
+ "family": "underwater",
+ "theme": "lagoon",
+ "Lighting": {
+  "LightingStyle": "Soft",
+  "Brightness": 1.2,
+  "ClockTime": 12.0,
+  "GeographicLatitude": 0,
+  "Ambient": [
+   36,
+   96,
+   114
+  ],
+  "OutdoorAmbient": [
+   52,
+   141,
+   157
+  ],
+  "ColorShift_Top": [
+   201,
+   255,
+   239
+  ],
+  "ColorShift_Bottom": [
+   0,
+   0,
+   0
+  ],
+  "EnvironmentDiffuseScale": 0.3,
+  "EnvironmentSpecularScale": 0.0,
+  "ExposureCompensation": 0.0,
+  "GlobalShadows": true
+ },
+ "Atmosphere": {
+  "Density": 0.6,
+  "Offset": 0.0,
+  "Color": [
+   45,
+   159,
+   140
+  ],
+  "Decay": [
+   43,
+   158,
+   139
+  ],
+  "Glare": 0.0,
+  "Haze": 0.0
+ },
+ "Sky": {
+  "CelestialBodiesShown": false,
+  "StarCount": 0,
+  "SunAngularSize": 21,
+  "MoonAngularSize": 11,
+  "SkyboxOrientation": [
+   0,
+   0,
+   0
+  ],
+  "Faces": {
+   "SkyboxBk": "SkyBk.png",
+   "SkyboxDn": "SkyDn.png",
+   "SkyboxFt": "SkyFt.png",
+   "SkyboxLf": "SkyLf.png",
+   "SkyboxRt": "SkyRt.png",
+   "SkyboxUp": "SkyUp.png"
+  }
+ },
+ "ColorCorrection": {
+  "Brightness": 0.0,
+  "Contrast": 0.05,
+  "Saturation": 0.05,
+  "TintColor": [
+   255,
+   255,
+   255
+  ]
+ },
+ "Bloom": {
+  "Intensity": 0.4,
+  "Size": 24,
+  "Threshold": 1.6
+ },
+ "Measured": {
+  "horizon": [
+   44,
+   158,
+   140
+  ],
+  "horizon_sun_side": [
+   46,
+   159,
+   141
+  ],
+  "horizon_far_side": [
+   43,
+   158,
+   139
+  ],
+  "zenith": [
+   213,
+   235,
+   227
+  ]
+ },
+ "PaintedLight": {
+  "direction_roblox": [
+   0.0,
+   0.4472,
+   -0.8944
+  ],
+  "kind": "none"
+ },
+ "Notes": "Painted sun/moon in the faces, so CelestialBodiesShown=false avoids two suns. To line the engine sun up with the painted one, rotate SkyboxOrientation.Y until Lighting:GetSunDirection() matches PaintedLight.direction_roblox. Face convention: Ft=-Z, Bk=+Z, Rt=+X, Lf=-X; Up/Dn use the cube-cross layout, rotation 0 deg (Up/Dn rotation unverified in Studio; tools/pack/rotate_updn.py fixes it in place).",
+ "gates": {
+  "S1_faces_1024": true,
+  "S2_seam_worst_ratio": 0.593,
+  "S2_seam_worst_abs": 0.0021,
+  "S2_seamless": true,
+  "S3_pinch_up": 1.017,
+  "S3_pinch_dn": 1.016,
+  "S3_no_pinch": true,
+  "S4_one_sun": true,
+  "S5_lighting_valid": true,
+  "gates_pass": true
+ },
+ "seams": {
+  "SkyFt_top": [
+   0.00186,
+   0.00188
+  ],
+  "SkyFt_bottom": [
+   0.00185,
+   0.00188
+  ],
+  "SkyFt_left": [
+   0.00197,
+   0.002
+  ],
+  "SkyFt_right": [
+   0.00205,
+   0.00203
+  ],
+  "SkyBk_top": [
+   0.00191,
+   0.00207
+  ],
+  "SkyBk_bottom": [
+   0.00181,
+   0.00182
+  ],
+  "SkyBk_left": [
+   0.00184,
+   0.00185
+  ],
+  "SkyBk_right": [
+   0.00199,
+   0.0019
+  ],
+  "SkyRt_top": [
+   0.0019,
+   0.00189
+  ],
+  "SkyRt_bottom": [
+   0.00186,
+   0.00186
+  ],
+  "SkyRt_left": [
+   0.00205,
+   0.00197
+  ],
+  "SkyRt_right": [
+   0.00184,
+   0.00195
+  ],
+  "SkyLf_top": [
+   0.00195,
+   0.00191
+  ],
+  "SkyLf_bottom": [
+   0.00184,
+   0.00186
+  ],
+  "SkyLf_left": [
+   0.00199,
+   0.00204
+  ],
+  "SkyLf_right": [
+   0.00197,
+   0.00201
+  ],
+  "SkyUp_top": [
+   0.00191,
+   0.00196
+  ],
+  "SkyUp_bottom": [
+   0.00186,
+   0.0019
+  ],
+  "SkyUp_left": [
+   0.00195,
+   0.00197
+  ],
+  "SkyUp_right": [
+   0.0019,
+   0.00201
+  ],
+  "SkyDn_top": [
+   0.00185,
+   0.00187
+  ],
+  "SkyDn_bottom": [
+   0.00181,
+   0.0018
+  ],
+  "SkyDn_left": [
+   0.00184,
+   0.00184
+  ],
+  "SkyDn_right": [
+   0.00186,
+   0.00183
+  ]
+ },
+ "params": {
+  "Surface": "#e5fbf4",
+  "Shallow": "#61e5c9",
+  "Mid": "#11907f",
+  "Deep": "#01292c",
+  "RayC": "#c9ffef",
+  "Window": 0.7821306855479964,
+  "Rays": 0.7843071577797488,
+  "RayCount": 13.12442588091632,
+  "Motes": 0.5301307088109254,
+  "Ripple": 0.6703272565306312,
+  "Seed": 625.0
+ },
+ "colors": [
+  [
+   "#55c8b1",
+   0.367
+  ],
+  [
+   "#04433f",
+   0.243
+  ],
+  [
+   "#b5edde",
+   0.196
+  ],
+  [
+   "#158072",
+   0.194
+  ]
+ ],
+ "generator": "tools/pack/gen_skies.py + osl/sky_underwater.osl (procedural, original)",
+ "tags": [
+  "underwater",
+  "lagoon"
+ ]
+}

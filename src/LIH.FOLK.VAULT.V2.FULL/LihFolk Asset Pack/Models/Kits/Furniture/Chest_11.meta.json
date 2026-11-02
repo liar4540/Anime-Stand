@@ -1,0 +1,200 @@
+{
+ "asset": "Chest_11",
+ "kit": "Furniture",
+ "type": "Chest",
+ "seed": 11,
+ "params": {
+  "L": 3.357,
+  "Dp": 2.041,
+  "Hb": 1.581,
+  "band": "m_dk",
+  "lid": "round"
+ },
+ "tris": 812,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 3.66,
+  "y": 2.363,
+  "z": 2.551
+ },
+ "origin": "bottom",
+ "symmetric": "X",
+ "symmetry_error": {
+  "X": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "lid_on_body",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "lock_on_front",
+   "gap": 0.0,
+   "penetration": 0.05,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 445,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "ink",
+   "m_dk",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "oak",
+  "colourways": [
+   {
+    "name": "oak",
+    "hue": "oak",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_dk": "#62748A",
+     "h_lt": "#D2A56A",
+     "h": "#A9784A",
+     "h_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "walnut",
+    "hue": "walnut",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_dk": "#62748A",
+     "h_lt": "#A47650",
+     "h": "#7A5236",
+     "h_dk": "#4E3424"
+    }
+   },
+   {
+    "name": "painted_teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_dk": "#62748A",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "painted_crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_dk": "#62748A",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "painted_royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_dk": "#62748A",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   }
+  ]
+ },
+ "studio": "Furniture prop: Anchored; CollisionFidelity Box; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre; ProximityPrompt on the lock for loot",
+ "notes": "treasure chest: round lid, proud front planks in 2 wood values, m_dk bands wrapping lid + body, gold lock plate with ink keyhole, ink ring handles",
+ "features": [
+  [
+   "lock",
+   [
+    0.0,
+    -0.982,
+    1.38
+   ],
+   0.8
+  ],
+  [
+   "band",
+   [
+    1.128,
+    -0.982,
+    1.58
+   ],
+   0.9
+  ],
+  [
+   "lid",
+   [
+    0.839,
+    0.038,
+    2.469
+   ],
+   1.2
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Furniture/Chest_11_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 9.3,
+  "basis": "panel x3 median",
+  "reviewed": "Chest_01 w2r3_panel (indiv 9.0/9.3/9.3); fix rounds: w2r1 8.7",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_furniture.py:Chest",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Furniture/Chest_11.glb",
+  "blend": "Models/Kits/Furniture/Chest_11.blend",
+  "turntable": "Models/Kits/Furniture/Chest_11_turntable.mp4",
+  "preview": "Models/Kits/Furniture/Chest_11_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Furniture/Chest_11_preview.jpg"
+}

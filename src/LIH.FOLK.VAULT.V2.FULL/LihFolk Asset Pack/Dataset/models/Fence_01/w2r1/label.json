@@ -1,0 +1,94 @@
+{
+ "asset": "Fence_01",
+ "kit": "Modular",
+ "type": "Fence",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Pointed pickets, rails and post read as a picket fence from front, three-quarter and silhouette; top view still shows post plus picket row.",
+   "V2": "Clear big post and rails, medium pickets with pointed tops, small post cap and nails.",
+   "V3": "Picket proportions are good, but all pickets are identical height and evenly spaced; little stylised variation (no lean, height jitter or post taper).",
+   "V4": "Pickets, rails, post and cap all carry consistent chamfers that catch light (close_rails_studio, close_post_cap_studio).",
+   "V5": "Close-ups of post cap, rails and rail end are clean; no z-fighting, pinches or stray facets.",
+   "V6": "Wood hue in 2-3 values (dark post, mid rails, light pickets) plus ink nails; disciplined in all colourways.",
+   "V7": "736 tris vs module target 800; under.",
+   "V8": "One vertex-colour material, smooth chamfered timber and wood hue; indistinguishable from the kit.",
+   "V9": "Studio line correct (Box collision, grid-corner pivot, white colour); T1 passes in contain mode."
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Add slight per-picket height/lean variation and a gentle post taper for a more stylised, hand-built read",
+   "Put nails on every picket (2 each) instead of only three of them",
+   "Bevel or cap the open rail ends so the piece reads finished when not tiled"
+  ]
+ ],
+ "params": {
+  "L": 8,
+  "kind": "picket",
+  "cap": "flat"
+ },
+ "tris": 736,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

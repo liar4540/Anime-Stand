@@ -1,0 +1,93 @@
+{
+ "asset": "Pillar_15",
+ "kit": "Modular",
+ "type": "Pillar",
+ "seed": 15,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Base-slab / column / capital-slab 'I' outline reads as a pillar in front, three-quarter and silhouette; symmetry error X/Y 0.0, centred on the 4x4 footprint.",
+   "V2": "Big (shaft) and medium (square plinth + abacus, torus base, echinus) are clear, but small-scale detail is limited to one thin gold band under the capital.",
+   "V3": "Proportions are sensible but built from plain primitives: a straight untapered cylinder between two square slabs, no entasis or exaggeration, so it reads partly stiff.",
+   "V4": "Plinth and abacus carry consistent ~0.05-0.07 stud chamfers that catch a highlight line; torus base and echinus are smoothly rounded.",
+   "V5": "Close-ups of base, shaft and capital are clean: no seams, pinches or z-fighting; only very faint smooth-shaded segment banding on the shaft.",
+   "V6": "One stone hue in three values (dark slab, mid torus, light shaft) plus a single gold accent band; disciplined.",
+   "V7": "776 tris vs module target 800 (ceiling 2000): at target.",
+   "V8": "One white vertex-colour material, chamfered made edges, stone hue + gold kit band; colourways (sandstone, brick) keep the same value structure.",
+   "V9": "Studio line: Anchored, CollisionFidelity Box, CanTouch off, MeshPart.Color white, SmoothPlastic, grid-corner origin; T1 tiling pass."
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Add a slight taper/entasis or fluting to the shaft so it reads less like a stock cylinder",
+   "Add a small-scale detail tier (step moulding on the abacus edge or a second band at the base) to strengthen hierarchy",
+   "Give the capital a more shaped echinus so the transition from round shaft to square abacus is more confident"
+  ]
+ ],
+ "params": {
+  "kind": "column",
+  "flutes": false
+ },
+ "tris": 776,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,161 @@
+{
+ "asset": "Bottle_01",
+ "kit": "Props",
+ "type": "Bottle",
+ "seed": 1,
+ "attempt": "p5_panel",
+ "label": "accepted",
+ "score": 10.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0,
+  10.0,
+  10.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette reads instantly as a stoppered potion bottle (chunky cap, collar notch, bulbous octagonal body tapering to a narrow foot); top view reads as an octagonal bottle with a centred cap; front outline symmetric (cap centre ~257 px vs body centre ~259 px) and A15 symmetry error X=0.0, Y=0.0.",
+   "V2": "Clear big/medium/small: big octagonal body, medium shoulder panels + neck + ink stopper, small gold collar band and gold foot band plus the liquid line at the shoulder break.",
+   "V3": "Confident stylised proportions: squat egg-shaped body widest at mid-height, short neck, oversized chamfered stopper; clearly an improvement over the stiff cylinder-like p4 anchor.",
+   "V4": "Consistent small chamfers on every facet edge, stopper rim, collar and foot band; they catch light as thin highlight strips in the stopper and foot close-ups.",
+   "V5": "Close-ups (stopper, liquid line, foot) show clean flat facets with no pinches, seams, z-fighting or stray faceting; faceting is the intended vial design; stopper seated on collar and body seated on foot band with no gaps; A17/A18 pass, 0 flipped faces, 0 cap overlaps.",
+   "V6": "Disciplined kit palette: one hue (teal) in 2-3 values (dark liquid, lighter glass) plus warm cream, gold accent and ink stopper; colourways (crimson, shadow) swap the hue cleanly and keep the neutrals.",
+   "V7": "544 tris vs small-class target 600 (ceiling 1500): at or under target.",
+   "V8": "One white vertex-colour material (LF_VertexColor), kit gold/ink/cream accents, chamfer scale visually matches the Gem_01 anchor; indistinguishable from the kit.",
+   "V9": "Studio line correct for a pickup: CanCollide off, CanTouch on, Box fidelity, CastShadow on, MeshPart.Color white for vertex colours, SmoothPlastic, origin bottom-centre (A12 pass)."
+  },
+  {
+   "V1": "Silhouette reads as a stoppered potion bottle at 64 px: front/silhouette outline is mirror-even (A15 X/Y error 0.0), three-quarter keeps the octagonal body, collar and chunky stopper distinct, top view reads as a clean octagon ring around the stopper.",
+   "V2": "Clear tiers: large faceted body, medium gold collar + ink stopper + gold foot band + two-tone shoulder panels, small chamfer highlight lines on every panel edge.",
+   "V3": "Confident stylised proportions: squat egg-shaped octagonal body widest at ~60% height, short neck, oversized chunky stopper; nothing reads as a stiff primitive; stopper and collar sit flush (no float or sink in stopper close-up).",
+   "V4": "Consistent narrow chamfers on body panel edges, stopper rim, collar and foot band, each catching a highlight line in the studio close-ups; no razor or blobby edges.",
+   "V5": "Close-ups clean: flat panels shade evenly with smooth-shaded chamfers, no pinches, z-fighting or patchy faces at foot, liquid line or stopper; only nit is a small jog in the cream panel boundaries where the shoulder meets the neck flare, which follows geometry rather than a shading fault.",
+   "V6": "Disciplined: one hue in two values (light teal shoulder, deep teal body) + warm cream + gold accent + ink stopper; colourways swap only the hue and keep the same value structure.",
+   "V7": "544 tris vs small-class target 600 (ceiling 1500): at or under target.",
+   "V8": "Kit match: one white LF_VertexColor material, gold accent, ink dark, warm cream, single hue in up to 3 values, chamfers of kit scale, smooth shading on bevels.",
+   "V9": "Studio line correct for a pickup: CanCollide off, CanTouch on, CollisionFidelity Box, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre."
+  },
+  {
+   "V1": "Silhouette reads instantly as a stoppered flask: stopper block, collar notch, shoulder taper and octagonal foot all show in the outline; front outline is mirror-even and the top view is a centred regular octagon (A15 X/Y error 0.0), so it reads from every angle.",
+   "V2": "Clear hierarchy: big faceted body, then medium stopper and gold collar, then small gold foot band, shoulder panels and liquid line; nothing competes with the body mass.",
+   "V3": "Confident chunky stylised flask: wide bulged octagonal body, short neck, oversized ink stopper. Stopper sits seated on the collar and the body sits flat on its foot band; nothing floats or sinks.",
+   "V4": "Even chamfer strips on every facet edge, the stopper rim and top, the collar and the foot band all catch the key light (bright rim on stopper top, lit strip on foot corner); no razor edges and no blobby rounding.",
+   "V5": "Close-ups (stopper, liquid line, foot) show flat facets with clean planar shading: no pinches, patches, z-fighting or stray triangles; the flat-light render shows clean colour regions. A18 pass, 0 flipped, 0 cap overlaps, 0 self-intersections.",
+   "V6": "Disciplined kit palette: one hue in two values (light shoulder over dark liquid body), warm cream panels, gold accent bands, ink stopper; strong value contrast between ink, gold and hue. Crimson and shadow colourways swap only the hue and stay just as clean.",
+   "V7": "544 tris against a small-class target of 600 (ceiling 1500), so under target.",
+   "V8": "One white material with vertex colours (LF_VertexColor), kit gold, ink, cream and one hue in values, chamfers in proportion to the 1.5 x 2.2 stud size; the faceted panels are a stated design choice and read consistently.",
+   "V9": "Studio line is correct for a pickup: CanCollide off, CanTouch on, Box fidelity, CastShadow on, MeshPart.Color white for vertex colours, SmoothPlastic, origin bottom-centre (A12 pass)."
+  }
+ ],
+ "artifacts": [
+  [
+   "No hard artifacts. Minor: where the alternating cream/teal shoulder panels turn into the neck, the cream regions form small hook-shaped notches in the flat close-up (geometry turning, not a defect), and the thin teal chamfer strips between cream panels make the shoulder slightly busy."
+  ],
+  [
+   "Minor: stepped jog in the cream/teal shoulder panel boundaries at the shoulder-to-neck transition (liquid_line close-up, top edge); not a shading defect.",
+   "Design readability: alternating cream / light-teal shoulder panels make the liquid line ambiguous (liquid appears to run up to the neck on every other facet), reading as a stripe pattern more than a fill level."
+  ],
+  [
+   "Minor, does not cap: chamfer strips between shoulder panels carry the hue colour, so each cream panel gets a thin hue outline (visible as a teal sliver beside the cream panel on the silhouette edge in the liquid-line close-up). It reads as a lead line, but it is not quite a clean panel edge.",
+   "Minor: the cream shoulder panels taper to thin slivers where they meet the short neck, so the neck junction looks slightly busy in the liquid-line flat close-up."
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Reconsider the alternating cream/teal stripe pattern on the upper glass: a single lighter-teal glass value (or cream only as a narrow highlight on 1-2 panels) would read more clearly as empty glass above the liquid and calm the busy pinwheel in the top view.",
+   "Optionally add one small secondary detail on the lower body (e.g. a thin gold band or a label plate) to break the large plain lower facets and strengthen the small-detail tier.",
+   "Keep the stopper chamfer slightly softer/wider so its top rim reads as a bevel rather than a hard octagon edge at 64 px."
+  ],
+  [
+   "Decide the liquid-line read: either make all shoulder facets cream (glass above a level fill line) or keep the stripes but drop the light-teal panels a value so the fill level is unambiguous.",
+   "Clean the shoulder/neck colour boundary so the cream panel tops end on one straight edge loop instead of jogging at the neck flare.",
+   "Optionally lengthen the neck slightly so the gold collar separates more from the shoulder at 64 px."
+  ],
+  [
+   "Give the cream shoulder panels a clearer meaning. In the front view a lone cream stripe reads like a label or highlight. Either colour the chamfer strips to match their panel, or make the shoulder a single lighter glass value.",
+   "Lengthen the neck slightly so the gold collar reads as its own band between the shoulder and the stopper, and the panel slivers at the neck go away.",
+   "Optionally add a little more bulge or taper at the lower body so the liquid mass reads less like a straight octagonal column in the side view."
+  ]
+ ],
+ "params": {
+  "shape": "round",
+  "R": 0.762,
+  "H": 1.923,
+  "sides": 8
+ },
+ "tris": 544,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

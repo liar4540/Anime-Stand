@@ -1,0 +1,260 @@
+{
+ "asset": "PalmTree_01",
+ "kit": "Nature",
+ "type": "PalmTree",
+ "seed": 1,
+ "params": {
+  "H": 7.37,
+  "bend": 1.688,
+  "r0": 0.41,
+  "segs": 8,
+  "fronds": 7,
+  "L": 3.638,
+  "nuts": 3,
+  "yaw": 270.665
+ },
+ "tris": 1812,
+ "budget_class": "tree",
+ "budget_target": 2000,
+ "budget_ceiling": 5000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 6.625,
+  "y": 6.841,
+  "z": 8.17
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "crown_on_trunk",
+   "gap": 0.0,
+   "penetration": 0.24952,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "frond0_on_crown",
+   "gap": 0.0,
+   "penetration": 0.26404,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "frond1_on_crown",
+   "gap": 0.0,
+   "penetration": 0.26303,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "frond2_on_crown",
+   "gap": 0.0,
+   "penetration": 0.26196,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "frond3_on_crown",
+   "gap": 0.0,
+   "penetration": 0.26218,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "frond4_on_crown",
+   "gap": 0.0,
+   "penetration": 0.26222,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "frond5_on_crown",
+   "gap": 0.0,
+   "penetration": 0.26204,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "frond6_on_crown",
+   "gap": 0.0,
+   "penetration": 0.26253,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nut0_on_crown",
+   "gap": 0.0,
+   "penetration": 0.13135,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nut1_on_crown",
+   "gap": 0.0,
+   "penetration": 0.13022,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nut2_on_crown",
+   "gap": 0.0,
+   "penetration": 0.12657,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 296,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h_lt",
+   "h",
+   "h_dk",
+   "b_lt",
+   "b",
+   "b_dk"
+  ],
+  "primary": "summer",
+  "colourways": [
+   {
+    "name": "summer",
+    "hue": "leaf",
+    "roles": {
+     "h_lt": "#9BD45E",
+     "h": "#5DA543",
+     "h_dk": "#336F2E",
+     "b_lt": "#B98557",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "spruce",
+    "hue": "spruce",
+    "roles": {
+     "h_lt": "#6FBF8A",
+     "h": "#368A5C",
+     "h_dk": "#1F5A3E",
+     "b_lt": "#B98557",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "autumn",
+    "hue": "autumn",
+    "roles": {
+     "h_lt": "#F4B24E",
+     "h": "#E0702E",
+     "h_dk": "#9C3F22",
+     "b_lt": "#B98557",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "blossom",
+    "hue": "blossom",
+    "roles": {
+     "h_lt": "#F7B8D2",
+     "h": "#E2789F",
+     "h_dk": "#A84670",
+     "b_lt": "#B98557",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "frost",
+    "hue": "frost",
+    "roles": {
+     "h_lt": "#BFE6E4",
+     "h": "#7FBFC4",
+     "h_dk": "#4A8790",
+     "b_lt": "#B98557",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull (trunk-only Cylinder part if fronds should not block); CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "curved palm: 8-ring segmented trunk (alternating bark values, dark grooves), 7 serrated folded fronds with a crisp midrib, 3 coconuts",
+ "features": [
+  [
+   "crown",
+   [
+    0.395,
+    -0.02,
+    7.373
+   ],
+   1.6
+  ],
+  [
+   "frond",
+   [
+    0.418,
+    -2.021,
+    7.973
+   ],
+   1.4
+  ],
+  [
+   "trunk_rings",
+   [
+    0.377,
+    1.474,
+    2.929
+   ],
+   1.0
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_silhouette.png",
+  "close_crown_studio": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_close_crown_studio.png",
+  "close_crown_flat": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_close_crown_flat.png",
+  "close_frond_studio": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_close_frond_studio.png",
+  "close_frond_flat": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_close_frond_flat.png",
+  "close_trunk_rings_studio": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_close_trunk_rings_studio.png",
+  "close_trunk_rings_flat": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_close_trunk_rings_flat.png",
+  "cw_spruce": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_cw_spruce.png",
+  "cw_autumn": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_cw_autumn.png",
+  "cw_blossom": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_cw_blossom.png",
+  "cw_frost": "Models/Kits/_drafts/r3/PalmTree_01/PalmTree_01_cw_frost.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_nature.py:PalmTree",
+ "made": "2026-10-28"
+}

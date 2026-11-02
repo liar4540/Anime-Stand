@@ -1,0 +1,7 @@
+{
+ "id": "IceExplosion",
+ "kind": "vfx",
+ "batch": "vfx2",
+ "scored": false,
+ "note": "one-shot by user request: no scoring, no blind review. first_pass_strip -> user feedback (chunkier faceted crystal cluster, frosted ring, smaller flash) -> final (Previews/IceExplosion_ice_strip.png)"
+}

@@ -1,0 +1,167 @@
+{
+ "asset": "Bottle_01",
+ "kit": "Props",
+ "type": "Bottle",
+ "seed": 1,
+ "params": {
+  "shape": "round",
+  "R": 0.762,
+  "H": 1.923
+ },
+ "tris": 560,
+ "budget_class": "small",
+ "budget_target": 600,
+ "budget_ceiling": 1500,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.646,
+  "y": 1.646,
+  "z": 2.177
+ },
+ "origin": "bottom",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 0,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "ink",
+   "h_lt",
+   "h"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#E86A62",
+     "h": "#B8343B"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6"
+    }
+   }
+  ]
+ },
+ "studio": "Pickup: CanCollide off, CanTouch on (pickup trigger), CollisionFidelity Box, CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "round potion bottle, 20 radial steps, bulging body, ring on the liquid line, raised gold foot ring + lip ring, ink mushroom stopper",
+ "features": [
+  [
+   "stopper",
+   [
+    0.0,
+    0.0,
+    1.977
+   ],
+   0.45
+  ],
+  [
+   "liquid_line",
+   [
+    0.533,
+    0.0,
+    1.115
+   ],
+   0.6
+  ],
+  [
+   "foot",
+   [
+    0.533,
+    0.0,
+    0.06
+   ],
+   0.45
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_top.png",
+  "silhouette": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_silhouette.png",
+  "close_stopper_studio": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_close_stopper_studio.png",
+  "close_stopper_flat": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_close_stopper_flat.png",
+  "close_liquid_line_studio": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_close_liquid_line_studio.png",
+  "close_liquid_line_flat": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_close_liquid_line_flat.png",
+  "close_foot_studio": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_close_foot_studio.png",
+  "close_foot_flat": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_close_foot_flat.png",
+  "cw_royal": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_cw_royal.png",
+  "cw_crimson": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_cw_crimson.png",
+  "cw_verdant": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_cw_verdant.png",
+  "cw_shadow": "Models/Kits/_drafts/p4/Bottle_01/Bottle_01_cw_shadow.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_props.py:Bottle",
+ "made": "2026-10-28"
+}

@@ -1,0 +1,164 @@
+{
+ "asset": "Coin_09",
+ "kit": "Emblems",
+ "type": "Coin",
+ "seed": 9,
+ "params": {
+  "sides": 8,
+  "R": 0.864,
+  "h": 0.132,
+  "relief": 0.049,
+  "emblem": null
+ },
+ "tris": 192,
+ "budget_class": "small",
+ "budget_target": 600,
+ "budget_ceiling": 1500,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.596,
+  "y": 0.266,
+  "z": 1.596
+ },
+ "origin": "center",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 0,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "acc_dk",
+   "h_lt",
+   "h"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#E86A62",
+     "h": "#B8343B"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6"
+    }
+   }
+  ]
+ },
+ "studio": "Pickup: CanCollide off, CanTouch on (collect trigger), CollisionFidelity Box, Anchored (spin with TweenService); MeshPart.Color white (vertex colours); SmoothPlastic; origin centre",
+ "notes": "8-sided token (flat sides by design), chamfered gold rim, recessed hue field, raised light boss",
+ "features": [
+  [
+   "face",
+   [
+    0.0,
+    -0.132,
+    0.0
+   ],
+   0.6048
+  ],
+  [
+   "rim",
+   [
+    0.605,
+    0.0,
+    0.605
+   ],
+   0.4
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Emblems/Coin_09_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 9.3,
+  "basis": "panel x3 median",
+  "reviewed": "Coin_02 e2_panel (indiv 9.3/8.3/9.3)",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_emblems.py:Coin",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Emblems/Coin_09.glb",
+  "blend": "Models/Kits/Emblems/Coin_09.blend",
+  "turntable": "Models/Kits/Emblems/Coin_09_turntable.mp4",
+  "preview": "Models/Kits/Emblems/Coin_09_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Emblems/Coin_09_preview.jpg"
+}

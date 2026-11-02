@@ -1,0 +1,95 @@
+{
+ "asset": "Arch_04",
+ "kit": "Modular",
+ "type": "Arch",
+ "seed": 4,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette read clearly as a round-headed archway in a wall section; top view is a plain rectangle, as expected for a 2-stud-deep modular wall piece.",
+   "V2": "Some hierarchy (wall slab, stacked jamb blocks, voussoir ring, small gold keystone) but the upper half is a large blank slab with only a thin coping, so medium/small detail is concentrated in a narrow band.",
+   "V3": "Symmetric and correct (A15 X 0.0, T1 tiling pass) but the forms are stiff: a flat rectangular slab with a narrow, tall opening and evenly stacked box jambs; little exaggeration beyond the keystone.",
+   "V4": "Consistent chamfers on coping, jamb blocks, voussoirs and keystone catch the light in the keystone, springing and end-section close-ups.",
+   "V5": "Clean smooth shading; no pinches, seams or z-fighting in keystone, springing or end-section close-ups.",
+   "V6": "Disciplined: stone hue in three values (light springer blocks, mid wall, dark plinth course) plus a single gold keystone.",
+   "V7": "660 tris vs module target 800: at target.",
+   "V8": "One LF_VertexColor material, stone main hue with gold keystone, kit-sized chamfers, 2-stud grid footprint (T1 pass); matches kit.",
+   "V9": "Studio line correct: Anchored, Default collision to keep the opening walkable, CanTouch off, grid-corner pivot, MeshPart.Color white, SmoothPlastic; all gates pass."
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Break up the blank upper wall: add a few coursed blocks or a string course above the arch, or raise the arch so the spandrel is smaller",
+   "Widen the opening and/or make the keystone and voussoirs larger and more exaggerated for a confident stylised read",
+   "Let the jamb blocks vary slightly in height or offset for a less mechanical stack"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "pier": 2.25,
+  "zs": 6.0,
+  "vous": 7
+ },
+ "tris": 660,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

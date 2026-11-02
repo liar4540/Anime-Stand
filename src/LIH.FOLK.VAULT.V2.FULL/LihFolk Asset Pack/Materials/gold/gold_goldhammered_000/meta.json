@@ -1,0 +1,116 @@
+{
+ "id": "gold_goldhammered_000",
+ "family": "gold",
+ "theme": "goldhammered",
+ "index": 0,
+ "seed": 8075.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_gold.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Foil",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "metal",
+  "gold",
+  "treasure",
+  "precious",
+  "goldhammered"
+ ],
+ "colors": [
+  [
+   "#f7cc59",
+   0.394
+  ],
+  [
+   "#f7cf61",
+   0.308
+  ],
+  [
+   "#f7d36c",
+   0.149
+  ],
+  [
+   "#f5c752",
+   0.148
+  ]
+ ],
+ "params": {
+  "C1": "#f8dc83",
+  "C2": "#f9cb54",
+  "C3": "#cb8228",
+  "C4": "#795518",
+  "C5": "#fff1c6",
+  "Mode": 0.0,
+  "Cells": 22.0,
+  "Antique": 0.10592836122514043,
+  "Gloss": 0.7228980143445505,
+  "Rows": 6.0,
+  "PerRow": 2.0,
+  "Seed": 8075.0
+ },
+ "normal_depth_px": 12.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.459,
+   "Color_Neutral": 0.437,
+   "Normal": 0.531,
+   "Roughness": 0.866,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.5,
+   0.996
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.002,
+   0.0
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 50.0,
+   "diel_luma_p99": 200.0,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 1.0,
+   "metal_albedo_luma": 205.8,
+   "rough_mean": 0.333,
+   "rough_min": 0.271,
+   "rough_expected": [
+    0.12,
+    0.5
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.1021,
+  "M_neutral_mean": 0.74,
+  "M_neutral_range_p5_p95": [
+   0.641,
+   0.841
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 10.6,
+ "preview": "preview.jpg"
+}

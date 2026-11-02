@@ -1,0 +1,98 @@
+{
+ "asset": "Bed_01",
+ "kit": "Furniture",
+ "type": "Bed",
+ "seed": 1,
+ "attempt": "w2r2",
+ "label": "rejected",
+ "score": 8.0,
+ "grades": [
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Instantly reads as a four-post bed from front, three-quarter, top and silhouette (arched headboard, corner posts with ball finials, footboard).",
+   "V2": "Clear hierarchy: big = frame and mattress, medium = headboard arch, footboard, blanket and pillow, small = gold ball finials and the folded blanket band.",
+   "V3": "Mattress is a plain flat box, blanket is a thin slab and the pillow is a hard trapezoid wedge; no puffiness or sag on the soft goods, so it reads as stiff primitives despite the nice arched headboard.",
+   "V4": "Bevel widths are inconsistent: the pillow has a large 45-degree chamfer while posts, rails and mattress edges have tiny chamfers that barely catch light.",
+   "V5": "Blanket-fold close-up shows the folded band's end as a separate block stepping out past the blanket's side face, reading as an intersection rather than a fold; finials slightly faceted.",
+   "V6": "One fabric hue (blanket, 2 values), frame wood in 2 browns, cream bedding, gold finials: disciplined within the furniture spec.",
+   "V7": "888 tris vs medium target 2000 / ceiling 4000: well under target.",
+   "V8": "Single LF_VertexColor material, gold fittings, cream bedding, wood frame; royal and verdant colourways swap only the blanket hue as intended.",
+   "V9": "Anchored, CollisionFidelity Box, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre: correct."
+  }
+ ],
+ "artifacts": [
+  [
+   "folded blanket band end protrudes as a separate stepped block beyond the blanket side",
+   "slightly faceted ball finials"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Make the soft goods soft: rounded, slightly puffy mattress edges, a plump pillow with pinched corners, and a blanket that drapes over the mattress sides",
+   "Rebuild the blanket fold so the turned-back band wraps the blanket edge cleanly instead of a block poking out the side",
+   "Unify bevel width across frame, pillow and mattress (~0.05-0.07 studs on the frame, softer rounding on fabric)"
+  ]
+ ],
+ "params": {
+  "W": 4.753,
+  "L": 7.209,
+  "head": "arch",
+  "cover": 0.629
+ },
+ "tris": 888,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

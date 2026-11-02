@@ -1,0 +1,250 @@
+{
+ "asset": "Katana_05",
+ "kit": "Weapons",
+ "type": "Katana",
+ "seed": 5,
+ "params": {
+  "L": 4.538,
+  "ew0": 0.311,
+  "sw0": 0.127,
+  "t0": 0.126,
+  "curve": 0.396,
+  "clip": 0.868,
+  "GL": 1.596,
+  "gr": 0.177,
+  "wraps": 7,
+  "tsuba": "oval",
+  "tR": 0.62,
+  "ps": 0.248,
+  "hilt_steps": 18
+ },
+ "tris": 2480,
+ "budget_class": "weapon",
+ "budget_target": 2500,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.24,
+  "y": 1.091,
+  "z": 6.528
+ },
+ "origin": "hand/grip point",
+ "symmetric": "Y",
+ "symmetry_error": {
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "blade_base_on_grip_axis",
+   "offset": {
+    "X": 0.0
+   },
+   "max": 0.0
+  },
+  {
+   "name": "tsuba_on_grip_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "tsuba_on_grip",
+   "gap": 0.0,
+   "penetration": 0.065,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "habaki_on_tsuba",
+   "gap": 0.0,
+   "penetration": 0.02,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "blade_through_habaki",
+   "gap": 0.0,
+   "penetration": 0.05326,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 258,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "ink",
+   "m_lt",
+   "m",
+   "m_dk",
+   "h",
+   "h_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "m_lt": "#B4BECC",
+     "m": "#7C8899",
+     "m_dk": "#4C5566",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590"
+    }
+   }
+  ]
+ },
+ "studio": "Tool Handle; origin = hand/grip point; CollisionFidelity Hull; CanCollide off when equipped; Massless; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "katana-style: even curved single edge with rounded kissaki, oval tsuba, gold habaki, long two-hand hue wrap",
+ "features": [
+  [
+   "tsuba",
+   [
+    0.0,
+    0.0,
+    0.998
+   ],
+   0.75
+  ],
+  [
+   "kashira",
+   [
+    0.0,
+    0.0,
+    -1.018
+   ],
+   0.45
+  ],
+  [
+   "kissaki",
+   [
+    0.441,
+    0.0,
+    5.193
+   ],
+   0.7
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_front.png",
+  "three_quarter": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_three_quarter.png",
+  "top": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_top.png",
+  "silhouette": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_silhouette.png",
+  "close_tsuba_studio": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_close_tsuba_studio.png",
+  "close_tsuba_flat": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_close_tsuba_flat.png",
+  "close_kashira_studio": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_close_kashira_studio.png",
+  "close_kashira_flat": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_close_kashira_flat.png",
+  "close_kissaki_studio": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_close_kissaki_studio.png",
+  "close_kissaki_flat": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_close_kissaki_flat.png",
+  "cw_royal": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_cw_royal.png",
+  "cw_crimson": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_cw_crimson.png",
+  "cw_verdant": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_cw_verdant.png",
+  "cw_shadow": "Models/Kits/Weapons/_renders/Katana_05/Katana_05_cw_shadow.png"
+ },
+ "score": {
+  "score": 8.7,
+  "basis": "single blind",
+  "reviewed": "Katana_01 rv2",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_weapons.py:Katana",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Weapons/Katana_05.glb",
+  "blend": "Models/Kits/Weapons/Katana_05.blend",
+  "turntable": "Models/Kits/Weapons/Katana_05_turntable.mp4",
+  "colourway_glbs": {
+   "royal": "Models/Kits/Weapons/colourways/Katana_05__royal.glb",
+   "crimson": "Models/Kits/Weapons/colourways/Katana_05__crimson.glb",
+   "verdant": "Models/Kits/Weapons/colourways/Katana_05__verdant.glb",
+   "shadow": "Models/Kits/Weapons/colourways/Katana_05__shadow.glb"
+  }
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12
+}

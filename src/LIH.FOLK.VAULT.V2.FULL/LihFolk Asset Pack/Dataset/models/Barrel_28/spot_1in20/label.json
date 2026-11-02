@@ -1,0 +1,99 @@
+{
+ "asset": "Barrel_28",
+ "kit": "Props",
+ "type": "Barrel",
+ "seed": 28,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 10.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette reads as a bulged barrel with hoop lips and nail bumps; front, three-quarter and top (ring with hoop edge and 4 nails) all read at 64 px; outline symmetric, A15 X/Y error 0.0.",
+   "V2": "Clear hierarchy: big bulged stave body, medium gold hoops with raised lip at top and bottom, small hex nails (4 per hoop) as accents.",
+   "V3": "Confident squat stylised proportion: strong belly bulge, tapered ends and a chunky rim lip, not a stiff cylinder.",
+   "V4": "Consistent soft bevels on hoop edges, rim lip and stave ends catch light evenly in the hoop and lid close-ups; nail heads chamfered.",
+   "V5": "Close-ups clean: no patches, pinches, z-fighting or seams; slight stepping on the inner rim follows stave boundaries (by design); A17/A18 pass, 0 flipped faces, 0 self-intersections.",
+   "V6": "Disciplined: wood hue in alternating light/mid/dark stave values, gold accent hoops, ink nails; colourways swap the hue cleanly while keeping gold and ink.",
+   "V7": "1728 tris vs medium-class target 2000 (ceiling 4000): at or under target.",
+   "V8": "One white vertex-colour material, kit gold accent and ink dark, smooth shading and small chamfers match the kit anchor barrel.",
+   "V9": "Studio line correct: Anchored, Hull collision, CanTouch off, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre; A12 pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Inner rim edge slightly stepped/wavy in top view where stave tops meet (reads as stave variation, not a defect)",
+   "Faint facet line inside the light stave in the staves close-up (very minor)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Smooth the inner rim lip so the stave-top steps read as deliberate notches rather than a slightly wobbly ring from above",
+   "Add a touch more stave-to-stave value contrast on the body (walnut and oak staves read close in mid tones)",
+   "Consider a slightly thicker top hoop to strengthen the top-third silhouette at 64 px"
+  ]
+ ],
+ "params": {
+  "H": 2.479,
+  "R": 1.092,
+  "bulge": 0.2,
+  "staves": 10,
+  "hoop_role": "acc"
+ },
+ "tris": 1728,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

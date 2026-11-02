@@ -1,0 +1,190 @@
+{
+ "asset": "PipeRun_04",
+ "kit": "Props",
+ "type": "PipeRun",
+ "seed": 4,
+ "attempt": "p3_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  9.7,
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.4,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Three-quarter and silhouette read instantly as a flanged S-bend pipe run; top view reads as pipe plus flanges; front collapses to a vertical column but the flanges and clamp band still make it a recognisable pipe.",
+   "V2": "Clear tiers: big = teal tube run with 3 bends, medium = 4 gold flanges plus a slimmer mid clamp band, small = dark hex bolts evenly spaced (16 bolts, all seated per gate report).",
+   "V3": "Chunky tube with smooth, generous elbow radii and oversized gold flanges reads as confident stylised plumbing, not stiff primitives; proportions close to the PASS anchor.",
+   "V4": "Flange rims show a consistent chamfer highlight band (coupling studio close-up) and bolts are chamfered hex; bevel scale matches the anchor's flange treatment.",
+   "V5": "No pinches, seams or z-fighting, and A17/A18 pass with 0 self-intersections or flipped faces, but close-ups show visible polygon stepping on the elbow outline (elbow close-up, left edge) and on the flange rims and inner rings (coupling flat).",
+   "V6": "Disciplined teal + gold accent + ink-dark bolts with clear value contrast; the crimson and shadow colourways swap only the one hue and keep gold and ink.",
+   "V7": "1664 tris vs medium-class target 2000 / ceiling 4000: under target.",
+   "V8": "One white LF_VertexColor material with vertex colours; gold accent, ink bolts and one hue in kit palette; flange, bolt and bevel language matches the PASS Pipe_Run anchor.",
+   "V9": "Studio line is correct: Anchored, Hull collision (Box per straight if walked on), CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; A12 pass."
+  },
+  {
+   "V1": "Silhouette reads as a flanged S-offset pipe in three-quarter and silhouette views; front (straight vertical run with face-on flange) and top (diagonal pipe with flanges) still read as pipe; no symmetry-by-design required (symmetric null), all seats pass.",
+   "V2": "Clear three tiers: long teal pipe body (big), gold flanges and a narrower coupling band (medium), small ink-dark hex bolts on every flange (small).",
+   "V3": "Confident stylised chunky proportions: thick pipe, generous elbow radii, oversized flanges and bolts; the offset route gives the run a lively S-curve rather than stiff primitives.",
+   "V4": "Flange and coupling outer rims carry a visible chamfer highlight (coupling and elbow close-ups), bolts are bevelled hex prisms, pipe rims are softened; the end flange face-to-rim edge reads a bit harder but is within kit norm.",
+   "V5": "Close-ups are clean: smooth shading on the bends, no pinches, seams or z-fighting where flanges meet the pipe (128 cross-shell overlaps are intentional interpenetrating parts); only low-segment polygonal steps on the elbow outlines, same as the anchor.",
+   "V6": "Disciplined: one teal hue in two to three values (pipe, lighter flange inner face), gold accent flanges, ink-dark bolts; colourways (crimson, shadow) swap only the hue and keep gold/ink.",
+   "V7": "1664 tris vs medium target 2000 / ceiling 4000: under target.",
+   "V8": "Material, palette and bevels match the kit (one white vertex-colour material, gold accent, ink dark), but the open ends show no ink-dark bore: the end seen face-on in the front view is a teal disc, and the end_bore close-up is framed from behind the flange so the bore is never shown, unlike the kit anchor's dark bore hole.",
+   "V9": "Studio line correct: Anchored, Hull collision (Box per straight if walked on), CanTouch off, CastShadow on, MeshPart.Color white for vertex colours, SmoothPlastic, origin bottom-centre (A12 pass)."
+  },
+  {
+   "V1": "Silhouette render reads as a clear S-shaped pipe run with flange nubs at 64 px; three-quarter shows the double offset; front (side-on vertical pipe with flanges) and top (pipe with elbow and flanges) still read unmistakably as pipe.",
+   "V2": "Clear tiers: thick teal run and elbows (big), gold end flanges, elbow flange and mid clamp band (medium), small hex ink bolts (small), and no surface noise.",
+   "V3": "Chunky pipe with oversized flanges and tight stylised elbows; the proportions are confident and toy-like, not stiff primitives. Asymmetric by design (A15 n/a) and origin bottom-centre (A12 pass).",
+   "V4": "Gold flange and band rims show a lighter chamfer strip that catches light in the coupling and elbow close-ups; bolts are hex with softened tops. Bevel width looks consistent across flanges.",
+   "V5": "Minor: the flange rims are a low-segment cylinder whose flat panels show as distinct facets in the end_bore close-up, and the elbow close-ups (studio and flat) show a visible kink at the straight-to-bend transition plus banding along the bend. No z-fighting, pinches or seams; gates A17/A18 are clean (0 self-intersections, 0 cap overlaps, 0 flipped faces).",
+   "V6": "Disciplined: one pipe hue (teal, with a slightly different value on the flange faces), gold accent and ink bolts. Colourways (crimson, shadow) swap only the pipe hue and keep the gold and ink.",
+   "V7": "1664 tris against a medium-class target of 2000 (ceiling 4000), so it is under target.",
+   "V8": "One white LF_VertexColor material with vertex colours, kit gold accent and ink dark bolts, small chamfers on the rims and smooth-shaded pipe; it sits alongside the kit pipe anchor without clashing.",
+   "V9": "Studio line is correct: Anchored, Hull collision (Box per straight if walked on), CanTouch off, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre. All gates A1-A18 pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Polygon stepping visible on the elbow silhouette and flange rims at close-up range (low radial segment count)",
+   "The end_bore close-up frames the back of the end flange, so the open bore cannot be checked in any render (front, top and three-quarter views also show the end from behind)",
+   "Flange faces on the pipe side are pipe-coloured (teal) and read as a separate teal collar; this matches the anchor, so it is minor"
+  ],
+  [
+   "Low-segment polygonal steps visible on the elbow outlines in close-up (minor, matches anchor)",
+   "No visible dark bore at the open pipe ends; end_bore close-up does not show the bore face"
+  ],
+  [
+   "Flange and clamp rims show low-segment faceting (flat panels visible in the end_bore close-up)",
+   "Elbow outline has a visible kink and segment banding at the straight-to-bend transition (elbow close-ups, studio and flat)",
+   "128 cross-shell overlaps, which are intentional: bolts sunk 0.053-0.062 studs into the flanges, all seated with no gap"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Raise the radial segment count on the elbow sweeps and flange rims (or add a support loop) so the close-up outlines read round",
+   "Reframe the end_bore close-up (and ideally one hero view) to look into the open end so the bore and its inner chamfer can be checked",
+   "Consider colouring the pipe-side flange face gold, or slightly darker teal, so the flange reads as one solid part instead of a teal collar plus gold ring"
+  ],
+  [
+   "Give the open ends a clear ink-dark bore (recessed inner wall vertex-coloured dark) and reframe the end_bore close-up to look into the opening",
+   "Add a few more segments to the elbow sweeps so the bend outlines read smoother at close range",
+   "Soften the end flange face-to-rim edge with the same ~0.045 stud chamfer seen on the coupling rims"
+  ],
+  [
+   "Raise the radial segment count on the flange and clamp rims (or smooth them with the chamfer as a support loop) so the rim reads round in close-ups",
+   "Add one or two more segments at each elbow's straight-to-bend transition so the outline flows without a kink",
+   "Optionally fillet or chamfer where the pipe meets each flange face so the junction catches light like the rims do"
+  ]
+ ],
+ "params": {
+  "segments": 4,
+  "dirs": [
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    0.0,
+    1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    0.0,
+    1.0,
+    0.0
+   ]
+  ],
+  "lens": [
+   3.094,
+   2.859,
+   2.138,
+   2.317
+  ],
+  "R": 0.376
+ },
+ "tris": 1664,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

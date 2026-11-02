@@ -1,0 +1,160 @@
+{
+ "asset": "Badge_02",
+ "kit": "Emblems",
+ "type": "Badge",
+ "seed": 2,
+ "attempt": "e3_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  9.3,
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Elongated hexagon with gold rim reads instantly in front, three-quarter and silhouette; top/edge view is a chunky slab with stepped rim, still reads as a badge; A15 symmetry X/Y 0.0 and front outline is symmetric, so no correctness cap.",
+   "V2": "Clear three tiers: two-step gold rim/back plate (big), raised teal field with dark inner bevel ring (medium), cream chevron (small); each layer separated by depth and value.",
+   "V3": "Proportions are sound but cautious: the chevron is thin and covers only about a third of the field width, leaving a large empty teal area, and the plate is a fairly literal extruded hexagon rather than a pushed, exaggerated shape.",
+   "V4": "Consistent small chamfers on rim tiers, field edge and chevron; highlights catch along the chevron ridge and rim edges in the studio close-ups, no razor or blobby edges.",
+   "V5": "Studio close-ups of emblem and rim are clean: no pinches, seams, z-fighting or patches; field_on_plate penetration 0.005 hidden; only a slightly low-segment arc on the rim corner visible in flat light.",
+   "V6": "Disciplined kit palette: gold accent in light/mid/dark values, one teal hue with a darker bevel value, warm cream emblem; strong value contrast; colourways (crimson, shadow) swap only the field hue cleanly.",
+   "V7": "516 tris vs small-class target 600 (ceiling 1500), under target.",
+   "V8": "One white LF_VertexColor material with vertex colours, chamfer scale and gold/cream/hue palette match the Badge_Shield anchor kit look.",
+   "V9": "Studio line correct: Anchored, CanCollide off for decor, CollisionFidelity Box, MeshPart.Color white, SmoothPlastic, origin bottom-centre (A12 pass)."
+  },
+  {
+   "V1": "Front reads as an elongated hexagon rank badge with a centred chevron, 3/4 shows the stacked rim/back plate depth, top shows a clean thin plate; silhouette is a clean convex hex outline with rounded corners, readable at 64 px from every view (if generic: no notches or cut-ins).",
+   "V2": "Three clear tiers: gold hex rim plate (big), raised teal field (medium), cream chevron (small); the rim adds a secondary step (front gold frame over darker back plate) that reads in 3/4.",
+   "V3": "Plate/field proportions are fine and the outline is centred (A15 X/Y error 0.0, emblem offset 0.0098), but the chevron is timid: thin arms, roughly a quarter of the field width, leaving a large empty teal field, so the badge reads as an extruded hex primitive rather than a confidently exaggerated stylised piece.",
+   "V4": "Consistent small chamfers on rim, field edge and chevron; rim close-up shows an even highlight band along the bevel and the chevron's top edge catches a light line; corners rounded, nothing razor or blobby.",
+   "V5": "Close-ups (emblem, rim, studio + flat) show smooth shading with no pinches, seams, faceting or z-fighting; gates A17/A18 pass, 0 self-intersections, 0 cap overlaps, 0 flipped faces (140 cross-shell overlaps are intentional separate shells, field penetration only 0.005).",
+   "V6": "Disciplined: gold accent rim, one teal hue in two values (field + darker side wall), cream emblem; colourways (crimson, shadow) swap only the field hue cleanly.",
+   "V7": "516 tris vs small-class target 600 (ceiling 1500): under target.",
+   "V8": "One white vertex-colour material (LF_VertexColor, SmoothPlastic), kit gold/cream/steel-free palette plus one hue, chamfer size and smooth shading match the Badge_Shield kit piece.",
+   "V9": "Studio line correct: Anchored, CanCollide off for decor, CollisionFidelity Box, MeshPart.Color white for vertex colours, SmoothPlastic, origin bottom-centre (A12 pass)."
+  },
+  {
+   "V1": "Front and silhouette outline is a clean, symmetric elongated hexagon (A15 X/Y error 0.0) with a centred chevron; reads as a rank badge in front, three-quarter and silhouette views; the edge-on top view is a thin bevelled slab, as expected for a badge.",
+   "V2": "Three distinct tiers: big gold plate with a darker stepped back plate, medium inset teal field with a chamfered edge, small raised cream chevron; the small tier is only one element.",
+   "V3": "Chunky rounded rim and stepped back plate read as stylised, but the chevron is a thin, undersized flat strip (about 1/3 of field width, thin stroke) that leaves a large empty field, and the plain hexagon is close to a stock primitive.",
+   "V4": "Consistent rounded bevels on the outer rim and back step, a chamfered field edge that catches light (rim close-up), and a small chamfer with a highlight on the chevron's top edge.",
+   "V5": "Close-ups (emblem and rim, studio and flat) show smooth gradients with no pinches, seams, faceting or z-fighting; flipped_faces 0, cap_overlaps 0, self_intersections 0. The 140 cross-shell overlaps come from the field set 0.005 into the plate on purpose, and none of it shows.",
+   "V6": "Disciplined: gold rim with a darker gold/brown back step, a warm cream inner band and chevron, and a teal field in two values (field plus dark edge). Strong value contrast between the chevron and the field.",
+   "V7": "516 tris, under the small-class target of 600 (ceiling 1500).",
+   "V8": "One white LF_VertexColor material with vertex colours. Uses the kit palette (gold accent, warm cream, one hue in two values) with chamfers and smooth shading, and the colourways (crimson, shadow) swap only the field hue, as the kit expects.",
+   "V9": "Studio line is correct: Anchored, CanCollide off when decorative, CollisionFidelity Box, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates A1-A18 pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Minor: rounded rim corners use few segments, a slight polygonal kink is visible in the flat-light rim close-up (not visible in studio light)",
+   "Note: the light middle rim band reads slightly pinkish-tan under studio light versus the cream emblem"
+  ],
+  [],
+  [
+   "none visible; 140 cross-shell overlaps are intentional (field sunk 0.005 into the plate), with no z-fighting in the close-ups"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Enlarge and thicken the chevron (or add a second chevron/rank mark) so the emblem fills more of the field and strengthens the small-detail read at 64 px",
+   "Push the plate shape a bit (taller top point, slight taper or flared shoulders) for a more confident stylised silhouette than a plain hexagon",
+   "Add one or two segments to the rounded rim corners so they stay smooth in flat light",
+   "Shift the light rim band toward the kit gold/cream so it does not read pinkish next to the cream emblem"
+  ],
+  [
+   "Scale the chevron up (about 45-55% of field width) and thicken its arms so the emblem carries the read at 64 px and fills the empty field",
+   "Give the field or rim one more small-scale accent (e.g. a second stacked chevron or small corner studs) to strengthen the small tier",
+   "Consider a slightly more distinctive outline (e.g. a notch at the top point or flared lower edges) so the silhouette is less generic than a plain hexagon"
+  ],
+  [
+   "Enlarge and thicken the chevron (wider stroke, taller extrusion, or a double chevron) so the emblem fills more of the field and holds up at 64 px",
+   "Add a small-tier accent that also breaks the plain hexagon outline, e.g. studs at the hexagon vertices or a top bail/pin, to strengthen the hierarchy and silhouette identity",
+   "Give the empty field some form (slight dome or inner bevel step) so the large flat area is less stiff"
+  ]
+ ],
+ "params": {
+  "shape": "hex",
+  "W": 0.95,
+  "H": 2.271,
+  "emblem": "chevron",
+  "inset": 0.19
+ },
+ "tris": 516,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

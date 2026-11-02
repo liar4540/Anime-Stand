@@ -1,0 +1,95 @@
+{
+ "asset": "Katana_01",
+ "type": "Katana",
+ "tris": 2396,
+ "budget_class": "weapon",
+ "budget_target": 2500,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.276,
+  "y": 1.123,
+  "z": 6.24
+ },
+ "origin": "hand/grip point",
+ "symmetric": "Y",
+ "symmetry_error": {
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "alignment": [
+  {
+   "name": "blade_base_on_grip_axis",
+   "offset": {
+    "X": 0.0
+   },
+   "max": 0.0
+  },
+  {
+   "name": "tsuba_on_grip_axis",
+   "offset": {
+    "X": 0.0,
+    "Y": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "tsuba_on_grip",
+   "gap": 0.0,
+   "penetration": 0.065,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "habaki_on_tsuba",
+   "gap": 0.0,
+   "penetration": 0.02,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "blade_through_habaki",
+   "gap": 0.0,
+   "penetration": 0.06026,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 224,
+ "studio": "Tool Handle; origin = hand/grip point; CollisionFidelity Hull; CanCollide off when equipped; Massless; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "colourways": [
+   "teal",
+   "royal",
+   "crimson",
+   "verdant",
+   "shadow"
+  ]
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "asset": "Bottle_27",
+ "kit": "Props",
+ "type": "Bottle",
+ "seed": 27,
+ "params": {
+  "shape": "heart",
+  "R": 0.69,
+  "H": 1.931,
+  "sides": 8
+ },
+ "tris": 576,
+ "budget_class": "small",
+ "budget_target": 600,
+ "budget_ceiling": 1500,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.351,
+  "y": 1.351,
+  "z": 2.183
+ },
+ "origin": "bottom",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 0,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "ink",
+   "cream",
+   "h_lt",
+   "h"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "h_lt": "#E86A62",
+     "h": "#B8343B"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "h_lt": "#8CCB57",
+     "h": "#4E9A3E"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "h_lt": "#C98AF2",
+     "h": "#9A3FD6"
+    }
+   }
+  ]
+ },
+ "studio": "Pickup: CanCollide off, CanTouch on (pickup trigger), CollisionFidelity Box, CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "8-sided faceted heart potion vial (flat panels by design), 0.025 chamfer on every facet edge, hue liquid below a ring, glass panels alternating light values, gold foot + lip, ink stopper",
+ "features": [
+  [
+   "stopper",
+   [
+    0.0,
+    0.0,
+    1.983
+   ],
+   0.45
+  ],
+  [
+   "liquid_line",
+   [
+    0.483,
+    0.0,
+    1.159
+   ],
+   0.6
+  ],
+  [
+   "foot",
+   [
+    0.483,
+    0.0,
+    0.06
+   ],
+   0.45
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Props/Bottle_27_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 10.0,
+  "basis": "panel x3 median",
+  "reviewed": "Bottle_01 p5_panel (indiv 10/10/10, faceted vial); round lathe versions 8.0 (p3) and 8.3 (p4) rejected",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_props.py:Bottle",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Props/Bottle_27.glb",
+  "blend": "Models/Kits/Props/Bottle_27.blend",
+  "turntable": "Models/Kits/Props/Bottle_27_turntable.mp4",
+  "preview": "Models/Kits/Props/Bottle_27_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Props/Bottle_27_preview.jpg"
+}

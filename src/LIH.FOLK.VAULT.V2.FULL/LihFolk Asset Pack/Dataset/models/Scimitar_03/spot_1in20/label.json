@@ -1,0 +1,109 @@
+{
+ "asset": "Scimitar_03",
+ "kit": "Weapons",
+ "type": "Scimitar",
+ "seed": 3,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette read instantly as a scimitar: curved, flaring blade with clipped tip, crescent guard with ball finials, ball pommel; top view is a thin sliver, as expected for any sword, but guard finial still reads.",
+   "V2": "Clear hierarchy: big curved blade, medium crescent guard and ball pommel, small grip bands, finial balls and pommel collar.",
+   "V3": "Confident stylised proportions: exaggerated blade flare toward the tip, chunky pommel, swept crescent guard; nothing reads as stiff primitives.",
+   "V4": "Guard has consistent chamfers that catch a clean highlight line, blade facets and fuller edges read crisply; pommel collar rim is the only slightly hard-looking edge.",
+   "V5": "Flat-light close-ups are clean and A17/A18 pass, but studio fuller close shows a faint shading smear in the dark fuller band near the lower blade and the pommel sphere outline is visibly faceted.",
+   "V6": "Disciplined: gold accent, teal grip hue in two values, steel greys on the blade; colourways swap only the grip hue.",
+   "V7": "2440 tris vs weapon target 2500 (ceiling 4000): at or under target.",
+   "V8": "One white vertex-colour material, kit gold/steel/teal palette, chamfer scale and smooth shading match the kit weapons.",
+   "V9": "Studio line: Tool Handle, origin at grip, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "faint shading smear in the dark fuller band on the lower blade (studio light only)",
+   "faceted outline on the pommel sphere"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add a few segments / smooth the pommel sphere so its outline is round at close range",
+   "Clean the normals or add a supporting loop along the fuller's dark band on the lower blade to remove the smear",
+   "Add a small chamfer to the pommel collar rim to match the guard bevels"
+  ]
+ ],
+ "params": {
+  "L": 4.823,
+  "ew0": 0.481,
+  "sw0": 0.214,
+  "t0": 0.111,
+  "curve": 0.762,
+  "flare": 0.815,
+  "clip": 0.699,
+  "gL": 1.062,
+  "rise": 0.477,
+  "GL": 1.067,
+  "gr": 0.148,
+  "wraps": 4,
+  "pommel": "ball",
+  "ps": 0.292,
+  "hilt_steps": 18
+ },
+ "tris": 2440,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

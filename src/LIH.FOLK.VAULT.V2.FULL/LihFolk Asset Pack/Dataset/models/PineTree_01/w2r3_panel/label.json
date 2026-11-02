@@ -1,0 +1,159 @@
+{
+ "asset": "PineTree_01",
+ "kit": "Nature",
+ "type": "PineTree",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  9.3,
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.6,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Stacked-tier conifer silhouette with scalloped tier edges reads instantly from front, three-quarter and top (star-shaped plan); strong at 64 px.",
+   "V2": "Clear big (4 tiers decreasing upward), medium (light rim band under each tier) and small (pointed tip cap, scallops) hierarchy.",
+   "V3": "Stylised tiered cones are confident, but the trunk is reduced to a tiny brown disc under the bottom tier so the tree looks like it sits on its skirt; proportion only partly right.",
+   "V4": "Consistent rounded bevel on every tier rim and the tip, catching light as a lighter band; no razor edges.",
+   "V5": "Tier faces and rims shade cleanly in studio and flat close-ups; only gentle radial facets on the cones, no pinches or z-fighting. (Trunk-base close-up camera sits inside the foliage and shows only green, so the trunk itself is unverified there.)",
+   "V6": "One foliage hue in two values (body + lighter rim) plus a sliver of bark brown; colourways (autumn, frost) keep the same disciplined two-value scheme.",
+   "V7": "1920 tris vs tree target 2000 (ceiling 5000): at target.",
+   "V8": "One vertex-colour material, smooth weighted shading, consistent bevels and a value-banded palette: matches the kit.",
+   "V9": "Studio line: Anchored, Hull collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre: correct."
+  },
+  {
+   "V1": "Four stacked wavy-rimmed tiers with a pointed tip read instantly as a pine from front, three-quarter and silhouette; top view is a clear layered star.",
+   "V2": "Big cone mass and medium tiers with light rim bands are clear, but there is no small tier: the trunk is a barely visible stub under the bottom skirt and there are no cones, branches or tufts.",
+   "V3": "Tapering tiers with scalloped drooping rims give a confident, toy-like stylised pine; tier spacing and taper are well judged.",
+   "V4": "Every tier rim carries a consistent lighter chamfer band that catches light evenly, and the tip has a matching cap band.",
+   "V5": "Tier-rim and tip close-ups are clean smooth shells with no pinches, seams or z-fighting; 0 cross-shell overlaps, A17/A18 pass. (Trunk-base close-up camera lands inside the foliage, so it shows nothing.)",
+   "V6": "One foliage hue in 2 values (body + rim) with a small bark-brown secondary; autumn and frost colourways keep the same discipline.",
+   "V7": "1920 tris vs tree target 2000 - at/under target.",
+   "V8": "Single LF_VertexColor material, smooth fused shells with chamfered rim bands and foliage + bark palette as the Nature spec describes.",
+   "V9": "Studio line: Anchored, Hull collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre."
+  },
+  {
+   "V1": "Classic stacked-tier conifer reads instantly from front, 3/4 and silhouette (stepped triangle with wavy tier rims); top view shows concentric star-shaped tiers around the tip.",
+   "V2": "Big tiered cone and small rim bands/tip cap read, but the medium trunk tier is effectively missing: only a thin brown disc shows under the bottom tier, and the trunk-base close-up shows nothing but green underside.",
+   "V3": "Tier proportions taper nicely, but each tier is a plain cone with a scalloped rim and the tree sits on the ground with no visible trunk, giving a stiff, primitive cone-stack feel.",
+   "V4": "Every tier ends in a consistent thick lighter-green lip with a soft chamfer that catches light (tier-rim close-up), tip has the same capped treatment.",
+   "V5": "Clean smooth shading on tiers and rims in studio and flat close-ups; no pinches, seams or z-fighting (0 cross-shell overlaps).",
+   "V6": "Foliage green in two values (body + light rim) and a bark brown; autumn (with gold rims) and frost colourways stay disciplined.",
+   "V7": "1920 tris vs tree target 2000 (ceiling 5000).",
+   "V8": "One white vertex-colour material, smooth fused shells, foliage hue + bark secondary; fits the nature kit.",
+   "V9": "Anchored, Hull collision, CanTouch off, SmoothPlastic, MeshPart.Color white, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Trunk-base close-up camera is inside the canopy (frame is solid green)",
+   "Trunk barely visible below the lowest tier"
+  ],
+  [],
+  []
+ ],
+ "top_fixes": [
+  [
+   "Lengthen/expose the trunk (about 0.6-1 stud visible below the bottom tier, slight root flare) so the tree does not read as sitting on its skirt",
+   "Fix the trunk_base close-up camera so it frames the trunk",
+   "Optionally add a slight random twist/offset per tier for a less mechanical stack"
+  ],
+  [
+   "Lengthen the exposed trunk so a bark section shows below the bottom tier (fixes the small tier and the trunk-base close-up)",
+   "Add a small detail tier: a couple of cones or a tilted tip tuft",
+   "Vary tier rotation/scallop slightly so the cone reads less like a perfect stack of primitives"
+  ],
+  [
+   "Expose a short tapered trunk (0.6-1 stud) with a small root flare below the bottom tier so the tree is not a cone sitting on the ground",
+   "Add slight droop/tilt variation or offset between tiers so the stack reads less like identical primitive cones",
+   "Vary rim scallop depth per tier for more organic hierarchy"
+  ]
+ ],
+ "params": {
+  "tiers": 4,
+  "R0": 2.854,
+  "H": 10.163,
+  "rt": 0.446,
+  "ht": 1.558,
+  "lobes": 8,
+  "scallop": 0.086
+ },
+ "tris": 1920,
+ "budget_class": "tree",
+ "date": "2026-10-28"
+}

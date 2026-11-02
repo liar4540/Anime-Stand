@@ -1,0 +1,97 @@
+{
+ "asset": "Rock_02",
+ "kit": "Nature",
+ "type": "Rock",
+ "seed": 2,
+ "attempt": "spot_1in20",
+ "label": "rejected",
+ "score": 8.0,
+ "grades": [
+  2,
+  1,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Low faceted slab with a moss top reads as a rock from front, three-quarter, top and silhouette; bottom origin, no visible floating of the main mass.",
+   "V2": "Big mass plus a moss cap, but medium facets are few and large and the small pebble is only visible in the top view (hidden in front, three-quarter, silhouette, and not actually in frame in the pebble close-up).",
+   "V3": "Partly stylised: the few big planar cuts make it read more like a cut gem/crystal than a weathered stone, and the 1-stud-tall slab is fairly flat.",
+   "V4": "Designed flat facets with consistently softened edges catching a light line in the facets close-up.",
+   "V5": "Facets close-up (studio and flat) shows a kinked step in the moss/stone colour boundary along the top edge (vertex-colour stair); facets otherwise shade cleanly.",
+   "V6": "One stone hue in three values plus leaf-green moss as the single secondary; sandstone and basalt colourways keep the structure.",
+   "V7": "224 tris vs rock target 400 (ceiling 1000): under target.",
+   "V8": "One white vertex-colour material, designed rock facets, stone + moss green per the Nature kit.",
+   "V9": "Studio line: Anchored, CollisionFidelity Hull, CanTouch off, MeshPart.Color white, SmoothPlastic, bottom-centre origin."
+  }
+ ],
+ "artifacts": [
+  [
+   "Kinked step in the moss/stone vertex-colour boundary on the top edge (facets close-up)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Move the pebble to a visible spot beside the rock (front/three-quarter side) and seat it, so the small tier reads; reframe the pebble close-up on it",
+   "Break the large gem-like planes with a few secondary bevelled cuts so it reads as weathered stone",
+   "Clean the moss boundary onto a straight edge loop and let the moss drape a little over the rim"
+  ]
+ ],
+ "params": {
+  "R": 1.365,
+  "flat": 0.788,
+  "n": 20,
+  "extra": 1
+ },
+ "tris": 224,
+ "budget_class": "rock",
+ "date": "2026-10-28"
+}

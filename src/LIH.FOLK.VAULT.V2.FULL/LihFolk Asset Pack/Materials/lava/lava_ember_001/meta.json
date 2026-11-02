@@ -1,0 +1,117 @@
+{
+ "id": "lava_ember_001",
+ "family": "lava",
+ "theme": "ember",
+ "index": 1,
+ "seed": 3132.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_lava.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)",
+  "Emissive": "Emissive.png (mask for SurfaceAppearance emissive / Neon overlay parts)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "CrackedLava",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "lava",
+  "magma",
+  "fantasy",
+  "glow",
+  "hazard",
+  "ember"
+ ],
+ "colors": [
+  [
+   "#423031",
+   0.517
+  ],
+  [
+   "#f57c2d",
+   0.261
+  ],
+  [
+   "#5d2c26",
+   0.14
+  ],
+  [
+   "#b53c19",
+   0.082
+  ]
+ ],
+ "params": {
+  "C1": "#ffbb48",
+  "C2": "#f46021",
+  "C3": "#b0250c",
+  "C4": "#423234",
+  "C5": "#2f2729",
+  "Cells": 3.0,
+  "Melt": 0.2831478751537162,
+  "CrackW": 0.0685028444061191,
+  "Swirl": 0.9310814068122846,
+  "Bubbles": 0.0,
+  "Seed": 3132.0
+ },
+ "normal_depth_px": 20.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.366,
+   "Color_Neutral": 0.505,
+   "Normal": 0.502,
+   "Roughness": 0.3,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.5,
+   0.981
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.003,
+   0.002
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 43.6,
+   "diel_luma_p99": 178.6,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.727,
+   "rough_min": 0.451,
+   "rough_expected": [
+    0.4,
+    0.9
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.0871,
+  "M_neutral_mean": 0.732,
+  "M_neutral_range_p5_p95": [
+   0.552,
+   0.911
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 69.7,
+ "preview": "preview.jpg"
+}

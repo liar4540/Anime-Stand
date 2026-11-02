@@ -1,0 +1,167 @@
+{
+ "asset": "Barrel_04",
+ "kit": "Props",
+ "type": "Barrel",
+ "seed": 4,
+ "attempt": "p3_panel",
+ "label": "rejected",
+ "score": 8.0,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.0,
+  7.0,
+  8.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette read instantly as a barrel (hoop notches at shoulder and foot, rounded ends); top view reads as a staved ring with gold rim; A15 X/Y error 0.0 and the outline is left-right even, nothing floating.",
+   "V2": "Big (bulged body) and medium (two gold hoops, rolled rim lip, recessed head) read clearly, but there is no small tier: stave joints are paint stripes only, no nails/rivets on hoops, no bung, no groove at the stave ends, and the interior head is a plain flat disc.",
+   "V3": "Barrel bulge is mild and the body is tall and nearly straight-sided between hoops (2.0 x 2.7 studs), so it reads as a lightly tapered cylinder rather than a confidently exaggerated chunky barrel; hoops are thin relative to the body.",
+   "V4": "Rim lip is softly rounded and the bottom edge is rounded, but the hoops are thin bands whose edges read as near-hard steps in the hoop/lid close-ups, and stave divisions have no geometric edge to catch light, so bevel treatment is uneven across the prop.",
+   "V5": "Hoop and lid studio close-ups show smooth shading with no pinches, seams, z-fighting or patches; only the low segment count shows as a polygonal outline on the hoop ends and bottom curve, comparable to the PASS anchor's couplings.",
+   "V6": "One wood hue in three values (light stave, dark stave, deep interior brown) plus kit gold for the hoops; clear value contrast, colourways (walnut, painted teal) keep the same discipline.",
+   "V7": "1152 tris vs medium target 2000 / ceiling 4000; budget_note ok.",
+   "V8": "One white material LF_VertexColor with vertex colours, kit gold accent, wood hue as the single hue, smooth shading; matches kit conventions.",
+   "V9": "Studio line: Anchored, Hull collision (or Cylinder part), CanTouch off, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre; A12 pass."
+  },
+  {
+   "V1": "Reads instantly as a barrel at 64 px from front, three-quarter and top; silhouette shows the bellied body with both hoops stepping out of the outline; A15 symmetry X/Y 0.0, centred, hoops seated on the staves.",
+   "V2": "Big (body) and medium (two hoops, recessed open top with rim) are clear, but the small tier is missing: the staves are vertex-colour stripes only, with no grooves, nails, rivets or chime lip, so the body reads as a flat striped surface.",
+   "V3": "Conventional, fairly upright cylinder: gentle bulge, thin hoops of even width, no chunky chime or exaggerated belly, so it only partly reads as confident stylised compared with the chunky flanges of the Pipe_Run anchor.",
+   "V4": "The top rim has a soft rounded roll, but the hoops are flat bands with crisp, unbevelled edges that catch no highlight (hoop close-up), so edge treatment is inconsistent.",
+   "V5": "No z-fighting, pinches or patches, but visible stray faceting: the polygonal hoop corner shows on the right edge of the hoop close-up, and the rim plus body segments show stepped flat shading in the studio close-ups instead of smooth shading.",
+   "V6": "Disciplined: two values of warm wood brown alternating on the staves, a darker interior brown, and the kit gold on the hoops; the walnut and teal colourways keep the same structure.",
+   "V7": "1152 tris against a medium-class target of 2000 (ceiling 4000), under target.",
+   "V8": "One white material with vertex colours, kit gold accent and a wood hue in up to 3 values all match; minor mismatch from the faceted rather than smooth shading and the hoops lacking the ~0.045 stud chamfer.",
+   "V9": "Studio line is correct: Anchored, Hull collision, CanTouch off, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre."
+  },
+  {
+   "V1": "Front, three-quarter and silhouette all read as a barrel (stave stripes, two hoop notches in outline, tapered ends); top reads as a staved rim with recessed head. Bulge is mild so the silhouette leans toward a can, but it stays recognisable at 64 px.",
+   "V2": "Big body + two medium hoops + recessed head, but the small tier is only colour stripes: no stave grooves, hoop rivets/nails or bung, so the mid-to-small read is thin.",
+   "V3": "Chunky hoops and fat staves are stylised, but the body is tall and near-straight with a weak belly bulge; widest point sits near the top hoop rather than mid-height, so it reads partly exaggerated, not confident.",
+   "V4": "Hoops carry a small chamfer that catches a highlight on the top edge, and the rim lip is softened, but staves have no edge treatment at all (colour-only boundaries) and the bottom edge rolls in rather than showing a bevel; inconsistent.",
+   "V5": "Close-ups (hoop/lid, studio + flat) show no patches, pinches, z-fighting or seams; faceting is the systematic per-stave planking, with only slight polygon kinks in the outline below the top hoop. Symmetry error X/Y 0.0, A17/A18 clean.",
+   "V6": "One wood hue in three values (light stave, dark stave, darker head) plus gold accent; walnut and painted teal colourways keep the same disciplined structure.",
+   "V7": "1152 tris vs medium target 2000 / ceiling 4000: well under target.",
+   "V8": "One white LF_VertexColor material, gold accent and smooth stylised shading match the Pipe_Run anchor's look; wood hue held to 3 values as the kit allows.",
+   "V9": "Studio line correct: Anchored, CollisionFidelity Hull, CanTouch off, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre (A12 pass)."
+  }
+ ],
+ "artifacts": [
+  [
+   "Polygonal outline from low radial segment count visible at hoop ends (hoop close-up, right edge) and the bottom curve in the three-quarter view; shading itself is clean"
+  ],
+  [
+   "Polygon corner/faceting visible on the top hoop's outer edge (hoop close-up, right side)",
+   "Stepped flat-shaded segments on the rim roll and stave body in the studio close-ups",
+   "Stave pattern is colour stripes only, with no geometry separating the staves"
+  ],
+  [
+   "slight polygon kinks in the side outline just below the top hoop (low vertical segment count on the belly curve)",
+   "stave separation is colour-only with hard stripe boundaries, no geometric groove or chamfer"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add a small-detail tier: modelled stave grooves (shallow V cuts or slight per-stave offset), a few rivets on each hoop, and a bung or stave-end chime groove",
+   "Push the stylised proportion: stronger mid bulge and slightly squatter body, thicker hoops so they read at 64 px",
+   "Give the hoops a consistent ~0.045-stud chamfer on both edges so they catch light like the rim lip",
+   "Add 4-8 radial segments (still well under the 2000 target) to soften the polygonal hoop and base outline",
+   "Give the interior head some detail (plank lines or a darker inset ring) instead of a flat disc"
+  ],
+  [
+   "Bevel the hoop edges (~0.045 studs) and smooth-shade the hoops and body so the bands catch a highlight and lose the polygon corners",
+   "Add a small-detail tier: shallow stave grooves or inset seams, and a few rivets/nails on each hoop",
+   "Push the stylisation: thicker, chunkier hoops, a stronger belly and a visible chime lip at top and bottom"
+  ],
+  [
+   "Add a stronger mid-height belly bulge so the widest point is between the hoops and the silhouette reads unmistakably as a barrel rather than a can",
+   "Add a small detail tier: shallow stave grooves or per-stave chamfers (~0.045 studs), rivets/nails on the hoops (ink dark or steel), optionally a bung",
+   "Add a couple of vertical rings on the belly curve to remove the outline kinks below the top hoop",
+   "Give the bottom edge and chime a consistent bevel matching the hoop chamfers"
+  ]
+ ],
+ "params": {
+  "H": 2.675,
+  "R": 0.987,
+  "bulge": 0.133,
+  "hoops": 2,
+  "hoop_role": "acc",
+  "steps": 24
+ },
+ "tris": 1152,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

@@ -1,0 +1,119 @@
+{
+ "id": "brick_plum_011",
+ "family": "brick",
+ "theme": "plum",
+ "index": 11,
+ "seed": 5057.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_brick.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Brick",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "brick",
+  "wall",
+  "building",
+  "masonry",
+  "plum"
+ ],
+ "colors": [
+  [
+   "#7b4e69",
+   0.286
+  ],
+  [
+   "#8a5e77",
+   0.253
+  ],
+  [
+   "#b4a4a8",
+   0.247
+  ],
+  [
+   "#694158",
+   0.214
+  ]
+ ],
+ "params": {
+  "C1": "#92667d",
+  "C2": "#7c4e6b",
+  "C3": "#573547",
+  "C4": "#bcabae",
+  "C5": "#362d36",
+  "Rows": 13.0,
+  "PerRow": 6.0,
+  "Var": 0.07541685012393262,
+  "Mortar": 0.006842688180038727,
+  "Bev": 0.01797649604951575,
+  "Chip": 0.8810339950400929,
+  "Burnt": 0.0,
+  "Tilt": 0.6119681692741537,
+  "Soot": 0.0,
+  "Seed": 5057.0
+ },
+ "normal_depth_px": 26.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.07,
+   "Color_Neutral": 0.089,
+   "Normal": 0.203,
+   "Roughness": 0.162,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.5,
+   0.951
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.003,
+   0.0
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 67.6,
+   "diel_luma_p99": 173.9,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.838,
+   "rough_min": 0.749,
+   "rough_expected": [
+    0.7,
+    0.95
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.13,
+  "M_neutral_mean": 0.737,
+  "M_neutral_range_p5_p95": [
+   0.542,
+   0.905
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 21.3,
+ "preview": "preview.jpg"
+}

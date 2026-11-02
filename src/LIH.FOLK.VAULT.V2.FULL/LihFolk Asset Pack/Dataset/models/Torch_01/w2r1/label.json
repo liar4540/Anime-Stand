@@ -1,0 +1,100 @@
+{
+ "asset": "Torch_01",
+ "kit": "Furniture",
+ "type": "Torch",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette all read clearly as a wall torch (flame, cup, handle, plate); top view is a flame blob but still recognisable.",
+   "V2": "Clear big flame/handle/plate, medium cup and ring, small bolt on the bracket.",
+   "V3": "Proportions are fine, but the flame is a faceted cone with a hard horizontal colour band that reads as a gem or ice-cream scoop rather than a stylised flame; handle is a plain cylinder.",
+   "V4": "Plate, ring and bolt are chamfered, but the flame is low-poly faceted and the cup lip is a hard cone edge; inconsistent across parts.",
+   "V5": "A dark crease/fold runs down the flame front (close_flame_studio) and a jagged ember sliver pokes out at the cup rim (close_cup_studio); minor.",
+   "V6": "Flame hue in 2-3 values, wood brown handle, ink iron; disciplined, and teal/violet/verdant colourways stay coherent.",
+   "V7": "576 tris vs small target 600; at target.",
+   "V8": "Vertex colour and ink iron match, but the faceted flame clashes with the smooth weighted-normal kit look; minor mismatch.",
+   "V9": "Studio line correct for a wall light (CanCollide off, back-centre origin, PointLight note, white colour); all seats pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "crease/fold down the flame front",
+   "jagged gold ember sliver at the cup rim",
+   "bracket ring only loosely reads as connected to the arm/plate"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Rebuild the flame as a smooth teardrop/tongue with a bright inner core instead of a faceted cone with a hard colour band",
+   "Clean the cup: a proper ember/coal disc inside the cup instead of a jagged sliver, and chamfer the cup lip",
+   "Make the bracket arm visibly connect the ring to the plate; add a slight taper to the handle"
+  ]
+ ],
+ "params": {
+  "Lh": 1.786,
+  "tilt": 15.488,
+  "lobes": 3,
+  "twist": 84.292,
+  "Hf": 0.942
+ },
+ "tris": 576,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

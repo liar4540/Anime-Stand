@@ -1,0 +1,101 @@
+{
+ "asset": "Flower_01",
+ "kit": "Nature",
+ "type": "Flower",
+ "seed": 1,
+ "attempt": "w2r2",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette reads as a flower from front, three-quarter and top (6-petal star with centre disc); bloom + stem + two leaves clear at 64 px.",
+   "V2": "Clear hierarchy: big bloom disc, medium leaves/stem, small gold centre dome.",
+   "V3": "Stem is a straight uniform cylinder and petals are stiff flat slabs; leaves are nicely curved but overall only partly stylised.",
+   "V4": "Petals have heavy hard chamfers that read gem-like, while leaves are razor-thin single blades with sharp knife edges and a dark crease where they meet the stem - inconsistent edge language.",
+   "V5": "Close-up bloom shows stray faceting across petal tops and jagged zig-zag seams where petals overlap each other (visible in the flat close-up); 81 cross-shell overlaps; leaf root shows a dark sliver where blade meets stem.",
+   "V6": "Disciplined: one petal hue in 2-3 values, gold centre, leaf green secondary; colourways (bluebell, sunset) keep the same structure.",
+   "V7": "520 tris vs small target 600 (ceiling 1500) - at or under target.",
+   "V8": "One white LF_VertexColor material and kit gold centre match, but petals are separate faceted slabs rather than fused smooth organic shells as wave-2 Nature asks.",
+   "V9": "Studio line correct for foliage: Anchored, CanCollide/CanTouch/CanQuery off, Box fidelity, MeshPart white, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Stray faceting on petal top surfaces",
+   "Jagged zig-zag seams where overlapping petals intersect (flat close-up)",
+   "Dark sliver/crease at leaf-stem junction",
+   "Leaves razor-thin with knife edges"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Rebuild petals as softly rounded, weighted-normal shells (cup slightly, remove gem facets) and fuse/offset them so overlaps do not create zig-zag seams",
+   "Give leaves a slight thickness and rounded edge, and blend the leaf root into the stem",
+   "Add a gentle taper/curve to the stem so it is less of a stiff cylinder"
+  ]
+ ],
+ "params": {
+  "heads": 1,
+  "petals": 6,
+  "R": 0.571,
+  "H": 1.345,
+  "leaves": 2
+ },
+ "tris": 520,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

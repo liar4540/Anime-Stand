@@ -1,0 +1,105 @@
+{
+ "asset": "Bush_01",
+ "type": "Bush",
+ "tris": 1660,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 3.685,
+  "y": 3.298,
+  "z": 2.31
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "alignment": null,
+ "seats": [
+  {
+   "name": "berry0_on_bush",
+   "gap": 0.0,
+   "penetration": 0.08343,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "berry1_on_bush",
+   "gap": 0.0,
+   "penetration": 0.07334,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "berry2_on_bush",
+   "gap": 0.0,
+   "penetration": 0.08735,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "berry3_on_bush",
+   "gap": 0.0,
+   "penetration": 0.0759,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "berry4_on_bush",
+   "gap": 0.0,
+   "penetration": 0.07568,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "berry5_on_bush",
+   "gap": 0.0,
+   "penetration": 0.08814,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "berry6_on_bush",
+   "gap": 0.0,
+   "penetration": 0.08612,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 140,
+ "studio": "Foliage: Anchored; CanCollide off; CanTouch off; CanQuery off; CastShadow on; CollisionFidelity Box; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "colourways": [
+   "summer",
+   "spruce",
+   "autumn",
+   "blossom",
+   "frost"
+  ]
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "asset": "Staff_01",
+ "kit": "Weapons",
+ "type": "Staff",
+ "seed": 1,
+ "attempt": "rv1",
+ "label": "rejected",
+ "score": 6.3,
+ "grades": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "reviewer": "blind fresh agent (renders + close-ups + gate report + rubric only)",
+ "evidence": {
+  "V1": "Front/3-4/silhouette read clearly as ring-headed staff, but the ring is only ~0.66 studs deep (top view shows it as a thin diagonal sliver), so from the side/edge-on the head collapses and it reads as a plain stick at 64 px",
+  "V2": "Big (shaft + ring) and medium (collar knob, grip wrap, pommel) tiers exist, but the focal gem is the smallest element and leaves the ring interior mostly empty, so the head lacks a clear focal mass",
+  "V3": "Shaft is a uniform untapered cylinder and the head a plain torus on a knob; oversized head gives some stylisation but the assembly still reads as stacked primitives",
+  "V4": "Gem and collar carry chamfers that catch light, but thin gold grip bands read as flat unbevelled inlays and the spokes are raw octagonal prisms, so edge treatment is uneven",
+  "V5": "No seams, patches or z-fighting; gates A17/A18 clean (0 self-intersections, 0 cap overlaps, 0 flipped), but ring_studio close-up shows a visibly segmented polygonal torus contour and the grip bulges step along the outline (stray faceting)",
+  "V6": "Disciplined: gold accent plus one hue in three values (dark shaft, mid grip, light gem); colourways (crimson, shadow) keep the same structure cleanly",
+  "V7": "1952 tris vs weapon target 2500 / ceiling 4000: under target",
+  "V8": "One white LF_VertexColor material with vertex colours, gold accent + single hue in 3 values, smooth shading, chamfers visible on gem/collar at kit-like scale",
+  "V9": "Studio line: Tool Handle, origin at grip, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic"
+ },
+ "artifacts": [
+  "Ring torus has too few segments: polygonal stepping along its outer/inner contour in the ring_studio close-up",
+  "Grip wrap bulges show faceted stepping on the silhouette edge",
+  "Spokes are visibly octagonal prisms at close range",
+  "83 cross-shell overlaps (intentional interpenetration of parts; allowed, not visible)"
+ ],
+ "top_fixes": [
+  "Make the head read edge-on: thicken the ring depth or add a perpendicular second ring/side ornaments so the side and top silhouettes keep the staff's identity",
+  "Enlarge the gem to fill ~40-50% of the ring interior (or add a secondary motif) so the focal point dominates the head",
+  "Raise torus major/minor segment counts (and grip bulge segments) to remove contour faceting",
+  "Give the shaft a taper or mid-shaft ornament to push stylised proportion beyond a uniform cylinder",
+  "Chamfer the gold grip bands and spoke ends to match the ~0.045 stud kit bevel so edges catch light consistently"
+ ],
+ "params": {
+  "H": 5.991,
+  "r": 0.161,
+  "head": "ring",
+  "wraps": 6,
+  "orb": 0.459,
+  "prongs": 3
+ },
+ "tris": 1952,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

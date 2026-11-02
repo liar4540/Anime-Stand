@@ -1,0 +1,22 @@
+{
+ "id": "brick_red_006",
+ "kind": "materials",
+ "score": 8.8,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 1,
+  "M4": 2,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m5",
+ "reviewer_notes": [
+  "Uniform bevels and clean edges; no chips, faces flat",
+  "Uniform bevels and mortar, no chipping or brick wear",
+  "uniform bevels; dark accent bricks repeat as landmarks"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

@@ -1,0 +1,100 @@
+{
+ "asset": "GrassClump_01",
+ "kit": "Nature",
+ "type": "GrassClump",
+ "seed": 1,
+ "attempt": "w2r2",
+ "label": "rejected",
+ "score": 7.0,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front/three-quarter silhouette reads as a grass tuft on a mound; top view reads as a radiating spiky star - recognisable from all angles at 64 px.",
+   "V2": "Some hierarchy (mound base, tall blades, short blades) but blades are near-identical wedges and the small blades read as stray shards rather than designed detail.",
+   "V3": "Blades are stiff wedge cones with an abrupt tip band; mound is a low polygonal disc - only partly stylised.",
+   "V4": "Mound rim has a soft rounded edge but its outline is visibly polygonal (12-gon), blades end in razor tips and the front short blade is a sharp flat shard - inconsistent edge treatment.",
+   "V5": "Base close-up shows hard dark intersection seams where blades pierce the mound, faceted blade sides and a shard-like front blade; 224 cross-shell overlaps instead of fused shells.",
+   "V6": "Disciplined: one green hue in three values (mound dark, blade mid, tip light); autumn/frost colourways keep the same three-value structure.",
+   "V7": "576 tris vs small target 600 (ceiling 1500) - under target.",
+   "V8": "One white LF_VertexColor material matches, but blades are separate shells stabbed into the mound rather than fused smooth organic shells; faceted mound outline.",
+   "V9": "Foliage Studio settings correct: Anchored, CanCollide/CanTouch/CanQuery off, Box fidelity, MeshPart white, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Hard dark intersection seams where blades enter the mound",
+   "Polygonal faceted outline on the mound rim",
+   "Front short blade reads as a flat faceted shard",
+   "Abrupt hard colour step at blade tips"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Fuse or flare blade bases into the mound so there is no hard crease where they meet",
+   "Raise the mound's radial segments / smooth its outline and soften blade sides with weighted normals",
+   "Vary blade width, curl and lean so the clump has a clearer big/medium/small hierarchy; replace the shard-like front blade"
+  ]
+ ],
+ "params": {
+  "n": 9,
+  "Hm": 1.916,
+  "spread": 0.362,
+  "lean": 0.754
+ },
+ "tris": 576,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

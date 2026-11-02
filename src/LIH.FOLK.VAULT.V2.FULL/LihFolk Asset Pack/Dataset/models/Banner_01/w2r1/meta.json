@@ -1,0 +1,225 @@
+{
+ "asset": "Banner_01",
+ "kit": "Furniture",
+ "type": "Banner",
+ "seed": 1,
+ "params": {
+  "H": 7.309,
+  "Wc": 2.425,
+  "Lc": 3.331,
+  "tail": "flat",
+  "icon": "star",
+  "wave": 0.121
+ },
+ "tris": 956,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 3.324,
+  "y": 1.959,
+  "z": 7.648
+ },
+ "origin": "bottom",
+ "symmetric": "X",
+ "symmetry_error": {
+  "X": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": [
+  {
+   "name": "emblem_on_cloth",
+   "offset": {
+    "X": 0.0
+   },
+   "max": 0.0
+  }
+ ],
+ "seats": [
+  {
+   "name": "emblem_on_cloth",
+   "gap": 0.0,
+   "penetration": 0.0483,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "trim_on_cloth",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "bar_on_pole",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "trim_on_bar",
+   "gap": 0.0,
+   "penetration": 0.0532,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 165,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "acc_dk",
+   "ink",
+   "h",
+   "h_dk",
+   "b",
+   "b_dk"
+  ],
+  "primary": "teal",
+  "colourways": [
+   {
+    "name": "teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "h": "#B8343B",
+     "h_dk": "#7A2026",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "verdant",
+    "hue": "verdant",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "h": "#4E9A3E",
+     "h_dk": "#2F6428",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   },
+   {
+    "name": "shadow",
+    "hue": "violet",
+    "roles": {
+     "acc": "#E8AE38",
+     "acc_dk": "#B07A1E",
+     "ink": "#2E2430",
+     "h": "#9A3FD6",
+     "h_dk": "#5E2590",
+     "b": "#8A5A3A",
+     "b_dk": "#5A3826"
+    }
+   }
+  ]
+ },
+ "studio": "Furniture prop: Anchored; CollisionFidelity Box; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre; cloth could be a separate MeshPart if animated",
+ "notes": "standing banner: turned pole on a dark/gold foot, gold finials, waved hue cloth (flat tail) with dark top trim and centred gold star emblem",
+ "features": [
+  [
+   "emblem",
+   [
+    0.0,
+    -0.4,
+    5.309
+   ],
+   1.2125
+  ],
+  [
+   "finial",
+   [
+    0.0,
+    0.0,
+    7.308
+   ],
+   0.5
+  ],
+  [
+   "tail",
+   [
+    0.0,
+    -0.3,
+    3.677
+   ],
+   1.2125
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r1/Banner_01/Banner_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r1/Banner_01/Banner_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r1/Banner_01/Banner_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r1/Banner_01/Banner_01_silhouette.png",
+  "close_emblem_studio": "Models/Kits/_drafts/r1/Banner_01/Banner_01_close_emblem_studio.png",
+  "close_emblem_flat": "Models/Kits/_drafts/r1/Banner_01/Banner_01_close_emblem_flat.png",
+  "close_finial_studio": "Models/Kits/_drafts/r1/Banner_01/Banner_01_close_finial_studio.png",
+  "close_finial_flat": "Models/Kits/_drafts/r1/Banner_01/Banner_01_close_finial_flat.png",
+  "close_tail_studio": "Models/Kits/_drafts/r1/Banner_01/Banner_01_close_tail_studio.png",
+  "close_tail_flat": "Models/Kits/_drafts/r1/Banner_01/Banner_01_close_tail_flat.png",
+  "cw_royal": "Models/Kits/_drafts/r1/Banner_01/Banner_01_cw_royal.png",
+  "cw_crimson": "Models/Kits/_drafts/r1/Banner_01/Banner_01_cw_crimson.png",
+  "cw_verdant": "Models/Kits/_drafts/r1/Banner_01/Banner_01_cw_verdant.png",
+  "cw_shadow": "Models/Kits/_drafts/r1/Banner_01/Banner_01_cw_shadow.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_furniture.py:Banner",
+ "made": "2026-10-28"
+}

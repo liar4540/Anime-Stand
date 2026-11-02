@@ -1,0 +1,156 @@
+{
+ "asset": "Stump_01",
+ "kit": "Nature",
+ "type": "Stump",
+ "seed": 1,
+ "params": {
+  "R": 0.961,
+  "H": 1.413,
+  "roots": 6,
+  "grooves": 22,
+  "slant": 0.095
+ },
+ "tris": 440,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 2.829,
+  "y": 2.923,
+  "z": 1.501
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 0,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "cream",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "oak",
+  "colourways": [
+   {
+    "name": "oak",
+    "hue": "oak",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#D2A56A",
+     "h": "#A9784A",
+     "h_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "ash",
+    "hue": "ash",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#C6B9A4",
+     "h": "#978A76",
+     "h_dk": "#655A4C"
+    }
+   },
+   {
+    "name": "redwood",
+    "hue": "redwood",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#CF8159",
+     "h": "#A2573A",
+     "h_dk": "#6C3624"
+    }
+   },
+   {
+    "name": "birch",
+    "hue": "birch",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#E9E0CB",
+     "h": "#BDB09A",
+     "h_dk": "#7D705F"
+    }
+   },
+   {
+    "name": "walnut",
+    "hue": "walnut",
+    "roles": {
+     "cream": "#F3E3BE",
+     "h_lt": "#A47650",
+     "h": "#7A5236",
+     "h_dk": "#4E3424"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull (or a Cylinder part to sit on); CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "tree stump: one lathe shell, 6 root lobes flaring into the ground, 11 bark ridges, slanted cut top with concentric rings",
+ "features": [
+  [
+   "cut_top",
+   [
+    -0.354,
+    0.0,
+    1.413
+   ],
+   1.1532
+  ],
+  [
+   "roots",
+   [
+    0.799,
+    -0.577,
+    0.25
+   ],
+   0.7688
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r3/Stump_01/Stump_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r3/Stump_01/Stump_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r3/Stump_01/Stump_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r3/Stump_01/Stump_01_silhouette.png",
+  "close_cut_top_studio": "Models/Kits/_drafts/r3/Stump_01/Stump_01_close_cut_top_studio.png",
+  "close_cut_top_flat": "Models/Kits/_drafts/r3/Stump_01/Stump_01_close_cut_top_flat.png",
+  "close_roots_studio": "Models/Kits/_drafts/r3/Stump_01/Stump_01_close_roots_studio.png",
+  "close_roots_flat": "Models/Kits/_drafts/r3/Stump_01/Stump_01_close_roots_flat.png",
+  "cw_ash": "Models/Kits/_drafts/r3/Stump_01/Stump_01_cw_ash.png",
+  "cw_redwood": "Models/Kits/_drafts/r3/Stump_01/Stump_01_cw_redwood.png",
+  "cw_birch": "Models/Kits/_drafts/r3/Stump_01/Stump_01_cw_birch.png",
+  "cw_walnut": "Models/Kits/_drafts/r3/Stump_01/Stump_01_cw_walnut.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_nature.py:Stump",
+ "made": "2026-10-28"
+}

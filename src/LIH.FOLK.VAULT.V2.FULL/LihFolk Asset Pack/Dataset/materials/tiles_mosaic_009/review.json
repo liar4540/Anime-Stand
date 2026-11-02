@@ -1,0 +1,22 @@
+{
+ "id": "tiles_mosaic_009",
+ "kind": "materials",
+ "score": 10.0,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 2,
+  "M4": 2,
+  "M7": 2,
+  "M6": 2,
+  "M5": 2
+ },
+ "batch": "m4",
+ "reviewer_notes": [
+  "solid pool mosaic; grid perfectly regular, no grout wear",
+  "Random scatter gets busy at distance; no colour clustering",
+  "Solid pool mosaic; random tints slightly noisy at distance"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

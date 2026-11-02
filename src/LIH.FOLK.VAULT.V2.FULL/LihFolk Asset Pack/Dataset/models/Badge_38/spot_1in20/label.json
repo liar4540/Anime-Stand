@@ -1,0 +1,96 @@
+{
+ "asset": "Badge_38",
+ "kit": "Emblems",
+ "type": "Badge",
+ "seed": 38,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 10.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  10.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Pointed-heater shield outline reads clearly in front, three-quarter and silhouette; top view is a clean chamfered bar; outline is mirror-symmetric, A15 X/Y error 0.0",
+   "V2": "Clear three tiers: gold rim plate (big), inset teal field (medium), raised cream diamond emblem (small) with distinct depth steps",
+   "V3": "Chunky rim and thick plate give a confident toy-like badge; emblem centred (offset 0.00137) and well sized, field inset evenly; no lopsidedness",
+   "V4": "Consistent small chamfers on rim, field and emblem edges catch the studio light (visible highlight lines in rim and emblem close-ups)",
+   "V5": "Close-ups of rim and emblem are clean: no pinches, seams, z-fighting or stray faceting; A17/A18 pass, 0 flipped faces, 0 cap overlaps",
+   "V6": "Disciplined: kit gold rim in two values, one hue field (teal) with darker inset edge, cream emblem; colourways swap only the field hue",
+   "V7": "404 tris vs small-class target 600 (ceiling 1500)",
+   "V8": "One white vertex-colour material, kit gold/cream palette, ~0.045 stud chamfers and smooth shading match the PASS badge anchor",
+   "V9": "Studio line correct: Anchored, CanCollide off decorative, CollisionFidelity Box, MeshPart.Color white, SmoothPlastic, origin bottom-centre"
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Add a secondary small detail (e.g. inner bevel line or small studs on the rim) to enrich the small-detail tier",
+   "Give the shield outline slightly more stylised curvature (e.g. gently curved sides or flared top corners) to push it beyond a plain pentagon",
+   "Consider a slightly larger or more distinctive emblem so it reads stronger at 64 px"
+  ]
+ ],
+ "params": {
+  "shape": "pentagon",
+  "W": 0.96,
+  "H": 2.141,
+  "emblem": "diamond",
+  "inset": 0.153
+ },
+ "tris": 404,
+ "budget_class": "small",
+ "date": "2026-10-28"
+}

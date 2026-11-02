@@ -1,0 +1,22 @@
+{
+ "id": "stone_wall_slate_011",
+ "kind": "materials",
+ "score": 8.8,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 2,
+  "M4": 1,
+  "M7": 2,
+  "M6": 1,
+  "M5": 2
+ },
+ "batch": "m5",
+ "reviewer_notes": [
+  "Vertical joints align across rows; heavy dark mortar grid repeats",
+  "Jittery mortar; narrow-block columns form repeating vertical stripes",
+  "vertical joints stack into columns; rhythmic thin/tall rows read as tiling"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

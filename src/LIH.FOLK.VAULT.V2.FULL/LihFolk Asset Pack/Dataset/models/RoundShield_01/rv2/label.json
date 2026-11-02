@@ -1,0 +1,101 @@
+{
+ "asset": "RoundShield_01",
+ "kit": "Weapons",
+ "type": "RoundShield",
+ "seed": 1,
+ "attempt": "rv2",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  1,
+  2,
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   1,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front outline is a clean symmetric disc (A15 X/Z error 0.0) and the top/profile view reads well (boss dome + back handle), but the 3/4 silhouette is a featureless ellipse: boss sits fully inside the outline and the rivets barely nick the edge, so at 64 px it could be a plate or coin.",
+   "V2": "Clear hierarchy: big gold rim + quartered board, medium steel boss with flange ring, small ring of 10 evenly spaced rivets.",
+   "V3": "Confident stylised proportions: chunky boss, thick rim, bold quarter split; nothing stiff or primitive-looking, matching the PASS anchor's chunkiness.",
+   "V4": "Rim has a chamfer that catches a highlight band, but the boss dome has an unchamfered hard crease (crisp elliptical terminator between cap and side) and the flange ring edge reads sharp, so bevels are inconsistent across features.",
+   "V5": "Minor artifacts: hard crease/seam line across the boss dome in close_boss_studio and front view; low segment count on the rim shows as straight-segment faceting on the outer edge (close_rim_flat) and banding in close_rim_studio; rivets are visibly octagonal.",
+   "V6": "Disciplined kit palette: gold rim, steel-grey boss/rivets, warm cream quarters plus one hue (teal; crimson/shadow colourways swap cleanly) with good value contrast.",
+   "V7": "2280 tris vs weapon target 2500 (ceiling 4000): at or under target.",
+   "V8": "One white LF_VertexColor material with vertex colours, kit gold/cream/steel palette and smooth shading; colourways swap only the hue as the kit expects.",
+   "V9": "Studio line correct: origin at handle centre, CollisionFidelity Box, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Hard crease / shading seam across the boss dome where the cap meets the side (close_boss_studio, also visible in front and three-quarter views)",
+   "Rim outer edge visibly faceted into straight segments with banded shading (close_rim_flat, close_rim_studio)",
+   "Rivets low-poly (octagonal outline in flat close-up) and straddle the inner edge of the rim band rather than sitting centred on it"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Chamfer/smooth the boss: remove the hard crease between dome cap and side, and bevel the flange ring edge (~0.045 studs) so the boss shades as one smooth form",
+   "Raise the rim and rivet segment counts (still well under the 2500 target) so the rim outline is round and the rivets read as domes, not octagons",
+   "Give the 3/4 silhouette a break from the ellipse: larger/more protruding boss or rivet heads/rim lip that break the outer outline",
+   "Centre the rivets on the gold rim band instead of straddling the rim-board boundary"
+  ]
+ ],
+ "params": {
+  "R": 1.35,
+  "pattern": "quartered",
+  "rivets": 10,
+  "boss": 0.392,
+  "dome": 0.119
+ },
+ "tris": 2280,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

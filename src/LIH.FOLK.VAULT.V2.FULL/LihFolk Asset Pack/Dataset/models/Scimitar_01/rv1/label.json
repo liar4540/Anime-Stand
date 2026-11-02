@@ -1,0 +1,86 @@
+{
+ "asset": "Scimitar_01",
+ "kit": "Weapons",
+ "type": "Scimitar",
+ "seed": 1,
+ "attempt": "rv1",
+ "label": "accepted",
+ "score": 9.0,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "reviewer": "blind fresh agent (renders + close-ups + gate report + rubric only)",
+ "evidence": {
+  "V1": "front/silhouette read instantly as scimitar; top view thin sliver but parts distinguishable; A15 0.0",
+  "V2": "clear big/medium/small: blade, guard+pommel, horn balls + wrap rings + fuller bands",
+  "V3": "confident stylised; grip slightly spindly vs heavy guard",
+  "V4": "guard chamfer highlight, blade bevel bands; pommel collar near hard-edged",
+  "V5": "capped 1: pommel ball polygonal outline, horn balls and guard lower arc straight segments, bevel bands pinch at tip",
+  "V6": "gold + steel 3 values + teal; colourways swap hue only",
+  "V7": "2396 vs weapon target 2500",
+  "V8": "kit match except visibly faceted low-segment spheres",
+  "V9": "studio line correct"
+ },
+ "artifacts": [
+  "pommel sphere faceted",
+  "horn balls / guard lower arc straight segments",
+  "bevel bands pinch at tip"
+ ],
+ "top_fixes": [
+  "more segments on pommel and horn balls",
+  "more segments on guard arc",
+  "taper bevel bands smoothly at tip",
+  "thicker grip, chamfer pommel collar"
+ ],
+ "params": {
+  "L": 4.334,
+  "ew0": 0.424,
+  "sw0": 0.212,
+  "t0": 0.123,
+  "curve": 0.959,
+  "flare": 0.788,
+  "clip": 0.733,
+  "gL": 1.016,
+  "rise": 0.6,
+  "GL": 1.184,
+  "gr": 0.148,
+  "wraps": 6,
+  "pommel": "ball",
+  "ps": 0.271
+ },
+ "tris": 2396,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

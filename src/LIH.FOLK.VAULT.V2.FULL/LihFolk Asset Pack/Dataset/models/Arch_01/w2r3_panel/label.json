@@ -1,0 +1,155 @@
+{
+ "asset": "Arch_01",
+ "kit": "Modular",
+ "type": "Arch",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.0,
+  8.7,
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.7,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette all read as a stone archway (round-headed opening, piers, coping); front outline symmetric, A15 error 0.0 on X.",
+   "V2": "Clear tiers: big wall mass, medium pier quoins / voussoir ring / coping, small gold keystone.",
+   "V3": "Top-heavy and stiff: a large blank spandrel slab sits over a narrow opening, and the voussoir ring and keystone are small for the wall, so the stylisation reads timid rather than chunky.",
+   "V4": "Quoins, voussoirs and coping have consistent chamfers, but the main wall slab corners look razor-sharp in the end-section close-up.",
+   "V5": "Flat keystone close-up shows a jagged notch on the keystone's right edge and irregular overlapping voussoir outlines (178 cross-shell overlaps); studio view otherwise clean.",
+   "V6": "One stone hue in 3 values (dark base course, mid wall, light quoins/coping) plus one gold keystone accent; sandstone and basalt colourways keep the structure.",
+   "V7": "660 tris vs module target 800.",
+   "V8": "Single LF_VertexColor material, stone hue with gold keystone exactly as the modular kit spec describes.",
+   "V9": "Studio line correct: Anchored, CollisionFidelity Default (walkable arch), CanTouch off, Color white, SmoothPlastic; T1 tiling along X passes with IoU 1.0."
+  },
+  {
+   "V1": "Arch doorway reads clearly from front, three-quarter and silhouette; symmetry_error X 0.0 and front outline is symmetric.",
+   "V2": "Coursed pier blocks, voussoir ring and gold keystone give medium/small detail, but the whole upper wall above the arch is one large blank slab, so hierarchy is only partial.",
+   "V3": "Blocky and stiff: narrow tall opening, coursing stops abruptly at the springing, plain lintel slab occupies the top half; pier blocks step out past the wall face (notches in silhouette).",
+   "V4": "Consistent chamfers on pier blocks, voussoirs, keystone and top coping catch light in the springing and end-section close-ups.",
+   "V5": "Close-ups clean; voussoir-to-pier junction at the springing is a designed step, no pinches or z-fighting.",
+   "V6": "Stone in three values (dark base course, mid, light) plus a gold keystone accent; colourways stay disciplined.",
+   "V7": "660 tris vs module target 800.",
+   "V8": "LF_VertexColor single material, chamfered stone, gold keystone accent: kit-consistent.",
+   "V9": "Anchored, CollisionFidelity Default (walkable opening), CanTouch off, Color white, SmoothPlastic, grid-corner pivot; T1 pass."
+  },
+  {
+   "V1": "Front, three-quarter and silhouette all read as a round-headed stone arch with a capped wall; front outline is symmetric (A15 X error 0.0) and the keystone is centred.",
+   "V2": "Big (wall + opening) and small (voussoirs, gold keystone, coursed jamb blocks, coping) exist, but the upper spandrel is a large blank slab occupying ~40 % of the front, and the voussoir ring is thin relative to it, so the medium tier is weak.",
+   "V3": "Coursed jambs with a lighter impost block and a coping lip give some style, but the tall narrow opening under a flat blank wall reads stiff; the voussoir ring is not chunky or exaggerated.",
+   "V4": "Close_springing and close_end_section studio show even chamfers on every jamb block, voussoir and the coping, catching consistent highlight lines.",
+   "V5": "Close-ups clean: no pinches, seams or z-fighting at the springing or keystone; the small jog on the keystone's right edge in the flat close-up is the chamfer meeting the adjacent voussoir, not a defect; A17/A18 pass.",
+   "V6": "One stone hue in three values (light impost/coping, mid wall, dark base course) plus one gold keystone accent; brick and sandstone colourways keep the structure.",
+   "V7": "660 tris vs module target 800 / ceiling 2000.",
+   "V8": "Single LF_VertexColor material, stone hue, gold keystone per wave-2 modular spec, kit-range chamfers; matches kit.",
+   "V9": "Studio line: Anchored, Default collision (walkable), CanTouch off, MeshPart white + SmoothPlastic, grid-corner pivot; T1 tiling passes (iou 1.0)."
+  }
+ ],
+ "artifacts": [
+  [
+   "notch/tooth on the keystone's side edge and messy voussoir-wall intersections in flat light"
+  ],
+  [],
+  []
+ ],
+ "top_fixes": [
+  [
+   "Clean the keystone and voussoir intersections with the wall so their outlines are crisp in flat light",
+   "Enlarge the voussoir ring and keystone (and/or widen the opening) and break up the blank spandrel with block lines so the arch reads chunky and confident",
+   "Chamfer the main wall slab edges to match the quoins and kit"
+  ],
+  [
+   "Break up the blank upper wall: continue stone coursing or add block outlines/ashlar joints above the arch",
+   "Widen the opening slightly and relate coursing heights to the voussoir ring so the springing transition feels designed",
+   "Give the keystone a little more projection/scale so the focal point reads at 64 px"
+  ],
+  [
+   "Thicken the voussoir ring and let it stand proud of the wall so the arch is the dominant medium shape",
+   "Break up the blank upper spandrel (a string course, a few offset ashlar blocks or a slightly recessed panel)",
+   "Make the keystone chunkier and let it project above the voussoir line for a stronger stylised read"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "pier": 2.25,
+  "zs": 6.0,
+  "vous": 7
+ },
+ "tris": 660,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

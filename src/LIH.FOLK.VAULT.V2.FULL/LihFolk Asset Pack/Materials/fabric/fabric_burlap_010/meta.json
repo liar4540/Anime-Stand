@@ -1,0 +1,117 @@
+{
+ "id": "fabric_burlap_010",
+ "family": "fabric",
+ "theme": "burlap",
+ "index": 10,
+ "seed": 9301.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_fabric.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Fabric",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "fabric",
+  "cloth",
+  "textile",
+  "weave",
+  "burlap"
+ ],
+ "colors": [
+  [
+   "#8c6c4c",
+   0.403
+  ],
+  [
+   "#b99a6e",
+   0.258
+  ],
+  [
+   "#a0825d",
+   0.238
+  ],
+  [
+   "#5e4933",
+   0.102
+  ]
+ ],
+ "params": {
+  "C1": "#caa879",
+  "C2": "#a27c57",
+  "C3": "#906b45",
+  "C4": "#a27c57",
+  "C5": "#483726",
+  "T": 16.0,
+  "Weave": 0.0,
+  "Pattern": 0.0,
+  "BandW": 5.0,
+  "Gap": 0.27597847046800605,
+  "Fuzz": 0.31565167860941545,
+  "WeftSame": 0.0,
+  "Seed": 9301.0
+ },
+ "normal_depth_px": 10.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.072,
+   "Color_Neutral": 0.056,
+   "Normal": 0.102,
+   "Roughness": 0.454,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.5,
+   0.985
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.006,
+   0.002
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 70.4,
+   "diel_luma_p99": 166.9,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.896,
+   "rough_min": 0.859,
+   "rough_expected": [
+    0.75,
+    0.98
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.1095,
+  "M_neutral_mean": 0.74,
+  "M_neutral_range_p5_p95": [
+   0.43,
+   0.901
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 13.4,
+ "preview": "preview.jpg"
+}

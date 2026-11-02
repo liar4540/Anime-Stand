@@ -1,0 +1,164 @@
+{
+ "asset": "Log_01",
+ "kit": "Nature",
+ "type": "Log",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "rejected",
+ "score": 7.3,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  6.0,
+  8.0,
+  7.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 2.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Three-quarter reads as a log via the ringed end; front and silhouette are a featureless bent capsule that could be a stick or pipe.",
+   "V2": "Big trunk and tiny stub only; end rings give some small detail but there is no medium level (no bark plates, knots or broken end).",
+   "V3": "Essentially a slightly bent octagonal cylinder with a peg-like stub; stiff primitive proportions.",
+   "V4": "Soft long bark ridges versus a hard-edged, separate-looking end-grain disc; bevels inconsistent.",
+   "V5": "End-grain close-up: the round ring cap does not follow the faceted bark outline, leaving bark corners protruding past the disc; minor stray faceting along the bark.",
+   "V6": "Bark brown in 2-3 values plus cream rings - disciplined; birch/redwood colourways swap cleanly.",
+   "V7": "672 tris vs medium target 2000 - well under target.",
+   "V8": "Vertex-colour material and bark palette match, but the stub reads as a cream peg and the end cap looks pasted on rather than a fused shell.",
+   "V9": "Static scenery flags correct (Anchored, Hull, CanTouch off, Color white, bottom-centre origin)."
+  },
+  {
+   "V1": "Reads as a log with a branch stub in front, top, three-quarter and silhouette views.",
+   "V2": "Big trunk, medium end grain and branch stub, small bark ridges - clear tiers.",
+   "V3": "Gentle bend and slight taper help, but it is essentially a long uniform tube with a tiny stub; little stylised exaggeration (no swelling, broken end or root flare).",
+   "V4": "Bark ridges are softly rounded, but the end-grain face meets the bark at a hard faceted polygon edge with no rim chamfer (end_grain close-up).",
+   "V5": "End-grain close-up shows a visible polygonal outline on the round end and faceted ridge kinks along the silhouette; bark shading otherwise clean.",
+   "V6": "Bark brown in two values plus cream end-grain/stub cap; colourways consistent (birch rings get low contrast).",
+   "V7": "672 tris vs medium target 2000.",
+   "V8": "One white vertex-colour material, smooth fused organic shell, bark hue + cream end grain - consistent with nature kit.",
+   "V9": "Studio line: Anchored, CollisionFidelity Hull, CanTouch off, Color white, SmoothPlastic, origin bottom-centre; stub seated on log."
+  },
+  {
+   "V1": "Reads as a log from front, three-quarter, top and silhouette: long bent cylinder with a branch stub breaking the outline.",
+   "V2": "Big log body and ringed end grain read, but medium/small tier is thin: one stub, no bark grooves, knots or split cap detail on the second end.",
+   "V3": "Gentle bend and taper help, but the body is still a fairly uniform octagonal tube; partly exaggerated, not a confident stylised log.",
+   "V4": "End-grain rim has a clean chamfered lip that catches light, but the bark ridges are hard long facets and the far end reads as a jagged polygon in the three-quarter view.",
+   "V5": "Bark gradients are clean, but the end_grain studio close-up shows a small dark notch where the bark shell meets the cap at the upper right; minor.",
+   "V6": "Disciplined: bark brown in 2-3 values plus cream end-grain rings; colourways (birch, redwood) keep the same structure.",
+   "V7": "672 tris vs medium target 2000, well under.",
+   "V8": "One LF_VertexColor material, smooth shaded wood hue with cream secondary, chamfered cap rim; fits the kit.",
+   "V9": "Studio line correct: anchored, Hull collision, CanTouch off, white MeshPart colour, SmoothPlastic, origin bottom-centre; gates A1-A18 pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "End-grain disc outline mismatched with faceted bark silhouette",
+   "Stub branch cap reads as a separate cream peg (penetration 0.43 into log)"
+  ],
+  [
+   "Polygonal outline visible on the end-grain cap",
+   "Hard unchamfered edge where the end grain meets the bark"
+  ],
+  [
+   "small dark notch/crease at bark-to-end-cap junction (end_grain studio close-up, upper right)",
+   "far end cap outline reads jagged/polygonal in three-quarter view"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add medium forms: bark plates/ridges, a knot, and a broken or tapered branch instead of the peg stub",
+   "Make the end cap follow the bark profile with a chamfered rim",
+   "Exaggerate the bend/taper so the silhouette reads as a log from the front"
+  ],
+  [
+   "Add a rolled bark lip / chamfer around the end-grain caps and a few more segments so the round end does not read polygonal",
+   "Push stylisation: slight mid swelling, an uneven broken far end or a second stub",
+   "Raise end-grain ring contrast in the birch colourway"
+  ],
+  [
+   "Add a second tier of detail: bark grooves or a couple of knots plus a second smaller stub or broken branch",
+   "Increase segment count or soften bark ridges so the ends read round, and fix the cap junction notch",
+   "Push the silhouette more (stronger taper toward one end, slight flare at the root end)"
+  ]
+ ],
+ "params": {
+  "L": 5.979,
+  "R": 0.661,
+  "bow": -0.196,
+  "grooves": 18,
+  "stub": true,
+  "yaw": -12.957
+ },
+ "tris": 672,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

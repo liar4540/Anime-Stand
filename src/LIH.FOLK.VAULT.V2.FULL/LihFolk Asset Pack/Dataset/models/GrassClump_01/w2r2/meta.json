@@ -1,0 +1,149 @@
+{
+ "asset": "GrassClump_01",
+ "kit": "Nature",
+ "type": "GrassClump",
+ "seed": 1,
+ "params": {
+  "n": 9,
+  "Hm": 1.916,
+  "spread": 0.362,
+  "lean": 0.754
+ },
+ "tris": 576,
+ "budget_class": "small",
+ "budget_target": 600,
+ "budget_ceiling": 1500,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.364,
+  "y": 2.1,
+  "z": 1.785
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 224,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "summer",
+  "colourways": [
+   {
+    "name": "summer",
+    "hue": "leaf",
+    "roles": {
+     "h_lt": "#9BD45E",
+     "h": "#5DA543",
+     "h_dk": "#336F2E"
+    }
+   },
+   {
+    "name": "spruce",
+    "hue": "spruce",
+    "roles": {
+     "h_lt": "#6FBF8A",
+     "h": "#368A5C",
+     "h_dk": "#1F5A3E"
+    }
+   },
+   {
+    "name": "autumn",
+    "hue": "autumn",
+    "roles": {
+     "h_lt": "#F4B24E",
+     "h": "#E0702E",
+     "h_dk": "#9C3F22"
+    }
+   },
+   {
+    "name": "frost",
+    "hue": "frost",
+    "roles": {
+     "h_lt": "#BFE6E4",
+     "h": "#7FBFC4",
+     "h_dk": "#4A8790"
+    }
+   },
+   {
+    "name": "dry",
+    "hue": "sand",
+    "roles": {
+     "h_lt": "#E6CB98",
+     "h": "#C29C66",
+     "h_dk": "#8A6A40"
+    }
+   }
+  ]
+ },
+ "studio": "Foliage: Anchored; CanCollide off; CanTouch off; CanQuery off; CastShadow on; CollisionFidelity Box; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "grass clump: 9 thick diamond-section blades (pointed, twisted, leaning out on a golden-angle spiral), dark base / mid / light tips on rings",
+ "features": [
+  [
+   "blades",
+   [
+    0.3,
+    -0.477,
+    1.22
+   ],
+   1.1496
+  ],
+  [
+   "base",
+   [
+    0.0,
+    -0.177,
+    0.271
+   ],
+   0.7
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r2/GrassClump_01/GrassClump_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r2/GrassClump_01/GrassClump_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r2/GrassClump_01/GrassClump_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r2/GrassClump_01/GrassClump_01_silhouette.png",
+  "close_blades_studio": "Models/Kits/_drafts/r2/GrassClump_01/GrassClump_01_close_blades_studio.png",
+  "close_blades_flat": "Models/Kits/_drafts/r2/GrassClump_01/GrassClump_01_close_blades_flat.png",
+  "close_base_studio": "Models/Kits/_drafts/r2/GrassClump_01/GrassClump_01_close_base_studio.png",
+  "close_base_flat": "Models/Kits/_drafts/r2/GrassClump_01/GrassClump_01_close_base_flat.png",
+  "cw_spruce": "Models/Kits/_drafts/r2/GrassClump_01/GrassClump_01_cw_spruce.png",
+  "cw_autumn": "Models/Kits/_drafts/r2/GrassClump_01/GrassClump_01_cw_autumn.png",
+  "cw_frost": "Models/Kits/_drafts/r2/GrassClump_01/GrassClump_01_cw_frost.png",
+  "cw_dry": "Models/Kits/_drafts/r2/GrassClump_01/GrassClump_01_cw_dry.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_nature.py:GrassClump",
+ "made": "2026-10-28"
+}

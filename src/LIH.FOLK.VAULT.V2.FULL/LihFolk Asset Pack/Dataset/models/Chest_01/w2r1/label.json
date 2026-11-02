@@ -1,0 +1,100 @@
+{
+ "asset": "Chest_01",
+ "kit": "Furniture",
+ "type": "Chest",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Domed lid, straps and lock read as a treasure chest from every angle; silhouette clear; symmetry error X = 0.0.",
+   "V2": "Big box + domed lid, medium straps/planks/side ring, small gold lock with keyhole: clear hierarchy.",
+   "V3": "Confident stylised chest with chunky domed lid and slightly oversized lock.",
+   "V4": "Lid straps and lock are bevelled but the body straps are flat-faced with sharp edges and the plank rails have soft rounded edges; bevel width inconsistent.",
+   "V5": "Plank rail ends poke through the front of the iron strap (visible tabs beside the strap in the band studio close-up and a jagged strap outline in the flat close-up); strap also overhangs the body bottom.",
+   "V6": "Wood hue in 3 values, steel-grey straps, gold lock, ink keyhole: disciplined.",
+   "V7": "812 tris vs medium target 2000.",
+   "V8": "One LF_VertexColor material, gold fittings, ink iron, steel straps, chamfered edges: matches the furniture kit.",
+   "V9": "Studio line correct: Anchored, Box collision, CanTouch off, Color white, SmoothPlastic, origin bottom-centre, ProximityPrompt on lock."
+  }
+ ],
+ "artifacts": [
+  [
+   "plank rails intersect and poke through the front body straps",
+   "straps extend below the body base, forming small feet in the silhouette"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Stop the plank rails at the strap edges (or push the straps out) so nothing pokes through the iron",
+   "Give the body straps the same chamfer as the lid straps",
+   "Trim strap bottoms flush with the base or turn them into deliberate corner feet",
+   "Add plank lines to the side faces so they are not plain slabs"
+  ]
+ ],
+ "params": {
+  "L": 3.441,
+  "Dp": 2.368,
+  "Hb": 1.631,
+  "band": "m_dk",
+  "lid": "round"
+ },
+ "tris": 812,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

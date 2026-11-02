@@ -1,0 +1,10 @@
+name,category,frames,fps,loop,priority,markers,score,status,rbxmx,preview
+SwordHeavy,Combat,53,30,False,Action,TrailOn@20;Hit@23;TrailOff@28;CanCancel@40,8.7,shipped,Animations/Combat/SwordHeavy.rbxmx,Animations/Combat/SwordHeavy_sheet.png
+SwordLight1,Combat,25,30,False,Action,TrailOn@7;Hit@10;TrailOff@13;ComboWindow@17,9.0,shipped,Animations/Combat/SwordLight1.rbxmx,Animations/Combat/SwordLight1_sheet.png
+SwordLight3,Combat,35,30,False,Action,TrailOn@11;Hit@14;TrailOff@17,8.7,shipped,Animations/Combat/SwordLight3.rbxmx,Animations/Combat/SwordLight3_sheet.png
+SwordParry,Combat,33,30,False,Action,ParryStart@2;BlockHold@6;ParryEnd@9;Deflect@14,9.3,shipped,Animations/Combat/SwordParry.rbxmx,Animations/Combat/SwordParry_sheet.png
+Idle,Locomotion,121,30,True,Idle,,8.3,approved,Animations/Locomotion/Idle.rbxmx,Animations/Locomotion/Idle_sheet.png
+Jump,Locomotion,35,30,False,Action,Takeoff@5;Apex@13;Land@21,8.3,approved,Animations/Locomotion/Jump.rbxmx,Animations/Locomotion/Jump_sheet.png
+Run,Locomotion,17,30,True,Movement,Footstep@0;Footstep@8,9.0,shipped,Animations/Locomotion/Run.rbxmx,Animations/Locomotion/Run_sheet.png
+Sprint,Locomotion,13,30,True,Movement,Footstep@0;Footstep@6,9.0,shipped,Animations/Locomotion/Sprint.rbxmx,Animations/Locomotion/Sprint_sheet.png
+Walk,Locomotion,25,30,True,Movement,Footstep@0;Footstep@12,8.7,shipped,Animations/Locomotion/Walk.rbxmx,Animations/Locomotion/Walk_sheet.png

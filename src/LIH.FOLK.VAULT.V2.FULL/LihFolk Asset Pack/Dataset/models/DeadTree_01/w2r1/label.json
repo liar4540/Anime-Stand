@@ -1,0 +1,100 @@
+{
+ "asset": "DeadTree_01",
+ "kit": "Nature",
+ "type": "DeadTree",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "rejected",
+ "score": 6.0,
+ "grades": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  6.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front/3q/silhouette read as a bare tree, but the branches are uniform tusk/horn curves (reads as antlers) and a visible seating failure (branch end cap curling back into the trunk at the crown/fork) caps V1 at 1.",
+   "V2": "Big trunk and five branches with three tiny twig spurs; no medium/small detail (broken stubs, knots, bark splits), branches are all the same tapered tusk.",
+   "V3": "Stiff: straight pointed spike trunk top, identical horn-curve branches; the hooked branch end visibly bolted onto the trunk (fork/crown close-ups) caps V3 at 1.",
+   "V4": "Inconsistent: smooth rounded branches vs razor-thin knife-edge root flares (roots close-up) and needle-sharp trunk/branch tips.",
+   "V5": "Visible branch shells end with exposed rounded caps resting on the trunk instead of fusing (fork close-up, 202 cross-shell overlaps); faceted trunk strips next to smooth branches and a light smear patch at the root base.",
+   "V6": "Single bark brown in 2-3 values with lighter tips; colourways (ash, birch) stay disciplined.",
+   "V7": "1296 tris vs tree target 2000 / ceiling 5000.",
+   "V8": "One white vertex-colour material, but the wave-2 nature brief asks for fused smooth organic shells: branches are separate tubes and the trunk is hard-faceted.",
+   "V9": "Static scenery: Anchored, Hull collision, CanTouch off, Color white, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Branch end cap visible where a branch hooks back into the trunk (crown and fork close-ups)",
+   "Branches not fused to trunk; visible junction seams (202 cross-shell overlaps)",
+   "Razor-thin root flares with a light shading smear at the base (roots close-up)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Fuse branches into the trunk as one smooth shell with blended collars, and remove the branch that curls back into the trunk",
+   "Give the root flares thickness and rounded edges instead of knife-thin fins",
+   "Vary branch shapes (kinks, forks, broken stubs) so they read as wood rather than identical tusks, and blunt the spike on the trunk top"
+  ]
+ ],
+ "params": {
+  "H": 5.005,
+  "r0": 0.706,
+  "twist": 66.327,
+  "branches": 5,
+  "lean": -0.135
+ },
+ "tris": 1296,
+ "budget_class": "tree",
+ "date": "2026-10-28"
+}

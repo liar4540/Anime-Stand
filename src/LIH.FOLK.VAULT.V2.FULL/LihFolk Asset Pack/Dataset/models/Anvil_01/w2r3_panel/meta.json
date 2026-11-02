@@ -1,0 +1,202 @@
+{
+ "asset": "Anvil_01",
+ "kit": "Furniture",
+ "type": "Anvil",
+ "seed": 1,
+ "params": {
+  "L": 3.182,
+  "Wd": 0.983,
+  "Ha": 1.567,
+  "stump": 1.631,
+  "Rs": 1.139
+ },
+ "tris": 1120,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 3.372,
+  "y": 2.55,
+  "z": 3.209
+ },
+ "origin": "bottom",
+ "symmetric": "Y",
+ "symmetry_error": {
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "anvil_on_stump",
+   "gap": 0.0,
+   "penetration": 0.0,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "horn_on_body",
+   "gap": 0.0,
+   "penetration": 0.03182,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 184,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "ink",
+   "cream",
+   "m_lt",
+   "m",
+   "m_dk",
+   "h_lt",
+   "h"
+  ],
+  "primary": "oak",
+  "colourways": [
+   {
+    "name": "oak",
+    "hue": "oak",
+    "roles": {
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#D2A56A",
+     "h": "#A9784A"
+    }
+   },
+   {
+    "name": "walnut",
+    "hue": "walnut",
+    "roles": {
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#A47650",
+     "h": "#7A5236"
+    }
+   },
+   {
+    "name": "painted_teal",
+    "hue": "teal",
+    "roles": {
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A"
+    }
+   },
+   {
+    "name": "painted_crimson",
+    "hue": "crimson",
+    "roles": {
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#E86A62",
+     "h": "#B8343B"
+    }
+   },
+   {
+    "name": "painted_royal",
+    "hue": "royal",
+    "roles": {
+     "ink": "#2E2430",
+     "cream": "#F3E3BE",
+     "m_lt": "#E6EEF4",
+     "m": "#A3B3C4",
+     "m_dk": "#62748A",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF"
+    }
+   }
+  ]
+ },
+ "studio": "Furniture prop: Anchored; CollisionFidelity Hull; CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "blacksmith anvil: chamfered steel body (polished light face, dark waist), round tapered horn, ink hardy hole, on a grooved wood stump with end-grain rings and 2 iron hoops",
+ "features": [
+  [
+   "horn",
+   [
+    -1.177,
+    0.0,
+    2.896
+   ],
+   0.9
+  ],
+  [
+   "face",
+   [
+    0.732,
+    -0.491,
+    3.197
+   ],
+   0.9
+  ],
+  [
+   "stump_top",
+   [
+    0.779,
+    -0.683,
+    1.63
+   ],
+   0.9
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_silhouette.png",
+  "close_horn_studio": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_close_horn_studio.png",
+  "close_horn_flat": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_close_horn_flat.png",
+  "close_face_studio": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_close_face_studio.png",
+  "close_face_flat": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_close_face_flat.png",
+  "close_stump_top_studio": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_close_stump_top_studio.png",
+  "close_stump_top_flat": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_close_stump_top_flat.png",
+  "cw_walnut": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_cw_walnut.png",
+  "cw_painted_teal": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_cw_painted_teal.png",
+  "cw_painted_crimson": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_cw_painted_crimson.png",
+  "cw_painted_royal": "Models/Kits/_drafts/r3/Anvil_01/Anvil_01_cw_painted_royal.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_furniture.py:Anvil",
+ "made": "2026-10-28"
+}

@@ -1,0 +1,155 @@
+{
+ "asset": "Chair_01",
+ "kit": "Furniture",
+ "type": "Chair",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3,
+  9.3,
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Ladder-back chair reads instantly in front, 3/4 and silhouette (open slat gaps, ball finials); top view still reads as seat + back rail; front outline symmetric (A15 X 0.0).",
+   "V2": "Clear: seat slab and back posts (big), top rail, three slats and stretchers (medium), gold ball finials (small).",
+   "V3": "Mostly straight square-section posts and legs of uniform thickness; only the ball finials and thick seat add stylisation, so it reads close to stiff primitives.",
+   "V4": "Consistent chamfers on seat edge, posts, rail and slats catch light in back and seat close-ups.",
+   "V5": "Clean shading in all studio close-ups; no seams or z-fighting; top rail seats on posts (seat check gap 0.0). Finial sphere outline is slightly polygonal in flat light but shades smoothly.",
+   "V6": "Disciplined: wood hue in 3 values (light seat/slats, mid posts, dark top rail) plus gold finials; colourways keep the structure.",
+   "V7": "884 tris vs 2000 medium target.",
+   "V8": "One LF_VertexColor material, smooth weighted shading, ~0.05-stud chamfers, gold #E8AE38-like accents per furniture spec.",
+   "V9": "Anchored, Box collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates pass (Seat object to be added at placement if sittable)."
+  },
+  {
+   "V1": "Ladder-back chair reads from front, three-quarter, top and silhouette (gold-ball posts, top rail, three slats, seat, four legs, stretchers); front outline symmetric (A15 X 0.0).",
+   "V2": "Big seat + back frame, medium top rail, legs and stretchers, small slats and gold finials - clear hierarchy.",
+   "V3": "Proportions are sensible but stiff: square straight legs and posts, a flat slab seat and evenly spaced slats with no taper, splay, curve or chunky exaggeration beyond the ball finials.",
+   "V4": "Consistent soft chamfers on posts, rail, slats and seat edge catch a clean highlight in close_back and close_seat studio shots.",
+   "V5": "Close-ups of back, finial and seat are clean: no seams, pinches, z-fighting or stray faceting; finials sit flush on the posts.",
+   "V6": "Wood in three values (seat light, frame mid, top rail dark) plus gold finials; painted colourways keep the same structure.",
+   "V7": "884 tris vs medium target 2000: under target.",
+   "V8": "One vertex-colour material, kit gold accent, chamfer size and smooth shading match the kit.",
+   "V9": "Studio line correct: anchored, Box collision, CanTouch off, bottom-centre origin, MeshPart white, Seat note."
+  },
+  {
+   "V1": "Ladder-back chair with ball finials reads clearly from front, three-quarter and silhouette; top view reads via seat square + finial-capped back rail.",
+   "V2": "Big (seat, back posts), medium (top rail, three slats, legs/stretchers), small (gold ball finials, value-shifted slats) hierarchy is clear.",
+   "V3": "Ladder back and finials give character, but every member is a straight square-section box with no taper, splay or curve, so the proportions read partly as stiff primitives.",
+   "V4": "Consistent small chamfers catch light along seat edge, posts, top rail and slats in the back and seat close-ups.",
+   "V5": "Seat, back and finial close-ups show clean shading with no pinches, seams or z-fighting; X symmetry 0.0, top rail seated on posts.",
+   "V6": "One wood hue in three values (light slats/seat, mid frame, dark top rail) plus gold finials; disciplined.",
+   "V7": "884 tris vs medium target 2000.",
+   "V8": "Single vertex-coloured wood hue, gold fittings, chamfered edges match the furniture kit.",
+   "V9": "Anchored, Box collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre, Seat note; A1-A18 pass."
+  }
+ ],
+ "artifacts": [
+  [],
+  [],
+  []
+ ],
+ "top_fixes": [
+  [
+   "Add stylisation to the legs/posts (slight taper or splay, turned or chunkier rear posts) so it reads less like stacked boxes",
+   "Give the top rail a gentle curve or shaped crest to strengthen the silhouette",
+   "Add a few segments to the finial spheres or a small collar between post and ball"
+  ],
+  [
+   "Give the legs a taper and slight outward splay and the back posts a slight backward rake for a stylised read",
+   "Shape the seat (rounded front edge or dished top) and curve the top rail",
+   "Vary the slats (curved or graduated) to add personality to the back"
+  ],
+  [
+   "Taper the legs toward the feet and give the back posts a slight backward rake for a more stylised, less boxy read",
+   "Add a gentle curve or dish to the top rail / seat front edge",
+   "Slightly enlarge or neck the finials so they read as turned knobs rather than balls on posts"
+  ]
+ ],
+ "params": {
+  "W": 2.235,
+  "Dp": 2.103,
+  "Hs": 1.983,
+  "Hb": 2.414,
+  "back": "ladder",
+  "legs": "square"
+ },
+ "tris": 884,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

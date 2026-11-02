@@ -1,0 +1,207 @@
+{
+ "asset": "FloorPlanks_01",
+ "kit": "Modular",
+ "type": "FloorPlanks",
+ "seed": 1,
+ "params": {
+  "W": 4,
+  "pw": 1.0
+ },
+ "tris": 184,
+ "budget_class": "module",
+ "budget_target": 800,
+ "budget_ceiling": 2000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 3.999,
+  "y": 3.999,
+  "z": 1.984
+ },
+ "origin": "grid corner (world 0, footprint 4x4x2.0 studs)",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass",
+  "T1": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 62,
+ "tiling": {
+  "grid": {
+   "footprint": [
+    4,
+    4,
+    2.0
+   ],
+   "step": 2.0,
+   "on_grid": true,
+   "inside": true,
+   "touches_floor": true,
+   "bbox": [
+    [
+     0.0006,
+     0.0006,
+     0.0006
+    ],
+    [
+     3.9994,
+     3.9994,
+     1.9844
+    ]
+   ],
+   "ok": true
+  },
+  "tiles": [
+   {
+    "axis": "X",
+    "period": 4,
+    "with": "FloorPlanks_01",
+    "other_axis": "X",
+    "mode": "equal",
+    "a_cells": 3004,
+    "b_cells": 3004,
+    "iou": 1.0,
+    "cover": 1.0,
+    "inside": true,
+    "ok": true
+   },
+   {
+    "axis": "Y",
+    "period": 4,
+    "with": "FloorPlanks_01",
+    "other_axis": "Y",
+    "mode": "equal",
+    "a_cells": 3040,
+    "b_cells": 3040,
+    "iou": 1.0,
+    "cover": 1.0,
+    "inside": true,
+    "ok": true
+   }
+  ]
+ },
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "ink",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "oak",
+  "colourways": [
+   {
+    "name": "oak",
+    "hue": "oak",
+    "roles": {
+     "ink": "#2E2430",
+     "h_lt": "#D2A56A",
+     "h": "#A9784A",
+     "h_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "walnut",
+    "hue": "walnut",
+    "roles": {
+     "ink": "#2E2430",
+     "h_lt": "#A47650",
+     "h": "#7A5236",
+     "h_dk": "#4E3424"
+    }
+   },
+   {
+    "name": "painted_teal",
+    "hue": "teal",
+    "roles": {
+     "ink": "#2E2430",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "painted_crimson",
+    "hue": "crimson",
+    "roles": {
+     "ink": "#2E2430",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "painted_royal",
+    "hue": "royal",
+    "roles": {
+     "ink": "#2E2430",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   }
+  ]
+ },
+ "studio": "Modular piece: Anchored; CollisionFidelity Box; CanTouch off; CastShadow on; origin = grid corner (pivot at min x / min y / floor): snap with a 2-stud grid and 90-degree rotations; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "plank floor 4x4x2: 4 rows of chamfered planks with staggered butt joints (2 wood values), ink nails, dark joist base; tiles on X and Y",
+ "features": [
+  [
+   "planks",
+   [
+    2.0,
+    0.0,
+    2.0
+   ],
+   2.2
+  ],
+  [
+   "edge",
+   [
+    4.0,
+    0.0,
+    1.6
+   ],
+   1.6
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/_drafts/r1/FloorPlanks_01/FloorPlanks_01_front.png",
+  "three_quarter": "Models/Kits/_drafts/r1/FloorPlanks_01/FloorPlanks_01_three_quarter.png",
+  "top": "Models/Kits/_drafts/r1/FloorPlanks_01/FloorPlanks_01_top.png",
+  "silhouette": "Models/Kits/_drafts/r1/FloorPlanks_01/FloorPlanks_01_silhouette.png",
+  "close_planks_studio": "Models/Kits/_drafts/r1/FloorPlanks_01/FloorPlanks_01_close_planks_studio.png",
+  "close_planks_flat": "Models/Kits/_drafts/r1/FloorPlanks_01/FloorPlanks_01_close_planks_flat.png",
+  "close_edge_studio": "Models/Kits/_drafts/r1/FloorPlanks_01/FloorPlanks_01_close_edge_studio.png",
+  "close_edge_flat": "Models/Kits/_drafts/r1/FloorPlanks_01/FloorPlanks_01_close_edge_flat.png",
+  "cw_walnut": "Models/Kits/_drafts/r1/FloorPlanks_01/FloorPlanks_01_cw_walnut.png",
+  "cw_painted_teal": "Models/Kits/_drafts/r1/FloorPlanks_01/FloorPlanks_01_cw_painted_teal.png",
+  "cw_painted_crimson": "Models/Kits/_drafts/r1/FloorPlanks_01/FloorPlanks_01_cw_painted_crimson.png",
+  "cw_painted_royal": "Models/Kits/_drafts/r1/FloorPlanks_01/FloorPlanks_01_cw_painted_royal.png"
+ },
+ "score": null,
+ "generator": "tools/kits/kit_modular.py:FloorPlanks",
+ "made": "2026-10-28"
+}

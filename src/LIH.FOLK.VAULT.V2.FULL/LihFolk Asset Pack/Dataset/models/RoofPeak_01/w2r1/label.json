@@ -1,0 +1,97 @@
+{
+ "asset": "RoofPeak_01",
+ "kit": "Modular",
+ "type": "RoofPeak",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "rejected",
+ "score": 7.0,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Silhouette reads as a gable roof from three-quarter and silhouette; front reads as a sloped tiled roof with timber eave; top shows ridge + courses clearly.",
+   "V2": "Big (two slopes + gable) and medium (5 tile courses, ridge roll, timber eave beam) present, but no small tier (no pegs, battens, bargeboard detail) and the gable triangle is one large empty plane.",
+   "V3": "Courses are uniform straight slabs and the gable is a plain flat triangle; reads close to a primitive prism with stripes rather than a confidently stylised roof (no sag, overhang flare or chunky barge boards).",
+   "V4": "Eave beam and ridge roll have soft chamfers, but tile-course lower edges read thin/razor in the shingles close-up and the gable panel edge meets the slope with a hard, unbevelled junction.",
+   "V5": "No pinches or seams; faint horizontal streaking on the ridge roll in ridge close-up (likely overlap of ridge over top course, cross_shell_overlaps 210); otherwise clean gradients.",
+   "V6": "Stone hue in 3 values (alternating light/mid course + darker ridge) plus timber secondary; disciplined across granite/brick/sandstone colourways.",
+   "V7": "464 tris vs module target 800 / ceiling 2000.",
+   "V8": "One vertex-colour material and chamfers match, but the timber gable reads near-black/very dark in studio light and no cream plaster or gold accents; slightly off the bright kit look.",
+   "V9": "Studio line correct: Anchored, CollisionFidelity Default, CanTouch off, Color white, SmoothPlastic, grid-corner pivot; T1 tiling pass (iou 1.0)."
+  }
+ ],
+ "artifacts": [
+  [
+   "faint horizontal streaking on ridge roll (possible overlap/z-fight with top course)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Break up the gable end: add barge boards, cream plaster infill with timber cross-beams or a small vent so the large flat triangle has medium/small detail",
+   "Give tile course lower edges a visible chamfer/thickness lip and slight overhang at the gable so the courses catch light",
+   "Lift the gable timber value so it does not read near-black; check ridge-roll overlap for streaking"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "D": 8,
+  "pitch": "full",
+  "ridge": "stone"
+ },
+ "tris": 464,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

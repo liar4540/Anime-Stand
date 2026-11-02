@@ -1,0 +1,99 @@
+{
+ "asset": "Rock_01",
+ "kit": "Nature",
+ "type": "Rock",
+ "seed": 1,
+ "attempt": "w2r2",
+ "label": "rejected",
+ "score": 7.0,
+ "grades": [
+  2,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Rock + pebble cluster reads as stone from front, three-quarter and top; outline is a faceted blob with a separate pebble.",
+   "V2": "Main boulder, moss cap and one pebble only; no small-scale break-up (chips, cracks, secondary facets).",
+   "V3": "Main rock is a shallow wedge with a perfectly flat, table-like moss top (1.0 stud tall vs 3 wide), reading as a slab more than a stylised boulder.",
+   "V4": "Some facet edges are rolled soft (moss lip, top edge) while others are knife-crisp; bevel width inconsistent across the rock.",
+   "V5": "Pebble close-up shows a pinched star highlight at the pebble apex, and smooth normals smear gradients across large flat facets on the main rock.",
+   "V6": "Grey stone in 2-3 values + moss green secondary; colourways keep one hue + moss.",
+   "V7": "188 tris vs rock target 400 / ceiling 1000.",
+   "V8": "Correct material/vertex colours and hue rules, but facets are blurred by smoothing instead of reading as designed flat facets.",
+   "V9": "Studio line: Anchored, Hull, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "pinched star highlight at pebble apex (close_pebble_studio)",
+   "gradient smearing across large facets from smooth normals"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Split/weight normals per facet so facets shade flat and the pebble apex pinch disappears",
+   "Give the boulder more height and a domed/broken top instead of a flat table-top moss plane",
+   "Add a second pebble or chipped secondary facets for small detail",
+   "Make edge bevels consistent across all facet edges"
+  ]
+ ],
+ "params": {
+  "R": 1.324,
+  "flat": 0.741,
+  "n": 20,
+  "extra": 1
+ },
+ "tris": 188,
+ "budget_class": "rock",
+ "date": "2026-10-28"
+}

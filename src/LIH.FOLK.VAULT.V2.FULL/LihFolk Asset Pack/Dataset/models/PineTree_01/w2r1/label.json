@@ -1,0 +1,98 @@
+{
+ "asset": "PineTree_01",
+ "kit": "Nature",
+ "type": "PineTree",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Stacked four-tier conifer with pointed tip and wavy skirts reads instantly as a pine from front, three-quarter and top (star-shaped wavy rings).",
+   "V2": "Clear: big = four diminishing tiers, medium = light-green rim bands with wavy edge, small = capped tip; only the trunk level is missing.",
+   "V3": "Tier taper is confident and stylised, but the trunk is almost invisible - only a small brown disc peeks out under the bottom skirt, making the tree look like a cone stack sitting on the ground (trunk_base close-up shows only foliage).",
+   "V4": "Each tier rim has a consistent chamfered lighter band that catches light; tip has a matching cap - consistent bevels.",
+   "V5": "Studio and flat close-ups of the tier rim and tip are clean: smooth gradients, no pinches, seams or z-fighting.",
+   "V6": "Disciplined: foliage green in 2 values (body + rim) plus a bark brown; colourways keep the same two-value scheme.",
+   "V7": "1920 tris vs tree target 2000 / ceiling 5000 - at target.",
+   "V8": "Single LF_VertexColor material, smooth shading, chamfered rims and two-value hue match the kit; bark secondary is barely visible but present.",
+   "V9": "Studio line correct: Anchored, Hull collision, CanTouch off, CastShadow on, Color white, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Lengthen the visible trunk (raise the lowest tier ~0.6-1 stud) so the bark secondary and a readable trunk show below the skirt",
+   "Reframe the trunk_base close-up camera - it currently renders from inside the foliage and gives no evidence",
+   "Optionally add slight per-tier rotation or droop so the stack feels less mechanically regular"
+  ]
+ ],
+ "params": {
+  "tiers": 4,
+  "R0": 2.854,
+  "H": 10.163,
+  "rt": 0.446,
+  "ht": 1.558,
+  "lobes": 8,
+  "scallop": 0.086
+ },
+ "tris": 1920,
+ "budget_class": "tree",
+ "date": "2026-10-28"
+}

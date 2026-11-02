@@ -1,0 +1,204 @@
+{
+ "asset": "Fence_11",
+ "kit": "Modular",
+ "type": "Fence",
+ "seed": 11,
+ "params": {
+  "L": 8,
+  "kind": "rail",
+  "cap": "ball"
+ },
+ "tris": 336,
+ "budget_class": "module",
+ "budget_target": 800,
+ "budget_ceiling": 2000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 7.999,
+  "y": 0.699,
+  "z": 3.959
+ },
+ "origin": "grid corner (world 0, footprint 8x2.0x4.0 studs)",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass",
+  "T1": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": null,
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 16,
+ "tiling": {
+  "grid": {
+   "footprint": [
+    8,
+    2.0,
+    4.0
+   ],
+   "step": 2.0,
+   "on_grid": true,
+   "inside": true,
+   "touches_floor": true,
+   "bbox": [
+    [
+     0.0006,
+     0.6506,
+     0.0006
+    ],
+    [
+     7.9994,
+     1.3494,
+     3.9594
+    ]
+   ],
+   "ok": true
+  },
+  "tiles": [
+   {
+    "axis": "X",
+    "period": 8,
+    "with": "Fence_11",
+    "other_axis": "X",
+    "mode": "contain",
+    "a_cells": 162,
+    "b_cells": 816,
+    "iou": 0.1985,
+    "cover": 1.0,
+    "inside": true,
+    "ok": true
+   }
+  ]
+ },
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "acc",
+   "h",
+   "h_dk"
+  ],
+  "primary": "oak",
+  "colourways": [
+   {
+    "name": "oak",
+    "hue": "oak",
+    "roles": {
+     "acc": "#E8AE38",
+     "h": "#A9784A",
+     "h_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "walnut",
+    "hue": "walnut",
+    "roles": {
+     "acc": "#E8AE38",
+     "h": "#7A5236",
+     "h_dk": "#4E3424"
+    }
+   },
+   {
+    "name": "painted_teal",
+    "hue": "teal",
+    "roles": {
+     "acc": "#E8AE38",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "painted_crimson",
+    "hue": "crimson",
+    "roles": {
+     "acc": "#E8AE38",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "painted_royal",
+    "hue": "royal",
+    "roles": {
+     "acc": "#E8AE38",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   }
+  ]
+ },
+ "studio": "Modular piece: Anchored; CollisionFidelity Box; CanTouch off; CastShadow on; origin = grid corner (pivot at min x / min y / floor): snap with a 2-stud grid and 90-degree rotations; MeshPart.Color white (vertex colours); SmoothPlastic",
+ "notes": "rail fence segment 8x2x4: one post with ball cap at x=0, rails run flush to x=8 so the next segment's post closes the run; centred in the 2-stud cell",
+ "features": [
+  [
+   "post_cap",
+   [
+    0.35,
+    0.0,
+    3.7
+   ],
+   0.9
+  ],
+  [
+   "rails",
+   [
+    4.8,
+    0.0,
+    2.0
+   ],
+   1.8
+  ],
+  [
+   "rail_end",
+   [
+    8.0,
+    1.0,
+    2.0
+   ],
+   1.0
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Modular/Fence_11_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 10.0,
+  "basis": "panel x3 median",
+  "reviewed": "Fence_01 w2r3_panel (indiv 10.0/10.0/10.0); fix rounds: w2r1 9.3",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_modular.py:Fence",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Modular/Fence_11.glb",
+  "blend": "Models/Kits/Modular/Fence_11.blend",
+  "turntable": "Models/Kits/Modular/Fence_11_turntable.mp4",
+  "preview": "Models/Kits/Modular/Fence_11_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Modular/Fence_11_preview.jpg"
+}

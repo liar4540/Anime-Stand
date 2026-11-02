@@ -1,0 +1,161 @@
+{
+ "asset": "Rock_02",
+ "kit": "Nature",
+ "type": "Rock",
+ "seed": 2,
+ "attempt": "spot_panel",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.0,
+  8.7,
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.7,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Low faceted slab with a moss top reads as a rock from front, three-quarter, top and silhouette; bottom origin, no visible floating of the main mass.",
+   "V2": "Big mass plus a moss cap, but medium facets are few and large and the small pebble is only visible in the top view (hidden in front, three-quarter, silhouette, and not actually in frame in the pebble close-up).",
+   "V3": "Partly stylised: the few big planar cuts make it read more like a cut gem/crystal than a weathered stone, and the 1-stud-tall slab is fairly flat.",
+   "V4": "Designed flat facets with consistently softened edges catching a light line in the facets close-up.",
+   "V5": "Facets close-up (studio and flat) shows a kinked step in the moss/stone colour boundary along the top edge (vertex-colour stair); facets otherwise shade cleanly.",
+   "V6": "One stone hue in three values plus leaf-green moss as the single secondary; sandstone and basalt colourways keep the structure.",
+   "V7": "224 tris vs rock target 400 (ceiling 1000): under target.",
+   "V8": "One white vertex-colour material, designed rock facets, stone + moss green per the Nature kit.",
+   "V9": "Studio line: Anchored, CollisionFidelity Hull, CanTouch off, MeshPart.Color white, SmoothPlastic, bottom-centre origin."
+  },
+  {
+   "V1": "Reads as a moss-topped boulder from front, three-quarter, top and silhouette; the outline is a clean faceted chunk with no ambiguous protrusions.",
+   "V2": "Big form plus about eight large medium-scale facets and a moss cap, but no small tier: the separate pebble seen in the top view is hidden in the front, three-quarter and silhouette views, and the pebble close-up frames empty space instead of it.",
+   "V3": "The main mass is a low, wedge-like cut-gem block with few, very regular planes (front view is a flat lozenge); it reads as stylised but stiff, only partly exaggerated.",
+   "V4": "Narrow chamfers on the facet edges catch a consistent light line in the studio close-up (close_facets_studio), matching the designed-facet rock treatment.",
+   "V5": "Large flat facets shade cleanly with no pinches, seams or z-fighting; the only blemish is a small kink in the moss/stone colour boundary (close_facets_flat), which is a vertex-colour edge, not a shading artifact.",
+   "V6": "Disciplined: stone grey in about three values plus a moss-green secondary; colourways (basalt, redrock) keep the same two-tone scheme.",
+   "V7": "224 tris against the rock target of 400 (ceiling 1000).",
+   "V8": "Designed flat facets with chamfers, one vertex-colour material, stone hue + leaf-green secondary as the Nature kit specifies.",
+   "V9": "Studio line is correct: Anchored, Hull collision, CanTouch off, white MeshPart.Color with vertex colours, SmoothPlastic, origin bottom-centre."
+  },
+  {
+   "V1": "Reads as a faceted boulder from front (low wedge), three-quarter (chunky polyhedron) and top; silhouette is a clean irregular heptagon with no confusing protrusions.",
+   "V2": "Big form + moss cap give a clear primary/secondary split, but the small-scale read is weak: the pebble is only visible in the top view (detached behind the rock) and the pebble close-up frames empty space, so the third tier barely registers.",
+   "V3": "Stylised low-poly boulder, but only ~1 stud tall against ~2.8 x 3.1 footprint so it reads as a flattened slab from the front; facet layout is fairly generic rather than a confident designed shape.",
+   "V4": "Designed flat facets with consistent soft weighted-normal highlights along ridges (bright rim on front/close facets views); no razor or blobby edges.",
+   "V5": "Close-up studio and flat views show clean planar facets, no pinches, seams or z-fighting; only a tiny step in the moss/stone colour boundary.",
+   "V6": "Stone grey in 3 values plus one moss green secondary; colourways (basalt, sandstone) keep the same disciplined two-material split.",
+   "V7": "224 tris vs rock target 400 (ceiling 1000).",
+   "V8": "One white LF_VertexColor material, stone hue + moss secondary as specified for Nature, designed flat facets with soft normals: matches kit.",
+   "V9": "Studio line: Anchored, Hull collision, CanTouch off, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre; A1-A18 pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Kinked step in the moss/stone vertex-colour boundary on the top edge (facets close-up)"
+  ],
+  [
+   "Satellite pebble only visible in the top view; pebble close-up shows empty space, so its placement and seating cannot be verified from the renders (no seats entry in the gate report)",
+   "Small kink in the moss/stone colour boundary on the front-left facet"
+  ],
+  [
+   "Pebble close-up is framed on empty background; pebble not visible in front or three-quarter views (only in top view, separated behind main rock)",
+   "Small notch/step in the moss-to-stone boundary on the top edge"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Move the pebble to a visible spot beside the rock (front/three-quarter side) and seat it, so the small tier reads; reframe the pebble close-up on it",
+   "Break the large gem-like planes with a few secondary bevelled cuts so it reads as weathered stone",
+   "Clean the moss boundary onto a straight edge loop and let the moss drape a little over the rim"
+  ],
+  [
+   "Move the satellite pebble to the front/side next to the base so it reads in the main views, and add a seating check for it",
+   "Break up the regular cut-gem planes with one or two secondary bevelled facets or a chipped corner for a more confident stylised boulder",
+   "Let the moss cap creep down one facet with a softer, irregular edge instead of a straight band with a kink"
+  ],
+  [
+   "Move or enlarge the pebble so it sits visibly at the base on the front/three-quarter side (and fix the pebble close-up framing)",
+   "Give the main rock more height or a stronger designed lean so the front view does not read as a flat slab",
+   "Clean the step in the moss boundary edge"
+  ]
+ ],
+ "params": {
+  "R": 1.365,
+  "flat": 0.788,
+  "n": 20,
+  "extra": 1
+ },
+ "tris": 224,
+ "budget_class": "rock",
+ "date": "2026-10-29"
+}

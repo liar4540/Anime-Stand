@@ -1,0 +1,230 @@
+{
+ "asset": "Barrel_21",
+ "kit": "Props",
+ "type": "Barrel",
+ "seed": 21,
+ "params": {
+  "H": 2.487,
+  "R": 1.0,
+  "bulge": 0.22,
+  "staves": 10,
+  "hoop_role": "ink"
+ },
+ "tris": 1728,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 1.979,
+  "y": 1.989,
+  "z": 2.487
+ },
+ "origin": "bottom",
+ "symmetric": "XY",
+ "symmetry_error": {
+  "X": 0.0,
+  "Y": 0.0
+ },
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "nail0_0_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05669,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail0_1_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05669,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail0_2_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05669,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail0_3_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05669,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail1_0_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05827,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail1_1_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05827,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail1_2_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05827,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "nail1_3_on_hoop",
+   "gap": 0.0,
+   "penetration": 0.05827,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 64,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "ink",
+   "h_lt",
+   "h",
+   "h_dk"
+  ],
+  "primary": "oak",
+  "colourways": [
+   {
+    "name": "oak",
+    "hue": "oak",
+    "roles": {
+     "ink": "#2E2430",
+     "h_lt": "#D2A56A",
+     "h": "#A9784A",
+     "h_dk": "#6E4A2C"
+    }
+   },
+   {
+    "name": "walnut",
+    "hue": "walnut",
+    "roles": {
+     "ink": "#2E2430",
+     "h_lt": "#A47650",
+     "h": "#7A5236",
+     "h_dk": "#4E3424"
+    }
+   },
+   {
+    "name": "painted_teal",
+    "hue": "teal",
+    "roles": {
+     "ink": "#2E2430",
+     "h_lt": "#5DB3BF",
+     "h": "#3D8E9A",
+     "h_dk": "#27606A"
+    }
+   },
+   {
+    "name": "painted_crimson",
+    "hue": "crimson",
+    "roles": {
+     "ink": "#2E2430",
+     "h_lt": "#E86A62",
+     "h": "#B8343B",
+     "h_dk": "#7A2026"
+    }
+   },
+   {
+    "name": "painted_royal",
+    "hue": "royal",
+    "roles": {
+     "ink": "#2E2430",
+     "h_lt": "#6B93E8",
+     "h": "#2F5FBF",
+     "h_dk": "#1F3F86"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull (or a Cylinder part for physics); CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "10-stave barrel with modelled stave grooves, strong belly, 2 thick chamfered ink hoops with ink nails, recessed lid with chime",
+ "features": [
+  [
+   "hoop",
+   [
+    0.625,
+    -0.625,
+    2.114
+   ],
+   0.6
+  ],
+  [
+   "lid",
+   [
+    0.0,
+    0.0,
+    2.487
+   ],
+   0.9
+  ],
+  [
+   "staves",
+   [
+    0.0,
+    -1.0,
+    1.243
+   ],
+   0.7
+  ]
+ ],
+ "renders": {
+  "preview_sheet": "Models/Kits/Props/Barrel_21_preview.jpg",
+  "layout": "front | three_quarter | top | silhouette, 256 px tiles",
+  "review_renders": "removed after shipping (size rule); scored review sets live in Dataset/models/"
+ },
+ "score": {
+  "score": 9.3,
+  "basis": "panel x3 median",
+  "reviewed": "Barrel_01 p4_panel (indiv 9.3/9.3/9.3); Barrel_04 p3_panel 8.0 rejected",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_props.py:Barrel",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Props/Barrel_21.glb",
+  "blend": "Models/Kits/Props/Barrel_21.blend",
+  "turntable": "Models/Kits/Props/Barrel_21_turntable.mp4",
+  "preview": "Models/Kits/Props/Barrel_21_preview.jpg",
+  "colourways": "in the .blend as Col_<name> attributes; tools/kits/export_colourways.py re-exports a GLB per colourway"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12,
+ "preview": "Models/Kits/Props/Barrel_21_preview.jpg"
+}

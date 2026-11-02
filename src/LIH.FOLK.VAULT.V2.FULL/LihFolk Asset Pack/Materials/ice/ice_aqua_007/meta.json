@@ -1,0 +1,115 @@
+{
+ "id": "ice_aqua_007",
+ "family": "ice",
+ "theme": "aqua",
+ "index": 7,
+ "seed": 119.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_ice.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Ice",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "ice",
+  "frozen",
+  "winter",
+  "glossy",
+  "aqua"
+ ],
+ "colors": [
+  [
+   "#5fc8c9",
+   0.379
+  ],
+  [
+   "#71d7d6",
+   0.313
+  ],
+  [
+   "#51b9bd",
+   0.213
+  ],
+  [
+   "#9be3e0",
+   0.095
+  ]
+ ],
+ "params": {
+  "C1": "#c4f2ea",
+  "C2": "#6cd9d8",
+  "C3": "#31969f",
+  "C4": "#def3ee",
+  "C5": "#d2edec",
+  "Cells": 3.0,
+  "CrackW": 0.4615251892723327,
+  "Frost": 0.23949340938247834,
+  "Bubbles": 0.664878110296778,
+  "Facet": 0.661057715511417,
+  "Seed": 119.0
+ },
+ "normal_depth_px": 8.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.38,
+   "Color_Neutral": 0.42,
+   "Normal": 0.312,
+   "Roughness": 0.261,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.5,
+   0.996
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.012,
+   0.038
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 152.3,
+   "diel_luma_p99": 223.9,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.13,
+   "rough_min": 0.114,
+   "rough_expected": [
+    0.08,
+    0.5
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.02,
+  "M_neutral_mean": 0.74,
+  "M_neutral_range_p5_p95": [
+   0.647,
+   0.848
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 12.3,
+ "preview": "preview.jpg"
+}

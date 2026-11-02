@@ -1,0 +1,166 @@
+{
+ "asset": "Spear_21",
+ "kit": "Weapons",
+ "type": "Spear",
+ "seed": 21,
+ "attempt": "spot_panel",
+ "label": "rejected",
+ "score": 8.0,
+ "grades": [
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.0,
+  9.3,
+  8.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.3,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front/3-4/silhouette read clearly as a spear (leaf head, winged socket, ringed grip, bulb butt); outline symmetric, A15 X/Y error 0.0; top view is an expected end-on dot with wings visible.",
+   "V2": "Clear tiers: large leaf head, medium gold socket + wings and butt cap, small ink/teal grip bands and collar rings.",
+   "V3": "Mostly literal proportions: long plain cylindrical haft, head small relative to 8.2-stud length, short stubby wings; only partly stylised.",
+   "V4": "Socket wings, collars and butt cap carry crisp chamfers that catch light, but blade edges are soft/rounded with a thick lip, so bevel treatment is inconsistent between head and fittings.",
+   "V5": "Mostly clean smooth shading; small pinch/notch at the blade tip visible in both head close-ups and a slightly abrupt blade-to-socket tuck.",
+   "V6": "Disciplined kit palette: steel blade, gold accent, teal haft in two values, ink bands; colourways (crimson, shadow) swap only the hue.",
+   "V7": "1980 tris vs weapon target 2500 (ceiling 4000), under target.",
+   "V8": "One white vertex-colour material, kit gold/ink/steel + one hue, chamfers on fittings consistent with kit; reads as same family as kit weapons.",
+   "V9": "Studio line correct: Tool Handle, origin at grip, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  },
+  {
+   "V1": "Front, three-quarter and silhouette read instantly as a spear: leaf head, winged socket, collars, banded grip and knob butt all break the outline; top view is a dot as expected for a long weapon, and A15 symmetry X/Y = 0.0.",
+   "V2": "Clear tiers: big = leaf head + long haft, medium = gold socket with wings, haft collar and butt cap, small = three ink grip rings with lighter teal spacers.",
+   "V3": "Proportions are only partly stylised: the head is narrow and short (~20% of 8.2 studs) on a long thin haft, wings are stubby slabs; reads closer to realistic than to a confident chunky kit shape.",
+   "V4": "Consistent chamfers catch light on blade edges, socket rim, collar, wing tops and butt cap (socket and butt studio close-ups).",
+   "V5": "Close-ups show smooth socket cone, haft and blade; no pinches, seams or z-fighting; only low-segment polygonal outlines on collar/butt rims, same as kit; 0 flipped faces, 0 cap overlaps, 0 self-intersections.",
+   "V6": "Disciplined: gold accent, teal in two values, ink rings, steel blade; colourways (crimson, shadow) swap only the hue.",
+   "V7": "1980 tris vs weapon target 2500 (ceiling 4000).",
+   "V8": "One white vertex-colour material, kit gold/ink/steel + one hue, chamfers and smooth shading match the kit anchor.",
+   "V9": "Studio line: Tool Handle at grip origin, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  },
+  {
+   "V1": "Silhouette reads as a leaf-head spear from front and three-quarter (head, winged socket, banded grip, butt cap all break the outline); top view is a dot as expected for a spear, symmetry_error X/Y 0.0.",
+   "V2": "Clear hierarchy: big leaf head, medium gold socket + wings + butt cap + collar, small ink/teal grip bands; long plain haft between socket and grip is the only quiet stretch.",
+   "V3": "Proportions only partly stylised: head is modest against an 8.2-stud haft that stays thin and straight; wings are chunky slabs while the rest stays near-realistic, so the stylisation is uneven.",
+   "V4": "Inconsistent edges: socket collar, butt ring and wing tops carry chamfers that catch light, but the blade edges read soft/rounded with no crisp bevel line and the wings are flat paddles with a single bevel.",
+   "V5": "Minor issues: small pinched notch at the very blade tip, visible low-segment faceting on the socket cone and butt cap in the studio close-ups; gate reports 204 cross-shell overlaps (intentional penetrations, not visible z-fighting).",
+   "V6": "Disciplined: gold accent, teal haft in two values, ink bands, steel blade; colourways (crimson, shadow) swap only the hue family cleanly.",
+   "V7": "1980 tris vs weapon target 2500 / ceiling 4000: under target.",
+   "V8": "Matches kit: single white vertex-colour material, gold/ink/steel + one hue in up to 3 values, chamfered rings similar to the kit anchor.",
+   "V9": "Studio line correct: Tool Handle at grip point, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "slight pinch/notch at the blade tip (head close-ups)",
+   "blade edges soft/blobby compared with chamfered fittings"
+  ],
+  [
+   "none blocking; low-segment polygonal outline visible on butt knob and collar rims in close-ups"
+  ],
+  [
+   "Pinched/notched vertex cluster at the blade tip",
+   "Visible faceting on socket cone and butt cap (low cylinder segment count)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Sharpen the blade: thinner edge with a consistent ~0.045 chamfer and a clean converged tip",
+   "Push stylised proportion: larger, more exaggerated head and longer swept wings, slight taper or swell on the haft",
+   "Add a cleaner transition where the blade enters the socket (small gold lip or collar)"
+  ],
+  [
+   "Push stylised proportion: wider, longer leaf head (about 25-30% of length) and slightly thicker haft",
+   "Give the socket wings more shape (taper/curl or flared tips) instead of flat slabs",
+   "Add a couple of segments to the butt knob and collar rims to soften the polygonal outline"
+  ],
+  [
+   "Push the stylisation: larger, wider leaf head and a slightly thicker haft so the spear reads confidently at 64 px",
+   "Give the blade a consistent edge bevel (crisp chamfer along both edges) matching the ~0.045-stud kit chamfers on the rings",
+   "Clean the blade tip into a single clean point and raise segment count / add smoothing on the socket cone and butt cap",
+   "Shape the wings (taper or curve) instead of flat paddles so they match the head's form language"
+  ]
+ ],
+ "params": {
+  "H": 5.945,
+  "r": 0.2,
+  "BL": 2.075,
+  "W": 0.546,
+  "T": 0.133,
+  "widest": 0.279,
+  "wings": true,
+  "wraps": 4
+ },
+ "tris": 1980,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

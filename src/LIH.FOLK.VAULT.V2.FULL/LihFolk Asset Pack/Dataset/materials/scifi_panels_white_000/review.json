@@ -1,0 +1,22 @@
+{
+ "id": "scifi_panels_white_000",
+ "kind": "materials",
+ "score": 9.2,
+ "pass": true,
+ "median": {
+  "M1": 2,
+  "M2": 2,
+  "M3": 2,
+  "M4": 1,
+  "M7": 2,
+  "M6": 2,
+  "M5": 2
+ },
+ "batch": "m5",
+ "reviewer_notes": [
+  "Hazard stripe blocks form repeating landmark grid; cyan plus yellow busy",
+  "Hazard-stripe panels repeat as obvious landmarks on the 3x3",
+  "hazard-stripe blocks repeat as grid landmarks; shallow relief"
+ ],
+ "rubric": "LihFolk Plugin/skills/quality-score/rubrics/material.md"
+}

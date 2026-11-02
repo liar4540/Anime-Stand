@@ -1,0 +1,95 @@
+{
+ "asset": "Pillar_01",
+ "kit": "Modular",
+ "type": "Pillar",
+ "seed": 1,
+ "attempt": "w2r1",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Base-shaft-capital column silhouette reads clearly in front, three-quarter and silhouette; top view is a clean square abacus.",
+   "V2": "Big shaft, medium plinth/torus/abacus, small gold necking band and flutes; clear hierarchy.",
+   "V3": "Proportions are classical but straight: no entasis, capital is a thin slab sitting directly on the band (minimal echinus), so it reads a little stiff.",
+   "V4": "Consistent chamfers on plinth, torus and abacus catch light in base and capital close-ups.",
+   "V5": "Shaft shows wavy vertical streaks in studio light (front view and shaft close-up) and flutes are barely visible as geometry; minor smoothing artifact.",
+   "V6": "Stone hue in 3 values (dark plinth/abacus, light shaft) plus one gold accent; disciplined in brick and sandstone colourways.",
+   "V7": "728 tris vs module target 800.",
+   "V8": "One vertex-colour material, ~0.06 stud chamfers, gold band accent, stone values; matches the kit.",
+   "V9": "Studio line correct (Anchored, CollisionFidelity Box, CanTouch off, Color white, SmoothPlastic); seats shaft_on_base and capital_on_shaft seated; A15 symmetry 0.0; T1 vertical tiling pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "wavy vertical shading streaks along the shaft; flutes too shallow to read"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Deepen the shaft flutes (or remove them) and fix shaft normals so the wavy streaks go away",
+   "Add an echinus/cushion between the gold band and the abacus and a slight entasis taper for a more confident stylised column",
+   "Thicken the abacus slightly so the capital balances the plinth"
+  ]
+ ],
+ "params": {
+  "kind": "column",
+  "flutes": true
+ },
+ "tris": 728,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}

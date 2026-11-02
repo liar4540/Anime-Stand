@@ -1,0 +1,181 @@
+{
+ "asset": "Broadsword_01",
+ "kit": "Weapons",
+ "type": "Broadsword",
+ "seed": 1,
+ "attempt": "rv3_panel",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   1,
+   1,
+   1,
+   2,
+   2,
+   1,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7,
+  8.7,
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 1.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette read instantly as a cross-hilt sword (tapered blade, flared bar guard, ball pommel); top view is a thin guard bar, as expected for a sword. Outline is symmetric, A15 X/Y = 0.0, guard and gem alignment 0.0, all seats seated with no gap.",
+   "V2": "Clear hierarchy: the blade is the big form, the guard with its raised centre plate is the medium form, and the gem, grip wraps and pommel collar are the small details.",
+   "V3": "Proportions are generic rather than stylised. The blade is a straight, evenly tapered wedge and the guard is a flat plank with only slight flared ends. The grip is short against a large pommel, so the shape reads as a stiff primitive build with little exaggeration.",
+   "V4": "Bevels are inconsistent. The guard and pommel collar have chamfers that catch light (guard close-up), but the blade's outer edges and tip are razor-sharp with no visible chamfer (tip and blade_mid close-ups).",
+   "V5": "Minor artifacts: the pommel sphere has a visibly polygonal outline with coarse facets (pommel studio and flat close-ups), and the gem also shows facets. There are no seams, pinches or z-fighting on the blade or guard, and A17/A18 pass with 0 self-intersections or cap overlaps.",
+   "V6": "Disciplined palette: gold guard and pommel, two steel greys plus a dark fuller, and one grip and gem hue (teal) in about two values. The colourways swap only that hue (crimson, shadow purple).",
+   "V7": "2460 tris against a weapon target of 2500 and a ceiling of 4000, so it is at or under target.",
+   "V8": "One white vertex-colour material with the kit gold, steel greys and a single accent hue, which matches the kit. The blade lacks the kit's ~0.045-stud edge chamfers that the guard has, a minor mismatch.",
+   "V9": "The studio line is correct: Tool Handle with origin at the grip point, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white for vertex colours, SmoothPlastic."
+  },
+  {
+   "V1": "Front and silhouette read instantly as a broadsword: pointed tapering blade, wide crossguard with upswept flared tips, ball pommel; top view reads as a guard bar with blade lozenge; A15 symmetry error 0.0 on X and Y, outline symmetric in front view.",
+   "V2": "Clear tiers: big blade with dark fuller, medium guard with raised central boss and flared tips plus collared ball pommel, small grip wraps and front gem.",
+   "V3": "Proportions are fairly literal: straight-edged blade with only a slight swell, thin short grip against a heavy guard; partly stylised but not a confident exaggerated shape like the curved anchor.",
+   "V4": "Consistent ~0.045 chamfers on guard top/tips, boss and pommel collar catch light in the guard close-up; blade edge bevel bands read cleanly.",
+   "V5": "Guard, blade and tip close-ups are clean (0 self-intersections, 0 cap overlaps, 0 flipped faces), but the pommel sphere shows a visibly polygonal outline in the pommel close-up (stray faceting).",
+   "V6": "Disciplined kit palette: gold guard/pommel, steel greys with darker fuller value, teal grip/gem in two values; colourways (crimson, shadow) swap only the accent hue.",
+   "V7": "2460 tris vs weapon target 2500 (ceiling 4000), at target.",
+   "V8": "One white LF_VertexColor material with vertex colours, kit gold/steel/accent palette, matching chamfer width; indistinguishable from kit weapons.",
+   "V9": "Studio line: Tool Handle, origin at grip point, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic; all gates A1-A18 pass."
+  },
+  {
+   "V1": "Front and silhouette read instantly as a sword: tapered blade with faceted point, cross guard with flared ends, round pommel; outline is mirror-symmetric (A15 X/Y error 0.0); the top view is a thin guard bar, which is expected for a sword.",
+   "V2": "Clear tiers: big blade mass, medium guard slab and pommel, small details (dark fuller strip, teal gem in the raised guard boss, gold wrap rings on the teal grip).",
+   "V3": "Blade taper and point are reasonable, but the guard is a near-flat slab with only slight end flares, and the grip is thin and short against the wide blade and chunky guard. It reads as a fairly standard primitive build rather than a confident exaggeration like the scimitar anchor.",
+   "V4": "Guard chamfers pick up even highlight lines along every edge, the pommel collar and grip rings are bevelled, and the blade's edge bevel planes are consistent from the ricasso up to the tip.",
+   "V5": "Studio close-ups have no patches, seams or z-fighting, but the pommel sphere shows a visibly polygonal outline with flat facet planes, and in the flat render the guard-end contours look slightly lumpy.",
+   "V6": "Disciplined kit palette: gold accent, two steel greys plus a darker fuller, and a single teal hue in the grip and gem; the crimson and shadow colourways swap only the hue.",
+   "V7": "2460 tris against a weapon target of 2500 (ceiling 4000), so it sits at target.",
+   "V8": "Uses one white LF_VertexColor material, with kit gold, steel and accent values and kit-style chamfers; the colourways behave like the rest of the kit.",
+   "V9": "Studio line is correct: Tool Handle, origin at the hand/grip point, Hull collision, CanCollide off when equipped, Massless, MeshPart.Color white, SmoothPlastic."
+  }
+ ],
+ "artifacts": [
+  [
+   "Pommel sphere: low segment count gives a visibly faceted, polygonal outline in the close-ups",
+   "Gem: faceted, low-poly look in the guard close-up",
+   "Blade edges and tip: razor edges with no chamfer, unlike the bevelled guard"
+  ],
+  [
+   "Pommel sphere outline visibly faceted (low segment count) in pommel close-up"
+  ],
+  [
+   "Pommel sphere is low-segment: polygonal outline and visible flat facets in the pommel studio close-up",
+   "Guard-end contours look slightly lumpy/uneven in the flat-light guard close-up"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add the kit ~0.045-stud chamfers to the blade's outer edges and tip so the blade catches light like the guard",
+   "Raise the pommel sphere segment count (or smooth it) to remove the faceted outline; the 40-tri headroom is tight, so reclaim tris from the hidden blade tang that sits inside the guard",
+   "Push the stylisation: a broader ricasso or swelling blade profile, a guard with stronger curve or quillon end caps, and a grip-to-pommel ratio that reads less stocky",
+   "Smooth or add segments to the guard gem"
+  ],
+  [
+   "Push the stylisation: stronger blade taper or leaf swell, slightly thicker/longer grip so it balances the heavy guard",
+   "Raise segment count (or smooth) on the pommel sphere so its outline is round in close-up",
+   "Enlarge the guard gem / boss slightly so the small-detail tier still reads at 64 px"
+  ],
+  [
+   "Give the proportions more style: a thicker or slightly longer grip, and a more shaped guard (stronger upswept or recurved quillon ends, or a tapered thickness) so it doesn't read as a flat slab",
+   "Raise the pommel sphere's segment count (or smooth-shade it) to remove the polygonal outline and facet planes",
+   "Even out the guard-end bevel geometry so its flat-light contour is clean rather than lumpy"
+  ]
+ ],
+ "params": {
+  "L": 4.327,
+  "W": 0.645,
+  "T": 0.113,
+  "taper": 0.438,
+  "tip0": 0.74,
+  "tipk": 1.46,
+  "gL": 1.261,
+  "h0": 0.202,
+  "ht": 0.111,
+  "rise": -0.129,
+  "flare": 0.086,
+  "langet": 0.13,
+  "GL": 1.194,
+  "gr": 0.168,
+  "ps": 0.327,
+  "wraps": 5,
+  "pommel": "ball",
+  "fuller_w": 0.877,
+  "fuller_end": 0.59,
+  "gem": true,
+  "tip_balls": false,
+  "hilt_steps": 16
+ },
+ "tris": 2460,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

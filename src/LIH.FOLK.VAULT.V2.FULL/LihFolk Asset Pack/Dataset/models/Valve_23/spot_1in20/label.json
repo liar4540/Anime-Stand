@@ -1,0 +1,101 @@
+{
+ "asset": "Valve_23",
+ "kit": "Props",
+ "type": "Valve",
+ "seed": 23,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 8.7,
+ "grades": [
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter, top and silhouette all read instantly as a gate valve: handwheel ring + spokes, bonnet, bulb body, twin bolted flanges; outline symmetric (A15 X/Y error 0.0).",
+   "V2": "Clear hierarchy: big bulb body + pipe run, medium flanges/bonnet/handwheel, small hex bolts, hub and collar rings.",
+   "V3": "Confident stylised proportions: oversized bulb body, chunky flanges and an oversized handwheel; centring 0.0 offset and all 16 seats report seated with modest penetration.",
+   "V4": "Rim, collars and flanges carry consistent chamfers that catch light, but the four spokes are square-cut unbevelled bars and the spoke ends butt the rim with hard edges (flat close-up).",
+   "V5": "Mostly clean smooth shading, but the flange face shows a curved dark smoothing streak/pinch across the cap in the studio close-up, and the bulb body silhouette is visibly faceted.",
+   "V6": "Disciplined: one body hue (teal) in 2-3 values, gold accent, ink-dark bolts, steel-grey stem; colourways swap only the body hue cleanly.",
+   "V7": "1,960 tris vs medium target 2,000 (ceiling 4,000): at target.",
+   "V8": "One white vertex-colour material, kit gold/ink/steel palette, ~kit chamfer size on rims; reads as the same kit as other valves/props.",
+   "V9": "Studio line: Anchored, CollisionFidelity Hull, CanTouch off, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates pass."
+  }
+ ],
+ "artifacts": [
+  [
+   "Flange end-cap face: curved dark smoothing streak (pinch) across the cap in the studio close-up",
+   "Bulb body silhouette visibly faceted at close range",
+   "Spokes unbevelled, hard square ends where they meet the rim"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Re-shade the flange end cap (inset ring + flat centre or weighted/marked-sharp normals) to remove the pinch streak",
+   "Add the kit ~0.045 stud chamfer to the spokes so they match the rim and collars",
+   "Add a few segments to the bulb body (or mark smooth) to soften the faceted outline while staying near the 2,000 target"
+  ]
+ ],
+ "params": {
+  "R": 0.313,
+  "Lp": 1.486,
+  "body": 0.716,
+  "bonnet": 0.703,
+  "wheel": 0.691,
+  "spokes": 4
+ },
+ "tris": 1960,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

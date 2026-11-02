@@ -1,0 +1,189 @@
+{
+ "asset": "CliffChunk_06",
+ "kit": "Nature",
+ "type": "CliffChunk",
+ "seed": 6,
+ "params": {
+  "W": 3.571,
+  "strata": 4,
+  "Hs": 1.71,
+  "grass": true
+ },
+ "tris": 538,
+ "budget_class": "medium",
+ "budget_target": 2000,
+ "budget_ceiling": 4000,
+ "budget_note": "ok",
+ "dims_studs": {
+  "x": 5.355,
+  "y": 4.579,
+  "z": 3.56
+ },
+ "origin": "bottom",
+ "symmetric": null,
+ "symmetry_error": null,
+ "gate_pass": true,
+ "gate_report": {
+  "A1": "pass",
+  "A2": "pass",
+  "A3": "pass",
+  "A4": "pass",
+  "A5": "pass",
+  "A6": "pass",
+  "A7": "pass",
+  "A8": "pass",
+  "A9": "n/a",
+  "A10": "pass",
+  "A11": "n/a",
+  "A12": "pass",
+  "A13": "pass",
+  "A14": "pass",
+  "A15": "pass",
+  "A16": "pass",
+  "A17": "pass",
+  "A18": "pass"
+ },
+ "gate_fails": [],
+ "alignment": null,
+ "seats": [
+  {
+   "name": "stratum1_on_stratum0",
+   "gap": 0.0,
+   "penetration": 0.08,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "stratum2_on_stratum1",
+   "gap": 0.0,
+   "penetration": 0.25723,
+   "gap_frac": 0.0,
+   "seated": true
+  },
+  {
+   "name": "stratum3_on_stratum2",
+   "gap": 0.0,
+   "penetration": 0.08,
+   "gap_frac": 0.0,
+   "seated": true
+  }
+ ],
+ "self_intersections": 0,
+ "cap_overlaps": 0,
+ "flipped_faces": 0,
+ "cross_shell_overlaps": 116,
+ "tiling": null,
+ "palette": {
+  "material": "one white material LF_VertexColor (SmoothPlastic, MeshPart.Color white)",
+  "roles_used": [
+   "h_lt",
+   "h",
+   "h_dk",
+   "b"
+  ],
+  "primary": "granite",
+  "colourways": [
+   {
+    "name": "granite",
+    "hue": "stone",
+    "roles": {
+     "h_lt": "#C4C6CC",
+     "h": "#9497A3",
+     "h_dk": "#62656F",
+     "b": "#5DA543"
+    }
+   },
+   {
+    "name": "sandstone",
+    "hue": "sand",
+    "roles": {
+     "h_lt": "#E6CB98",
+     "h": "#C29C66",
+     "h_dk": "#8A6A40",
+     "b": "#5DA543"
+    }
+   },
+   {
+    "name": "slate",
+    "hue": "slate",
+    "roles": {
+     "h_lt": "#A9B6C8",
+     "h": "#71829A",
+     "h_dk": "#46546B",
+     "b": "#368A5C"
+    }
+   },
+   {
+    "name": "redrock",
+    "hue": "redrock",
+    "roles": {
+     "h_lt": "#DC8F6C",
+     "h": "#B05B42",
+     "h_dk": "#73372A",
+     "b": "#E0702E"
+    }
+   },
+   {
+    "name": "basalt",
+    "hue": "basalt",
+    "roles": {
+     "h_lt": "#8F8C99",
+     "h": "#64616E",
+     "h_dk": "#403E49",
+     "b": "#7FBFC4"
+    }
+   }
+  ]
+ },
+ "studio": "Static scenery: Anchored; CollisionFidelity Hull (or Box per stratum for climbing); CanTouch off; CastShadow on; MeshPart.Color white (vertex colours); SmoothPlastic; origin bottom-centre",
+ "notes": "cliff chunk: 4 stacked faceted strata (flat cut beds, alternating stone values), grass-topped",
+ "features": [
+  [
+   "strata",
+   [
+    1.574,
+    -1.705,
+    1.78
+   ],
+   2.4997
+  ],
+  [
+   "top",
+   [
+    -0.211,
+    0.081,
+    3.56
+   ],
+   2.8568000000000002
+  ]
+ ],
+ "renders": {
+  "front": "Models/Kits/Nature/_renders/CliffChunk_06/CliffChunk_06_front.png",
+  "three_quarter": "Models/Kits/Nature/_renders/CliffChunk_06/CliffChunk_06_three_quarter.png",
+  "top": "Models/Kits/Nature/_renders/CliffChunk_06/CliffChunk_06_top.png",
+  "silhouette": "Models/Kits/Nature/_renders/CliffChunk_06/CliffChunk_06_silhouette.png",
+  "close_strata_studio": "Models/Kits/Nature/_renders/CliffChunk_06/CliffChunk_06_close_strata_studio.png",
+  "close_strata_flat": "Models/Kits/Nature/_renders/CliffChunk_06/CliffChunk_06_close_strata_flat.png",
+  "close_top_studio": "Models/Kits/Nature/_renders/CliffChunk_06/CliffChunk_06_close_top_studio.png",
+  "close_top_flat": "Models/Kits/Nature/_renders/CliffChunk_06/CliffChunk_06_close_top_flat.png",
+  "cw_sandstone": "Models/Kits/Nature/_renders/CliffChunk_06/CliffChunk_06_cw_sandstone.png",
+  "cw_slate": "Models/Kits/Nature/_renders/CliffChunk_06/CliffChunk_06_cw_slate.png",
+  "cw_redrock": "Models/Kits/Nature/_renders/CliffChunk_06/CliffChunk_06_cw_redrock.png",
+  "cw_basalt": "Models/Kits/Nature/_renders/CliffChunk_06/CliffChunk_06_cw_basalt.png"
+ },
+ "score": {
+  "score": 9.3,
+  "basis": "panel x3 median",
+  "reviewed": "CliffChunk_01 w2r3_panel (indiv 9.3/8.7/9.3); fix rounds: w2r1 9.3",
+  "applies_to": "generator type (this variant: gate-passed, seeded variation of the reviewed generator)"
+ },
+ "generator": "tools/kits/kit_nature.py:CliffChunk",
+ "made": "2026-10-28",
+ "files": {
+  "glb": "Models/Kits/Nature/CliffChunk_06.glb",
+  "blend": "Models/Kits/Nature/CliffChunk_06.blend",
+  "turntable": "Models/Kits/Nature/CliffChunk_06_turntable.mp4"
+ },
+ "turntable_frames": 24,
+ "turntable_fps": 12
+}

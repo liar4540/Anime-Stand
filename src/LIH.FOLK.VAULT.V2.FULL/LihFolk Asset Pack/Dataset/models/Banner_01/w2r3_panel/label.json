@@ -1,0 +1,160 @@
+{
+ "asset": "Banner_01",
+ "kit": "Furniture",
+ "type": "Banner",
+ "seed": 1,
+ "attempt": "w2r3_panel",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "panel (3 blind, median per criterion)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   0,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.7,
+  9.3,
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.6,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Standing banner reads from front, 3/4 and silhouette (pole with ball finial, crossbar with ball ends, hanging cloth with pointed tail, round base); top view reads as bar over round base; emblem centred (alignment offset 0.0, A15 X 0.0).",
+   "V2": "Clear: pole + cloth (big), crossbar, base and star emblem (medium), ball finials and top hem band (small).",
+   "V3": "Chunky ball finials, gentle cloth wave with a shallow pointed tail and a bold oversized star give a confident stylised read.",
+   "V4": "Consistent chamfers on the star edges, base rims and bar catch light; cloth edges softly rounded.",
+   "V5": "Visible defect on the focal emblem: a triangular hole/missing face in the star's centre shows the cloth through it in every view (front, 3/4, colourways, studio and flat emblem close-ups).",
+   "V6": "Disciplined: one cloth hue in 2 values (cloth + darker hem), gold star/finials/base, wood pole, ink base ring; colourways swap only the cloth hue.",
+   "V7": "1760 tris vs 2000 medium target.",
+   "V8": "One LF_VertexColor material, smooth shading, chamfers, gold #E8AE38 and ink accents per furniture spec.",
+   "V9": "Anchored, Box collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; all gates pass."
+  },
+  {
+   "V1": "Silhouette reads instantly as a standing banner from front, three-quarter and silhouette (finial ball, crossbar with ball ends, hanging cloth, round foot); top view still shows bar + base; A15 X error 0.0.",
+   "V2": "Clear hierarchy: cloth as the big mass, pole/crossbar/base as medium, star emblem, finial and bar-end balls as small reads.",
+   "V3": "Confident stylised proportions: chunky gold finial and stepped base, slightly waved cloth with a softly dipped hem, oversized chunky star emblem.",
+   "V4": "Consistent soft chamfers: star edges catch a clear highlight in close_emblem_studio, base disc and header band are chamfered.",
+   "V5": "A small triangular hole at the centre of the star emblem is visible in front, three-quarter and both emblem close-ups (unfilled cap gap); rest of cloth and finial shade clean.",
+   "V6": "One cloth hue in two values (header band darker), gold fittings, wood-brown pole, ink base rim; colourways swap only the cloth hue.",
+   "V7": "1760 tris vs medium target 2000 (ceiling 4000): under target.",
+   "V8": "Single vertex-colour material, kit gold/ink accents, smooth weighted shading and chamfers match the kit.",
+   "V9": "Studio line correct: anchored, Box collision, CanTouch off, bottom-centre origin, MeshPart white with vertex colours."
+  },
+  {
+   "V1": "Pole with ball finial, crossbar with knobs, hanging cloth with star and round plinth reads as a standing banner from front, three-quarter and silhouette; top view reads via crossbar + finial over the round base.",
+   "V2": "Big (cloth, pole), medium (crossbar, plinth, star emblem, top hem band), small (ball finials, knob ends) hierarchy is clear.",
+   "V3": "Gently waved cloth with a shallow pointed hem, oversized gold star and chunky stepped plinth read as confident stylised props.",
+   "V4": "Star emblem has a consistent chamfer catching a light line on every arm; plinth steps, hem band and crossbar edges are softly bevelled.",
+   "V5": "A small triangular hole is visible at the centre of the star (cloth shows through) in the emblem studio and flat close-ups and in the full views; cloth and finial shading otherwise clean.",
+   "V6": "One fabric hue in two values (cloth + darker hem band), gold star/finials/plinth, wood pole, ink base ring; disciplined.",
+   "V7": "1760 tris vs medium target 2000.",
+   "V8": "Single fabric hue, kit gold #E8AE38 fittings, ink base, chamfered edges match the furniture kit.",
+   "V9": "Anchored, Box collision, CanTouch off, MeshPart.Color white, SmoothPlastic, origin bottom-centre; A1-A18 pass, X symmetry 0.0, emblem centred (offset 0.0)."
+  }
+ ],
+ "artifacts": [
+  [
+   "Triangular hole / missing cap face at the centre of the star emblem"
+  ],
+  [
+   "Triangular hole/gap in the centre of the star emblem cap (visible from front)"
+  ],
+  [
+   "triangular hole at the centre of the star emblem"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Rebuild the star front cap with a proper fan/centre vertex so its middle has no gap",
+   "Deepen the tail notch (swallowtail or sharper point) and add a little more cloth wave for a stronger silhouette",
+   "Add a small collar where the crossbar meets the pole"
+  ],
+  [
+   "Fill the star's centre cap so the emblem face is solid",
+   "Optionally deepen the cloth wave or cut a swallow-tail so the hanging cloth reads more fabric-like at 64 px"
+  ],
+  [
+   "Fill the star centre so the emblem is one solid cap with no hole",
+   "Give the cloth hem a clearer swallowtail or deeper point for a stronger silhouette",
+   "Slightly increase the finial sphere segments for a smoother highlight"
+  ]
+ ],
+ "params": {
+  "H": 7.309,
+  "Wc": 2.425,
+  "Lc": 3.331,
+  "tail": "round",
+  "icon": "star",
+  "wave": 0.087
+ },
+ "tris": 1760,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

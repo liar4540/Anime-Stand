@@ -1,0 +1,81 @@
+{
+ "asset": "Staff_03",
+ "kit": "Weapons",
+ "type": "Staff",
+ "seed": 3,
+ "attempt": "rv1",
+ "label": "rejected",
+ "score": 6.0,
+ "grades": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2
+ ],
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 1,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 1,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "reviewer": "blind fresh agent (renders + close-ups + gate report + rubric only)",
+ "evidence": {
+  "V1": "Front and silhouette read clearly as a crook staff and A15 Y error is 0.0, but the head has little mass: at 64 px the haft is about 2 px wide, the gem and cap merge into the hook, and the top view is just an unreadable teal pill with a gold disc.",
+  "V2": "Big (haft + hook) and medium (gold collar, banded grip, butt cap) shapes are present, but the intended focal point (the gem) is a small inward-facing sliver set inside the cap, so the head has no clear small-detail payoff.",
+  "V3": "The whole thing is one uniform-diameter tube bent into a candy-cane hook, with no taper, swell or exaggerated head mass; it reads as stiff primitives with a few rings added.",
+  "V4": "The gold collar and grip rings show chamfers that catch light, but the end-cap rim and the step from haft to grip (grip close-up, top and bottom of the wrap) look hard-edged, so the bevels are inconsistent.",
+  "V5": "The tube shading is smooth, but the close-ups show stray faceting: the polygonal facets on the gold end-cap's inner rim, the gem's low-segment faceted sphere (gem studio and flat), the hexagonal look of the crook-base collar outline, and the jagged segment corners on the grip-band silhouette.",
+  "V6": "Disciplined: one hue (teal) in three values (dark haft, mid grip wrap, light gem) plus a gold accent, and the crimson and shadow colourways swap cleanly with the gold kept.",
+  "V7": "1960 tris is under the weapon target of 2500 (ceiling 4000), and A1 passes.",
+  "V8": "It uses the one white LF_VertexColor material and the kit palette, but the low-segment faceted cap and gem next to the smooth high-res tube look out of step with the kit's smooth-shaded ~0.045-stud chamfer look. Minor mismatch.",
+  "V9": "The studio line is correct: Tool Handle, origin at the grip point, CollisionFidelity Hull, CanCollide off when equipped, Massless, MeshPart.Color white for vertex colours, SmoothPlastic."
+ },
+ "artifacts": [
+  "Faceted polygonal inner rim on the gold end-cap at the crook tip (close_gem_studio, close_gem_flat)",
+  "Low-segment gem sphere shows flat facets (close_gem_studio, close_gem_flat)",
+  "The crook-base collar outline looks polygonal, not round (close_crook_studio)",
+  "Grip-wrap bands have jagged, visible segment corners on the silhouette (close_grip_studio)",
+  "Hard unbevelled step where the haft meets the grip wrap (close_grip_studio)"
+ ],
+ "top_fixes": [
+  "Make the head the focal point: enlarge the gem and turn it outward/forward (or set it on the outer face of the hook) so it reads in front and 3/4 views at 64 px, and give the hook end more mass",
+  "Raise the segment counts on the end-cap, gem and collars (or smooth-shade them with weighted normals) to remove the faceting",
+  "Add a taper or swell to the haft and hook (thicker near the head, slimmer at the grip) so it stops reading as a uniform tube",
+  "Chamfer the haft-to-grip steps and the end-cap rims at about 0.045 studs to match the collar bevels",
+  "Smooth the grip-band profile so the wrap silhouette has no jagged segment corners"
+ ],
+ "params": {
+  "H": 6.165,
+  "r": 0.171,
+  "head": "crook",
+  "wraps": 4,
+  "orb": 0.423,
+  "prongs": 3
+ },
+ "tris": 1960,
+ "budget_class": "weapon",
+ "date": "2026-10-28"
+}

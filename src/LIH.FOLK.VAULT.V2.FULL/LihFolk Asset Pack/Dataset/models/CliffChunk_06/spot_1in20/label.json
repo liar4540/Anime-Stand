@@ -1,0 +1,97 @@
+{
+ "asset": "CliffChunk_06",
+ "kit": "Nature",
+ "type": "CliffChunk",
+ "seed": 6,
+ "attempt": "spot_1in20",
+ "label": "rejected",
+ "score": 8.0,
+ "grades": [
+  2,
+  1,
+  1,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   1,
+   1,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  8.0
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Stacked faceted strata with a mossy cap read as a cliff/rock chunk in front and three-quarter; silhouette shows distinct stepped ledges; bottom-origin and seated (all strata seated, no gaps).",
+   "V2": "Big strata slabs and medium designed facets are clear, but there is almost no small tier: the only secondary read is the moss top, with no chips, cracks or pebbles.",
+   "V3": "Slab stack is partly stylised, but the second stratum is sunk into the one below (0.26 stud penetration) leaving a thin sliver lip and a wedge-shaped dark slit that looks accidental rather than designed; strata are similar thickness so the stack reads a bit uniform.",
+   "V4": "Designed flat facets with consistently softened edges that catch light across all strata.",
+   "V5": "Strata close-up (flat and studio) shows a thin wedge/sliver where stratum 2 intersects stratum 1, reading as a pinched crevice; otherwise facets shade cleanly.",
+   "V6": "One stone hue in three values plus a single leaf-green moss secondary; colourways (sandstone, redrock) keep the structure.",
+   "V7": "538 tris vs medium target 2000 (ceiling 4000): well under target.",
+   "V8": "One white vertex-colour material, designed rock facets, stone hue + moss green secondary per the Nature kit; moss green is slightly saturated but within the scheme.",
+   "V9": "Studio line: Anchored, CollisionFidelity Hull (Box per stratum option), CanTouch off, MeshPart.Color white, SmoothPlastic, bottom-centre origin."
+  }
+ ],
+ "artifacts": [
+  [
+   "Wedge-shaped sliver / slit where stratum 2 is sunk into stratum 1 (front strata close-up)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Re-seat stratum 2 so it rests on stratum 1 with a clean overhang instead of sinking in and leaving a thin sliver/slit",
+   "Vary strata thickness and add a small tier (chipped corners, a crack line, a pebble or moss drip down one face)",
+   "Let the moss spill a little over the top edge so it reads as growth rather than a painted cap"
+  ]
+ ],
+ "params": {
+  "W": 3.571,
+  "strata": 4,
+  "Hs": 1.71,
+  "grass": true
+ },
+ "tris": 538,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

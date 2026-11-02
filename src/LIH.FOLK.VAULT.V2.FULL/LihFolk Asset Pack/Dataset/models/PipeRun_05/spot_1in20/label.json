@@ -1,0 +1,117 @@
+{
+ "asset": "PipeRun_05",
+ "kit": "Props",
+ "type": "PipeRun",
+ "seed": 5,
+ "attempt": "spot_1in20",
+ "label": "accepted",
+ "score": 9.3,
+ "grades": [
+  2,
+  2,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   2,
+   2,
+   2,
+   2,
+   1,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  9.3
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 2,
+  "V2 hierarchy": 2,
+  "V3 proportion": 2,
+  "V4 edges": 2,
+  "V5 shading": 1,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front, three-quarter and silhouette all read instantly as a flanged L pipe run; even the top view keeps the bend and flange discs legible at 64 px; nothing floats (all 12 bolts seated, A16 pass).",
+   "V2": "Clear big/medium/small: long teal pipe body > gold flanges and coupling ring > small ink hex bolts, plus dark bore as an accent.",
+   "V3": "Chunky oversized flanges and coupling ring against a fat smooth pipe give a confident toy-like stylised read; bend radius is generous rather than a stiff primitive joint.",
+   "V4": "Flange faces and coupling ring show a consistent chamfer band catching light (end_bore and coupling close-ups); hex bolts have bevelled tops; no razor edges.",
+   "V5": "Elbow close-up shows visible segment faceting along the bend: polygonal kinks in the outer contour and stepped shading bands, plus a thin darker line hugging the left contour; flanges and coupling are clean (minor, caps at 1).",
+   "V6": "Disciplined: one body hue (teal) + gold accent + ink bolts; colourways (crimson, shadow) swap only the body hue, keeping the gold/ink accents.",
+   "V7": "1264 tris vs medium target 2000 / ceiling 4000: under target.",
+   "V8": "One white material LF_VertexColor with vertex colours, kit gold accent and ink darks, chamfered flanges and smooth shading match the kit.",
+   "V9": "Studio line correct: Anchored, Hull collision (Box per straight if walked on), CanTouch off, CastShadow on, MeshPart.Color white, SmoothPlastic, origin bottom-centre."
+  }
+ ],
+ "artifacts": [
+  [
+   "Faceting along the elbow bend: visible kinks in the outer contour and stepped shading bands (close_elbow_studio)",
+   "Thin darker line along the elbow's left contour (close_elbow_studio)"
+  ]
+ ],
+ "top_fixes": [
+  [
+   "Add more ring segments along the elbow bend (or tighten smoothing) so the curve contour and highlight run smoothly",
+   "Check normals/shading along the elbow's outer contour to remove the dark rim line"
+  ]
+ ],
+ "params": {
+  "segments": 3,
+  "dirs": [
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    0.0,
+    1.0,
+    0.0
+   ],
+   [
+    1.0,
+    0.0,
+    0.0
+   ]
+  ],
+  "lens": [
+   3.091,
+   2.561,
+   2.29
+  ],
+  "R": 0.373
+ },
+ "tris": 1264,
+ "budget_class": "medium",
+ "date": "2026-10-28"
+}

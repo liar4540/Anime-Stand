@@ -1,0 +1,117 @@
+{
+ "id": "tiles_checker_002",
+ "family": "tiles",
+ "theme": "checker",
+ "index": 2,
+ "seed": 3524.0,
+ "generator": "tools/pack/gen_materials.py + osl/mat_tiles.osl (procedural, original)",
+ "resolution": 1024,
+ "tiling": "seamless 1x1 UV tile",
+ "maps": {
+  "Color": "Color.png (sRGB)",
+  "Color_Neutral": "Color_Neutral.png (greyscale tint base, sRGB)",
+  "Normal": "Normal.png (tangent, OpenGL +Y, Roblox-ready)",
+  "Roughness": "Roughness.png (linear)",
+  "Metalness": "Metalness.png (linear)"
+ },
+ "roblox": {
+  "MaterialVariant": {
+   "BaseMaterial": "Marble",
+   "StudsPerTile": 8,
+   "ColorMap": "Color.png or Color_Neutral.png (tint with part Color)"
+  },
+  "SurfaceAppearance": {
+   "AlphaMode": "Opaque"
+  }
+ },
+ "tags": [
+  "tiles",
+  "floor",
+  "ceramic",
+  "interior",
+  "checker"
+ ],
+ "colors": [
+  [
+   "#d7d3cb",
+   0.446
+  ],
+  [
+   "#36363b",
+   0.293
+  ],
+  [
+   "#3c3c42",
+   0.165
+  ],
+  [
+   "#797670",
+   0.097
+  ]
+ ],
+ "params": {
+  "C1": "#d8d4cc",
+  "C2": "#dbd3c7",
+  "C3": "#39393f",
+  "C4": "#7b7771",
+  "C5": "#a8a8b0",
+  "Mode": 1.0,
+  "Count": 6.0,
+  "Grout": 0.024329312562081287,
+  "Bev": 0.08981792164754906,
+  "Glaze": 0.5294363224167361,
+  "Chip": 0.5639858218939656,
+  "Var": 0.757258564076511,
+  "Seed": 3524.0
+ },
+ "normal_depth_px": 14.0,
+ "gates": {
+  "G1_maps_1024": true,
+  "G2_wrap_ratio": {
+   "Color": 0.022,
+   "Color_Neutral": 0.026,
+   "Normal": 0.013,
+   "Roughness": 0.101,
+   "Metalness": 0.0
+  },
+  "G2_shift_err": 0.0,
+  "G2_seamless": true,
+  "G3_normal_mean": [
+   0.5,
+   0.5,
+   0.979
+  ],
+  "G3_normal_ok": true,
+  "G4_light_corr": [
+   0.0,
+   0.0
+  ],
+  "G4_no_baked_light": true,
+  "G5_ranges": {
+   "diel_luma_p1": 51.3,
+   "diel_luma_p99": 227.1,
+   "metal_mid_frac": 0.0,
+   "metal_frac": 0.0,
+   "metal_albedo_luma": null,
+   "rough_mean": 0.502,
+   "rough_min": 0.447,
+   "rough_expected": [
+    0.18,
+    0.85
+   ],
+   "albedo_max": 242
+  },
+  "G5_plausible": true,
+  "G6_not_flat": true,
+  "M_normal_slope_mean": 0.0595,
+  "M_neutral_mean": 0.713,
+  "M_neutral_range_p5_p95": [
+   0.435,
+   0.921
+  ],
+  "gates_pass": true
+ },
+ "gates_pass": true,
+ "bake_seconds": 32.9,
+ "preview": "preview.jpg"
+}

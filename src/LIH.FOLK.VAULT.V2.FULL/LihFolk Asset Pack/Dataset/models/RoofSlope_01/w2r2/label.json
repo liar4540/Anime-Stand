@@ -1,0 +1,95 @@
+{
+ "asset": "RoofSlope_01",
+ "kit": "Modular",
+ "type": "RoofSlope",
+ "seed": 1,
+ "attempt": "w2r2",
+ "label": "rejected",
+ "score": 7.7,
+ "grades": [
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "decision": "single blind reviewer (fix round)",
+ "reviewer_grades": [
+  [
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "reviewer_scores": [
+  7.7
+ ],
+ "criterion_spread_2plus": {},
+ "score_spread": 0.0,
+ "criteria": {
+  "V1 silhouette": 1,
+  "V2 hierarchy": 1,
+  "V3 proportion": 1,
+  "V4 edges": 2,
+  "V5 shading": 2,
+  "V6 palette": 2,
+  "V7 economy": 2,
+  "V8 kit match": 2,
+  "V9 studio-ready": 2
+ },
+ "weights": [
+  3,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  1
+ ],
+ "gate_pass": true,
+ "gate_fails": [],
+ "evidence": [
+  {
+   "V1": "Front and three-quarter views read as a flat paved tile/patio slab; silhouette is a low rectangular block, roof slope only readable from the gable-end close-up.",
+   "V2": "Shingle courses and timber fascia only; no ridge, drip edge or small accents.",
+   "V3": "Very shallow slope with flat paving-like slates that do not overlap; looks like a stiff floor piece rather than a stylised roof.",
+   "V4": "Consistent small chamfers on every slate and on the fascia board (eave close-up).",
+   "V5": "Eave, gable end and shingle close-ups shade cleanly; no pinches, seams or z-fighting.",
+   "V6": "Stone greys in 3 values + timber brown + cream gable strip; disciplined.",
+   "V7": "336 tris vs module target 800.",
+   "V8": "One vertex-colour material, stone + timber + cream plaster per modular rules, matches RoofPeak shingles.",
+   "V9": "Studio line: Anchored, Default collision (walkable), CanTouch off, grid-corner pivot, white MeshPart; T1 tiling pass."
+  }
+ ],
+ "artifacts": [
+  []
+ ],
+ "top_fixes": [
+  [
+   "Increase pitch or make slates visibly overlap (lapped, tilted courses) so the piece reads as roof, not floor",
+   "Add a drip edge / overhang at the eave to break the slab silhouette",
+   "Add a small accent (ink nails or gold trim) for small-scale detail"
+  ]
+ ],
+ "params": {
+  "W": 8,
+  "D": 4,
+  "pitch": "half",
+  "rows": 4
+ },
+ "tris": 336,
+ "budget_class": "module",
+ "date": "2026-10-28"
+}
